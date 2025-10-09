@@ -9,13 +9,17 @@ public class LobbySystem : Singleton<LobbySystem>
     public async UniTask Init()
     {
         await UIMain.Instance.CreateModeSubPage("lobby", "home");
+        FeatureUtility.OnAddFeature(FeatureType.Lobby, () =>
+        {
+            Open();
+        });
     }
 
     public void Open()
     {
         ModeHomeControl.OnOpen("lobby");
 
-        List<string> listShowHub = new List<string>() { "gem", "coin", "profile"};
+        List<string> listShowHub = new List<string>() { "gem", "coin", "profile" };
 
         //获得屏幕比例，如果屏幕比例超过2:1，则不显示coin
         if (UIUtility.IsScreenOverRatio())
@@ -37,7 +41,7 @@ public class LobbySystem : Singleton<LobbySystem>
     //刷新lobby界面
     public void Refresh()
     {
-        return ;
+        return;
     }
 
 

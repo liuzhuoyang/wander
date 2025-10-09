@@ -15,3 +15,5 @@ MonoBehaviour:
   path: Assets/Module/4.System/Meta/Gear/asset/
   listGearData:
   - {fileID: 11400000, guid: 4ec60ce4112c34d8c953abb6045d0347, type: 2}
+  - {fileID: 11400000, guid: b036679cdc1d848c5817e1d6e94549d2, type: 2}
+  - {fileID: 11400000, guid: e59c07a9e4ae543d6a9841a4f9820238, type: 2}

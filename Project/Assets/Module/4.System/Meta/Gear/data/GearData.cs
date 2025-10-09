@@ -17,7 +17,14 @@ public class GearDataEditor
 [CreateAssetMenu(fileName = "GearData", menuName = "OniData/System/Meta/Gear/GearData", order = 1)]
 public class GearData : ScriptableObject
 {
-    [LabelText("装备序号")] public int gearIndex;
+    [ReadOnly]
+    [LabelText("装备序号")] public string gearIndex;
+
+    [LabelText("识别名(编辑器内才会显示)")] public string editorName;
+
+    [LabelText("显示名称"), ValueDropdown("GetLocalizationKeyList")] public string displayName;
+
+    [LabelText("描述"), ValueDropdown("GetLocalizationKeyList")] public string info;
 
     [LabelText("品质")] public Rarity rarity;
 
@@ -32,7 +39,24 @@ public class GearData : ScriptableObject
     [Button("Init Data")]
     public void InitData()
     {
+        gearIndex = this.name.Split('_')[1];
         EditorUtility.SetDirty(this);
+    }
+
+    private List<string> GetLocalizationKeyList()
+    {
+        List<string> list = new List<string>();
+        list.Add("");
+        string path = GameDataControl.GetLocPath("all_gear");
+        List<LocalizationData> listLocalizationAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        foreach (LocalizationData data in listLocalizationAsset)
+        {
+            foreach (LocalizationSerializedItem item in data.list)
+            {
+                list.Add(item.key);
+            }
+        }
+        return list;
     }
 #endif
 }

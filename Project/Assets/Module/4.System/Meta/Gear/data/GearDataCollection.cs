@@ -25,13 +25,13 @@ public class GearDataCollection : GameDataCollectionBase
 public static class AllGear
 {
     //数据游戏中使用
-    public static Dictionary<int, GearData> dictData;
+    public static Dictionary<string, GearData> dictData;
 
     //初始化数据，从资源中加载
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     public static void Init()
     {
-        dictData = new Dictionary<int, GearData>();
+        dictData = new Dictionary<string, GearData>();
         GearDataCollection collection = GameDataControl.Instance.Get("all_gear") as GearDataCollection;
         foreach (GearData data in collection.listGearData)
         {
