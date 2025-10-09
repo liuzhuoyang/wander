@@ -38,7 +38,7 @@ public class UIVFX : Singleton<UIVFX>
             //获取目标位置
             targetPosition = UIDynamicControl.Instance.GetDynamicTarget(rewardName).position;
 
-            AudioHandler.OnPlayItemDropSFX(rewardName);
+            ItemSystem.OnPlayItemDropSFX(rewardName);
 
             float x = UnityEngine.Random.Range(-250, 250); // 假设Canvas中心为坐标原点
             float y = UnityEngine.Random.Range(-250, 250);
@@ -93,7 +93,7 @@ public class UIVFX : Singleton<UIVFX>
                         .SetDelay(1f) // 开始之前的延迟
                         .OnComplete(() =>
                         {
-                            AudioHandler.OnPlayItemCollectSFX(rewardName);
+                            ItemSystem.OnPlayItemCollectSFX(rewardName);
                             VFXControl.Instance.OnUIVFX("vfx_ui_shared_impact_generic_001", targetPosition);
                             PoolManager.Instance.Release("vfx_ui_flyer", go);
                         });

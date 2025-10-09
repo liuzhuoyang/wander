@@ -1,14 +1,14 @@
-using UnityEngine;
+using SimpleAudioSystem;
 
 public class AudioEndHandler : AudioHandlerBase
 {
     public void OnSFXVictory()
     {
-        AudioControl.Instance.PlaySFX("sfx_ui_end_victory");
+        AudioManager.Instance.PlaySFX("sfx_ui_end_victory");
     }
     
     public void OnSFXDefeat()
     {
-        AudioControl.Instance.PlaySFX("sfx_ui_end_defeat");
+        AudioManager.Instance.PlaySFX("sfx_ui_end_defeat");
     }
 }

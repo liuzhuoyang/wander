@@ -65,7 +65,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: af534f460cc020e4ab418536e5730da8, type: 2}
   - {fileID: 11400000, guid: ec4b494f25a1046869895ed250f8f5fd, type: 2}
   - {fileID: 11400000, guid: b4bc88b6c14d84d0cb589262ae892e51, type: 2}
-  - {fileID: 11400000, guid: 64db8d1b4465546b9858427ac7445d15, type: 2}
   ListAudioBGMData:
   - {fileID: 11400000, guid: b4bc88b6c14d84d0cb589262ae892e51, type: 2}
-  - {fileID: 11400000, guid: 64db8d1b4465546b9858427ac7445d15, type: 2}

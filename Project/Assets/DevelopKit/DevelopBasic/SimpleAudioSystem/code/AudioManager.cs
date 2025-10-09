@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -22,6 +24,7 @@ namespace SimpleAudioSystem
         private bool music_crossfading = false;
         private CoroutineExcuter ambFader;
         private CoroutineExcuter musicFader;
+        private List<SFXHandler> loopSources = new List<SFXHandler>();
 
         //由于SFX占用体积小，但是会频繁使用，因此做一个缓存字典
         public string current_music_name { get; private set; } = string.Empty;
@@ -40,6 +43,9 @@ namespace SimpleAudioSystem
         protected bool amb_mute = false;
         protected bool sfx_mute = false;
         #endregion
+
+        protected const int MAX_LOOP_SOURCE = 10;
+        protected const string SFX_GROUP = "SFX";
 
         #region 
         public void Init()
@@ -239,7 +245,7 @@ namespace SimpleAudioSystem
 
         #region SFX音效
         //默认AudioSource播放音频
-        public AudioClip PlaySFX(string sfxKey, float volumeScale) => PlaySFX(sfx_default, sfxKey, volumeScale);
+        public AudioClip PlaySFX(string sfxKey, float volumeScale = 1) => PlaySFX(sfx_default, sfxKey, volumeScale);
         //指定AudioSource播放音频
         public AudioClip PlaySFX(AudioSource targetSource, string sfxKey, float volumeScale)
         {
@@ -253,7 +259,7 @@ namespace SimpleAudioSystem
             return clip;
         }
         //指定AudioSource播放循环音频
-        public AudioClip PlaySFXLoop(AudioSource targetSource, string sfxKey, float volumeScale, float transition = 1f)
+        AudioClip PlaySFXLoop(AudioSource targetSource, string sfxKey, float volumeScale, float transition = 1f)
         {
             if (string.IsNullOrEmpty(sfxKey))
             {
@@ -267,6 +273,51 @@ namespace SimpleAudioSystem
             FadeAudio(targetSource, volumeScale, transition);
 
             return clip;
+        }
+        public AudioClip PlaySFXLoop(string sfxKey, float volumeScale = 1)
+        {
+            if (loopSources == null)
+            {
+                loopSources = new List<SFXHandler>();
+            }
+            //寻找已经播放同名clip的AudioSource
+            var source = loopSources.First(x => x.sfxKey == sfxKey);
+            if (source != null)
+            {
+                source.volume = volumeScale;
+                return source.PlaySFX(sfxKey);
+            }
+            
+            source = loopSources.First(x => !x.isPlaying);
+            if (source != null)
+            {
+                source.volume = volumeScale;
+                return source.PlaySFX(sfxKey);
+            }
+
+            if (loopSources.Count < MAX_LOOP_SOURCE)
+            {
+                source = new SFXHandler(gameObject.AddComponent<AudioSource>(), sfxKey, volumeScale);
+                source.SetMixer(mainMixer.FindMatchingGroups(SFX_GROUP)[0]);
+                loopSources.Add(source);
+
+                source.volume = volumeScale;
+                return source.PlaySFX(sfxKey);
+            }
+            else
+            {
+                source = loopSources[0];
+                source.volume = volumeScale;
+                return source.PlaySFX(sfxKey);
+            }
+        }
+        public void StopSFXLoop(string sfxKey)
+        {
+            var source = loopSources.First(x => x.sfxKey == sfxKey);
+            if(source != null)
+            {
+                source.Stop();
+            }
         }
         //将目标AudioSource从当前播放的SFX逐渐过渡到指定SFX
         public void FadeInAndOutSFX(AudioSource targetSource, string sfxKey, float maxVolume, float duration, float fadeIn, float fadeOut) =>
@@ -367,5 +418,38 @@ namespace SimpleAudioSystem
             if (StopOnFadeOut && source.volume == 0) source.Stop();
         }
         #endregion
+
+        internal class SFXHandler
+        {
+            private AudioSource source;
+            public string sfxKey{ get; private set; }
+            public float volume
+            {
+                get => source.volume;
+                set => source.volume = value;
+            }
+            public bool isPlaying => source.isPlaying;
+
+            public SFXHandler(AudioSource source, string sfxKey, float volume = 1)
+            {
+                this.sfxKey = sfxKey;
+                this.source = source;
+                this.source.volume = volume;
+                source.loop = true;
+            }
+            public void SetMixer(AudioMixerGroup group)
+            {
+                source.outputAudioMixerGroup = group;
+            }
+            public AudioClip PlaySFX(string sfxKey)
+            {
+                this.sfxKey = sfxKey;
+                return AudioManager.Instance.PlaySFXLoop(source, sfxKey, volume, 0);
+            }
+            public void Stop()
+            {
+                source.Stop();
+            }
+        }
     }
 }

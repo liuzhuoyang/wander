@@ -1,3 +1,4 @@
+using SimpleAudioSystem;
 using UnityEngine;
 
 public class AudioHandlerBase : MonoBehaviour
@@ -9,7 +10,7 @@ public class AudioHandlerBase : MonoBehaviour
     {
         if(!string.IsNullOrEmpty(audioAwake))
         {
-            AudioControl.Instance.PlaySFX(audioAwake);
+            AudioManager.Instance.PlaySFX(audioAwake);
         }
     }
 }
