@@ -220,17 +220,15 @@ public class Game : Singleton<Game>
         UIMain.Instance.OnModeUI("battle");
         HeaderControl.OnHide();
         FooterControl.OnHide();
-        BattleSystem.Instance.BattleStart();
+        BattleSystem.Instance.OnChangeBattleState(BattleStates.BattleStart);
     }
 
     void Battle_Exit()
     {
         HeaderControl.OnShow();
         FooterControl.OnShow();
-        BattleSystem.Instance.BattleEnd();
+        BattleSystem.Instance.OnChangeBattleState(BattleStates.BattleEnd);
     }
-
-  
     public void OnChangeState(GameStates s)
     {
         fsm.ChangeState(s);
