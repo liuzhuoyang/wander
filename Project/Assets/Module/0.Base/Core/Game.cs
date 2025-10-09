@@ -37,10 +37,13 @@ public class Game : Singleton<Game>
         Debug.Log("=== Game: game started ===");
         if (GameData.userData.userProgress.isFirstGame)
         {
-            // GameData.userData.userProgress.isFirstGame = false;
-            // OnChangeState(GameStates.Home);
-            //直接开始第0关
+            GameData.userData.userProgress.isFirstGame = false;
+
+            //如果第一次进入游戏，可能需要进入第0关
             //LevelControl.OnPlayLevel(LevelType.Normal, 0, 0, ChapterMode.Normal);
+
+            //这里还要考虑，根据情况是否需要进入Home
+            OnChangeState(GameStates.Home);
         }
         else
         {
@@ -243,13 +246,6 @@ public class Game : Singleton<Game>
         HeaderControl.OnHide();
         FooterControl.OnHide();
         //SandboxBattleSystem.Instance.OnSandboxBattleStart();
-    }
-
-    public void OnDebugBattleExit()
-    {
-        HeaderControl.OnShow();
-        FooterControl.OnShow();
-        Home_Enter();
     }
     #endregion
 
