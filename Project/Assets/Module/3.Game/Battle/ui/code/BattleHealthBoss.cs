@@ -41,9 +41,11 @@ public class BattleHealthBoss : MonoBehaviour
             }
         }
         int barLeft = GetHealthBarLeft(shownHealth);
-        barBossHealth.fillAmount = GetHealthRatio(shownHealth);
 
-        barBossHealth.color = UtilityColor.Instance.GetHealthBarColor(UtilityColor.Instance.LoopHealthBarIndex(barLeft));
+        //会报错
+        //barBossHealth.fillAmount = GetHealthRatio(shownHealth);
+
+        //barBossHealth.color = UtilityColor.Instance.GetHealthBarColor(UtilityColor.Instance.LoopHealthBarIndex(barLeft));
         if (barLeft <= 1)
         {
             healthBackground.color = Color.clear;
