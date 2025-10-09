@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: battle_gear_201_drone_base
+  m_Controller: {fileID: 9100000, guid: 320b077d3949e420da602c54e60e77cd, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: e069d2686234e4e0ebca3a21aab06530, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 31e7954dcc4bc374db9a8cfa97b1e5aa, type: 2}

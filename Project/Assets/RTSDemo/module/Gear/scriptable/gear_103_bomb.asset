@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b68902275115b9e439f931729f1406b7, type: 3}
+  m_Name: gear_103_bomb
+  m_EditorClassIdentifier: 
+  gearShape: 3
+  placeOffset: {x: 0.5, y: 0}
+  attackSpeed: 2
+  attackRange: 5
+  damageElement: 0
+  penetrateArmor: 0
+  baseDamage: 16
+  damageMultiToBuilding: 0
+  damageMultiToShield: 0
+  criticRate: 0
+  criticDamageMultiplier: 0
+  gearPrefab:
+    m_AssetGUID: c8703be7b59d3b64591d2d38dd347dd0
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  gearAbilites:
+  - {fileID: 11400000, guid: 0577b1ca652e4c94593b08c68a584fa9, type: 2}
+  vfx_gearBeginFire: {fileID: 11400000, guid: a62083d6bc0330f4d974035430dd82ad, type: 2}
+  sfx_gearBeginFire: {fileID: 11400000, guid: 76b09bf2cd333e645bfae3994b8826cc, type: 2}
+  launchConfig_SO: {fileID: 11400000, guid: 76cd324ac79e91d43a95844f7beb6bbb, type: 2}

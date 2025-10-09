@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1387470894254359993
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3040135061954914634, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867164432066942701, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404576239978636653, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: nodeCost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249930124207319681, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_Name
+      value: map_basement
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7031503
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6249465798634559253, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1057640289
+      objectReference: {fileID: 0}
+    - target: {fileID: 7702684061190915573, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}
+      propertyPath: nodeCost
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b7fe9ba9df11c8c42b279c043fcf5400, type: 3}

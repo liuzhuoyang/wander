@@ -38,9 +38,9 @@ public class MapNodeDebugView : MonoBehaviour
 
     public void OnRefresh()
     {   
-        NodeArgs args = FlowFieldControl.Instance.flowField.nodeArray[x, y];
+        // NodeArgs args = FlowFieldControl.Instance.flowField.nodeArray[x, y];
         //MapNodeArgs args = MapNodeControl.Instance.GetNodeByXY(x, y);
-        SetIntegration(args.bestCost);
+        // SetIntegration(args.bestCost);
 
         objArrow.SetActive(true);
         objStop.SetActive(false);
@@ -48,7 +48,7 @@ public class MapNodeDebugView : MonoBehaviour
         objBlock.SetActive(false);
         objBase.SetActive(false);
 
-        NodeArgs nodeArgs = FlowFieldControl.Instance.flowField.nodeArray[x,y]; //(this.transform.position);
+        NodeArgs nodeArgs = MapNodeControl.Instance.GetNodeFromXY(x,y); //(this.transform.position);
         Vector3 moveDirection = new Vector3(nodeArgs.bestDirection.Vector.x, 0, nodeArgs.bestDirection.Vector.y);
         
         // 找到箭头对象

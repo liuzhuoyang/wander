@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: unit_animator_zreep_boss_phase2
+  m_Controller: {fileID: 9100000, guid: 76ffaaecd4a0d436585da7b9643f773e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a653b51bef4ef4e05ac9550fccd47267, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3b7055e8124f864dbfeaa90cf1348c4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 285b6258f40094d8f92eea9b2aa503d4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 844b15b5c7b9040448029675cf1fd499, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d9b40974cdbfb5f41a71294ebc733060, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2086abd6c5dcecf409f819d85a4e3eb7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ca0493591f33841a2bffe87fd6cae9b0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3e75076b078ae340b562928c100affd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 23bd77f26c0ab4076bf1709392bd8e84, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8a4d9c458aa05634eab48adaa83148a0, type: 2}

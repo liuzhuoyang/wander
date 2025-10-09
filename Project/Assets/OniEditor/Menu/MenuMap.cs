@@ -124,7 +124,7 @@ namespace onicore.editor
             //存入EditorData，用作编辑时期全局访问使用
             EditorData.currentLevelAsset = levelAsset;
 
-            await MapControl.Instance.OpenLevel(levelArgs, true);
+            // await MapControl.Instance.OpenLevel(levelArgs, true);
         }
 
         [ShowIf("toggleInit")]
@@ -157,7 +157,7 @@ namespace onicore.editor
         [ShowIf("toggleInit")]
         public void OnMapTool()
         {
-            EditMapTool.OpenWindow();
+            // EditMapTool.OpenWindow();
         }
 
         [BoxGroup("BoxTool", Order = 10)]
@@ -165,7 +165,7 @@ namespace onicore.editor
         [ShowIf("toggleInit")]
         public void OnTerrainTool()
         {
-            EditTerrainTool.OpenWindow();
+            // EditTerrainTool.OpenWindow();
         }
 
     }

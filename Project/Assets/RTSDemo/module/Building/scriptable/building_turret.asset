@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a01dc032aa26004ca6906f195f9178b, type: 3}
+  m_Name: building_turret
+  m_EditorClassIdentifier: 
+  actorKey: building_turret
+  maxLevel: 1000
+  healthRange: {x: 100, y: 1000}
+  shieldRange: {x: 0, y: 0}
+  penetrateArmor: 0
+  attackRange: 10
+  damageType: 0
+  damageRange: {x: 10, y: 100}
+  damageMultiToBuilding: 0
+  damageMultiToShield: 0
+  criticRate: 0
+  criticDamageMultiplier: 0
+  attackSpeed: 1
+  bodyRef:
+    m_AssetGUID: 694a9bc66f9076642bb3a7c0274a2963
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  _bodyRef: building_turret
+  globalProduceSpeed: 1
+  productionList: []
+  launchConfigs: {fileID: 11400000, guid: 76cd324ac79e91d43a95844f7beb6bbb, type: 2}

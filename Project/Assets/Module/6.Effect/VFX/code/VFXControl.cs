@@ -4,24 +4,8 @@ using UnityEngine;
 
 public class VFXControl : Singleton<VFXControl>
 {
-  //记录与管理vfx对象池
-  VFXPoolManager vfxPoolManager;
-  //记录与管理Particles对象
-  VFXParticleManager vfxParticleManager;
-  //UI显示层，调用过多，避免去使用UI的事件框架，直接存引用来使用
   UIVFX uiViewVFX;
-  // #if DEVELOPMENT_BUILD || UNITY_EDITOR
-  public bool ForceNoVFX = false;
-  // #endif
 
-
-  //初始化
-  public void Init()
-  {
-    uiViewVFX = UIVFX.Instance;
-    vfxPoolManager = gameObject.AddComponent<VFXPoolManager>();
-    vfxParticleManager = gameObject.AddComponent<VFXParticleManager>();
-  }
 /*
   #region 创建世界坐标VFX
   public GameObject OnCreateVFX(Vector2 startPos, string vfxName, float angle = 0)
