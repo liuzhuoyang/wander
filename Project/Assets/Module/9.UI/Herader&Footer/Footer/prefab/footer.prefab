@@ -2171,6 +2171,7 @@ GameObject:
   - component: {fileID: 5719904968489455312}
   - component: {fileID: 4170261063881930673}
   - component: {fileID: 3786539294153547425}
+  - component: {fileID: 5112422685224659866}
   m_Layer: 5
   m_Name: tab_gear
   m_TagString: Untagged
@@ -2358,6 +2359,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   featureType: 2
   featureLockType: 1
+--- !u!114 &5112422685224659866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6467734617851744753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b45ccfae72a44eab19ace39df49aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: e1b46ce7eac9d42e79dc84ce42ddc14b, type: 2}
 --- !u!1 &6576968832839080464
 GameObject:
   m_ObjectHideFlags: 0

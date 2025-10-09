@@ -41,7 +41,7 @@ public static class FeatureUtility
         {
             case FeatureUnlockConditionType.None:
                 return true;
-            case FeatureUnlockConditionType.Progress:
+            case FeatureUnlockConditionType.Level:
                 bool isUnlock = GameData.userData.userLevel.levelProgressMain.levelIndex >= featureData.unlockLevelID; 
                 return isUnlock;
 

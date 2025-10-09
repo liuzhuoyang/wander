@@ -47,7 +47,7 @@ public class FeatureData : ScriptableObject
     public FeatureUnlockConditionType unlockConditionType;
 
     [BoxGroup("Unlock")]
-    [ShowIf("unlockConditionType", FeatureUnlockConditionType.Progress)]
+    [ShowIf("unlockConditionType", FeatureUnlockConditionType.Level)]
     public int unlockLevelID;
 
 #if UNITY_EDITOR

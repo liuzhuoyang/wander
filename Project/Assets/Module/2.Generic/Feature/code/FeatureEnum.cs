@@ -68,6 +68,6 @@ public enum FeatureLockType
 public enum FeatureUnlockConditionType
 {
     None        = 0,
-    Progress    = 1, //进度
+    Level    = 1, //进度
     Coming      = 99, //即将
 }
