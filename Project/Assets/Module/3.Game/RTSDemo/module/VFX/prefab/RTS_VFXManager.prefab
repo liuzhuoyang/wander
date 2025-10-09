@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580045001096856459}
-  - component: {fileID: 6036528812056653866}
+  - component: {fileID: 8023283415301672557}
   m_Layer: 0
   m_Name: RTS_VFXManager
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6036528812056653866
+--- !u!114 &8023283415301672557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5306898750596224420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de7b9b1a6a745c741add3f6f576e9f1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 252614f0c61674894b1dc526dd256902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   vfxDataCollection: {fileID: 11400000, guid: 46d93d24219f91240a21cb2d9748e3cf, type: 2}
