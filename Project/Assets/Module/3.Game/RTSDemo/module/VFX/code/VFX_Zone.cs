@@ -26,6 +26,7 @@ public class VFX_Zone : VFXMono
             zoneParticle.Stop();
         }
     }
+    //Unity Function, called when particle stop playing
     void OnParticleSystemStopped()
     {
         VFXEnd();

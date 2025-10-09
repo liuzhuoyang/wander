@@ -44,7 +44,6 @@ public class GameDataCollectionBase : ScriptableObject
         return path.Replace("asset", "audio");
     }
     #endif
-    
 }
 
 

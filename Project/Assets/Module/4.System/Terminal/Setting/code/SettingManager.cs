@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;
 using System;
+using SimpleAudioSystem;
 //using TGame;
 
 public class SettingManager : Singleton<SettingManager>
@@ -39,9 +40,9 @@ public class SettingManager : Singleton<SettingManager>
         Refresh();
 
         if (isSoundOn == 1)
-            AudioControl.Instance.UnMuteSound();
+            AudioManager.Instance.UnMuteSFX();
         else
-            AudioControl.Instance.MuteSound();
+            AudioManager.Instance.MuteSFX();
     }
 
     //音乐
@@ -53,9 +54,9 @@ public class SettingManager : Singleton<SettingManager>
         Refresh();
 
         if (isMusicOn == 1)
-            AudioControl.Instance.UnMuteMusic();
+            AudioManager.Instance.UnMuteMusic();
         else
-            AudioControl.Instance.MuteMusic();
+            AudioManager.Instance.MuteMusic();
     }
 
     //推送同志

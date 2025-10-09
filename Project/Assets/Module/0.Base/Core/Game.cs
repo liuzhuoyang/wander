@@ -4,6 +4,7 @@ using System;
 using UnityEngine.SceneManagement;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using SimpleAudioSystem;
 
 
 public class Game : Singleton<Game>
@@ -201,7 +202,8 @@ public class Game : Singleton<Game>
         //刷新战力
         //PowerSystem.Instance.OnTotalPowerChanged();
         //播放Lobby背景音乐
-        AudioControl.Instance.PlayBGM("bgm_lobby");
+        
+        AudioManager.Instance.PlayBGM("bgm_lobby");
 
         //每次回到大厅，必定要执行一次读取广告
         AdControl.Instance.LoadAD();

@@ -14,17 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: module_audio
   m_GUID: 6e023005050224ff3ad0363290f4b3d2
-  m_SerializeEntries:
-  - m_GUID: 2af008dd4cebb4227a0f01a4e96d8ba5
-    m_Address: audio
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b22d56ecb11ecc24893b3dfbbc1803f5
-    m_Address: all_audio
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
   m_SchemaSet:

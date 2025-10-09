@@ -15,16 +15,6 @@ MonoBehaviour:
   m_GroupName: module_audio_bgm
   m_GUID: bbe1ca786c3b94677b615e8ce6c33730
   m_SerializeEntries:
-  - m_GUID: 458054e58b2e64c2eb637faff6f262d8
-    m_Address: bgm_battle_theme_001
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5ace355862090440f9c968faa6eaffb9
-    m_Address: bgm_lobby
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b158e8accdbcc947856d0ae97912758
     m_Address: bgm_pvebattle_boss_1
     m_ReadOnly: 0

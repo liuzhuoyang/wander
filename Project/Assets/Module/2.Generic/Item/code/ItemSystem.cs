@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using SimpleAudioSystem;
 
 public class ItemSystem : Singleton<ItemSystem>
 {
@@ -125,14 +126,41 @@ public class ItemSystem : Singleton<ItemSystem>
             callbackFailed?.Invoke();
         }
     }
-
     void OnCheckUpdateCurrency(List<ItemUsageArgs> listItemUsageArgs)
     {
-        foreach(ItemUsageArgs usageArgs in listItemUsageArgs)
+        foreach (ItemUsageArgs usageArgs in listItemUsageArgs)
         {
-           
+
         }
     }
+    
+    #region 物件表现
+    //物品掉落音效
+    public static void OnPlayItemDropSFX(string itemName)
+    {
+        ItemData itemArgs = AllItem.dictData[itemName];
+        string sfxName = AllItem.dictData[itemName].sfxDrop;
+
+        //没有定义的，都播放item
+        if (string.IsNullOrEmpty(itemArgs.sfxDrop))
+            sfxName = "sfx_item_drop_generic";
+
+        AudioManager.Instance.PlaySFX(sfxName);
+    }
+
+    //物品收集音效
+    public static void OnPlayItemCollectSFX(string itemName)
+    {
+        ItemData itemArgs = AllItem.dictData[itemName];
+        string sfxName = AllItem.dictData[itemName].sfxCollect;
+
+        //没有定义的，都播放item
+        if (string.IsNullOrEmpty(itemArgs.sfxCollect))
+            sfxName = "sfx_item_collect_generic";
+
+        AudioManager.Instance.PlaySFX(sfxName);
+    }
+    #endregion
 
     #region 清空物件
     /// <summary>

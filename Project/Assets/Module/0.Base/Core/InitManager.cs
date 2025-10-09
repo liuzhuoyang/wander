@@ -25,16 +25,6 @@ public class InitManager : Singleton<InitManager>
         
         #endregion
 
-        //创建Audio音效管理器
-        GameObject audio = Instantiate(await GameAsset.GetPrefabAsync("audio"));
-        audio.name = "[Audio]";
-        audio.GetComponent<AudioControl>().Init();
-
-        //创建Input输入管理器
-        GameObject input = new GameObject("[Input]");
-        input.AddComponent<InputControl>().Init();
-        input.AddComponent<BattleInputControl>().Init();
-
         // //创建VFX特效管理器
         // GameObject vfx = new GameObject("[VFX]");
         // vfx.AddComponent<VFXControl>().Init();
