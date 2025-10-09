@@ -130,70 +130,24 @@ namespace SimpleVFXSystem
         }
         #endregion
 
-        #region UI特效管理
-        //创建UI飞行物，并使用reward名称寻找目标点
-        // public void OnUIFlyerVFX(string rewardName, Vector2 spawnPos, float scale = 1, bool isWorldSpace = false, float delay = 0.8f)
-        // {
-        //   Vector2 targetPos = DynamicControl.Instance.GetDynamicTargetPosition(rewardName);
-        //   OnUIFlyerVFX(rewardName, targetPos, spawnPos, scale, isWorldSpace, delay);
-        // }
-        // //单个创建UI飞行物VFX，但另外使用动态类型查找目标
-        // public void OnUIFlyerVFX(string rewardName, DynamicTriggerType triggerType, Vector2 spawnPos, float scale = 1, bool isWorldSpace = false, float delay = 0.8f)
-        // {
-        //   Vector2 targetPos = DynamicControl.Instance.GetDynamicTargetPosition(triggerType);
-        //   OnUIFlyerVFX(rewardName, targetPos, spawnPos, scale, isWorldSpace, delay);
-        // }
+        public void OnVFXFlayerBatchUI(List<RewardArgs> listRewardArgs)
+        {
+            UIVFX.Instance.OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
+            {
+                listReward = listRewardArgs,
+            });
+        }
 
-        // void OnUIFlyerVFX(string rewardName, Vector2 _targetPos, Vector2 spawnPos, float scale, bool isWorldSpace, float delay)
-        // {
-        //   uiViewVFX.OnUIFlyerVFX(new UIVFXFlyerArgs()
-        //   {
-        //     rewardName = rewardName,
-        //     spawmPos = spawnPos,
-        //     isWorldSpaceSpawn = isWorldSpace,
-        //     targetPos = _targetPos,
-        //     scale = scale,
-        //     delay = delay
-        //   });
-        // }
-
-        // //跳跃消失
-        // public void OnUIJumpVFX(string targetName, Vector2 pos, float scale = 1, float force = 1, float life = 1, bool isWorldSpace = false)
-        // {
-        //   uiViewVFX.OnUIJumpVFX(new UIVFXJumpArgs()
-        //   {
-        //     target = targetName,
-        //     pos = pos,
-        //     scale = scale,
-        //     force = force,
-        //     life = life,
-        //     isWorldSpace = isWorldSpace
-        //   });
-        // }
-
-        //批量创建UI飞行物VFX
-        //使用场景：
-        //1. 领取金币，因为金币数量通常比较多，会创建一堆金币散落到屏幕，然后金币飞到目标ui位置
-        // public void OnVFXFlayerBatch(List<RewardArgs> listRewardArgs)
-        // {
-        //   //ActingSystem.Instance.OnActing();
-        //   uiViewVFX.OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
-        //   {
-        //     listReward = listRewardArgs,
-        //   });
-        // }
-
-        // public void OnUIVFX(string targetName, Vector2 pos)
-        // {
-        //   var args = GameData.allVFX.vfxDict[targetName];
-        //   uiViewVFX.OnVfxUI(new UIVFXArgs()
-        //   {
-        //     target = args.vfxName,
-        //     posX = pos.x,
-        //     posY = pos.y,
-        //     life = args.life
-        //   });
-        // }
-        #endregion
+        public void OnUIVFX(string targetName, Vector2 pos)
+        {
+            var args = AllVFX.dictData[targetName];
+            UIVFX.Instance.OnVFXUI(new UIVFXArgs()
+            {
+            target = args.vfxName,
+            posX = pos.x,
+            posY = pos.y,
+            life = args.life
+            });
+        }
     }
 }

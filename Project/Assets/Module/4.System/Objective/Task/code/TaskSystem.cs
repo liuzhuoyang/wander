@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using SimpleVFXSystem;
 using UnityEngine;
 
 public class TaskSystem : Singleton<TaskSystem>
@@ -84,8 +85,9 @@ public class TaskSystem : Singleton<TaskSystem>
     //     }
     // }
 
-    void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
         // if (taskRegistered)
         // {
         // taskRegistered = false;
@@ -255,7 +257,7 @@ public class TaskSystem : Singleton<TaskSystem>
 
         //播放飞行特效
         // VFXControl.Instance.OnUIFlyerVFX(ConstantItem.TOKEN_TASK, transSlot.transform.position);
-        VFXControl.Instance.OnVFXFlayerBatchUI(new List<RewardArgs>() { new RewardArgs() { reward = ConstantItem.POINT_TASK, num = rewardNum } });
+        VFXManager.Instance.OnVFXFlayerBatchUI(new List<RewardArgs>() { new RewardArgs() { reward = ConstantItem.POINT_TASK, num = rewardNum } });
 
         GameData.userData.userTask.dictUserTask[taskName].isClaim = true;
         OnRefresh();

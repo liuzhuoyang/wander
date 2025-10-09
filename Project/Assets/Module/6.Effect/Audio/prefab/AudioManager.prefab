@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e01d2161ebe3a240abc021f70f08d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioDataCollection: {fileID: 11400000, guid: 6921b0672252d724eba8d2c9d71eb169, type: 2}
+  audioDataCollection: {fileID: 11400000, guid: ef17e145782a13b47b1674217f7d67f9, type: 2}
   ambience_loop: {fileID: 5275165435782480257}
   music_loop: {fileID: 5275165436332487226}
   sfx_default: {fileID: 7917478375884381713}

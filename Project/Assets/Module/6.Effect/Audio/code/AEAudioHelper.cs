@@ -10,7 +10,7 @@ namespace SimpleAudioSystem
         public float audioStep;
         public float volumeScale;
     }
-    public class AE_AudioHelper : MonoBehaviour
+    public class AEAudioHelper : MonoBehaviour
     {
         [SerializeField, Range(0, 1)] private float overallVolume = 1f;
         [SerializeField] private SFXInfo[] audioArray;

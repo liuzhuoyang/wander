@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using System;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
-using TMPro;
+
 using ObjectPool;
+using SimpleVFXSystem;
 
 //UI特效的现实层组件
 //使用场景：
@@ -17,7 +15,7 @@ public class UIVFX : Singleton<UIVFX>
     public GameObject prefabFlyer;
 
     //常规ui特效，播放一次
-    public void OnVfxUI(UIVFXArgs args)
+    public void OnVFXUI(UIVFXArgs args)
     {
         GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
         go.transform.position = new Vector2(args.posX, args.posY);
@@ -94,7 +92,7 @@ public class UIVFX : Singleton<UIVFX>
                         .OnComplete(() =>
                         {
                             ItemSystem.OnPlayItemCollectSFX(rewardName);
-                            VFXControl.Instance.OnUIVFX("vfx_ui_shared_impact_generic_001", targetPosition);
+                            VFXManager.Instance.OnUIVFX("vfx_ui_shared_impact_generic_001", targetPosition);
                             PoolManager.Instance.Release("vfx_ui_flyer", go);
                         });
                 });

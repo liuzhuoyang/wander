@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using System;
@@ -14,15 +12,10 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
     public Material fontMaterialTitle;
     public Material fontMaterialContent; 
 
-    Dictionary<string, GameObject> unitPrefabDict; //单位预制体
-    Dictionary<string, GameObject> bulletPrefabDict; //子弹预制体
-    Dictionary<string, GameObject> dynamicPrefabDict; //动态预制体
-
     public async UniTask Init()
     {
         await InitFont();
         await InitVFXAsset(); //后续可优化放到动态加载里
-        await InitAudioAsset();
         return;
     }
 
@@ -57,31 +50,6 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
             fallbackFont.ClearFontAssetData(true);
         }
     }
-
-    public GameObject GetUnitPrefab(string prefabName)
-    {
-        return unitPrefabDict[prefabName];
-    }
-
-    #region Audio资源
-    Dictionary<string, AudioClip> sfxClipDict; //音效剪辑
-    public AudioClip GetAudioClip(string sfxName)
-    {
-        return sfxClipDict[sfxName];
-    }
-
-    async UniTask InitAudioAsset()
-    {
-        sfxClipDict = new Dictionary<string, AudioClip>();
-        await LoadAsset(AllAudio.dictSFX.Values, args => LoadSFXAudioClip(args));
-    }
-
-    async UniTask LoadSFXAudioClip(string sfxName)
-    {
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(sfxName);
-        sfxClipDict.Add(sfxName, clip);
-    }
-    #endregion
 
     #region 读取VFX资源
     Dictionary<string, GameObject> vfxPrefabDict; //特效预制体

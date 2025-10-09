@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f514ad02a31b1418685cab8c492e0fcc, type: 3}
-  m_Name: bgm_battle_theme_001
+  m_Script: {fileID: 11500000, guid: 437331f2d273f754cb6d1fb742323b0b, type: 3}
+  m_Name: AudioDataCollection
   m_EditorClassIdentifier: 
-  clipName: bgm_battle_theme_001
+  bgm_list: []
+  amb_list: []
+  sfx_list: []
+  sfx_group_list: []
