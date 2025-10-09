@@ -28,6 +28,7 @@ MonoBehaviour:
   listGameDataMeta:
   - {fileID: 11400000, guid: 8fde8a77fac284870bb512508a79f1e5, type: 2}
   - {fileID: 11400000, guid: 8e3cb70c507014e0489b77628046250c, type: 2}
+  - {fileID: 11400000, guid: 56f14a5b5719a4aa48bf5cb7ca4bea45, type: 2}
   listGameDataLevel:
   - {fileID: 11400000, guid: 447306ffd6ce6477a8fddba601273ec2, type: 2}
   listGameDataObejctive:
