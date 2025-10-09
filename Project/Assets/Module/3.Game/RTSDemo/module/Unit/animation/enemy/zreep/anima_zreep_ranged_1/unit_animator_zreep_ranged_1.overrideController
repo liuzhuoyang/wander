@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: unit_animator_zreep_ranged_1
+  m_Controller: {fileID: 9100000, guid: 76ffaaecd4a0d436585da7b9643f773e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 23bd77f26c0ab4076bf1709392bd8e84, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 897759f048fad41b7a3ed868d7a4a195, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a653b51bef4ef4e05ac9550fccd47267, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7955a89f435e64d3dbf27c0140326785, type: 2}

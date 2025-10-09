@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b64917ade8828478611570cb6f0151, type: 3}
+  m_Name: status_unit_speed_3s
+  m_EditorClassIdentifier: 
+  buffTag: 4
+  immuneTag: 0
+  isPermanent: 0
+  durtaion: 3
+  attributeModifier:
+    modifier: 2
+    attributeModifyType: 2
+    attributeType: 3
+  statusVFX: {fileID: 11400000, guid: fbd80cd9e59fd63438545ae40977ea94, type: 2}

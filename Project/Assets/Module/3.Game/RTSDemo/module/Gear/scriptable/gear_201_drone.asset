@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641cef79904ec1b4fa0e9d31deb9da7b, type: 3}
+  m_Name: gear_201_drone
+  m_EditorClassIdentifier: 
+  gearShape: 2
+  attackSpeed: 1
+  attackRange: 10
+  damageElement: 0
+  penetrateArmor: 0
+  baseDamage: 0
+  damageMultiToBuilding: 0
+  damageMultiToShield: 0
+  criticRate: 0
+  criticDamageMultiplier: 0
+  gearPrefab:
+    m_AssetGUID: 077c0e875e8d183449ce7750e5d90b96
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  gearAbilites: []
+  summonData_SO: {fileID: 11400000, guid: 95b2d5eae579ff9428056a61075bee99, type: 2}

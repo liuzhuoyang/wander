@@ -19,7 +19,7 @@ namespace onicore.editor
         Action<EditTargetArgs> callbackConfirm;
         Action callbackCancel;
 
-        void OnDestroy()
+        protected override void OnDestroy()
         {
             Clear();
             OniEditorUtility.ClearAllSceneViewEvents();

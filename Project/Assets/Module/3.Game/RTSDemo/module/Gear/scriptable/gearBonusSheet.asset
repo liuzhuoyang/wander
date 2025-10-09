@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c007d0c1953355449bed39f6940b1b02, type: 3}
+  m_Name: gearBonusSheet
+  m_EditorClassIdentifier: Assembly-CSharp:BattleGear:GearDamageBonusData_SO
+  gearDamageBonus:
+  - gear: {fileID: 11400000, guid: 260739e7cce91e94f8e176d8ae7c608b, type: 2}
+    levelPowerMulti: 0.01
+    levelMulti: 2
+  - gear: {fileID: 11400000, guid: a9cd8136c48b0aa4ba545937fc09fe05, type: 2}
+    levelPowerMulti: 0.5
+    levelMulti: 10
+  - gear: {fileID: 11400000, guid: 3d02d96e66fcfdd4aa37d53ea84d3a97, type: 2}
+    levelPowerMulti: 0.8
+    levelMulti: 16
+  - gear: {fileID: 11400000, guid: f406191129cd67946accf406f70c0b14, type: 2}
+    levelPowerMulti: 0.8
+    levelMulti: 10
+  - gear: {fileID: 11400000, guid: 0918f43ea65bc9649a28eabd2b002d68, type: 2}
+    levelPowerMulti: 0.1
+    levelMulti: 1

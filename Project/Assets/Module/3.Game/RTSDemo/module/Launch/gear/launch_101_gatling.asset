@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9561dfed2d429469b5b8a5e8be8e63, type: 3}
+  m_Name: launch_101_gatling
+  m_EditorClassIdentifier: 
+  launchableData_SO: {fileID: 11400000, guid: a964e49ca75feb646b2b0bffaa70b20e, type: 2}
+  requireTargetToLaunch: 1
+  scanOrder: 2
+  trackTargetIfCan: 0
+  retargetPerLaunch: 0
+  retargetPerCount: 0
+  burstCount: 5
+  burstInterval: 0.1
+  spreadCount: 5
+  spreadAngle: 10

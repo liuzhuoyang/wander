@@ -249,68 +249,68 @@ public static class ReadWrite
     /// <summary>
     /// 创建地图，并写入模版，同时检查路径及下面文件夹内是否有同名文件
     /// </summary>
-    public static void CreateLevelJsonFile(string fileName, LevelRawData templateData)
-    {
-        string directoryPath = EditorPathUtility.levelFilePath;
-        string filePath = Path.Combine(directoryPath, fileName + ".json");
+    // public static void CreateLevelJsonFile(string fileName, LevelRawData templateData)
+    // {
+    //     string directoryPath = EditorPathUtility.levelFilePath;
+    //     string filePath = Path.Combine(directoryPath, fileName + ".json");
 
-        // Ensure the directory exists
-        if (!Directory.Exists(directoryPath))
-        {
-            Directory.CreateDirectory(directoryPath);
-        }
+    //     // Ensure the directory exists
+    //     if (!Directory.Exists(directoryPath))
+    //     {
+    //         Directory.CreateDirectory(directoryPath);
+    //     }
 
-        // Check if the file exists in the directory or any of its subdirectories
-        if (Directory.GetFiles(directoryPath, fileName + ".json", SearchOption.AllDirectories).Any())
-        {
-            Debug.LogError("=== ReadWrite: File already exists at: " + filePath + " ===");
-            return;
-        }
+    //     // Check if the file exists in the directory or any of its subdirectories
+    //     if (Directory.GetFiles(directoryPath, fileName + ".json", SearchOption.AllDirectories).Any())
+    //     {
+    //         Debug.LogError("=== ReadWrite: File already exists at: " + filePath + " ===");
+    //         return;
+    //     }
 
-        // Serialize the template data to JSON
-        string jsonContent = JsonConvert.SerializeObject(templateData, Formatting.Indented);
+    //     // Serialize the template data to JSON
+    //     string jsonContent = JsonConvert.SerializeObject(templateData, Formatting.Indented);
 
-        // Create the file
-        File.WriteAllText(filePath, jsonContent);
-        Debug.Log("=== ReadWrite: File created at: " + filePath + " ===");
+    //     // Create the file
+    //     File.WriteAllText(filePath, jsonContent);
+    //     Debug.Log("=== ReadWrite: File created at: " + filePath + " ===");
 
-        // Refresh the AssetDatabase if you're in the Unity Editor
+    //     // Refresh the AssetDatabase if you're in the Unity Editor
 
-        AssetDatabase.Refresh();
-    }
+    //     AssetDatabase.Refresh();
+    // }
 
     /// <summary>
     /// 保存当前地图数据
     /// </summary>
     public static void OnWriteMapJsonFile(LevelData mapArgs)
     {
-        MapControl.Instance.LevelData.InitEditorMapData();
-        LevelRawData levelData = MapControl.Instance.LevelData;
+        // MapControl.Instance.LevelData.InitEditorMapData();
+        // LevelRawData levelData = MapControl.Instance.LevelData;
 
-        if (!levelData.ValidateMapData()) return;
+        // if (!levelData.ValidateMapData()) return;
 
-        string directoryPath = EditorPathUtility.levelFilePath + levelData.levelType.ToLower() + "/" + levelData.chapterID.ToString("D3") + "/";
-        string filePath = Path.Combine(directoryPath, mapArgs.levelName + ".json");
+        // string directoryPath = EditorPathUtility.levelFilePath + levelData.levelType.ToLower() + "/" + levelData.chapterID.ToString("D3") + "/";
+        // string filePath = Path.Combine(directoryPath, mapArgs.levelName + ".json");
 
-        try
-        {
-            if (File.Exists(filePath))
-            {
-                string jsonContent = JsonConvert.SerializeObject(levelData, Formatting.Indented);
-                File.WriteAllText(filePath, jsonContent);
-                Debug.Log("=== ReadWrite: Map file overwritten: " + filePath + " ===");
-            }
-            else
-            {
-                Debug.LogError("=== ReadWrite: No file found to overwrite: " + filePath + " ===");
-            }
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("=== ReadWrite: Error writing map file: " + ex.Message + " ===");
-        }
+        // try
+        // {
+        //     if (File.Exists(filePath))
+        //     {
+        //         string jsonContent = JsonConvert.SerializeObject(levelData, Formatting.Indented);
+        //         File.WriteAllText(filePath, jsonContent);
+        //         Debug.Log("=== ReadWrite: Map file overwritten: " + filePath + " ===");
+        //     }
+        //     else
+        //     {
+        //         Debug.LogError("=== ReadWrite: No file found to overwrite: " + filePath + " ===");
+        //     }
+        // }
+        // catch (Exception ex)
+        // {
+        //     Debug.LogError("=== ReadWrite: Error writing map file: " + ex.Message + " ===");
+        // }
 
-        EditorUtility.DisplayDialog("成功", "地图保存完成", "ok");
+        // EditorUtility.DisplayDialog("成功", "地图保存完成", "ok");
     }
 #endif
 }

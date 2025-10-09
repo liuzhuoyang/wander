@@ -35,9 +35,9 @@ public class InitManager : Singleton<InitManager>
         input.AddComponent<InputControl>().Init();
         input.AddComponent<BattleInputControl>().Init();
 
-        //创建VFX特效管理器
-        GameObject vfx = new GameObject("[VFX]");
-        vfx.AddComponent<VFXControl>().Init();
+        // //创建VFX特效管理器
+        // GameObject vfx = new GameObject("[VFX]");
+        // vfx.AddComponent<VFXControl>().Init();
     }
 
     #region 初始化阶段1: 读取CSV表数据，创建initmanager
@@ -75,16 +75,16 @@ public class InitManager : Singleton<InitManager>
         manager.AddComponent<PopupManager>().Init();
         manager.AddComponent<TipManager>().Init();
         manager.AddComponent<TooltipManager>().Init();
-        manager.AddComponent<PoolManager>().Init();
+        // manager.AddComponent<PoolManager>().Init();
         //manager.AddComponent<RateManager>().Init();
         manager.AddComponent<SettingManager>().Init();
         manager.AddComponent<TokenManager>().Init();
         manager.AddComponent<VersionManager>().Init();
 
-        GameObject map = new GameObject("[Map]");
-        map.AddComponent<MapControl>().Init();
+        // GameObject map = new GameObject("[Map]");
+        // map.AddComponent<MapControl>().Init();
 
-        GameObject control = new GameObject("[Control]");
+        // GameObject control = new GameObject("[Control]");
 
         GameObject gameSaver = new GameObject("[GameSaver]");
         gameSaver.AddComponent<GameSaver>().Init();
