@@ -45,6 +45,7 @@ namespace SimpleAudioSystem
             {
                 amb_dict.Add(item.name, item);
             }
+            
             foreach (var item in sfx_list)
             {
                 sfx_dict.Add(item.name, item);
@@ -78,7 +79,8 @@ namespace SimpleAudioSystem
 
             bgm_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("bgm"));
             amb_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("amb"));
-            sfx_list = GetDataFromPath<AudioData_SO>("Assets");
+            sfx_list = GetDataFromPath<AudioData_SO>("Assets").FindAll(a=>a is not AudioGroupData_SO);
+
             sfx_group_list = GetDataFromPath<AudioGroupData_SO>("Assets");
 
             EditorUtility.SetDirty(this);

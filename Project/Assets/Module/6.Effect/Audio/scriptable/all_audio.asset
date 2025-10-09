@@ -28,6 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c4d8eb426daeb4479e1c995fc171453, type: 2}
   - {fileID: 11400000, guid: c77f72c74071d614ab25d7e06ab7493c, type: 2}
   - {fileID: 11400000, guid: 76b09bf2cd333e645bfae3994b8826cc, type: 2}
-  - {fileID: 11400000, guid: 5f3ff059a6f4a96468efc834944b0d96, type: 2}
   sfx_group_list:
   - {fileID: 11400000, guid: 5f3ff059a6f4a96468efc834944b0d96, type: 2}
