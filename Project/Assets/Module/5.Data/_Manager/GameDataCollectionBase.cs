@@ -38,6 +38,11 @@ public class GameDataCollectionBase : ScriptableObject
     {
         return path.Replace("asset", "loc");
     }
+
+    public string GetAudioPath()
+    {
+        return path.Replace("asset", "audio");
+    }
     #endif
     
 }

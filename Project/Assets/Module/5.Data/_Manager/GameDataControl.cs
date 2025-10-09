@@ -48,5 +48,12 @@ public class GameDataControl : MonoBehaviour
         gameDataControl.Init();
         return gameDataControl.dictGameData[dataName].GetLocPath();
     }
+
+    public static string GetAudioPath(string dataName)
+    {
+        GameDataCollection gameDataControl = AssetsFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
+        gameDataControl.Init();
+        return gameDataControl.dictGameData[dataName].GetAudioPath();
+    }
 #endif
 }

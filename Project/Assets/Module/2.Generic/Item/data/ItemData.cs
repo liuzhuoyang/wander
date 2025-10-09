@@ -141,12 +141,19 @@ public class ItemData : ScriptableObject
     }
     #endregion
 
-    #region 音效
-    public List<string> GetSFXNameList()
+    #region Odin辅助
+    void OnDisplayNameChanged()
+    {
+        //更新预览名字
+        string path = GameDataControl.GetLocPath("all_item");
+        previewDisplayname = LocalizationDataCollection.GetValue(displayName);
+    }
+
+    List<string> GetSFXNameList()
     {
         List<string> listKey = new List<string>();
         listKey.Add("");
-        string path = GameDataControl.GetAssetPath("all_audio");
+        string path = GameDataControl.GetAudioPath("all_item");
         List<AudioData> asset = AssetsFinder.FindAllAssetsOfAllSubFolders<AudioData>(path);
         foreach (AudioData item in asset)
         {
@@ -154,15 +161,6 @@ public class ItemData : ScriptableObject
             listKey.Add(item.clipName);
         }
         return listKey;
-    }
-    #endregion
-
-    #region Odin辅助
-    void OnDisplayNameChanged()
-    {
-        //更新预览名字
-        string path = GameDataControl.GetLocPath("all_item");
-        previewDisplayname = LocalizationDataCollection.GetValue(displayName);
     }
 
     void OnInfoChanged()
