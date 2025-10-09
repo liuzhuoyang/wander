@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1580045001096856459}
   - component: {fileID: 6036528812056653866}
   m_Layer: 0
-  m_Name: VFXManager
+  m_Name: RTS_VFXManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7b9b1a6a745c741add3f6f576e9f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vfxDataCollection: {fileID: 0}
+  vfxDataCollection: {fileID: 11400000, guid: 46d93d24219f91240a21cb2d9748e3cf, type: 2}

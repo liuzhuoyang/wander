@@ -29,7 +29,7 @@ namespace RTSDemo.Game
             var gear = Instantiate(gearManager).GetComponent<GearManager>();
             var vfx = Instantiate(vfxManager).GetComponent<VFXManager>();
 
-            List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
+            List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init()};
             await UniTask.WhenAll(loadingTask);
         }
     }

@@ -139,10 +139,6 @@ MonoBehaviour:
   PlayDeathAnimation: 0
   animationRoot: {fileID: 3487910895932549553}
   animator: {fileID: 2587399495464402299}
-  aimTowardsTarget: 0
-  aimBody: {fileID: 0}
-  alignAttackDirSpeed: 5
-  aimResetTime: 0.25
   launchPoint: {fileID: 0}
   isBoss: 0
   ignoreFlash:
@@ -445,8 +441,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -978936723
-  m_SortingLayer: -3
+  m_SortingLayerID: 863842557
+  m_SortingLayer: -2
   m_SortingOrder: 10
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -468,7 +464,7 @@ SortingGroup:
   m_GameObject: {fileID: 3551499243339124455}
   m_Enabled: 1
   m_SortingLayerID: -978936723
-  m_SortingLayer: -3
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_SortAtRoot: 1
 --- !u!1 &4731830292594664322

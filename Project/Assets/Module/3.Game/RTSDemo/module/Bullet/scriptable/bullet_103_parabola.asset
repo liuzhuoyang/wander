@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aimRadius: 0.5
   effectRange: 1
-  vfx_impact: {fileID: 0}
+  vfx_impact: {fileID: 11400000, guid: b20825e7e4bfb48499a06f0d706e0ff4, type: 2}
   sfx_impact: {fileID: 11400000, guid: 5f3ff059a6f4a96468efc834944b0d96, type: 2}
   launchableType: 2
   bulletRef:

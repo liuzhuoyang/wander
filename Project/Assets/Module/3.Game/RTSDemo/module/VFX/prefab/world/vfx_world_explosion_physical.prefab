@@ -4956,7 +4956,7 @@ SortingGroup:
   m_GameObject: {fileID: 3438325669048920114}
   m_Enabled: 1
   m_SortingLayerID: 1023183881
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!1 &4383093469245193912
@@ -9815,7 +9815,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1023183881
+  m_SortingLayerID: -1281857535
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -14724,7 +14724,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1023183881
+  m_SortingLayerID: -1281857535
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -19615,7 +19615,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1023183881
+  m_SortingLayerID: -1281857535
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
@@ -24515,7 +24515,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1023183881
+  m_SortingLayerID: -1281857535
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0

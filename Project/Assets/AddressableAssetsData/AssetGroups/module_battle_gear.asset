@@ -15,11 +15,32 @@ MonoBehaviour:
   m_GroupName: module_battle_gear
   m_GUID: ff5b782e0967e4ba3b851016b7c85e2b
   m_SerializeEntries:
-  - m_GUID: 077c0e875e8d183449ce7750e5d90b96
-    m_Address: Assets/Module/3.Game/RTSDemo/module/Gear/prefab/gear/gear_201_drone.prefab
+  - m_GUID: 0533696b64e98344295ff23d16928145
+    m_Address: icon_gear_101_gatling
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
+    - icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 077c0e875e8d183449ce7750e5d90b96
+    m_Address: gear_201_drone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34dfd36a341424d45815e9aad4202b31
+    m_Address: icon_gear_103_bomb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    - icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52c911cbd3fd18645a48b73ed3db8028
+    m_Address: icon_gear_104_frost
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    - icon
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 691fa36e3a31fef4881818079de0091a
     m_Address: vfx_battle_gear_launch_102_missile_1
@@ -27,7 +48,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 75ccbe424f87d134595f3021bfa96f8e
-    m_Address: Assets/Module/3.Game/RTSDemo/module/Gear/prefab/gear/gear_102_missile.prefab
+    m_Address: gear_102_missile
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
@@ -47,17 +68,31 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6a3d46854eb6d74c8e0834c1dc362dc
+    m_Address: icon_gear_102_missile
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    - icon
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c8703be7b59d3b64591d2d38dd347dd0
-    m_Address: Assets/Module/3.Game/RTSDemo/module/Gear/prefab/gear/gear_103_bomb.prefab
+    m_Address: gear_103_bomb
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cac43ccee42bd464cb064b9d2141e0d2
-    m_Address: Assets/Module/3.Game/RTSDemo/module/Gear/prefab/gear/gear_101_gatling.prefab
+    m_Address: gear_101_gatling
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc800a4c9f17b604fa66453fcb74f9cb
+    m_Address: icon_gear_104_freezemissile
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    - icon
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: df13b6cf7148847fb88cf299b623de60
     m_Address: vfx_battle_gear_launch_101_gatling_1
@@ -68,6 +103,13 @@ MonoBehaviour:
     m_Address: sfx_battle_gear_103_launch
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8bb1ae51142fd449ae48e216d245502
+    m_Address: icon_gear_201_drone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gear
+    - icon
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}

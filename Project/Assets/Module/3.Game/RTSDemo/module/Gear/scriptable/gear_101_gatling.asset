@@ -30,6 +30,6 @@ MonoBehaviour:
     m_SubObjectType: 
     m_EditorAssetChanged: 1
   gearAbilites: []
-  vfx_gearBeginFire: {fileID: 11400000, guid: b1d6807a5ccc2a243b34150693ca7f6e, type: 2}
+  vfx_gearBeginFire: {fileID: 11400000, guid: e95099d91ea799448802aaac3879e40f, type: 2}
   sfx_gearBeginFire: {fileID: 11400000, guid: 5c4d8eb426daeb4479e1c995fc171453, type: 2}
   launchConfig_SO: {fileID: 11400000, guid: 6431e79942830bf4d84288ab5d29e384, type: 2}

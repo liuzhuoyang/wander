@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bcebdcbedae764468a5ca5db465c11e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8dc87834e02b38e4bbcc1984a5f5da6f, type: 3}
   m_Name: all_vfx
   m_EditorClassIdentifier: 
   DataList:
-  - {fileID: 11400000, guid: dfa4cfb6ce27dea4fadedbb51ea46739, type: 2}
-  - {fileID: 11400000, guid: cf5705d866aee1c499cfee1bd57e02a0, type: 2}
-  - {fileID: 11400000, guid: a62083d6bc0330f4d974035430dd82ad, type: 2}
-  - {fileID: 11400000, guid: b1d6807a5ccc2a243b34150693ca7f6e, type: 2}
-  - {fileID: 11400000, guid: fbd80cd9e59fd63438545ae40977ea94, type: 2}
-  - {fileID: 11400000, guid: 95b93fa295ae1184aaa0947f9786a2fc, type: 2}
+  - {fileID: 11400000, guid: 68154668807065640a0e35f1eea82c9c, type: 2}
+  - {fileID: 11400000, guid: b20825e7e4bfb48499a06f0d706e0ff4, type: 2}
+  - {fileID: 11400000, guid: 2937406907c379b4492cec5e67d72dc7, type: 2}
+  - {fileID: 11400000, guid: e95099d91ea799448802aaac3879e40f, type: 2}
+  - {fileID: 11400000, guid: 304afcd7ab6103d46b3ed9cbf1bf34ec, type: 2}
+  - {fileID: 11400000, guid: e8149bb90d015a247856f96633d912e3, type: 2}
+  - {fileID: 11400000, guid: c44904be745accf43ab34e817e957fa1, type: 2}

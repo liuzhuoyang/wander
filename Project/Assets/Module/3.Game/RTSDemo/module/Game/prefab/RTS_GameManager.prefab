@@ -94,4 +94,4 @@ MonoBehaviour:
   buildingManager: {fileID: 5626329598954423740, guid: b7459744fbc91ed4b8a864a3504823bc, type: 3}
   bulletManager: {fileID: 282324518614872755, guid: 95e0452ec452f2343b8835ec023870d2, type: 3}
   gearManager: {fileID: 7059569754194893741, guid: 008a73517c988d044a86feaab9367936, type: 3}
-  vfxManager: {fileID: 5306898750596224420, guid: 64d1af151485fbe48ade6b8a60b77726, type: 3}
+  vfxManager: {fileID: 5306898750596224420, guid: 1fdf0f159a27e9644a5d87a36fe1f718, type: 3}

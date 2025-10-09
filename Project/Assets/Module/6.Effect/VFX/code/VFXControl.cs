@@ -193,13 +193,13 @@ public class VFXControl : Singleton<VFXControl>
 
   public void OnUIVFX(string targetName, Vector2 pos)
   {
-    var args = AllVFX.dictData[targetName];
-    uiViewVFX.OnVfxUI(new UIVFXArgs()
-    {
-      target = args.vfxName,
-      posX = pos.x,
-      posY = pos.y,
-      life = args.life
-    });
+    // var args = AllVFX.dictData[targetName];
+    // uiViewVFX.OnVfxUI(new UIVFXArgs()
+    // {
+    //   target = args.vfxName,
+    //   posX = pos.x,
+    //   posY = pos.y,
+    //   life = args.life
+    // });
   }
 }

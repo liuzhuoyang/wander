@@ -28,8 +28,8 @@ namespace BattleGear
         public readonly float damageMultiToShield => baseGearData.damageMultiToShield;
         public readonly ElementType damageElement => baseGearData.damageElement;
         public readonly GearAbilityData_SO[] gearAbilities => baseGearData.gearAbilites;
-        public readonly string vfx_beginFire => baseGearData.vfx_gearBeginFire.vfxKey;
-        public readonly string sfx_beginFire => baseGearData.sfx_gearBeginFire.name;
+        public readonly string vfx_beginFire => baseGearData.vfx_gearBeginFire?.vfxKey;
+        public readonly string sfx_beginFire => baseGearData.sfx_gearBeginFire?.name;
 
         public GearDynamicArgs(GearData_SO gearData_SO, int level)
         {

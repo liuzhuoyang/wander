@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
   m_Name: unit_zreep_range_2
   m_EditorClassIdentifier: 
-  actorKey: unit_zreep_range_2
   maxLevel: 1000
   healthRange: {x: 100, y: 1000}
   shieldRange: {x: 0, y: 0}
   penetrateArmor: 0
   attackRange: 5
   damageType: 0
-  damageRange: {x: 10, y: 100}
+  attackDamage: {x: 10, y: 100}
   damageMultiToBuilding: 0
   damageMultiToShield: 0
   criticRate: 0
@@ -39,5 +38,5 @@ MonoBehaviour:
     m_SubObjectGUID: 
     m_SubObjectType: 
     m_EditorAssetChanged: 1
-  bulletData: {fileID: 11400000, guid: 1998d8e20af8f2c4e9596d9f75dba5b6, type: 2}
-  _bodyRef: unit_zreep_ranged_2
+  bulletData: {fileID: 11400000, guid: 4844af3dc7f1c5f499589c19cf78bf6d, type: 2}
+  unitAbilites: []

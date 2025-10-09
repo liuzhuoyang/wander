@@ -15,10 +15,22 @@ MonoBehaviour:
   m_GroupName: module_battle_vfx
   m_GUID: 3ba06d0d4578541d9beddc243aad697e
   m_SerializeEntries:
+  - m_GUID: 09711665d678fca4ab6e1bcd6eb6befa
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_zone_cryo.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 133845ec1c949244ab6343c7148ec66f
     m_Address: vfx_battle_ability_explode
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14dd402228095ab4288f31b5cfa3deee
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_launch_smoke.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 216d4261b715148a2a1461dad85d3824
     m_Address: vfx_decal_zreep_death_01
@@ -35,20 +47,50 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5339b402bb3936342aa863faf4f65b1d
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_smoke.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 59053038d3163204099bab5fb1af60b0
     m_Address: vfx_battle_aura_base
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81521fef5a9e0af408c6524cd0f74f99
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_addicon_biochemic.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82d52b2427fbde94f8e258d59584ee21
     m_Address: vfx_battle_aura_electrical
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fb390fd221d1ed4aad939739e79df0d
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_tint_freeze.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9e1a7ac851d149f4ca37c1edc478dab7
     m_Address: vfx_battle_env_cloud
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc48161fb126a9d458389cf3a9f210bf
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_muzzle_projectile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3c1380d9eede3b43ae133bdf4db2a09
+    m_Address: Assets/Module/3.Game/RTSDemo/module/VFX/prefab/world/vfx_world_explosion_physical.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - vfx
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f0358886e6ec3d545b49a3fff17aa056
     m_Address: vfx_battle_ability_invisible_start

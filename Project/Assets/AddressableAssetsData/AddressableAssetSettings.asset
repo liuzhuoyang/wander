@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d4a384778c6f44d3b8a9f774e1b54c0f
   m_currentHash:
     serializedVersion: 2
-    Hash: 483508dfdfb5eaecd19ba1fd7503db5c
+    Hash: bd81f01bc45e1dc23efc6acb5c941a02
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -139,6 +139,7 @@ MonoBehaviour:
     - gear
     - icon
     - building
+    - vfx
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 272e7aa0ab6b2492caf335fe6544327f, type: 2}
