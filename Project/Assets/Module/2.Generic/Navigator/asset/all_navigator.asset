@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478a5ae80e33e4e7094f875c70d6e450, type: 3}
   m_Name: all_navigator
   m_EditorClassIdentifier: 
-  path: 
+  path: Assets/Module/2.Generic/Navigator/asset/
   listItemData:
   - {fileID: 11400000, guid: ad25b5636533d4f0c9446ed14ed5cf6a, type: 2}
