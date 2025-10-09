@@ -25,10 +25,10 @@ namespace SimpleAudioSystem
         private Dictionary<string, AudioRefData_SO> amb_dict;
         private Dictionary<string, AudioData_SO> sfx_dict;
 
-        private const string BGM_DIRECTOR_KEY = "/bgm";
-        private const string AMB_DIRECTOR_KEY = "/amb";
-        private const string SFX_DIRECTOR_KEY = "/sfx";
-        private const string SFX_GROUP_DIRECTOR_KEY = "/sfx_group";
+        // private const string BGM_DIRECTOR_KEY = "/bgm";
+        // private const string AMB_DIRECTOR_KEY = "/amb";
+        // private const string SFX_DIRECTOR_KEY = "/sfx";
+        // private const string SFX_GROUP_DIRECTOR_KEY = "/sfx_group";
 
         void OnEnable()
         {
@@ -76,10 +76,10 @@ namespace SimpleAudioSystem
             string path = AssetDatabase.GetAssetPath(this);
             path = Path.GetDirectoryName(path);
 
-            bgm_list = GetDataFromPath<AudioRefData_SO>(path + BGM_DIRECTOR_KEY);
-            amb_list = GetDataFromPath<AudioRefData_SO>(path + AMB_DIRECTOR_KEY);
-            sfx_list = GetDataFromPath<AudioData_SO>(path + SFX_DIRECTOR_KEY);
-            sfx_group_list = GetDataFromPath<AudioGroupData_SO>(path + SFX_GROUP_DIRECTOR_KEY);
+            bgm_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("bgm"));
+            amb_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("amb"));
+            sfx_list = GetDataFromPath<AudioData_SO>("Assets");
+            sfx_group_list = GetDataFromPath<AudioGroupData_SO>("Assets");
 
             EditorUtility.SetDirty(this);
         }
