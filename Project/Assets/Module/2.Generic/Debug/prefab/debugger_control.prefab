@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7421305522261483891}
   - component: {fileID: 5728567297797186936}
   m_Layer: 5
-  m_Name: btn_debug_battle_merge
+  m_Name: btn_debug_battle_prepare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5F00\u542F\u6218\u6597\u9636\u6BB5Debug\u5DE5\u5177\uFF08\u5408\u6210\uFF09"
+  m_text: "\u5F00\u542F\u6218\u6597\u9636\u6BB5Debug\u5DE5\u5177\uFF08\u51C6\u5907\uFF09"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d0df90e311f42464e8934f2f16de681b, type: 2}
   m_sharedMaterial: {fileID: -6799808272985793459, guid: d0df90e311f42464e8934f2f16de681b, type: 2}
@@ -709,9 +709,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3784831024517943048}
+  - {fileID: 450733396252187965}
   - {fileID: 7393579853947433611}
   - {fileID: 242628591862755397}
-  - {fileID: 450733396252187965}
   - {fileID: 1340973287057193129}
   m_Father: {fileID: 8608511511005227255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

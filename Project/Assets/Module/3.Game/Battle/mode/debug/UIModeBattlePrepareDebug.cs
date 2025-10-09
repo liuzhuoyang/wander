@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 
-public class UIBattleMergeDebug : DebuggerSharedMenu
+public class UIModeBattlePrepareDebug : DebuggerSharedMenu
 {
     public TMP_InputField inputFieldWave;
 

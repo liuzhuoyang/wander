@@ -42,7 +42,7 @@ public class UIModeBattleFight : UIBase
     [SerializeField] GameObject objRedAlert;
 
     [Header("Debug")]
-    public UIBattleDebug uiDebug;
+    public UIModeBattleFightDebug uiDebug;
     [Header("设置按钮")]
     [SerializeField] GameObject btnSetting;
     

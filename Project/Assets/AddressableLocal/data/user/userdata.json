@@ -4,13 +4,13 @@
     "userID": 0,
     "openID": null,
     "registerTime": 1759944571,
-    "saveTime": 1759981662,
-    "loginTime": 1759981619
+    "saveTime": 1759988544,
+    "loginTime": 1759988536
   },
   "userServer": null,
   "userProgress": {
     "isRegister": false,
-    "isFirstGame": true
+    "isFirstGame": false
   },
   "userTag": null,
   "userItem": {

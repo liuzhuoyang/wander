@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class UIBattleDebug : DebuggerSharedMenu
+public class UIModeBattleFightDebug : DebuggerSharedMenu
 {
     public TMP_Dropdown dropGear;
     public void Init()
