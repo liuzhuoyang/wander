@@ -3,7 +3,7 @@ using SimpleVFXSystem;
 using UnityEngine;
 using UnityEngine.Animations;
 
-public class VFX_UnitAddIcon : VFXMono
+public class VFXUnitAddIcon : VFXMono
 {
     private PositionConstraint positionConstraint;
 

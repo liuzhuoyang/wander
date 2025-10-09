@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class VFX_Shield : MonoBehaviour
+public class VFXShield : MonoBehaviour
 {
     [SerializeField] private ParticleSystem vfx_shieldHit;
     [SerializeField] private ParticleSystem vfx_shield_on;
