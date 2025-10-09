@@ -1,0 +1,132 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using Cysharp.Threading.Tasks;
+using TMPro;
+using System;
+
+
+//经常需要初始化的资源才需要预加载
+public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
+{
+    public TMP_FontAsset font;
+    public Material fontMaterialTitle;
+    public Material fontMaterialContent; 
+
+    Dictionary<string, GameObject> unitPrefabDict; //单位预制体
+    Dictionary<string, GameObject> bulletPrefabDict; //子弹预制体
+    Dictionary<string, GameObject> dynamicPrefabDict; //动态预制体
+
+    public async UniTask Init()
+    {
+        await InitFont();
+        await InitVFXAsset(); //后续可优化放到动态加载里
+        await InitAudioAsset();
+        return;
+    }
+
+    async UniTask InitFont()
+    {
+        //string fontCode = Utility.GetFont(PlayerPrefs.GetString("loc"));
+        string fontName = UtilityLocalization.GetFontName();
+
+        //fontName = "font_" + fontCode;
+/*  
+        //中文字体包含简体和繁体，简体和繁体共用字体
+        if (PlayerPrefs.GetString("loc") == "zht" || PlayerPrefs.GetString("loc") == "zhs")
+        {
+            fontName = "font_zh";
+        }
+        else
+        {
+            fontName = "font_" + Utility.GetFont(PlayerPrefs.GetString("loc")); //;
+        }*/
+
+        font = await GameAsset.GetAssetAsync<TMP_FontAsset>(fontName);
+
+        fontMaterialTitle = font.material;
+        fontMaterialContent = await GameAsset.GetAssetAsync<Material>($"{fontName}_content");
+    }
+
+    public void ResetDynamicFont()
+    {
+        foreach (TMP_FontAsset fallbackFont in font.fallbackFontAssetTable)
+        {
+            // 重置字体资产的缓存
+            fallbackFont.ClearFontAssetData(true);
+        }
+    }
+
+    public GameObject GetUnitPrefab(string prefabName)
+    {
+        return unitPrefabDict[prefabName];
+    }
+
+    #region Audio资源
+    Dictionary<string, AudioClip> sfxClipDict; //音效剪辑
+    public AudioClip GetAudioClip(string sfxName)
+    {
+        return sfxClipDict[sfxName];
+    }
+
+    async UniTask InitAudioAsset()
+    {
+        sfxClipDict = new Dictionary<string, AudioClip>();
+        await LoadAsset(AllAudio.dictSFX.Values, args => LoadSFXAudioClip(args));
+    }
+
+    async UniTask LoadSFXAudioClip(string sfxName)
+    {
+        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(sfxName);
+        sfxClipDict.Add(sfxName, clip);
+    }
+    #endregion
+
+    #region 读取VFX资源
+    Dictionary<string, GameObject> vfxPrefabDict; //特效预制体
+    async UniTask InitVFXAsset()
+    {
+        vfxPrefabDict = new Dictionary<string, GameObject>();
+        await LoadAsset(AllVFX.dictData.Keys, LoadVFX);
+    }
+
+    async UniTask LoadVFX(string vfxName)
+    {
+        GameObject vfx = await GameAsset.GetAssetAsync<GameObject>(vfxName);
+        vfxPrefabDict.Add(vfxName, vfx);
+    }
+
+    public GameObject GetVFXPrefab(string vfxName)
+    {
+        return vfxPrefabDict[vfxName];
+    }
+    #endregion
+
+/*
+    async UniTask LoadUnitPrefab(string key)
+    {
+        
+    }*/
+
+    async UniTask LoadAsset<T>(IEnumerable<T> items, Func<T, UniTask> loadFunc, int batchSize = 50)
+    {
+        List<UniTask> batchTasks = new List<UniTask>(batchSize);
+
+        foreach (var item in items)
+        {
+            batchTasks.Add(loadFunc(item));
+
+            if (batchTasks.Count >= batchSize)
+            {
+                await UniTask.WhenAll(batchTasks);
+                batchTasks.Clear();
+            }
+        }
+
+        if (batchTasks.Count > 0)
+        {
+            await UniTask.WhenAll(batchTasks);
+        }
+    }
+}

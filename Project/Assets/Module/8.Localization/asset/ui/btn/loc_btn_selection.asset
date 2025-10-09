@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_btn_selection
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u901A\u7528\u578B\u6309\u94AE\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u91CC\u7684\u6309\u94AE"
+  list:
+  - key: btn/selection/select
+    textEnglish: Select
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9"
+    textTraditionChinese: "\u9078\u64C7"
+    textJapanese: "\u9078\u629E"
+    textKorean: "\uC120\uD0DD"
+    textFrench: "S\xE9lectionner"
+    textGerman: "Ausw\xE4hlen"
+    textSpanish: Seleccionar
+    textPortuguese: Selecionar
+    textItalian: Seleziona
+    textDutch: Kiezen
+    textRussian: "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01"
+  - key: btn/selection/selected
+    textEnglish: Selected
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u5B9A"
+    textTraditionChinese: "\u9078\u64C7"
+    textJapanese: "\u9078\u629E\u3055\u308C\u305F"
+    textKorean: "\uC120\uD0DD\uB41C"
+    textFrench: "S\xE9lectionn\xE9"
+    textGerman: "Ausgew\xE4hlt"
+    textSpanish: Seleccionado
+    textPortuguese: Selecionado
+    textItalian: Selezionato
+    textDutch: Geselecteerd
+    textRussian: "\u0412\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0439"
+    textThai: "\u0E17\u0E35\u0E48\u0E40\u0E25\u0E37\u0E2D\u0E01"
+  - key: btn/selection/remove
+    textEnglish: Remove
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u79FB\u9664"
+    textTraditionChinese: "\u79FB\u9664"
+    textJapanese: "\u524A\u9664"
+    textKorean: "\uC81C\uAC70\uD558\uC2ED\uC2DC\uC624"
+    textFrench: Retirer
+    textGerman: Entfernen
+    textSpanish: Eliminar
+    textPortuguese: Remover
+    textItalian: Rimuovi
+    textDutch: Verwijderen
+    textRussian: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C"
+    textThai: "\u0E25\u0E1A"
+  - key: btn/selection/deploy
+    textEnglish: Deploy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u90E8\u7F72"
+    textTraditionChinese: "\u90E8\u7F72"
+    textJapanese: "\u5C55\u958B"
+    textKorean: "\uBC30\uD3EC"
+    textFrench: "D\xE9ployer"
+    textGerman: Einsetzen
+    textSpanish: Desplegar
+    textPortuguese: Implantar
+    textItalian: Distribuisci
+    textDutch: Inzetten
+    textRussian: "\u0420\u0430\u0437\u0432\u0435\u0440\u043D\u0443\u0442\u044C"
+    textThai: "\u0E1B\u0E23\u0E31\u0E1A\u0E43\u0E0A\u0E49"
+  - key: btn/selection/deployed
+    textEnglish: Deployed
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u90E8\u7F72"
+    textTraditionChinese: "\u5DF2\u90E8\u7F72"
+    textJapanese: "\u5C55\u958B\u6E08\u307F"
+    textKorean: "\uBC30\uD3EC\uB428"
+    textFrench: "D\xE9ploy\xE9"
+    textGerman: Eingesetzt
+    textSpanish: Desplegado
+    textPortuguese: Implantado
+    textItalian: Distribuito
+    textDutch: Ingesteld
+    textRussian: "\u0420\u0430\u0437\u0432\u0435\u0440\u043D\u0443\u0442\u043E"
+    textThai: "\u0E19\u0E33\u0E44\u0E1B\u0E43\u0E0A\u0E49\u0E41\u0E25\u0E49\u0E27"
+  - key: btn/selection/change
+    textEnglish: Change
+    textHint: "change\u7FFB\u8BD1\u4E3A\u66F4\u6362"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u6362"
+    textTraditionChinese: "\u66F4\u63DB"
+    textJapanese: "\u5909\u66F4"
+    textKorean: "\uBCC0\uACBD"
+    textFrench: Changer
+    textGerman: Wechseln
+    textSpanish: Cambio
+    textPortuguese: Mudar
+    textItalian: Cambiare
+    textDutch: Veranderen
+    textRussian: "\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C"
+    textThai: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19"

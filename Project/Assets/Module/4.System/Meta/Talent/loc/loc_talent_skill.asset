@@ -1,0 +1,434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_talent_skill
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - content: "Omni Boost (\u0E2D\u0E2D\u0E21\u0E19\u0E34 \u0E1A\u0E39\u0E2A\u0E15\u0E4C)"
+    key: talent/skill/talent_skill_all_damage
+    textEnglish: Omni Boost
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u5168\u9762\u589E\u5E45"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5168\u80FD\u589E\u5F3A"
+    textTraditionChinese: "\u5168\u80FD\u589E\u5E45"
+    textJapanese: "\u30AA\u30E0\u30CB\u30D6\u30FC\u30B9\u30C8"
+    textKorean: "\uC634\uB2C8 \uBD80\uC2A4\uD2B8"
+    textFrench: Omni Boost
+    textGerman: Omni-Boost
+    textSpanish: "Omni Boost (\u5168\u9762\u589E\u5E45) - Impulso Omni"
+    textPortuguese: Omni Boost
+    textItalian: Incremento Totale
+    textDutch: Omni Boost
+    textRussian: "\u041E\u043C\u043D\u0438 \u0411\u0443\u0441\u0442"
+    textThai: "Omni Boost (\u0E2D\u0E2D\u0E21\u0E19\u0E34 \u0E1A\u0E39\u0E2A\u0E15\u0E4C)"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_all_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_all
+    - mapping/rate/mapping_rate_5%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E40\u0E07\u0E34\u0E19\u0E1E\u0E39\u0E14\u0E44\u0E14\u0E49"
+    key: talent/skill/talent_skill_battle_reward
+    textEnglish: Money Talks
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u94B1\u5C31\u662F\u6B63\u4E49"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u94B1\u5C31\u662F\u6B63\u4E49"
+    textTraditionChinese: "\u91D1\u9322\u842C\u80FD"
+    textJapanese: "\u91D1\u304C\u7269\u3092\u8A00\u3046"
+    textKorean: "\uB3C8\uC774 \uB9D0\uD55C\uB2E4"
+    textFrench: L'argent fait la loi
+    textGerman: Geld regiert die Welt
+    textSpanish: El dinero manda.
+    textPortuguese: O dinheiro fala.
+    textItalian: Il denaro comanda.
+    textDutch: Geld regeert
+    textRussian: "\u0414\u0435\u043D\u044C\u0433\u0438 \u0440\u0435\u0448\u0430\u044E\u0442"
+    textThai: "\u0E40\u0E07\u0E34\u0E19\u0E1E\u0E39\u0E14\u0E44\u0E14\u0E49"
+  - content: "{0} \u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A +{1}"
+    key: talent/skill/talent_skill_battle_reward_info
+    textEnglish: '{0} Gain +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u83B7\u53D6\u7387+{1}"
+    mappingList:
+    - mapping/generic/mapping_generic_currency_coin
+    - mapping/rate/mapping_rate_5%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u83B7\u53D6\u7387+{1}"
+    textTraditionChinese: "{0} \u7372\u53D6\u7387+{1}"
+    textJapanese: "{0} \u7372\u5F97\u7387+{1}"
+    textKorean: "{0} \uD68D\uB4DD\uB960 +{1}"
+    textFrench: '{0} Gain +{1}'
+    textGerman: '{0} Gewinn +{1}'
+    textSpanish: '{0} Ganancia +{1}'
+    textPortuguese: '{0} Ganho +{1}'
+    textItalian: '{0} Guadagno +{1}'
+    textDutch: '{0} Winst +{1}'
+    textRussian: "{0} \u041F\u0440\u0438\u0440\u043E\u0441\u0442 +{1}"
+    textThai: "{0} \u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A +{1}"
+  - content: "\u0E44\u0E27\u0E23\u0E31\u0E2A\u0E17\u0E2D\u0E01\u0E0B\u0E34\u0E19"
+    key: talent/skill/talent_skill_biochemical_damage
+    textEnglish: Viral Toxin
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u81F4\u547D\u75AB\u6BD2"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u75C5\u6BD2\u6BD2\u7D20"
+    textTraditionChinese: "\u75C5\u6BD2\u6BD2\u7D20"
+    textJapanese: "\u30A6\u30A4\u30EB\u30B9\u6027\u6BD2\u7D20"
+    textKorean: "\uBC14\uC774\uB7EC\uC2A4 \uB3C5\uC18C"
+    textFrench: Toxine virale
+    textGerman: Virustoxin
+    textSpanish: Toxina viral
+    textPortuguese: Toxina Viral
+    textItalian: Tossina virale
+    textDutch: Viraal Toxine
+    textRussian: "\u0412\u0438\u0440\u0443\u0441\u043D\u044B\u0439 \u0442\u043E\u043A\u0441\u0438\u043D"
+    textThai: "\u0E44\u0E27\u0E23\u0E31\u0E2A\u0E17\u0E2D\u0E01\u0E0B\u0E34\u0E19"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_biochemical_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_biochemical
+    - mapping/rate/mapping_rate_10%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E28\u0E39\u0E19\u0E22\u0E4C\u0E2A\u0E31\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+    key: talent/skill/talent_skill_cryo_damage
+    textEnglish: Absolute Zero
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7EDD\u5BF9\u96F6\u5EA6"
+    textTraditionChinese: "\u7D55\u5C0D\u96F6\u5EA6"
+    textJapanese: "\u7D76\u5BFE\u96F6\u5EA6"
+    textKorean: "\uC808\uB300 \uC601\uB3C4"
+    textFrench: "Z\xE9ro absolu"
+    textGerman: Absoluter Nullpunkt
+    textSpanish: Cero absoluto
+    textPortuguese: Zero Absoluto
+    textItalian: Zero assoluto
+    textDutch: Absoluut nulpunt
+    textRussian: "\u0410\u0431\u0441\u043E\u043B\u044E\u0442\u043D\u044B\u0439 \u043D\u043E\u043B\u044C"
+    textThai: "\u0E28\u0E39\u0E19\u0E22\u0E4C\u0E2A\u0E31\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_cryo_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_cryo
+    - mapping/rate/mapping_rate_10%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E41\u0E23\u0E07\u0E14\u0E31\u0E19\u0E2A\u0E39\u0E07"
+    key: talent/skill/talent_skill_electro_damage
+    textEnglish: High Voltage
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u9AD8\u538B\u7535\u6D41"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9AD8\u538B\u7535\u6D41"
+    textTraditionChinese: "\u9AD8\u96FB\u58D3"
+    textJapanese: "\u9AD8\u96FB\u5727"
+    textKorean: "\uACE0\uC804\uC555"
+    textFrench: Haute tension
+    textGerman: Hochspannung
+    textSpanish: "Alta tensi\xF3n"
+    textPortuguese: "Alta Tens\xE3o"
+    textItalian: Alta Tensione
+    textDutch: Hoogspanning
+    textRussian: "\u0412\u044B\u0441\u043E\u043A\u043E\u0435 \u043D\u0430\u043F\u0440\u044F\u0436\u0435\u043D\u0438\u0435"
+    textThai: "\u0E41\u0E23\u0E07\u0E14\u0E31\u0E19\u0E2A\u0E39\u0E07"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_electro_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_electro
+    - mapping/rate/mapping_rate_10%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E04\u0E27\u0E32\u0E21\u0E17\u0E19\u0E17\u0E32\u0E19"
+    key: talent/skill/talent_skill_energy_limit
+    textEnglish: Endurance Boost
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u8010\u529B\u5F3A\u5316"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8010\u529B\u5F3A\u5316"
+    textTraditionChinese: "\u8010\u529B\u5F37\u5316"
+    textJapanese: "\u30B9\u30BF\u30DF\u30CA\u5F37\u5316"
+    textKorean: "\uC9C0\uAD6C\uB825 \uAC15\uD654"
+    textFrench: Renforcement d'endurance
+    textGerman: "Ausdauerverst\xE4rkung"
+    textSpanish: Refuerzo de Resistencia
+    textPortuguese: "Refor\xE7o de Resist\xEAncia"
+    textItalian: Aumento di Resistenza
+    textDutch: Uithoudingsvermogen Boost
+    textRussian: "\u0423\u0441\u0438\u043B\u0435\u043D\u0438\u0435 \u0432\u044B\u043D\u043E\u0441\u043B\u0438\u0432\u043E\u0441\u0442\u0438"
+    textThai: "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E04\u0E27\u0E32\u0E21\u0E17\u0E19\u0E17\u0E32\u0E19"
+  - content: "\u0E41\u0E21\u0E47\u0E01\u0E0B\u0E4C\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19
+      +{0}"
+    key: talent/skill/talent_skill_energy_limit_info
+    textEnglish: Max Energy +{0}
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u4F53\u529B\u4E0A\u9650 +{0}"
+    mappingList:
+    - mapping/num/mapping_num_2
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u4F53\u529B\u4E0A\u9650 +{0}"
+    textTraditionChinese: "\u9AD4\u529B\u4E0A\u9650 +{0}"
+    textJapanese: "\u6700\u5927\u4F53\u529B +{0}"
+    textKorean: "\uCD5C\uB300 \uCCB4\uB825 +{0}"
+    textFrench: "\xC9nergie max. +{0}"
+    textGerman: Maximale Energie +{0}
+    textSpanish: "Energ\xEDa M\xE1xima +{0}"
+    textPortuguese: "Energia M\xE1xima +{0}"
+    textItalian: Energia Massima +{0}
+    textDutch: Max Energie +{0}
+    textRussian: "\u041C\u0430\u043A\u0441. \u044D\u043D\u0435\u0440\u0433\u0438\u044F
+      +{0}"
+    textThai: "\u0E41\u0E21\u0E47\u0E01\u0E0B\u0E4C\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19
+      +{0}"
+  - content: "\u0E40\u0E2E\u0E1F\u0E27\u0E35\u0E48\u0E2A\u0E44\u0E15\u0E23\u0E04\u0E4C"
+    key: talent/skill/talent_skill_physical_damage
+    textEnglish: Heavy Strike
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u5F3A\u529B\u6253\u51FB"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5F3A\u529B\u6253\u51FB"
+    textTraditionChinese: "\u91CD\u64CA"
+    textJapanese: "\u30D8\u30D3\u30FC\u30B9\u30C8\u30E9\u30A4\u30AF"
+    textKorean: "\uAC15\uB825\uD55C \uD0C0\uACA9"
+    textFrench: Frappe lourde
+    textGerman: Schwerer Schlag
+    textSpanish: Golpe Fuerte
+    textPortuguese: Golpe Pesado
+    textItalian: Colpo Pesante
+    textDutch: Zware Slag
+    textRussian: "\u0422\u044F\u0436\u0435\u043B\u044B\u0439 \u0443\u0434\u0430\u0440"
+    textThai: "\u0E40\u0E2E\u0E1F\u0E27\u0E35\u0E48\u0E2A\u0E44\u0E15\u0E23\u0E04\u0E4C"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_physical_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_physical
+    - mapping/rate/mapping_rate_10%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E2D\u0E2D\u0E42\u0E15\u0E49\u0E40\u0E08\u0E19\u0E40\u0E19\u0E2D\u0E40\u0E23\u0E40\u0E15\u0E2D\u0E23\u0E4C"
+    key: talent/skill/talent_skill_tavern_count
+    textEnglish: Auto-Generator
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u81EA\u52A8\u751F\u6210\u5668"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u81EA\u52A8\u751F\u6210\u5668"
+    textTraditionChinese: "\u81EA\u52D5\u751F\u6210\u5668"
+    textJapanese: "\u30AA\u30FC\u30C8\u30B8\u30A7\u30CD\u30EC\u30FC\u30BF\u30FC"
+    textKorean: "\uC790\uB3D9 \uC0DD\uC131\uAE30"
+    textFrench: "Auto-G\xE9n\xE9rateur"
+    textGerman: Autogenerator
+    textSpanish: "Generador autom\xE1tico"
+    textPortuguese: "Gerador Autom\xE1tico"
+    textItalian: Generatore automatico
+    textDutch: Autogenerator
+    textRussian: "\u0410\u0432\u0442\u043E\u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440"
+    textThai: "\u0E2D\u0E2D\u0E42\u0E15\u0E49\u0E40\u0E08\u0E19\u0E40\u0E19\u0E2D\u0E40\u0E23\u0E40\u0E15\u0E2D\u0E23\u0E4C"
+  - content: "+{0} \u0E1A\u0E25\u0E39\u0E1B\u0E23\u0E34\u0E19\u0E15\u0E4C\u0E08\u0E32\u0E01\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19"
+    key: talent/skill/talent_skill_tavern_count_info
+    textEnglish: +{0} Blueprint from Factory
+    textHint: "\u5DE5\u5382\u83B7\u5F97\u84DD\u56FE\u6570\u91CF +{0}"
+    mappingList:
+    - mapping/num/mapping_num_1
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u5DE5\u5382\u83B7\u5F97\u84DD\u56FE\u6570\u91CF +{0}"
+    textTraditionChinese: "+{0} \u85CD\u5716\u4F86\u81EA\u5DE5\u5EE0"
+    textJapanese: "+{0} \u5DE5\u5834\u304B\u3089\u8A2D\u8A08\u56F3\u3092\u5165\u624B\uFF08\u5DE5\u5834\u3067\u7372\u5F97\u3059\u308B\u8A2D\u8A08\u56F3\u306E\u6570
+      +{0}\uFF09"
+    textKorean: "+{0} \uBE14\uB8E8\uD504\uB9B0\uD2B8 \uACF5\uC7A5\uC5D0\uC11C \uD68D\uB4DD
+      (\uACF5\uC7A5\uC5D0\uC11C \uD68D\uB4DD\uD55C \uBE14\uB8E8\uD504\uB9B0\uD2B8
+      \uC218\uB7C9 +{0})"
+    textFrench: +{0} Plan de fabrication de l'usine
+    textGerman: +{0} Blaupause aus der Fabrik
+    textSpanish: "+{0} Plano de F\xE1brica"
+    textPortuguese: "+{0} Blueprint da F\xE1brica"
+    textItalian: +{0} Progetto dalla Fabbrica
+    textDutch: +{0} Blauwdruk van Fabriek
+    textRussian: "+{0} \u0427\u0435\u0440\u0442\u0435\u0436 \u0441 \u0437\u0430\u0432\u043E\u0434\u0430"
+    textThai: "+{0} \u0E1A\u0E25\u0E39\u0E1B\u0E23\u0E34\u0E19\u0E15\u0E4C\u0E08\u0E32\u0E01\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19"
+  - content: "\u0E40\u0E1A\u0E34\u0E23\u0E4C\u0E19\u0E1A\u0E39\u0E2A\u0E15\u0E4C"
+    key: talent/skill/talent_skill_thermal_damage
+    textEnglish: Burn Boost
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u70E7\u707C\u5F3A\u5316"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u71C3\u707C\u5F3A\u5316"
+    textTraditionChinese: "\u71C3\u71D2\u5F37\u5316"
+    textJapanese: "\u30D0\u30FC\u30F3\u30D6\u30FC\u30B9\u30C8"
+    textKorean: "\uBC88 \uBD80\uC2A4\uD2B8"
+    textFrench: "Br\xFBlure Boost"
+    textGerman: "Brandverst\xE4rkung"
+    textSpanish: Quemar Refuerzo
+    textPortuguese: Queima Intensificada
+    textItalian: Brucia Potenziato
+    textDutch: Brandboost
+    textRussian: "\u0416\u0433\u0443\u0447\u0435\u0435 \u0443\u0441\u0438\u043B\u0435\u043D\u0438\u0435"
+    textThai: "\u0E40\u0E1A\u0E34\u0E23\u0E4C\u0E19\u0E1A\u0E39\u0E2A\u0E15\u0E4C"
+  - content: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+    key: talent/skill/talent_skill_thermal_damage_info
+    textEnglish: '{0} Damage +{1}'
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A{0} \u4F24\u5BB3 +{1}"
+    mappingList:
+    - mapping/damage_type/mapping_damage_type_thermal
+    - mapping/rate/mapping_rate_10%
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0} \u4F24\u5BB3 +{1}"
+    textTraditionChinese: "{0} \u50B7\u5BB3 +{1}"
+    textJapanese: "{0} \u30C0\u30E1\u30FC\u30B8 +{1}"
+    textKorean: "{0} \uD53C\uD574 +{1}"
+    textFrench: "{0} d\xE9g\xE2ts +{1}"
+    textGerman: '{0} Schaden +{1}'
+    textSpanish: "{0} Da\xF1o +{1}"
+    textPortuguese: '{0} Dano +{1}'
+    textItalian: '{0} Danno +{1}'
+    textDutch: '{0} Schade +{1}'
+    textRussian: "{0} \u0443\u0440\u043E\u043D +{1}"
+    textThai: "{0} \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22
+      +{1}"
+  - content: "\u0E17\u0E38\u0E19\u0E40\u0E21\u0E25\u0E47\u0E14\u0E1E\u0E31\u0E19\u0E18\u0E38\u0E4C"
+    key: talent/skill/talent_skill_battle_statrt_token
+    textEnglish: Seed Capital
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u79CD\u5B50\u8D44\u672C"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u79CD\u5B50\u8D44\u672C"
+    textTraditionChinese: "\u7A2E\u5B50\u8CC7\u672C"
+    textJapanese: "\u30B7\u30FC\u30C9\u30AD\u30E3\u30D4\u30BF\u30EB"
+    textKorean: "\uC2DC\uB4DC \uCE90\uD53C\uD138"
+    textFrench: Capital-risque
+    textGerman: Startkapital
+    textSpanish: Capital semilla
+    textPortuguese: Capital Semente
+    textItalian: Capitale iniziale
+    textDutch: Startkapitaal
+    textRussian: "\u0421\u0442\u0430\u0440\u0442\u043E\u0432\u044B\u0439 \u043A\u0430\u043F\u0438\u0442\u0430\u043B"
+    textThai: "\u0E17\u0E38\u0E19\u0E40\u0E21\u0E25\u0E47\u0E14\u0E1E\u0E31\u0E19\u0E18\u0E38\u0E4C"
+  - content: "+15 {0} \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E41\u0E15\u0E48\u0E25\u0E30\u0E14\u0E48\u0E32\u0E19"
+    key: talent/skill/talent_skill_battle_statrt_token_info
+    textEnglish: +15 {0} at the start of each level
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u6BCF\u5173\u5F00\u5C40\u989D\u5916\u83B7\u5F97{0}
+      +15"
+    mappingList:
+    - mapping/generic/mapping_generic_Liorite
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u6BCF\u5173\u5F00\u5C40\u989D\u5916\u83B7\u5F97{0} +15"
+    textTraditionChinese: "\u6BCF\u95DC\u958B\u5C40\u984D\u5916\u7372\u5F97{0} +15"
+    textJapanese: "\u5404\u30EC\u30D9\u30EB\u306E\u958B\u59CB\u6642\u306B{0} +15\u3092\u8FFD\u52A0\u3067\u7372\u5F97"
+    textKorean: "\uAC01 \uB808\uBCA8 \uC2DC\uC791 \uC2DC {0} +15 \uCD94\uAC00 \uD68D\uB4DD"
+    textFrench: "+15 {0} au d\xE9but de chaque niveau"
+    textGerman: +15 {0} zu Beginn jeder Stufe
+    textSpanish: +15 {0} al comienzo de cada nivel
+    textPortuguese: "+15 {0} no in\xEDcio de cada n\xEDvel"
+    textItalian: +15 {0} all'inizio di ogni livello
+    textDutch: +15 {0} aan het begin van elk level
+    textRussian: "+15 {0} \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u043A\u0430\u0436\u0434\u043E\u0433\u043E
+      \u0443\u0440\u043E\u0432\u043D\u044F"
+    textThai: "+15 {0} \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E34\u0E48\u0E21\u0E41\u0E15\u0E48\u0E25\u0E30\u0E14\u0E48\u0E32\u0E19"

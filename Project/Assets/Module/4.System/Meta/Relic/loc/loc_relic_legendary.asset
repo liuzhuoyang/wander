@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_relic_legendary
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: relic/legendary/name/001
+    textEnglish: Pink Door
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7C89\u7EA2\u95E8"
+    textTraditionChinese: "\u7C89\u7D05\u9580"
+    textJapanese: "\u30D4\u30F3\u30AF\u306E\u30C9\u30A2"
+    textKorean: "\uD551\uD06C \uB3C4\uC5B4"
+    textFrench: Porte Rose
+    textGerman: "Rosa T\xFCr"
+    textSpanish: Puerta Rosa
+    textPortuguese: Porta Rosa
+    textItalian: Porta Rosa
+    textDutch: Roze Deur
+    textRussian: "\u0420\u043E\u0437\u043E\u0432\u0430\u044F \u0434\u0432\u0435\u0440\u044C"
+    textThai: "\u0E1B\u0E23\u0E30\u0E15\u0E39\u0E2A\u0E35\u0E0A\u0E21\u0E1E\u0E39"
+  - key: relic/legendary/name/002
+    textEnglish: Bottle Cap
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u91D1\u5C5E\u74F6\u76D6"
+    textTraditionChinese: "\u74F6\u84CB"
+    textJapanese: "\u30DC\u30C8\u30EB\u30AD\u30E3\u30C3\u30D7"
+    textKorean: "\uBCD1\uB69C\uAED1"
+    textFrench: Capsule de bouteille
+    textGerman: Flaschenverschluss
+    textSpanish: Tapa de botella
+    textPortuguese: Tampa de garrafa
+    textItalian: Tappo della bottiglia
+    textDutch: Flessendop
+    textRussian: "\u041A\u0440\u044B\u0448\u043A\u0430 \u0434\u043B\u044F \u0431\u0443\u0442\u044B\u043B\u043A\u0438"
+    textThai: "\u0E1D\u0E32\u0E1B\u0E34\u0E14\u0E02\u0E27\u0E14"
+  - key: relic/legendary/name/003
+    textEnglish: Damaged NVG
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u635F\u574F\u7684\u591C\u89C6\u4EEA"
+    textTraditionChinese: "\u640D\u58DE\u7684\u591C\u8996\u5100"
+    textJapanese: "\u640D\u50B7\u3057\u305FNVG"
+    textKorean: "\uC190\uC0C1\uB41C NVG"
+    textFrench: "NVG endommag\xE9"
+    textGerman: "Besch\xE4digte NVG"
+    textSpanish: "NVG da\xF1ado"
+    textPortuguese: NVG danificado
+    textItalian: NVG danneggiati
+    textDutch: Beschadigde NVG
+    textRussian: "\u041F\u043E\u0432\u0440\u0435\u0436\u0434\u0451\u043D\u043D\u044B\u0439
+      \u041F\u041D\u0412"
+    textThai: "\u0E40\u0E2D\u0E47\u0E19\u0E27\u0E35\u0E08\u0E35\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22"

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256763a0fe2e74908abf8624d5d6e03f, type: 3}
+  m_Name: chapter_010
+  m_EditorClassIdentifier: 
+  chapterID: 10
+  chapterName: chapter_010
+  displayName: chapter/c_title/c_title_010
+  themeName: theme_001
+  totalLevel: 5
+  listLevelAssets:
+  - {fileID: 11400000, guid: 2242dfbbea00f469da80d1cbb613c4b9, type: 2}
+  - {fileID: 11400000, guid: 6797a5241a8434e87be2ba03499a60dd, type: 2}
+  - {fileID: 11400000, guid: a6868361043ab4d21b3f66132e70178a, type: 2}
+  - {fileID: 11400000, guid: b7e934f5f15424177ac38a85dd2644f0, type: 2}
+  - {fileID: 11400000, guid: 60ca2a1c2cb8548b3b04ebf4ece9b171, type: 2}
+  planetName: planet_theme_001_1
+  planetVarient: 1
+  previewPlanet: {fileID: 21300000, guid: a1cff4c2f2c5446a883d4fcbc3ac7112, type: 3}
+  plotData: {fileID: 0}
+  plotName: 
+  plotSequenceData: {fileID: 0}
+  plotSequenceID: 

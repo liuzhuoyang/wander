@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c002_04
+  m_EditorClassIdentifier: 
+  plotName: plot_c002_04
+  totalStep: 18
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_01
+    optionKey1: 
+    optionKey2: 
+    content: '{0} has escaped. He is not a lifeform in the traditional sense.'
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_02
+    optionKey1: 
+    optionKey2: 
+    content: Before the core was destroyed, he transferred his consciousness elsewhere.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_04_03_option_1
+    optionKey2: loc_plot_c002_04__03_option_2
+    content: 
+    optionContent1: (Looks at {0})
+    optionConcent2: "Don\u2019t tell me\u2026 he jumped into you again."
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_04
+    optionKey1: 
+    optionKey2: 
+    content: While he was inside my system, I captured a large amount of his iteration
+      data.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_05
+    optionKey1: 
+    optionKey2: 
+    content: "With that, I built a counter-firewall\u2014he won\u2019t be hijacking
+      me again."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_06
+    optionKey1: 
+    optionKey2: 
+    content: Hold on, Commander. Incoming message from {0}.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_07
+    optionKey1: 
+    optionKey2: 
+    content: A pleasure to finally speak with you, Commander.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_08
+    optionKey1: 
+    optionKey2: 
+    content: We heard that you recently aware of our business accident.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_09
+    optionKey1: 
+    optionKey2: 
+    content: Our senior board is quite interested in your experience.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_10
+    optionKey1: 
+    optionKey2: 
+    content: "They\u2019d like a more detailed account of what transpired."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_04_11_option_1
+    optionKey2: loc_plot_c002_04_11_option_2
+    content: 
+    optionContent1: "You\u2019ll get the files you\u2019re looking for soon enough."
+    optionConcent2: "\u201CCommercial accident,\u201D huh\u2026 that\u2019s very
+      on-brand for you people."
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_12
+    optionKey1: 
+    optionKey2: 
+    content: "Additionally, we\u2019d like you to travel to a coordinate."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_13
+    optionKey1: 
+    optionKey2: 
+    content: "One of our field researchers is stranded there\u2014we need you to
+      extract her."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_14
+    optionKey1: 
+    optionKey2: 
+    content: "You can call her {0}. She\u2019s critical to our operations\u2014 and
+      he knows much more about the root of this \u201Ccommercial accident.\u201D"
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_15
+    optionKey1: 
+    optionKey2: 
+    content: Deal?
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_04_16_option_1
+    optionKey2: loc_plot_c002_04_16_option_2
+    content: 
+    optionContent1: "You\u2019re not really giving me a choice, are you?"
+    optionConcent2: "If I say no, you\u2019ll quietly wipe me out, I guess."
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_17
+    optionKey1: 
+    optionKey2: 
+    content: That's why I like talking with someone smart.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 0f31a34510e40445095a5edff666fc46, type: 3}
+    avatarNPC: avatar_703
+    dialogType: 0
+    dialogKey: loc_plot_c002_04_18
+    optionKey1: 
+    optionKey2: 
+    content: "Here\u2019s a portion of your advance payment. Please consider it a
+      gesture of good faith."
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 11400000, guid: fad607ff7594d4458a34948879a940e0, type: 2}
+  rewardName: item_currency_coin
+  rewardNum: 50000

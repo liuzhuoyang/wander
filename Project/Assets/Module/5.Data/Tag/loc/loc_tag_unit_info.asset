@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tag_unit_info
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - content: "\u0E40\u0E01\u0E23\u0E32\u0E30\u0E2B\u0E19\u0E32\u0E2B\u0E19\u0E31\u0E01
+      \u0E21\u0E35\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21"
+    key: tag/unit/info/tag_unitr_info_heavy
+    textEnglish: Armored with heavy plating, has extra defense
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u88C5\u5907\u91CD\u578B\u88C5\u7532\uFF0C\u5177\u6709\u989D\u5916\u9632\u5FA1"
+    textTraditionChinese: "\u88DD\u7532\u539A\u91CD\uFF0C\u64C1\u6709\u984D\u5916\u9632\u79A6"
+    textJapanese: "\u91CD\u539A\u306A\u88C5\u7532\u3092\u88C5\u5099\u3057\u3001\u9632\u5FA1\u529B\u304C\u9AD8\u3044\u3002"
+    textKorean: "\uAC15\uB825\uD55C \uC7A5\uAC11\uC73C\uB85C \uBB34\uC7A5\uD558\uC5EC
+      \uCD94\uAC00 \uBC29\uC5B4\uB825\uC744 \uAC16\uCD94\uC5C8\uB2E4."
+    textFrench: "Blind\xE9 d'un \xE9pais blindage, dispose d'une d\xE9fense suppl\xE9mentaire"
+    textGerman: "Gepanzert mit schwerer Panzerung, bietet zus\xE4tzliche Verteidigung"
+    textSpanish: Blindado con placas pesadas, tiene defensa adicional.
+    textPortuguese: Blindado com blindagem pesada, possui defesa extra
+    textItalian: Corazzato con piastre pesanti, ha una difesa extra
+    textDutch: Gepantserd met zware beplating, heeft extra verdediging
+    textRussian: "\u0423\u043A\u0440\u0435\u043F\u043B\u0451\u043D \u0442\u044F\u0436\u0451\u043B\u043E\u0439
+      \u0431\u0440\u043E\u043D\u0451\u0439, \u0438\u043C\u0435\u0435\u0442 \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u0443\u044E
+      \u0437\u0430\u0449\u0438\u0442\u0443."
+    textThai: "\u0E40\u0E01\u0E23\u0E32\u0E30\u0E2B\u0E19\u0E32\u0E2B\u0E19\u0E31\u0E01
+      \u0E21\u0E35\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21"
+  - content: "\u0E40\u0E01\u0E23\u0E32\u0E30\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E41\u0E1A\u0E1A\u0E1A\u0E39\u0E23\u0E13\u0E32\u0E01\u0E32\u0E23
+      \u0E43\u0E2B\u0E49\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21"
+    key: tag/unit/info/tag_unitr_info_shield
+    textEnglish: Integrated shield generator, provides additional shielding
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u96C6\u6210\u62A4\u76FE\u53D1\u751F\u5668\uFF0C\u63D0\u4F9B\u989D\u5916\u62A4\u76FE"
+    textTraditionChinese: "\u6574\u5408\u5F0F\u8B77\u76FE\u751F\u6210\u5668\uFF0C\u63D0\u4F9B\u984D\u5916\u8B77\u76FE"
+    textJapanese: "\u7D71\u5408\u30B7\u30FC\u30EB\u30C9\u30B8\u30A7\u30CD\u30EC\u30FC\u30BF\u30FC\u3001\u8FFD\u52A0\u30B7\u30FC\u30EB\u30C9\u3092\u63D0\u4F9B"
+    textKorean: "\uD1B5\uD569 \uC2E4\uB4DC \uBC1C\uC0DD\uAE30, \uCD94\uAC00\uC801\uC778
+      \uBCF4\uD638\uB97C \uC81C\uACF5\uD569\uB2C8\uB2E4."
+    textFrench: "G\xE9n\xE9rateur de bouclier int\xE9gr\xE9, offre une protection
+      suppl\xE9mentaire"
+    textGerman: "Integrierter Schildgenerator, bietet zus\xE4tzliche Abschirmung"
+    textSpanish: "Generador de escudo integrado, proporciona protecci\xF3n adicional"
+    textPortuguese: "Gerador de escudo integrado, fornece prote\xE7\xE3o adicional"
+    textItalian: Generatore di scudo integrato, fornisce protezione aggiuntiva
+    textDutch: "Ge\xEFntegreerde schildgenerator, biedt extra bescherming"
+    textRussian: "\u0418\u043D\u0442\u0435\u0433\u0440\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439
+      \u0449\u0438\u0442\u043E\u0432\u043E\u0439 \u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440,
+      \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E
+      \u0437\u0430\u0449\u0438\u0442\u0443"
+    textThai: "\u0E40\u0E01\u0E23\u0E32\u0E30\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E41\u0E1A\u0E1A\u0E1A\u0E39\u0E23\u0E13\u0E32\u0E01\u0E32\u0E23
+      \u0E43\u0E2B\u0E49\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21"
+  - content: "\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E1B\u0E34\u0E14\u0E25\u0E49\u0E2D\u0E21
+      \u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E1B\u0E49\u0E2D\u0E21"
+    key: tag/unit/info/tag_unitr_info_siege
+    textEnglish: Equipped with siege weapons, deals bonus damage to outposts
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u914D\u5907\u653B\u57CE\u6B66\u5668\uFF0C\u5BF9\u636E\u70B9\u548C\u524D\u54E8\u7AD9\u9020\u6210\u989D\u5916\u4F24\u5BB3"
+    textTraditionChinese: "\u914D\u5099\u653B\u57CE\u6B66\u5668\uFF0C\u5C0D\u64DA\u9EDE\u9020\u6210\u984D\u5916\u50B7\u5BB3"
+    textJapanese: "\u653B\u57CE\u5175\u5668\u3092\u88C5\u5099\u3057\u3001\u524D\u54E8\u57FA\u5730\u306B\u8FFD\u52A0\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B"
+    textKorean: "\uACF5\uC131 \uBB34\uAE30\uB85C \uBB34\uC7A5\uD558\uACE0 \uC788\uC73C\uBA70,
+      \uC804\uCD08 \uAE30\uC9C0\uC5D0 \uCD94\uAC00 \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4."
+    textFrench: "\xC9quip\xE9 d'armes de si\xE8ge, inflige des d\xE9g\xE2ts suppl\xE9mentaires
+      aux avant-postes."
+    textGerman: "Mit Belagerungswaffen ausgestattet, verursacht zus\xE4tzlichen Schaden
+      an Au\xDFenposten."
+    textSpanish: "Equipado con armas de asedio, inflige da\xF1o adicional a los puestos
+      avanzados."
+    textPortuguese: "Equipado com armas de cerco, causa dano b\xF4nus a postos avan\xE7ados."
+    textItalian: Dotato di armi d'assedio, infligge danni bonus agli avamposti.
+    textDutch: Uitgerust met belegeringswapens, veroorzaakt extra schade aan buitenposten.
+    textRussian: "\u041E\u0441\u043D\u0430\u0449\u0451\u043D \u043E\u0441\u0430\u0434\u043D\u044B\u043C\u0438
+      \u043E\u0440\u0443\u0434\u0438\u044F\u043C\u0438, \u043D\u0430\u043D\u043E\u0441\u0438\u0442
+      \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439
+      \u0443\u0440\u043E\u043D \u0430\u0432\u0430\u043D\u043F\u043E\u0441\u0442\u0430\u043C."
+    textThai: "\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E1B\u0E34\u0E14\u0E25\u0E49\u0E2D\u0E21
+      \u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E1B\u0E49\u0E2D\u0E21"
+  - content: "\u0E44\u0E2E\u0E40\u0E1B\u0E2D\u0E23\u0E4C-\u0E42\u0E21\u0E1A\u0E32\u0E22,
+      \u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E43\u0E19\u0E01\u0E32\u0E23\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E02\u0E36\u0E49\u0E19"
+    key: tag/unit/info/tag_unitr_info_fast
+    textEnglish: Hyper-mobile, receives increased movement speed
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8D85\u7EA7\u673A\u52A8\uFF0C\u589E\u52A0\u79FB\u52A8\u901F\u5EA6"
+    textTraditionChinese: "\u8D85\u6A5F\u52D5\uFF0C\u7372\u5F97\u63D0\u5347\u7684\u79FB\u52D5\u901F\u5EA6"
+    textJapanese: "\u30CF\u30A4\u30D1\u30FC\u30E2\u30D0\u30A4\u30EB\u3001\u79FB\u52D5\u901F\u5EA6\u304C\u4E0A\u6607\u3059\u308B"
+    textKorean: "\uCD08\uAE30\uB3D9\uC131, \uC774\uB3D9 \uC18D\uB3C4 \uC99D\uAC00"
+    textFrench: "Hyper-mobile, b\xE9n\xE9ficie d'une vitesse de d\xE9placement accrue"
+    textGerman: "Hyper-mobil, erh\xE4lt erh\xF6hte Bewegungssgeschwindigkeit"
+    textSpanish: "Hiperm\xF3vil, recibe velocidad de movimiento aumentada"
+    textPortuguese: "Hiperm\xF3vel, ganha aumento de velocidade de movimento."
+    textItalian: "Iper-mobile, riceve una maggiore velocit\xE0 di movimento"
+    textDutch: Hyper-mobiel, krijgt verhoogde bewegingssnelheid
+    textRussian: "\u0413\u0438\u043F\u0435\u0440\u043C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0439,
+      \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u0442 \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u043D\u0443\u044E
+      \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F"
+    textThai: "\u0E44\u0E2E\u0E40\u0E1B\u0E2D\u0E23\u0E4C-\u0E42\u0E21\u0E1A\u0E32\u0E22,
+      \u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E43\u0E19\u0E01\u0E32\u0E23\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E02\u0E36\u0E49\u0E19"

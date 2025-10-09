@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cb88ba36f8e40548ea8ef2d84d58a0, type: 3}
+  m_Name: 08_task_daily_start_dungeon
+  m_EditorClassIdentifier: 
+  taskName: 08_task_daily_start_dungeon
+  targetNum: 1
+  taskBase: {fileID: 11400000, guid: 4d4ba527042b24939a75c08a6cf5a23f, type: 2}
+  taskBaseName: task_base_start_dungeon
+  rewardPoint: 10

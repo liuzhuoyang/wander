@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256763a0fe2e74908abf8624d5d6e03f, type: 3}
+  m_Name: chapter_000
+  m_EditorClassIdentifier: 
+  chapterID: 0
+  chapterName: chapter_000
+  displayName: 
+  themeName: 
+  isHide: 1
+  totalLevel: 1
+  listLevelAssets:
+  - {fileID: 11400000, guid: e3d9544c3756f45c284d89f561e6f793, type: 2}
+  planetName: planet__0
+  planetVarient: 0
+  previewPlanet: {fileID: 0}
+  plotData: {fileID: 0}
+  plotName: 
+  plotSequenceData: {fileID: 0}
+  plotSequenceID: 

@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 029b756516c4e4ce88b7ea9a7a3ee0fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3293600831606819971
+    second: ter_theme_002_scatter_crack_01_0
+  - first:
+      213: -2192256830877431017
+    second: ter_theme_002_scatter_crack_01_1
+  - first:
+      213: -6761523850388573435
+    second: ter_theme_002_scatter_crack_01_2
+  - first:
+      213: 4862537133209957843
+    second: ter_theme_002_scatter_crack_01_3
+  - first:
+      213: 7634497623045140853
+    second: ter_theme_002_scatter_crack_01_4
+  - first:
+      213: 6927433654923843802
+    second: ter_theme_002_scatter_crack_01_5
+  - first:
+      213: 2070418541049603664
+    second: ter_theme_002_scatter_crack_01_6
+  - first:
+      213: -4917421528218154484
+    second: ter_theme_002_scatter_crack_01_7
+  - first:
+      213: -6470088951027128404
+    second: ter_theme_002_scatter_crack_01_8
+  - first:
+      213: -46442597571748238
+    second: ter_theme_002_scatter_crack_01_9
+  - first:
+      213: 319540395209984430
+    second: ter_theme_002_scatter_crack_01_10
+  - first:
+      213: 1482290955885873129
+    second: ter_theme_002_scatter_crack_01_11
+  - first:
+      213: 3096511518763389409
+    second: ter_theme_002_scatter_crack_01_12
+  - first:
+      213: 6705282969432575072
+    second: ter_theme_002_scatter_crack_01_13
+  - first:
+      213: 5048732465756968467
+    second: ter_theme_002_scatter_crack_01_14
+  - first:
+      213: 4578608092685557361
+    second: ter_theme_002_scatter_crack_01_15
+  - first:
+      213: 3963675226175712300
+    second: ter_theme_002_scatter_crack_01_16
+  - first:
+      213: -1643891689957715396
+    second: ter_theme_002_scatter_crack_01_17
+  - first:
+      213: 2003640136225460934
+    second: ter_theme_002_scatter_crack_01_18
+  - first:
+      213: -8450311395487097694
+    second: ter_theme_002_scatter_crack_01_19
+  - first:
+      213: 3736253328242272862
+    second: ter_theme_002_scatter_crack_01_20
+  - first:
+      213: -807920467176170537
+    second: ter_theme_002_scatter_crack_01_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 153
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c0bdf818835bd20800000000000000
+      internalID: 3293600831606819971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 159
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b8023070a8391e0800000000000000
+      internalID: -2192256830877431017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 120
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503f145d1ed3a22a0800000000000000
+      internalID: -6761523850388573435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 124
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5302482c33b7340800000000000000
+      internalID: 4862537133209957843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 125
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5717b2c832f23f960800000000000000
+      internalID: 7634497623045140853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 122
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad852deb430332060800000000000000
+      internalID: 6927433654923843802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 101
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056e4ab81ba9bbc10800000000000000
+      internalID: 2070418541049603664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_7
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 106
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0ac2b77c2fc1cbb0800000000000000
+      internalID: -4917421528218154484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 101
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca729d80160a536a0800000000000000
+      internalID: -6470088951027128404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e1a4d14b00b5ff0800000000000000
+      internalID: -46442597571748238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 85
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea901e3eb4c3f6400800000000000000
+      internalID: 319540395209984430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 79
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e70a5755c7229410800000000000000
+      internalID: 1482290955885873129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 61
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e11ccef1d409fa20800000000000000
+      internalID: 3096511518763389409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_13
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 69
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c4187a553fd0d50800000000000000
+      internalID: 6705282969432575072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 61
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3161d63ad63b01640800000000000000
+      internalID: 5048732465756968467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 69
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e50424dcb7a8f30800000000000000
+      internalID: 4578608092685557361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 51
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c28352e9dc10730800000000000000
+      internalID: 3963675226175712300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 42
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c329adab739bf29e0800000000000000
+      internalID: -1643891689957715396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 25
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c21f61961c5ecb10800000000000000
+      internalID: 2003640136225460934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_19
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 25
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac5e86be867aba80800000000000000
+      internalID: -8450311395487097694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_20
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 25
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a60c44b96d9d330800000000000000
+      internalID: 3736253328242272862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_002_scatter_crack_01_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db523b9d90b9c4f0800000000000000
+      internalID: -807920467176170537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ter_theme_002_scatter_crack_01_0: 3293600831606819971
+      ter_theme_002_scatter_crack_01_1: -2192256830877431017
+      ter_theme_002_scatter_crack_01_10: 319540395209984430
+      ter_theme_002_scatter_crack_01_11: 1482290955885873129
+      ter_theme_002_scatter_crack_01_12: 3096511518763389409
+      ter_theme_002_scatter_crack_01_13: 6705282969432575072
+      ter_theme_002_scatter_crack_01_14: 5048732465756968467
+      ter_theme_002_scatter_crack_01_15: 4578608092685557361
+      ter_theme_002_scatter_crack_01_16: 3963675226175712300
+      ter_theme_002_scatter_crack_01_17: -1643891689957715396
+      ter_theme_002_scatter_crack_01_18: 2003640136225460934
+      ter_theme_002_scatter_crack_01_19: -8450311395487097694
+      ter_theme_002_scatter_crack_01_2: -6761523850388573435
+      ter_theme_002_scatter_crack_01_20: 3736253328242272862
+      ter_theme_002_scatter_crack_01_21: -807920467176170537
+      ter_theme_002_scatter_crack_01_3: 4862537133209957843
+      ter_theme_002_scatter_crack_01_4: 7634497623045140853
+      ter_theme_002_scatter_crack_01_5: 6927433654923843802
+      ter_theme_002_scatter_crack_01_6: 2070418541049603664
+      ter_theme_002_scatter_crack_01_7: -4917421528218154484
+      ter_theme_002_scatter_crack_01_8: -6470088951027128404
+      ter_theme_002_scatter_crack_01_9: -46442597571748238
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

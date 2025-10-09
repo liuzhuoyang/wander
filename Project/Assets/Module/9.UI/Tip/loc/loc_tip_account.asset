@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tip_account
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: "\u8D26\u6237\u76F8\u5173\u63D0\u793A"
+  list:
+  - content: "\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A"
+    key: tip/tip_account_login_error
+    textEnglish: Login error
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u767B\u5F55\u9519\u8BEF"
+    textTraditionChinese: "\u767B\u5165\u932F\u8AA4"
+    textJapanese: "\u30ED\u30B0\u30A4\u30F3\u30A8\u30E9\u30FC"
+    textKorean: "\uB85C\uADF8\uC778 \uC624\uB958"
+    textFrench: Erreur de connexion
+    textGerman: Fehler bei der Anmeldung
+    textSpanish: "Error de inicio de sesi\xF3n"
+    textPortuguese: Erro de Login
+    textItalian: Errore di accesso
+    textDutch: Fout bij het inloggen
+    textRussian: "\u041E\u0448\u0438\u0431\u043A\u0430 \u0432\u0445\u043E\u0434\u0430"
+    textThai: "\u0E02\u0E49\u0E2D\u0E1C\u0E34\u0E14\u0E1E\u0E25\u0E32\u0E14\u0E43\u0E19\u0E01\u0E32\u0E23\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A"
+  - content: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E44\u0E21\u0E48\u0E1E\u0E1A"
+    key: tip/tip_account_no_data
+    textEnglish: No data found
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u672A\u627E\u5230\u6570\u636E"
+    textTraditionChinese: "\u627E\u4E0D\u5230\u8CC7\u6599"
+    textJapanese: "\u30C7\u30FC\u30BF\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093"
+    textKorean: "\uB370\uC774\uD130\uB97C \uCC3E\uC744 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+    textFrench: "Aucune donn\xE9e trouv\xE9e"
+    textGerman: Keine Daten gefunden
+    textSpanish: No se encontraron datos
+    textPortuguese: Nenhum dado encontrado
+    textItalian: Nessun dato trovato
+    textDutch: Geen gegevens gevonden
+    textRussian: "\u0414\u0430\u043D\u043D\u044B\u0435 \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u044B"
+    textThai: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E44\u0E21\u0E48\u0E1E\u0E1A"
+  - content: "\u0E01\u0E32\u0E23\u0E0B\u0E34\u0E07\u0E04\u0E4C\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E43\u0E19\u0E04\u0E25\u0E32\u0E27\u0E14\u0E4C\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+    key: tip/tip_account_failed_to_sync_data
+    textEnglish: Failed to sync cloud save data
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u540C\u6B65\u4E91\u7AEF\u4FDD\u5B58\u6570\u636E\u5931\u8D25"
+    textTraditionChinese: "\u540C\u6B65\u96F2\u7AEF\u5132\u5B58\u8CC7\u6599\u5931\u6557"
+    textJapanese: "\u30AF\u30E9\u30A6\u30C9\u30BB\u30FC\u30D6\u30C7\u30FC\u30BF\u306E\u540C\u671F\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002"
+    textKorean: "\uD074\uB77C\uC6B0\uB4DC \uC800\uC7A5 \uB370\uC774\uD130 \uB3D9\uAE30\uD654\uC5D0
+      \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4."
+    textFrench: "\xC9chec de la synchronisation des donn\xE9es de sauvegarde sur
+      le cloud"
+    textGerman: Es ist nicht gelungen, die Cloud-Speicherdaten zu synchronisieren.
+    textSpanish: Error al sincronizar los datos guardados en la nube
+    textPortuguese: Falha ao sincronizar os dados de salvamento na nuvem
+    textItalian: Errore nella sincronizzazione dei dati del salvataggio cloud
+    textDutch: Mislukt om cloud-opgeslagen gegevens te synchroniseren
+    textRussian: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u0438\u043D\u0445\u0440\u043E\u043D\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+      \u0434\u0430\u043D\u043D\u044B\u0435 \u043E\u0431\u043B\u0430\u0447\u043D\u043E\u0433\u043E
+      \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F"
+    textThai: "\u0E01\u0E32\u0E23\u0E0B\u0E34\u0E07\u0E04\u0E4C\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E43\u0E19\u0E04\u0E25\u0E32\u0E27\u0E14\u0E4C\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+  - content: "\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E1B\u0E23\u0E31\u0E1A\u0E41\u0E15\u0E48\u0E07"
+    key: tip/tip_account_custom_id_not_found
+    textEnglish: Custom ID not found
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u672A\u627E\u5230\u5BA2\u6237ID"
+    textTraditionChinese: "\u672A\u627E\u5230\u81EA\u8A02ID"
+    textJapanese: "\u30AB\u30B9\u30BF\u30E0ID\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093"
+    textKorean: "\uC0AC\uC6A9\uC790 \uC9C0\uC815 ID\uAC00 \uBC1C\uACAC\uB418\uC9C0
+      \uC54A\uC558\uC2B5\uB2C8\uB2E4."
+    textFrench: "Identifiant personnalis\xE9 non trouv\xE9"
+    textGerman: Benutzerdefinierte ID nicht gefunden
+    textSpanish: "Identificaci\xF3n personalizada no encontrada"
+    textPortuguese: "ID personalizado n\xE3o encontrado"
+    textItalian: ID personalizzato non trovato
+    textDutch: Aangepaste ID niet gevonden
+    textRussian: "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440
+      \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D."
+    textThai: "\u0E44\u0E21\u0E48\u0E1E\u0E1A\u0E23\u0E2B\u0E31\u0E2A\u0E1B\u0E23\u0E31\u0E1A\u0E41\u0E15\u0E48\u0E07"
+  - content: "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08"
+    key: tip/tip_account_link_successful
+    textEnglish: Successfully link your account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6210\u529F\u94FE\u63A5\u60A8\u7684\u8D26\u6237"
+    textTraditionChinese: "\u6210\u529F\u9023\u7D50\u60A8\u7684\u5E33\u6236"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u6B63\u5E38\u306B\u30EA\u30F3\u30AF\u3055\u305B\u308B"
+    textKorean: "\uACC4\uC815\uC744 \uC131\uACF5\uC801\uC73C\uB85C \uC5F0\uACB0\uD588\uC2B5\uB2C8\uB2E4."
+    textFrench: "Lier votre compte avec succ\xE8s"
+    textGerman: "Verkn\xFCpfen Sie Ihr Konto erfolgreich."
+    textSpanish: Vincula tu cuenta exitosamente.
+    textPortuguese: Vincule sua conta com sucesso.
+    textItalian: Collega il tuo account con successo
+    textDutch: Koppel succesvol uw account aan
+    textRussian: "\u0423\u0441\u043F\u0435\u0448\u043D\u043E \u0441\u0432\u044F\u0436\u0438\u0442\u0435
+      \u0441\u0432\u043E\u0439 \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+    textThai: "\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E1B\u0E23\u0E30\u0E2A\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08"
+  - content: "\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+    key: tip/tip_account_link_failed
+    textEnglish: Failed to link your account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FDE\u63A5\u60A8\u7684\u8D26\u6237\u5931\u8D25"
+    textTraditionChinese: "\u9023\u7D50\u60A8\u7684\u5E33\u6236\u5931\u6557"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u30EA\u30F3\u30AF\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002"
+    textKorean: "\uACC4\uC815 \uC5F0\uACB0\uC5D0 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4"
+    textFrench: "\xC9chec de la liaison de votre compte"
+    textGerman: "Die Verkn\xFCpfung Ihres Kontos ist fehlgeschlagen."
+    textSpanish: No se pudo vincular tu cuenta.
+    textPortuguese: Falha ao vincular sua conta
+    textItalian: Impossibile collegare il tuo account
+    textDutch: Het is niet gelukt om uw account te koppelen.
+    textRussian: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u0432\u044F\u0437\u0430\u0442\u044C
+      \u0432\u0430\u0448 \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+    textThai: "\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+  - content: "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27"
+    key: tip/tip_account_unlink_successful
+    textEnglish: Successfully unlink your account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6210\u529F\u89E3\u7ED1\u60A8\u7684\u8D26\u6237"
+    textTraditionChinese: "\u6210\u529F\u53D6\u6D88\u9023\u7D50\u60A8\u7684\u5E33\u6236"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u30EA\u30F3\u30AF\u89E3\u9664\u306B\u6210\u529F\u3057\u307E\u3057\u305F\u3002"
+    textKorean: "\uACC4\uC815\uC744 \uC131\uACF5\uC801\uC73C\uB85C \uC5F0\uACB0 \uD574\uC81C\uD588\uC2B5\uB2C8\uB2E4."
+    textFrench: "Dissociez votre compte avec succ\xE8s"
+    textGerman: Trennen Sie Ihr Konto erfolgreich.
+    textSpanish: "Desvincula tu cuenta con \xE9xito."
+    textPortuguese: Desvincule sua conta com sucesso.
+    textItalian: Scollega il tuo account con successo.
+    textDutch: Succesvol uw account loskoppelen.
+    textRussian: "\u0423\u0441\u043F\u0435\u0448\u043D\u043E \u043E\u0442\u0441\u043E\u0435\u0434\u0438\u043D\u0438\u0442\u044C
+      \u0432\u0430\u0448 \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+    textThai: "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E23\u0E35\u0E22\u0E1A\u0E23\u0E49\u0E2D\u0E22\u0E41\u0E25\u0E49\u0E27"
+  - content: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E44\u0E14\u0E49"
+    key: tip/tip_account_unlink_failed
+    textEnglish: Failed to unlink your account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u65E0\u6CD5\u53D6\u6D88\u94FE\u63A5\u60A8\u7684\u8D26\u6237"
+    textTraditionChinese: "\u89E3\u9664\u60A8\u7684\u5E33\u6236\u9023\u7D50\u5931\u6557"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u30EA\u30F3\u30AF\u89E3\u9664\u306B\u5931\u6557\u3057\u307E\u3057\u305F\u3002"
+    textKorean: "\uACC4\uC815 \uC5F0\uACB0 \uD574\uC81C\uC5D0 \uC2E4\uD328\uD588\uC2B5\uB2C8\uB2E4."
+    textFrench: "\xC9chec de la suppression de votre compte"
+    textGerman: Konnte Ihr Konto nicht trennen.
+    textSpanish: Error al desvincular tu cuenta
+    textPortuguese: Falha ao desvincular sua conta
+    textItalian: Impossibile scollegare il tuo account
+    textDutch: Het is niet gelukt om uw account los te koppelen.
+    textRussian: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u043E\u0442\u0432\u044F\u0437\u0430\u0442\u044C
+      \u0432\u0430\u0448 \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+    textThai: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E44\u0E14\u0E49"
+  - content: "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
+    key: tip/tip_account_link_cancel
+    textEnglish: Cancel linking account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u53D6\u6D88\u5173\u8054\u8D26\u6237"
+    textTraditionChinese: "\u53D6\u6D88\u9023\u7D50\u5E33\u6236"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u306E\u30EA\u30F3\u30AF\u89E3\u9664"
+    textKorean: "\uACC4\uC815 \uC5F0\uACB0 \uCDE8\uC18C"
+    textFrench: Annuler la liaison du compte
+    textGerman: "Verkn\xFCpfung des Kontos stornieren"
+    textSpanish: "Cancelar vinculaci\xF3n de cuenta"
+    textPortuguese: "Cancelar a vincula\xE7\xE3o da conta"
+    textItalian: Annulla l'associazione dell'account.
+    textDutch: Annuleren van koppelen van account
+    textRussian: "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C \u0441\u0432\u044F\u0437\u044C
+      \u0430\u043A\u043A\u0430\u0443\u043D\u0442\u0430"
+    textThai: "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E15\u0E48\u0E2D\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
+  - content: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E01\u0E31\u0E1A\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E19\u0E35\u0E49"
+    key: tip/tip_account_no_data_link
+    textEnglish: No data linked to this account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6B64\u5E10\u6237\u65E0\u5173\u8054\u6570\u636E\u3002"
+    textTraditionChinese: "\u6B64\u5E33\u6236\u6C92\u6709\u76F8\u95DC\u8CC7\u6599"
+    textJapanese: "\u3053\u306E\u30A2\u30AB\u30A6\u30F3\u30C8\u306B\u30EA\u30F3\u30AF\u3055\u308C\u305F\u30C7\u30FC\u30BF\u306F\u3042\u308A\u307E\u305B\u3093\u3002"
+    textKorean: "\uC774 \uACC4\uC815\uC5D0 \uC5F0\uACB0\uB41C \uB370\uC774\uD130\uAC00
+      \uC5C6\uC2B5\uB2C8\uB2E4."
+    textFrench: "Aucune donn\xE9e li\xE9e \xE0 ce compte."
+    textGerman: "Keine Daten mit diesem Konto verkn\xFCpft"
+    textSpanish: No hay datos vinculados a esta cuenta.
+    textPortuguese: "N\xE3o h\xE1 dados vinculados a esta conta."
+    textItalian: Nessun dato collegato a questo account.
+    textDutch: Geen gegevens gekoppeld aan dit account
+    textRussian: "\u041D\u0435\u0442 \u0434\u0430\u043D\u043D\u044B\u0445, \u0441\u0432\u044F\u0437\u0430\u043D\u043D\u044B\u0445
+      \u0441 \u044D\u0442\u043E\u0439 \u0443\u0447\u0435\u0442\u043D\u043E\u0439
+      \u0437\u0430\u043F\u0438\u0441\u044C\u044E."
+    textThai: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E17\u0E35\u0E48\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E42\u0E22\u0E07\u0E01\u0E31\u0E1A\u0E1A\u0E31\u0E0D\u0E0A\u0E35\u0E19\u0E35\u0E49"
+  - content: "\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08
+      \u0E01\u0E33\u0E25\u0E31\u0E07\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E01\u0E49\u0E32\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13"
+    key: tip/tip_account_link_successful_upload_progress
+    textEnglish: Link Successful. Uploading your game progress
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u94FE\u63A5\u6210\u529F\u3002\u6B63\u5728\u4E0A\u4F20\u60A8\u7684\u6E38\u620F\u8FDB\u5EA6\u3002"
+    textTraditionChinese: "\u9023\u7D50\u6210\u529F\u3002\u6B63\u5728\u4E0A\u50B3\u60A8\u7684\u904A\u6232\u9032\u5EA6\u3002"
+    textJapanese: "\u30EA\u30F3\u30AF\u304C\u6210\u529F\u3057\u307E\u3057\u305F\u3002\u30B2\u30FC\u30E0\u306E\u9032\u884C\u72B6\u6CC1\u3092\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3057\u3066\u3044\u307E\u3059\u3002"
+    textKorean: "\uB9C1\uD06C \uC131\uACF5. \uAC8C\uC784 \uC9C4\uD589 \uC0C1\uD669\uC744
+      \uC5C5\uB85C\uB4DC \uC911\uC785\uB2C8\uB2E4."
+    textFrench: "Lien r\xE9ussi. T\xE9l\xE9chargement de votre progression de jeu."
+    textGerman: Link erfolgreich. Lade deinen Spielstand hoch.
+    textSpanish: Enlace exitoso. Subiendo el progreso de tu juego.
+    textPortuguese: Link bem-sucedido. Enviando o progresso do seu jogo.
+    textItalian: Collegamento riuscito. Caricamento del progresso di gioco.
+    textDutch: Link succesvol. Uploaden van je spelvoortgang.
+    textRussian: "\u0421\u0441\u044B\u043B\u043A\u0430 \u0443\u0441\u043F\u0435\u0448\u043D\u043E
+      \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430. \u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044F
+      \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441 \u0432\u0430\u0448\u0435\u0439
+      \u0438\u0433\u0440\u044B."
+    textThai: "\u0E25\u0E34\u0E07\u0E01\u0E4C\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08
+      \u0E01\u0E33\u0E25\u0E31\u0E07\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E01\u0E49\u0E32\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13"
+  - content: "\u0E04\u0E27\u0E32\u0E21\u0E04\u0E37\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E16\u0E39\u0E01\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08\u0E41\u0E25\u0E49\u0E27"
+    key: tip/tip_account_upload_progress_successful
+    textEnglish: Game progress uploaded successfully
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6E38\u620F\u8FDB\u5EA6\u6210\u529F\u4E0A\u4F20"
+    textTraditionChinese: "\u904A\u6232\u9032\u5EA6\u5DF2\u6210\u529F\u4E0A\u50B3"
+    textJapanese: "\u30B2\u30FC\u30E0\u306E\u9032\u884C\u304C\u6B63\u5E38\u306B\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3055\u308C\u307E\u3057\u305F\u3002"
+    textKorean: "\uAC8C\uC784 \uC9C4\uD589\uC774 \uC131\uACF5\uC801\uC73C\uB85C \uC5C5\uB85C\uB4DC\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+    textFrench: "La progression du jeu a \xE9t\xE9 t\xE9l\xE9charg\xE9e avec succ\xE8s"
+    textGerman: Spielfortschritt erfolgreich hochgeladen.
+    textSpanish: Progreso del juego cargado exitosamente.
+    textPortuguese: Progresso do jogo carregado com sucesso
+    textItalian: Progresso del gioco caricato correttamente
+    textDutch: "Spelvoortgang succesvol ge\xFCpload"
+    textRussian: "\u041F\u0440\u043E\u0433\u0440\u0435\u0441\u0441 \u0438\u0433\u0440\u044B
+      \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D."
+    textThai: "\u0E04\u0E27\u0E32\u0E21\u0E04\u0E37\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E16\u0E39\u0E01\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08\u0E41\u0E25\u0E49\u0E27"
+  - content: "\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E04\u0E37\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+    key: tip/tip_account_upload_progress_failed
+    textEnglish: Failed to upload your game progress.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E0A\u4F20\u6E38\u620F\u8FDB\u5EA6\u5931\u8D25."
+    textTraditionChinese: "\u7121\u6CD5\u4E0A\u50B3\u904A\u6232\u9032\u5EA6."
+    textJapanese: "\u30B2\u30FC\u30E0\u306E\u9032\u884C\u72B6\u6CC1\u306E\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u306B\u5931\u6557\u3057\u307E\u3057\u305F."
+    textKorean: "\uAC8C\uC784 \uC9C4\uD589 \uC0C1\uD669\uC744 \uC5C5\uB85C\uB4DC\uD558\uC9C0
+      \uBABB\uD588\uC2B5\uB2C8\uB2E4."
+    textFrench: "\xC9chec du t\xE9l\xE9chargement de votre progression de jeu."
+    textGerman: Fehler beim Hochladen Ihres Spielstands.
+    textSpanish: No se pudo cargar tu progreso del juego.
+    textPortuguese: Falha ao carregar o progresso do seu jogo.
+    textItalian: Impossibile caricare il progresso del gioco.
+    textDutch: Het uploaden van jouw spelvoortgang is mislukt.
+    textRussian: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C
+      \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441 \u0438\u0433\u0440\u044B."
+    textThai: "\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E04\u0E37\u0E1A\u0E2B\u0E19\u0E49\u0E32\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+  - content: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E25\u0E48\u0E19\u0E42\u0E06\u0E29\u0E13\u0E32\u0E44\u0E14\u0E49"
+    key: tip/ad_fail
+    textEnglish: Failed to play ads
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u64AD\u653E\u5E7F\u544A\u5931\u8D25"
+    textTraditionChinese: "\u64AD\u653E\u5EE3\u544A\u5931\u6557"
+    textJapanese: "\u5E83\u544A\u306E\u518D\u751F\u306B\u5931\u6557\u3057\u307E\u3057\u305F"
+    textKorean: "\uAD11\uACE0 \uC7AC\uC0DD \uC2E4\uD328"
+    textFrench: "\xC9chec de la lecture des publicit\xE9s"
+    textGerman: Anzeigen konnten nicht abgespielt werden
+    textSpanish: No se pudieron reproducir los anuncios.
+    textPortuguese: "Falha ao reproduzir an\xFAncios"
+    textItalian: Impossibile riprodurre gli annunci
+    textDutch: Kan geen advertenties afspelen
+    textRussian: "\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0441\u0442\u0438
+      \u0440\u0435\u043A\u043B\u0430\u043C\u0443"
+    textThai: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E25\u0E48\u0E19\u0E42\u0E06\u0E29\u0E13\u0E32\u0E44\u0E14\u0E49"
+  - content: "\u0E08\u0E33\u0E19\u0E27\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14\u0E17\u0E35\u0E48\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E44\u0E27\u0E49\u0E41\u0E25\u0E49\u0E27"
+    key: tip/tip_purchase_limit
+    textEnglish: The maximum number of purchases has been reached
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u8FBE\u5230\u6700\u5927\u8D2D\u4E70\u6570\u91CF"
+    textTraditionChinese: "\u5DF2\u9054\u5230\u6700\u5927\u8CFC\u8CB7\u6578\u91CF"
+    textJapanese: "\u8CFC\u5165\u306E\u6700\u5927\u6570\u306B\u9054\u3057\u307E\u3057\u305F"
+    textKorean: "\uCD5C\uB300 \uAD6C\uB9E4 \uD69F\uC218\uC5D0 \uB3C4\uB2EC\uD588\uC2B5\uB2C8\uB2E4"
+    textFrench: "Le nombre maximum d'achats a \xE9t\xE9 atteint."
+    textGerman: "Die maximale Anzahl der K\xE4ufe wurde erreicht."
+    textSpanish: "Se ha alcanzado el n\xFAmero m\xE1ximo de compras."
+    textPortuguese: "O n\xFAmero m\xE1ximo de compras foi atingido"
+    textItalian: "\xC8 stato raggiunto il numero massimo di acquisti."
+    textDutch: Het maximale aantal aankopen is bereikt
+    textRussian: "\u0414\u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442\u043E \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+      \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043F\u043E\u043A\u0443\u043F\u043E\u043A"
+    textThai: "\u0E08\u0E33\u0E19\u0E27\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14\u0E17\u0E35\u0E48\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E44\u0E27\u0E49\u0E41\u0E25\u0E49\u0E27"

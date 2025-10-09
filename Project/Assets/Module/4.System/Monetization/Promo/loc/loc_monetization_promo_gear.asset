@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_monetization_promo_gear
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: monetization/promo/weapon/title
+    textEnglish: Weapon Pack
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6B66\u5668\u5305"
+    textTraditionChinese: "\u6B66\u5668\u5305"
+    textJapanese: "\u6B66\u5668\u30D1\u30C3\u30AF"
+    textKorean: "\uC6E8\uD3F0  \uD329"
+    textFrench: Pack d'armes
+    textGerman: Waffenpaket
+    textSpanish: Paquete de Armas
+    textPortuguese: Pacote de Armas
+    textItalian: Pacchetto Armi
+    textDutch: Wapenpakket
+    textRussian: "\u041E\u0440\u0443\u0436\u0435\u0439\u043D\u044B\u0439 \u043D\u0430\u0431\u043E\u0440"
+    textThai: "\u0E0A\u0E38\u0E14\u0E2D\u0E32\u0E2D\u0E32\u0E27\u0E38\u0E18"

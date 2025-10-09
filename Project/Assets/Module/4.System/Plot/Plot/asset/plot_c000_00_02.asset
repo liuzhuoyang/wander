@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c000_00_02
+  m_EditorClassIdentifier: 
+  plotName: plot_c000_00_02
+  totalStep: 5
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c000_00_02_01
+    optionKey1: 
+    optionKey2: 
+    content: As long as we're alive, there's always a chance to bounce back.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c000_00_02_02
+    optionKey1: 
+    optionKey2: 
+    content: But we've just lost a ton of supplies and data.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c000_00_02_03
+    optionKey1: 
+    optionKey2: 
+    content: Scans show this planet has supplies we desperately need, and life signs
+      are pretty weak.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c000_00_02_04_option_1
+    optionKey2: loc_plot_c000_00_02_04_option_2
+    content: 
+    optionContent1: Then let's move out, quick.
+    optionConcent2: At least let's earn enough to cover repair bills.
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c000_00_02_05
+    optionKey1: 
+    optionKey2: 
+    content: Yes commander.
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 0}
+  rewardName: 
+  rewardNum: 0

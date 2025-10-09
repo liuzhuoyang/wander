@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7123748192ede439cad84abe972a4661, type: 3}
+  m_Name: all_ui_dynamic_target
+  m_EditorClassIdentifier: 
+  path: Assets/Module/9.UI/UIDynamic/asset/
+  listUIDynamicTargetData: []
+  listData:
+  - {fileID: 11400000, guid: c6fc12ca3dd17409db8846abe373ba43, type: 2}
+  - {fileID: 11400000, guid: 255bae75cf166430db3f47df2417ae3f, type: 2}
+  - {fileID: 11400000, guid: 6d6b9cd63d28d4e78a4aa33bfc6b5c99, type: 2}
+  - {fileID: 11400000, guid: 1c7c1abf488824882850caa05e96e8a6, type: 2}
+  - {fileID: 11400000, guid: fa4c005830b6d4aa48cedcb14ea4551a, type: 2}

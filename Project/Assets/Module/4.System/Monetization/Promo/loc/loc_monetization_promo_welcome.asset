@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_monetization_promo_welcome
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: monetization/promo/welcome/title
+    textEnglish: Welcome Pack
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6B22\u8FCE\u793C\u5305"
+    textTraditionChinese: "\u6B61\u8FCE\u5957\u88DD"
+    textJapanese: "\u30A6\u30A7\u30EB\u30AB\u30E0\u30D1\u30C3\u30AF"
+    textKorean: "\uC6F0\uCEF4  \uD329"
+    textFrench: Pack de bienvenue
+    textGerman: Willkommenspaket
+    textSpanish: Paquete de Bienvenida
+    textPortuguese: Pacote de Boas-Vindas
+    textItalian: Kit di benvenuto
+    textDutch: Welkomstpakket
+    textRussian: "\u0414\u043E\u0431\u0440\u043E \u043F\u043E\u0436\u0430\u043B\u043E\u0432\u0430\u0442\u044C"
+    textThai: "\u0E0A\u0E38\u0E14\u0E15\u0E49\u0E2D\u0E19\u0E23\u0E31\u0E1A"

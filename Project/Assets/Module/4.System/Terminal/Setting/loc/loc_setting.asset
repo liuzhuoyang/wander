@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_setting
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: setting/btn/support
+    textEnglish: Support
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u652F\u6301"
+    textTraditionChinese: "\u652F\u63F4"
+    textJapanese: "\u30B5\u30DD\u30FC\u30C8"
+    textKorean: "\uC9C0\uC6D0"
+    textFrench: Support
+    textGerman: "Unterst\xFCtzung"
+    textSpanish: Apoyo
+    textPortuguese: Suporte
+    textItalian: Supporto
+    textDutch: Ondersteuning
+    textRussian: "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430"
+    textThai: "\u0E01\u0E32\u0E23\u0E2A\u0E19\u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19"
+  - key: setting/btn/language
+    textEnglish: Language
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8BED\u8A00"
+    textTraditionChinese: "\u8A9E\u8A00"
+    textJapanese: "\u8A00\u8A9E"
+    textKorean: "\uC5B8\uC5B4"
+    textFrench: Langue
+    textGerman: Sprache
+    textSpanish: Idioma
+    textPortuguese: Linguagem
+    textItalian: Lingua
+    textDutch: Taal
+    textRussian: "\u042F\u0437\u044B\u043A"
+    textThai: "\u0E20\u0E32\u0E29\u0E32"
+  - key: setting/btn_policy
+    textEnglish: Privacy Policy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9690\u79C1\u653F\u7B56"
+    textTraditionChinese: "\u96B1\u79C1\u653F\u7B56"
+    textJapanese: "\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+    textKorean: "\uAC1C\uC778\uC815\uBCF4 \uBCF4\uD638 \uC815\uCC45"
+    textFrench: "Politique de confidentialit\xE9"
+    textGerman: Datenschutz-Bestimmungen
+    textSpanish: "Pol\xEDtica de privacidad"
+    textPortuguese: "Pol\xEDtica de Privacidade"
+    textItalian: Informativa sulla privacy
+    textDutch: Privacybeleid
+    textRussian: "\u041F\u043E\u043B\u0438\u0442\u0438\u043A\u0430 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"
+    textThai: "\u0E19\u0E42\u0E22\u0E1A\u0E32\u0E22\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+  - key: setting/btn/terms
+    textEnglish: Terms & Privacy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6761\u6B3E\u548C\u9690\u79C1"
+    textTraditionChinese: "\u689D\u6B3E\u8207\u96B1\u79C1\u653F\u7B56"
+    textJapanese: "\u5229\u7528\u898F\u7D04\u3068\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30DD\u30EA\u30B7\u30FC"
+    textKorean: "\uC57D\uAD00 \uBC0F \uAC1C\uC778\uC815\uBCF4 \uCC98\uB9AC\uBC29\uCE68"
+    textFrench: "Conditions g\xE9n\xE9rales et confidentialit\xE9"
+    textGerman: Nutzungsbedingungen & Datenschutz
+    textSpanish: "T\xE9rminos y privacidad"
+    textPortuguese: Termos e Privacidade
+    textItalian: Termini e privacy
+    textDutch: Voorwaarden & Privacy
+    textRussian: "\u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C"
+    textThai: "\u0E02\u0E49\u0E2D\u0E01\u0E33\u0E2B\u0E19\u0E14\u0E41\u0E25\u0E30\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27"
+  - key: setting/btn/save
+    textEnglish: Save Progress
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6E38\u620F\u8FDB\u5EA6"
+    textTraditionChinese: "\u904A\u6232\u9032\u5EA6"
+    textJapanese: "\u30B2\u30FC\u30E0\u306E\u9032\u884C"
+    textKorean: "\uAC8C\uC784 \uC9C4\uD589 \uC0C1\uD669"
+    textFrench: Sauvegarder la progression
+    textGerman: Fortschritt speichern
+    textSpanish: Guardar progreso
+    textPortuguese: Salvar Progresso
+    textItalian: Salva progressi
+    textDutch: Opslaan voortgang
+    textRussian: "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441"
+    textThai: "\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01\u0E04\u0E27\u0E32\u0E21\u0E01\u0E49\u0E32\u0E27\u0E2B\u0E19\u0E49\u0E32"
+  - key: setting/btn/delete
+    textEnglish: Delete Account
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5220\u9664\u8D26\u53F7"
+    textTraditionChinese: "\u522A\u9664\u5E33\u6236"
+    textJapanese: "\u30A2\u30AB\u30A6\u30F3\u30C8\u3092\u524A\u9664"
+    textKorean: "\uACC4\uC815 \uC0AD\uC81C"
+    textFrench: Supprimer le compte
+    textGerman: "Konto l\xF6schen"
+    textSpanish: Eliminar cuenta
+    textPortuguese: Excluir Conta
+    textItalian: Cancellare account
+    textDutch: Verwijder Account
+    textRussian: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0430\u043A\u043A\u0430\u0443\u043D\u0442"
+    textThai: "\u0E25\u0E1A\u0E1A\u0E31\u0E0D\u0E0A\u0E35"
+  - key: setting/btn/order
+    textEnglish: Orders
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8BA2\u5355"
+    textTraditionChinese: "\u8A02\u55AE"
+    textJapanese: "\u6CE8\u6587"
+    textKorean: "\uC8FC\uBB38"
+    textFrench: Commandes
+    textGerman: Bestellungen
+    textSpanish: Pedidos
+    textPortuguese: Pedidos
+    textItalian: Ordini
+    textDutch: Bestellingen
+    textRussian: "\u0417\u0430\u043A\u0430\u0437\u044B"
+    textThai: "\u0E04\u0E33\u0E2A\u0E31\u0E48\u0E07\u0E0B\u0E37\u0E49\u0E2D"
+  - key: setting/progress/title
+    textEnglish: Progress
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6E38\u620F\u8FDB\u5EA6"
+    textTraditionChinese: "\u904A\u6232\u9032\u5EA6"
+    textJapanese: "\u30B2\u30FC\u30E0\u306E\u9032\u884C"
+    textKorean: "\uAC8C\uC784 \uC9C4\uD589"
+    textFrench: "PROGR\xC8S"
+    textGerman: FORTSCHRITT
+    textSpanish: PROGRESO
+    textPortuguese: PROGRESSO
+    textItalian: PROGRESSO
+    textDutch: VOORUITGANG
+    textRussian: "\u041F\u0420\u041E\u0413\u0420\u0415\u0421\u0421"
+    textThai: "\u0E04\u0E27\u0E32\u0E21\u0E01\u0E49\u0E32\u0E27\u0E2B\u0E19\u0E49\u0E32"
+  - key: setting/setting_change_language
+    textEnglish: Restart Game To Set Language?
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u91CD\u542F\u6E38\u620F\u4EE5\u8BBE\u7F6E\u8BED\u8A00\uFF1F"
+    textTraditionChinese: "\u91CD\u65B0\u555F\u52D5\u904A\u6232\u4EE5\u8A2D\u7F6E\u8A9E\u8A00\uFF1F"
+    textJapanese: "\u8A00\u8A9E\u3092\u8A2D\u5B9A\u3059\u308B\u306B\u306F\u30B2\u30FC\u30E0\u3092\u518D\u8D77\u52D5\u3057\u307E\u3059\u304B\uFF1F"
+    textKorean: "\uAC8C\uC784\uC744 \uC7AC\uC2DC\uC791\uD558\uC5EC \uC5B8\uC5B4\uB97C
+      \uC124\uC815\uD558\uC2DC\uACA0\uC2B5\uB2C8\uAE4C?"
+    textFrench: "Red\xE9marrer le jeu pour choisir la langue ?"
+    textGerman: Spiel neu starten, um die Sprache einzustellen?
+    textSpanish: "\xBFReiniciar juego para establecer idioma?"
+    textPortuguese: Reiniciar o jogo para definir o idioma?
+    textItalian: Riavviare il gioco per impostare la lingua?
+    textDutch: Spel opnieuw starten om taal in te stellen?
+    textRussian: "\u041F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C
+      \u0438\u0433\u0440\u0443 \u0434\u043B\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438
+      \u044F\u0437\u044B\u043A\u0430?"
+    textThai: "\u0E40\u0E23\u0E34\u0E48\u0E21\u0E40\u0E01\u0E21\u0E43\u0E2B\u0E21\u0E48\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32\u0E20\u0E32\u0E29\u0E32?"
+  - key: setting/setting_upload_progress
+    textEnglish: Upload Progress
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E0A\u4F20\u8FDB\u5EA6"
+    textTraditionChinese: "\u4E0A\u50B3\u9032\u5EA6"
+    textJapanese: "\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u306E\u9032\u6357\u72B6\u6CC1"
+    textKorean: "\uC5C5\uB85C\uB4DC \uC9C4\uD589 \uC0C1\uD669"
+    textFrench: "Progr\xE8s de t\xE9l\xE9chargement"
+    textGerman: Lade Fortschritt hoch
+    textSpanish: Progreso de carga
+    textPortuguese: Progresso de upload
+    textItalian: Caricamento in corso
+    textDutch: Uploadvoortgang
+    textRussian: "\u041F\u0440\u043E\u0433\u0440\u0435\u0441\u0441 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438"
+    textThai: "\u0E2D\u0E31\u0E1B\u0E42\u0E2B\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E04\u0E37\u0E1A\u0E2B\u0E19\u0E49\u0E32"
+  - key: setting/btn/restore_purchase
+    textEnglish: Restore Purchase
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6062\u590D\u8D2D\u4E70"
+    textTraditionChinese: "\u6062\u5FA9\u8CFC\u8CB7"
+    textJapanese: "\u8CFC\u5165\u3092\u5FA9\u5143"
+    textKorean: "\uAD6C\uB9E4 \uBCF5\uC6D0"
+    textFrench: Restaurer l'achat
+    textGerman: Kauf wiederherstellen
+    textSpanish: Restaurar compra
+    textPortuguese: Restaurar compra
+    textItalian: Ripristina acquisto
+    textDutch: Aankoop herstellen
+    textRussian: "\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+      \u043F\u043E\u043A\u0443\u043F\u043A\u0443"
+    textThai: "\u0E40\u0E23\u0E35\u0E22\u0E01\u0E04\u0E37\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D"
+  - key: setting/btn/term_of_use
+    textEnglish: Terms of Use
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F7F\u7528\u6761\u6B3E"
+    textTraditionChinese: "\u4F7F\u7528\u689D\u6B3E"
+    textJapanese: "\u5229\u7528\u898F\u7D04"
+    textKorean: "\uC774\uC6A9 \uC57D\uAD00"
+    textFrench: Conditions d'utilisation
+    textGerman: Nutzungsbedingungen
+    textSpanish: "T\xE9rminos de uso"
+    textPortuguese: Termos de Uso
+    textItalian: Condizioni d'uso
+    textDutch: Gebruiksvoorwaarden
+    textRussian: "\u0423\u0441\u043B\u043E\u0432\u0438\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F"
+    textThai: "\u0E40\u0E07\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E02\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
+  - key: setting/link/ogin_facebook
+    textEnglish: Login with Facebook
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7528Facebook\u767B\u5F55"
+    textTraditionChinese: "\u4F7F\u7528 Facebook \u767B\u5165"
+    textJapanese: "\u30D5\u30A7\u30FC\u30B9\u30D6\u30C3\u30AF\u3067\u30ED\u30B0\u30A4\u30F3\u3059\u308B"
+    textKorean: "\uD398\uC774\uC2A4\uBD81\uC73C\uB85C \uB85C\uADF8\uC778\uD558\uAE30"
+    textFrench: Connectez-vous avec Facebook
+    textGerman: Mit Facebook anmelden
+    textSpanish: "Iniciar sesi\xF3n con Facebook"
+    textPortuguese: Entrar com o Facebook
+    textItalian: Accedi con Facebook
+    textDutch: Log in met Facebook
+    textRussian: "\u0412\u043E\u0439\u0442\u0438 \u0447\u0435\u0440\u0435\u0437 Facebook"
+    textThai: "\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E23\u0E30\u0E1A\u0E1A\u0E14\u0E49\u0E27\u0E22
+      Facebook"
+  - key: setting/link/logout_facebook
+    textEnglish: Logout from Facebook
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4ECEFacebook\u767B\u51FA"
+    textTraditionChinese: "\u9000\u51FAFacebook"
+    textJapanese: "\u30D5\u30A7\u30A4\u30B9\u30D6\u30C3\u30AF\u304B\u3089\u30ED\u30B0\u30A2\u30A6\u30C8\u3057\u307E\u3059\u3002"
+    textKorean: "\uD398\uC774\uC2A4\uBD81\uC5D0\uC11C \uB098\uAC10"
+    textFrench: Supprimez de Facebook
+    textGerman: "L\xF6sche mich von Facebook."
+    textSpanish: Salir de Facebook
+    textPortuguese: Sair do Facebook
+    textItalian: Esci da Facebook
+    textDutch: Log uit van Facebook.
+    textRussian: "\u0412\u044B\u0445\u043E\u0434\u0438\u0442\u0435 \u0438\u0437 Facebook"
+    textThai: "\u0E2D\u0E2D\u0E01\u0E08\u0E32\u0E01\u0E40\u0E1F\u0E2A\u0E1A\u0E38\u0E4A\u0E04"
+  - key: setting/privacy/manage
+    textEnglish: Manage Existing Privacy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7BA1\u7406\u73B0\u6709\u7684\u9690\u79C1"
+    textTraditionChinese: "\u7BA1\u7406\u73FE\u6709\u7684\u96B1\u79C1"
+    textJapanese: "\u65E2\u5B58\u306E\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u3092\u7BA1\u7406"
+    textKorean: "\uAE30\uC874 \uAC1C\uC778 \uC815\uBCF4 \uAD00\uB9AC"
+    textFrench: "G\xE9rer la confidentialit\xE9 existante"
+    textGerman: Verwalten Sie bestehende Datenschutzrichtlinien
+    textSpanish: Administrar Privacidad Existente
+    textPortuguese: Gerenciar Privacidade Existente
+    textItalian: Gestisci la privacy esistente
+    textDutch: Beheer bestaande privacy
+    textRussian: "\u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0435\u0439
+      \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C\u044E"
+    textThai: "\u0E08\u0E31\u0E14\u0E01\u0E32\u0E23\u0E04\u0E27\u0E32\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E48\u0E27\u0E19\u0E15\u0E31\u0E27\u0E17\u0E35\u0E48\u0E21\u0E35\u0E2D\u0E22\u0E39\u0E48"
+  - key: setting/restore/success
+    textEnglish: Restore Purchase Success
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6062\u590D\u8D2D\u4E70\u6210\u529F"
+    textTraditionChinese: "\u6062\u5FA9\u8CFC\u8CB7\u6210\u529F"
+    textJapanese: "\u8CFC\u5165\u306E\u5FA9\u5143\u304C\u6210\u529F\u3057\u307E\u3057\u305F."
+    textKorean: "\uAD6C\uB9E4 \uBCF5\uC6D0 \uC131\uACF5"
+    textFrench: "Succ\xE8s de restauration de l'achat"
+    textGerman: Kaufwiederherstellung erfolgreich
+    textSpanish: "Restauraci\xF3n de compra exitosa"
+    textPortuguese: "Restaura\xE7\xE3o da compra bem-sucedida"
+    textItalian: Ripristino Acquisto Riuscito
+    textDutch: Aankoop Herstellen Succes
+    textRussian: "\u041F\u043E\u043A\u0443\u043F\u043A\u0430 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430
+      \u0443\u0441\u043F\u0435\u0448\u043D\u043E"
+    textThai: "\u0E01\u0E32\u0E23\u0E40\u0E23\u0E35\u0E22\u0E01\u0E04\u0E37\u0E19\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08"

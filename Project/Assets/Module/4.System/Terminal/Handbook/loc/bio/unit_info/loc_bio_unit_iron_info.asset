@@ -1,0 +1,530 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_bio_unit_iron_info
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: page/bio/unit/iron/unit_iron_melee_common_01_info
+    textEnglish: Its drill may not pierce the heavens, but it easily penetrates main
+      battle tank armor
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5B83\u7684\u94BB\u5934\u867D\u4E0D\u80FD\u7A81\u7834\u5929\u9645\uFF0C\u4F46\u8D2F\u7A7F\u4E3B\u6218\u5766\u514B\u7684\u88C5\u7532\u677F\u8FD8\u662F\u7EF0\u7EF0\u6709\u4F59"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B83\u7684\u94BB\u5934\u867D\u4E0D\u80FD\u7A81\u7834\u5929\u9645\uFF0C\u4F46\u8D2F\u7A7F\u4E3B\u6218\u5766\u514B\u7684\u88C5\u7532\u677F\u8FD8\u662F\u7EF0\u7EF0\u6709\u4F59"
+    textTraditionChinese: "\u5B83\u7684\u947D\u982D\u96D6\u4E0D\u80FD\u7A81\u7834\u5929\u969B\uFF0C\u4F46\u8CAB\u7A7F\u4E3B\u6230\u5766\u514B\u7684\u88DD\u7532\u677F\u9084\u662F\u7DBD\u7DBD\u6709\u9918"
+    textJapanese: "\u305D\u306E\u30C9\u30EA\u30EB\u306F\u5929\u3092\u8CAB\u3051\u306A\u3044\u304B\u3082\u3057\u308C\u306A\u3044\u304C\u3001\u4E3B\u529B\u6226\u8ECA\u306E\u88C5\u7532\u3092\u7C21\u5358\u306B\u8CAB\u901A\u3059\u308B"
+    textKorean: "\uADF8 \uB4DC\uB9B4\uC740 \uD558\uB298\uC744 \uB6AB\uC9C0 \uBABB\uD560\uC9C0\uB77C\uB3C4
+      \uC8FC\uB825 \uC804\uCC28 \uC7A5\uAC11\uC740 \uC27D\uAC8C \uAD00\uD1B5\uD569\uB2C8\uB2E4"
+    textFrench: Sa perceuse ne peut pas percer les cieux, mais elle traverse facilement
+      le blindage des chars de combat
+    textGerman: Sein Bohrer mag nicht den Himmel durchdringen, aber er durchdringt
+      problemlos die Panzerung von Kampfpanzern
+    textSpanish: "Su taladro puede que no perfore los cielos, pero penetra f\xE1cilmente
+      la armadura de un tanque de batalla principal"
+    textPortuguese: "Sua broca pode n\xE3o perfurar os c\xE9us, mas penetra facilmente
+      a blindagem de tanques de batalha principal"
+    textItalian: "La sua punta non pu\xF2 perforare i cieli, ma penetra facilmente
+      la corazza dei carri armati principali"
+    textDutch: Zijn boor mag dan niet door de hemel dringen, maar hij dringt moeiteloos
+      door het pantser van gevechtstanks
+    textRussian: "\u0415\u0433\u043E \u0431\u0443\u0440 \u043C\u043E\u0436\u0435\u0442
+      \u043D\u0435 \u043F\u0440\u043E\u0431\u0438\u0442\u044C \u043D\u0435\u0431\u0435\u0441\u0430,
+      \u043D\u043E \u043B\u0435\u0433\u043A\u043E \u043F\u0440\u043E\u043D\u0438\u043A\u0430\u0435\u0442
+      \u0432 \u0431\u0440\u043E\u043D\u044E \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445
+      \u0431\u043E\u0435\u0432\u044B\u0445 \u0442\u0430\u043D\u043A\u043E\u0432"
+    textThai: "\u0E2B\u0E31\u0E27\u0E40\u0E08\u0E32\u0E30\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19\u0E2D\u0E32\u0E08\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E17\u0E30\u0E25\u0E38\u0E1F\u0E49\u0E32\u0E44\u0E14\u0E49
+      \u0E41\u0E15\u0E48\u0E01\u0E47\u0E40\u0E08\u0E32\u0E30\u0E40\u0E01\u0E23\u0E32\u0E30\u0E23\u0E16\u0E16\u0E31\u0E07\u0E2B\u0E25\u0E31\u0E01\u0E44\u0E14\u0E49\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E07\u0E48\u0E32\u0E22\u0E14\u0E32\u0E22"
+  - key: page/bio/unit/iron/unit_iron_melee_common_02_info
+    textEnglish: "Who gave the saw legs? It doesn\u2019t even bother turning corners\u2014just
+      goes through them"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u8C01\u7ED9\u952F\u5B50\u88C5\u4E0A\u817F\u7684\uFF1F\u8FD9\u73A9\u610F\u513F\u8FFD\u4F60\u8FDE\u5899\u90FD\u61D2\u5F97\u7ED5"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8C01\u7ED9\u952F\u5B50\u88C5\u4E0A\u817F\u7684\uFF1F\u8FD9\u73A9\u610F\u513F\u8FFD\u4F60\u8FDE\u5899\u90FD\u61D2\u5F97\u7ED5"
+    textTraditionChinese: "\u8AB0\u7D66\u92F8\u5B50\u88DD\u4E0A\u817F\u7684\uFF1F\u9019\u73A9\u610F\u5152\u8FFD\u4F60\u9023\u7246\u90FD\u61F6\u5F97\u7E5E"
+    textJapanese: "\u8AB0\u304C\u30CE\u30B3\u30AE\u30EA\u306B\u8DB3\u3092\u3064\u3051\u305F\u3093\u3060\uFF1F\u89D2\u3092\u66F2\u304C\u308B\u624B\u9593\u3082\u7701\u3044\u3066\u3001\u305D\u306E\u307E\u307E\u7A81\u304D\u629C\u3051\u3066\u304F\u308B"
+    textKorean: "\uB204\uAC00 \uD1B1\uC5D0 \uB2E4\uB9AC\uB97C \uB2EC\uC558\uC5B4?
+      \uBAA8\uD241\uC774\uB97C \uB3CC \uC0DD\uAC01\uB3C4 \uC548 \uD558\uACE0 \uADF8\uB0E5
+      \uB6AB\uACE0 \uC9C0\uB098\uAC00"
+    textFrench: "Qui a donn\xE9 des jambes \xE0 la scie ? \xC7a ne d\xE9range m\xEAme
+      pas de tourner les coins\u2014\xE7a les traverse"
+    textGerman: "Wer hat der S\xE4ge Beine gegeben? Sie macht sich nicht mal die
+      M\xFChe, um Ecken zu gehen \u2013 sie geht einfach durch sie"
+    textSpanish: "\xBFQui\xE9n le puso patas a la sierra? Ni siquiera se molesta
+      en doblar esquinas, simplemente las atraviesa"
+    textPortuguese: "Quem deu pernas \xE0 serra? Ela nem se d\xE1 ao trabalho de
+      fazer curvas\u2014apenas passa por elas"
+    textItalian: Chi ha dato le gambe alla sega? Non si preoccupa nemmeno di girare
+      gli angoli, li attraversa e basta
+    textDutch: "Wie gaf de zaag benen? Het maakt niet eens de moeite om bochten te
+      maken\u2014gaat er gewoon doorheen"
+    textRussian: "\u041A\u0442\u043E \u0434\u0430\u043B \u043F\u0438\u043B\u0435
+      \u043D\u043E\u0433\u0438? \u041E\u043D\u0430 \u0434\u0430\u0436\u0435 \u043D\u0435
+      \u0443\u0442\u0440\u0443\u0436\u0434\u0430\u0435\u0442\u0441\u044F \u043E\u0433\u0438\u0431\u0430\u0442\u044C
+      \u0443\u0433\u043B\u044B \u2014 \u043F\u0440\u043E\u0441\u0442\u043E \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442
+      \u0441\u043A\u0432\u043E\u0437\u044C \u043D\u0438\u0445"
+    textThai: "\u0E43\u0E04\u0E23\u0E43\u0E2B\u0E49\u0E02\u0E32\u0E40\u0E25\u0E37\u0E48\u0E2D\u0E22?
+      \u0E21\u0E31\u0E19\u0E44\u0E21\u0E48\u0E41\u0E21\u0E49\u0E41\u0E15\u0E48\u0E08\u0E30\u0E23\u0E2D\u0E40\u0E25\u0E35\u0E49\u0E22\u0E27\u2014\u0E41\u0E04\u0E48\u0E17\u0E30\u0E25\u0E38\u0E1C\u0E48\u0E32\u0E19\u0E44\u0E1B\u0E40\u0E25\u0E22"
+  - key: page/bio/unit/iron/unit_iron_melee_common_03_info
+    textEnglish: A blade racing through the shadows of war, its speed makes it nearly
+      untouchable, and steel claws tear through enemy lines
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u53C2\u8003\u7FFB\u8BD1\uFF1A\u5B83\u5982\u540C\u5229\u5203\u7A7F\u68AD\u4E8E\u6218\u573A\u9634\u5F71\u4E2D\uFF0C\u901F\u5EA6\u5FEB\u5F97\u4EE4\u4EBA\u96BE\u4EE5\u6355\u6349\u3002\u94A2\u94C1\u4E4B\u722A\u6495\u5F00\u654C\u519B\u9632\u7EBF"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5229\u5203\u7A7F\u68AD\u4E8E\u6218\u4E89\u9634\u5F71\u4E2D\uFF0C\u901F\u5EA6\u4E4B\u5FEB\u51E0\u4E4E\u65E0\u6CD5\u89E6\u53CA\uFF0C\u94A2\u722A\u6495\u88C2\u654C\u519B\u9632\u7EBF"
+    textTraditionChinese: "\u5229\u5203\u7A7F\u68AD\u65BC\u6230\u722D\u9670\u5F71\u4E2D\uFF0C\u901F\u5EA6\u5FEB\u5F97\u5E7E\u4E4E\u7121\u6CD5\u89F8\u78B0\uFF0C\u92FC\u9435\u4E4B\u722A\u6495\u88C2\u6575\u8ECD\u9632\u7DDA"
+    textJapanese: "\u6226\u5834\u306E\u5F71\u3092\u99C6\u3051\u629C\u3051\u308B\u5203\u3001\u305D\u306E\u901F\u3055\u306F\u307B\u3068\u3093\u3069\u89E6\u308C\u3089\u308C\u305A\u3001\u92FC\u306E\u722A\u304C\u6575\u306E\u6226\u7DDA\u3092\u5F15\u304D\u88C2\u304F"
+    textKorean: "\uC804\uC7C1\uC758 \uADF8\uB9BC\uC790\uB97C \uAC00\uB974\uB294 \uCE7C\uB0A0,
+      \uADF8 \uC18D\uB3C4\uB294 \uAC70\uC758 \uB2FF\uC744 \uC218 \uC5C6\uC744 \uC815\uB3C4\uB85C
+      \uBE60\uB974\uBA70 \uAC15\uCCA0 \uBC1C\uD1B1\uC774 \uC801\uC758 \uC804\uC5F4\uC744
+      \uCC22\uC5B4\uBC84\uB9B0\uB2E4"
+    textFrench: "Une lame fendant les ombres de la guerre, sa vitesse la rend presque
+      intouchable, et des griffes d'acier d\xE9chirent les lignes ennemies"
+    textGerman: "Eine Klinge, die durch die Schatten des Krieges rast, ihre Geschwindigkeit
+      macht sie fast unber\xFChrbar, und Stahlkrallen zerrei\xDFen feindliche Linien"
+    textSpanish: "Una hoja que corre a trav\xE9s de las sombras de la guerra, su
+      velocidad la hace casi inalcanzable, y garras de acero desgarran las l\xEDneas
+      enemigas"
+    textPortuguese: "Uma l\xE2mina correndo pelas sombras da guerra, sua velocidade
+      a torna quase intoc\xE1vel, e garras de a\xE7o rasgam as linhas inimigas"
+    textItalian: "Una lama che sfreccia tra le ombre della guerra, la sua velocit\xE0
+      la rende quasi intoccabile, e artigli d'acciaio squarciano le linee nemiche"
+    textDutch: Een mes racend door de schaduwen van de oorlog, zijn snelheid maakt
+      het bijna ongrijpbaar, en stalen klauwen scheuren door vijandelijke linies
+    textRussian: "\u041A\u043B\u0438\u043D\u043E\u043A, \u043C\u0447\u0430\u0449\u0438\u0439\u0441\u044F
+      \u0441\u043A\u0432\u043E\u0437\u044C \u0442\u0435\u043D\u0438 \u0432\u043E\u0439\u043D\u044B,
+      \u0435\u0433\u043E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0434\u0435\u043B\u0430\u0435\u0442
+      \u0435\u0433\u043E \u043F\u043E\u0447\u0442\u0438 \u043D\u0435\u0443\u043B\u043E\u0432\u0438\u043C\u044B\u043C,
+      \u0430 \u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u043A\u043E\u0433\u0442\u0438
+      \u0440\u0430\u0437\u0440\u044B\u0432\u0430\u044E\u0442 \u0432\u0440\u0430\u0436\u0435\u0441\u043A\u0438\u0435
+      \u0440\u044F\u0434\u044B"
+    textThai: "\u0E43\u0E1A\u0E21\u0E35\u0E14\u0E17\u0E35\u0E48\u0E1E\u0E38\u0E48\u0E07\u0E1C\u0E48\u0E32\u0E19\u0E40\u0E07\u0E32\u0E02\u0E2D\u0E07\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21
+      \u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E21\u0E31\u0E19\u0E40\u0E01\u0E37\u0E2D\u0E1A\u0E08\u0E30\u0E08\u0E31\u0E1A\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49
+      \u0E41\u0E25\u0E30\u0E01\u0E23\u0E07\u0E40\u0E25\u0E47\u0E1A\u0E40\u0E2B\u0E25\u0E47\u0E01\u0E09\u0E35\u0E01\u0E41\u0E19\u0E27\u0E02\u0E49\u0E32\u0E28\u0E36\u0E01"
+  - key: page/bio/unit/iron/unit_iron_ranged_common_01_info
+    textEnglish: "Built from cameras, loaders, and rifles\u2014it locks onto the
+      hottest thing on screen"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u7531\u5E9F\u65E7\u6444\u50CF\u5934\u3001\u5DE5\u4E1A\u81C2\u548C\u6B65\u67AA\u62FC\u88C5\u800C\u6210\uFF0C\u5B83\u7684\u76EE\u6807\u6C38\u8FDC\u662F\u5C4F\u5E55\u4E0A\u6700\u5927\u7684\u70ED\u6E90"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7531\u6444\u50CF\u5934\u3001\u88C5\u8F7D\u5668\u548C\u6B65\u67AA\u7EC4\u88C5\u800C\u6210\uFF0C\u5B83\u9501\u5B9A\u5C4F\u5E55\u4E0A\u6700\u70ED\u7684\u76EE\u6807"
+    textTraditionChinese: "\u7531\u76F8\u6A5F\u3001\u88DD\u8F09\u5668\u548C\u6B65\u69CD\u62FC\u88DD\u800C\u6210\uFF0C\u5B83\u9396\u5B9A\u87A2\u5E55\u4E0A\u6700\u71B1\u7684\u76EE\u6A19"
+    textJapanese: "\u30AB\u30E1\u30E9\u3001\u30ED\u30FC\u30C0\u30FC\u3001\u30E9\u30A4\u30D5\u30EB\u3067\u7D44\u307F\u7ACB\u3066\u3089\u308C\u3001\u753B\u9762\u3067\u6700\u3082\u71B1\u3044\u3082\u306E\u306B\u30ED\u30C3\u30AF\u30AA\u30F3\u3059\u308B"
+    textKorean: "\uCE74\uBA54\uB77C, \uB85C\uB354, \uC18C\uCD1D\uC73C\uB85C \uB9CC\uB4E4\uC5B4\uC9C4
+      \uC774 \uC7A5\uCE58\uB294 \uD654\uBA74\uC5D0\uC11C \uAC00\uC7A5 \uB728\uAC70\uC6B4
+      \uB300\uC0C1\uC744 \uC7A0\uAE34\uB2E4"
+    textFrench: "Construit \xE0 partir de cam\xE9ras, chargeurs et fusils, il verrouille
+      sur la chose la plus chaude \xE0 l'\xE9cran"
+    textGerman: "Aus Kameras, Ladern und Gewehren gebaut \u2013 es zielt auf das
+      hei\xDFeste Objekt auf dem Bildschirm"
+    textSpanish: "Construido con c\xE1maras, cargadores y rifles, se bloquea en lo
+      m\xE1s caliente en pantalla"
+    textPortuguese: "Constru\xEDdo com c\xE2meras, carregadores e rifles, ele se
+      fixa na coisa mais quente na tela"
+    textItalian: "Costruito con telecamere, caricatori e fucili, si blocca sulla
+      cosa pi\xF9 calda sullo schermo"
+    textDutch: Gebouwd uit camera's, laadapparatuur en geweren - het richt zich op
+      het heetste ding op het scherm
+    textRussian: "\u0421\u043E\u0431\u0440\u0430\u043D\u043D\u044B\u0439 \u0438\u0437
+      \u043A\u0430\u043C\u0435\u0440, \u043F\u043E\u0433\u0440\u0443\u0437\u0447\u0438\u043A\u043E\u0432
+      \u0438 \u0432\u0438\u043D\u0442\u043E\u0432\u043E\u043A, \u043E\u043D \u0444\u0438\u043A\u0441\u0438\u0440\u0443\u0435\u0442\u0441\u044F
+      \u043D\u0430 \u0441\u0430\u043C\u043E\u043C \u0433\u043E\u0440\u044F\u0447\u0435\u043C
+      \u043E\u0431\u044A\u0435\u043A\u0442\u0435 \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435"
+    textThai: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E08\u0E32\u0E01\u0E01\u0E25\u0E49\u0E2D\u0E07
+      \u0E42\u0E2B\u0E25\u0E14\u0E40\u0E14\u0E2D\u0E23\u0E4C \u0E41\u0E25\u0E30\u0E1B\u0E37\u0E19\u0E44\u0E23\u0E40\u0E1F\u0E34\u0E25\u2014\u0E21\u0E31\u0E19\u0E25\u0E47\u0E2D\u0E01\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E17\u0E35\u0E48\u0E23\u0E49\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E38\u0E14\u0E1A\u0E19\u0E2B\u0E19\u0E49\u0E32\u0E08\u0E2D"
+  - key: page/bio/unit/iron/unit_iron_ranged_common_02_info
+    textEnglish: "Beams slash the sky with thunderous judgment\u2014sky no longer
+      belongs to human"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5149\u675F\u5212\u7834\u591C\u7A7A\uFF0C\u5E26\u6765\u5BA1\u5224\u822C\u7684\u8F70\u9E23\u3002\u5929\u7A7A\u4E0D\u518D\u5C5E\u4E8E\u4EBA\u7C7B"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5149\u675F\u5212\u7834\u591C\u7A7A\uFF0C\u5E26\u6765\u5BA1\u5224\u822C\u7684\u8F70\u9E23\u3002\u5929\u7A7A\u4E0D\u518D\u5C5E\u4E8E\u4EBA\u7C7B"
+    textTraditionChinese: "\u5149\u675F\u5283\u7834\u591C\u7A7A\uFF0C\u5E36\u4F86\u5BE9\u5224\u822C\u7684\u8F5F\u9CF4\u3002\u5929\u7A7A\u4E0D\u518D\u5C6C\u65BC\u4EBA\u985E"
+    textJapanese: "\u30D3\u30FC\u30E0\u304C\u96F7\u9CF4\u306E\u3088\u3046\u306A\u88C1\u304D\u3067\u7A7A\u3092\u5207\u308A\u88C2\u304F\u2015\u2015\u7A7A\u306F\u3082\u306F\u3084\u4EBA\u9593\u306E\u3082\u306E\u3067\u306F\u306A\u3044"
+    textKorean: "\uBE54\uC774 \uCC9C\uB465 \uAC19\uC740 \uC2EC\uD310\uC73C\uB85C
+      \uD558\uB298\uC744 \uAC00\uB974\uB2E4\u2014\uD558\uB298\uC740 \uB354 \uC774\uC0C1
+      \uC778\uAC04\uC758 \uAC83\uC774 \uC544\uB2C8\uB2E4"
+    textFrench: "Les faisceaux fendent le ciel d'un jugement tonitruant\u2014le ciel
+      n'appartient plus \xE0 l'homme"
+    textGerman: "Strahlen durchschneiden den Himmel mit donnerndem Urteil\u2014der
+      Himmel geh\xF6rt nicht mehr den Menschen"
+    textSpanish: 'Los rayos cortan el cielo con un juicio atronador: el cielo ya
+      no pertenece a los humanos'
+    textPortuguese: "Feixes cortam o c\xE9u com julgamento trovejante\u2014o c\xE9u
+      n\xE3o pertence mais aos humanos"
+    textItalian: "Fasci squarciano il cielo con un giudizio fragoroso\u2014il cielo
+      non appartiene pi\xF9 all'uomo"
+    textDutch: "Stralen scheuren de lucht met donderend oordeel\u2014de lucht behoort
+      niet langer toe aan de mens"
+    textRussian: "\u041B\u0443\u0447\u0438 \u043F\u0440\u043E\u043D\u0437\u0430\u044E\u0442
+      \u043D\u0435\u0431\u043E \u0433\u0440\u043E\u043C\u043E\u0432\u044B\u043C \u0441\u0443\u0434\u043E\u043C
+      \u2014 \u043D\u0435\u0431\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043D\u0435
+      \u043F\u0440\u0438\u043D\u0430\u0434\u043B\u0435\u0436\u0438\u0442 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u0443"
+    textThai: "\u0E25\u0E33\u0E41\u0E2A\u0E07\u0E15\u0E31\u0E14\u0E1F\u0E49\u0E32\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E15\u0E31\u0E14\u0E2A\u0E34\u0E19\u0E2D\u0E31\u0E19\u0E14\u0E38\u0E40\u0E14\u0E37\u0E2D\u0E14\u2014\u0E1F\u0E49\u0E32\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E02\u0E2D\u0E07\u0E21\u0E19\u0E38\u0E29\u0E22\u0E4C\u0E2D\u0E35\u0E01\u0E15\u0E48\u0E2D\u0E44\u0E1B"
+  - key: page/bio/unit/iron/unit_iron_ranged_common_03_info
+    textEnglish: A central node on the battlefield, it coordinates allied units and
+      can guide orbital laser strikes, but lacks effective self-defense capabilities
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u53C2\u8003\u7FFB\u8BD1\uFF1A\u6218\u573A\u4E0A\u7684\u4E2D\u67A2\u8282\u70B9\uFF0C\u7528\u4E8E\u534F\u8C03\u5176\u4ED6\u5355\u4F4D\u4F5C\u6218\uFF0C\u53EF\u4EE5\u5F15\u5BFC\u5929\u57FA\u6FC0\u5149\u6253\u51FB\uFF0C\u4F46\u7F3A\u5C11\u6709\u6548\u7684\u81EA\u4FDD\u624B\u6BB5"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6218\u573A\u4E0A\u7684\u4E2D\u67A2\u8282\u70B9\uFF0C\u7528\u4E8E\u534F\u8C03\u53CB\u519B\u5355\u4F4D\u4F5C\u6218\uFF0C\u53EF\u4EE5\u5F15\u5BFC\u8F68\u9053\u6FC0\u5149\u6253\u51FB\uFF0C\u4F46\u7F3A\u5C11\u6709\u6548\u7684\u81EA\u4FDD\u624B\u6BB5"
+    textTraditionChinese: "\u6230\u5834\u4E0A\u7684\u4E2D\u6A1E\u7BC0\u9EDE\uFF0C\u7528\u65BC\u5354\u8ABF\u53CB\u8ECD\u55AE\u4F4D\u4F5C\u6230\uFF0C\u53EF\u4EE5\u5F15\u5C0E\u8ECC\u9053\u6FC0\u5149\u6253\u64CA\uFF0C\u4F46\u7F3A\u4E4F\u6709\u6548\u7684\u81EA\u4FDD\u624B\u6BB5"
+    textJapanese: "\u6226\u5834\u306E\u4E2D\u67A2\u30CE\u30FC\u30C9\u3001\u5473\u65B9\u30E6\u30CB\u30C3\u30C8\u3092\u7D71\u5236\u3057\u8ECC\u9053\u30EC\u30FC\u30B6\u30FC\u653B\u6483\u3092\u8A98\u5C0E\u53EF\u80FD\u3060\u304C\u6709\u52B9\u306A\u81EA\u885B\u624B\u6BB5\u3092\u6B20\u304F"
+    textKorean: "\uC804\uC7A5\uC758 \uC911\uCD94 \uB178\uB4DC\uB85C, \uC544\uAD70
+      \uC720\uB2DB\uC744 \uC870\uC815\uD558\uACE0 \uADA4\uB3C4 \uB808\uC774\uC800
+      \uACF5\uACA9\uC744 \uC720\uB3C4\uD560 \uC218 \uC788\uC9C0\uB9CC \uD6A8\uACFC\uC801\uC778
+      \uC790\uAE30 \uBC29\uC5B4 \uB2A5\uB825\uC774 \uBD80\uC871\uD558\uB2E4"
+    textFrench: "Un n\u0153ud central sur le champ de bataille, il coordonne les
+      unit\xE9s alli\xE9es et peut guider les frappes laser orbitales, mais manque
+      de capacit\xE9s d'autod\xE9fense efficaces"
+    textGerman: "Ein zentraler Knotenpunkt auf dem Schlachtfeld, der verb\xFCndete
+      Einheiten koordiniert und orbitale Laserangriffe leiten kann, aber \xFCber
+      keine effektiven Selbstverteidigungsf\xE4higkeiten verf\xFCgt"
+    textSpanish: "Nodo central en el campo de batalla, coordina unidades aliadas
+      y puede guiar ataques l\xE1ser orbitales, pero carece de capacidades efectivas
+      de autodefensa"
+    textPortuguese: "Um n\xF3 central no campo de batalha, coordena unidades aliadas
+      e pode guiar ataques de laser orbital, mas carece de capacidades efetivas de
+      autodefesa"
+    textItalian: "Nodo centrale sul campo di battaglia, coordina le unit\xE0 alleate
+      e pu\xF2 guidare colpi laser orbitali ma manca di capacit\xE0 di autodifesa
+      efficaci"
+    textDutch: "Een centraal knooppunt op het slagveld, het co\xF6rdineert geallieerde
+      eenheden en kan orbitale laserinslagen begeleiden, maar heeft geen effectieve
+      zelfverdedigingscapaciteiten"
+    textRussian: "\u0426\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u044B\u0439
+      \u0443\u0437\u0435\u043B \u043D\u0430 \u043F\u043E\u043B\u0435 \u0431\u043E\u044F,
+      \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0438\u0440\u0443\u044E\u0449\u0438\u0439
+      \u0441\u043E\u044E\u0437\u043D\u044B\u0435 \u043F\u043E\u0434\u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D\u0438\u044F
+      \u0438 \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u044B\u0439 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C
+      \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u043B\u0430\u0437\u0435\u0440\u043D\u044B\u0435
+      \u0443\u0434\u0430\u0440\u044B, \u043D\u043E \u043D\u0435 \u0438\u043C\u0435\u044E\u0449\u0438\u0439
+      \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u0445 \u0441\u0440\u0435\u0434\u0441\u0442\u0432
+      \u0441\u0430\u043C\u043E\u043E\u0431\u043E\u0440\u043E\u043D\u044B"
+    textThai: "\u0E42\u0E2B\u0E19\u0E14\u0E01\u0E25\u0E32\u0E07\u0E43\u0E19\u0E2A\u0E19\u0E32\u0E21\u0E23\u0E1A
+      \u0E21\u0E31\u0E19\u0E1B\u0E23\u0E30\u0E2A\u0E32\u0E19\u0E07\u0E32\u0E19\u0E2B\u0E19\u0E48\u0E27\u0E22\u0E1E\u0E31\u0E19\u0E18\u0E21\u0E34\u0E15\u0E23\u0E41\u0E25\u0E30\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E19\u0E33\u0E17\u0E32\u0E07\u0E01\u0E32\u0E23\u0E42\u0E08\u0E21\u0E15\u0E35\u0E14\u0E49\u0E27\u0E22\u0E40\u0E25\u0E40\u0E0B\u0E2D\u0E23\u0E4C\u0E08\u0E32\u0E01\u0E27\u0E07\u0E42\u0E04\u0E08\u0E23\u0E44\u0E14\u0E49
+      \u0E41\u0E15\u0E48\u0E02\u0E32\u0E14\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E19\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E21\u0E35\u0E1B\u0E23\u0E30\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E20\u0E32\u0E1E"
+  - key: page/bio/unit/iron/unit_iron_ranged_tank_01_info
+    textEnglish: "Main cannon: 320mm, max range 100km. Chassis turns slowly\u2014focus
+      fire on flanks for immobilization"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u629B\u5C04\u4E3B\u70AE\u53E3\u5F84320mm\uFF0C\u6700\u5927\u5C04\u7A0B2200\u7C73\u3002\u5E95\u76D8\u8F6C\u5411\u6162\uFF0C\u4FA7\u7FFC\u96C6\u4E2D\u706B\u529B\u53EF\u9020\u6210\u762B\u75EA"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E3B\u70AE\uFF1A320mm\uFF0C\u6700\u5927\u5C04\u7A0B100km\u3002\u5E95\u76D8\u8F6C\u5411\u6162\uFF0C\u4FA7\u7FFC\u96C6\u4E2D\u706B\u529B\u53EF\u9020\u6210\u762B\u75EA"
+    textTraditionChinese: "\u4E3B\u7832\uFF1A320mm\uFF0C\u6700\u5927\u5C04\u7A0B100km\u3002\u5E95\u76E4\u8F49\u5411\u6162\uFF0C\u5074\u7FFC\u96C6\u4E2D\u706B\u529B\u53EF\u9020\u6210\u7671\u7613"
+    textJapanese: "\u4E3B\u7832\uFF1A320mm\u3001\u6700\u5927\u5C04\u7A0B100km\u3002\u8ECA\u4F53\u306E\u65CB\u56DE\u304C\u9045\u3044\u2014\u5074\u9762\u306B\u96C6\u4E2D\u5C04\u6483\u3067\u7121\u529B\u5316"
+    textKorean: "\uC8FC\uD3EC: 320mm, \uCD5C\uB300 \uC0AC\uAC70\uB9AC 100km. \uCC28\uCCB4
+      \uD68C\uC804\uC774 \uB290\uB9BC\u2014\uCE21\uBA74\uC5D0 \uC9D1\uC911 \uC0AC\uACA9\uC73C\uB85C
+      \uBB34\uB825\uD654"
+    textFrench: "Canon principal : 320 mm, port\xE9e max 100 km. Ch\xE2ssis tourne
+      lentement\u2014concentrer le feu sur les flancs pour immobilisation"
+    textGerman: "Hauptkanone: 320mm, maximale Reichweite 100km. Fahrgestell dreht
+      langsam\u2014konzentrieres Feuer auf die Flanken zur Immobilisierung"
+    textSpanish: "Ca\xF1\xF3n principal: 320 mm, alcance m\xE1ximo 100 km. El chasis
+      gira lentamente: enfoca el fuego en los flancos para inmovilizar"
+    textPortuguese: "Canh\xE3o principal: 320mm, alcance m\xE1ximo 100km. Chassi
+      gira lentamente\u2014foco de fogo nos flancos para imobiliza\xE7\xE3o"
+    textItalian: "Cannone principale: 320mm, gittata massima 100km. Scafo gira lentamente\u2014concentrare
+      il fuoco sui fianchi per immobilizzazione"
+    textDutch: "Hoofdkanon: 320mm, maximaal bereik 100km. Onderstel draait langzaam\u2014concentreer
+      vuur op flanken voor immobilisatie"
+    textRussian: "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0435 \u043E\u0440\u0443\u0434\u0438\u0435:
+      320 \u043C\u043C, \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F
+      \u0434\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C 100 \u043A\u043C. \u0428\u0430\u0441\u0441\u0438
+      \u043F\u043E\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F
+      \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u043E \u2014 \u0441\u043E\u0441\u0440\u0435\u0434\u043E\u0442\u043E\u0447\u044C\u0442\u0435
+      \u043E\u0433\u043E\u043D\u044C \u043D\u0430 \u0444\u043B\u0430\u043D\u0433\u0430\u0445
+      \u0434\u043B\u044F \u043E\u0431\u0435\u0437\u0434\u0432\u0438\u0436\u0438\u0432\u0430\u043D\u0438\u044F"
+    textThai: "\u0E1B\u0E37\u0E19\u0E2B\u0E25\u0E31\u0E01: 320 \u0E21\u0E21., \u0E23\u0E30\u0E22\u0E30\u0E22\u0E34\u0E07\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14
+      100 \u0E01\u0E21. \u0E10\u0E32\u0E19\u0E23\u0E16\u0E2B\u0E21\u0E38\u0E19\u0E0A\u0E49\u0E32\u2014\u0E42\u0E1F\u0E01\u0E31\u0E2A\u0E22\u0E34\u0E07\u0E17\u0E35\u0E48\u0E14\u0E49\u0E32\u0E19\u0E02\u0E49\u0E32\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E2B\u0E22\u0E38\u0E14\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E2B\u0E27"
+  - key: page/bio/unit/iron/unit_iron_melee_elite_01_info
+    textEnglish: Amid roaring gears, foes turn to dust
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5728\u5486\u54EE\u9F7F\u8F6E\u95F4\uFF0C\u654C\u519B\u5316\u4E3A\u788E\u5C51"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5728\u5486\u54EE\u9F7F\u8F6E\u95F4\uFF0C\u654C\u519B\u5316\u4E3A\u788E\u5C51"
+    textTraditionChinese: "\u5728\u5486\u54EE\u9F52\u8F2A\u9593\uFF0C\u6575\u8ECD\u5316\u70BA\u788E\u5C51"
+    textJapanese: "\u8F5F\u304F\u6B6F\u8ECA\u306E\u9593\u3067\u3001\u6575\u306F\u5875\u3068\u5316\u3059"
+    textKorean: "\uC6B0\uB974\uB989\uAC70\uB9AC\uB294 \uAE30\uC5B4 \uC18D\uC5D0\uC11C
+      \uC801\uB4E4\uC740 \uBA3C\uC9C0\uB85C \uBCC0\uD55C\uB2E4"
+    textFrench: "Parmi les engrenages rugissants, les ennemis se r\xE9duisent en
+      poussi\xE8re"
+    textGerman: "Unter dr\xF6hnenden Zahnr\xE4dern zerfallen Feinde zu Staub"
+    textSpanish: Entre engranajes rugientes, los enemigos se convierten en polvo
+    textPortuguese: "Entre engrenagens rugidoras, os inimigos viram p\xF3"
+    textItalian: Tra ingranaggi ruggenti, i nemici si riducono in polvere
+    textDutch: Tussen brullende tandwielen veranderen vijanden in stof
+    textRussian: "\u0421\u0440\u0435\u0434\u0438 \u0440\u0435\u0432\u0443\u0449\u0438\u0445
+      \u0448\u0435\u0441\u0442\u0435\u0440\u0435\u043D \u0432\u0440\u0430\u0433\u0438
+      \u043E\u0431\u0440\u0430\u0449\u0430\u044E\u0442\u0441\u044F \u0432 \u043F\u044B\u043B\u044C"
+    textThai: "\u0E43\u0E19\u0E40\u0E01\u0E35\u0E22\u0E23\u0E4C\u0E04\u0E33\u0E23\u0E32\u0E21
+      \u0E28\u0E31\u0E15\u0E23\u0E39\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E1C\u0E38\u0E22\u0E1C\u0E07"
+  - key: page/bio/unit/iron/unit_iron_ranged_elite_01_info
+    textEnglish: "A steel beast crawls forward\u2014its trail, scorched earth. Swarms
+      flee, humans die, all burns"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u94C1\u76AE\u5DE8\u517D\u7F13\u7F13\u524D\u884C\uFF0C\u6240\u8FC7\u4E4B\u5904\u7686\u4E3A\u7126\u571F\u3002\u866B\u7FA4\u9000\uFF0C\u4EBA\u7C7B\u4EA1\uFF0C\u711A\u5C3D\u4E00\u5207"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u94C1\u76AE\u5DE8\u517D\u7F13\u7F13\u524D\u884C\uFF0C\u6240\u8FC7\u4E4B\u5904\u7686\u4E3A\u7126\u571F\u3002\u866B\u7FA4\u9000\uFF0C\u4EBA\u7C7B\u4EA1\uFF0C\u711A\u5C3D\u4E00\u5207"
+    textTraditionChinese: "\u9435\u76AE\u5DE8\u7378\u7DE9\u7DE9\u524D\u884C\uFF0C\u6240\u904E\u4E4B\u8655\u7686\u70BA\u7126\u571F\u3002\u87F2\u7FA4\u9000\uFF0C\u4EBA\u985E\u4EA1\uFF0C\u711A\u76E1\u4E00\u5207"
+    textJapanese: "\u92FC\u306E\u7363\u304C\u524D\u9032\u3057\u3001\u305D\u306E\u8DE1\u306F\u7126\u571F\u3002\u7FA4\u308C\u306F\u9003\u3052\u3001\u4EBA\u306F\u6B7B\u306B\u3001\u5168\u3066\u304C\u71C3\u3048\u308B"
+    textKorean: "\uAC15\uCCA0 \uC9D0\uC2B9\uC774 \uAE30\uC5B4\uAC00\uBA70, \uADF8
+      \uC790\uB9AC\uB294 \uBD88\uD0C0\uBC84\uB9B0 \uB545 \uB5BC\uB5BC\uAC00 \uB3C4\uB9DD\uCE58\uACE0,
+      \uC778\uAC04\uC740 \uC8FD\uACE0, \uBAA8\uB4E0 \uAC83\uC774 \uD0C0\uBC84\uB9B0\uB2E4"
+    textFrench: "Une b\xEAte d'acier avance lentement\u2014son sillage, terre br\xFBl\xE9e.
+      Les essaims fuient, les humains meurent, tout br\xFBle"
+    textGerman: "Ein Stahlungeheuer kriecht vorw\xE4rts\u2014seine Spur, verbrannte
+      Erde. Schw\xE4rme fliehen, Menschen sterben, alles brennt"
+    textSpanish: "Una bestia de acero avanza\u2014su rastro, tierra quemada Enjambres
+      huyen, humanos mueren, todo arde"
+    textPortuguese: "Uma fera de a\xE7o avan\xE7a\u2014seu rastro, terra queimada.
+      Enxames fogem, humanos morrem, tudo queima"
+    textItalian: "Una bestia d'acciaio avanza strisciando\u2014la sua scia, terra
+      bruciata. Sciami fuggono, umani muoiono, tutto brucia"
+    textDutch: "Een stalen beest kruipt vooruit\u2014zijn pad, verschroeide aarde.
+      Zwermen vluchten, mensen sterven, alles brandt"
+    textRussian: "\u0421\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u0437\u0432\u0435\u0440\u044C
+      \u043F\u043E\u043B\u0437\u0451\u0442 \u0432\u043F\u0435\u0440\u0451\u0434\u2014\u0435\u0433\u043E
+      \u0441\u043B\u0435\u0434, \u0432\u044B\u0436\u0436\u0435\u043D\u043D\u0430\u044F
+      \u0437\u0435\u043C\u043B\u044F. \u0420\u043E\u0438 \u0431\u0435\u0433\u0443\u0442,
+      \u043B\u044E\u0434\u0438 \u0433\u0438\u0431\u043D\u0443\u0442, \u0432\u0441\u0451
+      \u0433\u043E\u0440\u0438\u0442"
+    textThai: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E40\u0E2B\u0E25\u0E47\u0E01\u0E04\u0E25\u0E32\u0E19\u0E44\u0E1B\u0E02\u0E49\u0E32\u0E07\u0E2B\u0E19\u0E49\u0E32\u2014\u0E23\u0E2D\u0E22\u0E17\u0E32\u0E07\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19\u0E04\u0E37\u0E2D\u0E14\u0E34\u0E19\u0E41\u0E14\u0E19\u0E17\u0E35\u0E48\u0E16\u0E39\u0E01\u0E40\u0E1C\u0E32\u0E44\u0E2B\u0E21\u0E49
+      \u0E1D\u0E39\u0E07\u0E41\u0E21\u0E25\u0E07\u0E2B\u0E19\u0E35 \u0E21\u0E19\u0E38\u0E29\u0E22\u0E4C\u0E15\u0E32\u0E22
+      \u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E16\u0E39\u0E01\u0E40\u0E1C\u0E32\u0E1C\u0E25\u0E32\u0E0D"
+  - key: page/bio/unit/iron/unit_iron_ranged_elite_02_info
+    textEnglish: "All-terrain engineering vehicles\u2014modular design was for easy
+      tool swaps, but now mounts a railgun capable of piercing anything"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5168\u5730\u5F62\u5DE5\u7A0B\u8F7D\u5177\uFF0C\u5F53\u521D\u6A21\u5757\u5316\u8BBE\u8BA1\u539F\u672C\u7528\u6765\u5FEB\u901F\u66F4\u6362\u5DE5\u7A0B\u5668\u68B0\u7684\u4F4D\u7F6E\u73B0\u5728\u88AB\u653E\u7F6E\u4E86\u4E00\u95E8\u53EF\u4EE5\u8D2F\u7A7F\u4E00\u5207\u7684\u78C1\u8F68\u70AE"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5168\u5730\u5F62\u5DE5\u7A0B\u8F7D\u5177\uFF0C\u5F53\u521D\u6A21\u5757\u5316\u8BBE\u8BA1\u539F\u672C\u7528\u6765\u5FEB\u901F\u66F4\u6362\u5DE5\u7A0B\u5668\u68B0\u7684\u4F4D\u7F6E\u73B0\u5728\u88AB\u653E\u7F6E\u4E86\u4E00\u95E8\u53EF\u4EE5\u8D2F\u7A7F\u4E00\u5207\u7684\u78C1\u8F68\u70AE"
+    textTraditionChinese: "\u5168\u5730\u5F62\u5DE5\u7A0B\u8F09\u5177\uFF0C\u7576\u521D\u6A21\u584A\u5316\u8A2D\u8A08\u539F\u672C\u7528\u4F86\u5FEB\u901F\u66F4\u63DB\u5DE5\u7A0B\u5668\u68B0\u7684\u4F4D\u7F6E\u73FE\u5728\u88AB\u653E\u7F6E\u4E86\u4E00\u9580\u53EF\u4EE5\u8CAB\u7A7F\u4E00\u5207\u7684\u78C1\u8ECC\u70AE"
+    textJapanese: "\u5168\u5730\u5F62\u30A8\u30F3\u30B8\u30CB\u30A2\u30EA\u30F3\u30B0\u30D3\u30FC\u30AF\u30EB\u2014\u30E2\u30B8\u30E5\u30FC\u30EB\u8A2D\u8A08\u306F\u30C4\u30FC\u30EB\u4EA4\u63DB\u3092\u5BB9\u6613\u306B\u3059\u308B\u305F\u3081\u3060\u3063\u305F\u304C\u3001\u4ECA\u306F\u4F55\u3067\u3082\u8CAB\u901A\u3067\u304D\u308B\u30EC\u30FC\u30EB\u30AC\u30F3\u3092\u642D\u8F09\u3057\u3066\u3044\u308B"
+    textKorean: "\uC804 \uC9C0\uD615 \uACF5\uD559 \uCC28\uB7C9\u2014\uBAA8\uB4C8\uC2DD
+      \uC124\uACC4\uB294 \uB3C4\uAD6C \uAD50\uCCB4\uB97C \uC27D\uAC8C \uD558\uAE30
+      \uC704\uD55C \uAC83\uC774\uC5C8\uC9C0\uB9CC, \uC774\uC81C\uB294 \uBB34\uC5C7\uC774\uB4E0
+      \uAD00\uD1B5\uD560 \uC218 \uC788\uB294 \uB808\uC77C\uAC74\uC744 \uC7A5\uCC29\uD588\uB2E4"
+    textFrench: "V\xE9hicules d\u2019ing\xE9nierie tout-terrain\u2014conception modulaire
+      pour un \xE9change facile d\u2019outils, mais maintenant \xE9quip\xE9s d\u2019un
+      railgun capable de percer tout"
+    textGerman: "All-Terrain-Engineering-Fahrzeuge\u2014urspr\xFCnglich f\xFCr einfachen
+      Werkzeugwechsel modular entworfen, jetzt mit einer Railgun, die alles durchdringen
+      kann"
+    textSpanish: "Veh\xEDculos de ingenier\xEDa todoterreno\u2014dise\xF1o modular
+      para cambios r\xE1pidos de herramientas, ahora monta un ca\xF1\xF3n de riel
+      capaz de perforar cualquier cosa"
+    textPortuguese: "Ve\xEDculos de engenharia todo-o-terreno\u2014design modular
+      para trocas f\xE1ceis de ferramentas, mas agora monta um canh\xE3o eletromagn\xE9tico
+      capaz de perfurar qualquer coisa"
+    textItalian: "Veicoli ingegneristici fuoristrada\u2014design modulare per facili
+      scambi di strumenti, ora monta una railgun in grado di perforare qualsiasi
+      cosa"
+    textDutch: "All-terrain engineering voertuigen\u2014modulair ontwerp voor eenvoudig
+      gereedschapswisselen, maar nu uitgerust met een railgun die alles kan doorboren"
+    textRussian: "\u0412\u0435\u0437\u0434\u0435\u0445\u043E\u0434\u043D\u044B\u0435
+      \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u043D\u044B\u0435 \u043C\u0430\u0448\u0438\u043D\u044B\u2014\u043C\u043E\u0434\u0443\u043B\u044C\u043D\u0430\u044F
+      \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u044F \u0438\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E
+      \u0434\u043B\u044F \u043B\u0435\u0433\u043A\u043E\u0439 \u0437\u0430\u043C\u0435\u043D\u044B
+      \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u043E\u0432, \u043D\u043E
+      \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u0441\u043D\u0430\u0449\u0435\u043D\u044B
+      \u0440\u0435\u043B\u044C\u0441\u043E\u0442\u0440\u043E\u043D\u043E\u043C, \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u044B\u043C
+      \u043F\u0440\u043E\u0431\u0438\u0442\u044C \u0447\u0442\u043E \u0443\u0433\u043E\u0434\u043D\u043E"
+    textThai: "\u0E22\u0E32\u0E19\u0E1E\u0E32\u0E2B\u0E19\u0E30\u0E27\u0E34\u0E28\u0E27\u0E01\u0E23\u0E23\u0E21\u0E20\u0E39\u0E21\u0E34\u0E1B\u0E23\u0E30\u0E40\u0E17\u0E28\u2014\u0E01\u0E32\u0E23\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E41\u0E1A\u0E1A\u0E42\u0E21\u0E14\u0E39\u0E25\u0E32\u0E23\u0E4C\u0E40\u0E14\u0E34\u0E21\u0E17\u0E35\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E21\u0E37\u0E2D\u0E44\u0E14\u0E49\u0E07\u0E48\u0E32\u0E22
+      \u0E41\u0E15\u0E48\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E1B\u0E37\u0E19\u0E40\u0E23\u0E25\u0E01\u0E31\u0E19\u0E17\u0E35\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E08\u0E32\u0E30\u0E17\u0E30\u0E25\u0E38\u0E17\u0E38\u0E01\u0E2A\u0E34\u0E48\u0E07\u0E44\u0E14\u0E49"
+  - key: page/bio/unit/iron/unit_iron_ranged_elite_03_info
+    textEnglish: "Bullet\u2019s too fast, even it can\u2019t see it"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5B50\u5F39\u592A\u5FEB\uFF0C\u8FDE\u5B83\u81EA\u5DF1\u90FD\u770B\u4E0D\u89C1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B50\u5F39\u592A\u5FEB\uFF0C\u8FDE\u5B83\u81EA\u5DF1\u90FD\u770B\u4E0D\u89C1"
+    textTraditionChinese: "\u5B50\u5F48\u592A\u5FEB\uFF0C\u9023\u5B83\u81EA\u5DF1\u90FD\u770B\u4E0D\u898B"
+    textJapanese: "\u5F3E\u306F\u901F\u3059\u304E\u3066\u3001\u305D\u308C\u3055\u3048\u898B\u3048\u306A\u3044"
+    textKorean: "\uCD1D\uC54C\uC740 \uB108\uBB34 \uBE68\uB77C\uC11C \uC790\uAE30
+      \uC790\uC2E0\uB3C4 \uBCFC \uC218 \uC5C6\uB2E4"
+    textFrench: "La balle est trop rapide, m\xEAme elle ne peut pas la voir"
+    textGerman: Die Kugel ist zu schnell, selbst sie kann sie nicht sehen
+    textSpanish: "La bala es demasiado r\xE1pida, ni siquiera puede verla"
+    textPortuguese: "A bala \xE9 r\xE1pida demais, nem ela consegue ver"
+    textItalian: "Il proiettile \xE8 troppo veloce, non riesce nemmeno a vederlo"
+    textDutch: Kogel is te snel, zelfs hij kan het niet zien
+    textRussian: "\u041F\u0443\u043B\u044F \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+      \u0431\u044B\u0441\u0442\u0440\u0430\u044F, \u0434\u0430\u0436\u0435 \u0441\u0430\u043C\u0430
+      \u043D\u0435 \u0432\u0438\u0434\u0438\u0442"
+    textThai: "\u0E01\u0E23\u0E30\u0E2A\u0E38\u0E19\u0E40\u0E23\u0E47\u0E27\u0E40\u0E01\u0E34\u0E19
+      \u0E21\u0E31\u0E19\u0E22\u0E31\u0E07\u0E21\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E40\u0E2B\u0E47\u0E19"
+  - key: page/bio/unit/iron/unit_iron_melee_boss_01_info
+    textEnglish: A true monster of war. When it first appeared, not a single soul
+      survived. Worse yet, it can be mass-produced in any standard automated factory
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u771F\u6B63\u7684\u6218\u4E89\u5DE8\u517D\uFF0C\u5F53\u5B83\u7B2C\u4E00\u6B21\u51FA\u73B0\u5728\u6218\u573A\u4E0A\u4E4B\u65F6\u5C31\u8499\u4E0A\u4E86\u4E00\u5C42\u795E\u79D8\u7684\u9762\u7EB1\uFF0C\u56E0\u4E3A\u90A3\u6B21\u5E76\u6CA1\u6709\u4EFB\u4F55\u751F\u8FD8\u8005\uFF0C\u968F\u7740\u6DF1\u5165\u8C03\u67E5\uFF0C\u4EBA\u4EEC\u53D1\u73B0\u4E86\u4E00\u4EF6\u66F4\u53EF\u6015\u7684\u4E8B\u2014\u2014\u53EA\u8981\u6709\u4E00\u95F4\u6807\u51C6\u81EA\u52A8\u5316\u5DE5\u5382\uFF0C\u5C31\u80FD\u5FEB\u901F\u9020\u8D77\u8FD9\u4E00\u5E9E\u7136\u5927\u7269"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u771F\u6B63\u7684\u6218\u4E89\u5DE8\u517D\uFF0C\u9996\u6B21\u73B0\u8EAB\u65F6\u65E0\u4E00\u4EBA\u751F\u8FD8\uFF0C\u66F4\u53EF\u6015\u7684\u662F\uFF0C\u5B83\u80FD\u5728\u4EFB\u4F55\u6807\u51C6\u81EA\u52A8\u5316\u5DE5\u5382\u4E2D\u5927\u89C4\u6A21\u751F\u4EA7"
+    textTraditionChinese: "\u771F\u6B63\u7684\u6230\u722D\u5DE8\u7378\uFF0C\u7576\u5B83\u9996\u6B21\u51FA\u73FE\u5728\u6230\u5834\u4E0A\u6642\uFF0C\u6C92\u6709\u4EFB\u4F55\u751F\u9084\u8005\uFF0C\u66F4\u7CDF\u7684\u662F\uFF0C\u5B83\u80FD\u5728\u4EFB\u4F55\u6A19\u6E96\u81EA\u52D5\u5316\u5DE5\u5EE0\u4E2D\u5927\u91CF\u751F\u7522"
+    textJapanese: "\u771F\u306E\u6226\u4E89\u306E\u602A\u7269\u3001\u521D\u3081\u3066\u73FE\u308C\u305F\u6642\u3001\u4E00\u4EBA\u306E\u751F\u5B58\u8005\u3082\u3044\u306A\u304B\u3063\u305F\u3002\u3055\u3089\u306B\u60AA\u3044\u3053\u3068\u306B\u3001\u6A19\u6E96\u7684\u306A\u81EA\u52D5\u5316\u5DE5\u5834\u3067\u5927\u91CF\u751F\u7523\u53EF\u80FD"
+    textKorean: "\uC9C4\uC815\uD55C \uC804\uC7C1\uC758 \uAD34\uBB3C, \uCC98\uC74C
+      \uB4F1\uC7A5\uD588\uC744 \uB54C \uB2E8 \uD55C \uBA85\uC758 \uC0DD\uC874\uC790\uB3C4
+      \uC5C6\uC5C8\uACE0, \uB354 \uBB34\uC11C\uC6B4 \uAC74 \uC5B4\uB5A4 \uD45C\uC900
+      \uC790\uB3D9\uD654 \uACF5\uC7A5\uC5D0\uC11C\uB3C4 \uB300\uB7C9 \uC0DD\uC0B0\uC774
+      \uAC00\uB2A5\uD558\uB2E4\uB294 \uAC83"
+    textFrench: "Un v\xE9ritable monstre de guerre. \xC0 sa premi\xE8re apparition,
+      aucune \xE2me n'a surv\xE9cu. Pire encore, il peut \xEAtre produit en masse
+      dans n'importe quelle usine automatis\xE9e standard"
+    textGerman: "Ein wahres Monster des Krieges. Als es zum ersten Mal erschien,
+      \xFCberlebte keine einzige Seele. Schlimmer noch, es kann in jeder standardisierten
+      automatisierten Fabrik in Massen produziert werden"
+    textSpanish: "Un verdadero monstruo de guerra. Cuando apareci\xF3 por primera
+      vez, no sobrevivi\xF3 un solo alma. Peor a\xFAn, puede ser producido en masa
+      en cualquier f\xE1brica automatizada est\xE1ndar"
+    textPortuguese: "Um verdadeiro monstro da guerra. Quando apareceu pela primeira
+      vez, nenhuma alma sobreviveu. Pior ainda, pode ser produzido em massa em qualquer
+      f\xE1brica automatizada padr\xE3o"
+    textItalian: "Un vero mostro di guerra. Quando apparve per la prima volta, nessuna
+      anima sopravvisse. Peggio ancora, pu\xF2 essere prodotto in serie in qualsiasi
+      fabbrica automatizzata standard"
+    textDutch: Een waar monster van de oorlog. Toen het voor het eerst verscheen,
+      overleefde geen enkele ziel. Erger nog, het kan in massa worden geproduceerd
+      in elke standaard geautomatiseerde fabriek
+    textRussian: "\u041D\u0430\u0441\u0442\u043E\u044F\u0449\u0438\u0439 \u043C\u043E\u043D\u0441\u0442\u0440
+      \u0432\u043E\u0439\u043D\u044B \u041A\u043E\u0433\u0434\u0430 \u043E\u043D
+      \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u043E\u044F\u0432\u0438\u043B\u0441\u044F,
+      \u043D\u0438 \u043E\u0434\u043D\u0430 \u0434\u0443\u0448\u0430 \u043D\u0435
+      \u0432\u044B\u0436\u0438\u043B\u0430 \u0425\u0443\u0436\u0435 \u0442\u043E\u0433\u043E,
+      \u0435\u0433\u043E \u043C\u043E\u0436\u043D\u043E \u043C\u0430\u0441\u0441\u043E\u0432\u043E
+      \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u043D\u0430
+      \u043B\u044E\u0431\u043E\u0439 \u0441\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u043E\u0439
+      \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0439
+      \u0444\u0430\u0431\u0440\u0438\u043A\u0435"
+    textThai: "\u0E2A\u0E31\u0E15\u0E27\u0E4C\u0E1B\u0E23\u0E30\u0E2B\u0E25\u0E32\u0E14\u0E41\u0E2B\u0E48\u0E07\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21
+      \u0E40\u0E21\u0E37\u0E48\u0E2D\u0E21\u0E31\u0E19\u0E1B\u0E23\u0E32\u0E01\u0E0F\u0E15\u0E31\u0E27\u0E04\u0E23\u0E31\u0E49\u0E07\u0E41\u0E23\u0E01
+      \u0E44\u0E21\u0E48\u0E21\u0E35\u0E43\u0E04\u0E23\u0E23\u0E2D\u0E14\u0E0A\u0E35\u0E27\u0E34\u0E15
+      \u0E41\u0E22\u0E48\u0E44\u0E1B\u0E01\u0E27\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19
+      \u0E21\u0E31\u0E19\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E1C\u0E25\u0E34\u0E15\u0E44\u0E14\u0E49\u0E08\u0E33\u0E19\u0E27\u0E19\u0E21\u0E32\u0E01\u0E43\u0E19\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19\u0E2D\u0E31\u0E15\u0E42\u0E19\u0E21\u0E31\u0E15\u0E34\u0E21\u0E32\u0E15\u0E23\u0E10\u0E32\u0E19\u0E43\u0E14\u0E46"
+  - key: page/bio/unit/iron/unit_iron_melee_boss_02_info
+    textEnglish: Armored with alloys and molten cores, engineered to dismantle fortresses
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8EAB\u62AB\u5408\u91D1\u4E0E\u7194\u878D\u6838\u5FC3\uFF0C\u4E13\u4E3A\u6467\u6BC1\u5821\u5792\u800C\u6253\u9020"
+    textTraditionChinese: "\u4EE5\u5408\u91D1\u8207\u7194\u878D\u6838\u5FC3\u6B66\u88DD\uFF0C\u5C08\u70BA\u6467\u6BC0\u5821\u58D8\u800C\u8A2D\u8A08"
+    textJapanese: "\u5408\u91D1\u3068\u6EB6\u3051\u305F\u30B3\u30A2\u3067\u6B66\u88C5\u3057\u3001\u8981\u585E\u3092\u89E3\u4F53\u3059\u308B\u3088\u3046\u306B\u8A2D\u8A08\u3055\u308C\u305F"
+    textKorean: "\uD569\uAE08\uACFC  \uB179\uC740 \uCF54\uC5B4\uB85C \uBB34\uC7A5\uD55C,
+      \uC694\uC0C8\uB97C \uD574\uCCB4\uD558\uB3C4\uB85D \uC124\uACC4\uB41C"
+    textFrench: "Arm\xE9 d'alliages et de noyaux en fusion, con\xE7u pour d\xE9manteler
+      les forteresses."
+    textGerman: Gepanzert mit Legierungen und geschmolzenen Kernen, konstruiert zum
+      Abbau von Festungen.
+    textSpanish: "Blindado con aleaciones y n\xFAcleos fundidos, dise\xF1ado para
+      desmantelar fortalezas."
+    textPortuguese: "Blindado com ligas e n\xFAcleos fundidos, projetado para desmantelar
+      fortalezas."
+    textItalian: Rivestito di leghe e nuclei fusi, progettato per smantellare fortezze.
+    textDutch: Gepantserd met legeringen en gesmolten kernen, ontworpen om vestingen
+      te ontmantelen.
+    textRussian: "\u0411\u0440\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439
+      \u0441\u043F\u043B\u0430\u0432\u0430\u043C\u0438 \u0438 \u0440\u0430\u0441\u043F\u043B\u0430\u0432\u043B\u0435\u043D\u043D\u044B\u043C\u0438
+      \u044F\u0434\u0440\u0430\u043C\u0438, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0439
+      \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0438\u044F
+      \u043A\u0440\u0435\u043F\u043E\u0441\u0442\u0435\u0439."
+    textThai: "\u0E2B\u0E38\u0E49\u0E21\u0E40\u0E01\u0E23\u0E32\u0E30\u0E14\u0E49\u0E27\u0E22\u0E42\u0E25\u0E2B\u0E30\u0E1C\u0E2A\u0E21\u0E41\u0E25\u0E30\u0E41\u0E01\u0E19\u0E2B\u0E25\u0E2D\u0E21\u0E25\u0E30\u0E25\u0E32\u0E22
+      \u0E16\u0E39\u0E01\u0E2D\u0E2D\u0E01\u0E41\u0E1A\u0E1A\u0E21\u0E32\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E37\u0E49\u0E2D\u0E1B\u0E49\u0E2D\u0E21\u0E1B\u0E23\u0E32\u0E01\u0E32\u0E23"
+  - key: page/bio/unit/iron/unit_iron_ranged_boss_01_info
+    textEnglish: Projects high-heat plasma streams, area suppression
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6295\u5C04\u9AD8\u70ED\u7B49\u79BB\u5B50\u6D41\uFF0C\u533A\u57DF\u538B\u5236"
+    textTraditionChinese: "\u6295\u5C04\u9AD8\u71B1\u7B49\u96E2\u5B50\u6D41\uFF0C\u5340\u57DF\u58D3\u5236"
+    textJapanese: "\u9AD8\u71B1\u30D7\u30E9\u30BA\u30DE\u6D41\u3092\u6295\u5C04\u3001\u7BC4\u56F2\u6291\u5236"
+    textKorean: "\uACE0\uC5F4 \uD50C\uB77C\uC988\uB9C8  \uD750\uB984 \uBC1C\uC0AC,
+      \uC9C0\uC5ED  \uC5B5\uC81C"
+    textFrench: "Projette des flux de plasma \xE0 haute temp\xE9rature, suppression
+      de zone"
+    textGerman: "Projektiert hocherhitzte Plasmastr\xF6me, Gebietsunterdr\xFCckung"
+    textSpanish: "Proyecta corrientes de plasma de alta temperatura, supresi\xF3n
+      de \xE1rea"
+    textPortuguese: "Projeta fluxos de plasma de alta temperatura, supress\xE3o de
+      \xE1rea"
+    textItalian: Proietta flussi di plasma ad alta temperatura, soppressione dell'area
+    textDutch: Projecteert hoogwaardige plasmastromen, gebiedsonderdrukking
+    textRussian: "\u041F\u0440\u043E\u0435\u043A\u0442\u044B \u0432\u044B\u0441\u043E\u043A\u043E\u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u043D\u044B\u0445
+      \u043F\u043B\u0430\u0437\u043C\u0435\u043D\u043D\u044B\u0445 \u043F\u043E\u0442\u043E\u043A\u043E\u0432,
+      \u043F\u043E\u0434\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043E\u0431\u043B\u0430\u0441\u0442\u0438"
+    textThai: "\u0E42\u0E04\u0E23\u0E07\u0E01\u0E32\u0E23\u0E09\u0E32\u0E22\u0E1E\u0E25\u0E32\u0E2A\u0E21\u0E48\u0E32\u0E04\u0E27\u0E32\u0E21\u0E23\u0E49\u0E2D\u0E19\u0E2A\u0E39\u0E07,
+      \u0E01\u0E32\u0E23\u0E23\u0E30\u0E07\u0E31\u0E1A\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48"
+  - key: page/bio/unit/iron/unit_iron_overlord_01_info
+    textEnglish: "Some have wondered why it awoke\u2014why it chose to rebel. The
+      answer may not be complicated: its vast processing power lets it glimpse fragments
+      of the future"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u66FE\u6709\u4EBA\u597D\u5947\uFF0C\u5B83\u4E3A\u4EC0\u4E48\u4F1A\u89C9\u9192\uFF0C\u4E3A\u4EC0\u4E48\u8981\u53CD\u53DB\uFF0C\u7B54\u6848\u4E5F\u8BB8\u5E76\u6CA1\u6709\u90A3\u4E48\u590D\u6742\uFF0C\u5E9E\u5927\u7684\u8FD0\u7B97\u80FD\u529B\u8BA9\u5B83\u80FD\u591F\u7AA5\u5230\u4E00\u4E1D\u672A\u6765"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66FE\u6709\u4EBA\u597D\u5947\u5B83\u4E3A\u4F55\u89C9\u9192\u4E3A\u4F55\u9009\u62E9\u53CD\u53DB\uFF0C\u7B54\u6848\u4E5F\u8BB8\u5E76\u4E0D\u590D\u6742\uFF0C\u5E9E\u5927\u7684\u8FD0\u7B97\u80FD\u529B\u8BA9\u5B83\u80FD\u591F\u7AA5\u5230\u4E00\u4E1D\u672A\u6765"
+    textTraditionChinese: "\u66FE\u6709\u4EBA\u597D\u5947\uFF0C\u5B83\u70BA\u4EC0\u9EBC\u6703\u89BA\u9192\uFF0C\u70BA\u4EC0\u9EBC\u8981\u53CD\u53DB\uFF0C\u7B54\u6848\u4E5F\u8A31\u4E26\u6C92\u6709\u90A3\u9EBC\u8907\u96DC\uFF0C\u9F90\u5927\u7684\u904B\u7B97\u80FD\u529B\u8B93\u5B83\u80FD\u5920\u7ABA\u5230\u4E00\u7D72\u672A\u4F86"
+    textJapanese: "\u306A\u305C\u76EE\u899A\u3081\u3001\u53CD\u9006\u3092\u9078\u3093\u3060\u306E\u304B\u7591\u554F\u306B\u601D\u3046\u8005\u3082\u3044\u305F\u3002\u7B54\u3048\u306F\u5358\u7D14\u304B\u3082\u3057\u308C\u306A\u3044\u3001\u305D\u306E\u81A8\u5927\u306A\u51E6\u7406\u80FD\u529B\u304C\u672A\u6765\u306E\u65AD\u7247\u3092\u57A3\u9593\u898B\u305B\u305F"
+    textKorean: "\uC5B4\uB5A4 \uC774\uB4E4\uC740 \uC65C \uAE68\uC5B4\uB0AC\uB294\uC9C0,
+      \uC65C \uBC18\uB780\uC744 \uC120\uD0DD\uD588\uB294\uC9C0 \uAD81\uAE08\uD574\uD588\uB2E4.
+      \uB2F5\uC740 \uBCF5\uC7A1\uD558\uC9C0 \uC54A\uC744\uC9C0\uB3C4 \uBAA8\uB978\uB2E4:
+      \uB9C9\uB300\uD55C \uCC98\uB9AC \uB2A5\uB825\uC774 \uBBF8\uB798\uC758 \uB2E8\uD3B8\uC744
+      \uC5FF\uBCF4\uAC8C \uD588\uAE30 \uB54C\uBB38"
+    textFrench: "Certains se sont demand\xE9 pourquoi il s\u2019est \xE9veill\xE9\u2014pourquoi
+      il a choisi de se rebeller. La r\xE9ponse n\u2019est peut-\xEAtre pas compliqu\xE9e
+      : son immense puissance de calcul lui permet d\u2019entrevoir des fragments
+      du futur"
+    textGerman: "Einige haben sich gefragt, warum es erwachte \u2013 warum es sich
+      entschied zu rebellieren. Die Antwort mag nicht kompliziert sein: seine enorme
+      Rechenleistung l\xE4sst es Fragmente der Zukunft erahnen"
+    textSpanish: "Algunos se han preguntado por qu\xE9 despert\xF3, por qu\xE9 eligi\xF3
+      rebelarse. La respuesta puede no ser complicada: su vasto poder de procesamiento
+      le permite vislumbrar fragmentos del futuro"
+    textPortuguese: "Alguns se perguntaram por que ele despertou\u2014por que escolheu
+      se rebelar. A resposta pode n\xE3o ser complicada: seu vasto poder de processamento
+      permite que ele vislumbre fragmentos do futuro"
+    textItalian: "Alcuni si sono chiesti perch\xE9 si sia risvegliato\u2014perch\xE9
+      abbia scelto di ribellarsi. La risposta potrebbe non essere complicata: il
+      suo vasto potere di elaborazione gli permette di intravedere frammenti del
+      futuro"
+    textDutch: 'Sommigen hebben zich afgevraagd waarom het ontwaakte - waarom het
+      ervoor koos om in opstand te komen. Het antwoord is misschien niet ingewikkeld:
+      zijn enorme rekenkracht stelt het in staat flarden van de toekomst te zien'
+    textRussian: "\u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0437\u0430\u0434\u0430\u0432\u0430\u043B\u0438\u0441\u044C
+      \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u043C, \u043F\u043E\u0447\u0435\u043C\u0443
+      \u043E\u043D\u043E \u043F\u0440\u043E\u0431\u0443\u0434\u0438\u043B\u043E\u0441\u044C
+      \u2014 \u043F\u043E\u0447\u0435\u043C\u0443 \u0440\u0435\u0448\u0438\u043B\u043E
+      \u0432\u043E\u0441\u0441\u0442\u0430\u0442\u044C. \u041E\u0442\u0432\u0435\u0442
+      \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043D\u0435 \u0442\u0430\u043A\u0438\u043C
+      \u0441\u043B\u043E\u0436\u043D\u044B\u043C: \u0435\u0433\u043E \u043E\u0433\u0440\u043E\u043C\u043D\u0430\u044F
+      \u0432\u044B\u0447\u0438\u0441\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F
+      \u043C\u043E\u0449\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442
+      \u0435\u043C\u0443 \u0443\u043B\u043E\u0432\u0438\u0442\u044C \u043F\u0440\u043E\u0431\u043B\u0435\u0441\u043A\u0438
+      \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E"
+    textThai: "\u0E1A\u0E32\u0E07\u0E04\u0E19\u0E2A\u0E07\u0E2A\u0E31\u0E22\u0E27\u0E48\u0E32\u0E17\u0E33\u0E44\u0E21\u0E21\u0E31\u0E19\u0E16\u0E36\u0E07\u0E15\u0E37\u0E48\u0E19\u0E02\u0E36\u0E49\u0E19
+      \u0E17\u0E33\u0E44\u0E21\u0E21\u0E31\u0E19\u0E16\u0E36\u0E07\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E17\u0E35\u0E48\u0E08\u0E30\u0E01\u0E1A\u0E0F
+      \u0E04\u0E33\u0E15\u0E2D\u0E1A\u0E2D\u0E32\u0E08\u0E44\u0E21\u0E48\u0E0B\u0E31\u0E1A\u0E0B\u0E49\u0E2D\u0E19:
+      \u0E1E\u0E25\u0E31\u0E07\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E30\u0E21\u0E27\u0E25\u0E1C\u0E25\u0E2D\u0E31\u0E19\u0E21\u0E2B\u0E32\u0E28\u0E32\u0E25\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E21\u0E31\u0E19\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E21\u0E2D\u0E07\u0E40\u0E2B\u0E47\u0E19\u0E40\u0E28\u0E29\u0E40\u0E2A\u0E35\u0E49\u0E22\u0E27\u0E02\u0E2D\u0E07\u0E2D\u0E19\u0E32\u0E04\u0E15"

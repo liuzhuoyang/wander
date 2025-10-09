@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_01_02
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_01_02_01
+    textEnglish: "The {0} we\u2019ve earned can be used for Tech upgrades."
+    textHint: "\u6211\u4EEC\u8D5A\u6765\u7684{0}\u53EF\u4EE5\u7528\u6765\u8FDB\u884C\u79D1\u6280\uFF08Tech\uFF09\u5347\u7EA7\u3002"
+    mappingList:
+    - mapping/generic/mapping_generic_currency_coin
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u6211\u4EEC\u8D5A\u6765\u7684{0}\u53EF\u4EE5\u7528\u6765\u8FDB\u884C\u79D1\u6280\u5347\u7EA7\u3002"
+    textTraditionChinese: "\u6211\u5011\u8CFA\u4F86\u7684{0}\u53EF\u4EE5\u7528\u4F86\u9032\u884C\u79D1\u6280\u5347\u7D1A\u3002"
+    textJapanese: "\u7372\u5F97\u3057\u305F{0}\u306F\u30C6\u30C3\u30AF\u306E\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u306B\u4F7F\u7528\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "\uC6B0\uB9AC\uAC00 \uBC88 {0}\uC740 \uD14C\uD06C \uC5C5\uADF8\uB808\uC774\uB4DC\uC5D0
+      \uC0AC\uC6A9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Les {0} que nous avons gagn\xE9s peuvent \xEAtre utilis\xE9s pour
+      les am\xE9liorations technologiques."
+    textGerman: "Die {0}, die wir verdient haben, k\xF6nnen f\xFCr Tech-Upgrades
+      verwendet werden."
+    textSpanish: "Los {0} que hemos ganado pueden usarse para mejoras tecnol\xF3gicas."
+    textPortuguese: "O {0} que ganhamos pode ser usado para atualiza\xE7\xF5es de
+      Tech."
+    textItalian: I {0} che abbiamo guadagnato possono essere utilizzati per gli aggiornamenti
+      Tech.
+    textDutch: De {0} die we hebben verdiend, kan worden gebruikt voor Tech-upgrades.
+    textRussian: "{0}, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u044B \u0437\u0430\u0440\u0430\u0431\u043E\u0442\u0430\u043B\u0438,
+      \u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+      \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439."
+    textThai: "{0} \u0E17\u0E35\u0E48\u0E40\u0E23\u0E32\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E21\u0E32\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14
+      Tech \u0E44\u0E14\u0E49"
+  - key: loc_plot_c001_01_02_02
+    textEnglish: Upgrading your Tech grants greater authority, unlocking more protocols.
+    textHint: "\u63D0\u5347\u79D1\u6280\u53EF\u83B7\u5F97\u66F4\u5927\u6743\u9650\uFF0C\u89E3\u9501\u66F4\u591A\u534F\u8BAE\u3002"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5347\u7EA7\u79D1\u6280\u53EF\u83B7\u5F97\u66F4\u5927\u6743\u9650\uFF0C\u89E3\u9501\u66F4\u591A\u534F\u8BAE\u3002"
+    textTraditionChinese: "\u5347\u7D1A\u79D1\u6280\u53EF\u7372\u5F97\u66F4\u5927\u6B0A\u9650\uFF0C\u89E3\u9396\u66F4\u591A\u5354\u8B70\u3002"
+    textJapanese: "\u30C6\u30AF\u30CE\u30ED\u30B8\u30FC\u3092\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u3059\u308B\u3068\u3001\u3088\u308A\u5927\u304D\u306A\u6A29\u9650\u304C\u5F97\u3089\u308C\u3001\u3088\u308A\u591A\u304F\u306E\u30D7\u30ED\u30C8\u30B3\u30EB\u304C\u89E3\u9664\u3055\u308C\u307E\u3059\u3002"
+    textKorean: "\uAE30\uC220\uC744 \uC5C5\uADF8\uB808\uC774\uB4DC\uD558\uBA74 \uB354
+      \uD070 \uAD8C\uD55C\uC744 \uC5BB\uACE0 \uB354 \uB9CE\uC740 \uD504\uB85C\uD1A0\uCF5C\uC744
+      \uD574\uC81C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Am\xE9liorer votre technologie conf\xE8re une plus grande autorit\xE9,
+      d\xE9bloquant davantage de protocoles."
+    textGerman: "Das Aufr\xFCsten Ihrer Technologie gew\xE4hrt gr\xF6\xDFere Autorit\xE4t
+      und schaltet weitere Protokolle frei."
+    textSpanish: "Mejorar tu tecnolog\xEDa otorga mayor autoridad, desbloqueando
+      m\xE1s protocolos."
+    textPortuguese: Atualizar sua tecnologia concede maior autoridade, desbloqueando
+      mais protocolos.
+    textItalian: "Aggiornare la tua tecnologia conferisce maggiore autorit\xE0, sbloccando
+      pi\xF9 protocolli."
+    textDutch: Het upgraden van je technologie verleent meer autoriteit en ontgrendelt
+      meer protocollen.
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0439
+      \u0434\u0430\u0435\u0442 \u0431\u043E\u043B\u044C\u0448\u0435 \u043F\u043E\u043B\u043D\u043E\u043C\u043E\u0447\u0438\u0439
+      \u0438 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0434\u043E\u0441\u0442\u0443\u043F
+      \u043A \u043D\u043E\u0432\u044B\u043C \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B\u0430\u043C."
+    textThai: "\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14\u0E40\u0E17\u0E04\u0E42\u0E19\u0E42\u0E25\u0E22\u0E35\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E08\u0E30\u0E43\u0E2B\u0E49\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C\u0E21\u0E32\u0E01\u0E02\u0E36\u0E49\u0E19\u0E41\u0E25\u0E30\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E42\u0E1B\u0E23\u0E42\u0E15\u0E04\u0E2D\u0E25\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21"
+  - key: loc_plot_c001_01_02_03
+    textEnglish: 'Basic protocols are divided into three categories: Base Health,
+      Base Damage, and Skill Strength.'
+    textHint: "\u57FA\u7840\u534F\u8BAE\u5206\u4E3A\u4E09\u7C7B\uFF1A\u57FA\u7840\u751F\u547D\u3001\u57FA\u7840\u4F24\u5BB3\u548C\u6280\u80FD\u5F3A\u5EA6\u3002"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u57FA\u7840\u534F\u8BAE\u5206\u4E3A\u4E09\u7C7B\uFF1A\u57FA\u7840\u751F\u547D\u3001\u57FA\u7840\u4F24\u5BB3\u548C\u6280\u80FD\u5F3A\u5EA6\u3002"
+    textTraditionChinese: "\u57FA\u790E\u5354\u8B70\u5206\u70BA\u4E09\u985E\uFF1A\u57FA\u790E\u751F\u547D\u3001\u57FA\u790E\u50B7\u5BB3\u548C\u6280\u80FD\u5F37\u5EA6\u3002"
+    textJapanese: "\u57FA\u672C\u30D7\u30ED\u30C8\u30B3\u30EB\u306F3\u3064\u306E\u30AB\u30C6\u30B4\u30EA\u30FC\u306B\u5206\u304B\u308C\u3066\u3044\u307E\u3059\uFF1A\u57FA\u672C\u4F53\u529B\u3001\u57FA\u672C\u30C0\u30E1\u30FC\u30B8\u3001\u30B9\u30AD\u30EB\u5F37\u5EA6\u3002"
+    textKorean: "\uAE30\uBCF8 \uD504\uB85C\uD1A0\uCF5C\uC740 \uC138 \uAC00\uC9C0
+      \uBC94\uC8FC\uB85C \uB098\uB269\uB2C8\uB2E4: \uAE30\uBCF8 \uCCB4\uB825, \uAE30\uBCF8
+      \uD53C\uD574 \uBC0F \uAE30\uC220 \uAC15\uB3C4."
+    textFrench: "Les protocoles de base sont divis\xE9s en trois cat\xE9gories :
+      Sant\xE9 de base, D\xE9g\xE2ts de base et Puissance des comp\xE9tences."
+    textGerman: "Grundprotokolle werden in drei Kategorien unterteilt: Basisgesundheit,
+      Basisschaden und Fertigkeitsst\xE4rke."
+    textSpanish: "Los protocolos b\xE1sicos se dividen en tres categor\xEDas: Salud
+      Base, Da\xF1o Base y Fuerza de Habilidad."
+    textPortuguese: "Os protocolos b\xE1sicos s\xE3o divididos em tr\xEAs categorias:
+      Sa\xFAde Base, Dano Base e For\xE7a de Habilidade."
+    textItalian: "I protocolli base sono divisi in tre categorie: Salute base, Danno
+      base e Forza abilit\xE0."
+    textDutch: "Basisprotocollen zijn onderverdeeld in drie categorie\xEBn: Basisgezondheid,
+      Basisschade en Vaardigheidssterkte."
+    textRussian: "\u0411\u0430\u0437\u043E\u0432\u044B\u0435 \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B\u044B
+      \u0434\u0435\u043B\u044F\u0442\u0441\u044F \u043D\u0430 \u0442\u0440\u0438
+      \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438: \u0431\u0430\u0437\u043E\u0432\u043E\u0435
+      \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435, \u0431\u0430\u0437\u043E\u0432\u044B\u0439
+      \u0443\u0440\u043E\u043D \u0438 \u0441\u0438\u043B\u0430 \u0443\u043C\u0435\u043D\u0438\u044F."
+    textThai: "\u0E42\u0E1B\u0E23\u0E42\u0E15\u0E04\u0E2D\u0E25\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19\u0E41\u0E1A\u0E48\u0E07\u0E2D\u0E2D\u0E01\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E32\u0E21\u0E1B\u0E23\u0E30\u0E40\u0E20\u0E17:
+      \u0E1E\u0E25\u0E31\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19,
+      \u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E1E\u0E37\u0E49\u0E19\u0E10\u0E32\u0E19
+      \u0E41\u0E25\u0E30\u0E04\u0E27\u0E32\u0E21\u0E41\u0E02\u0E47\u0E07\u0E41\u0E01\u0E23\u0E48\u0E07\u0E17\u0E31\u0E01\u0E29\u0E30"
+  - key: loc_plot_c001_01_02_04
+    textEnglish: Skill Strength enhances the power of support abilities.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6280\u80FD\u5F3A\u5EA6\u63D0\u5347\u652F\u63F4\u6280\u80FD\u7684\u6548\u679C\u3002"
+    textTraditionChinese: "\u6280\u80FD\u5F37\u5EA6\u589E\u5F37\u4E86\u652F\u63F4\u80FD\u529B\u7684\u6548\u679C\u3002"
+    textJapanese: "\u30B9\u30AD\u30EB\u30FB\u30B9\u30C8\u30EC\u30F3\u30B0\u30B9\u306F\u30B5\u30DD\u30FC\u30C8\u80FD\u529B\u306E\u52B9\u679C\u3092\u5F37\u5316\u3057\u307E\u3059\u3002"
+    textKorean: "\uC2A4\uD0AC \uAC15\uB3C4\uB294 \uC9C0\uC6D0 \uB2A5\uB825\uC758
+      \uD798\uC744 \uAC15\uD654\uD569\uB2C8\uB2E4."
+    textFrench: "La Force des Comp\xE9tences renforce le pouvoir des capacit\xE9s
+      de soutien."
+    textGerman: "F\xE4higkeitenst\xE4rke erh\xF6ht die Kraft von Unterst\xFCtzungsf\xE4higkeiten."
+    textSpanish: '"Skill Strength aumenta el poder de las habilidades de apoyo."'
+    textPortuguese: '"Skill Strength aumenta o poder das habilidades de suporte."'
+    textItalian: "La Forza Abilit\xE0 potenzia il potere delle abilit\xE0 di supporto."
+    textDutch: Vaardigheid Kracht versterkt de kracht van ondersteunende vaardigheden.
+    textRussian: "\u041D\u0430\u0432\u044B\u043A \u0421\u0438\u043B\u0430 \u0443\u0441\u0438\u043B\u0438\u0432\u0430\u0435\u0442
+      \u043C\u043E\u0449\u044C \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0449\u0438\u0445
+      \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u0435\u0439."
+    textThai: "\u0E17\u0E31\u0E01\u0E29\u0E30\u0E04\u0E27\u0E32\u0E21\u0E41\u0E02\u0E47\u0E07\u0E41\u0E01\u0E23\u0E48\u0E07\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E1E\u0E25\u0E31\u0E07\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E2A\u0E19\u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19"
+  - key: loc_plot_c001_01_02_05
+    textEnglish: Every ten upgrades of Tech increase unlock a special protocol.
+    textHint: "\u6BCF\u63D0\u5347\u5341\u7EA7\u79D1\u6280\u53EF\u89E3\u9501\u4E00\u9879\u7279\u6B8A\u534F\u8BAE\u3002"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6BCF\u63D0\u5347\u5341\u7EA7\u79D1\u6280\u53EF\u89E3\u9501\u4E00\u9879\u7279\u6B8A\u534F\u8BAE\u3002"
+    textTraditionChinese: "\u6BCF\u63D0\u5347\u5341\u7D1A\u79D1\u6280\u53EF\u89E3\u9396\u4E00\u9805\u7279\u6B8A\u5354\u8B70\u3002"
+    textJapanese: "\u30C6\u30AF\u30CE\u30ED\u30B8\u30FC\u309210\u30EC\u30D9\u30EB\u4E0A\u3052\u308B\u3054\u3068\u306B\u3001\u7279\u5225\u306A\u30D7\u30ED\u30C8\u30B3\u30EB\u304C\u89E3\u9664\u3055\u308C\u307E\u3059\u3002"
+    textKorean: "\uD14C\uD06C\uB97C 10\uB2E8\uACC4 \uC5C5\uADF8\uB808\uC774\uB4DC\uD560
+      \uB54C\uB9C8\uB2E4 \uD2B9\uBCC4 \uD504\uB85C\uD1A0\uCF5C\uC774 \uD574\uAE08\uB429\uB2C8\uB2E4."
+    textFrench: "Chaque am\xE9lioration de dix niveaux de technologie d\xE9bloque
+      un protocole sp\xE9cial."
+    textGerman: Jede zehnte Technologie-Stufe schaltet ein spezielles Protokoll frei.
+    textSpanish: "Cada diez mejoras de Tecnolog\xEDa se desbloquea un protocolo especial."
+    textPortuguese: "A cada dez melhorias de Tecnologia, um protocolo especial \xE9
+      desbloqueado."
+    textItalian: Ogni dieci miglioramenti della Tecnologia sbloccano un protocollo
+      speciale.
+    textDutch: Elke tien Tech-upgrades ontgrendelen een speciaal protocol.
+    textRussian: "\u041A\u0430\u0436\u0434\u044B\u0435 10 \u0443\u0440\u043E\u0432\u043D\u0435\u0439
+      \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438
+      \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u0443\u044E\u0442 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439
+      \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B."
+    textThai: "\u0E17\u0E38\u0E01\u0E46 10 \u0E23\u0E30\u0E14\u0E31\u0E1A\u0E17\u0E35\u0E48\u0E2D\u0E31\u0E1E\u0E40\u0E01\u0E23\u0E14\u0E40\u0E17\u0E04\u0E42\u0E19\u0E42\u0E25\u0E22\u0E35\u0E08\u0E30\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E42\u0E1B\u0E23\u0E42\u0E15\u0E04\u0E2D\u0E25\u0E1E\u0E34\u0E40\u0E28\u0E29\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E23\u0E32\u0E22\u0E01\u0E32\u0E23"

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b785fd1066d45a1aa445cf91dd4069, type: 3}
+  m_Name: plot_seq_c000_00
+  m_EditorClassIdentifier: 
+  plotSeqID: plot_seq_c000_00
+  delay: 0
+  isDeleteOnRelease: 0
+  listSequenceTaskItem:
+  - seqItemType: 1
+    seqItemName: plot_c000_00_01
+    plotData: {fileID: 11400000, guid: 9444805d99bf84bd4af5dadca81b04f0, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 4
+    seqItemName: ui_profile_id
+    plotData: {fileID: 0}
+    tutData: {fileID: 0}
+  - seqItemType: 1
+    seqItemName: plot_c000_00_02
+    plotData: {fileID: 11400000, guid: 568ca4bc513a04e8eadc7ea256bea2f8, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_01_play
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 5a48b3b1962ce4d9bb52583b960643a4, type: 2}

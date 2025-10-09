@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas_ui_feature
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 404448786cd2942fc8a9186a0546c0a3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 9e2344d0c9ad64c8bba964295be244e3: 21300000
+    - f36769618a49f4203b99ee0e1a31193d: 21300000
+    - 5b2afab287f1145cf940368c264a7425: 21300000
+    - fe58ede2b321544b09ebb0dde102d2db: 21300000
+    - fa1c6923c866846a8ba051b808c439ae: 21300000
+    - c62db59492ade4004a96eca07ad47a78: 21300000
+    - c7c8b03510b4b49cea0cc7e309931e00: 21300000
+    - cc474a35d5583414687e43c70388f186: 21300000
+    - e69b079559ee448fdabac50d0b138b72: 21300000
+    - 02a66ca56540643a28919c9143cd3c5f: 21300000
+    - 13281856ee573494eb6005752da7eb57: -5789909778665472070
+    - 6986ec7686cf6496d9c7e78ec5ac7969: 21300000
+    - fac31727e381e4009bc5fe253461a4a0: 21300000
+    - eaf5983746b8f4286a0a668b582b1340: 21300000
+    - bf0eb09801350405189a0d91bf1f4d9f: 21300000
+    - 3ba00cfb932eb46e986fa8726bb0ae4e: 21300000
+    - 6cc9f63d3176f48d790acf661dcd3380: 21300000
+    - 6ddbd6cdda48f499ba4cbc5bc6b8f48c: 21300000
+    - e6036add3b7ec4730847743feb982c1e: 21300000
+    - be53164e8482d42c280b1e470d612471: 21300000
+    - 7a9369fef8bbb4cafb3845fedb26a0d3: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 9e2344d0c9ad64c8bba964295be244e3, type: 3}
+  - {fileID: 21300000, guid: f36769618a49f4203b99ee0e1a31193d, type: 3}
+  - {fileID: 21300000, guid: 5b2afab287f1145cf940368c264a7425, type: 3}
+  - {fileID: 21300000, guid: fe58ede2b321544b09ebb0dde102d2db, type: 3}
+  - {fileID: 21300000, guid: fa1c6923c866846a8ba051b808c439ae, type: 3}
+  - {fileID: 21300000, guid: c62db59492ade4004a96eca07ad47a78, type: 3}
+  - {fileID: 21300000, guid: c7c8b03510b4b49cea0cc7e309931e00, type: 3}
+  - {fileID: 21300000, guid: cc474a35d5583414687e43c70388f186, type: 3}
+  - {fileID: 21300000, guid: e69b079559ee448fdabac50d0b138b72, type: 3}
+  - {fileID: 21300000, guid: 02a66ca56540643a28919c9143cd3c5f, type: 3}
+  - {fileID: -5789909778665472070, guid: 13281856ee573494eb6005752da7eb57, type: 3}
+  - {fileID: 21300000, guid: 6986ec7686cf6496d9c7e78ec5ac7969, type: 3}
+  - {fileID: 21300000, guid: fac31727e381e4009bc5fe253461a4a0, type: 3}
+  - {fileID: 21300000, guid: eaf5983746b8f4286a0a668b582b1340, type: 3}
+  - {fileID: 21300000, guid: bf0eb09801350405189a0d91bf1f4d9f, type: 3}
+  - {fileID: 21300000, guid: 3ba00cfb932eb46e986fa8726bb0ae4e, type: 3}
+  - {fileID: 21300000, guid: 6cc9f63d3176f48d790acf661dcd3380, type: 3}
+  - {fileID: 21300000, guid: 6ddbd6cdda48f499ba4cbc5bc6b8f48c, type: 3}
+  - {fileID: 21300000, guid: e6036add3b7ec4730847743feb982c1e, type: 3}
+  - {fileID: 21300000, guid: be53164e8482d42c280b1e470d612471, type: 3}
+  - {fileID: 21300000, guid: 7a9369fef8bbb4cafb3845fedb26a0d3, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon_feature_market
+  - icon_feature_fund
+  - icon_feature_terminal
+  - icon_feature_privilege
+  - icon_feature_armory
+  - icon_feature_relic
+  - icon_feature_challenge
+  - icon_feature_footer_nvg_shop
+  - icon_feature_ranking
+  - icon_feature_arena
+  - icon_footer_nvg_world_0
+  - icon_feature_venture
+  - icon_feature_footer_nvg_gear
+  - icon_feature_tavern
+  - icon_feature_tower
+  - icon_feature_footer_nvg_lobby
+  - icon_feature_terminal_2
+  - icon_feature_task
+  - icon_feature_loot
+  - icon_feature_footer_nvg_talent
+  - icon_feature_travel
+  m_RenderDataMap: {}
+  m_Tag: atlas_ui_feature
+  m_IsVariant: 0

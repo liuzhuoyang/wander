@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: font
+  m_EditorClassIdentifier: 
+  m_GroupName: font
+  m_GUID: 12e371ffe44684d30b19c74b72ab880c
+  m_SerializeEntries:
+  - m_GUID: 08362b4622b57436a9aac3ca0e9dd36d
+    m_Address: font_zht
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09246f4c517b44538a2f5ce051788dae
+    m_Address: font_en
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fa76f0f789d740c68f2663f10a74944
+    m_Address: font_latin_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 103ff035751d244e287daf614fff3f3b
+    m_Address: font_ja_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b9768cea2961412997e96bdfdb99517
+    m_Address: font_th_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3099cd86f17a44adab8766a36b0f411c
+    m_Address: font_ko_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a5026ffe0a5445748aa91177df207bf
+    m_Address: font_ja
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60861ddacda464a5997fa57ca9b45a5e
+    m_Address: font_th
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69d539fd7ad7a4491be6e6179a0125f8
+    m_Address: font_dynamic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a0154c92fbe2484fa8f08d82ad36f6a
+    m_Address: font_zhs_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bd8e23e846db42c2bfd2d5f4dec7b02
+    m_Address: font_ko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7fde10e97e9f3426b8a16ad7cca66ea4
+    m_Address: font_dynamic_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c80ffbb18355a40aca1268a9fafc3231
+    m_Address: font_latin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0df90e311f42464e8934f2f16de681b
+    m_Address: font_zhs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dceb7a34ec6f248878b4fdc03a4c144f
+    m_Address: font_en_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ddad78c1aa18348ada0d18f7231c6fc5
+    m_Address: font_zht_content
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b3ddc0e7d417740b49d183f556bbe074, type: 2}
+    - {fileID: 11400000, guid: 0b610dde8fab64e21bbe60296256e424, type: 2}

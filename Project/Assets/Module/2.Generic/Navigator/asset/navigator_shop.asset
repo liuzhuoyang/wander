@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7741694cab641acbee4ee533deb547, type: 3}
+  m_Name: navigator_shop
+  m_EditorClassIdentifier: 
+  featureData: {fileID: 11400000, guid: 8fcc5551c27be4bcf9b1c939aee97337, type: 2}
+  navigatorName: feature_shop
+  displayName: feature_mapping/navigation/shop
+  isNavigable: 1
+  previewDisplayName: Shop
+  previewIcon: {fileID: 21300000, guid: cc474a35d5583414687e43c70388f186, type: 3}
+  iconName: icon_lobby_shop
+  featrue: 5

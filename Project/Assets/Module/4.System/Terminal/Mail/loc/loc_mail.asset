@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_mail
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: mail/title
+    textEnglish: Mail
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u90AE\u4EF6"
+    textTraditionChinese: "\u90F5\u4EF6"
+    textJapanese: "\u30E1\u30FC\u30EB"
+    textKorean: "\uBA54\uC77C"
+    textFrench: Courrier
+    textGerman: Post
+    textSpanish: Correo
+    textPortuguese: Correio
+    textItalian: Posta
+    textDutch: Post
+    textRussian: "\u041F\u043E\u0447\u0442\u0430"
+    textThai: "\u0E08\u0E14\u0E2B\u0E21\u0E32\u0E22"
+  - key: mail/hint/mailbox_is_empty
+    textEnglish: Your mailbox is empty.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u90AE\u7BB1\u4E3A\u7A7A"
+    textTraditionChinese: "\u90F5\u7BB1\u70BA\u7A7A"
+    textJapanese: "\u30E1\u30FC\u30EB\u30DC\u30C3\u30AF\u30B9\u306F\u7A7A\u3067\u3059"
+    textKorean: "\uBA54\uC77C\uD568\uC774 \uBE44\uC5B4 \uC788\uC2B5\uB2C8\uB2E4"
+    textFrench: "Votre bo\xEEte est vide"
+    textGerman: Dein Postfach ist leer
+    textSpanish: "Tu buz\xF3n est\xE1 vac\xEDo"
+    textPortuguese: "Sua caixa est\xE1 vazia"
+    textItalian: "La tua casella \xE8 vuota"
+    textDutch: Je inbox is leeg
+    textRussian: "\u0412\u0430\u0448 \u043F\u043E\u0447\u0442\u043E\u0432\u044B\u0439
+      \u044F\u0449\u0438\u043A \u043F\u0443\u0441\u0442"
+    textThai: "\u0E01\u0E25\u0E48\u0E2D\u0E07\u0E08\u0E14\u0E2B\u0E21\u0E32\u0E22\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E27\u0E48\u0E32\u0E07\u0E40\u0E1B\u0E25\u0E48\u0E32"
+  - key: mail/expired
+    textEnglish: Expired
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FC7\u671F"
+    textTraditionChinese: "\u904E\u671F"
+    textJapanese: "\u671F\u9650\u5207\u308C"
+    textKorean: "\uB9CC\uB8CC\uB428"
+    textFrench: "Expir\xE9"
+    textGerman: Abgelaufen
+    textSpanish: Vencido
+    textPortuguese: Expirado
+    textItalian: Scaduto
+    textDutch: Verlopen
+    textRussian: "\u041F\u0440\u043E\u0441\u0440\u043E\u0447\u0435\u043D\u043D\u044B\u0439"
+    textThai: "\u0E2B\u0E21\u0E14\u0E2D\u0E32\u0E22\u0E38"
+  - key: mail/gm_mail
+    textEnglish: Debug Mail
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8C03\u8BD5\u90AE\u4EF6"
+    textTraditionChinese: "\u9664\u932F\u90F5\u4EF6"
+    textJapanese: "\u30C7\u30D0\u30C3\u30B0\u30E1\u30FC\u30EB"
+    textKorean: "\uB514\uBC84\uADF8 \uBA54\uC77C"
+    textFrench: "D\xE9boguer le courrier"
+    textGerman: Debug-Mail
+    textSpanish: Depurar Correo
+    textPortuguese: Depurar Email
+    textItalian: Debug Mail
+    textDutch: Debug Mail
+    textRussian: "\u041E\u0442\u043B\u0430\u0434\u043A\u0430 \u043F\u043E\u0447\u0442\u044B"
+    textThai: "\u0E14\u0E35\u0E1A\u0E31\u0E01\u0E40\u0E21\u0E25"

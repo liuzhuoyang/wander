@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_gear_ui
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: gear/ui/tap_to_unlock
+    textEnglish: Tap to Unlock
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u70B9\u51FB\u89E3\u9501"
+    textTraditionChinese: "\u9EDE\u64CA\u89E3\u9396"
+    textJapanese: "\u30BF\u30C3\u30D7\u3057\u3066\u30ED\u30C3\u30AF\u89E3\u9664"
+    textKorean: "\uD0ED\uD558\uC5EC \uC7A0\uAE08 \uD574\uC81C"
+    textFrench: "Appuyez pour d\xE9verrouiller"
+    textGerman: Zum Entsperren tippen
+    textSpanish: Toca para desbloquear
+    textPortuguese: Toque para Desbloquear
+    textItalian: Tocca per sbloccare
+    textDutch: Tik om te ontgrendelen
+    textRussian: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+      \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+    textThai: "\u0E41\u0E15\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01"
+  - key: gear/ui/max_level_increased
+    textEnglish: Max Level Increased
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6700\u5927\u7B49\u7EA7\u63D0\u5347"
+    textTraditionChinese: "\u6700\u5927\u7B49\u7D1A\u63D0\u5347"
+    textJapanese: "\u6700\u5927\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7"
+    textKorean: "\uCD5C\uB300 \uB808\uBCA8 \uC99D\uAC00"
+    textFrench: "Niveau Maximum Augment\xE9"
+    textGerman: "Maximales Level erh\xF6ht"
+    textSpanish: "Nivel M\xE1ximo Aumentado"
+    textPortuguese: "N\xEDvel M\xE1ximo Aumentado"
+    textItalian: Livello Massimo Aumentato
+    textDutch: Maximaal Niveau Verhoogd
+    textRussian: "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439
+      \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D"
+    textThai: "\u0E40\u0E25\u0E40\u0E27\u0E25\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E02\u0E36\u0E49\u0E19"

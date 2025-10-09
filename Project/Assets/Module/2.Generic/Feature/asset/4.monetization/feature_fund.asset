@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5686f48a45754e6a924a39f9c81ebae, type: 3}
+  m_Name: feature_fund
+  m_EditorClassIdentifier: 
+  featureType: 402
+  icon: {fileID: 21300000, guid: f36769618a49f4203b99ee0e1a31193d, type: 3}
+  iconName: icon_feature_fund
+  displayName: feature_mapping/monetization/fund
+  previewName: Fund
+  entranceType: 3
+  entrancePriority: 0
+  isShowUnlockAnimation: 0
+  unlockViewFeatureType: 2015
+  unlockConditionType: 1
+  chapterID: 1
+  levelID: 3

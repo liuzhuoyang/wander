@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_ad_popup_use_ticket
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u6BCF\u4E2A\u9875\u9762\u5355\u72EC\u8BBE\u7ACB\uFF0C\u5148\u601D\u8003\u9875\u9762\u80FD\u5426\u5171\u7528\uFF0C\u518D\u505A\u672C\u5730\u5316key"
+  list:
+  - key: ad/pop/use_ticket/title
+    textEnglish: Use Ad-Free Ticket?
+    textHint: "Ad-Free \u514D\u5E7F\u544A"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F7F\u7528\u514D\u5E7F\u544A\u5238\uFF1F"
+    textTraditionChinese: "\u4F7F\u7528\u514D\u5EE3\u544A\u7968\u5238\uFF1F"
+    textJapanese: "\u5E83\u544A\u306A\u3057\u30C1\u30B1\u30C3\u30C8\u3092\u4F7F\u7528\u3057\u307E\u3059\u304B\uFF1F"
+    textKorean: "\uAD11\uACE0 \uC5C6\uB294 \uD2F0\uCF13 \uC0AC\uC6A9\uD560\uAE4C\uC694?"
+    textFrench: "Utiliser le billet sans publicit\xE9 ?"
+    textGerman: Ad-Free-Ticket verwenden?
+    textSpanish: "\xBFUsar boleto sin anuncios?"
+    textPortuguese: "Usar Bilhete Sem An\xFAncios?"
+    textItalian: "Usare il biglietto senza pubblicit\xE0?"
+    textDutch: Gebruik Ad-Free Ticket?
+    textRussian: "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+      \u0431\u0438\u043B\u0435\u0442 \u0431\u0435\u0437 \u0440\u0435\u043A\u043B\u0430\u043C\u044B?"
+    textThai: "\u0E43\u0E0A\u0E49\u0E15\u0E31\u0E4B\u0E27\u0E41\u0E1A\u0E1A\u0E44\u0E21\u0E48\u0E21\u0E35\u0E42\u0E06\u0E29\u0E13\u0E32\u0E44\u0E2B\u0E21?"

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas_vfx_ui_shared
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: a0f5587c1b8304436a051c0df13fb9e7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - aae07690e155a4d21b28ab30c8f7f98e: 21300000
+    - d72a59e00b7a1454bb039aa9467f51bd: 21300000
+    - 14748d06862e04260bd712b1256254a1: 21300000
+    - 85412b761bc4f4dd6a7a2b4551d35a16: 1649914071126452798
+    - c28aa17727074cc4aad7c2b43bfefdcd: 21300000
+    - 4f3282580e519478d8c59af91370ae2f: -1284754003013205781
+    - 372b2019f4c884b2a997643f45188483: 21300000
+    - 7607e27c68f3a4dc8b98e8806893a6a2: 4044737373505000622
+    - 3daa5e8deb6134836b16451f9216d9fa: 5699189823942680699
+    - dfeef73e293b24325a7166c215f2d300: 21300000
+    - 67c7d2bf94847414889ffbab2049f67c: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: aae07690e155a4d21b28ab30c8f7f98e, type: 3}
+  - {fileID: 21300000, guid: d72a59e00b7a1454bb039aa9467f51bd, type: 3}
+  - {fileID: 21300000, guid: 14748d06862e04260bd712b1256254a1, type: 3}
+  - {fileID: 1649914071126452798, guid: 85412b761bc4f4dd6a7a2b4551d35a16, type: 3}
+  - {fileID: 21300000, guid: c28aa17727074cc4aad7c2b43bfefdcd, type: 3}
+  - {fileID: -1284754003013205781, guid: 4f3282580e519478d8c59af91370ae2f, type: 3}
+  - {fileID: 21300000, guid: 372b2019f4c884b2a997643f45188483, type: 3}
+  - {fileID: 4044737373505000622, guid: 7607e27c68f3a4dc8b98e8806893a6a2, type: 3}
+  - {fileID: 5699189823942680699, guid: 3daa5e8deb6134836b16451f9216d9fa, type: 3}
+  - {fileID: 21300000, guid: dfeef73e293b24325a7166c215f2d300, type: 3}
+  - {fileID: 21300000, guid: 67c7d2bf94847414889ffbab2049f67c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - vfx_ui_tex_shared_arrow_green
+  - vfx_ui_tex_shared_glow_002
+  - vfx_ui_tex_shared_dot_001
+  - vfx_ui_confeti_0
+  - vfx_ui_tex_shared_dot_transparent_001
+  - vfx_ui_tex_star1_0
+  - vfx_ui_tex_shared_glow_001
+  - vfx_ui_tex_ring1_0
+  - vfx_ui_tex_star2_0
+  - vfx_ui_tex_shared_zone
+  - vfx_ui_tex_shared_light_beam_001
+  m_RenderDataMap: {}
+  m_Tag: atlas_vfx_ui_shared
+  m_IsVariant: 0

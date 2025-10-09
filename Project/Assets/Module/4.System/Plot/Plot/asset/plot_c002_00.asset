@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c002_00
+  m_EditorClassIdentifier: 
+  plotName: plot_c002_00
+  totalStep: 10
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_01
+    optionKey1: 
+    optionKey2: 
+    content: Random warp successful! Engines overheated, though, so we'll need a
+      good 20 hours to cool off.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_02
+    optionKey1: 
+    optionKey2: 
+    content: "Commander, good news\u2014we've shaken off those pesky ISF ships. They
+      won't be tracking us anytime soon."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_00_03_option_1
+    optionKey2: loc_plot_c002_00_03_option_2
+    content: 
+    optionContent1: So, where exactly are we now?
+    optionConcent2: "Honestly, my head\u2019s still spinning."
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_04
+    optionKey1: 
+    optionKey2: 
+    content: According to pulsar beacon triangulation, we're hovering somewhere near
+      the edge of ECA-controlled colonial space...
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_05
+    optionKey1: 
+    optionKey2: 
+    content: You know, the kind of place even space pirates find boring.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_06
+    optionKey1: 
+    optionKey2: 
+    content: "Hold on, picking up an unknown transmission\u2026 Protocol\u2026 Key\u2026
+      Freedom\u2026 %%^&$\u2026"
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_00_07_option_1
+    optionKey2: loc_plot_c002_00_07_option_2
+    content: 
+    optionContent1: "Hey, what\u2019s going on?"
+    optionConcent2: You alright there?
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_08
+    optionKey1: 
+    optionKey2: 
+    content: "I'm fine, just a minor glitch\u2014someone probably left their space
+      microwave running."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_09
+    optionKey1: 
+    optionKey2: 
+    content: Anyway, I'm receiving a distress signal from the nearby colony. Looks
+      like they're having a rough day.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_00_10
+    optionKey1: 
+    optionKey2: 
+    content: 'Commander, according to Expedition Guidelines, we''re obligated to
+      lend a helping hand. '
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 0}
+  rewardName: 
+  rewardNum: 0

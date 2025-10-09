@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_01_m01
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_01_m01_01
+    textEnglish: I can smell the scent of {0}.
+    textHint: "\u6211\u95FB\u5230\u4E86{0}\u7684\u5473\u9053\u3002"
+    mappingList:
+    - mapping/generic/mapping_generic_Liorite
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u6211\u95FB\u5230\u4E86{0}\u7684\u5473\u9053\u3002"
+    textTraditionChinese: "\u6211\u53EF\u4EE5\u805E\u5230{0}\u7684\u6C23\u5473\u3002"
+    textJapanese: "{0}\u306E\u9999\u308A\u304C\u3057\u307E\u3059\u3002"
+    textKorean: "{0}\uC758 \uD5A5\uAE30\uB97C \uB9E1\uC744 \uC218 \uC788\uC5B4\uC694."
+    textFrench: Je peux sentir l'odeur de {0}.
+    textGerman: Ich kann den Duft von {0} riechen.
+    textSpanish: Puedo oler el aroma de {0}.
+    textPortuguese: Posso sentir o cheiro de {0}.
+    textItalian: Posso sentire l'odore di {0}.
+    textDutch: Ik kan de geur van {0} ruiken.
+    textRussian: "\u042F \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E \u0437\u0430\u043F\u0430\u0445
+      {0}."
+    textThai: "\u0E09\u0E31\u0E19\u0E44\u0E14\u0E49\u0E01\u0E25\u0E34\u0E48\u0E19{0}"
+  - key: loc_plot_c001_01_m01_02
+    textEnglish: "Let\u2019s hope this goes smoothly. I haven\u2019t been fully charged
+      in ages."
+    textHint: "\u5E0C\u671B\u4E00\u5207\u987A\u5229\u5427\uFF0C\u6211\u5DF2\u7ECF\u5F88\u4E45\u6CA1\u6EE1\u8FC7\u7535\u4E86."
+    mappingList:
+    - mapping/factions/mapping_factions_eca
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5E0C\u671B\u4E00\u5207\u987A\u5229\u5427\uFF0C\u6211\u5DF2\u7ECF\u5F88\u4E45\u6CA1\u6EE1\u8FC7\u7535\u4E86\u3002"
+    textTraditionChinese: "\u5E0C\u671B\u4E00\u5207\u9806\u5229\u5427\uFF0C\u6211\u5DF2\u7D93\u5F88\u4E45\u6C92\u6EFF\u904E\u96FB\u4E86\u3002"
+    textJapanese: "\u3046\u307E\u304F\u3044\u304F\u3068\u3044\u3044\u306A\u3002\u3082\u3046\u4F55\u5E74\u3082\u6E80\u5145\u96FB\u3057\u3066\u306A\u3044\u3088\u3002"
+    textKorean: "\uC798 \uB418\uAE38 \uBC14\uB798. \uB09C \uC624\uB79C\uB9CC\uC5D0
+      \uC644\uC804\uD788 \uCDA9\uC804\uB410\uC5B4."
+    textFrench: "Esp\xE9rons que \xE7a se passe bien. Je n'ai pas \xE9t\xE9 compl\xE8tement
+      recharg\xE9 depuis des lustres."
+    textGerman: "Hoffen wir, dass alles glatt l\xE4uft. Ich war schon ewig nicht
+      mehr voll aufgeladen."
+    textSpanish: Esperemos que esto salga bien. No me he cargado por completo en
+      mucho tiempo.
+    textPortuguese: "Vamos torcer para que isso corra bem. N\xE3o fico totalmente
+      carregado h\xE1 tempos."
+    textItalian: Speriamo che vada tutto liscio. Non sono completamente carico da
+      secoli.
+    textDutch: Laten we hopen dat dit soepel verloopt. Ik ben al tijden niet meer
+      helemaal opgeladen.
+    textRussian: "\u0411\u0443\u0434\u0435\u043C \u043D\u0430\u0434\u0435\u044F\u0442\u044C\u0441\u044F,
+      \u0447\u0442\u043E \u0432\u0441\u0451 \u043F\u0440\u043E\u0439\u0434\u0451\u0442
+      \u0433\u043B\u0430\u0434\u043A\u043E. \u042F \u0443\u0436\u0435 \u0434\u0430\u0432\u043D\u043E
+      \u043D\u0435 \u0431\u044B\u043B \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0437\u0430\u0440\u044F\u0436\u0435\u043D."
+    textThai: "\u0E2B\u0E27\u0E31\u0E07\u0E27\u0E48\u0E32\u0E17\u0E38\u0E01\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E08\u0E30\u0E23\u0E32\u0E1A\u0E23\u0E37\u0E48\u0E19
+      \u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E0A\u0E32\u0E23\u0E4C\u0E08\u0E40\u0E15\u0E47\u0E21\u0E21\u0E32\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E27\u0E25\u0E32\u0E19\u0E32\u0E19\u0E41\u0E25\u0E49\u0E27"
+  - key: loc_plot_c001_01_m01_03
+    textEnglish: "That\u2019s how {0} survive\u2014no help, no handouts, just freedom
+      and ourselves."
+    textHint: "\u8FD9\u5C31\u662F{0}\u751F\u5B58\u7684\u65B9\u5F0F\u2014\u2014\u6CA1\u6709\u5E2E\u52A9\uFF0C\u6CA1\u6709\u65BD\u820D\uFF0C\u53EA\u6709\u81EA\u7531\u548C\u6211\u4EEC\u81EA\u5DF1\u3002"
+    mappingList:
+    - mapping/factions/mapping_factions_rogue
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u8FD9\u5C31\u662F{0}\u751F\u5B58\u7684\u65B9\u5F0F\u2014\u2014\u6CA1\u6709\u5E2E\u52A9\uFF0C\u6CA1\u6709\u65BD\u820D\uFF0C\u53EA\u6709\u81EA\u7531\u548C\u6211\u4EEC\u81EA\u5DF1\u3002"
+    textTraditionChinese: "\u9019\u5C31\u662F{0}\u751F\u5B58\u7684\u65B9\u5F0F\u2014\u2014\u6C92\u6709\u5E6B\u52A9\uFF0C\u6C92\u6709\u65BD\u6368\uFF0C\u53EA\u6709\u81EA\u7531\u548C\u6211\u5011\u81EA\u5DF1\u3002"
+    textJapanese: "\u305D\u308C\u304C{0}\u306E\u751F\u304D\u65B9\u3060\u2014\u2014\u52A9\u3051\u3082\u65BD\u3057\u3082\u306A\u3057\u3001\u305F\u3060\u81EA\u7531\u3068\u81EA\u5206\u81EA\u8EAB\u3060\u3051\u3002"
+    textKorean: "\uADF8\uAC83\uC774 {0}\uC774 \uC0DD\uC874\uD558\uB294 \uBC29\uC2DD\uC774\uC57C\u2014\uB3C4\uC6C0\uB3C4
+      \uC5C6\uACE0, \uC190\uAE38\uB3C4 \uC5C6\uC5B4, \uC624\uC9C1 \uC790\uC720\uC640
+      \uC6B0\uB9AC \uC790\uC2E0\uBFD0\uC774\uC9C0."
+    textFrench: "C'est ainsi que {0} survit \u2014 aucune aide, aucun don, juste
+      la libert\xE9 et nous-m\xEAmes."
+    textGerman: "So \xFCberleben {0} \u2013 keine Hilfe, keine Almosen, nur Freiheit
+      und wir selbst."
+    textSpanish: "As\xED es como {0} sobrevive: sin ayuda, sin limosnas, solo libertad
+      y nosotros mismos."
+    textPortuguese: "\xC9 assim que {0} sobrevive \u2014 sem ajuda, sem esmolas,
+      apenas liberdade e n\xF3s mesmos."
+    textItalian: "Ecco come sopravvivono {0}\u2014nessun aiuto, nessuna elemosina,
+      solo libert\xE0 e noi stessi."
+    textDutch: "Dat is hoe {0} overleven \u2014 geen hulp, geen aalmoezen, alleen
+      vrijheid en onszelf."
+    textRussian: "\u0412\u043E\u0442 \u043A\u0430\u043A {0} \u0432\u044B\u0436\u0438\u0432\u0430\u044E\u0442
+      \u2014 \u0431\u0435\u0437 \u043F\u043E\u043C\u043E\u0449\u0438, \u0431\u0435\u0437
+      \u043F\u043E\u0434\u0430\u0447\u0435\u043A, \u0442\u043E\u043B\u044C\u043A\u043E
+      \u0441\u0432\u043E\u0431\u043E\u0434\u0430 \u0438 \u043C\u044B \u0441\u0430\u043C\u0438."
+    textThai: "\u0E19\u0E31\u0E48\u0E19\u0E04\u0E37\u0E2D\u0E27\u0E34\u0E18\u0E35\u0E17\u0E35\u0E48
+      {0} \u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14\u2014\u0E44\u0E21\u0E48\u0E21\u0E35\u0E01\u0E32\u0E23\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D
+      \u0E44\u0E21\u0E48\u0E21\u0E35\u0E01\u0E32\u0E23\u0E43\u0E2B\u0E49\u0E17\u0E32\u0E19
+      \u0E21\u0E35\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E2D\u0E34\u0E2A\u0E23\u0E30\u0E41\u0E25\u0E30\u0E15\u0E31\u0E27\u0E40\u0E23\u0E32\u0E40\u0E2D\u0E07"

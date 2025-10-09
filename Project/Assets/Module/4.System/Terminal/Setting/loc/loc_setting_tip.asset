@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_setting_tip
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u8D26\u6237\u76F8\u5173\u63D0\u793A"
+  list:
+  - key: setting/tip/id_copy
+    textEnglish: UID has been copied to the clipboard
+    textHint: "\u7FFB\u8BD1\u4E3A\uFF1AUID\u5DF2\u7ECF\u590D\u5236\u5230\u526A\u5207\u677F"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "UID\u5DF2\u590D\u5236\u5230\u526A\u8D34\u677F"
+    textTraditionChinese: "UID\u5DF2\u7D93\u8907\u88FD\u5230\u526A\u8CBC\u7C3F"
+    textJapanese: "UID\u304C\u30AF\u30EA\u30C3\u30D7\u30DC\u30FC\u30C9\u306B\u30B3\u30D4\u30FC\u3055\u308C\u307E\u3057\u305F"
+    textKorean: "UID\uAC00 \uD074\uB9BD\uBCF4\uB4DC\uC5D0 \uBCF5\uC0AC\uB418\uC5C8\uC2B5\uB2C8\uB2E4"
+    textFrench: "L'UID a \xE9t\xE9 copi\xE9 dans le presse-papiers."
+    textGerman: UID wurde in die Zwischenablage kopiert.
+    textSpanish: UID ha sido copiado al portapapeles.
+    textPortuguese: "O UID foi copiado para a \xE1rea de transfer\xEAncia."
+    textItalian: "UID \xE8 stato copiato negli appunti."
+    textDutch: UID is naar het klembord gekopieerd.
+    textRussian: "UID \u0441\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D
+      \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430."
+    textThai: "UID \u0E44\u0E14\u0E49\u0E16\u0E39\u0E01\u0E04\u0E31\u0E14\u0E25\u0E2D\u0E01\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E04\u0E25\u0E34\u0E1B\u0E1A\u0E2D\u0E23\u0E4C\u0E14\u0E41\u0E25\u0E49\u0E27"

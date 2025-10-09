@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 4f914d765f47843259b6a664f7747e87
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2775752264213119630
+    second: ter_theme_003_decor_grass_01_0
+  - first:
+      213: -19294889162416809
+    second: ter_theme_003_decor_grass_01_1
+  - first:
+      213: 2647231048370492812
+    second: ter_theme_003_decor_grass_01_2
+  - first:
+      213: -6475091060831397386
+    second: ter_theme_003_decor_grass_01_3
+  - first:
+      213: 709733519523020877
+    second: ter_theme_003_decor_grass_01_4
+  - first:
+      213: -5362842486382718420
+    second: ter_theme_003_decor_grass_01_5
+  - first:
+      213: -4892508875523077318
+    second: ter_theme_003_decor_grass_01_6
+  - first:
+      213: 4207343005415926303
+    second: ter_theme_003_decor_grass_01_7
+  - first:
+      213: -2121466404696618226
+    second: ter_theme_003_decor_grass_01_8
+  - first:
+      213: -4911089125017292465
+    second: ter_theme_003_decor_grass_01_9
+  - first:
+      213: -7627951112664756378
+    second: ter_theme_003_decor_grass_01_10
+  - first:
+      213: 5497453210041449985
+    second: ter_theme_003_decor_grass_01_11
+  - first:
+      213: 6078843568568958570
+    second: ter_theme_003_decor_grass_01_12
+  - first:
+      213: 5726405361756649318
+    second: ter_theme_003_decor_grass_01_13
+  - first:
+      213: -2351762957613715993
+    second: ter_theme_003_decor_grass_01_14
+  - first:
+      213: 2938484645548127067
+    second: ter_theme_003_decor_grass_01_15
+  - first:
+      213: -6019520614875113172
+    second: ter_theme_003_decor_grass_01_16
+  - first:
+      213: 2966420175006197716
+    second: ter_theme_003_decor_grass_01_17
+  - first:
+      213: -4616046424965444256
+    second: ter_theme_003_decor_grass_01_18
+  - first:
+      213: -2491654828013098762
+    second: ter_theme_003_decor_grass_01_19
+  - first:
+      213: -3615999235000272356
+    second: ter_theme_003_decor_grass_01_20
+  - first:
+      213: -4039677180090619700
+    second: ter_theme_003_decor_grass_01_21
+  - first:
+      213: 4521334719918231691
+    second: ter_theme_003_decor_grass_01_22
+  - first:
+      213: 4281959497438896997
+    second: ter_theme_003_decor_grass_01_23
+  - first:
+      213: -1904154094322044505
+    second: ter_theme_003_decor_grass_01_24
+  - first:
+      213: 660557873148744356
+    second: ter_theme_003_decor_grass_01_25
+  - first:
+      213: 7406004005608964873
+    second: ter_theme_003_decor_grass_01_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 140
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d3713b50c8a79d0800000000000000
+      internalID: -2775752264213119630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 156
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d5e7986637bbff0800000000000000
+      internalID: -19294889162416809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 156
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c851284ec9adcb420800000000000000
+      internalID: 2647231048370492812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 143
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f956d69cfad326a0800000000000000
+      internalID: -6475091060831397386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 145
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d408b5c20ea79d900800000000000000
+      internalID: 709733519523020877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 113
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2219c41c2b5395b0800000000000000
+      internalID: -5362842486382718420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 124
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b400e69115a1cb0800000000000000
+      internalID: -4892508875523077318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a6a060c2c736a30800000000000000
+      internalID: 4207343005415926303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 100
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b02218b890f82e0800000000000000
+      internalID: -2121466404696618226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 113
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f417f0bf57e48dbb0800000000000000
+      internalID: -4911089125017292465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f429da0e2142690800000000000000
+      internalID: -7627951112664756378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 89
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ef9d95190ea4c40800000000000000
+      internalID: 5497453210041449985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 67
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e78bdb4046c5450800000000000000
+      internalID: 6078843568568958570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 69
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667b5633657487f40800000000000000
+      internalID: 5726405361756649318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 75
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed238bdc0cdc5fd0800000000000000
+      internalID: -2351762957613715993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 69
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53f5d3673897c820800000000000000
+      internalID: 2938484645548127067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 68
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c295a30c4ed567ca0800000000000000
+      internalID: -6019520614875113172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 63
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7ebc1be67da2920800000000000000
+      internalID: 2966420175006197716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_18
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 45
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d093dbb3280ffb0800000000000000
+      internalID: -4616046424965444256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_19
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 45
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f86461a22ddb6dd0800000000000000
+      internalID: -2491654828013098762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_20
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 45
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a79b9aad361ddc0800000000000000
+      internalID: -3615999235000272356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc86271020f20f7c0800000000000000
+      internalID: -4039677180090619700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 23
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80dd5309f10fbe30800000000000000
+      internalID: 4521334719918231691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_23
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 19
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563a473e9739c6b30800000000000000
+      internalID: 4281959497438896997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_24
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1345a90f51395e0800000000000000
+      internalID: -1904154094322044505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 24
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a25e96c2e5ca2900800000000000000
+      internalID: 660557873148744356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ter_theme_003_decor_grass_01_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9034177876967c660800000000000000
+      internalID: 7406004005608964873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ter_theme_003_decor_grass_01_0: -2775752264213119630
+      ter_theme_003_decor_grass_01_1: -19294889162416809
+      ter_theme_003_decor_grass_01_10: -7627951112664756378
+      ter_theme_003_decor_grass_01_11: 5497453210041449985
+      ter_theme_003_decor_grass_01_12: 6078843568568958570
+      ter_theme_003_decor_grass_01_13: 5726405361756649318
+      ter_theme_003_decor_grass_01_14: -2351762957613715993
+      ter_theme_003_decor_grass_01_15: 2938484645548127067
+      ter_theme_003_decor_grass_01_16: -6019520614875113172
+      ter_theme_003_decor_grass_01_17: 2966420175006197716
+      ter_theme_003_decor_grass_01_18: -4616046424965444256
+      ter_theme_003_decor_grass_01_19: -2491654828013098762
+      ter_theme_003_decor_grass_01_2: 2647231048370492812
+      ter_theme_003_decor_grass_01_20: -3615999235000272356
+      ter_theme_003_decor_grass_01_21: -4039677180090619700
+      ter_theme_003_decor_grass_01_22: 4521334719918231691
+      ter_theme_003_decor_grass_01_23: 4281959497438896997
+      ter_theme_003_decor_grass_01_24: -1904154094322044505
+      ter_theme_003_decor_grass_01_25: 660557873148744356
+      ter_theme_003_decor_grass_01_26: 7406004005608964873
+      ter_theme_003_decor_grass_01_3: -6475091060831397386
+      ter_theme_003_decor_grass_01_4: 709733519523020877
+      ter_theme_003_decor_grass_01_5: -5362842486382718420
+      ter_theme_003_decor_grass_01_6: -4892508875523077318
+      ter_theme_003_decor_grass_01_7: 4207343005415926303
+      ter_theme_003_decor_grass_01_8: -2121466404696618226
+      ter_theme_003_decor_grass_01_9: -4911089125017292465
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

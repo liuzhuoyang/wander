@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_01_m02
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_01_m02_01
+    textEnglish: Ta-da! The Expeditionary Platform comes with its very own War Factory!
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u55D2\u54D2\uFF01\u8FDC\u5F81\u5E73\u53F0\u81EA\u5E26\u4E13\u5C5E\u6218\u4E89\u5DE5\u5382\uFF01"
+    textTraditionChinese: "\u5660\u5660\uFF01\u9060\u5F81\u5E73\u53F0\u81EA\u5E36\u5C08\u5C6C\u6230\u722D\u5DE5\u5EE0\uFF01"
+    textJapanese: "\u30BF\u30FB\u30C0\u30FC\uFF01 \u9060\u5F81\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u306B\u306F\u5C02\u7528\u306E\u6226\u4E89\u5DE5\u5834\u304C\u4ED8\u5C5E\u3057\u3066\u3044\u307E\u3059\uFF01"
+    textKorean: "\uC9DC\uC794! \uC6D0\uC815 \uD50C\uB7AB\uD3FC\uC5D0\uB294 \uC790\uCCB4
+      \uC6CC \uD329\uD1A0\uB9AC\uAC00 \uD568\uAED8 \uC81C\uACF5\uB429\uB2C8\uB2E4!"
+    textFrench: "Ta-da ! La Plateforme Exp\xE9ditionnaire est livr\xE9e avec sa propre
+      Usine de Guerre !"
+    textGerman: Ta-da! Die Expeditionsplattform kommt mit ihrer eigenen Kriegsfabrik!
+    textSpanish: "\xA1Ta-da! La Plataforma Expedicionaria incluye su propia F\xE1brica
+      de Guerra!"
+    textPortuguese: "Ta-da! A Plataforma Expedicion\xE1ria vem com sua pr\xF3pria
+      F\xE1brica de Guerra!"
+    textItalian: Ecco! La Piattaforma Expeditionary include la sua personale Fabbrica
+      di Guerra!
+    textDutch: Ta-da! Het Expeditieplatform wordt geleverd met zijn eigen Oorlogsfabriek!
+    textRussian: "\u0422\u0430-\u0434\u0430! \u042D\u043A\u0441\u043F\u0435\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u0430\u044F
+      \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430 \u0438\u043C\u0435\u0435\u0442
+      \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u0443\u044E \u0412\u043E\u0435\u043D\u043D\u0443\u044E
+      \u0444\u0430\u0431\u0440\u0438\u043A\u0443!"
+    textThai: "\u0E17\u0E32\u0E14\u0E32! \u0E41\u0E1E\u0E25\u0E15\u0E1F\u0E2D\u0E23\u0E4C\u0E21\u0E2A\u0E33\u0E23\u0E27\u0E08\u0E21\u0E32\u0E1E\u0E23\u0E49\u0E2D\u0E21\u0E01\u0E31\u0E1A\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19\u0E2A\u0E07\u0E04\u0E23\u0E32\u0E21\u0E02\u0E2D\u0E07\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07!"
+  - key: loc_plot_c001_01_m02_02
+    textEnglish: It cooks up new weapons on a timer.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B83\u4F1A\u5B9A\u65F6\u5236\u9020\u65B0\u6B66\u5668\u3002"
+    textTraditionChinese: "\u5B83\u6703\u5B9A\u6642\u88FD\u9020\u65B0\u6B66\u5668\u3002"
+    textJapanese: "\u30BF\u30A4\u30DE\u30FC\u3067\u65B0\u3057\u3044\u6B66\u5668\u3092\u8ABF\u7406\u3059\u308B\u3002"
+    textKorean: "\uC8FC\uAE30\uC801\uC73C\uB85C \uC0C8\uB85C\uC6B4 \uBB34\uAE30\uB97C
+      \uC81C\uC870\uD569\uB2C8\uB2E4."
+    textFrench: "Il concocte de nouvelles armes \xE0 intervalle r\xE9gulier."
+    textGerman: Es kocht neue Waffen nach einem Zeitplan.
+    textSpanish: Cocina nuevas armas con un temporizador.
+    textPortuguese: Ele cozinha novas armas em um temporizador.
+    textItalian: Cucina nuove armi a intervalli regolari.
+    textDutch: Het maakt nieuwe wapens op een timer.
+    textRussian: "\u041E\u043D \u0441\u043E\u0437\u0434\u0430\u0451\u0442 \u043D\u043E\u0432\u043E\u0435
+      \u043E\u0440\u0443\u0436\u0438\u0435 \u043F\u043E \u0442\u0430\u0439\u043C\u0435\u0440\u0443."
+    textThai: "\u0E21\u0E31\u0E19\u0E1B\u0E23\u0E38\u0E07\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E43\u0E2B\u0E21\u0E48\u0E15\u0E32\u0E21\u0E40\u0E27\u0E25\u0E32"
+  - key: loc_plot_c001_01_m02_03
+    textEnglish: Too slow for your taste? Toss in some {0} and watch it go vroom!
+    textHint: 
+    mappingList:
+    - mapping/generic/mapping_generic_Liorite
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u5982\u679C\u4F60\u5B9E\u5728\u7B49\u4E0D\u53CA\uFF0C\u4E5F\u53EF\u4EE5\u7838\u70B9{0}\u8FDB\u53BB\uFF0C\u52A0\u901F\u4E00\u4E0B\u5EFA\u8BBE\uFF0C\u560E\u560E\u5FEB\uFF5E"
+    textTraditionChinese: "\u5982\u679C\u4F60\u5BE6\u5728\u7B49\u4E0D\u53CA\uFF0C\u4E5F\u53EF\u4EE5\u7838\u9EDE{0}\u9032\u53BB\uFF0C\u52A0\u901F\u4E00\u4E0B\u5EFA\u8A2D\uFF0C\u560E\u560E\u5FEB\uFF5E"
+    textJapanese: "\u304A\u597D\u307F\u306B\u306F\u9045\u3059\u304E\u307E\u3059\u304B\uFF1F
+      {0}\u3092\u52A0\u3048\u3066\u3001\u30D6\u30FC\u30F3\u3068\u9032\u3080\u306E\u3092\u898B\u3066\u304F\u3060\u3055\u3044\uFF01"
+    textKorean: "\uB108\uBB34 \uB290\uB9AC\uB2E4\uACE0 \uC0DD\uAC01\uD558\uB2C8?
+      {0}\uC744 \uB123\uC5B4\uC11C \uBE68\uB77C\uC9C0\uB294 \uAC78 \uC9C0\uCF1C\uBD10!"
+    textFrench: "Trop lent \xE0 votre go\xFBt ? Ajoutez un peu de {0} et regardez
+      \xE7a d\xE9marrer !"
+    textGerman: "Zu langsam f\xFCr deinen Geschmack? Wirf etwas {0} rein und schau,
+      wie es losgeht!"
+    textSpanish: "\xBFDemasiado lento para tu gusto? \xA1Agrega un poco de {0} y
+      mira c\xF3mo acelera!"
+    textPortuguese: Lento demais para o seu gosto? Adicione um pouco de {0} e veja
+      ele acelerar!
+    textItalian: Troppo lento per i tuoi gusti? Aggiungi un po' di {0} e guardalo
+      sfrecciare!
+    textDutch: Te traag voor je smaak? Gooi er wat {0} in en kijk hoe het vroom gaat!
+    textRussian: "\u0421\u043B\u0438\u0448\u043A\u043E\u043C \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u043E
+      \u0434\u043B\u044F \u0442\u0432\u043E\u0435\u0433\u043E \u0432\u043A\u0443\u0441\u0430?
+      \u0414\u043E\u0431\u0430\u0432\u044C \u043D\u0435\u043C\u043D\u043E\u0433\u043E
+      {0} \u0438 \u0441\u043C\u043E\u0442\u0440\u0438, \u043A\u0430\u043A \u0432\u0441\u0451
+      \u043B\u0435\u0442\u0438\u0442!"
+    textThai: "\u0E0A\u0E49\u0E32\u0E40\u0E01\u0E34\u0E19\u0E44\u0E1B\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E23\u0E2A\u0E19\u0E34\u0E22\u0E21\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E2B\u0E23\u0E2D?
+      \u0E42\u0E22\u0E19 {0} \u0E40\u0E02\u0E49\u0E32\u0E44\u0E1B\u0E41\u0E25\u0E49\u0E27\u0E14\u0E39\u0E21\u0E31\u0E19\u0E1E\u0E38\u0E48\u0E07\u0E1B\u0E23\u0E37\u0E49\u0E14!"
+  - key: loc_plot_c001_01_m02_04
+    textEnglish: "Oh\u2014and if you merge matching weapons, you get a beefed-up
+      version, Commander!"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u54E6\u5BF9\u4E86\uFF0C\u6307\u6325\u5B98\uFF0C\u5408\u5E76\u5339\u914D\u6B66\u5668\u5C31\u80FD\u83B7\u5F97\u5F3A\u5316\u7248\uFF01"
+    textTraditionChinese: "\u54E6\u2014\u2014\u800C\u4E14\u5982\u679C\u4F60\u5408\u4F75\u5339\u914D\u7684\u6B66\u5668\uFF0C\u5C31\u80FD\u5F97\u5230\u5F37\u5316\u7248\u672C\uFF0C\u6307\u63EE\u5B98\uFF01"
+    textJapanese: "\u3042\u3042\u3001\u540C\u3058\u6B66\u5668\u3092\u878D\u5408\u3055\u305B\u308C\u3070\u3001\u5F37\u5316\u30D0\u30FC\u30B8\u30E7\u30F3\u304C\u624B\u306B\u5165\u308A\u307E\u3059\u3088\u3001\u53F8\u4EE4\u5B98\uFF01"
+    textKorean: "\uC624\u2014\uADF8\uB9AC\uACE0 \uAC19\uC740 \uBB34\uAE30\uB97C \uD569\uCE58\uBA74
+      \uAC15\uD654\uB41C \uBC84\uC804\uC744 \uC5BB\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4,
+      \uC0AC\uB839\uAD00\uB2D8!"
+    textFrench: "Oh\u2014et si vous fusionnez des armes identiques, vous obtenez
+      une version am\xE9lior\xE9e, Commandant !"
+    textGerman: "Oh \u2013 und wenn du passende Waffen zusammenf\xFChrst, erh\xE4ltst
+      du eine verbesserte Version, Commander!"
+    textSpanish: "Oh\u2014y si fusionas armas iguales, obtienes una versi\xF3n mejorada,
+      \xA1Comandante!"
+    textPortuguese: "Ah\u2014e se voc\xEA fundir armas correspondentes, obt\xE9m
+      uma vers\xE3o turbinada, Comandante!"
+    textItalian: "Oh\u2014e se unisci armi corrispondenti, ottieni una versione potenziata,
+      Comandante!"
+    textDutch: "Oh\u2014en als je dezelfde wapens samenvoegt, krijg je een verbeterde
+      versie, Commandant!"
+    textRussian: "\u041E\u2014\u0438 \u0435\u0441\u043B\u0438 \u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0438\u0442\u044C
+      \u043E\u0434\u0438\u043D\u0430\u043A\u043E\u0432\u043E\u0435 \u043E\u0440\u0443\u0436\u0438\u0435,
+      \u0442\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0448\u044C \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u043D\u0443\u044E
+      \u0432\u0435\u0440\u0441\u0438\u044E, \u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440!"
+    textThai: "\u0E42\u0E2D\u0E49\u2014\u0E41\u0E25\u0E30\u0E16\u0E49\u0E32\u0E04\u0E38\u0E13\u0E23\u0E27\u0E21\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E17\u0E35\u0E48\u0E15\u0E23\u0E07\u0E01\u0E31\u0E19
+      \u0E04\u0E38\u0E13\u0E08\u0E30\u0E44\u0E14\u0E49\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E19\u0E17\u0E35\u0E48\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14\u0E41\u0E25\u0E49\u0E27
+      \u0E1C\u0E39\u0E49\u0E1A\u0E31\u0E0D\u0E0A\u0E32\u0E01\u0E32\u0E23!"

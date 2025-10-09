@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_chapter
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: chapter/title_001
+    textEnglish: Shahra
+    textHint: "\u6C99\u8D6B\u62C9"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6C99\u8D6B\u62C9"
+    textTraditionChinese: "\u6C99\u8D6B\u62C9"
+    textJapanese: "\u30B7\u30E3\u30D5\u30E9"
+    textKorean: "\uC0E4\uD750\uB77C"
+    textFrench: Shahra
+    textGerman: Shahra
+    textSpanish: Shahra
+    textPortuguese: Shahra
+    textItalian: Shahra
+    textDutch: Shahra
+    textRussian: "\u0428\u0430\u0445\u0440\u0430"
+    textThai: "\u0E0A\u0E32\u0E2B\u0E4C\u0E23\u0E32"
+  - key: chapter/title_002
+    textEnglish: Terranova
+    textHint: "\u6CF0\u62C9\u8BFA\u74E6"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6CF0\u62C9\u8BFA\u74E6"
+    textTraditionChinese: "\u6CF0\u62C9\u8AFE\u74E6"
+    textJapanese: "\u30C6\u30E9\u30CE\u30F4\u30A1"
+    textKorean: "\uD14C\uB77C\uB178\uBC14"
+    textFrench: Terre-Neuve
+    textGerman: Terranova
+    textSpanish: Terranova
+    textPortuguese: Terra Nova
+    textItalian: Terranova
+    textDutch: Terranova
+    textRussian: "\u0422\u0435\u0440\u0440\u0430\u043D\u043E\u0432\u0430"
+    textThai: "\u0E40\u0E17\u0E2D\u0E23\u0E4C\u0E23\u0E32\u0E42\u0E19\u0E27\u0E32"
+  - key: chapter/title_003
+    textEnglish: Deserteye
+    textHint: "\u6C99\u6F20\u4E4B\u773C"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6C99\u6F20\u4E4B\u773C"
+    textTraditionChinese: "\u6C99\u6F20\u4E4B\u773C"
+    textJapanese: "\u30C7\u30B6\u30FC\u30C8\u30A2\u30A4"
+    textKorean: "\uC0AC\uB9C9\uC758 \uB208"
+    textFrench: "\u0152il du d\xE9sert"
+    textGerman: "W\xFCstenauge"
+    textSpanish: Ojo del desierto
+    textPortuguese: Olho do Deserto
+    textItalian: Occhio del deserto
+    textDutch: Desertoog
+    textRussian: "\u041F\u0443\u0441\u0442\u044B\u043D\u043D\u044B\u0439 \u0433\u043B\u0430\u0437"
+    textThai: "\u0E40\u0E14\u0E0B\u0E34\u0E23\u0E4C\u0E15\u0E2D\u0E32\u0E22"

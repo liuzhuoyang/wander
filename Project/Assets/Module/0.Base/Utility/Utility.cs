@@ -1,0 +1,98 @@
+using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
+using System.Text;
+
+public static class Utility
+{
+
+    public static string GetXYStringFormat(int x, int y)
+    {
+        return x + "_" + y;
+    }
+
+    //获取枚举里的随机对象
+    public static T GetRandomEnumValue<T>()
+    {
+        // 获取枚举类型
+        Array enumValues = Enum.GetValues(typeof(T));
+
+        // 随机选择一个枚举值
+        T randomEnumValue = (T)enumValues.GetValue(Random.Range(0, enumValues.Length));
+
+        return randomEnumValue;
+    }
+
+    /// string转换enum
+    public static bool TryParseEnum<TEnum>(string value, out TEnum result) where TEnum : struct
+    {
+        return Enum.TryParse(value, true, out result) && Enum.IsDefined(typeof(TEnum), result);
+    }
+
+    /// /// 点击位置转换为世界坐标
+    public static Vector2 GetTouchWorldPostion()
+    {
+        return Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+    }
+
+    public static float ConvertPercentTypeToFloat(PercentType percentType)
+    {
+        string input = percentType.ToString();
+        if (!input.StartsWith("P") && !input.StartsWith("Z") && !input.StartsWith("D"))
+        {
+            Debug.Log("ConvertPercentTypeToFloat Failed!");
+            return -1;
+        }
+        int number = 0;
+        if (input.Contains("Z"))
+        {
+            number = -int.Parse(input.Substring(1));
+        }
+        else if (input.Contains("P"))
+        {
+            number = int.Parse(input.Substring(1));
+        }
+        else
+        {
+            return float.Parse(input.Substring(1).Replace('_', '.')) / 100;
+        }
+
+        float result = (float)number / 100;
+        return result;
+    }
+
+    #region Extension
+    public static Color GetOpaqueColor(this Color color)
+    {
+        Color tempColor = color;
+        tempColor.a = 1;
+        return tempColor;
+    }
+    public static Color GetClearColor(this Color color)
+    {
+        Color tempColor = color;
+        tempColor.a = 0;
+        return tempColor;
+    }
+    #endregion
+
+    #region 驼峰命名转换为蛇形命名
+    //将驼峰命名转换为蛇形命名
+    public static string ConvertCamelToSnake(string input)
+    {
+        if (string.IsNullOrEmpty(input))
+            return input;
+        StringBuilder result = new StringBuilder();
+        foreach (char c in input)
+        {
+            if (char.IsUpper(c) && result.Length > 0)
+            {
+                result.Append('_');
+            }
+            result.Append(char.ToLower(c));
+        }
+        return result.ToString();
+    }
+    #endregion
+
+}

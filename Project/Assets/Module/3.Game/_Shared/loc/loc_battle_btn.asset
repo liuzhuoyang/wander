@@ -1,0 +1,577 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_battle_btn
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u901A\u7528\u578B\u6309\u94AE\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u91CC\u7684\u6309\u94AE"
+  list:
+  - key: generic/btn_play
+    textEnglish: Play
+    textHint: "\u6E38\u620F\u91CC\u201C\u5F00\u59CB\u201D\u7684\u610F\u601D"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5F00\u59CB"
+    textTraditionChinese: "\u958B\u59CB"
+    textJapanese: "\u30D7\u30EC\u30A4"
+    textKorean: "\uD50C\uB808\uC774"
+    textFrench: Jouer
+    textGerman: Spielen
+    textSpanish: Jugar
+    textPortuguese: Jogar
+    textItalian: Gioca
+    textDutch: Speel
+    textRussian: "\u0418\u0433\u0440\u0430\u0442\u044C"
+    textThai: "\u0E40\u0E25\u0E48\u0E19"
+  - key: generic/btn_play_ad
+    textEnglish: Play
+    textHint: "\u64AD\u653E\u7684\u610F\u601D"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u64AD\u653E"
+    textTraditionChinese: "\u64AD\u653E"
+    textJapanese: "\u518D\u751F"
+    textKorean: "\uC7AC\uC0DD"
+    textFrench: Jouer
+    textGerman: Abspielen
+    textSpanish: Jugar
+    textPortuguese: Tocar
+    textItalian: Riproduci
+    textDutch: Speel
+    textRussian: "\u0418\u0433\u0440\u0430\u0442\u044C"
+    textThai: "\u0E40\u0E25\u0E48\u0E19"
+  - key: generic/btn_continue
+    textEnglish: Continue
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7EE7\u7EED"
+    textTraditionChinese: "\u7E7C\u7E8C"
+    textJapanese: "\u7D9A\u3051\u308B"
+    textKorean: "\uACC4\uC18D\uD558\uC138\uC694"
+    textFrench: CONTINUER
+    textGerman: Weiterhin
+    textSpanish: CONTINUAR
+    textPortuguese: CONTINUAR
+    textItalian: CONTINUA
+    textDutch: GA DOOR
+    textRussian: "\u041F\u0420\u041E\u0414\u041E\u041B\u0416\u0418\u0422\u042C"
+    textThai: "\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E15\u0E48\u0E2D"
+  - key: generic/btn_give_up
+    textEnglish: Give Up
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u653E\u5F03"
+    textTraditionChinese: "\u653E\u68C4"
+    textJapanese: "\u3042\u304D\u3089\u3081\u308B"
+    textKorean: "\uD3EC\uAE30\uD574\uC8FC\uC138\uC694"
+    textFrench: ABANDONNER
+    textGerman: AUFGEBEN
+    textSpanish: Rendirse
+    textPortuguese: DESISTIR
+    textItalian: ARRENDETEVI
+    textDutch: OPGEVEN
+    textRussian: "\u0421\u0434\u0430\u0432\u0430\u0439\u0441\u044F"
+    textThai: "\u0E25\u0E49\u0E21\u0E40\u0E2B\u0E25\u0E27"
+  - key: generic/btn_close
+    textEnglish: Close
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5173\u95ED"
+    textTraditionChinese: "\u95DC\u9589"
+    textJapanese: "\u9589\u3058\u308B"
+    textKorean: "\uAC00\uAE4C\uC774"
+    textFrench: "FERM\xC9"
+    textGerman: SCHLIESSEN
+    textSpanish: CERRAR
+    textPortuguese: FECHADO
+    textItalian: CHIUDERE
+    textDutch: SLUITEN
+    textRussian: "\u0417\u0410\u041A\u0420\u042B\u0422\u042C"
+    textThai: "\u0E1B\u0E34\u0E14"
+  - key: generic/btn_revive
+    textEnglish: Revive
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u590D\u6D3B"
+    textTraditionChinese: "\u5FA9\u7526"
+    textJapanese: "\u5FA9\u6D3B"
+    textKorean: "\uBD80\uD65C"
+    textFrench: REVIVE
+    textGerman: Wiederbeleben
+    textSpanish: RESUCITA
+    textPortuguese: REVIVER
+    textItalian: RIVIVI
+    textDutch: OPLEVEN
+    textRussian: "\u0412\u041E\u0421\u0421\u0422\u0410\u041D\u041E\u0412\u0418\u0422\u042C"
+    textThai: "\u0E1F\u0E37\u0E49\u0E19\u0E04\u0E37\u0E19"
+  - key: generic/btn_refresh
+    textEnglish: Refresh
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u65B0"
+    textTraditionChinese: "\u66F4\u65B0"
+    textJapanese: "\u66F4\u65B0"
+    textKorean: "\uC0C8\uB85C \uACE0\uCCD0\uC694"
+    textFrench: "RAFRA\xCECHIR"
+    textGerman: AKTUALISIEREN
+    textSpanish: ACTUALIZAR
+    textPortuguese: ATUALIZAR
+    textItalian: AGGIORNA
+    textDutch: VERVERSSEN
+    textRussian: "\u041E\u0411\u041D\u041E\u0412\u0418\u0422\u042C"
+    textThai: "\u0E23\u0E35\u0E40\u0E1F\u0E23\u0E0A"
+  - key: generic/btn_confirm
+    textEnglish: Confirm
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u786E\u8BA4"
+    textTraditionChinese: "\u78BA\u8A8D"
+    textJapanese: "\u78BA\u8A8D"
+    textKorean: "\uD655\uC778"
+    textFrench: CONFIRMER
+    textGerman: "BEST\xC4TIGEN"
+    textSpanish: CONFIRMAR
+    textPortuguese: CONFIRMAR
+    textItalian: CONFERMA
+    textDutch: BEVESTIGEN
+    textRussian: "\u041F\u041E\u0414\u0422\u0412\u0415\u0420\u0414\u0418\u0422\u042C"
+    textThai: "\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19"
+  - key: generic/btn_ok
+    textEnglish: Ok
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u786E\u8BA4"
+    textTraditionChinese: "\u78BA\u8A8D"
+    textJapanese: "\u78BA\u8A8D"
+    textKorean: "\uD655\uC778"
+    textFrench: Confirmer
+    textGerman: "Best\xE4tigen"
+    textSpanish: Confirmar
+    textPortuguese: Confirmar
+    textItalian: Conferma
+    textDutch: Bevestigen
+    textRussian: "\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435."
+    textThai: "\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19"
+  - key: generic/btn_cancel
+    textEnglish: Cancel
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u53D6\u6D88"
+    textTraditionChinese: "\u53D6\u6D88"
+    textJapanese: "\u30AD\u30E3\u30F3\u30BB\u30EB"
+    textKorean: "\uCDE8\uC18C"
+    textFrench: Annuler
+    textGerman: Stornieren
+    textSpanish: Cancelar
+    textPortuguese: Cancelar
+    textItalian: Annulla
+    textDutch: Annuleren
+    textRussian: "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
+    textThai: "\u0E22\u0E01\u0E40\u0E25\u0E34\u0E01"
+  - key: generic/btn_update
+    textEnglish: Update
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u65B0"
+    textTraditionChinese: "\u66F4\u65B0"
+    textJapanese: "\u66F4\u65B0"
+    textKorean: "\uC5C5\uB370\uC774\uD2B8"
+    textFrench: "Mettre \xE0 jour"
+    textGerman: Aktualisierung
+    textSpanish: "Actualizaci\xF3n"
+    textPortuguese: "Atualiza\xE7\xE3o"
+    textItalian: Aggiornamento
+    textDutch: Bijwerken
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435"
+    textThai: "\u0E2D\u0E31\u0E1E\u0E40\u0E14\u0E17"
+  - key: generic/btn_tap_to_continue
+    textEnglish: Tap To Continue
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u70B9\u51FB\u4EE5\u7EE7\u7EED"
+    textTraditionChinese: "\u9EDE\u64CA\u7E7C\u7E8C"
+    textJapanese: "\u30BF\u30C3\u30D7\u3057\u3066\u7D9A\u884C"
+    textKorean: "\uD0ED\uD558\uC5EC \uACC4\uC18D\uD558\uAE30"
+    textFrench: Appuyez pour continuer
+    textGerman: Tippen Sie, um fortzufahren.
+    textSpanish: Toque para continuar
+    textPortuguese: Toque para continuar
+    textItalian: Tocca per continuare
+    textDutch: Tik om door te gaan.
+    textRussian: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+      \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+    textThai: "\u0E41\u0E15\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D"
+  - key: generic/btn_save
+    textEnglish: Save
+    textHint: "Save\u662F\u4FDD\u5B58\u7684\u610F\u601D"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4FDD\u5B58"
+    textTraditionChinese: "\u5132\u5B58"
+    textJapanese: "\u4FDD\u5B58"
+    textKorean: "\uC800\uC7A5"
+    textFrench: Sauvegarder
+    textGerman: Speichern
+    textSpanish: Guardar
+    textPortuguese: Salvar
+    textItalian: Salva
+    textDutch: Opslaan
+    textRussian: "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C"
+    textThai: "\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01"
+  - key: generic/btn_skip
+    textEnglish: Skip
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8DF3\u8FC7"
+    textTraditionChinese: "\u8DF3\u904E"
+    textJapanese: "\u30B9\u30AD\u30C3\u30D7"
+    textKorean: "\uAC74\uB108\uB6F0\uAE30"
+    textFrench: Passer
+    textGerman: "\xDCberspringen"
+    textSpanish: Omitir
+    textPortuguese: Pular
+    textItalian: Saltare
+    textDutch: Overslaan
+    textRussian: "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C"
+    textThai: "\u0E02\u0E49\u0E32\u0E21"
+  - key: generic/btn_select
+    textEnglish: Select
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9"
+    textTraditionChinese: "\u9078\u64C7"
+    textJapanese: "\u9078\u629E"
+    textKorean: "\uC120\uD0DD"
+    textFrench: "S\xE9lectionner"
+    textGerman: "Ausw\xE4hlen"
+    textSpanish: Seleccionar
+    textPortuguese: Selecionar
+    textItalian: Seleziona
+    textDutch: Kiezen
+    textRussian: "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01"
+  - key: generic/btn_selected
+    textEnglish: Selected
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u5B9A"
+    textTraditionChinese: "\u9078\u64C7"
+    textJapanese: "\u9078\u629E\u3055\u308C\u305F"
+    textKorean: "\uC120\uD0DD\uB41C"
+    textFrench: "S\xE9lectionn\xE9"
+    textGerman: "Ausgew\xE4hlt"
+    textSpanish: Seleccionado
+    textPortuguese: Selecionado
+    textItalian: Selezionato
+    textDutch: Geselecteerd
+    textRussian: "\u0412\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0439"
+    textThai: "\u0E17\u0E35\u0E48\u0E40\u0E25\u0E37\u0E2D\u0E01"
+  - key: generic/btn_purchase
+    textEnglish: Purchase
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8D2D\u4E70"
+    textTraditionChinese: "\u8CFC\u8CB7"
+    textJapanese: "\u8CFC\u5165"
+    textKorean: "\uAD6C\uB9E4"
+    textFrench: Achat
+    textGerman: Kauf
+    textSpanish: Compra
+    textPortuguese: Compra
+    textItalian: Acquisto
+    textDutch: Aankoop
+    textRussian: "\u041F\u043E\u043A\u0443\u043F\u043A\u0430"
+    textThai: "\u0E01\u0E32\u0E23\u0E0B\u0E37\u0E49\u0E2D"
+  - key: generic/btn_remove
+    textEnglish: Remove
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u79FB\u9664"
+    textTraditionChinese: "\u79FB\u9664"
+    textJapanese: "\u524A\u9664"
+    textKorean: "\uC81C\uAC70\uD558\uC2ED\uC2DC\uC624"
+    textFrench: Retirer
+    textGerman: Entfernen
+    textSpanish: Eliminar
+    textPortuguese: Remover
+    textItalian: Rimuovi
+    textDutch: Verwijderen
+    textRussian: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C"
+    textThai: "\u0E25\u0E1A"
+  - key: generic/btn_upgrade
+    textEnglish: Upgrade
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5347\u7EA7"
+    textTraditionChinese: "\u5347\u7D1A"
+    textJapanese: "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9"
+    textKorean: "\uC5C5\uADF8\uB808\uC774\uB4DC"
+    textFrench: "Mise \xE0 niveau"
+    textGerman: Aktualisieren
+    textSpanish: "Actualizaci\xF3n"
+    textPortuguese: Atualizar
+    textItalian: Aggiornamento
+    textDutch: Upgrade
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435"
+    textThai: "\u0E2D\u0E31\u0E1E\u0E40\u0E01\u0E23\u0E14"
+  - key: generic/btn_draw_1
+    textEnglish: Draw x1
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u62BD x1"
+    textTraditionChinese: "\u62BD x1"
+    textJapanese: "\u62BD\u9078 x1"
+    textKorean: "\uCD94\uCCA8 x1"
+    textFrench: Tirage x1
+    textGerman: Ziehung x1
+    textSpanish: Sorteo x1
+    textPortuguese: Sorteio x1
+    textItalian: Estrazione x1
+    textDutch: Trekking x1
+    textRussian: "\u0420\u043E\u0437\u044B\u0433\u0440\u044B\u0448 x1"
+    textThai: "\u0E08\u0E31\u0E1A x1"
+  - key: generic/btn_draw_10
+    textEnglish: Draw x10
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u62BD x10"
+    textTraditionChinese: "\u62BD x10"
+    textJapanese: "\u62BD\u9078 x10"
+    textKorean: "\uCD94\uCCA8 x10"
+    textFrench: Tirage x10
+    textGerman: Ziehung x10
+    textSpanish: Sorteo x10
+    textPortuguese: Sorteio x10
+    textItalian: Estrazione x10
+    textDutch: Trekking x10
+    textRussian: "\u0420\u043E\u0437\u044B\u0433\u0440\u044B\u0448 x10"
+    textThai: "\u0E08\u0E31\u0E1A x10"
+  - key: generic/btn_summon
+    textEnglish: Craft
+    textHint: "\u7FFB\u8BD1\u6210\uFF1A\u5236\u4F5C"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5236\u4F5C"
+    textTraditionChinese: "\u88FD\u4F5C"
+    textJapanese: "\u30AF\u30E9\u30D5\u30C8"
+    textKorean: "\uC81C\uC791"
+    textFrench: Artisanat
+    textGerman: Handwerk
+    textSpanish: Elaborar
+    textPortuguese: Artesanato
+    textItalian: Creare
+    textDutch: Ambacht
+    textRussian: "\u0420\u0435\u043C\u0435\u0441\u043B\u043E"
+    textThai: "\u0E04\u0E23\u0E32\u0E1F\u0E15\u0E4C"
+  - key: generic/btn_deploy
+    textEnglish: Deploy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u90E8\u7F72"
+    textTraditionChinese: "\u90E8\u7F72"
+    textJapanese: "\u5C55\u958B"
+    textKorean: "\uBC30\uD3EC"
+    textFrench: "D\xE9ployer"
+    textGerman: Einsetzen
+    textSpanish: Desplegar
+    textPortuguese: Implantar
+    textItalian: Distribuisci
+    textDutch: Inzetten
+    textRussian: "\u0420\u0430\u0437\u0432\u0435\u0440\u043D\u0443\u0442\u044C"
+    textThai: "\u0E1B\u0E23\u0E31\u0E1A\u0E43\u0E0A\u0E49"
+  - key: generic/btn_deployed
+    textEnglish: Deployed
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u90E8\u7F72"
+    textTraditionChinese: "\u5DF2\u90E8\u7F72"
+    textJapanese: "\u5C55\u958B\u6E08\u307F"
+    textKorean: "\uBC30\uD3EC\uB428"
+    textFrench: "D\xE9ploy\xE9"
+    textGerman: Eingesetzt
+    textSpanish: Desplegado
+    textPortuguese: Implantado
+    textItalian: Distribuito
+    textDutch: Ingesteld
+    textRussian: "\u0420\u0430\u0437\u0432\u0435\u0440\u043D\u0443\u0442\u043E"
+    textThai: "\u0E19\u0E33\u0E44\u0E1B\u0E43\u0E0A\u0E49\u0E41\u0E25\u0E49\u0E27"
+  - key: generic/btn_fight
+    textEnglish: Fight
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6218\u6597"
+    textTraditionChinese: "\u6230\u9B25"
+    textJapanese: "\u6226\u3046"
+    textKorean: "\uC2F8\uC6C0"
+    textFrench: Combat
+    textGerman: Kampf
+    textSpanish: Lucha
+    textPortuguese: Lutar
+    textItalian: Combattere
+    textDutch: Vechten
+    textRussian: "\u0411\u043E\u0439"
+    textThai: "\u0E2A\u0E39\u0E49"
+  - key: generic/btn_back
+    textEnglish: Back
+    textHint: "back\u7FFB\u8BD1\u4E3A\u8FD4\u56DE"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD4\u56DE"
+    textTraditionChinese: "\u8FD4\u56DE"
+    textJapanese: "\u623B\u308B"
+    textKorean: "\uB4A4\uB85C"
+    textFrench: Retour
+    textGerman: "Zur\xFCck"
+    textSpanish: "Atr\xE1s"
+    textPortuguese: Voltar
+    textItalian: Indietro
+    textDutch: Terug
+    textRussian: "\u041D\u0430\u0437\u0430\u0434"
+    textThai: "\u0E01\u0E25\u0E31\u0E1A"
+  - key: generic/btn_change
+    textEnglish: Change
+    textHint: "change\u7FFB\u8BD1\u4E3A\u66F4\u6362"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u6362"
+    textTraditionChinese: "\u66F4\u63DB"
+    textJapanese: "\u5909\u66F4"
+    textKorean: "\uBCC0\uACBD"
+    textFrench: Changer
+    textGerman: Wechseln
+    textSpanish: Cambio
+    textPortuguese: Mudar
+    textItalian: Cambiare
+    textDutch: Veranderen
+    textRussian: "\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C"
+    textThai: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19"
+  - key: generic/btn_sold_out
+    textEnglish: Sold out
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u552E\u7F44"
+    textTraditionChinese: "\u552E\u7F44"
+    textJapanese: "\u58F2\u308A\u5207\u308C"
+    textKorean: "\uB9E4\uC9C4"
+    textFrench: "\xC9puis\xE9"
+    textGerman: Ausverkauft
+    textSpanish: Agotado
+    textPortuguese: Esgotado
+    textItalian: Esaurito
+    textDutch: Uitverkocht
+    textRussian: "\u041F\u0440\u043E\u0434\u0430\u043D\u043E"
+    textThai: "\u0E02\u0E32\u0E22\u0E2B\u0E21\u0E14\u0E41\u0E25\u0E49\u0E27"
+  - key: generic/btn_lock
+    textEnglish: Lock
+    textHint: "\u7FFB\u8BD1\u4E3A\u672A\u89E3\u9501"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u672A\u89E3\u9501"
+    textTraditionChinese: "\u9396\u5B9A"
+    textJapanese: "\u30ED\u30C3\u30AF"
+    textKorean: "\uC7A0\uAE08"
+    textFrench: Verrou
+    textGerman: Entriegelt
+    textSpanish: Desbloqueado
+    textPortuguese: Trancado
+    textItalian: Bloccato
+    textDutch: Vergrendeld
+    textRussian: "\u0417\u0430\u043C\u043E\u043A"
+    textThai: "\u0E25\u0E47\u0E2D\u0E04"
+  - key: generic/btn_activate
+    textEnglish: Activate
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6FC0\u6D3B"
+    textTraditionChinese: "\u6FC0\u6D3B"
+    textJapanese: "\u30A2\u30AF\u30C6\u30A3\u30D9\u30FC\u30C8"
+    textKorean: "\uD65C\uC131\uD654"
+    textFrench: Activer
+    textGerman: Aktivieren
+    textSpanish: Activar
+    textPortuguese: Ativar
+    textItalian: Attivare
+    textDutch: Activeer
+    textRussian: "\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+    textThai: "\u0E40\u0E1B\u0E34\u0E14\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19"
+  - key: generic/btn_exit
+    textEnglish: Exit
+    textHint: "\u6309\u94AE\u4E0A\u201C\u9000\u51FA\u201C\u7684\u610F\u601D"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9000\u51FA"
+    textTraditionChinese: "\u9000\u51FA"
+    textJapanese: "\u7D42\u4E86"
+    textKorean: "\uB098\uAC00\uAE30"
+    textFrench: Sortie
+    textGerman: Ausgang
+    textSpanish: Salida
+    textPortuguese: Sair
+    textItalian: Uscita
+    textDutch: Uitgang
+    textRussian: "\u0412\u044B\u0445\u043E\u0434"
+    textThai: "\u0E2D\u0E2D\u0E01"

@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_shared_generic
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u901A\u7528\u672C\u5730\u5316\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u80FD\u590D\u7528\u5C31\u4E0D\u8981\u52A0\uFF0C\u63A7\u5236\u6570\u91CF\u5C3D\u53EF\u80FD\u5C11"
+  list:
+  - key: shared/generic/level
+    textEnglish: Level
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7B49\u7EA7"
+    textTraditionChinese: "\u7D1A\u5225"
+    textJapanese: "\u30EC\u30D9\u30EB"
+    textKorean: "\uC218\uC900"
+    textFrench: Niveau
+    textGerman: Stufe
+    textSpanish: Nivel
+    textPortuguese: "N\xEDvel"
+    textItalian: Livello
+    textDutch: Niveau
+    textRussian: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+    textThai: "\u0E23\u0E30\u0E14\u0E31\u0E1A"
+  - key: shared/generic/info
+    textEnglish: Info
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4FE1\u606F"
+    textTraditionChinese: "\u8CC7\u8A0A"
+    textJapanese: "\u60C5\u5831"
+    textKorean: "\uC815\uBCF4"
+    textFrench: Informations
+    textGerman: Information
+    textSpanish: "Informaci\xF3n"
+    textPortuguese: "Informa\xE7\xE3o"
+    textItalian: Informazioni
+    textDutch: Informatie
+    textRussian: "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F"
+    textThai: "\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25"
+  - key: shared/generic/new
+    textEnglish: New
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u65B0"
+    textTraditionChinese: "\u65B0"
+    textJapanese: "\u65B0\u3057\u3044"
+    textKorean: "\uC0C8\uB85C\uC6B4"
+    textFrench: Nouveau
+    textGerman: Neu
+    textSpanish: Nuevo
+    textPortuguese: Novo
+    textItalian: Nuovo
+    textDutch: Nieuw
+    textRussian: "\u041D\u043E\u0432\u044B\u0439"
+    textThai: "\u0E43\u0E2B\u0E21\u0E48"
+  - key: shared/generic/reward
+    textEnglish: Rewards
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5956\u52B1"
+    textTraditionChinese: "\u734E\u52F5"
+    textJapanese: "\u5831\u916C"
+    textKorean: "\uBCF4\uC0C1"
+    textFrench: "R\xE9compenses"
+    textGerman: Belohnungen
+    textSpanish: Recompensas
+    textPortuguese: Recompensas
+    textItalian: Ricompense
+    textDutch: Beloningen
+    textRussian: "\u041D\u0430\u0433\u0440\u0430\u0434\u044B"
+    textThai: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"
+  - key: shared/generic/difficulty
+    textEnglish: Difficulty
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u96BE\u5EA6"
+    textTraditionChinese: "\u96E3\u5EA6"
+    textJapanese: "\u96E3\u5EA6"
+    textKorean: "\uB09C\uC774\uB3C4"
+    textFrench: "Difficult\xE9"
+    textGerman: Schwierigkeit
+    textSpanish: Dificultad
+    textPortuguese: Dificuldade
+    textItalian: "Difficolt\xE0"
+    textDutch: Moeilijkheid
+    textRussian: "\u0422\u0440\u0443\u0434\u043D\u043E\u0441\u0442\u044C"
+    textThai: "\u0E04\u0E27\u0E32\u0E21\u0E22\u0E32\u0E01"
+  - key: shared/generic/obtained
+    textEnglish: Obtained
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u83B7\u53D6"
+    textTraditionChinese: "\u5DF2\u7372\u53D6"
+    textJapanese: "\u53D6\u5F97\u3057\u305F"
+    textKorean: "\uCDE8\uB4DD"
+    textFrench: Obtenu
+    textGerman: Erhalten
+    textSpanish: Obtenido
+    textPortuguese: Obtido
+    textItalian: Ottenuto
+    textDutch: Verkregen
+    textRussian: "\u041F\u043E\u043B\u0443\u0447\u0435\u043D\u043E"
+    textThai: "\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A"
+  - key: shared/generic/tip
+    textEnglish: Tips
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u63D0\u793A"
+    textTraditionChinese: "\u63D0\u793A"
+    textJapanese: "\u30D2\u30F3\u30C8"
+    textKorean: "\uD301"
+    textFrench: Astuce
+    textGerman: Tipp
+    textSpanish: Consejo
+    textPortuguese: Dica
+    textItalian: Suggerimento
+    textDutch: Tip
+    textRussian: "\u041F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430"
+    textThai: "\u0E40\u0E04\u0E25\u0E47\u0E14\u0E25\u0E31\u0E1A"
+  - key: shared/generic/expired
+    textEnglish: Expired
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u8FC7\u671F"
+    textTraditionChinese: "\u5DF2\u904E\u671F"
+    textJapanese: "\u671F\u9650\u5207\u308C"
+    textKorean: "\uB9CC\uB8CC\uB428"
+    textFrench: "Expir\xE9"
+    textGerman: Abgelaufen
+    textSpanish: Caducado
+    textPortuguese: Expirado
+    textItalian: Scaduto
+    textDutch: Verlopen
+    textRussian: "\u041F\u0440\u043E\u0441\u0440\u043E\u0447\u0435\u043D\u043D\u044B\u0439"
+    textThai: "\u0E2B\u0E21\u0E14\u0E2D\u0E32\u0E22\u0E38"
+  - key: shared/generic/recommend
+    textEnglish: Recommend
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u63A8\u8350"
+    textTraditionChinese: "\u63A8\u85A6"
+    textJapanese: "\u304A\u3059\u3059\u3081"
+    textKorean: "\uCD94\uCC9C"
+    textFrench: Recommander
+    textGerman: Empfehlen
+    textSpanish: Recomendar
+    textPortuguese: Recomendar
+    textItalian: Consigliare
+    textDutch: Aanbevelen
+    textRussian: "\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u043E\u0432\u0430\u0442\u044C"
+    textThai: "\u0E41\u0E19\u0E30\u0E19\u0E33"

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tavern_dynamic
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: tavern/dynamic/refresh_in_x
+    textEnglish: Refresh in {0}
+    textHint: "\u5237\u65B0\u4E8E"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5237\u65B0\u4E8E {0}"
+    textTraditionChinese: "\u5237\u65B0\u65BC {0}"
+    textJapanese: "{0}\u5F8C\u306B\u66F4\u65B0"
+    textKorean: "{0} \uD6C4 \uC0C8\uB85C\uACE0\uCE68"
+    textFrench: Actualiser dans {0}
+    textGerman: Aktualisieren in {0}
+    textSpanish: Actualizar en {0}
+    textPortuguese: Atualizar em {0}
+    textItalian: Aggiornamento tra {0}
+    textDutch: Ververs over {0}
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C \u0447\u0435\u0440\u0435\u0437
+      {0}"
+    textThai: "\u0E23\u0E35\u0E40\u0E1F\u0E23\u0E0A\u0E43\u0E19 {0}"

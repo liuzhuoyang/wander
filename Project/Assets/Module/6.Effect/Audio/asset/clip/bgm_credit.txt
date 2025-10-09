@@ -1,0 +1,3 @@
+Audio:
+1.bgm_pawnbattle_arena_001:Created by modifying "Macka Yollari.mp3"-(https://freemusicarchive.org/music/Turku_Nomads_of_the_Silk_Road/Alleys_of_Istanbul/15_-Macka_Yollari/) by Turku, Nomads of the Silk Road-(https://freemusicarchive.org/music/Turku_Nomads_of_the_Silk_Road/) Licensed under CC BY 4.0-(https://creativecommons.org/licenses/by/4.0/#)
+2.bgm_pawnbattle_dungeon_001:Created by modifying "Aman Avci Vurma Mani"-(https://freemusicarchive.org/music/Turku_Nomads_of_the_Silk_Road/Alleys_of_Istanbul/13_-Aman_Avci_Vurma_Mani/) by Turku, Nomads of the Silk Road-(https://freemusicarchive.org/music/Turku_Nomads_of_the_Silk_Road/) Licensed under CC BY 4.0-(https://creativecommons.org/licenses/by/4.0/#)

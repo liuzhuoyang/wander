@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_feature_mapping_social
+  m_EditorClassIdentifier: 
+  type: 2
+  isEdit: 0
+  hint: "\u901A\u7528\u578B\u6309\u94AE\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u91CC\u7684\u6309\u94AE"
+  list:
+  - key: feature_mapping/social/arena
+    textEnglish: Arena
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7ADE\u6280\u573A"
+    textTraditionChinese: "\u7AF6\u6280\u5834"
+    textJapanese: "\u30A2\u30EA\u30FC\u30CA"
+    textKorean: "\uC544\uB808\uB098"
+    textFrench: "Ar\xE8ne"
+    textGerman: Arena
+    textSpanish: Arena
+    textPortuguese: Arena
+    textItalian: Arena
+    textDutch: Arena
+    textRussian: "\u0410\u0440\u0435\u043D\u0430"
+    textThai: "\u0E2D\u0E32\u0E23\u0E35\u0E19\u0E48\u0E32"
+  - key: feature_mapping/social/guild
+    textEnglish: Guild
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u516C\u4F1A"
+    textTraditionChinese: "\u516C\u6703"
+    textJapanese: "\u30AE\u30EB\u30C9"
+    textKorean: "\uAE38\uB4DC"
+    textFrench: Guilde
+    textGerman: Gilde
+    textSpanish: Gremio
+    textPortuguese: Guilda
+    textItalian: Gilda
+    textDutch: Gilde
+    textRussian: "\u0413\u0438\u043B\u044C\u0434\u0438\u044F"
+    textThai: "\u0E01\u0E34\u0E25\u0E14\u0E4C"
+  - key: feature_mapping/social/ranking
+    textEnglish: Ranking
+    textHint: "\u6392\u884C\u699C"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6392\u884C\u699C"
+    textTraditionChinese: "\u6392\u540D"
+    textJapanese: "\u30E9\u30F3\u30AD\u30F3\u30B0"
+    textKorean: "\uC21C\uC704"
+    textFrench: Classement
+    textGerman: Rangliste
+    textSpanish: Ranking
+    textPortuguese: Ranking
+    textItalian: Classifica
+    textDutch: Ranglijst
+    textRussian: "\u0420\u0435\u0439\u0442\u0438\u043D\u0433"
+    textThai: "\u0E2D\u0E31\u0E19\u0E14\u0E31\u0E1A"

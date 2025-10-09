@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_feature_mapping_navigation
+  m_EditorClassIdentifier: 
+  type: 2
+  isEdit: 0
+  hint: "\u901A\u7528\u578B\u6309\u94AE\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u91CC\u7684\u6309\u94AE"
+  list:
+  - key: feature_mapping/navigation/lobby
+    textEnglish: Lobby
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5927\u5385"
+    textTraditionChinese: "\u5927\u5EF3"
+    textJapanese: "\u30ED\u30D3\u30FC"
+    textKorean: "\uB85C\uBE44"
+    textFrench: Hall
+    textGerman: Lobby (Eingangshalle)
+    textSpanish: "Vest\xEDbulo"
+    textPortuguese: "Sagu\xE3o"
+    textItalian: Sala d'attesa
+    textDutch: Lobby
+    textRussian: "\u041B\u043E\u0431\u0431\u0438"
+    textThai: "\u0E25\u0E47\u0E2D\u0E1A\u0E1A\u0E35\u0E49"
+  - key: feature_mapping/navigation/shop
+    textEnglish: Shop
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5546\u5E97"
+    textTraditionChinese: "\u5546\u5E97"
+    textJapanese: "\u30B7\u30E7\u30C3\u30D7"
+    textKorean: "\uAC00\uAC8C"
+    textFrench: Magasin
+    textGerman: Laden
+    textSpanish: Tienda
+    textPortuguese: Loja
+    textItalian: Negozio
+    textDutch: Winkel
+    textRussian: "\u041C\u0430\u0433\u0430\u0437\u0438\u043D"
+    textThai: "\u0E23\u0E49\u0E32\u0E19"
+  - key: feature_mapping/navigation/gear
+    textEnglish: Weapon
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6B66\u5668"
+    textTraditionChinese: "\u6B66\u5668"
+    textJapanese: "\u6B66\u5668"
+    textKorean: "\uBB34\uAE30"
+    textFrench: Arme
+    textGerman: Waffe
+    textSpanish: Arma
+    textPortuguese: Arma
+    textItalian: Arma
+    textDutch: Wapen
+    textRussian: "\u041E\u0440\u0443\u0436\u0438\u0435"
+    textThai: "\u0E2D\u0E32\u0E27\u0E38\u0E18"
+  - key: feature_mapping/navigation/talent
+    textEnglish: Tech
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u79D1\u6280"
+    textTraditionChinese: "\u79D1\u6280"
+    textJapanese: "\u30C6\u30AF"
+    textKorean: "\uD14C\uD06C"
+    textFrench: Techno
+    textGerman: Technik
+    textSpanish: Tec.
+    textPortuguese: Tec.
+    textItalian: Tec.
+    textDutch: Techno
+    textRussian: "\u0422\u0435\u0445"
+    textThai: "\u0E40\u0E17\u0E04"
+  - key: feature_mapping/navigation/headquarter
+    textEnglish: HQ
+    textHint: "\u603B\u90E8"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u603B\u90E8"
+    textTraditionChinese: "\u7E3D\u90E8"
+    textJapanese: "\u672C\u793E"
+    textKorean: "\uBCF8\uC0AC"
+    textFrench: "Si\xE8ge social"
+    textGerman: Hauptsitz
+    textSpanish: Sede central
+    textPortuguese: Sede
+    textItalian: Sede centrale
+    textDutch: HQ
+    textRussian: "\u0428\u0442\u0430\u0431"
+    textThai: "\u0E2A\u0E33\u0E19\u0E31\u0E01\u0E07\u0E32\u0E19\u0E43\u0E2B\u0E0D\u0E48"

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0ae3f5e4716854292a7504f71d835a, type: 3}
+  m_Name: pin_terminal
+  m_EditorClassIdentifier: 
+  parentNode: {fileID: 11400000, guid: 61eb7b7d63343194bb44e093faf9b2d7, type: 2}
+  childNodes:
+  - {fileID: 11400000, guid: e4ae40256deaa4ee797eb25a33af857a, type: 2}
+  - {fileID: 11400000, guid: 59aff2e1e6f4f4fcc8fc5663e00667da, type: 2}
+  - {fileID: 11400000, guid: 91327ba45cca14abc93323e1825d2682, type: 2}
+  selfResolve: 0
+  isRoot: 0
+  isLeaf: 0

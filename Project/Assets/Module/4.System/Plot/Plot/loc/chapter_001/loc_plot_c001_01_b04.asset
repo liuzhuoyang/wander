@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_01_b04
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_01_b04_01
+    textEnglish: Our fleet stationed in orbit can provide powerful fire support for
+      the ground.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6211\u4EEC\u9A7B\u5B88\u8F68\u9053\u7684\u8230\u961F\u80FD\u4E3A\u5730\u9762\u63D0\u4F9B\u5F3A\u5927\u7684\u706B\u529B\u652F\u63F4\u3002"
+    textTraditionChinese: "\u6211\u5011\u7684\u8266\u968A\u99D0\u7D2E\u5728\u8ECC\u9053\u4E0A\uFF0C\u80FD\u70BA\u5730\u9762\u63D0\u4F9B\u5F37\u5927\u7684\u706B\u529B\u652F\u63F4\u3002"
+    textJapanese: "\u8ECC\u9053\u4E0A\u306B\u99D0\u7559\u3059\u308B\u6211\u3005\u306E\u8266\u968A\u306F\u3001\u5730\u4E0A\u306B\u5BFE\u3057\u3066\u5F37\u529B\u306A\u706B\u529B\u652F\u63F4\u3092\u63D0\u4F9B\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "\uC6B0\uB9AC\uC758 \uADA4\uB3C4\uC5D0 \uC8FC\uB454\uD55C \uD568\uB300\uB294
+      \uC9C0\uC0C1\uC5D0 \uAC15\uB825\uD55C \uD654\uB825 \uC9C0\uC6D0\uC744 \uC81C\uACF5\uD560
+      \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: Notre flotte en orbite peut fournir un puissant soutien de feu au
+      sol.
+    textGerman: "Unsere im Orbit stationierte Flotte kann starke Feuerunterst\xFCtzung
+      am Boden bieten."
+    textSpanish: "Nuestra flota estacionada en \xF3rbita puede proporcionar un potente
+      apoyo de fuego terrestre."
+    textPortuguese: "Nossa frota estacionada em \xF3rbita pode fornecer poderoso
+      apoio de fogo ao solo."
+    textItalian: "La nostra flotta stazionata in orbita pu\xF2 fornire un potente
+      supporto di fuoco a terra."
+    textDutch: Onze vloot in een baan om de aarde kan krachtige vuursteun bieden
+      aan de grond.
+    textRussian: "\u041D\u0430\u0448 \u0444\u043B\u043E\u0442 \u043D\u0430 \u043E\u0440\u0431\u0438\u0442\u0435
+      \u043C\u043E\u0436\u0435\u0442 \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C
+      \u043C\u043E\u0449\u043D\u0443\u044E \u043E\u0433\u043D\u0435\u0432\u0443\u044E
+      \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 \u0441 \u0437\u0435\u043C\u043B\u0438."
+    textThai: "\u0E01\u0E2D\u0E07\u0E40\u0E23\u0E37\u0E2D\u0E02\u0E2D\u0E07\u0E40\u0E23\u0E32\u0E17\u0E35\u0E48\u0E1B\u0E23\u0E30\u0E08\u0E33\u0E01\u0E32\u0E23\u0E43\u0E19\u0E27\u0E07\u0E42\u0E04\u0E08\u0E23\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E2B\u0E49\u0E01\u0E32\u0E23\u0E2A\u0E19\u0E31\u0E1A\u0E2A\u0E19\u0E38\u0E19\u0E01\u0E32\u0E23\u0E22\u0E34\u0E07\u0E17\u0E35\u0E48\u0E17\u0E23\u0E07\u0E1E\u0E25\u0E31\u0E07\u0E41\u0E01\u0E48\u0E20\u0E32\u0E04\u0E1E\u0E37\u0E49\u0E19\u0E14\u0E34\u0E19\u0E44\u0E14\u0E49"
+  - key: loc_plot_c001_01_b04_02
+    textEnglish: But each use requires time for reloading and recalibration.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F46\u6BCF\u6B21\u4F7F\u7528\u90FD\u9700\u8981\u65F6\u95F4\u91CD\u65B0\u88C5\u586B\u548C\u6821\u51C6\u3002"
+    textTraditionChinese: "\u4F46\u6BCF\u6B21\u4F7F\u7528\u90FD\u9700\u8981\u6642\u9593\u4F86\u91CD\u65B0\u88DD\u8F09\u548C\u91CD\u65B0\u6821\u6E96\u3002"
+    textJapanese: "\u3057\u304B\u3057\u3001\u6BCE\u56DE\u4F7F\u7528\u3059\u308B\u306B\u306F\u518D\u88C5\u586B\u3068\u518D\u8ABF\u6574\u306E\u6642\u9593\u304C\u5FC5\u8981\u3067\u3059\u3002"
+    textKorean: "\uD558\uC9C0\uB9CC \uB9E4\uBC88 \uC0AC\uC6A9\uD560 \uB54C\uB9C8\uB2E4
+      \uC7AC\uC7A5\uC804\uACFC \uC7AC\uBCF4\uC815\uC5D0 \uC2DC\uAC04\uC774 \uD544\uC694\uD569\uB2C8\uB2E4."
+    textFrench: "Mais chaque utilisation n\xE9cessite un temps de rechargement et
+      de recalibrage."
+    textGerman: Aber jede Verwendung erfordert Zeit zum Nachladen und Neukalibrieren.
+    textSpanish: Pero cada uso requiere tiempo para recargar y recalibrar.
+    textPortuguese: Mas cada uso requer tempo para recarregar e recalibrar.
+    textItalian: Ma ogni utilizzo richiede tempo per il ricaricamento e la ricalibrazione.
+    textDutch: Maar elk gebruik vereist tijd voor herladen en herkalibreren.
+    textRussian: "\u041D\u043E \u043A\u0430\u0436\u0434\u043E\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435
+      \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u0438
+      \u043D\u0430 \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0443
+      \u0438 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u0443\u044E \u043A\u0430\u043B\u0438\u0431\u0440\u043E\u0432\u043A\u0443."
+    textThai: "\u0E41\u0E15\u0E48\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E41\u0E15\u0E48\u0E25\u0E30\u0E04\u0E23\u0E31\u0E49\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E40\u0E27\u0E25\u0E32\u0E43\u0E19\u0E01\u0E32\u0E23\u0E1A\u0E23\u0E23\u0E08\u0E38\u0E43\u0E2B\u0E21\u0E48\u0E41\u0E25\u0E30\u0E1B\u0E23\u0E31\u0E1A\u0E40\u0E17\u0E35\u0E22\u0E1A\u0E43\u0E2B\u0E21\u0E48"

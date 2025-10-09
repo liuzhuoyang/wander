@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_btn_generic
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u901A\u7528\u578B\u6309\u94AE\u6761\u76EE\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u91CC\u7684\u6309\u94AE"
+  list:
+  - key: btn/generic/refresh
+    textEnglish: Refresh
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u65B0"
+    textTraditionChinese: "\u66F4\u65B0"
+    textJapanese: "\u66F4\u65B0"
+    textKorean: "\uC0C8\uB85C \uACE0\uCCD0\uC694"
+    textFrench: "RAFRA\xCECHIR"
+    textGerman: AKTUALISIEREN
+    textSpanish: ACTUALIZAR
+    textPortuguese: ATUALIZAR
+    textItalian: AGGIORNA
+    textDutch: VERVERSSEN
+    textRussian: "\u041E\u0411\u041D\u041E\u0412\u0418\u0422\u042C"
+    textThai: "\u0E23\u0E35\u0E40\u0E1F\u0E23\u0E0A"
+  - key: btn/generic/btn_upgrade
+    textEnglish: Upgrade
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5347\u7EA7"
+    textTraditionChinese: "\u5347\u7D1A"
+    textJapanese: "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9"
+    textKorean: "\uC5C5\uADF8\uB808\uC774\uB4DC"
+    textFrench: "Mise \xE0 niveau"
+    textGerman: Aktualisieren
+    textSpanish: "Actualizaci\xF3n"
+    textPortuguese: Atualizar
+    textItalian: Aggiornamento
+    textDutch: Upgrade
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435"
+    textThai: "\u0E2D\u0E31\u0E1E\u0E40\u0E01\u0E23\u0E14"

@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_mail_btn
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: mail/btn/detele_all
+    textEnglish: Delete All
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5220\u9664\u5168\u90E8"
+    textTraditionChinese: "\u522A\u9664\u5168\u90E8"
+    textJapanese: "\u3059\u3079\u3066\u524A\u9664"
+    textKorean: "\uC804\uCCB4 \uC0AD\uC81C"
+    textFrench: Tout supprimer
+    textGerman: "Alles l\xF6schen"
+    textSpanish: Eliminar todo
+    textPortuguese: Apagar tudo
+    textItalian: Elimina tutto
+    textDutch: Alles verwijderen
+    textRussian: "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u0451"
+    textThai: "\u0E25\u0E1A\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14"
+  - key: mail/btn/receive_all
+    textEnglish: Receive All
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9886\u53D6\u6240\u6709"
+    textTraditionChinese: "\u9818\u53D6\u6240\u6709"
+    textJapanese: "\u3059\u3079\u3066\u53D7\u3051\u53D6\u308B"
+    textKorean: "\uBAA8\uB450 \uBC1B\uAE30"
+    textFrench: Tout recevoir
+    textGerman: Alles erhalten
+    textSpanish: Recibir todo
+    textPortuguese: Receber tudo
+    textItalian: Ricevi tutto
+    textDutch: Alles ontvangen
+    textRussian: "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0432\u0441\u0451"
+    textThai: "\u0E23\u0E31\u0E1A\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14"
+  - key: page/mail/page_mail_title_gm_mail
+    textEnglish: Function Mail
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u529F\u80FD\u90AE\u4EF6"
+    textTraditionChinese: "\u529F\u80FD\u90F5\u4EF6"
+    textJapanese: "\u6A5F\u80FD\u30E1\u30FC\u30EB"
+    textKorean: "\uAE30\uB2A5 \uBA54\uC77C"
+    textFrench: Fonction Mail
+    textGerman: Funktion Mail
+    textSpanish: "Funci\xF3n Correo"
+    textPortuguese: "Fun\xE7\xE3o Correio"
+    textItalian: Funzione Mail
+    textDutch: Functie Mail
+    textRussian: "\u0424\u0443\u043D\u043A\u0446\u0438\u044F \u041F\u043E\u0447\u0442\u0430"
+    textThai: "\u0E1F\u0E31\u0E07\u0E01\u0E4C\u0E0A\u0E31\u0E19\u0E40\u0E21\u0E25"
+  - key: page/mail/page_mail_content_gm_change_chapter
+    textEnglish: Click the Confirm button to jump to {0}
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u70B9\u51FB\u786E\u8BA4\u6309\u94AE\u8DF3\u8F6C\u5230{0}"
+    textTraditionChinese: "\u9EDE\u64CA\u78BA\u8A8D\u6309\u9215\u8DF3\u8F49\u5230{0}"
+    textJapanese: "\u300C\u78BA\u8A8D\u300D\u30DC\u30BF\u30F3\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066{0}\u306B\u30B8\u30E3\u30F3\u30D7\u3057\u307E\u3059"
+    textKorean: "{0}\uB85C \uC774\uB3D9\uD558\uB824\uBA74 \uD655\uC778 \uBC84\uD2BC\uC744
+      \uD074\uB9AD\uD558\uC138\uC694."
+    textFrench: "Cliquez sur le bouton Confirmer pour acc\xE9der \xE0 {0}"
+    textGerman: "Klicken Sie auf die Schaltfl\xE4che \"Best\xE4tigen\", um zu {0}
+      zu springen."
+    textSpanish: "Haz clic en el bot\xF3n Confirmar para saltar a {0}"
+    textPortuguese: "Clique no bot\xE3o Confirmar para ir para {0}"
+    textItalian: Fai clic sul pulsante Conferma per passare a {0}
+    textDutch: Klik op de Bevestigen-knop om naar {0} te gaan
+    textRussian: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443
+      \u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044C, \u0447\u0442\u043E\u0431\u044B
+      \u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A {0}"
+    textThai: "\u0E04\u0E25\u0E34\u0E01\u0E1B\u0E38\u0E48\u0E21\u0E22\u0E37\u0E19\u0E22\u0E31\u0E19\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E44\u0E1B\u0E17\u0E35\u0E48
+      {0}"

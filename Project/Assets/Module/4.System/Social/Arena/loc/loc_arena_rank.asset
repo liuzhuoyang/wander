@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_arena_rank
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: page/arena/page_arena_rank_1
+    textEnglish: Bronze
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u53E4\u94DC"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u53E4\u94DC"
+    textTraditionChinese: "\u53E4\u9285"
+    textJapanese: "\u30D6\u30ED\u30F3\u30BA"
+    textKorean: "\uBE0C\uB860\uC988"
+    textFrench: Bronze
+    textGerman: Bronze
+    textSpanish: Bronce
+    textPortuguese: Bronze
+    textItalian: Bronzo
+    textDutch: Brons
+    textRussian: "\u0411\u0440\u043E\u043D\u0437\u0430"
+    textThai: "\u0E17\u0E2D\u0E07\u0E2A\u0E31\u0E21\u0E24\u0E17\u0E18\u0E34\u0E4C"
+  - key: page/arena/page_arena_rank_2
+    textEnglish: Silver
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u767D\u94F6"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u767D\u94F6"
+    textTraditionChinese: "\u767D\u9280"
+    textJapanese: "\u30B7\u30EB\u30D0\u30FC"
+    textKorean: "\uC2E4\uBC84"
+    textFrench: Argent
+    textGerman: Silber
+    textSpanish: Plata
+    textPortuguese: Prata
+    textItalian: Argento
+    textDutch: Zilver
+    textRussian: "\u0421\u0435\u0440\u0435\u0431\u0440\u043E"
+    textThai: "\u0E40\u0E07\u0E34\u0E19"
+  - key: page/arena/page_arena_rank_3
+    textEnglish: Gold
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u9EC4\u91D1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9EC4\u91D1"
+    textTraditionChinese: "\u9EC3\u91D1"
+    textJapanese: "\u30B4\u30FC\u30EB\u30C9"
+    textKorean: "\uACE8\uB4DC"
+    textFrench: Or
+    textGerman: Gold
+    textSpanish: Oro
+    textPortuguese: Ouro
+    textItalian: Oro
+    textDutch: Goud
+    textRussian: "\u0417\u043E\u043B\u043E\u0442\u043E"
+    textThai: "\u0E17\u0E2D\u0E07"
+  - key: page/arena/page_arena_rank_4
+    textEnglish: Platinum
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u94C2\u91D1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u94C2\u91D1"
+    textTraditionChinese: "\u9251\u91D1"
+    textJapanese: "\u30D7\u30E9\u30C1\u30CA"
+    textKorean: "\uD50C\uB798\uD2F0\uB118"
+    textFrench: Platine
+    textGerman: Platin
+    textSpanish: Platino
+    textPortuguese: Platina
+    textItalian: Platino
+    textDutch: Platina
+    textRussian: "\u041F\u043B\u0430\u0442\u0438\u043D\u0430"
+    textThai: "\u0E41\u0E1E\u0E25\u0E17\u0E34\u0E19\u0E31\u0E21"
+  - key: page/arena/page_arena_rank_5
+    textEnglish: Overlord
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u9738\u4E3B"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9738\u4E3B"
+    textTraditionChinese: "\u9738\u4E3B"
+    textJapanese: "\u30AA\u30FC\u30D0\u30FC\u30ED\u30FC\u30C9"
+    textKorean: "\uC624\uBC84\uB85C\uB4DC"
+    textFrench: Seigneur
+    textGerman: Oberherr
+    textSpanish: "Se\xF1or supremo"
+    textPortuguese: Senhor Supremo
+    textItalian: Signore
+    textDutch: Overlord
+    textRussian: "\u041E\u0432\u0435\u0440\u043B\u043E\u0440\u0434"
+    textThai: "\u0E42\u0E2D\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E25\u0E2D\u0E23\u0E4C\u0E14"
+  - key: page/arena/page_arena_result_1
+    textEnglish: Season Result
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u8D5B\u5B63\u7ED3\u7B97"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8D5B\u5B63\u7ED3\u679C"
+    textTraditionChinese: "\u8CFD\u5B63\u7D50\u7B97"
+    textJapanese: "\u30B7\u30FC\u30BA\u30F3\u7D50\u679C"
+    textKorean: "\uC2DC\uC98C \uACB0\uACFC"
+    textFrench: "R\xE9sultat de la saison"
+    textGerman: Saisonergebnis
+    textSpanish: Resultado de la temporada
+    textPortuguese: Resultado da Temporada
+    textItalian: Risultato della stagione
+    textDutch: Seizoensresultaat
+    textRussian: "\u0420\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 \u0441\u0435\u0437\u043E\u043D\u0430"
+    textThai: "\u0E1C\u0E25\u0E25\u0E31\u0E1E\u0E18\u0E4C\u0E24\u0E14\u0E39\u0E01\u0E32\u0E25"
+  - key: page/arena/page_arena_trophy
+    textEnglish: Trophies
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u5956\u676F"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5956\u676F"
+    textTraditionChinese: "\u734E\u76C3"
+    textJapanese: "\u30C8\u30ED\u30D5\u30A3\u30FC"
+    textKorean: "\uD2B8\uB85C\uD53C"
+    textFrench: "Troph\xE9es"
+    textGerman: "Troph\xE4en"
+    textSpanish: Trofeos
+    textPortuguese: "Trof\xE9us"
+    textItalian: Trofei
+    textDutch: "Trofe\xEBn"
+    textRussian: "\u0422\u0440\u043E\u0444\u0435\u0438"
+    textThai: "\u0E16\u0E49\u0E27\u0E22\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25"

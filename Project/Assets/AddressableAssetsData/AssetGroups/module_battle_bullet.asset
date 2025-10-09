@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: module_battle_bullet
+  m_EditorClassIdentifier: 
+  m_GroupName: module_battle_bullet
+  m_GUID: 0519a4c6a9e6344ed80d4f87d49355c8
+  m_SerializeEntries:
+  - m_GUID: 0319c1518f995465b996f00a48bb1d12
+    m_Address: vfx_battle_bullet_impact_102_missile_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 320da259f16934d69827411d3624b868
+    m_Address: vfx_battle_bullet_impact_103_bomb_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4530aebebd779a24ab3e1195f6120d35
+    m_Address: vfx_battle_bullet_impact_101_gatling_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e322166c0fa9994098a7c5292072b5d
+    m_Address: sfx_battle_bullet_101_impact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 901510a4f53394389bf42fd6f6e1e9e4
+    m_Address: sfx_battle_bullet_103_impact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e722265af1f6740109cedd2bd89578a2
+    m_Address: sfx_battle_bullet_102_impact
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 31db20598195f4f78be477064a908068, type: 2}
+    - {fileID: 11400000, guid: 0e0b4079ce9174affb17ffc8b08a97ba, type: 2}

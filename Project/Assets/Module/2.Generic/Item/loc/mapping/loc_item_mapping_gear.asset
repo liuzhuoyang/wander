@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_item_mapping_gear
+  m_EditorClassIdentifier: 
+  type: 2
+  isEdit: 0
+  hint: 
+  list:
+  - key: item_mapping/gear/gear_101
+    textEnglish: Gatling
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u52A0\u7279\u6797"
+    textTraditionChinese: "\u52A0\u7279\u6797"
+    textJapanese: "\u30AC\u30C8\u30EA\u30F3\u30B0"
+    textKorean: "\uAC08\uB9C1"
+    textFrench: Gatling
+    textGerman: Gatling
+    textSpanish: Gatling
+    textPortuguese: Gatling
+    textItalian: Gatling
+    textDutch: Gatling
+    textRussian: "\u0413\u0430\u0442\u043B\u0438\u043D\u0433"
+    textThai: "\u0E01\u0E31\u0E17\u0E25\u0E34\u0E07"

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b4a7f9fbd8e48748f48d1b43ff2670, type: 3}
+  m_Name: all_privilege
+  m_EditorClassIdentifier: 
+  path: Assets/Module/4.System/Monetization/Privilege/asset/
+  listPrivilegeData:
+  - {fileID: 11400000, guid: bc60f0af32b414864b3de3dad5f24b0b, type: 2}
+  - {fileID: 11400000, guid: de5e5fedb563e4690af9bac92b0b43f3, type: 2}

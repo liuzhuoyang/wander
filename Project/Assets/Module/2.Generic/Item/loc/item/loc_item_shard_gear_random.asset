@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_item_shard_gear_random
+  m_EditorClassIdentifier: 
+  isMapping: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: item/shard/gear_random/tier_1
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_common
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'
+  - key: item/shard/gear_random/tier_2
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_rare
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'
+  - key: item/shard/gear_random/tier_3
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_epic
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'
+  - key: item/shard/gear_random/tier_4
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_legendary
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'
+  - key: item/shard/gear_random/tier_5
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_mythic
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'
+  - key: item/shard/gear_random/tier_6
+    textEnglish: '{0} {1}'
+    textHint: 
+    mappingList:
+    - mapping/rarity/mapping_rarity_arcane
+    - item_mapping/generic/gear_shard
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} {1}'
+    textTraditionChinese: '{0} {1}'
+    textJapanese: '{0} {1}'
+    textKorean: '{0} {1}'
+    textFrench: '{0} {1}'
+    textGerman: '{0} {1}'
+    textSpanish: '{0} {1}'
+    textPortuguese: '{0} {1}'
+    textItalian: '{0} {1}'
+    textDutch: '{0} {1}'
+    textRussian: '{0} {1}'
+    textThai: '{0} {1}'

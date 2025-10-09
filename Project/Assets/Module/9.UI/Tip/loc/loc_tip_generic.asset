@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tip_generic
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: "\u8D26\u6237\u76F8\u5173\u63D0\u793A"
+  list:
+  - key: tip/generic/max_ad_reached
+    textEnglish: Maximum ad views reached
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FBE\u5230\u6700\u5927\u5E7F\u544A\u6D4F\u89C8\u6B21\u6570"
+    textTraditionChinese: "\u5DF2\u9054\u6700\u5927\u5EE3\u544A\u700F\u89BD\u6B21\u6578"
+    textJapanese: "\u6700\u5927\u5E83\u544A\u8868\u793A\u56DE\u6570\u306B\u9054\u3057\u307E\u3057\u305F"
+    textKorean: "\uCD5C\uB300 \uAD11\uACE0 \uC870\uD68C\uC218 \uB3C4\uB2EC"
+    textFrench: Nombre maximum de vues atteint
+    textGerman: Maximale Anzeigenaufrufe erreicht
+    textSpanish: "L\xEDmite m\xE1ximo de visualizaciones alcanzado"
+    textPortuguese: "M\xE1ximo de visualiza\xE7\xF5es de an\xFAncios atingido"
+    textItalian: Massimo numero di visualizzazioni raggiunto
+    textDutch: Maximaal aantal advertentieweergaven bereikt
+    textRussian: "\u0414\u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442 \u043C\u0430\u043A\u0441\u0438\u043C\u0443\u043C
+      \u043F\u043E\u043A\u0430\u0437\u043E\u0432 \u0440\u0435\u043A\u043B\u0430\u043C\u044B"
+    textThai: "\u0E16\u0E36\u0E07\u0E02\u0E35\u0E14\u0E08\u0E33\u0E01\u0E31\u0E14\u0E01\u0E32\u0E23\u0E41\u0E2A\u0E14\u0E07\u0E42\u0E06\u0E29\u0E13\u0E32\u0E41\u0E25\u0E49\u0E27"
+  - key: tip/generic/daily_limit
+    textEnglish: You have reached the daily limit
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u60A8\u5DF2\u8FBE\u5230\u6BCF\u65E5\u9650\u989D"
+    textTraditionChinese: "\u60A8\u5DF2\u9054\u5230\u6BCF\u65E5\u9650\u5236"
+    textJapanese: "\u672C\u65E5\u306E\u4E0A\u9650\u306B\u9054\u3057\u307E\u3057\u305F"
+    textKorean: "\uC77C\uC77C \uD55C\uB3C4\uC5D0 \uB3C4\uB2EC\uD588\uC2B5\uB2C8\uB2E4"
+    textFrench: Vous avez atteint la limite quotidienne
+    textGerman: "Sie haben das t\xE4gliche Limit erreicht"
+    textSpanish: "Has alcanzado el l\xEDmite diario"
+    textPortuguese: "Voc\xEA atingiu o limite di\xE1rio"
+    textItalian: Hai raggiunto il limite giornaliero
+    textDutch: U heeft het dagelijkse limiet bereikt
+    textRussian: "\u0412\u044B \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0438 \u0434\u043D\u0435\u0432\u043D\u043E\u0433\u043E
+      \u043B\u0438\u043C\u0438\u0442\u0430"
+    textThai: "\u0E04\u0E38\u0E13\u0E16\u0E36\u0E07\u0E02\u0E35\u0E14\u0E08\u0E33\u0E01\u0E31\u0E14\u0E23\u0E32\u0E22\u0E27\u0E31\u0E19\u0E41\u0E25\u0E49\u0E27"

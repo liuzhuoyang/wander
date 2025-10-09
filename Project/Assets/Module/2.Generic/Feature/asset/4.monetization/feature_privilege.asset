@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5686f48a45754e6a924a39f9c81ebae, type: 3}
+  m_Name: feature_privilege
+  m_EditorClassIdentifier: 
+  featureType: 404
+  icon: {fileID: 21300000, guid: fe58ede2b321544b09ebb0dde102d2db, type: 3}
+  iconName: icon_feature_privilege
+  displayName: feature_mapping/monetization/privilege
+  previewName: Privilege
+  entranceType: 3
+  entrancePriority: 0
+  isShowUnlockAnimation: 0
+  unlockViewFeatureType: 2018
+  unlockConditionType: 1
+  chapterID: 2
+  levelID: 2

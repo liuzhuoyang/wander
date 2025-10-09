@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_02_02
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_02_02_01
+    textEnglish: "Commander, congratulations on acquiring a new weapon. Gotta say\u2014it
+      looks pretty punchy."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6307\u6325\u5B98\uFF0C\u606D\u559C\u4F60\u83B7\u5F97\u65B0\u6B66\u5668\u3002\u4E0D\u5F97\u4E0D\u8BF4\u2014\u2014\u5B83\u770B\u8D77\u6765\u5A01\u529B\u5341\u8DB3\u3002"
+    textTraditionChinese: "\u6307\u63EE\u5B98\uFF0C\u606D\u559C\u4F60\u7372\u5F97\u4E86\u4E00\u628A\u65B0\u6B66\u5668\u3002\u4E0D\u5F97\u4E0D\u8AAA\u2014\u2014\u5B83\u770B\u8D77\u4F86\u76F8\u7576\u5F37\u52C1\u3002"
+    textJapanese: "\u6307\u63EE\u5B98\u3001\u65B0\u305F\u306A\u6B66\u5668\u306E\u7372\u5F97\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059\u3002\u306A\u304B\u306A\u304B\u5F37\u529B\u305D\u3046\u3067\u3059\u306D\u3002"
+    textKorean: "\uC0AC\uB839\uAD00\uB2D8, \uC0C8\uB85C\uC6B4 \uBB34\uAE30 \uD68D\uB4DD\uC744
+      \uCD95\uD558\uB4DC\uB9BD\uB2C8\uB2E4. \uAF64 \uAC15\uB825\uD574 \uBCF4\uC774\uB124\uC694."
+    textFrench: "Commandant, f\xE9licitations pour l'acquisition d'une nouvelle arme.
+      Je dois dire\u2014elle a l'air plut\xF4t puissante."
+    textGerman: "Kommandant, Gl\xFCckwunsch zur neuen Waffe. Muss sagen\u2014sie
+      sieht ziemlich schlagkr\xE4ftig aus."
+    textSpanish: Comandante, felicidades por adquirir un arma nueva. Debo decir que
+      se ve bastante potente.
+    textPortuguese: "Comandante, parab\xE9ns por adquirir uma nova arma. Devo dizer\u2014parece
+      bem potente."
+    textItalian: "Comandante, congratulazioni per aver acquisito una nuova arma.
+      Devo dire\u2014sembra piuttosto potente."
+    textDutch: "Commandant, gefeliciteerd met het verkrijgen van een nieuw wapen.
+      Moet zeggen\u2014het ziet er behoorlijk krachtig uit."
+    textRussian: "\u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440, \u043F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u044E
+      \u0441 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u043C \u043D\u043E\u0432\u043E\u0433\u043E
+      \u043E\u0440\u0443\u0436\u0438\u044F. \u0414\u043E\u043B\u0436\u0435\u043D
+      \u0441\u043A\u0430\u0437\u0430\u0442\u044C \u2014 \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0442
+      \u043C\u043E\u0449\u043D\u043E."
+    textThai: "\u0E1C\u0E39\u0E49\u0E1A\u0E31\u0E0D\u0E0A\u0E32\u0E01\u0E32\u0E23
+      \u0E02\u0E2D\u0E41\u0E2A\u0E14\u0E07\u0E04\u0E27\u0E32\u0E21\u0E22\u0E34\u0E19\u0E14\u0E35\u0E14\u0E49\u0E27\u0E22\u0E17\u0E35\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E43\u0E2B\u0E21\u0E48
+      \u0E15\u0E49\u0E2D\u0E07\u0E1A\u0E2D\u0E01\u0E27\u0E48\u0E32\u2014\u0E21\u0E31\u0E19\u0E14\u0E39\u0E17\u0E23\u0E07\u0E1E\u0E25\u0E31\u0E07\u0E14\u0E35"
+  - key: loc_plot_c001_02_02_02
+    textEnglish: Looks like that shady merchant didn't have the guts to scam a {0}.
+    textHint: "\u770B\u6765\u90A3\u4E2A\u9ED1\u5FC3\u5546\u4EBA\u8FD8\u4E0D\u6562\u5751\u4E00\u4E2A{0}."
+    mappingList:
+    - mapping/factions/mapping_factions_rogue
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u770B\u6765\u90A3\u4E2A\u9ED1\u5FC3\u5546\u4EBA\u8FD8\u4E0D\u6562\u5751\u4E00\u4E2A{0}\u3002"
+    textTraditionChinese: "\u770B\u4F86\u90A3\u500B\u9ED1\u5FC3\u5546\u4EBA\u9084\u4E0D\u6562\u5751\u4E00\u500B{0}\u3002"
+    textJapanese: "\u3042\u306E\u602A\u3057\u3044\u5546\u4EBA\u306F{0}\u3092\u9A19\u3059\u52C7\u6C17\u304C\u306A\u304B\u3063\u305F\u3088\u3046\u3060\u3002"
+    textKorean: "\uADF8 \uC74C\uD749\uD55C \uC0C1\uC778\uC740 {0}\uB97C \uC18D\uC77C
+      \uC6A9\uAE30\uAC00 \uC5C6\uC5C8\uB098 \uBCF4\uB124."
+    textFrench: "On dirait que ce marchand v\xE9reux n'a pas eu le cran d'arnaquer
+      un {0}."
+    textGerman: "Sieht so aus, als h\xE4tte dieser zwielichtige H\xE4ndler nicht
+      den Mumm gehabt, einen {0} zu betr\xFCgen."
+    textSpanish: Parece que ese comerciante turbio no tuvo el valor de estafar a
+      un {0}.
+    textPortuguese: "Parece que aquele comerciante desonesto n\xE3o teve coragem
+      de enganar um {0}."
+    textItalian: Sembra che quel mercante losco non abbia avuto il coraggio di truffare
+      un {0}.
+    textDutch: Het lijkt erop dat die louche handelaar niet het lef had om een {0}
+      te bedriegen.
+    textRussian: "\u041F\u043E\u0445\u043E\u0436\u0435, \u044D\u0442\u043E\u0442
+      \u0442\u0435\u043C\u043D\u044B\u0439 \u0442\u043E\u0440\u0433\u043E\u0432\u0435\u0446
+      \u043D\u0435 \u043E\u0441\u043C\u0435\u043B\u0438\u043B\u0441\u044F \u043E\u0431\u043C\u0430\u043D\u0443\u0442\u044C
+      {0}."
+    textThai: "\u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E27\u0E48\u0E32\u0E40\u0E08\u0E49\u0E32\u0E2B\u0E19\u0E49\u0E32\u0E17\u0E35\u0E48\u0E04\u0E14\u0E42\u0E01\u0E07\u0E04\u0E19\u0E19\u0E31\u0E49\u0E19\u0E44\u0E21\u0E48\u0E01\u0E25\u0E49\u0E32\u0E2B\u0E25\u0E2D\u0E01\u0E25\u0E27\u0E07{0}"
+  - key: loc_plot_c001_02_02_03
+    textEnglish: Next, let's head to your armory to unlock the new equipment.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u63A5\u4E0B\u6765\uFF0C\u6211\u4EEC\u53BB\u4F60\u7684\u519B\u68B0\u5E93\u89E3\u9501\u65B0\u88C5\u5907\u3002"
+    textTraditionChinese: "\u63A5\u4E0B\u4F86\uFF0C\u8B93\u6211\u5011\u524D\u5F80\u4F60\u7684\u8ECD\u68B0\u5EAB\u89E3\u9396\u65B0\u88DD\u5099\u3002"
+    textJapanese: "\u6B21\u306B\u3001\u65B0\u3057\u3044\u88C5\u5099\u3092\u89E3\u9664\u3059\u308B\u305F\u3081\u306B\u3042\u306A\u305F\u306E\u6B66\u5668\u5EAB\u3078\u5411\u304B\u3044\u307E\u3057\u3087\u3046\u3002"
+    textKorean: "\uB2E4\uC74C, \uC0C8\uB85C\uC6B4 \uC7A5\uBE44\uB97C \uD574\uC81C\uD558\uAE30
+      \uC704\uD574 \uB2F9\uC2E0\uC758 \uBB34\uAE30\uACE0\uB85C \uC774\uB3D9\uD558\uACA0\uC2B5\uB2C8\uB2E4."
+    textFrench: "Ensuite, allons \xE0 votre arsenal pour d\xE9bloquer le nouvel \xE9quipement."
+    textGerman: "Als n\xE4chstes gehen wir zu deiner Waffenkammer, um die neue Ausr\xFCstung
+      freizuschalten."
+    textSpanish: "A continuaci\xF3n, vayamos a tu armer\xEDa para desbloquear el
+      nuevo equipo."
+    textPortuguese: Em seguida, vamos ao seu arsenal para desbloquear o novo equipamento.
+    textItalian: Successivamente, dirigiamoci alla tua armeria per sbloccare le nuove
+      attrezzature.
+    textDutch: Vervolgens gaan we naar je wapenkamer om de nieuwe uitrusting vrij
+      te schakelen.
+    textRussian: "\u0414\u0430\u043B\u0435\u0435 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043C\u0441\u044F
+      \u0432 \u0432\u0430\u0448 \u0430\u0440\u0441\u0435\u043D\u0430\u043B, \u0447\u0442\u043E\u0431\u044B
+      \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C
+      \u043D\u043E\u0432\u043E\u0435 \u0441\u043D\u0430\u0440\u044F\u0436\u0435\u043D\u0438\u0435."
+    textThai: "\u0E15\u0E48\u0E2D\u0E44\u0E1B \u0E40\u0E23\u0E32\u0E08\u0E30\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E04\u0E25\u0E31\u0E07\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E04\u0E2D\u0E38\u0E1B\u0E01\u0E23\u0E13\u0E4C\u0E43\u0E2B\u0E21\u0E48"

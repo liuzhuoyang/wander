@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_battle_tip
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u8D26\u6237\u76F8\u5173\u63D0\u793A"
+  list:
+  - key: tip/tip_battle_no_weapon
+    textEnglish: Equip at least one weapon
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u914D\u5907\u81F3\u5C11\u4E00\u4E2A\u6B66\u5668"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u914D\u5907\u81F3\u5C11\u4E00\u4E2A\u6B66\u5668"
+    textTraditionChinese: "\u914D\u5099\u81F3\u5C11\u4E00\u500B\u6B66\u5668"
+    textJapanese: "\u5C11\u306A\u304F\u3068\u30821\u3064\u306E\u6B66\u5668\u3092\u88C5\u5099\u3059\u308B"
+    textKorean: "\uCD5C\uC18C\uD55C \uD558\uB098\uC758 \uBB34\uAE30\uB97C \uC7A5\uCC29\uD558\uC138\uC694"
+    textFrench: "\xC9quiper au moins une arme"
+    textGerman: "R\xFCste mindestens eine Waffe aus"
+    textSpanish: Equipa al menos un arma
+    textPortuguese: Equipe pelo menos uma arma
+    textItalian: Equipaggiare almeno un'arma
+    textDutch: "Uitrust ten minste \xE9\xE9n wapen"
+    textRussian: "\u041E\u0441\u043D\u0430\u0441\u0442\u0438\u0442\u0435 \u043F\u043E
+      \u043A\u0440\u0430\u0439\u043D\u0435\u0439 \u043C\u0435\u0440\u0435 \u043E\u0434\u043D\u043E
+      \u043E\u0440\u0443\u0436\u0438\u0435"
+    textThai: "\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E49\u0E2D\u0E22\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E0A\u0E34\u0E49\u0E19"
+  - key: tip/tip_battle_boss_approaching
+    textEnglish: Boss Approaching!
+    textHint: "Boss \u7FFB\u8BD1\u4E3A\u9996\u9886"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9996\u9886\u63A5\u8FD1\uFF01"
+    textTraditionChinese: "\u9996\u9818\u63A5\u8FD1\uFF01"
+    textJapanese: "\u30DC\u30B9\u63A5\u8FD1\u4E2D\uFF01"
+    textKorean: "\uBCF4\uC2A4 \uC811\uADFC \uC911!"
+    textFrench: Chef approche !
+    textGerman: "Chef n\xE4hert sich!"
+    textSpanish: "\xA1Se acerca el Jefe!"
+    textPortuguese: Chefe se aproximando!
+    textItalian: Capo in Arrivo!
+    textDutch: Baas Nadert!
+    textRussian: "\u0428\u0435\u0444 \u043F\u0440\u0438\u0431\u043B\u0438\u0436\u0430\u0435\u0442\u0441\u044F!"
+    textThai: "\u0E2B\u0E31\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E43\u0E01\u0E25\u0E49\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32!"

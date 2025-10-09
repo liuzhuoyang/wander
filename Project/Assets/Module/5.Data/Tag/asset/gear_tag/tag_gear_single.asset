@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cfc01d10ee6244c8b5038ae422617d1, type: 3}
+  m_Name: tag_gear_single
+  m_EditorClassIdentifier: 
+  tagKey: tag_gear_single
+  tagType: 2
+  displayName: tag/gear/tag_gear_single
+  contentKey: tag/gear/info/tag_gear_info_single
+  color: {r: 0.7411765, g: 0.90588236, b: 0.99607843, a: 1}
+  resistanceList: []

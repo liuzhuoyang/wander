@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tag_gear_info
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - content: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E43\u0E2B\u0E49\u0E28\u0E31\u0E15\u0E23\u0E39\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E15\u0E31\u0E27"
+    key: tag/gear/info/tag_gear_info_single
+    textEnglish: Deal damage to a single enemy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5BF9\u5355\u4E2A\u654C\u4EBA\u9020\u6210\u4F24\u5BB3"
+    textTraditionChinese: "\u5C0D\u55AE\u4E00\u6575\u4EBA\u9020\u6210\u50B7\u5BB3"
+    textJapanese: "\u5358\u4E00\u306E\u6575\u306B\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B"
+    textKorean: "\uB2E8\uC77C \uC801\uC5D0\uAC8C \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4"
+    textFrench: "Infliger des d\xE9g\xE2ts \xE0 un seul ennemi"
+    textGerman: "F\xFCge einem einzelnen Gegner Schaden zu"
+    textSpanish: "Inflige da\xF1o a un solo enemigo"
+    textPortuguese: "Causar dano a um \xFAnico inimigo"
+    textItalian: Infliggi danni a un singolo nemico
+    textDutch: Breng schade toe aan een enkele vijand
+    textRussian: "\u041D\u0430\u043D\u0435\u0441\u0438\u0442\u0435 \u0443\u0440\u043E\u043D
+      \u043E\u0434\u043D\u043E\u043C\u0443 \u0432\u0440\u0430\u0433\u0443"
+    textThai: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E43\u0E2B\u0E49\u0E28\u0E31\u0E15\u0E23\u0E39\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E15\u0E31\u0E27"
+  - content: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E43\u0E19\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48"
+    key: tag/gear/info/tag_gear_info_area
+    textEnglish: Deal area damage
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9020\u6210\u8303\u56F4\u4F24\u5BB3"
+    textTraditionChinese: "\u9020\u6210\u7BC4\u570D\u50B7\u5BB3"
+    textJapanese: "\u7BC4\u56F2\u653B\u6483"
+    textKorean: "\uBC94\uC704 \uD53C\uD574"
+    textFrench: "Infliger des d\xE9g\xE2ts de zone"
+    textGerman: Bereichsschaden
+    textSpanish: "\xC1rea de da\xF1o"
+    textPortuguese: "Causar dano em \xE1rea"
+    textItalian: Infligge danni in area
+    textDutch: Gebiedsschade
+    textRussian: "\u041D\u0430\u043D\u043E\u0441\u0438\u0442\u044C \u0443\u0440\u043E\u043D
+      \u043F\u043E \u043E\u0431\u043B\u0430\u0441\u0442\u0438"
+    textThai: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E43\u0E19\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48"
+  - content: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E33\u0E23\u0E49\u0E2D\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E42\u0E08\u0E21\u0E15\u0E35\u0E28\u0E31\u0E15\u0E23\u0E39"
+    key: tag/gear/info/tag_gear_info_summon
+    textEnglish: Create summons to attack enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5236\u9020\u53EC\u5524\u7269\u653B\u51FB\u654C\u4EBA"
+    textTraditionChinese: "\u88FD\u9020\u53EC\u559A\u7269\u653B\u64CA\u6575\u4EBA"
+    textJapanese: "\u6575\u3092\u653B\u6483\u3059\u308B\u305F\u3081\u306E\u53EC\u559A\u3092\u4F5C\u6210\u3059\u308B"
+    textKorean: "\uC801\uC744 \uACF5\uACA9\uD560 \uC18C\uD658\uC218\uB97C \uC0DD\uC131\uD558\uB77C"
+    textFrench: "Cr\xE9er des convocations pour attaquer les ennemis"
+    textGerman: "Erstelle Beschw\xF6rungen, um Feinde anzugreifen"
+    textSpanish: Crear convocatorias para atacar enemigos
+    textPortuguese: "Criar convoca\xE7\xF5es para atacar inimigos"
+    textItalian: Creare convocazioni per attaccare i nemici
+    textDutch: Maak oproepen om vijanden aan te vallen
+    textRussian: "\u0421\u043E\u0437\u0434\u0430\u0442\u044C \u0432\u044B\u0437\u043E\u0432
+      \u0434\u043B\u044F \u0430\u0442\u0430\u043A\u0438 \u0432\u0440\u0430\u0433\u043E\u0432"
+    textThai: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E33\u0E23\u0E49\u0E2D\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E42\u0E08\u0E21\u0E15\u0E35\u0E28\u0E31\u0E15\u0E23\u0E39"
+  - content: "\u0E40\u0E08\u0E32\u0E30\u0E40\u0E01\u0E23\u0E32\u0E30, \u0E44\u0E21\u0E48\u0E2A\u0E19\u0E40\u0E01\u0E23\u0E32\u0E30\u0E28\u0E31\u0E15\u0E23\u0E39\u0E41\u0E25\u0E30\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E40\u0E15\u0E47\u0E21\u0E17\u0E35\u0E48"
+    key: tag/gear/info/tag_gear_info_ap
+    textEnglish: Armor-piercing, ignore enemy armor and deal full damage
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7A7F\u7532\uFF0C\u65E0\u89C6\u654C\u65B9\u62A4\u7532\uFF0C\u9020\u6210\u5168\u989D\u4F24\u5BB3"
+    textTraditionChinese: "\u7A7F\u7532\uFF0C\u7121\u8996\u6575\u65B9\u8B77\u7532\u4E26\u9020\u6210\u5168\u984D\u50B7\u5BB3"
+    textJapanese: "\u88C5\u7532\u8CAB\u901A\u3001\u6575\u306E\u88C5\u7532\u3092\u7121\u8996\u3057\u3066\u5168\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B"
+    textKorean: "\uAD00\uD1B5\uD0C4, \uC801\uC758 \uBC29\uC5B4\uB825\uC744 \uBB34\uC2DC\uD558\uACE0
+      \uC804\uCCB4 \uD53C\uD574\uB97C \uC785\uD799\uB2C8\uB2E4"
+    textFrench: "Perforant, ignore l'armure ennemie et inflige des d\xE9g\xE2ts complets"
+    textGerman: "Panzerbrechend, ignoriert die R\xFCstung des Gegners und verursacht
+      vollen Schaden"
+    textSpanish: "Perforante, ignora la armadura del enemigo e inflige da\xF1o completo"
+    textPortuguese: Perfurante, ignora a armadura do inimigo e causa dano total
+    textItalian: Perforante, ignora l'armatura del nemico e infligge danni completi
+    textDutch: Pantserdoorborend, negeer vijandelijke pantser en veroorzaak volledige
+      schade
+    textRussian: "\u0411\u0440\u043E\u043D\u0435\u0431\u043E\u0439\u043D\u044B\u0439,
+      \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u0443\u0435\u0442 \u0432\u0440\u0430\u0436\u0435\u0441\u043A\u0443\u044E
+      \u0431\u0440\u043E\u043D\u044E \u0438 \u043D\u0430\u043D\u043E\u0441\u0438\u0442
+      \u043F\u043E\u043B\u043D\u044B\u0439 \u0443\u0440\u043E\u043D"
+    textThai: "\u0E40\u0E08\u0E32\u0E30\u0E40\u0E01\u0E23\u0E32\u0E30, \u0E44\u0E21\u0E48\u0E2A\u0E19\u0E40\u0E01\u0E23\u0E32\u0E30\u0E28\u0E31\u0E15\u0E23\u0E39\u0E41\u0E25\u0E30\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E40\u0E15\u0E47\u0E21\u0E17\u0E35\u0E48"
+  - content: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E28\u0E31\u0E15\u0E23\u0E39\u0E21\u0E36\u0E19\u0E07\u0E07\u0E2B\u0E23\u0E37\u0E2D\u0E0A\u0E49\u0E32\u0E25\u0E07"
+    key: tag/gear/info/tag_gear_info_control
+    textEnglish: Inflict stun or slow on enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5BF9\u654C\u4EBA\u9020\u6210\u7729\u6655\u6216\u51CF\u901F"
+    textTraditionChinese: "\u5C0D\u6575\u4EBA\u9020\u6210\u6688\u7729\u6216\u6E1B\u901F"
+    textJapanese: "\u6575\u306B\u30B9\u30BF\u30F3\u307E\u305F\u306F\u30B9\u30ED\u30A6\u3092\u4ED8\u4E0E\u3059\u308B"
+    textKorean: "\uC801\uC5D0\uAC8C \uAE30\uC808 \uB610\uB294 \uB454\uD654 \uD6A8\uACFC\uB97C
+      \uC801\uC6A9"
+    textFrench: "Infliger un \xE9tourdissement ou un ralentissement aux ennemis"
+    textGerman: "Bet\xE4ubung oder Verlangsamung auf Feinde aus\xFCben"
+    textSpanish: "Infligir aturdimiento o ralentizaci\xF3n a los enemigos"
+    textPortuguese: "Causar atordoamento ou lentid\xE3o nos inimigos"
+    textItalian: Infliggere stordimento o rallentamento ai nemici
+    textDutch: Breng verdoving of vertraging toe aan vijanden
+    textRussian: "\u041E\u0433\u043B\u0443\u0448\u0438\u0442\u044C \u0438\u043B\u0438
+      \u0437\u0430\u043C\u0435\u0434\u043B\u0438\u0442\u044C \u0432\u0440\u0430\u0433\u043E\u0432"
+    textThai: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E28\u0E31\u0E15\u0E23\u0E39\u0E21\u0E36\u0E19\u0E07\u0E07\u0E2B\u0E23\u0E37\u0E2D\u0E0A\u0E49\u0E32\u0E25\u0E07"
+  - content: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E42\u0E08\u0E21\u0E15\u0E35\u0E44\u0E14\u0E49
+      \u0E41\u0E15\u0E48\u0E43\u0E2B\u0E49\u0E1A\u0E31\u0E1F\u0E1F\u0E4C\u0E2B\u0E23\u0E37\u0E2D\u0E1F\u0E37\u0E49\u0E19\u0E1F\u0E39"
+    key: tag/gear/info/tag_gear_info_support
+    textEnglish: Cannot attack but provides buffs or recover
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u65E0\u6CD5\u653B\u51FB\u4F46\u63D0\u4F9B\u589E\u76CA\u6216\u6062\u590D"
+    textTraditionChinese: "\u7121\u6CD5\u653B\u64CA\u4F46\u63D0\u4F9B\u589E\u76CA\u6216\u6062\u5FA9"
+    textJapanese: "\u653B\u6483\u4E0D\u53EF\u3060\u304C\u3001\u30D0\u30D5\u3084\u56DE\u5FA9\u3092\u63D0\u4F9B\u3059\u308B"
+    textKorean: "\uACF5\uACA9\uD560 \uC218 \uC5C6\uC9C0\uB9CC \uBC84\uD504\uB098
+      \uD68C\uBCF5\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4"
+    textFrench: Ne peut pas attaquer mais fournit des buffs ou des soins
+    textGerman: Kann nicht angreifen, bietet aber Buffs oder Heilung
+    textSpanish: "No puede atacar, pero proporciona mejoras o recuperaci\xF3n"
+    textPortuguese: "N\xE3o pode atacar, mas fornece buffs ou recupera\xE7\xE3o"
+    textItalian: "Non pu\xF2 attaccare ma fornisce buff o recupero"
+    textDutch: Kan niet aanvallen maar geeft buffs of herstelt
+    textRussian: "\u041D\u0435 \u043C\u043E\u0436\u0435\u0442 \u0430\u0442\u0430\u043A\u043E\u0432\u0430\u0442\u044C,
+      \u043D\u043E \u0434\u0430\u0451\u0442 \u0431\u0430\u0444\u0444\u044B \u0438\u043B\u0438
+      \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442"
+    textThai: "\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E42\u0E08\u0E21\u0E15\u0E35\u0E44\u0E14\u0E49
+      \u0E41\u0E15\u0E48\u0E43\u0E2B\u0E49\u0E1A\u0E31\u0E1F\u0E1F\u0E4C\u0E2B\u0E23\u0E37\u0E2D\u0E1F\u0E37\u0E49\u0E19\u0E1F\u0E39"

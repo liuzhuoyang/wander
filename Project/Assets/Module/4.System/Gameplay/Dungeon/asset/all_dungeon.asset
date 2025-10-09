@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b685e72d1f3934efd98c185abd036567, type: 3}
+  m_Name: all_dungeon
+  m_EditorClassIdentifier: 
+  path: Assets/Module/4.System/Gameplay/Dungeon/asset/
+  listDungeonData:
+  - {fileID: 11400000, guid: 629c9c039cfcc4fd881fecb3cd0856bc, type: 2}
+  - {fileID: 11400000, guid: 7a8e595c12afb491cac25c1168494333, type: 2}
+  - {fileID: 11400000, guid: 9e24680ca80c845f9a5db2ca01d83c36, type: 2}

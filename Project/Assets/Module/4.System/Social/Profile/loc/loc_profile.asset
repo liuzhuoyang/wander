@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_profile
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: profile/title
+    textEnglish: Profile
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E2A\u4EBA\u8D44\u6599"
+    textTraditionChinese: "\u500B\u4EBA\u8CC7\u6599"
+    textJapanese: "\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB"
+    textKorean: "\uD504\uB85C\uD544"
+    textFrench: Profil
+    textGerman: Profil
+    textSpanish: Perfil
+    textPortuguese: Perfil
+    textItalian: Profilo
+    textDutch: Profiel
+    textRussian: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C"
+    textThai: "\u0E42\u0E1B\u0E23\u0E44\u0E1F\u0E25\u0E4C"
+  - key: profile/change_avatar
+    textEnglish: Change Avatar
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u6539\u5934\u50CF"
+    textTraditionChinese: "\u66F4\u63DB\u982D\u50CF"
+    textJapanese: "\u30A2\u30D0\u30BF\u30FC\u3092\u5909\u66F4"
+    textKorean: "\uC544\uBC14\uD0C0 \uBCC0\uACBD"
+    textFrench: Changer d'avatar
+    textGerman: "Avatar \xE4ndern"
+    textSpanish: Cambiar Avatar
+    textPortuguese: Alterar Avatar
+    textItalian: Cambia Avatar
+    textDutch: Avatar wijzigen
+    textRussian: "\u0421\u043C\u0435\u043D\u0438\u0442\u044C \u0430\u0432\u0430\u0442\u0430\u0440"
+    textThai: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E23\u0E39\u0E1B\u0E42\u0E1B\u0E23\u0E44\u0E1F\u0E25\u0E4C"
+  - key: profile/change_name
+    textEnglish: Change Name
+    textHint: "\u5237\u65B0\u4E8E"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u6539\u540D\u79F0"
+    textTraditionChinese: "\u66F4\u6539\u540D\u7A31"
+    textJapanese: "\u540D\u524D\u5909\u66F4"
+    textKorean: "\uC774\uB984 \uBCC0\uACBD"
+    textFrench: Changer de nom
+    textGerman: "Namen \xE4ndern"
+    textSpanish: Cambiar Nombre
+    textPortuguese: Mudar Nome
+    textItalian: Cambia Nome
+    textDutch: Naam wijzigen
+    textRussian: "\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C \u0438\u043C\u044F"
+    textThai: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E0A\u0E37\u0E48\u0E2D"
+  - key: profile/hint/pick_name
+    textEnglish: Pick an Avatar and Name
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9\u4E00\u4E2A\u5934\u50CF\u548C\u540D\u5B57"
+    textTraditionChinese: "\u9078\u64C7\u4E00\u500B\u982D\u50CF\u548C\u540D\u5B57"
+    textJapanese: "\u30A2\u30D0\u30BF\u30FC\u3068\u540D\u524D\u3092\u9078\u3076"
+    textKorean: "\uC544\uBC14\uD0C0\uC640 \uC774\uB984 \uC120\uD0DD"
+    textFrench: Choisissez un avatar et un nom
+    textGerman: "W\xE4hle einen Avatar und einen Namen."
+    textSpanish: Elige un Avatar y un Nombre
+    textPortuguese: Escolha um Avatar e um Nome
+    textItalian: Scegli un Avatar e un Nome
+    textDutch: Kies een Avatar en Naam
+    textRussian: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u0430\u0432\u0430\u0442\u0430\u0440
+      \u0438 \u0438\u043C\u044F"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2D\u0E27\u0E32\u0E15\u0E32\u0E23\u0E4C\u0E41\u0E25\u0E30\u0E0A\u0E37\u0E48\u0E2D"
+  - key: profile/hint/change_later
+    textEnglish: 'Note: You can change this later'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6CE8\u610F\uFF1A\u7A0D\u540E\u53EF\u4EE5\u66F4\u6539"
+    textTraditionChinese: "\u8A3B\uFF1A\u4F60\u53EF\u4EE5\u7A0D\u5F8C\u66F4\u6539"
+    textJapanese: "\u6CE8: \u5F8C\u3067\u5909\u66F4\u3067\u304D\u307E\u3059"
+    textKorean: "\uCC38\uACE0: \uB098\uC911\uC5D0 \uBCC0\uACBD\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Note : Vous pouvez modifier cela ult\xE9rieurement"
+    textGerman: "Hinweis: Sie k\xF6nnen dies sp\xE4ter \xE4ndern."
+    textSpanish: "Nota: Puedes cambiarlo m\xE1s tarde."
+    textPortuguese: 'Nota: Podes alterar isto mais tarde'
+    textItalian: "Nota: Puoi cambiarlo pi\xF9 tardi"
+    textDutch: 'Opmerking: Je kunt dit later wijzigen'
+    textRussian: "\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u0435: \u0412\u044B
+      \u043C\u043E\u0436\u0435\u0442\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u044C
+      \u044D\u0442\u043E \u043F\u043E\u0437\u0436\u0435"
+    textThai: "\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E2B\u0E15\u0E38: \u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E2A\u0E34\u0E48\u0E07\u0E19\u0E35\u0E49\u0E44\u0E14\u0E49\u0E43\u0E19\u0E20\u0E32\u0E22\u0E2B\u0E25\u0E31\u0E07"
+  - key: profile/change_frame
+    textEnglish: Change Avatar Frame
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66F4\u6362\u5934\u50CF\u6846"
+    textTraditionChinese: "\u66F4\u63DB\u982D\u50CF\u6846"
+    textJapanese: "\u30A2\u30D0\u30BF\u30FC\u30D5\u30EC\u30FC\u30E0\u3092\u5909\u66F4"
+    textKorean: "\uC544\uBC14\uD0C0 \uD504\uB808\uC784 \uBCC0\uACBD"
+    textFrench: Changer le cadre de l'avatar
+    textGerman: "Avatarrahmen \xE4ndern"
+    textSpanish: Cambiar marco de avatar
+    textPortuguese: Alterar Moldura do Avatar
+    textItalian: Cambia Cornice Avatar
+    textDutch: Avatarframe wijzigen
+    textRussian: "\u0421\u043C\u0435\u043D\u0438\u0442\u044C \u0440\u0430\u043C\u043A\u0443
+      \u0430\u0432\u0430\u0442\u0430\u0440\u0430"
+    textThai: "\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E01\u0E23\u0E2D\u0E1A\u0E23\u0E39\u0E1B\u0E42\u0E1B\u0E23\u0E44\u0E1F\u0E25\u0E4C"

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c001_01_02
+  m_EditorClassIdentifier: 
+  plotName: plot_c001_01_02
+  totalStep: 5
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: c7f4cce41330a48a7804a707bccccaf6, type: 3}
+    avatarNPC: avatar_704
+    dialogType: 0
+    dialogKey: loc_plot_c001_01_02_01
+    optionKey1: 
+    optionKey2: 
+    content: "The {0} we\u2019ve earned can be used for Tech upgrades."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: c7f4cce41330a48a7804a707bccccaf6, type: 3}
+    avatarNPC: avatar_704
+    dialogType: 0
+    dialogKey: loc_plot_c001_01_02_02
+    optionKey1: 
+    optionKey2: 
+    content: Upgrading your Tech grants greater authority, unlocking more protocols.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: c7f4cce41330a48a7804a707bccccaf6, type: 3}
+    avatarNPC: avatar_704
+    dialogType: 0
+    dialogKey: loc_plot_c001_01_02_03
+    optionKey1: 
+    optionKey2: 
+    content: 'Basic protocols are divided into three categories: Base Health, Base
+      Damage, and Skill Strength.'
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: c7f4cce41330a48a7804a707bccccaf6, type: 3}
+    avatarNPC: avatar_704
+    dialogType: 0
+    dialogKey: loc_plot_c001_01_02_04
+    optionKey1: 
+    optionKey2: 
+    content: Skill Strength enhances the power of support abilities.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: c7f4cce41330a48a7804a707bccccaf6, type: 3}
+    avatarNPC: avatar_704
+    dialogType: 0
+    dialogKey: loc_plot_c001_01_02_05
+    optionKey1: 
+    optionKey2: 
+    content: Every ten upgrades of Tech increase unlock a special protocol.
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 0}
+  rewardName: 
+  rewardNum: 0

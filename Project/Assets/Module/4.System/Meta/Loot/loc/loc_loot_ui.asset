@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_loot_ui
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - content: "\u0E44\u0E21\u0E48\u0E27\u0E48\u0E32\u0E07"
+    key: page/loot/page_loot_not_available
+    textEnglish: Not Available
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E0D\u53EF\u7528"
+    textTraditionChinese: "\u7121\u6CD5\u4F7F\u7528"
+    textJapanese: "\u5229\u7528\u4E0D\u53EF"
+    textKorean: "\uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC74C"
+    textFrench: Non disponible
+    textGerman: "Nicht verf\xFCgbar"
+    textSpanish: No disponible
+    textPortuguese: "Indispon\xEDvel"
+    textItalian: Non disponibile
+    textDutch: Niet beschikbaar
+    textRussian: "\u041D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E"
+    textThai: "\u0E44\u0E21\u0E48\u0E27\u0E48\u0E32\u0E07"
+  - content: "Standard Chest (\u6807\u51C6\u7BB1)"
+    key: page/loot/page_loot_box_1
+    textEnglish: Standard Chest
+    textHint: "\u7FFB\u8BD1\u6210\u6807\u51C6\u7BB1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6807\u51C6\u7BB1"
+    textTraditionChinese: "\u6A19\u6E96\u7BB1"
+    textJapanese: "\u6A19\u6E96\u7BB1"
+    textKorean: "\uC2A4\uD0E0\uB2E4\uB4DC \uCCB4\uC2A4\uD2B8"
+    textFrench: "Standard Chest \uFF08\u6807\u51C6\u7BB1\uFF09"
+    textGerman: Standardkiste
+    textSpanish: "Est\xE1ndar Pecho"
+    textPortuguese: "Peito Padr\xE3o"
+    textItalian: Scatola standard
+    textDutch: Standaardkist
+    textRussian: "\u0421\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u0439
+      \u044F\u0449\u0438\u043A"
+    textThai: "Standard Chest (\u6807\u51C6\u7BB1)"
+  - content: "\u0E2B\u0E19\u0E49\u0E32\uFFFD\uFFFD\u0E01\u0E40\u0E17\u0E04\u0E42\u0E19\u0E42\u0E25\u0E22\u0E35"
+    key: page/loot/page_loot_box_2
+    textEnglish: Tech Chest
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u79D1\u6280\u7BB1"
+    textTraditionChinese: "\u79D1\u6280\u7BB1"
+    textJapanese: "\u30C6\u30C3\u30AF\u30C1\u30A7\u30B9\u30C8"
+    textKorean: "\uD14C\uD06C \uCCB4\uC2A4\uD2B8"
+    textFrench: Coffre Tech
+    textGerman: Tech Kiste
+    textSpanish: "Cofre Tecnol\xF3gico"
+    textPortuguese: "Ba\xFA de Tecnologia"
+    textItalian: Baule tecnologico
+    textDutch: Tech Kist
+    textRussian: "\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+      \u0441\u0443\u043D\u0434\u0443\u043A"
+    textThai: "\u0E2B\u0E19\u0E49\u0E32\uFFFD\uFFFD\u0E01\u0E40\u0E17\u0E04\u0E42\u0E19\u0E42\u0E25\u0E22\u0E35"
+  - content: "\u0E04\u0E27\u0E2D\u0E19\u0E15\u0E31\u0E21\u0E40\u0E0A\u0E2A\u0E15\u0E4C"
+    key: page/loot/page_loot_box_3
+    textEnglish: Quantum Chest
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u91CF\u5B50\u5B9D\u7BB1"
+    textTraditionChinese: "\u91CF\u5B50\u5BF6\u7BB1"
+    textJapanese: "\u30AF\u30A9\u30F3\u30BF\u30E0\u30C1\u30A7\u30B9\u30C8"
+    textKorean: "\uFFFD\uFFFD\uFFFD\uD140 \uCCB4\uC2A4\uD2B8"
+    textFrench: Coffre Quantique
+    textGerman: Quantentruhe
+    textSpanish: "Cofre Cu\xE1ntico"
+    textPortuguese: "Peito Qu\xE2ntico"
+    textItalian: Baule Quantico
+    textDutch: Quantum Kist
+    textRussian: "\u041A\u0432\u0430\u043D\u0442\u043E\u0432\u044B\u0439 \u0421\u0443\u043D\u0434\u0443\u043A"
+    textThai: "\u0E04\u0E27\u0E2D\u0E19\u0E15\u0E31\u0E21\u0E40\u0E0A\u0E2A\u0E15\u0E4C"
+  - content: "Solar Chest \u0E41\u0E1B\u0E25\u0E40\u0E1B\u0E47\u0E19\u0E20\u0E32\u0E29\u0E32\u0E44\u0E17\u0E22\u0E04\u0E37\u0E2D
+      \"\u0E2B\u0E19\u0E49\u0E32\u0E2D\u0E01\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19\u0E41\u0E2A\u0E07\u0E2D\u0E32\u0E17\u0E34\u0E15\u0E22\u0E4C\""
+    key: page/loot/page_loot_box_4
+    textEnglish: Solar Chest
+    textHint: "\u53C2\u8003\u7FFB\u8BD1\uFF1A\u592A\u9633\u5B9D\u7BB1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u592A\u9633\u5B9D\u7BB1"
+    textTraditionChinese: "\u592A\u967D\u5BF6\u7BB1"
+    textJapanese: "\u30BD\u30FC\u30E9\u30FC\u30C1\u30A7\u30B9\u30C8"
+    textKorean: "\uC194\uB77C \uCCB4\uC2A4\uD2B8"
+    textFrench: Coffre solaire
+    textGerman: Solarkiste
+    textSpanish: Cofre Solar
+    textPortuguese: Peito Solar
+    textItalian: Petto Solare
+    textDutch: Zonnekist
+    textRussian: "\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u0441\u0443\u043D\u0434\u0443\u043A"
+    textThai: "\u0E42\u0E0B\u0E25\u0E32\u0E23\u0E4C\u0E40\u0E0A\u0E2A\u0E15\u0E4C"
+  - content: "\u0E2B\u0E35\u0E1A\u0E42\u0E1A\u0E23\u0E32\u0E13"
+    key: page/loot/page_loot_box_5
+    textEnglish: Ancient Chest
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u53E4\u8001\u5B9D\u7BB1"
+    textTraditionChinese: "\u53E4\u8001\u7BB1\u5B50"
+    textJapanese: "\u53E4\u4EE3\u306E\u30C1\u30A7\u30B9\u30C8"
+    textKorean: "\uACE0\uB300\uC758 \uC0C1\uC790"
+    textFrench: Coffre ancien
+    textGerman: Alte Truhe
+    textSpanish: Cofre Antiguo
+    textPortuguese: "Ba\xFA Antigo"
+    textItalian: Antico Scrigno
+    textDutch: Oude Kist
+    textRussian: "\u0414\u0440\u0435\u0432\u043D\u0438\u0439 \u0441\u0443\u043D\u0434\u0443\u043A"
+    textThai: "\u0E2B\u0E35\u0E1A\u0E42\u0E1A\u0E23\u0E32\u0E13"
+  - content: "\u0E40\u0E1B\u0E34\u0E14"
+    key: page/loot/page_loot_open
+    textEnglish: Open x{0}
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6253\u5F00x{0}"
+    textTraditionChinese: "\u958B\u555F x{0}"
+    textJapanese: "\u958B\u304F x{0}"
+    textKorean: "\uC5F4\uAE30"
+    textFrench: Ouvrir
+    textGerman: "\xD6ffne x{0}"
+    textSpanish: Abrir x{0}
+    textPortuguese: Abrir x{0}
+    textItalian: Apri x{0}
+    textDutch: Open x{0}
+    textRussian: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
+    textThai: "\u0E40\u0E1B\u0E34\u0E14"

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd3e33bbf9374f20b4d97e4f75c4174, type: 3}
+  m_Name: item_pass_fund_tower_001
+  m_EditorClassIdentifier: 
+  itemName: item_pass_fund_tower_001
+  rarity: 0
+  displayName: 
+  previewDisplayname: 
+  infoKey: 
+  previewInfo: 
+  icon: {fileID: 2800000, guid: e6fbbdb85d13c4e1b946cbf3c2e6673a, type: 3}
+  iconName: icon_item_pass_common
+  isShard: 0
+  isInvisible: 0
+  isReset: 0
+  timeResetType: 0
+  isCustomResetTime: 0
+  customResetTime: 0
+  sfxDrop: 
+  sfxCollect: 
+  listFeatureType: 

@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 833c2510e3dcbaf45ba4cc11c69cd058
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8470040756037666920
+    second: ui_bombing_aim_0
+  - first:
+      213: -3611387809297410870
+    second: ui_bombing_aim_1
+  - first:
+      213: -8712689620470572029
+    second: ui_bombing_aim_2
+  - first:
+      213: -1154331024288559371
+    second: ui_bombing_aim_3
+  - first:
+      213: -7096709101827748112
+    second: ui_bombing_aim_4
+  - first:
+      213: 2012249534708454621
+    second: ui_bombing_aim_5
+  - first:
+      213: -1869993706204928636
+    second: ui_bombing_aim_6
+  - first:
+      213: -5441158173251711030
+    second: ui_bombing_aim_7
+  - first:
+      213: -1895253610758843624
+    second: ui_bombing_aim_8
+  - first:
+      213: 5319043015984794042
+    second: ui_bombing_aim_9
+  - first:
+      213: 2156213872667229554
+    second: ui_bombing_aim_10
+  - first:
+      213: -7819716144867408915
+    second: ui_bombing_aim_11
+  - first:
+      213: -7242935184067855606
+    second: ui_bombing_aim_12
+  - first:
+      213: -2235986200430433296
+    second: ui_bombing_aim_13
+  - first:
+      213: 6732190578861321477
+    second: ui_bombing_aim_14
+  - first:
+      213: 1846426457677503917
+    second: ui_bombing_aim_15
+  - first:
+      213: 1675486410269756043
+    second: ui_bombing_aim_16
+  - first:
+      213: 7576831358564783099
+    second: ui_bombing_aim_17
+  - first:
+      213: 8041081068899050978
+    second: ui_bombing_aim_18
+  - first:
+      213: 5083660157286483774
+    second: ui_bombing_aim_19
+  - first:
+      213: 1017743028520414259
+    second: ui_bombing_aim_20
+  - first:
+      213: -5097072787634060207
+    second: ui_bombing_aim_21
+  - first:
+      213: -1597263574036800359
+    second: ui_bombing_aim_22
+  - first:
+      213: 961578709291363575
+    second: ui_bombing_aim_23
+  - first:
+      213: -2989273901817096430
+    second: ui_bombing_aim_24
+  - first:
+      213: 3747869695077532987
+    second: ui_bombing_aim_25
+  - first:
+      213: -7288956560625630474
+    second: ui_bombing_aim_26
+  - first:
+      213: 9051938903094427157
+    second: ui_bombing_aim_27
+  - first:
+      213: -7569799775948410448
+    second: ui_bombing_aim_28
+  - first:
+      213: -270114467013196556
+    second: ui_bombing_aim_29
+  - first:
+      213: -3300641311833197388
+    second: ui_bombing_aim_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui_bombing_aim_0
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 339
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868c4b00131ab8570800000000000000
+      internalID: 8470040756037666920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 344
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4d6a0ebe5c1edc0800000000000000
+      internalID: -3611387809297410870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 339
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c5e95b3fe461780800000000000000
+      internalID: -8712689620470572029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_3
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 291
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fe4110ac0efaffe0800000000000000
+      internalID: -1154331024288559371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 325
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe864ffbac638d90800000000000000
+      internalID: -7096709101827748112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 325
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd41ebb5a42fceb10800000000000000
+      internalID: 2012249534708454621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_6
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 291
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4856071c1a27c06e0800000000000000
+      internalID: -1869993706204928636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 309
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf4e9c487f1d74b0800000000000000
+      internalID: -5441158173251711030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 311
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813517be1e4b2b5e0800000000000000
+      internalID: -1895253610758843624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 261
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9cbc8017901d940800000000000000
+      internalID: 5319043015984794042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_10
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 276
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d7914d7196ced10800000000000000
+      internalID: 2156213872667229554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_11
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 227
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de38accc899ca7390800000000000000
+      internalID: -7819716144867408915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_12
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 244
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bf47623dceb7b90800000000000000
+      internalID: -7242935184067855606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb2ba0c56e28f0e0800000000000000
+      internalID: -2235986200430433296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_14
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 208
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50da24da9ab8d6d50800000000000000
+      internalID: 6732190578861321477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad10c99413df9910800000000000000
+      internalID: 1846426457677503917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_16
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 170
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a8f165306804710800000000000000
+      internalID: 1675486410269756043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 114
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf35b421aff462960800000000000000
+      internalID: 7576831358564783099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_18
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 132
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5a8d1f0a8a79f60800000000000000
+      internalID: 8041081068899050978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_19
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 80
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e370ed98af9cc8640800000000000000
+      internalID: 5083660157286483774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 96
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ce69764efbf1e00800000000000000
+      internalID: 1017743028520414259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15403ca1e4f8349b0800000000000000
+      internalID: -5097072787634060207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 59
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c9dd8fd3165d9e0800000000000000
+      internalID: -1597263574036800359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_23
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 28
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fce3eecdb6385d00800000000000000
+      internalID: 961578709291363575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_24
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 64
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21798d16937f386d0800000000000000
+      internalID: -2989273901817096430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 26
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b354c8f61ab130430800000000000000
+      internalID: 3747869695077532987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 9
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f208ac60ac68da90800000000000000
+      internalID: -7288956560625630474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_27
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 17
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e7b7f1972fe9d70800000000000000
+      internalID: 9051938903094427157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b173c5d53ba2f690800000000000000
+      internalID: -7569799775948410448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_29
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 0
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f40cf8c25c504cf0800000000000000
+      internalID: -270114467013196556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_bombing_aim_30
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 4
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4f335e634c132d0800000000000000
+      internalID: -3300641311833197388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ui_bombing_aim_0: 8470040756037666920
+      ui_bombing_aim_1: -3611387809297410870
+      ui_bombing_aim_10: 2156213872667229554
+      ui_bombing_aim_11: -7819716144867408915
+      ui_bombing_aim_12: -7242935184067855606
+      ui_bombing_aim_13: -2235986200430433296
+      ui_bombing_aim_14: 6732190578861321477
+      ui_bombing_aim_15: 1846426457677503917
+      ui_bombing_aim_16: 1675486410269756043
+      ui_bombing_aim_17: 7576831358564783099
+      ui_bombing_aim_18: 8041081068899050978
+      ui_bombing_aim_19: 5083660157286483774
+      ui_bombing_aim_2: -8712689620470572029
+      ui_bombing_aim_20: 1017743028520414259
+      ui_bombing_aim_21: -5097072787634060207
+      ui_bombing_aim_22: -1597263574036800359
+      ui_bombing_aim_23: 961578709291363575
+      ui_bombing_aim_24: -2989273901817096430
+      ui_bombing_aim_25: 3747869695077532987
+      ui_bombing_aim_26: -7288956560625630474
+      ui_bombing_aim_27: 9051938903094427157
+      ui_bombing_aim_28: -7569799775948410448
+      ui_bombing_aim_29: -270114467013196556
+      ui_bombing_aim_3: -1154331024288559371
+      ui_bombing_aim_30: -3300641311833197388
+      ui_bombing_aim_4: -7096709101827748112
+      ui_bombing_aim_5: 2012249534708454621
+      ui_bombing_aim_6: -1869993706204928636
+      ui_bombing_aim_7: -5441158173251711030
+      ui_bombing_aim_8: -1895253610758843624
+      ui_bombing_aim_9: 5319043015984794042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

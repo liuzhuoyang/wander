@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b7ac9f6a3a6459ea6d19694cb2e039, type: 3}
+  m_Name: relic_mythic_001
+  m_EditorClassIdentifier: 
+  relicName: relic_mythic_001
+  previewDisplayName: Quantum Observer
+  previewInfo: Quantum Observer Info
+  displayName: relic/mythic/name/001
+  info: relic/mythic/info/001
+  rarity: 5
+  effectDamageType: 2
+  effectAttributeType: 1
+  passiveType: 3
+  value: 0.001

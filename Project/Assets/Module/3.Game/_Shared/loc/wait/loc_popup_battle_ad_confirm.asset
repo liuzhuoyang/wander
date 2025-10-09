@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_popup_battle_ad_confirm
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: battle/popup_ad_confirm/battle_ad_coin
+    textEnglish: Watch Ad to get {0} Coin?
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u89C2\u770B\u5E7F\u544A\u4EE5\u83B7\u53D6 {0} \u91D1\u5E01\uFF1F"
+    textTraditionChinese: "\u89C0\u770B\u5EE3\u544A\u4EE5\u7372\u5F97 {0} \u91D1\u5E63\uFF1F"
+    textJapanese: "\u5E83\u544A\u3092\u898B\u3066{0}\u30B3\u30A4\u30F3\u3092\u7372\u5F97\u3057\u307E\u3059\u304B\uFF1F"
+    textKorean: "\uAD11\uACE0 \uC2DC\uCCAD \uD6C4 {0} \uCF54\uC778 \uBC1B\uAE30?"
+    textFrench: "Regardez une pub pour obtenir {0} pi\xE8ce ?"
+    textGerman: "Schau Werbung, um {0} M\xFCnzen zu erhalten?"
+    textSpanish: "\xBFVer anuncio para obtener {0} monedas?"
+    textPortuguese: "Assista ao an\xFAncio para ganhar {0} Coin?"
+    textItalian: "Guarda la pubblicit\xE0 per ottenere {0} Coin?"
+    textDutch: Bekijk advertentie om {0} munt te krijgen?
+    textRussian: "\u0421\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u0443,
+      \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+      {0} \u043C\u043E\u043D\u0435\u0442?"
+    textThai: "\u0E14\u0E39\u0E42\u0E06\u0E29\u0E13\u0E32\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E23\u0E31\u0E1A
+      {0} \u0E40\u0E2B\u0E23\u0E35\u0E22\u0E0D?"

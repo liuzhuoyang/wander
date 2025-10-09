@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_item_currency
+  m_EditorClassIdentifier: 
+  isMapping: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: item/currency/coin
+    textEnglish: Coin
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u661F\u5E01"
+    textTraditionChinese: "\u661F\u5E63"
+    textJapanese: "\u30B9\u30BF\u30FC\u30C0\u30E9\u30FC"
+    textKorean: "\uC2A4\uD0C0 \uCF54\uC778"
+    textFrench: "Pi\xE8ce \xC9toile"
+    textGerman: "Sternenm\xFCnze"
+    textSpanish: Moneda Estrella
+    textPortuguese: Estrela Moeda
+    textItalian: Stella Moneta
+    textDutch: Sterrenmunt
+    textRussian: "\u0417\u0432\u0435\u0437\u0434\u043D\u0430\u044F \u043C\u043E\u043D\u0435\u0442\u0430"
+    textThai: "\u0E2A\u0E15\u0E32\u0E23\u0E4C\u0E04\u0E2D\u0E22\u0E19\u0E4C"
+  - key: item/currency/gem
+    textEnglish: Gem
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B9D\u77F3"
+    textTraditionChinese: "\u5BF6\u77F3"
+    textJapanese: "\u30B8\u30A7\u30E0"
+    textKorean: "\uBCF4\uC11D"
+    textFrench: Gemme
+    textGerman: Gemme
+    textSpanish: Gema
+    textPortuguese: Gema
+    textItalian: Gemma
+    textDutch: Edelsteen
+    textRussian: "\u0413\u0435\u043C"
+    textThai: "\u0E2D\u0E31\u0E0D\u0E21\u0E13\u0E35"
+  - key: item/currency/energy
+    textEnglish: Energy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u80FD\u91CF"
+    textTraditionChinese: "\u80FD\u91CF"
+    textJapanese: "\u30A8\u30CD\u30EB\u30AE\u30FC"
+    textKorean: "\uC5D0\uB108\uC9C0"
+    textFrench: "\xC9nergie"
+    textGerman: Energie
+    textSpanish: "Energ\xEDa"
+    textPortuguese: Energia
+    textItalian: Energia
+    textDutch: Energie
+    textRussian: "\u042D\u043D\u0435\u0440\u0433\u0438\u044F"
+    textThai: "\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19"

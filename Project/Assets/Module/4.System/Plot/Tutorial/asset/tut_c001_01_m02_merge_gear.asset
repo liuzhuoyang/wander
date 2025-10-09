@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd615461238344b59b7a3b66008c462, type: 3}
+  m_Name: tut_c001_01_m02_merge_gear
+  m_EditorClassIdentifier: 
+  tutName: tut_c001_01_m02_merge_gear
+  totalStep: 2
+  listAction:
+  - dialogKey: loc_tut_c001_01_m01_merge_gear_01
+    tutActionType: 2
+    btnEventKey: 
+    customAction: 101
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1003_01^CUSTOM_ACTION^^TUT_BATTLE_GEAR_MOVE^Top
+  - dialogKey: loc_tut_c001_01_m01_merge_gear_02
+    tutActionType: 1
+    btnEventKey: btn_merge_refresh
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1003_02^BUTTON_ACTION^btn_merge_refresh^None^Top

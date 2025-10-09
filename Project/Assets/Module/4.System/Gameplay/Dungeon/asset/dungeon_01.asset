@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09e78eef030144a19e4beef59cf5b88, type: 3}
+  m_Name: dungeon_01
+  m_EditorClassIdentifier: 
+  dungeonName: dungeon_01
+  dungeonType: 0
+  displayName: page/dungeon/page_dungeon_01
+  costItem: {fileID: 11400000, guid: 87b3712ce7a254e8181ec92b1951b785, type: 2}
+  costItemName: item_key_dungeon_1
+  levelAsset: {fileID: 11400000, guid: 898a31a8484124494a7cfc3617dd2464, type: 2}
+  levelName: level_dungeon_001_01
+  isLocked: 0

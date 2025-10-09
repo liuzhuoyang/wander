@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cb88ba36f8e40548ea8ef2d84d58a0, type: 3}
+  m_Name: 04_task_daily_upgrade_gear
+  m_EditorClassIdentifier: 
+  taskName: 04_task_daily_upgrade_gear
+  targetNum: 1
+  taskBase: {fileID: 11400000, guid: 8ab42e94ea3754e95a051548cd3b5627, type: 2}
+  taskBaseName: task_base_upgrade_gear
+  rewardPoint: 10

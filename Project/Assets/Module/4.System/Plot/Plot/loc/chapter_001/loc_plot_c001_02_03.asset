@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_02_03
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_02_03_01
+    textEnglish: Here, you can view all the weapons your factory is authorized to
+      produce.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5728\u6B64\uFF0C\u60A8\u53EF\u4EE5\u67E5\u770B\u5DE5\u5382\u83B7\u51C6\u751F\u4EA7\u7684\u6240\u6709\u6B66\u5668\u3002"
+    textTraditionChinese: "\u5728\u6B64\uFF0C\u60A8\u53EF\u4EE5\u67E5\u770B\u60A8\u7684\u5DE5\u5EE0\u7372\u6388\u6B0A\u751F\u7522\u7684\u6240\u6709\u6B66\u5668\u3002"
+    textJapanese: "\u3053\u3053\u3067\u306F\u3001\u3042\u306A\u305F\u306E\u5DE5\u5834\u304C\u751F\u7523\u3092\u8A31\u53EF\u3055\u308C\u3066\u3044\u308B\u3059\u3079\u3066\u306E\u6B66\u5668\u3092\u95B2\u89A7\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "\uC5EC\uAE30\uC5D0\uC11C \uADC0\uD558\uC758 \uACF5\uC7A5\uC774 \uC0DD\uC0B0\uD560
+      \uC218 \uC788\uB294 \uBAA8\uB4E0 \uBB34\uAE30\uB97C \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Ici, vous pouvez voir toutes les armes que votre usine est autoris\xE9e
+      \xE0 produire."
+    textGerman: "Hier k\xF6nnen Sie alle Waffen sehen, die Ihre Fabrik produzieren
+      darf."
+    textSpanish: "Aqu\xED puedes ver todas las armas que tu f\xE1brica est\xE1 autorizada
+      a producir."
+    textPortuguese: "Aqui, voc\xEA pode ver todas as armas que sua f\xE1brica est\xE1
+      autorizada a produzir."
+    textItalian: "Qui puoi vedere tutte le armi che la tua fabbrica \xE8 autorizzata
+      a produrre."
+    textDutch: Hier kun je alle wapens zien die je fabriek mag produceren.
+    textRussian: "\u0417\u0434\u0435\u0441\u044C \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435
+      \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C \u0432\u0441\u0435
+      \u043E\u0440\u0443\u0436\u0438\u0435, \u043A\u043E\u0442\u043E\u0440\u043E\u0435
+      \u0432\u0430\u0448\u0430 \u0444\u0430\u0431\u0440\u0438\u043A\u0430 \u0438\u043C\u0435\u0435\u0442
+      \u043F\u0440\u0430\u0432\u043E \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C."
+    textThai: "\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48 \u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E17\u0E35\u0E48\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E43\u0E2B\u0E49\u0E1C\u0E25\u0E34\u0E15\u0E44\u0E14\u0E49"
+  - key: loc_plot_c001_02_03_02
+    textEnglish: Unauthorized ones can be viewed but cannot be used.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u672A\u7ECF\u6388\u6743\u8005\u53EF\u67E5\u770B\u4F46\u4E0D\u53EF\u4F7F\u7528\u3002"
+    textTraditionChinese: "\u672A\u7D93\u6388\u6B0A\u8005\u53EF\u67E5\u770B\u4F46\u7121\u6CD5\u4F7F\u7528\u3002"
+    textJapanese: "\u8A31\u53EF\u3055\u308C\u3066\u3044\u306A\u3044\u3082\u306E\u306F\u95B2\u89A7\u53EF\u80FD\u3067\u3059\u304C\u3001\u4F7F\u7528\u306F\u3067\u304D\u307E\u305B\u3093\u3002"
+    textKorean: "\uC2B9\uC778\uB418\uC9C0 \uC54A\uC740 \uAC83\uC740 \uBCFC \uC218
+      \uC788\uC9C0\uB9CC \uC0AC\uC6A9\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."
+    textFrench: "Les non autoris\xE9s peuvent \xEAtre consult\xE9s mais pas utilis\xE9s."
+    textGerman: "Nicht autorisierte k\xF6nnen eingesehen, aber nicht genutzt werden."
+    textSpanish: Los no autorizados pueden verse pero no usarse.
+    textPortuguese: "Os n\xE3o autorizados podem ser visualizados, mas n\xE3o podem
+      ser usados."
+    textItalian: Non autorizzati possono essere visualizzati ma non utilizzati.
+    textDutch: Onbevoegden kunnen worden bekeken maar niet worden gebruikt.
+    textRussian: "\u041D\u0435\u0430\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u044B\u0435
+      \u043C\u043E\u0433\u0443\u0442 \u043F\u0440\u043E\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0442\u044C,
+      \u043D\u043E \u043D\u0435 \u043C\u043E\u0433\u0443\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C."
+    textThai: "\u0E1C\u0E39\u0E49\u0E17\u0E35\u0E48\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E14\u0E39\u0E44\u0E14\u0E49\u0E41\u0E15\u0E48\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49\u0E07\u0E32\u0E19\u0E44\u0E14\u0E49"
+  - key: loc_plot_c001_02_03_03_option_1
+    textEnglish: I will collect them all sooner or later.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6211\u8FDF\u65E9\u4F1A\u628A\u5B83\u4EEC\u5168\u90E8\u6536\u96C6\u8D77\u6765\u3002"
+    textTraditionChinese: "\u6211\u9072\u65E9\u6703\u628A\u5B83\u5011\u5168\u90E8\u6536\u96C6\u8D77\u4F86\u3002"
+    textJapanese: "\u3044\u305A\u308C\u5168\u3066\u96C6\u3081\u3066\u307F\u305B\u308B\u3002"
+    textKorean: "\uB098\uB294 \uC5B8\uC820\uAC00 \uADF8\uB4E4\uC744 \uBAA8\uB450
+      \uBAA8\uC744 \uAC70\uC57C."
+    textFrench: "Je les rassemblerai tous t\xF4t ou tard."
+    textGerman: "Ich werde sie alle fr\xFCher oder sp\xE4ter sammeln."
+    textSpanish: "Los recoger\xE9 todos tarde o temprano."
+    textPortuguese: Vou coletar todos mais cedo ou mais tarde.
+    textItalian: "Li raccoglier\xF2 tutti prima o poi."
+    textDutch: Ik zal ze vroeg of laat allemaal verzamelen.
+    textRussian: "\u042F \u0441\u043E\u0431\u0435\u0440\u0443 \u0438\u0445 \u0432\u0441\u0435\u0445
+      \u0440\u0430\u043D\u043E \u0438\u043B\u0438 \u043F\u043E\u0437\u0434\u043D\u043E."
+    textThai: "\u0E09\u0E31\u0E19\u0E08\u0E30\u0E40\u0E01\u0E47\u0E1A\u0E21\u0E31\u0E19\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E44\u0E21\u0E48\u0E0A\u0E49\u0E32\u0E01\u0E47\u0E40\u0E23\u0E47\u0E27"
+  - key: loc_plot_c001_02_03_03_option_2
+    textEnglish: I don't need those.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6211\u4E0D\u9700\u8981\u90A3\u4E9B\u3002"
+    textTraditionChinese: "\u6211\u4E0D\u9700\u8981\u90A3\u4E9B\u3002"
+    textJapanese: "\u305D\u308C\u3089\u306F\u8981\u308A\u307E\u305B\u3093\u3002"
+    textKorean: "\uB098\uB294 \uADF8\uB7F0 \uAC83 \uD544\uC694 \uC5C6\uC5B4."
+    textFrench: "Je n'ai pas besoin de \xE7a."
+    textGerman: Ich brauche die nicht.
+    textSpanish: No necesito esos.
+    textPortuguese: "N\xE3o preciso disso."
+    textItalian: Non ho bisogno di quelli.
+    textDutch: Ik heb die niet nodig.
+    textRussian: "\u041C\u043D\u0435 \u044D\u0442\u043E \u043D\u0435 \u043D\u0443\u0436\u043D\u043E."
+    textThai: "\u0E09\u0E31\u0E19\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E2A\u0E34\u0E48\u0E07\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19"
+  - key: loc_plot_c001_02_03_04
+    textEnglish: Of course.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5F53\u7136\u3002"
+    textTraditionChinese: "\u7576\u7136\u3002"
+    textJapanese: "\u3082\u3061\u308D\u3093\u3002"
+    textKorean: "\uBB3C\uB860\uC774\uC8E0."
+    textFrench: "Bien s\xFBr."
+    textGerman: "Nat\xFCrlich."
+    textSpanish: Por supuesto.
+    textPortuguese: Claro.
+    textItalian: Certo.
+    textDutch: Natuurlijk.
+    textRussian: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E."
+    textThai: "\u0E41\u0E19\u0E48\u0E19\u0E2D\u0E19"
+  - key: loc_plot_c001_02_03_05
+    textEnglish: Commander, after unlocking a weapon with the blueprints, any excess
+      can be used to enhance the weapon.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6307\u6325\u5B98\uFF0C\u7528\u84DD\u56FE\u89E3\u9501\u6B66\u5668\u540E\uFF0C\u591A\u4F59\u7684\u90E8\u5206\u53EF\u7528\u4E8E\u5F3A\u5316\u6B66\u5668\u3002"
+    textTraditionChinese: "\u6307\u63EE\u5B98\uFF0C\u4F7F\u7528\u85CD\u5716\u89E3\u9396\u6B66\u5668\u5F8C\uFF0C\u591A\u9918\u7684\u90E8\u5206\u53EF\u7528\u65BC\u5F37\u5316\u6B66\u5668\u3002"
+    textJapanese: "\u6307\u63EE\u5B98\u3001\u8A2D\u8A08\u56F3\u3067\u6B66\u5668\u3092\u89E3\u9664\u3057\u305F\u5F8C\u3001\u4F59\u5270\u5206\u306F\u6B66\u5668\u306E\u5F37\u5316\u306B\u4F7F\u7528\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "\uC0AC\uB839\uAD00\uB2D8, \uC124\uACC4\uB3C4\uB85C \uBB34\uAE30\uB97C
+      \uD574\uAE08\uD55C \uD6C4 \uB0A8\uC740 \uAC83\uC740 \uBB34\uAE30\uB97C \uAC15\uD654\uD558\uB294
+      \uB370 \uC0AC\uC6A9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Commandant, apr\xE8s avoir d\xE9bloqu\xE9 une arme avec les plans,
+      l'exc\xE9dent peut \xEAtre utilis\xE9 pour l'am\xE9liorer."
+    textGerman: "Kommandant, nach dem Freischalten einer Waffe mit den Baupl\xE4nen,
+      kann der \xDCberschuss zur Verbesserung der Waffe verwendet werden."
+    textSpanish: "Comandante, despu\xE9s de desbloquear un arma con los planos, el
+      exceso se puede usar para mejorarla."
+    textPortuguese: "Comandante, ap\xF3s desbloquear uma arma com os projetos, qualquer
+      excedente pode ser usado para melhorar a arma."
+    textItalian: "Comandante, dopo aver sbloccato un'arma con i progetti, l'eccesso
+      pu\xF2 essere utilizzato per potenziarla."
+    textDutch: Commandant, na het ontgrendelen van een wapen met de blauwdrukken,
+      kan elk overschot worden gebruikt om het wapen te verbeteren.
+    textRussian: "\u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440, \u043F\u043E\u0441\u043B\u0435
+      \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0438
+      \u043E\u0440\u0443\u0436\u0438\u044F \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E
+      \u0447\u0435\u0440\u0442\u0435\u0436\u0435\u0439, \u0438\u0437\u043B\u0438\u0448\u043A\u0438
+      \u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+      \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F \u043E\u0440\u0443\u0436\u0438\u044F."
+    textThai: "\u0E1C\u0E39\u0E49\u0E1A\u0E31\u0E0D\u0E0A\u0E32\u0E01\u0E32\u0E23
+      \u0E2B\u0E25\u0E31\u0E07\u0E08\u0E32\u0E01\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E04\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E14\u0E49\u0E27\u0E22\u0E1E\u0E34\u0E21\u0E1E\u0E4C\u0E40\u0E02\u0E35\u0E22\u0E27
+      \u0E2A\u0E48\u0E27\u0E19\u0E17\u0E35\u0E48\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E1B\u0E23\u0E30\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E20\u0E32\u0E1E\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E44\u0E14\u0E49"
+  - key: loc_plot_c001_02_03_06
+    textEnglish: Enhancing the weapon will unlock more skill MODs, providing additional
+      strategies against enemies.
+    textHint: "MODs\u7FFB\u8BD1\u6210\u6A21\u7EC4"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5F3A\u5316\u6B66\u5668\u5C06\u89E3\u9501\u66F4\u591A\u6280\u80FD\u6A21\u7EC4\uFF0C\u4E3A\u5BF9\u6297\u654C\u4EBA\u63D0\u4F9B\u989D\u5916\u7B56\u7565\u3002"
+    textTraditionChinese: "\u5F37\u5316\u6B66\u5668\u5C07\u89E3\u9396\u66F4\u591A\u6280\u80FD\u6A21\u7D44\uFF0C\u63D0\u4F9B\u984D\u5916\u7684\u5C0D\u6575\u7B56\u7565\u3002"
+    textJapanese: "\u6B66\u5668\u3092\u5F37\u5316\u3059\u308B\u3068\u3001\u3088\u308A\u591A\u304F\u306E\u30B9\u30AD\u30EB\u6A21\u7D44\u304C\u89E3\u653E\u3055\u308C\u3001\u6575\u306B\u5BFE\u3059\u308B\u8FFD\u52A0\u6226\u7565\u304C\u63D0\u4F9B\u3055\u308C\u307E\u3059\u3002"
+    textKorean: "\uBB34\uAE30\uB97C \uAC15\uD654\uD558\uBA74 \uB354 \uB9CE\uC740
+      \uC2A4\uD0AC \uBAA8\uB4DC\uB97C \uD574\uC81C\uD560 \uC218 \uC788\uC73C\uBA70,
+      \uC801\uC5D0 \uB300\uD55C \uCD94\uAC00 \uC804\uB7B5\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4."
+    textFrench: "Am\xE9liorer l'arme d\xE9bloquera plus de mods de comp\xE9tences,
+      offrant des strat\xE9gies suppl\xE9mentaires contre les ennemis."
+    textGerman: "Die Verbesserung der Waffe schaltet mehr Skill-MODs frei und bietet
+      zus\xE4tzliche Strategien gegen Feinde."
+    textSpanish: "Mejorar el arma desbloquear\xE1 m\xE1s MODs de habilidades, ofreciendo
+      estrategias adicionales contra los enemigos."
+    textPortuguese: "Aprimorar a arma desbloquear\xE1 mais MODs de habilidade, oferecendo
+      estrat\xE9gias adicionais contra os inimigos."
+    textItalian: "Potenziare l'arma sbloccher\xE0 pi\xF9 mod di abilit\xE0, offrendo
+      strategie aggiuntive contro i nemici."
+    textDutch: "Het verbeteren van het wapen ontgrendelt meer skillmods, wat extra
+      strategie\xEBn tegen vijanden biedt."
+    textRussian: "\u0423\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u0435 \u043E\u0440\u0443\u0436\u0438\u044F
+      \u043E\u0442\u043A\u0440\u043E\u0435\u0442 \u0431\u043E\u043B\u044C\u0448\u0435
+      \u043C\u043E\u0434\u043E\u0432 \u043D\u0430\u0432\u044B\u043A\u043E\u0432,
+      \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435
+      \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0438 \u043F\u0440\u043E\u0442\u0438\u0432
+      \u0432\u0440\u0430\u0433\u043E\u0432."
+    textThai: "\u0E01\u0E32\u0E23\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E08\u0E30\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01\u0E42\u0E21\u0E14\u0E39\u0E25\u0E17\u0E31\u0E01\u0E29\u0E30\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21
+      \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E01\u0E25\u0E22\u0E38\u0E17\u0E18\u0E4C\u0E43\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E2A\u0E39\u0E49\u0E01\u0E31\u0E1A\u0E28\u0E31\u0E15\u0E23\u0E39"

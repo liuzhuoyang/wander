@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c001_01_m03
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c001_01_m03_01
+    textEnglish: The Expeditionary Platform integrates a Terrain Modifier.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FDC\u5F81\u5E73\u53F0\u96C6\u6210\u4E86\u5730\u5F62\u4FEE\u6539\u5668\u3002"
+    textTraditionChinese: "\u9060\u5F81\u5E73\u53F0\u96C6\u6210\u4E86\u5730\u5F62\u4FEE\u6539\u5668\u3002"
+    textJapanese: "\u9060\u5F81\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u306F\u5730\u5F62\u5909\u66F4\u88C5\u7F6E\u3092\u7D71\u5408\u3057\u3066\u3044\u307E\u3059\u3002"
+    textKorean: "\uC6D0\uC815 \uD50C\uB7AB\uD3FC\uC740 \uC9C0\uD615 \uC218\uC815\uAE30\uB97C
+      \uD1B5\uD569\uD569\uB2C8\uB2E4."
+    textFrench: "La Plateforme Exp\xE9ditionnaire int\xE8gre un Modificateur de Terrain."
+    textGerman: "Die Expeditionsplattform integriert einen Gel\xE4ndemodifikator."
+    textSpanish: La Plataforma Expedicionaria integra un Modificador de Terreno.
+    textPortuguese: "A Plataforma Expedicion\xE1ria integra um Modificador de Terreno."
+    textItalian: La Piattaforma Expeditionary integra un Modificatore del Terreno.
+    textDutch: Het Expeditionaire Platform integreert een Terrein Modifier.
+    textRussian: "\u042D\u043A\u0441\u043F\u0435\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u0430\u044F
+      \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0430 \u0438\u043D\u0442\u0435\u0433\u0440\u0438\u0440\u0443\u0435\u0442
+      \u043C\u043E\u0434\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440 \u0440\u0435\u043B\u044C\u0435\u0444\u0430."
+    textThai: "\u0E41\u0E1E\u0E25\u0E15\u0E1F\u0E2D\u0E23\u0E4C\u0E21\u0E2A\u0E33\u0E23\u0E27\u0E08\u0E21\u0E35\u0E01\u0E32\u0E23\u0E1B\u0E23\u0E31\u0E1A\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E20\u0E39\u0E21\u0E34\u0E1B\u0E23\u0E30\u0E40\u0E17\u0E28\u0E43\u0E19\u0E15\u0E31\u0E27"
+  - key: loc_plot_c001_01_m03_02
+    textEnglish: You can spend {0} to produce a Terrain Modifier.
+    textHint: 
+    mappingList:
+    - mapping/generic/mapping_generic_Liorite
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u4F60\u53EF\u4EE5\u82B1\u8D39{0}\u6765\u751F\u6210\u4E00\u4E2A\u5730\u5F62\u4FEE\u6539\u5668\u3002"
+    textTraditionChinese: "\u4F60\u53EF\u4EE5\u82B1\u8CBB{0}\u4F86\u751F\u7522\u4E00\u500B\u5730\u5F62\u4FEE\u6539\u5668\u3002"
+    textJapanese: "{0}\u3092\u6D88\u8CBB\u3057\u3066\u5730\u5F62\u5909\u66F4\u88C5\u7F6E\u3092\u751F\u7523\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "{0}\uC744(\uB97C) \uC0AC\uC6A9\uD558\uC5EC \uC9C0\uD615 \uC218\uC815\uC790\uB97C
+      \uC0DD\uC0B0\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    textFrench: "Vous pouvez d\xE9penser {0} pour produire un Modificateur de Terrain."
+    textGerman: "Sie k\xF6nnen {0} ausgeben, um einen Gel\xE4ndemodifikator zu produzieren."
+    textSpanish: Puedes gastar {0} para producir un Modificador de Terreno.
+    textPortuguese: "Voc\xEA pode gastar {0} para produzir um Modificador de Terreno."
+    textItalian: Puoi spendere {0} per produrre un Modificatore di Terreno.
+    textDutch: Je kunt {0} uitgeven om een Terreinwijziger te produceren.
+    textRussian: "\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u043E\u0442\u0440\u0430\u0442\u0438\u0442\u044C
+      {0} \u043D\u0430 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0435 \u043C\u043E\u0434\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0430
+      \u043C\u0435\u0441\u0442\u043D\u043E\u0441\u0442\u0438."
+    textThai: "\u0E04\u0E38\u0E13\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49
+      {0} \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E2A\u0E23\u0E49\u0E32\u0E07 Terrain Modifier"
+  - key: loc_plot_c001_01_m03_03
+    textEnglish: Terrain Modifiers can be used to expand the platform, allowing for
+      the placement of more facilities.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5730\u5F62\u6539\u9020\u5668\u53EF\u7528\u4E8E\u6269\u5C55\u5E73\u53F0\uFF0C\u4ECE\u800C\u653E\u7F6E\u66F4\u591A\u8BBE\u65BD\u3002"
+    textTraditionChinese: "\u5730\u5F62\u4FEE\u6539\u5668\u53EF\u7528\u65BC\u64F4\u5C55\u5E73\u53F0\uFF0C\u5F9E\u800C\u5141\u8A31\u653E\u7F6E\u66F4\u591A\u8A2D\u65BD\u3002"
+    textJapanese: "\u5730\u5F62\u30E2\u30C7\u30A3\u30D5\u30A1\u30A4\u30A2\u30FC\u306F\u30D7\u30E9\u30C3\u30C8\u30D5\u30A9\u30FC\u30E0\u3092\u62E1\u5F35\u3057\u3001\u3088\u308A\u591A\u304F\u306E\u65BD\u8A2D\u3092\u914D\u7F6E\u3067\u304D\u308B\u3088\u3046\u306B\u3059\u308B\u305F\u3081\u306B\u4F7F\u7528\u3067\u304D\u307E\u3059\u3002"
+    textKorean: "\uC9C0\uD615 \uC218\uC815\uC790\uB294 \uD50C\uB7AB\uD3FC\uC744 \uD655\uC7A5\uD558\uC5EC
+      \uB354 \uB9CE\uC740 \uC2DC\uC124\uC744 \uBC30\uCE58\uD560 \uC218 \uC788\uAC8C
+      \uD574\uC90D\uB2C8\uB2E4."
+    textFrench: Les modificateurs de terrain peuvent agrandir la plateforme, permettant
+      de placer plus d'installations.
+    textGerman: "Gel\xE4ndemodifikatoren k\xF6nnen verwendet werden, um die Plattform
+      zu erweitern und die Platzierung weiterer Einrichtungen zu erm\xF6glichen."
+    textSpanish: "Los modificadores de terreno pueden usarse para expandir la plataforma,
+      permitiendo la colocaci\xF3n de m\xE1s instalaciones."
+    textPortuguese: "Os Modificadores de Terreno podem ser usados para expandir a
+      plataforma, permitindo a coloca\xE7\xE3o de mais instala\xE7\xF5es."
+    textItalian: "I modificatori del terreno possono essere utilizzati per espandere
+      la piattaforma, consentendo il posizionamento di pi\xF9 strutture."
+    textDutch: Terreinmodificatoren kunnen worden gebruikt om het platform uit te
+      breiden, waardoor meer faciliteiten geplaatst kunnen worden.
+    textRussian: "\u041C\u043E\u0434\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u044B
+      \u0440\u0435\u043B\u044C\u0435\u0444\u0430 \u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+      \u0434\u043B\u044F \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F
+      \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B, \u0447\u0442\u043E
+      \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0437\u043C\u0435\u0449\u0430\u0442\u044C
+      \u0431\u043E\u043B\u044C\u0448\u0435 \u043E\u0431\u044A\u0435\u043A\u0442\u043E\u0432."
+    textThai: "\u0E15\u0E31\u0E27\u0E1B\u0E23\u0E31\u0E1A\u0E2A\u0E20\u0E32\u0E1E\u0E20\u0E39\u0E21\u0E34\u0E1B\u0E23\u0E30\u0E40\u0E17\u0E28\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E43\u0E0A\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E02\u0E22\u0E32\u0E22\u0E41\u0E17\u0E48\u0E19\u0E27\u0E32\u0E07
+      \u0E0A\u0E48\u0E27\u0E22\u0E43\u0E2B\u0E49\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E27\u0E32\u0E07\u0E2A\u0E34\u0E48\u0E07\u0E2D\u0E33\u0E19\u0E27\u0E22\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E30\u0E14\u0E27\u0E01\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E40\u0E15\u0E34\u0E21\u0E44\u0E14\u0E49"

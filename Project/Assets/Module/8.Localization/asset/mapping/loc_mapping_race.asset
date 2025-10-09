@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_mapping_race
+  m_EditorClassIdentifier: 
+  type: 2
+  isEdit: 0
+  hint: 
+  list:
+  - key: mapping/race/mapping_demiurg
+    textEnglish: Demiurg
+    textHint: "\u5320\u4EBA\u65CF"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5320\u4EBA\u65CF"
+    textTraditionChinese: "\u5320\u4EBA\u65CF"
+    textJapanese: "\u30C7\u30DF\u30A6\u30EB\u30B0"
+    textKorean: "\uB370\uBBF8\uC6B0\uB974\uADF8"
+    textFrench: Demiurg
+    textGerman: Demiurg
+    textSpanish: Demiurg
+    textPortuguese: Demiurg
+    textItalian: Demiurgo
+    textDutch: Demiurg
+    textRussian: "\u0414\u0435\u043C\u0438\u0443\u0440\u0433"
+    textThai: "\u0E40\u0E14\u0E21\u0E34\u0E40\u0E2D\u0E34\u0E23\u0E4C\u0E08"

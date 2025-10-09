@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: module_plot_seq
+  m_EditorClassIdentifier: 
+  m_GroupName: module_plot_seq
+  m_GUID: 7d00a4a223b104d82968a4c76b262aeb
+  m_SerializeEntries:
+  - m_GUID: d9f5a4720f2294374a7d6e93c0756189
+    m_Address: all_plot_seq
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 115df89cbd2664aed9892ebd5f71aea1, type: 2}
+    - {fileID: 11400000, guid: a0f3948a909f245a18e41eae895aa2e7, type: 2}

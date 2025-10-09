@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_popup_battle_ad_skill
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: battle/popup/skill/battle_popup_skill_ad_title
+    textEnglish: Advanced Upgrade Set
+    textHint: "\u4E2D\u6587\u7FFB\u8BD1\u6210\u8FDB\u9636\u5347\u7EA7\u5305"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FDB\u9636\u5347\u7EA7\u5305"
+    textTraditionChinese: "\u9032\u968E\u5347\u7D1A\u5305"
+    textJapanese: "\u30A2\u30C9\u30D0\u30F3\u30B9\u30C8\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u30BB\u30C3\u30C8"
+    textKorean: "\uACE0\uAE09 \uC5C5\uADF8\uB808\uC774\uB4DC \uC138\uD2B8"
+    textFrench: "Ensemble d'am\xE9lioration avanc\xE9e"
+    textGerman: Erweitertes Upgrade-Set
+    textSpanish: Conjunto de Mejoras Avanzadas
+    textPortuguese: "Conjunto de Atualiza\xE7\xE3o Avan\xE7ada"
+    textItalian: Set di Aggiornamento Avanzato
+    textDutch: Geavanceerd Upgrade Pakket
+    textRussian: "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u043D\u044B\u0439
+      \u043D\u0430\u0431\u043E\u0440 \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F"
+    textThai: "\u0E0A\u0E38\u0E14\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14\u0E02\u0E31\u0E49\u0E19\u0E2A\u0E39\u0E07"

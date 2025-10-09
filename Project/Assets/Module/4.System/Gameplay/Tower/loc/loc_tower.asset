@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tower
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: page/tower/floor_x
+    textEnglish: Floor {0}
+    textHint: "\u7FFB\u8BD1\u4E3A \u7B2C{0}\u5C42"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7B2C{0}\u5C42"
+    textTraditionChinese: "\u7B2C{0}\u5C64"
+    textJapanese: "\u7B2C{0}\u968E"
+    textKorean: "{0}\uCE35"
+    textFrench: "\xC9tage {0}"
+    textGerman: Etage {0}
+    textSpanish: Piso {0}
+    textPortuguese: Andar {0}
+    textItalian: Piano {0}
+    textDutch: Verdieping {0}
+    textRussian: "\u042D\u0442\u0430\u0436 {0}"
+    textThai: "\u0E0A\u0E31\u0E49\u0E19 {0}"
+  - key: page/tower/daily_reward
+    textEnglish: Daily Reward
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6BCF\u65E5\u5956\u52B1"
+    textTraditionChinese: "\u6BCF\u65E5\u734E\u52F5"
+    textJapanese: "\u30C7\u30A4\u30EA\u30FC\u30DC\u30FC\u30CA\u30B9"
+    textKorean: "\uC77C\uC77C \uBCF4\uC0C1"
+    textFrench: "R\xE9compense quotidienne"
+    textGerman: "T\xE4gliche Belohnung"
+    textSpanish: Recompensa Diaria
+    textPortuguese: "Recompensa Di\xE1ria"
+    textItalian: Ricompensa giornaliera
+    textDutch: Dagelijkse Beloning
+    textRussian: "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u0430\u044F \u043D\u0430\u0433\u0440\u0430\u0434\u0430"
+    textThai: "\u0E23\u0E32\u0E07\u0E27\u0E31\u0E25\u0E1B\u0E23\u0E30\u0E08\u0E33\u0E27\u0E31\u0E19"

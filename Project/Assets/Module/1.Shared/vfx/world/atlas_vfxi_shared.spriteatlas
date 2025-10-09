@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas_vfxi_shared
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: ce14a7d61b81d4ecbac3719d7c36e96e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 85a7d7d4b20ed43ad8ed1bd6c91ba037: 21300000
+    - 1b5b2a560c34a43c89d2607a53be209e: 21300000
+    - df3002b9b0d194ee59e5271386eef34a: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 85a7d7d4b20ed43ad8ed1bd6c91ba037, type: 3}
+  - {fileID: 21300000, guid: 1b5b2a560c34a43c89d2607a53be209e, type: 3}
+  - {fileID: 21300000, guid: df3002b9b0d194ee59e5271386eef34a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - vfx_tex_shared_ring_001
+  - vfx_tex_shared_star_001
+  - vfx_tex_shared_smoke_001
+  m_RenderDataMap: {}
+  m_Tag: atlas_vfxi_shared
+  m_IsVariant: 0

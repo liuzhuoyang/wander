@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b785fd1066d45a1aa445cf91dd4069, type: 3}
+  m_Name: plot_seq_c001_02
+  m_EditorClassIdentifier: 
+  plotSeqID: plot_seq_c001_02
+  delay: 0
+  listSequenceTaskItem:
+  - seqItemType: 1
+    seqItemName: plot_c001_02_01
+    plotData: {fileID: 11400000, guid: db0c8913757644a948972887cfcc7acf, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_02_01_tavern
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 01dc712b9c2454bcb8400a309b64c630, type: 2}
+  - seqItemType: 1
+    seqItemName: plot_c001_02_02
+    plotData: {fileID: 11400000, guid: d91424122def141cb9b4a9c4c554152b, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_02_02_entre_gear
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 5a5677f771f9341d18bf908e5c5645e7, type: 2}
+  - seqItemType: 1
+    seqItemName: plot_c001_02_03
+    plotData: {fileID: 11400000, guid: f9fae782f04f04a0fb025c0ad81a5e67, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_02_03_equip_gear
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 80bc6da6139d5477697ce6fcc70f3304, type: 2}

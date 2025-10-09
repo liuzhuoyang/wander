@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b785fd1066d45a1aa445cf91dd4069, type: 3}
+  m_Name: plot_seq_c001_04
+  m_EditorClassIdentifier: 
+  plotSeqID: plot_seq_c001_04
+  delay: 0
+  isDeleteOnRelease: 0
+  listSequenceTaskItem:
+  - seqItemType: 1
+    seqItemName: plot_c001_04
+    plotData: {fileID: 11400000, guid: a2728f831272f46f39647a384c81bcd2, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_04_warp
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 1edc69238a7bd4b8295df0fe2d7c92bf, type: 2}

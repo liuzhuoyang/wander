@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_arena_tab
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: arena/tab/duel
+    textEnglish: Duel
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: arena/tab/rank
+    textEnglish: Rank
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6392\u540D"
+    textTraditionChinese: "\u6392\u540D"
+    textJapanese: "\u30E9\u30F3\u30AF"
+    textKorean: "\uC21C\uC704"
+    textFrench: Rang
+    textGerman: Rang
+    textSpanish: Rango
+    textPortuguese: "Classifica\xE7\xE3o"
+    textItalian: Rango
+    textDutch: Rang
+    textRussian: "\u0420\u0430\u043D\u0433"
+    textThai: "\u0E2D\u0E31\u0E19\u0E14\u0E31\u0E1A"
+  - key: arena/tab/record
+    textEnglish: Records
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8BB0\u5F55"
+    textTraditionChinese: "\u8A18\u9304"
+    textJapanese: "\u30EC\u30B3\u30FC\u30C9"
+    textKorean: "\uAE30\uB85D"
+    textFrench: Enregistrements
+    textGerman: Aufzeichnungen
+    textSpanish: Registros
+    textPortuguese: Registros
+    textItalian: Registri
+    textDutch: Archieven
+    textRussian: "\u0417\u0430\u043F\u0438\u0441\u0438"
+    textThai: "\u0E1A\u0E31\u0E19\u0E17\u0E36\u0E01"
+  - key: arena/tab/defence
+    textEnglish: Defense
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9632\u5FA1"
+    textTraditionChinese: "\u9632\u79A6"
+    textJapanese: "\u9632\u885B"
+    textKorean: "\uBC29\uC5B4"
+    textFrench: "D\xE9fense"
+    textGerman: Verteidigung
+    textSpanish: Defensa
+    textPortuguese: Defesa
+    textItalian: Difesa
+    textDutch: Verdediging
+    textRussian: "\u041E\u0431\u043E\u0440\u043E\u043D\u0430"
+    textThai: "\u0E01\u0E32\u0E23\u0E1B\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E19"

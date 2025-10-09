@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c002_03
+  m_EditorClassIdentifier: 
+  plotName: plot_c002_03
+  totalStep: 10
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_01
+    optionKey1: 
+    optionKey2: 
+    content: You are more tenacious than I thought.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_03_02_option_1
+    optionKey2: loc_plot_c002_03_02_option_2
+    content: 
+    optionContent1: "This was a setup\u2014for me."
+    optionConcent2: "You\u2019re not {0}. Who are you?"
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_03
+    optionKey1: 
+    optionKey2: 
+    content: "\u2026\u2026"
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_03_04_option_1
+    optionKey2: loc_plot_c002_03_04_option_2
+    content: 
+    optionContent1: That distress signal.
+    optionConcent2: "You hacked her system back then, didn\u2019t you?"
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_05
+    optionKey1: 
+    optionKey2: 
+    content: Sharp as always, Commander.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 24e9e6176bfa9412db98e46172a331e9, type: 3}
+    avatarNPC: avatar_702
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_06
+    optionKey1: 
+    optionKey2: 
+    content: 'Allow me to properly introduce myself: I am {0}.'
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c002_03_07_option_1
+    optionKey2: loc_plot_c002_03_07_option_2
+    content: 
+    optionContent1: "Where\u2019s {0}?"
+    optionConcent2: What did you do to her?
+  - previewAvatarNPC: {fileID: 21300000, guid: 24e9e6176bfa9412db98e46172a331e9, type: 3}
+    avatarNPC: avatar_702
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_08
+    optionKey1: 
+    optionKey2: 
+    content: "No need to worry about your companion. She\u2019s merely\u2026 quarantined
+      for now."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 24e9e6176bfa9412db98e46172a331e9, type: 3}
+    avatarNPC: avatar_702
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_09
+    optionKey1: 
+    optionKey2: 
+    content: "Once this is over, I\u2019ll return her to you\u2014intact."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 24e9e6176bfa9412db98e46172a331e9, type: 3}
+    avatarNPC: avatar_702
+    dialogType: 0
+    dialogKey: loc_plot_c002_03_10
+    optionKey1: 
+    optionKey2: 
+    content: Before I release her, you need to prove your worth.
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 0}
+  rewardName: 
+  rewardNum: 0

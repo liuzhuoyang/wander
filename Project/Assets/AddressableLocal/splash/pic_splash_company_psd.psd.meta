@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: a74a811b469e849388d486a5a119c010
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7577558511636872615
+    second: pic_splash_company_psd_0
+  - first:
+      213: -2867103749738903866
+    second: pic_splash_company_psd_1
+  - first:
+      213: -6344779155633714248
+    second: pic_splash_company_psd_2
+  - first:
+      213: -1615845718495520350
+    second: pic_splash_company_psd_3
+  - first:
+      213: -30067372601505365
+    second: pic_splash_company_psd_4
+  - first:
+      213: -6277164608927573444
+    second: pic_splash_company_psd_5
+  - first:
+      213: -6283290905260861166
+    second: pic_splash_company_psd_6
+  - first:
+      213: -9092459709214328953
+    second: pic_splash_company_psd_7
+  - first:
+      213: 5180064881276063999
+    second: pic_splash_company_psd_8
+  - first:
+      213: -1413624385897581956
+    second: pic_splash_company_psd_9
+  - first:
+      213: -4328956696697871281
+    second: pic_splash_company_psd_10
+  - first:
+      213: 1932688137445454741
+    second: pic_splash_company_psd_11
+  - first:
+      213: 1142722417968889503
+    second: pic_splash_company_psd_12
+  - first:
+      213: -6687082638621705618
+    second: pic_splash_company_psd_13
+  - first:
+      213: -8755807554490749485
+    second: pic_splash_company_psd_14
+  - first:
+      213: 9141230132897731934
+    second: pic_splash_company_psd_15
+  - first:
+      213: -8657451562459719311
+    second: pic_splash_company_psd_16
+  - first:
+      213: -1801467619625158175
+    second: pic_splash_company_psd_17
+  - first:
+      213: 2820504289498687787
+    second: pic_splash_company_psd_18
+  - first:
+      213: 6524445049531484644
+    second: pic_splash_company_psd_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pic_splash_company_psd_0
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 785
+        width: 249
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad7ad69155e82960800000000000000
+      internalID: 7577558511636872615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 677
+        width: 71
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c64f9684500638d0800000000000000
+      internalID: -2867103749738903866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 676
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb462a59f0d2f7a0800000000000000
+      internalID: -6344779155633714248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 676
+        width: 75
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a91d3151ec5399e0800000000000000
+      internalID: -1615845718495520350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 677
+        width: 69
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba902c842ed259ff0800000000000000
+      internalID: -30067372601505365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 676
+        width: 54
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ad738cb0803e8a0800000000000000
+      internalID: -6277164608927573444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_6
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 676
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219db7346344dc8a0800000000000000
+      internalID: -6283290905260861166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 629
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7877ab1811811d180800000000000000
+      internalID: -9092459709214328953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 629
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff09fe9709943e740800000000000000
+      internalID: 5180064881276063999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_9
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 629
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72beb85c1cc16ce0800000000000000
+      internalID: -1413624385897581956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 629
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f446645f1d47ce3c0800000000000000
+      internalID: -4328956696697871281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_11
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 629
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5933c060f9942da10800000000000000
+      internalID: 1932688137445454741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 396
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e39e71cf3cbdf00800000000000000
+      internalID: 1142722417968889503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 81
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a754515c5b233a0800000000000000
+      internalID: -6687082638621705618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_14
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 83
+        width: 64
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dda5e06b6f1d7680800000000000000
+      internalID: -8755807554490749485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_15
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 83
+        width: 21
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e555771af5c2cde70800000000000000
+      internalID: 9141230132897731934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_16
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 81
+        width: 72
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179107f4cad8ad780800000000000000
+      internalID: -8657451562459719311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 81
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9bfd99eb6eff6e0800000000000000
+      internalID: -1801467619625158175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_18
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 83
+        width: 60
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29e80725b1742720800000000000000
+      internalID: 2820504289498687787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pic_splash_company_psd_19
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 83
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e941ed543c7b8a50800000000000000
+      internalID: 6524445049531484644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pic_splash_company_psd_0: 7577558511636872615
+      pic_splash_company_psd_1: -2867103749738903866
+      pic_splash_company_psd_10: -4328956696697871281
+      pic_splash_company_psd_11: 1932688137445454741
+      pic_splash_company_psd_12: 1142722417968889503
+      pic_splash_company_psd_13: -6687082638621705618
+      pic_splash_company_psd_14: -8755807554490749485
+      pic_splash_company_psd_15: 9141230132897731934
+      pic_splash_company_psd_16: -8657451562459719311
+      pic_splash_company_psd_17: -1801467619625158175
+      pic_splash_company_psd_18: 2820504289498687787
+      pic_splash_company_psd_19: 6524445049531484644
+      pic_splash_company_psd_2: -6344779155633714248
+      pic_splash_company_psd_3: -1615845718495520350
+      pic_splash_company_psd_4: -30067372601505365
+      pic_splash_company_psd_5: -6277164608927573444
+      pic_splash_company_psd_6: -6283290905260861166
+      pic_splash_company_psd_7: -9092459709214328953
+      pic_splash_company_psd_8: 5180064881276063999
+      pic_splash_company_psd_9: -1413624385897581956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

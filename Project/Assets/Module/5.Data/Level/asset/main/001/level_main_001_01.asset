@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c347f912033845faaf817ee10e70458, type: 3}
+  m_Name: level_main_001_01
+  m_EditorClassIdentifier: 
+  levelName: level_main_001_01
+  levelIndex: 1
+  levelType: 0
+  chapterID: 1
+  levelID: 1
+  themeName: theme_001
+  cameraPos: 0
+  totalWave: 5
+  unitLevel: 1
+  difficulty: 0
+  unitRace: zreep
+  bossName: 
+  previewBossIcon: {fileID: 0}
+  enemyUnitAssetList:
+  - previewIcon: {fileID: 0}
+    unlockWave: 0
+    unitName: unit_zreep_melee_common_01
+  - previewIcon: {fileID: 0}
+    unlockWave: 3
+    unitName: unit_zreep_ranged_common_01
+  - previewIcon: {fileID: 0}
+    unlockWave: 0
+    unitName: unit_zreep_melee_elite_01
+  - previewIcon: {fileID: 0}
+    unlockWave: 0
+    unitName: unit_zreep_ranged_elite_01
+  plotSeqData: {fileID: 11400000, guid: 65e620e0717034206ae15f85d90064ff, type: 2}
+  plotSeqID: plot_seq_c001_01
+  plotData: {fileID: 0}
+  plotName: 
+  listWaveMergePlotSeqData:
+  - {fileID: 11400000, guid: a3f1c8cc3c4634b588e4f9d3389070c4, type: 2}
+  - {fileID: 11400000, guid: 377a1560b845b464e995253663f12b56, type: 2}
+  - {fileID: 11400000, guid: 1af52e81452df419081ab1636b94ce7d, type: 2}
+  - {fileID: 11400000, guid: 838ee55654d9248518e6887f643a82c7, type: 2}
+  listWaveMergeSeqID:
+  - plot_seq_c001_01_m01
+  - plot_seq_c001_01_m02
+  - plot_seq_c001_01_m03
+  - plot_seq_c001_01_m05
+  listWaveMergeSeqIndex: 01000000020000000300000005000000
+  listWaveMergePlotData: []
+  listWaveMergePlotName: []
+  listWaveMergePlotIndex: 
+  listWaveFightPlotSeqData:
+  - {fileID: 11400000, guid: f213411fe106f439699dd87b5ff76126, type: 2}
+  listWaveFightSeqID:
+  - plot_seq_c001_01_b04
+  listWaveFightSeqIndex: 04000000
+  listWaveFightPlotData: []
+  listWaveFightPlotName: []
+  listWaveFightPlotIndex: 

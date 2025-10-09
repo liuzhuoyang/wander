@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_energy_popup
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: page/energy/popup/title
+    textEnglish: Add Energy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u589E\u52A0\u80FD\u91CF"
+    textTraditionChinese: "\u589E\u52A0\u80FD\u91CF"
+    textJapanese: "\u30A8\u30CD\u30EB\u30AE\u30FC\u3092\u8FFD\u52A0"
+    textKorean: "\uC5D0\uB108\uC9C0 \uCD94\uAC00"
+    textFrench: "Ajouter de l'\xE9nergie"
+    textGerman: "Energie hinzuf\xFCgen"
+    textSpanish: "A\xF1adir energ\xEDa"
+    textPortuguese: Adicionar Energia
+    textItalian: Aggiungere Energia
+    textDutch: Voeg Energie toe
+    textRussian: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u044D\u043D\u0435\u0440\u0433\u0438\u044E"
+    textThai: "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19"

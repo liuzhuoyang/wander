@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd615461238344b59b7a3b66008c462, type: 3}
+  m_Name: tut_c001_02_01_tavern
+  m_EditorClassIdentifier: 
+  tutName: tut_c001_02_01_tavern
+  totalStep: 4
+  listAction:
+  - dialogKey: loc_tut_c001_02_01_tavern_01
+    tutActionType: 1
+    btnEventKey: btn_lobby_tavern
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1007_01^BUTTON_ACTION^btn_lobby_tavern^None^Top
+  - dialogKey: loc_tut_c001_02_01_tavern_02
+    tutActionType: 1
+    btnEventKey: btn_tavern_summon
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1007_02^BUTTON_ACTION^btn_tavern_summon^None^Top
+  - dialogKey: loc_tut_c001_02_01_tavern_03
+    tutActionType: 2
+    btnEventKey: 
+    customAction: 201
+    dialogPosition: 0
+    joinedActionString: loc_tut_t1007_03^CUSTOM_ACTION^^TUT_TAVERN_SUMMON_GEAR^Hide
+  - dialogKey: loc_tut_c001_02_01_tavern_04
+    tutActionType: 1
+    btnEventKey: btn_tavern_back
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: 

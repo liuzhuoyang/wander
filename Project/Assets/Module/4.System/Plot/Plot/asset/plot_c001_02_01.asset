@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c001_02_01
+  m_EditorClassIdentifier: 
+  plotName: plot_c001_02_01
+  totalStep: 5
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_02_01_01
+    optionKey1: 
+    optionKey2: 
+    content: "Commander, I\u2019d say that was a solid victory\u2014we have patched
+      up parts of our losses."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_02_01_02
+    optionKey1: 
+    optionKey2: 
+    content: I traded some resources with an interstellar merchant and scored us
+      a batch of {0}. Pretty sweet deal, if I say so myself.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c001_02_01_03_option_1
+    optionKey2: loc_plot_c001_02_01_03_option_2
+    content: 
+    optionContent1: '{0}?'
+    optionConcent2: What can I do with it?
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_02_01_04
+    optionKey1: 
+    optionKey2: 
+    content: A kind of Industrial Fabrication Template, which can be uploaded to
+      the Factory.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_p1002_05
+    optionKey1: 
+    optionKey2: 
+    content: The Factory will automatically decode the data and make more weapons.
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 11400000, guid: e505c3390558540f2b6e0e9847ad5a48, type: 2}
+  rewardName: item_token_tavern
+  rewardNum: 1

@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c002_03
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c002_03_01
+    textEnglish: You are more tenacious than I thought.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F60\u6BD4\u6211\u60F3\u8C61\u7684\u66F4\u987D\u5F3A\u3002"
+    textTraditionChinese: "\u4F60\u6BD4\u6211\u60F3\u50CF\u7684\u9084\u8981\u9811\u5F37\u3002"
+    textJapanese: "\u601D\u3063\u305F\u3088\u308A\u7C98\u308A\u5F37\u3044\u3067\u3059\u306D\u3002"
+    textKorean: "\uC0DD\uAC01\uBCF4\uB2E4 \uB048\uC9C8\uAE30\uC2DC\uB124\uC694."
+    textFrench: Tu es plus tenace que je ne le pensais.
+    textGerman: "Du bist hartn\xE4ckiger, als ich dachte."
+    textSpanish: "Eres m\xE1s tenaz de lo que pensaba."
+    textPortuguese: "Voc\xEA \xE9 mais tenaz do que eu pensava."
+    textItalian: "Sei pi\xF9 tenace di quanto pensassi."
+    textDutch: Je bent hardnekkiger dan ik dacht.
+    textRussian: "\u0422\u044B \u0431\u043E\u043B\u0435\u0435 \u0443\u043F\u043E\u0440\u043D\u044B\u0439,
+      \u0447\u0435\u043C \u044F \u0434\u0443\u043C\u0430\u043B."
+    textThai: "\u0E04\u0E38\u0E13\u0E21\u0E35\u0E04\u0E27\u0E32\u0E21\u0E21\u0E38\u0E48\u0E07\u0E21\u0E31\u0E48\u0E19\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32\u0E17\u0E35\u0E48\u0E09\u0E31\u0E19\u0E04\u0E34\u0E14"
+  - key: loc_plot_c002_03_02_option_1
+    textEnglish: "This was a setup\u2014for me."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD9\u662F\u4E2A\u5708\u5957\u2014\u2014\u9488\u5BF9\u6211\u7684\u3002"
+    textTraditionChinese: "\u9019\u662F\u500B\u5708\u5957\u2014\u2014\u70BA\u6211\u8A2D\u7684\u3002"
+    textJapanese: "\u3053\u308C\u306F\u79C1\u306B\u5BFE\u3059\u308B\u7F60\u3060\u3063\u305F\u3002"
+    textKorean: "\uC774\uAC74 \uB098\uB97C \uC704\uD55C \uD568\uC815\uC774\uC5C8\uC5B4."
+    textFrench: "C'\xE9tait un pi\xE8ge \u2014 pour moi."
+    textGerman: "Das war eine Falle \u2013 f\xFCr mich."
+    textSpanish: Esto fue un montaje.
+    textPortuguese: "Foi uma armadilha \u2014 para mim."
+    textItalian: "\xC8 stato un tranello\u2014per me."
+    textDutch: "Dit was een opzet\u2014voor mij."
+    textRussian: "\u042D\u0442\u043E \u0431\u044B\u043B\u0430 \u043B\u043E\u0432\u0443\u0448\u043A\u0430
+      \u2014 \u0434\u043B\u044F \u043C\u0435\u043D\u044F."
+    textThai: "\u0E19\u0E35\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E01\u0E25\u0E25\u0E27\u0E07\u2014\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E09\u0E31\u0E19"
+  - key: loc_plot_c002_03_02_option_2
+    textEnglish: "You\u2019re not {0}. Who are you?"
+    textHint: 
+    mappingList:
+    - mapping/character/mapping_character_701
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u4F60\u4E0D\u662F{0}\u3002\u4F60\u662F\u8C01\uFF1F"
+    textTraditionChinese: "\u4F60\u4E0D\u662F{0}\u3002\u4F60\u662F\u8AB0\uFF1F"
+    textJapanese: "\u3042\u306A\u305F\u306F{0}\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002\u3069\u306A\u305F\u3067\u3059\u304B\uFF1F"
+    textKorean: "\uB108\uB294 {0}\uC774 \uC544\uB2C8\uC57C. \uB10C \uB204\uAD6C\uB2C8?"
+    textFrench: Tu n'es pas {0}. Qui es-tu ?
+    textGerman: Du bist nicht {0}. Wer bist du?
+    textSpanish: "No eres {0}. \xBFQui\xE9n eres?"
+    textPortuguese: "Voc\xEA n\xE3o \xE9 {0}. Quem \xE9 voc\xEA?"
+    textItalian: Non sei {0}. Chi sei?
+    textDutch: Je bent niet {0}. Wie ben jij?
+    textRussian: "\u0422\u044B \u043D\u0435 {0}. \u041A\u0442\u043E \u0442\u044B?"
+    textThai: "\u0E04\u0E38\u0E13\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48 {0} \u0E04\u0E38\u0E13\u0E40\u0E1B\u0E47\u0E19\u0E43\u0E04\u0E23?"
+  - key: loc_plot_c002_03_03
+    textEnglish: "\u2026\u2026"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u2026\u2026"
+    textTraditionChinese: "\u2026\u2026"
+    textJapanese: "\u2026\u2026"
+    textKorean: "\u2026\u2026"
+    textFrench: "\u2026\u2026"
+    textGerman: "\u2026\u2026"
+    textSpanish: "\u2026\u2026"
+    textPortuguese: "\u2026\u2026"
+    textItalian: "\u2026\u2026"
+    textDutch: "\u2026\u2026"
+    textRussian: "\u2026\u2026"
+    textThai: "\u2026\u2026"
+  - key: loc_plot_c002_03_04_option_1
+    textEnglish: That distress signal.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u90A3\u4E2A\u6C42\u6551\u4FE1\u53F7\u3002"
+    textTraditionChinese: "\u90A3\u500B\u6C42\u6551\u4FE1\u865F"
+    textJapanese: "\u305D\u306E\u906D\u96E3\u4FE1\u53F7\u3002"
+    textKorean: "\uADF8 \uACE0\uD1B5 \uC2E0\uD638."
+    textFrench: "Ce signal de d\xE9tresse."
+    textGerman: Dieses Notsignal.
+    textSpanish: "Esa se\xF1al de auxilio."
+    textPortuguese: Aquele sinal de socorro.
+    textItalian: Quel segnale di soccorso.
+    textDutch: Dat noodsignaal.
+    textRussian: "\u0422\u043E\u0442 \u0441\u0438\u0433\u043D\u0430\u043B \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044F."
+    textThai: "\u0E2A\u0E31\u0E0D\u0E0D\u0E32\u0E13\u0E02\u0E2D\u0E04\u0E27\u0E32\u0E21\u0E0A\u0E48\u0E27\u0E22\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E19\u0E31\u0E49\u0E19"
+  - key: loc_plot_c002_03_04_option_2
+    textEnglish: "You hacked her system back then, didn\u2019t you?"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F60\u90A3\u65F6\u5019\u9ED1\u8FDB\u4E86\u5979\u7684\u7CFB\u7EDF\uFF0C\u5BF9\u5427\uFF1F"
+    textTraditionChinese: "\u4F60\u7576\u6642\u5165\u4FB5\u4E86\u5979\u7684\u7CFB\u7D71\uFF0C\u5C0D\u5427\uFF1F"
+    textJapanese: "\u3042\u306E\u6642\u3001\u5F7C\u5973\u306E\u30B7\u30B9\u30C6\u30E0\u3092\u30CF\u30C3\u30AD\u30F3\u30B0\u3057\u305F\u3093\u3060\u308D\uFF1F"
+    textKorean: "\uB2F9\uC2E0\uC774 \uADF8\uB54C \uADF8\uB140\uC758 \uC2DC\uC2A4\uD15C\uC744
+      \uD574\uD0B9\uD588\uC8E0?"
+    textFrench: "Tu as pirat\xE9 son syst\xE8me \xE0 l'\xE9poque, n'est-ce pas ?"
+    textGerman: Du hast damals ihr System gehackt, oder?
+    textSpanish: "Hackeaste su sistema en ese entonces, \xBFno?"
+    textPortuguese: "Voc\xEA hackeou o sistema dela naquela \xE9poca, n\xE3o foi?"
+    textItalian: Hai hackerato il suo sistema allora, vero?
+    textDutch: Je hebt toen haar systeem gehackt, toch?
+    textRussian: "\u0422\u044B \u0442\u043E\u0433\u0434\u0430 \u0432\u0437\u043B\u043E\u043C\u0430\u043B
+      \u0435\u0451 \u0441\u0438\u0441\u0442\u0435\u043C\u0443, \u0434\u0430?"
+    textThai: "\u0E04\u0E38\u0E13\u0E41\u0E2E\u0E47\u0E01\u0E23\u0E30\u0E1A\u0E1A\u0E02\u0E2D\u0E07\u0E40\u0E18\u0E2D\u0E43\u0E19\u0E15\u0E2D\u0E19\u0E19\u0E31\u0E49\u0E19\u0E43\u0E0A\u0E48\u0E44\u0E2B\u0E21?"
+  - key: loc_plot_c002_03_05
+    textEnglish: Sharp as always, Commander.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E00\u5982\u65E2\u5F80\u5730\u654F\u9510\uFF0C\u6307\u6325\u5B98\u3002"
+    textTraditionChinese: "\u4E00\u5982\u65E2\u5F80\u5730\u654F\u92B3\uFF0C\u6307\u63EE\u5B98\u3002"
+    textJapanese: "\u76F8\u5909\u308F\u3089\u305A\u92ED\u3044\u3067\u3059\u306D\u3001\u53F8\u4EE4\u5B98\u3002"
+    textKorean: "\uD56D\uC0C1 \uB0A0\uCE74\uB86D\uAD70\uC694, \uC0AC\uB839\uAD00\uB2D8."
+    textFrench: Toujours aussi vif, Commandant.
+    textGerman: Scharf wie immer, Kommandant.
+    textSpanish: Siempre agudo, Comandante.
+    textPortuguese: Afiado como sempre, Comandante.
+    textItalian: Sempre acuto, Comandante.
+    textDutch: Scherp als altijd, Commandant.
+    textRussian: "\u041E\u0441\u0442\u0451\u0440, \u043A\u0430\u043A \u0432\u0441\u0435\u0433\u0434\u0430,
+      \u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440."
+    textThai: "\u0E04\u0E21\u0E01\u0E23\u0E34\u0E1A\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E40\u0E14\u0E34\u0E21
+      \u0E1C\u0E39\u0E49\u0E1A\u0E31\u0E0D\u0E0A\u0E32\u0E01\u0E32\u0E23"
+  - key: loc_plot_c002_03_06
+    textEnglish: 'Allow me to properly introduce myself: I am {0}.'
+    textHint: 
+    mappingList:
+    - mapping/character/mapping_character_702
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "\u8BF7\u5141\u8BB8\u6211\u6B63\u5F0F\u4ECB\u7ECD\u4E00\u4E0B\u81EA\u5DF1\uFF1A\u6211\u662F{0}\u3002"
+    textTraditionChinese: "\u8ACB\u5141\u8A31\u6211\u6B63\u5F0F\u81EA\u6211\u4ECB\u7D39\uFF1A\u6211\u662F{0}\u3002"
+    textJapanese: "\u79C1\u306B\u81EA\u5DF1\u7D39\u4ECB\u3055\u305B\u3066\u304F\u3060\u3055\u3044\uFF1A\u79C1\u306F{0}\u3067\u3059\u3002"
+    textKorean: "\uC81C\uB300\uB85C \uC790\uAE30\uC18C\uAC1C\uB97C \uD558\uACA0\uC2B5\uB2C8\uB2E4:
+      \uC800\uB294 {0}\uC785\uB2C8\uB2E4."
+    textFrench: "Permettez-moi de me pr\xE9senter correctement : je suis {0}."
+    textGerman: 'Erlauben Sie mir, mich ordentlich vorzustellen: Ich bin {0}.'
+    textSpanish: "Perm\xEDteme presentarme debidamente: soy {0}."
+    textPortuguese: 'Permita-me apresentar-me adequadamente: Eu sou {0}.'
+    textItalian: 'Permettimi di presentarmi correttamente: sono {0}.'
+    textDutch: 'Laat me mezelf even voorstellen: ik ben {0}.'
+    textRussian: "\u041F\u043E\u0437\u0432\u043E\u043B\u044C\u0442\u0435 \u043C\u043D\u0435
+      \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u044C\u0441\u044F:
+      \u044F {0}."
+    textThai: "\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E43\u0E2B\u0E49\u0E1C\u0E21\u0E41\u0E19\u0E30\u0E19\u0E33\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E40\u0E1B\u0E47\u0E19\u0E17\u0E32\u0E07\u0E01\u0E32\u0E23:
+      \u0E1C\u0E21\u0E04\u0E37\u0E2D {0}"
+  - key: loc_plot_c002_03_07_option_1
+    textEnglish: "Where\u2019s {0}?"
+    textHint: 
+    mappingList:
+    - mapping/character/mapping_character_701
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: "{0}\u5728\u54EA\u91CC\uFF1F"
+    textTraditionChinese: "{0}\u5728\u54EA\u88E1\uFF1F"
+    textJapanese: "{0}\u306F\u3069\u3053\u3067\u3059\u304B\uFF1F"
+    textKorean: "{0} \uC5B4\uB514 \uC788\uC5B4\uC694?"
+    textFrench: "O\xF9 est {0} ?"
+    textGerman: Wo ist {0}?
+    textSpanish: "\xBFD\xF3nde est\xE1 {0}?"
+    textPortuguese: "Onde est\xE1 {0}?"
+    textItalian: "Dov'\xE8 {0}?"
+    textDutch: Waar is {0}?
+    textRussian: "\u0413\u0434\u0435 {0}?"
+    textThai: "{0} \u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E19"
+  - key: loc_plot_c002_03_07_option_2
+    textEnglish: What did you do to her?
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F60\u5BF9\u5979\u505A\u4E86\u4EC0\u4E48\uFF1F"
+    textTraditionChinese: "\u4F60\u5C0D\u5979\u505A\u4E86\u4EC0\u9EBC\uFF1F"
+    textJapanese: "\u5F7C\u5973\u306B\u4F55\u3092\u3057\u305F\u306E\uFF1F"
+    textKorean: "\uADF8\uB140\uC5D0\uAC8C \uBB34\uC2A8 \uC9D3\uC744 \uD588\uC5B4?"
+    textFrench: Qu'as-tu fait d'elle ?
+    textGerman: Was hast du mit ihr gemacht?
+    textSpanish: "\xBFQu\xE9 le hiciste?"
+    textPortuguese: "O que voc\xEA fez com ela?"
+    textItalian: Che cosa le hai fatto?
+    textDutch: Wat heb je met haar gedaan?
+    textRussian: "\u0427\u0442\u043E \u0442\u044B \u0441 \u043D\u0435\u0439 \u0441\u0434\u0435\u043B\u0430\u043B?"
+    textThai: "\u0E04\u0E38\u0E13\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23\u0E01\u0E31\u0E1A\u0E40\u0E18\u0E2D?"
+  - key: loc_plot_c002_03_08
+    textEnglish: "No need to worry about your companion. She\u2019s merely\u2026
+      quarantined for now."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E0D\u5FC5\u62C5\u5FC3\u4F60\u7684\u540C\u4F34\u3002\u5979\u53EA\u662F\u2026\u6682\u65F6\u88AB\u9694\u79BB\u4E86\u3002"
+    textTraditionChinese: "\u4E0D\u7528\u64D4\u5FC3\u4F60\u7684\u540C\u4F34\u3002\u5979\u53EA\u662F\u2026\u66AB\u6642\u88AB\u9694\u96E2\u4E86\u3002"
+    textJapanese: "\u3054\u540C\u4F34\u8005\u306E\u3053\u3068\u306F\u5FC3\u914D\u7121\u7528\u3067\u3059\u3002\u5F7C\u5973\u306F\u305F\u3060\u2026\u4ECA\u306E\u3068\u3053\u308D\u9694\u96E2\u3055\u308C\u3066\u3044\u308B\u3060\u3051\u3067\u3059\u3002"
+    textKorean: "\uB3D9\uB8CC\uC5D0 \uB300\uD574 \uAC71\uC815\uD558\uC9C0 \uB9C8\uC138\uC694.
+      \uADF8\uB140\uB294 \uB2E8\uC9C0... \uC9C0\uAE08\uC740 \uACA9\uB9AC \uC911\uC774\uC5D0\uC694."
+    textFrench: "Ne vous inqui\xE9tez pas pour votre compagne. Elle est simplement...
+      en quarantaine pour l'instant."
+    textGerman: "Keine Sorge um deine Begleiterin. Sie ist nur... vorerst in Quarant\xE4ne."
+    textSpanish: "No hay necesidad de preocuparse por tu compa\xF1era. Simplemente
+      est\xE1... en cuarentena por ahora."
+    textPortuguese: "N\xE3o precisa se preocupar com sua companheira. Ela est\xE1
+      apenas... em quarentena por enquanto."
+    textItalian: "Non preoccuparti della tua compagna. \xC8 solo... in quarantena
+      per ora."
+    textDutch: Geen zorgen over je metgezel. Ze is slechts... voorlopig in quarantaine.
+    textRussian: "\u041D\u0435 \u0431\u0435\u0441\u043F\u043E\u043A\u043E\u0439\u0441\u044F
+      \u043E \u0441\u0432\u043E\u0435\u0439 \u0441\u043F\u0443\u0442\u043D\u0438\u0446\u0435.
+      \u041E\u043D\u0430 \u043F\u0440\u043E\u0441\u0442\u043E... \u043F\u043E\u043A\u0430
+      \u043D\u0430 \u043A\u0430\u0440\u0430\u043D\u0442\u0438\u043D\u0435."
+    textThai: "\u0E44\u0E21\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E31\u0E07\u0E27\u0E25\u0E01\u0E31\u0E1A\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E19\u0E02\u0E2D\u0E07\u0E04\u0E38\u0E13
+      \u0E40\u0E18\u0E2D\u0E41\u0E04\u0E48... \u0E16\u0E39\u0E01\u0E01\u0E31\u0E01\u0E01\u0E31\u0E19\u0E44\u0E27\u0E49\u0E0A\u0E31\u0E48\u0E27\u0E04\u0E23\u0E32\u0E27"
+  - key: loc_plot_c002_03_09
+    textEnglish: "Once this is over, I\u2019ll return her to you\u2014intact."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7B49\u8FD9\u4E00\u5207\u7ED3\u675F\uFF0C\u6211\u4F1A\u628A\u5979\u5B8C\u597D\u65E0\u635F\u5730\u8FD8\u7ED9\u4F60\u3002"
+    textTraditionChinese: "\u4E00\u65E6\u7D50\u675F\uFF0C\u6211\u6703\u628A\u5979\u5B8C\u597D\u7121\u7F3A\u5730\u9084\u7D66\u4F60\u3002"
+    textJapanese: "\u3053\u308C\u304C\u7D42\u308F\u3063\u305F\u3089\u3001\u5F7C\u5973\u3092\u7121\u4E8B\u306B\u8FD4\u3059\u3088\u3002"
+    textKorean: "\uC774\uAC8C \uB05D\uB098\uBA74, \uADF8\uB140\uB97C \uC628\uC804\uD55C
+      \uC0C1\uD0DC\uB85C \uB3CC\uB824\uC8FC\uACA0\uC5B4."
+    textFrench: "Une fois que ce sera termin\xE9, je vous la rendrai \u2014 intacte."
+    textGerman: "\"Wenn das vorbei ist, gebe ich sie dir zur\xFCck \u2013 unversehrt.\""
+    textSpanish: "Una vez que esto termine, te la devolver\xE9 intacta."
+    textPortuguese: "\"Quando isso acabar, eu a devolverei a voc\xEA\u2014intacta.\""
+    textItalian: "\"Una volta finito, te la restituir\xF2\u2014intatta.\""
+    textDutch: Zodra dit voorbij is, zal ik haar aan je teruggeven - ongedeerd.
+    textRussian: "\u041A\u043E\u0433\u0434\u0430 \u044D\u0442\u043E \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u0442\u0441\u044F,
+      \u044F \u0432\u0435\u0440\u043D\u0443 \u0435\u0451 \u0442\u0435\u0431\u0435
+      \u2014 \u0446\u0435\u043B\u043E\u0439 \u0438 \u043D\u0435\u0432\u0440\u0435\u0434\u0438\u043C\u043E\u0439."
+    textThai: "\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E40\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E19\u0E35\u0E49\u0E08\u0E1A\u0E25\u0E07
+      \u0E09\u0E31\u0E19\u0E08\u0E30\u0E04\u0E37\u0E19\u0E40\u0E18\u0E2D\u0E43\u0E2B\u0E49\u0E04\u0E38\u0E13\u2014\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C"
+  - key: loc_plot_c002_03_10
+    textEnglish: Before I release her, you need to prove your worth.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5728\u6211\u91CA\u653E\u5979\u4E4B\u524D\uFF0C\u4F60\u9700\u8981\u8BC1\u660E\u81EA\u5DF1\u7684\u4EF7\u503C\u3002"
+    textTraditionChinese: "\u5728\u6211\u91CB\u653E\u5979\u4E4B\u524D\uFF0C\u4F60\u9700\u8981\u8B49\u660E\u81EA\u5DF1\u7684\u50F9\u503C\u3002"
+    textJapanese: "\u5F7C\u5973\u3092\u89E3\u653E\u3059\u308B\u524D\u306B\u3001\u3042\u306A\u305F\u306F\u4FA1\u5024\u3092\u8A3C\u660E\u3059\u308B\u5FC5\u8981\u304C\u3042\u308B\u3002"
+    textKorean: "\uADF8\uB140\uB97C \uD480\uC5B4\uC8FC\uAE30 \uC804\uC5D0, \uB124
+      \uAC00\uCE58\uB97C \uC99D\uBA85\uD574\uC57C \uD574."
+    textFrench: "Avant de la lib\xE9rer, tu dois prouver ta valeur."
+    textGerman: Bevor ich sie freilasse, musst du deinen Wert beweisen.
+    textSpanish: "Antes de liberarla, debes demostrar tu val\xEDa."
+    textPortuguese: "Antes de libert\xE1-la, voc\xEA precisa provar seu valor."
+    textItalian: Prima di rilasciarla, devi dimostrare il tuo valore.
+    textDutch: Voordat ik haar vrijlaat, moet je je waarde bewijzen.
+    textRussian: "\u041F\u0440\u0435\u0436\u0434\u0435 \u0447\u0435\u043C \u044F
+      \u0435\u0451 \u043E\u0442\u043F\u0443\u0449\u0443, \u0442\u044B \u0434\u043E\u043B\u0436\u0435\u043D
+      \u0434\u043E\u043A\u0430\u0437\u0430\u0442\u044C \u0441\u0432\u043E\u044E \u0446\u0435\u043D\u043D\u043E\u0441\u0442\u044C."
+    textThai: "\u0E01\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E09\u0E31\u0E19\u0E08\u0E30\u0E1B\u0E25\u0E48\u0E2D\u0E22\u0E40\u0E18\u0E2D\u0E44\u0E1B
+      \u0E40\u0E18\u0E2D\u0E15\u0E49\u0E2D\u0E07\u0E1E\u0E34\u0E2A\u0E39\u0E08\u0E19\u0E4C\u0E15\u0E31\u0E27\u0E40\u0E2D\u0E07\u0E01\u0E48\u0E2D\u0E19"

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd615461238344b59b7a3b66008c462, type: 3}
+  m_Name: tut_c001_02_03_equip_gear
+  m_EditorClassIdentifier: 
+  tutName: tut_c001_02_03_equip_gear
+  totalStep: 6
+  listAction:
+  - dialogKey: loc_tut_c001_02_03_equip_gear_01
+    tutActionType: 1
+    btnEventKey: btn_gear_slot_07
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1014_01^BUTTON_ACTION^btn_gear_slot_07^None^Top
+  - dialogKey: loc_tut_c001_02_03_equip_gear_02
+    tutActionType: 1
+    btnEventKey: btn_gear_unlock_confirm
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1014_02^BUTTON_ACTION^btn_gear_unlock_confirm^None^Top
+  - dialogKey: loc_tut_c001_02_03_equip_gear_03
+    tutActionType: 1
+    btnEventKey: btn_gear_slot_07
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1014_03^BUTTON_ACTION^btn_gear_slot_07^None^Top
+  - dialogKey: loc_tut_c001_02_03_equip_gear_04
+    tutActionType: 1
+    btnEventKey: btn_gear_upgrade
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1014_04^BUTTON_ACTION^btn_gear_upgrade^None^Top
+  - dialogKey: loc_tut_c001_02_03_equip_gear_05
+    tutActionType: 1
+    btnEventKey: btn_gear_deploy
+    customAction: 0
+    dialogPosition: 1
+    joinedActionString: loc_tut_t1014_05^BUTTON_ACTION^btn_gear_deploy^None^Top
+  - dialogKey: loc_tut_c001_02_03_equip_gear_06
+    tutActionType: 1
+    btnEventKey: ui_gear_equiped
+    customAction: 0
+    dialogPosition: 0
+    joinedActionString: loc_tut_t1014_06^BUTTON_ACTION^ui_gear_equiped^None^Hide

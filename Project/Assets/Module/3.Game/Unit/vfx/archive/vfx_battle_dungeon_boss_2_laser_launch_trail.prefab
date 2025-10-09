@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6876612921714135441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3886457415524116379, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: m_Name
+      value: vfx_battle_dungeon_boss_2_laser_launch_trail
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.09750791
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.21801032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.93962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.21935987
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546129186017109476, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761963022226050137, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e79c4de538e752b42ab70558efd167f6, type: 2}
+    - target: {fileID: 8000570908030246910, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000570908030246910, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000570908030246910, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035783970380641781, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a556913284d62044782336ef5747d0ba, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a900f7aa2eead342855eabd0194d356, type: 3}

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tut_c001_02_01_tavern
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: tut/c001/02_01_tavern_01
+    textEnglish: Enter the Weapon Factory
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FDB\u5165\u6B66\u5668\u5DE5\u5382"
+    textTraditionChinese: "\u9032\u5165\u6B66\u5668\u5DE5\u5EE0"
+    textJapanese: "\u6B66\u5668\u5DE5\u5834\u3078"
+    textKorean: "\uBB34\uAE30 \uACF5\uC7A5\uC5D0 \uB4E4\uC5B4\uAC00\uB2E4"
+    textFrench: Entrez dans l'Usine d'Armes
+    textGerman: Betrete die Waffenfabrik
+    textSpanish: "Ingresa a la F\xE1brica de Armas"
+    textPortuguese: "Entre na F\xE1brica de Armas"
+    textItalian: Entra nella Fabbrica di Armi
+    textDutch: Betreed de Wapenfabriek
+    textRussian: "\u0412\u043E\u0439\u0434\u0438\u0442\u0435 \u043D\u0430 \u043E\u0440\u0443\u0436\u0435\u0439\u043D\u044B\u0439
+      \u0437\u0430\u0432\u043E\u0434"
+    textThai: "\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E42\u0E23\u0E07\u0E07\u0E32\u0E19\u0E2D\u0E32\u0E27\u0E38\u0E18"
+  - key: tut/c001/02_01_tavern_02
+    textEnglish: Tap to craft
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u70B9\u51FB\u5236\u4F5C"
+    textTraditionChinese: "\u9EDE\u64CA\u88FD\u4F5C"
+    textJapanese: "\u30BF\u30C3\u30D7\u3057\u3066\u4F5C\u6210"
+    textKorean: "\uD0ED\uD558\uC5EC \uC81C\uC791"
+    textFrench: Appuyez pour fabriquer
+    textGerman: Tippe zum Herstellen
+    textSpanish: Toca para crear
+    textPortuguese: Toque para criar
+    textItalian: Tocca per creare
+    textDutch: Tik om te maken
+    textRussian: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435, \u0447\u0442\u043E\u0431\u044B
+      \u0441\u043E\u0437\u0434\u0430\u0442\u044C"
+    textThai: "\u0E41\u0E15\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E04\u0E23\u0E32\u0E1F\u0E15\u0E4C"
+  - key: tut/c001/02_01_tavern_03
+    textEnglish: 1
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 1
+    textTraditionChinese: 1
+    textJapanese: 1
+    textKorean: 1
+    textFrench: 1
+    textGerman: 1
+    textSpanish: 1
+    textPortuguese: 1
+    textItalian: 1
+    textDutch: 1
+    textRussian: 1
+    textThai: 1
+  - key: tut/c001/02_01_tavern_04
+    textEnglish: Back to the Lobby
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD4\u56DE\u5927\u5385"
+    textTraditionChinese: "\u8FD4\u56DE\u5927\u5EF3"
+    textJapanese: "\u30ED\u30D3\u30FC\u306B\u623B\u308B"
+    textKorean: "\uB85C\uBE44\uB85C \uB3CC\uC544\uAC00\uAE30"
+    textFrench: Retour au Lobby
+    textGerman: "Zur\xFCck zur Lobby"
+    textSpanish: "De vuelta al vest\xEDbulo"
+    textPortuguese: "De volta ao Sagu\xE3o"
+    textItalian: Torna alla Lobby
+    textDutch: Terug naar de lobby
+    textRussian: "\u041D\u0430\u0437\u0430\u0434 \u0432 \u043B\u043E\u0431\u0431\u0438"
+    textThai: "\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E17\u0E35\u0E48\u0E25\u0E47\u0E2D\u0E1A\u0E1A\u0E35\u0E49"

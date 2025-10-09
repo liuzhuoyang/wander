@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_battle
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: battle/battle_merge_btn_preview
+    textEnglish: Preview
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9884\u89C8"
+    textTraditionChinese: "\u9810\u89BD"
+    textJapanese: "\u30D7\u30EC\u30D3\u30E5\u30FC"
+    textKorean: "\uBBF8\uB9AC\uBCF4\uAE30"
+    textFrench: "Aper\xE7u"
+    textGerman: Vorschau
+    textSpanish: Vista previa
+    textPortuguese: "Pr\xE9-visualiza\xE7\xE3o"
+    textItalian: Anteprima
+    textDutch: Voorbeeld
+    textRussian: "\u041F\u0440\u0435\u0434\u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440"
+    textThai: "\u0E1E\u0E23\u0E35\u0E27\u0E34\u0E27"
+  - key: battle/battle_cast_info
+    textEnglish: Touch to choose a location
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u70B9\u51FB\u9009\u62E9\u4F4D\u7F6E"
+    textTraditionChinese: "\u9EDE\u64CA\u9078\u64C7\u4F4D\u7F6E"
+    textJapanese: "\u5834\u6240\u3092\u9078\u629E\u3059\u308B\u306B\u306F\u30BF\u30C3\u30C1\u3057\u3066\u304F\u3060\u3055\u3044"
+    textKorean: "\uC704\uCE58\uB97C \uC120\uD0DD\uD558\uB824\uBA74 \uD130\uCE58\uD558\uC138\uC694"
+    textFrench: Touchez pour choisir un emplacement
+    textGerman: "Ber\xFChren, um einen Ort auszuw\xE4hlen"
+    textSpanish: "Toca para elegir una ubicaci\xF3n"
+    textPortuguese: Toque para escolher um local
+    textItalian: Tocca per scegliere una posizione
+    textDutch: Tik om een locatie te kiezen
+    textRussian: "\u041A\u043E\u0441\u043D\u0438\u0442\u0435\u0441\u044C, \u0447\u0442\u043E\u0431\u044B
+      \u0432\u044B\u0431\u0440\u0430\u0442\u044C \u043C\u0435\u0441\u0442\u043E"
+    textThai: "\u0E41\u0E15\u0E30\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E15\u0E33\u0E41\u0E2B\u0E19\u0E48\u0E07"
+  - key: battle/battle_merge_level_up
+    textEnglish: Merge Level Up!
+    textHint: "Merge\u7FFB\u8BD1\u6210\u5408\u6210"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5408\u6210\u5347\u7EA7\uFF01"
+    textTraditionChinese: "\u5408\u6210\u5347\u7D1A\uFF01"
+    textJapanese: "\u5408\u6210\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01"
+    textKorean: "\uD569\uCE58\uAE30 \uB808\uBCA8 \uC5C5!"
+    textFrench: Fusionnez Level Up !
+    textGerman: Merge Level Up! - Verschmelze Level Up!
+    textSpanish: "\xA1Fusi\xF3n Subida de Nivel!"
+    textPortuguese: "N\xEDvel de Fus\xE3o Up!"
+    textItalian: Fondi Level Up!
+    textDutch: Merge Level Up!
+    textRussian: "\u041E\u0431\u044A\u0435\u0434\u0438\u043D\u044F\u0439 \u0438 \u0440\u0430\u0437\u0432\u0438\u0432\u0430\u0439\u0441\u044F!"
+    textThai: "\u0E23\u0E27\u0E21\u0E40\u0E25\u0E40\u0E27\u0E25\u0E2D\u0E31\u0E1E!"
+  - key: battle/battle_low
+    textEnglish: Low
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F4E"
+    textTraditionChinese: "\u4F4E"
+    textJapanese: "\u4F4E"
+    textKorean: "\uB0AE\uC74C"
+    textFrench: Bas
+    textGerman: Niedrig
+    textSpanish: Bajo
+    textPortuguese: Baixo
+    textItalian: Basso
+    textDutch: Laag
+    textRussian: "\u041D\u0438\u0437\u043A\u0438\u0439"
+    textThai: "\u0E15\u0E48\u0E33"
+  - key: battle/battle_medium
+    textEnglish: Medium
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E2D"
+    textTraditionChinese: "\u4E2D"
+    textJapanese: "\u4E2D"
+    textKorean: "\uC911\uAC04"
+    textFrench: Moyen
+    textGerman: Mittel
+    textSpanish: Medio
+    textPortuguese: "M\xE9dio"
+    textItalian: Medio
+    textDutch: Medium
+    textRussian: "\u0421\u0440\u0435\u0434\u043D\u0438\u0439"
+    textThai: "\u0E1B\u0E32\u0E19\u0E01\u0E25\u0E32\u0E07"
+  - key: battle/battle_high
+    textEnglish: High
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9AD8"
+    textTraditionChinese: "\u9AD8"
+    textJapanese: "\u30CF\u30A4"
+    textKorean: "\uB192\uC740"
+    textFrench: Haut
+    textGerman: Hoch
+    textSpanish: Alto
+    textPortuguese: Alto
+    textItalian: Alto
+    textDutch: Hoog
+    textRussian: "\u0412\u044B\u0441\u043E\u043A\u0438\u0439"
+    textThai: "\u0E2A\u0E39\u0E07"
+  - key: battle/battle_extreme
+    textEnglish: Extreme
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6781\u7AEF"
+    textTraditionChinese: "\u6975\u7AEF"
+    textJapanese: "\u30A8\u30AF\u30B9\u30C8\u30EA\u30FC\u30E0"
+    textKorean: "\uADF9\uB2E8\uC801\uC778"
+    textFrench: "Extr\xEAme"
+    textGerman: Extrem
+    textSpanish: Extremo
+    textPortuguese: Extremo
+    textItalian: Estremo
+    textDutch: Extreem
+    textRussian: "\u042D\u043A\u0441\u0442\u0440\u0438\u043C"
+    textThai: "\u0E2A\u0E38\u0E14\u0E02\u0E31\u0E49\u0E27"
+  - key: battle/battle_unknown
+    textEnglish: ???
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: ???
+    textTraditionChinese: ???
+    textJapanese: ???
+    textKorean: ???
+    textFrench: ???
+    textGerman: ???
+    textSpanish: ???
+    textPortuguese: ???
+    textItalian: ???
+    textDutch: ???
+    textRussian: ???
+    textThai: ???
+  - key: battle/battle_normal
+    textEnglish: Normal
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6B63\u5E38"
+    textTraditionChinese: "\u6B63\u5E38"
+    textJapanese: "\u901A\u5E38"
+    textKorean: "\uBCF4\uD1B5"
+    textFrench: Normal
+    textGerman: Normal
+    textSpanish: Normal
+    textPortuguese: Normal
+    textItalian: Normale
+    textDutch: Normaal
+    textRussian: "\u041D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u044B\u0439"
+    textThai: "\u0E1B\u0E01\u0E15\u0E34"
+  - key: battle/battle_verylow
+    textEnglish: Very Low
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6781\u4F4E"
+    textTraditionChinese: "\u975E\u5E38\u4F4E"
+    textJapanese: "\u975E\u5E38\u306B\u4F4E\u3044"
+    textKorean: "\uB9E4\uC6B0 \uB0AE\uC74C"
+    textFrench: "Tr\xE8s faible"
+    textGerman: Sehr niedrig
+    textSpanish: Muy bajo
+    textPortuguese: Muito Baixo
+    textItalian: Molto Basso
+    textDutch: Zeer Laag
+    textRussian: "\u041E\u0447\u0435\u043D\u044C \u043D\u0438\u0437\u043A\u0438\u0439"
+    textThai: "\u0E15\u0E48\u0E33\u0E21\u0E32\u0E01"
+  - key: battle/battle_veryhigh
+    textEnglish: Very High
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u975E\u5E38\u9AD8"
+    textTraditionChinese: "\u6975\u9AD8"
+    textJapanese: "\u975E\u5E38\u306B\u9AD8\u3044"
+    textKorean: "\uB9E4\uC6B0 \uB192\uC74C"
+    textFrench: "Tr\xE8s \xE9lev\xE9"
+    textGerman: Sehr hoch
+    textSpanish: Muy Alto
+    textPortuguese: Muito Alto
+    textItalian: Molto Alto
+    textDutch: Zeer Hoog
+    textRussian: "\u041E\u0447\u0435\u043D\u044C \u0432\u044B\u0441\u043E\u043A\u0438\u0439"
+    textThai: "\u0E2A\u0E39\u0E07\u0E21\u0E32\u0E01"
+  - key: battle/battle_gear_info
+    textEnglish: Selected MODs
+    textHint: "Selected\u7FFB\u8BD1\u4E3A\u5DF2\u9009,MODs\u7FFB\u8BD1\u4E3A\u6A21\u7EC4"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u9009\u6A21\u7EC4"
+    textTraditionChinese: "\u5DF2\u9078\u6A21\u7D44"
+    textJapanese: "\u9078\u629E\u3055\u308C\u305FMOD"
+    textKorean: "\uC120\uD0DD\uB41C \uBAA8\uB4DC"
+    textFrench: "MODs s\xE9lectionn\xE9s"
+    textGerman: "Ausgew\xE4hlte MODs"
+    textSpanish: MODs seleccionados
+    textPortuguese: MODs selecionados
+    textItalian: Moduli selezionati
+    textDutch: Geselecteerde MODs
+    textRussian: "\u0412\u044B\u0431\u0440\u0430\u043D\u043D\u044B\u0435 \u043C\u043E\u0434\u044B"
+    textThai: "\u0E42\u0E21\u0E14\u0E39\u0E25\u0E17\u0E35\u0E48\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E44\u0E27\u0E49"
+  - key: battle/battle_bio_new
+    textEnglish: New Enemy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u65B0\u654C\u4EBA"
+    textTraditionChinese: "\u65B0\u6575\u4EBA"
+    textJapanese: "\u65B0\u3057\u3044\u6575"
+    textKorean: "\uC0C8\uB85C\uC6B4 \uC801"
+    textFrench: Nouvel Ennemi
+    textGerman: Neuer Feind
+    textSpanish: Nuevo Enemigo
+    textPortuguese: Novo Inimigo
+    textItalian: Nuovo Nemico
+    textDutch: Nieuwe Vijand
+    textRussian: "\u041D\u043E\u0432\u044B\u0439 \u0432\u0440\u0430\u0433"
+    textThai: "\u0E28\u0E31\u0E15\u0E23\u0E39\u0E43\u0E2B\u0E21\u0E48"
+  - key: battle/battle_choose_unlock
+    textEnglish: Unlock Condition
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u89E3\u9501\u6761\u4EF6"
+    textTraditionChinese: "\u89E3\u9396\u689D\u4EF6"
+    textJapanese: "\u89E3\u653E\u6761\u4EF6"
+    textKorean: "\uC7A0\uAE08 \uD574\uC81C \uC870\uAC74"
+    textFrench: "Condition de d\xE9verrouillage"
+    textGerman: Freischaltbedingung
+    textSpanish: "Condici\xF3n de desbloqueo"
+    textPortuguese: "Condi\xE7\xE3o de desbloqueio"
+    textItalian: Condizione di sblocco
+    textDutch: Ontgrendelvoorwaarde
+    textRussian: "\u0423\u0441\u043B\u043E\u0432\u0438\u0435 \u0440\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0438"
+    textThai: "\u0E40\u0E07\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E02\u0E01\u0E32\u0E23\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01"
+  - key: battle/battle_choose_damage_1
+    textEnglish: '{0} <color=#b6f71b>+</color>'
+    textHint: 
+    mappingList:
+    - mapping/attr/mapping_attr_final_damage
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} <color=#b6f71b>+</color>'
+    textTraditionChinese: '{0} <color=#b6f71b>+</color>'
+    textJapanese: '{0} <color=#b6f71b>+</color>'
+    textKorean: '{0} <color=#b6f71b>+</color>'
+    textFrench: '{0} <color=#b6f71b>+</color>'
+    textGerman: '{0} <color=#b6f71b>+</color>'
+    textSpanish: '{0} <color=#b6f71b>+</color>'
+    textPortuguese: '{0} <color=#b6f71b>+</color>'
+    textItalian: '{0} <color=#b6f71b>+</color>'
+    textDutch: '{0} <color=#b6f71b>+</color>'
+    textRussian: '{0} <color=#b6f71b>+</color>'
+    textThai: '{0} <color=#b6f71b>+</color>'
+  - key: battle/battle_choose_damage_2
+    textEnglish: '{0} <color=#b6f71b>+++</color>'
+    textHint: 
+    mappingList:
+    - mapping/attr/mapping_attr_final_damage
+    allLanguage: 0
+    isMapping: 1
+    textSimpleChinese: '{0} <color=#b6f71b>+++</color>'
+    textTraditionChinese: '{0} <color=#b6f71b>+++</color>'
+    textJapanese: '{0} <color=#b6f71b>+++</color>'
+    textKorean: '{0} <color=#b6f71b>+++</color>'
+    textFrench: '{0} <color=#b6f71b>+++</color>'
+    textGerman: '{0} <color=#b6f71b>+++</color>'
+    textSpanish: '{0} <color=#b6f71b>+++</color>'
+    textPortuguese: '{0} <color=#b6f71b>+++</color>'
+    textItalian: '{0} <color=#b6f71b>+++</color>'
+    textDutch: '{0} <color=#b6f71b>+++</color>'
+    textRussian: '{0} <color=#b6f71b>+++</color>'
+    textThai: '{0} <color=#b6f71b>+++</color>'
+  - key: battle/battle_forge_content
+    textEnglish: Choose a weapon to level up
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9\u5347\u7EA7\u7684\u6B66\u5668"
+    textTraditionChinese: "\u9078\u64C7\u6B66\u5668\u5347\u7D1A"
+    textJapanese: "\u6B66\u5668\u3092\u9078\u3093\u3067\u5F37\u5316\u3059\u308B"
+    textKorean: "\uB808\uBCA8\uC5C5\uD560 \uBB34\uAE30\uB97C \uC120\uD0DD\uD558\uC138\uC694"
+    textFrench: "Choisis une arme \xE0 am\xE9liorer"
+    textGerman: "W\xE4hle eine Waffe zum Verbessern"
+    textSpanish: Elige un arma para mejorar
+    textPortuguese: Escolha uma arma para aprimorar
+    textItalian: Scegli un'arma da potenziare
+    textDutch: Kies een wapen om te verbeteren
+    textRussian: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043E\u0440\u0443\u0436\u0438\u0435
+      \u0434\u043B\u044F \u0443\u043B\u0443\u0447\u0448\u0435\u043D\u0438\u044F"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E2D\u0E32\u0E27\u0E38\u0E18\u0E17\u0E35\u0E48\u0E08\u0E30\u0E40\u0E25\u0E40\u0E27\u0E25\u0E2D\u0E31\u0E1E"

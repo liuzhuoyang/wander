@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97f93650dc65e404995d8611730e723e, type: 3}
+  m_Name: plot_c001_03
+  m_EditorClassIdentifier: 
+  plotName: plot_c001_03
+  totalStep: 10
+  sceneType: 0
+  listPlotItem:
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_01
+    optionKey1: 
+    optionKey2: 
+    content: We have conducted research on the {0} specimens.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_02
+    optionKey1: 
+    optionKey2: 
+    content: "I\u2019ve got something you might be interested in, Commander."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_03
+    optionKey1: 
+    optionKey2: 
+    content: These creatures are not a product of natural evolution.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c001_03_04_option_1
+    optionKey2: loc_plot_c001_03_04_option_2
+    content: 
+    optionContent1: They were engineered?
+    optionConcent2: Their extreme adaptability is unnatural in itself.
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_05
+    optionKey1: 
+    optionKey2: 
+    content: Their genetic structure exhibits clear signs of intron encryption, allowing
+      gene expression to be modified as needed.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_06
+    optionKey1: 
+    optionKey2: 
+    content: I suspect that a node of these creatures is concealed on this planets.
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c001_03_07_option_1
+    optionKey2: loc_plot_c001_03_07_option_2
+    content: 
+    optionContent1: "Find it. That thing\u2019s worth a decent chunk of credits."
+    optionConcent2: "There\u2019s always someone willing to pay big for one of those."
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_08
+    optionKey1: 
+    optionKey2: 
+    content: "Warning! {0} fleet detected\u2014heading straight for us."
+    optionContent1: 
+    optionConcent2: 
+  - previewAvatarNPC: {fileID: 0}
+    avatarNPC: 
+    dialogType: 1
+    dialogKey: 
+    optionKey1: loc_plot_c001_03_09_option_1
+    optionKey2: loc_plot_c001_03_09_option_2
+    content: 
+    optionContent1: Those cursed pirates.
+    optionConcent2: "Fortune favors the bold\u2014push to maximum speed, head for
+      the target!"
+  - previewAvatarNPC: {fileID: 21300000, guid: 8683f1e3efb774bc387e798cd10bbb80, type: 3}
+    avatarNPC: avatar_701
+    dialogType: 0
+    dialogKey: loc_plot_c001_03_10
+    optionKey1: 
+    optionKey2: 
+    content: Acknowledged, Commander.
+    optionContent1: 
+    optionConcent2: 
+  reward: {fileID: 0}
+  rewardName: 
+  rewardNum: 0

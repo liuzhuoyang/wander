@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_mapping_rate
+  m_EditorClassIdentifier: 
+  type: 2
+  isEdit: 0
+  hint: 
+  list:
+  - key: mapping/rate/mapping_rate_10%
+    textEnglish: 10%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 10%
+    textTraditionChinese: 10%
+    textJapanese: "10\uFF05"
+    textKorean: 10%
+    textFrench: 10%
+    textGerman: 10%
+    textSpanish: 10%
+    textPortuguese: 10%
+    textItalian: 10%
+    textDutch: 10%
+    textRussian: 10%
+    textThai: 10%
+  - key: mapping/rate/mapping_rate_20%
+    textEnglish: 20%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 20%
+    textTraditionChinese: 20%
+    textJapanese: 20%
+    textKorean: 20%
+    textFrench: 20 %
+    textGerman: 20%
+    textSpanish: 20%
+    textPortuguese: 20%
+    textItalian: 20%
+    textDutch: 20%
+    textRussian: 20%
+    textThai: 20%
+  - key: mapping/rate/mapping_rate_30%
+    textEnglish: 30%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 30%
+    textTraditionChinese: 30%
+    textJapanese: 30%
+    textKorean: 30%
+    textFrench: 30%
+    textGerman: 30 %
+    textSpanish: 30%
+    textPortuguese: 30%
+    textItalian: 30%
+    textDutch: 30%
+    textRussian: 30%
+    textThai: 30%
+  - key: mapping/rate/mapping_rate_40%
+    textEnglish: 40%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 40%
+    textTraditionChinese: 40%
+    textJapanese: 40%
+    textKorean: 40%
+    textFrench: 40%
+    textGerman: 40 %
+    textSpanish: 40%
+    textPortuguese: 40%
+    textItalian: 40%
+    textDutch: 40%
+    textRussian: 40%
+    textThai: 40%
+  - key: mapping/rate/mapping_rate_50%
+    textEnglish: 50%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 50%
+    textTraditionChinese: 50%
+    textJapanese: "50\uFF05"
+    textKorean: 50%
+    textFrench: 50%
+    textGerman: 50%
+    textSpanish: 50%
+    textPortuguese: 50%
+    textItalian: 50%
+    textDutch: 50%
+    textRussian: 50%
+    textThai: 50%
+  - key: mapping/rate/mapping_rate_60%
+    textEnglish: 60%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 60%
+    textTraditionChinese: 60%
+    textJapanese: 60%
+    textKorean: 60%
+    textFrench: 60%
+    textGerman: 60 %
+    textSpanish: 60%
+    textPortuguese: 60%
+    textItalian: 60%
+    textDutch: 60%
+    textRussian: 60%
+    textThai: 60%
+  - key: mapping/rate/mapping_rate_70%
+    textEnglish: 70%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 70%
+    textTraditionChinese: 70%
+    textJapanese: "70\uFF05"
+    textKorean: 70%
+    textFrench: 70%
+    textGerman: 70%
+    textSpanish: 70%
+    textPortuguese: 70%
+    textItalian: 70%
+    textDutch: 70%
+    textRussian: 70%
+    textThai: 70%
+  - key: mapping/rate/mapping_rate_80%
+    textEnglish: 80%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 80%
+    textTraditionChinese: 80%
+    textJapanese: "80\uFF05"
+    textKorean: 80%
+    textFrench: 80%
+    textGerman: 80%
+    textSpanish: 80%
+    textPortuguese: 80%
+    textItalian: 80%
+    textDutch: 80%
+    textRussian: 80%
+    textThai: 80%
+  - key: mapping/rate/mapping_rate_90%
+    textEnglish: 90%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 90%
+    textTraditionChinese: 90%
+    textJapanese: "90\uFF05"
+    textKorean: 90%
+    textFrench: 90%
+    textGerman: 90 %
+    textSpanish: 90%
+    textPortuguese: 90%
+    textItalian: 90%
+    textDutch: 90%
+    textRussian: 90%
+    textThai: 90%
+  - key: mapping/rate/mapping_rate_100%
+    textEnglish: 100%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 100%
+    textTraditionChinese: 100%
+    textJapanese: 100%
+    textKorean: 100%
+    textFrench: 100%
+    textGerman: 100%
+    textSpanish: 100%
+    textPortuguese: 100%
+    textItalian: 100%
+    textDutch: 100%
+    textRussian: 100%
+    textThai: 100%
+  - key: mapping/rate/mapping_rate_5%
+    textEnglish: 5%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 5%
+    textTraditionChinese: 5%
+    textJapanese: 5%
+    textKorean: 5%
+    textFrench: 5%
+    textGerman: 5%
+    textSpanish: 5%
+    textPortuguese: 5%
+    textItalian: 5%
+    textDutch: 5%
+    textRussian: 5%
+    textThai: 5%
+  - key: mapping/rate/mapping_rate_15%
+    textEnglish: 15%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 15%
+    textTraditionChinese: 15%
+    textJapanese: 15%
+    textKorean: 15%
+    textFrench: 15%
+    textGerman: 15%
+    textSpanish: 15%
+    textPortuguese: 15%
+    textItalian: 15%
+    textDutch: 15%
+    textRussian: 15%
+    textThai: 15%
+  - key: mapping/rate/mapping_rate_25%
+    textEnglish: 25%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 25%
+    textTraditionChinese: 25%
+    textJapanese: 25%
+    textKorean: 25%
+    textFrench: 25%
+    textGerman: 25%
+    textSpanish: 25%
+    textPortuguese: 25%
+    textItalian: 25%
+    textDutch: 25%
+    textRussian: 25%
+    textThai: 25%
+  - key: mapping/rate/mapping_rate_35%
+    textEnglish: 35%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 35%
+    textTraditionChinese: 35%
+    textJapanese: 35%
+    textKorean: 35%
+    textFrench: 35%
+    textGerman: 35%
+    textSpanish: 35%
+    textPortuguese: 35%
+    textItalian: 35%
+    textDutch: 35%
+    textRussian: 35%
+    textThai: 35%
+  - key: mapping/rate/mapping_rate_75%
+    textEnglish: 75%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 75%
+    textTraditionChinese: 75%
+    textJapanese: 75%
+    textKorean: 75%
+    textFrench: 75%
+    textGerman: 75%
+    textSpanish: 75%
+    textPortuguese: 75%
+    textItalian: 75%
+    textDutch: 75%
+    textRussian: 75%
+    textThai: 75%
+  - key: mapping/rate/mapping_rate_120%
+    textEnglish: 120%
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 120%
+    textTraditionChinese: 120%
+    textJapanese: 120%
+    textKorean: 120%
+    textFrench: 120%
+    textGerman: 120%
+    textSpanish: 120%
+    textPortuguese: 120%
+    textItalian: 120%
+    textDutch: 120%
+    textRussian: 120%
+    textThai: 120%

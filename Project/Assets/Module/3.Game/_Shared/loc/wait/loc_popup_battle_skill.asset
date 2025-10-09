@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_popup_battle_skill
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: battle/popup/skill/battle_popup_skill_title
+    textEnglish: Choose a Mod
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9\u4E00\u4E2A\u6A21\u7EC4"
+    textTraditionChinese: "\u9078\u64C7\u4E00\u500B\u6A21\u7D44"
+    textJapanese: "\u30E2\u30FC\u30C9\u3092\u9078\u3076"
+    textKorean: "\uBAA8\uB4DC \uC120\uD0DD"
+    textFrench: Choisissez un mod
+    textGerman: "W\xE4hle einen Mod"
+    textSpanish: Elige un Mod
+    textPortuguese: Escolha um Mod
+    textItalian: Scegli un Mod
+    textDutch: Kies een Mod
+    textRussian: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043C\u043E\u0434"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E21\u0E47\u0E2D\u0E14"
+  - key: battle/popup/skill/battle_popup_skill_tip
+    textEnglish: Select a Mod to Continue
+    textHint: "MOD\u7FFB\u8BD1\u4E3A\u6A21\u7EC4"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9009\u62E9\u4E00\u4E2A\u6A21\u7EC4\u4EE5\u7EE7\u7EED"
+    textTraditionChinese: "\u9078\u64C7\u4E00\u500B\u6A21\u7D44\u4EE5\u7E7C\u7E8C"
+    textJapanese: "\u7D9A\u3051\u308B\u306B\u306FMOD\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044"
+    textKorean: "\uBAA8\uB4DC\uB97C \uC120\uD0DD\uD558\uC5EC \uACC4\uC18D\uD558\uC138\uC694"
+    textFrench: "S\xE9lectionnez un mod pour continuer"
+    textGerman: "W\xE4hle einen Mod, um fortzufahren"
+    textSpanish: Selecciona un Mod para Continuar
+    textPortuguese: Selecione um Mod para Continuar
+    textItalian: Seleziona un Mod per Continuare
+    textDutch: Selecteer een mod om door te gaan
+    textRussian: "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043C\u043E\u0434
+      \u0434\u043B\u044F \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u044F"
+    textThai: "\u0E40\u0E25\u0E37\u0E2D\u0E01\u0E42\u0E21\u0E14\u0E39\u0E25\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E14\u0E33\u0E40\u0E19\u0E34\u0E19\u0E01\u0E32\u0E23\u0E15\u0E48\u0E2D"

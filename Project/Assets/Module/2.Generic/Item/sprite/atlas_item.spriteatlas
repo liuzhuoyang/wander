@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas_item
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 43ff1667bd5c64d32a080ef6e335c9ac, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - f1cc3c40f68e148ac908801e814316f5: 21300000
+    - 1ba4fb502652d41e39a8f27ea07d65d0: 21300000
+    - 86fbf06096a4e4b82af3ebec37e5ba5c: 21300000
+    - 4ae01fc0dbbc347f8816354e2719238c: 21300000
+    - 4e950f014283f416884eaec9d96dd6a1: 21300000
+    - f24b6691d8eb0448dbd9ed7e3f7c0c84: 21300000
+    - 7b4033d1583c0497c98ac7d7bc5987d9: 21300000
+    - 056c69126c8194d38aa8b9e1f80fa135: 21300000
+    - 1d762022e6cc743debc49b34a47449de: 21300000
+    - c3bfa392f54f549cdb1e2a4c88850f66: 21300000
+    - 71485233b853f4a6aa24e747fe8396bd: 21300000
+    - ae2ef05370afa49dbaa57e5a87a5f495: 21300000
+    - 0ac15435d36a34848b5a6b30f63718cc: 21300000
+    - 2abd8355282184cf29e8cc8b116af077: 21300000
+    - 1f9e0196a8aef4d799437c7124974ad1: 21300000
+    - 981326f69f6354948bd480d312ffe08d: 21300000
+    - f02079977e5e64cbab4cebcf2cdca2ee: 21300000
+    - 395547c78274c49a2bf3a79dc792af7b: 21300000
+    - 49473028014ba48d7b9c53a4aac53a3b: 21300000
+    - cfa97f4852a114b7193277ccda698713: 21300000
+    - cc2142b815f2c49ab9abaa34b2d352d6: 21300000
+    - e6fbbdb85d13c4e1b946cbf3c2e6673a: 21300000
+    - 0d1b1f39f957c4b0585db55455e491d7: 21300000
+    - ecde6ca931b85468aa464a9f69c78581: 21300000
+    - 394a648abd958414186ae14d9baf637d: 21300000
+    - fbf539db6ad5a4743b5afc81b8c09839: 21300000
+    - 831929eb0e4ad48658291aaf7888da24: 21300000
+    - cc8b6facb7b4843d4b541328abb51264: 21300000
+    - 93fb71ccbd83d4a7795c935649cd8692: 21300000
+    - 92866bdc81f314343996cf9ee3fc20bd: 21300000
+    - 37c350aedc93d47ce9f19e580d73a9f5: 21300000
+    - 8a2c83fec994f4186876df9b0071272a: 21300000
+    - 5d8faefee91b2439d9b986dc23137b7c: 21300000
+    - 3868fabfacb6c4638af9dc10634a898c: 21300000
+    - cec78cef28513443d92b1d11209ccf34: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: f1cc3c40f68e148ac908801e814316f5, type: 3}
+  - {fileID: 21300000, guid: 1ba4fb502652d41e39a8f27ea07d65d0, type: 3}
+  - {fileID: 21300000, guid: 86fbf06096a4e4b82af3ebec37e5ba5c, type: 3}
+  - {fileID: 21300000, guid: 4ae01fc0dbbc347f8816354e2719238c, type: 3}
+  - {fileID: 21300000, guid: 4e950f014283f416884eaec9d96dd6a1, type: 3}
+  - {fileID: 21300000, guid: f24b6691d8eb0448dbd9ed7e3f7c0c84, type: 3}
+  - {fileID: 21300000, guid: 7b4033d1583c0497c98ac7d7bc5987d9, type: 3}
+  - {fileID: 21300000, guid: 056c69126c8194d38aa8b9e1f80fa135, type: 3}
+  - {fileID: 21300000, guid: 1d762022e6cc743debc49b34a47449de, type: 3}
+  - {fileID: 21300000, guid: c3bfa392f54f549cdb1e2a4c88850f66, type: 3}
+  - {fileID: 21300000, guid: 71485233b853f4a6aa24e747fe8396bd, type: 3}
+  - {fileID: 21300000, guid: ae2ef05370afa49dbaa57e5a87a5f495, type: 3}
+  - {fileID: 21300000, guid: 0ac15435d36a34848b5a6b30f63718cc, type: 3}
+  - {fileID: 21300000, guid: 2abd8355282184cf29e8cc8b116af077, type: 3}
+  - {fileID: 21300000, guid: 1f9e0196a8aef4d799437c7124974ad1, type: 3}
+  - {fileID: 21300000, guid: 981326f69f6354948bd480d312ffe08d, type: 3}
+  - {fileID: 21300000, guid: f02079977e5e64cbab4cebcf2cdca2ee, type: 3}
+  - {fileID: 21300000, guid: 395547c78274c49a2bf3a79dc792af7b, type: 3}
+  - {fileID: 21300000, guid: 49473028014ba48d7b9c53a4aac53a3b, type: 3}
+  - {fileID: 21300000, guid: cfa97f4852a114b7193277ccda698713, type: 3}
+  - {fileID: 21300000, guid: cc2142b815f2c49ab9abaa34b2d352d6, type: 3}
+  - {fileID: 21300000, guid: e6fbbdb85d13c4e1b946cbf3c2e6673a, type: 3}
+  - {fileID: 21300000, guid: 0d1b1f39f957c4b0585db55455e491d7, type: 3}
+  - {fileID: 21300000, guid: ecde6ca931b85468aa464a9f69c78581, type: 3}
+  - {fileID: 21300000, guid: 394a648abd958414186ae14d9baf637d, type: 3}
+  - {fileID: 21300000, guid: fbf539db6ad5a4743b5afc81b8c09839, type: 3}
+  - {fileID: 21300000, guid: 831929eb0e4ad48658291aaf7888da24, type: 3}
+  - {fileID: 21300000, guid: cc8b6facb7b4843d4b541328abb51264, type: 3}
+  - {fileID: 21300000, guid: 93fb71ccbd83d4a7795c935649cd8692, type: 3}
+  - {fileID: 21300000, guid: 92866bdc81f314343996cf9ee3fc20bd, type: 3}
+  - {fileID: 21300000, guid: 37c350aedc93d47ce9f19e580d73a9f5, type: 3}
+  - {fileID: 21300000, guid: 8a2c83fec994f4186876df9b0071272a, type: 3}
+  - {fileID: 21300000, guid: 5d8faefee91b2439d9b986dc23137b7c, type: 3}
+  - {fileID: 21300000, guid: 3868fabfacb6c4638af9dc10634a898c, type: 3}
+  - {fileID: 21300000, guid: cec78cef28513443d92b1d11209ccf34, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon_item_key_dungeon_002
+  - ui_item_dynamic_slot_05_mythic
+  - icon_item_mat_evolve
+  - icon_item_token_ticket_ad
+  - ui_item_dynamic_slot_03_epic
+  - icon_item_shard_gear_random_tier_4
+  - icon_item_point_task
+  - ui_item_dynamic_slot_02_rare
+  - icon_item_key_tower
+  - icon_item_point_trophy
+  - icon_item_battle_exp
+  - icon_item_currency_gem
+  - icon_item_shard_gear_random_tier_1
+  - icon_item_shard_gear_random_tier_2
+  - icon_item_live_001_raveparty_key
+  - icon_item_key_arena
+  - icon_item_mat_star
+  - icon_item_key_gold
+  - icon_item_shard_gear_random_tier_5
+  - icon_item_token_tavern
+  - icon_item_token_fest
+  - icon_item_pass_common
+  - ui_item_dynamic_slot_06_arcane
+  - icon_item_key_dungeon_001
+  - icon_item_currency_energy
+  - icon_item_currency_coin
+  - icon_item_key_silver
+  - icon_item_pass_season
+  - ui_item_dynamic_slot_04_legendary
+  - icon_item_live_001_raveparty_token
+  - ui_item_dynamic_slot_01_common
+  - icon_item_battle_token
+  - icon_item_shard_gear_random_tier_3
+  - icon_item_key_dungeon_003
+  - icon_item_shard_gear_random_tier_6
+  m_RenderDataMap: {}
+  m_Tag: atlas_item
+  m_IsVariant: 0

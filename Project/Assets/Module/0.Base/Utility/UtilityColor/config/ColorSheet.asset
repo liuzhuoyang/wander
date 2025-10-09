@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c70516def703fce439860bb374234b55, type: 3}
+  m_Name: ColorSheet
+  m_EditorClassIdentifier: 
+  textEmphasisColorGreen: {r: 0.7529412, g: 1, b: 0.42745098, a: 1}
+  rariyColors:
+    colorRarityCommon: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+    colorRarityUncommon: {r: 0.59905666, g: 0.8679245, b: 0.35617658, a: 1}
+    colorRarityRare: {r: 0.29814878, g: 0.60436803, b: 0.9433962, a: 1}
+    colorRarityEpic: {r: 0.61834985, g: 0.36405307, b: 0.9528302, a: 1}
+    colorRarityLegendary: {r: 0.9150943, g: 0.8140084, b: 0.16834284, a: 1}
+    colorRarityMythic: {r: 0.9433962, g: 0.26047534, b: 0.25364897, a: 1}
+    colorRarityArcane: {r: 1, g: 0.33773577, b: 0.84694564, a: 1}
+  damageColors:
+    colorDamagePhysical: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
+    colorDamageCryo: {r: 0.43867922, g: 0.87704074, b: 1, a: 1}
+    colorDamageElectro: {r: 0.94268954, g: 0.94509804, b: 0.2980392, a: 1}
+    colorDamageThermal: {r: 0.94509804, g: 0.25882354, b: 0.25490198, a: 1}
+    colorDamageBiochemical: {r: 0, g: 0.7264151, b: 0, a: 1}
+  criticDamageColor: {r: 1, g: 0.7607522, b: 0.28490567, a: 1}
+  healthBarColors:
+    healthCountToColors:
+    - {r: 0.79607844, g: 0.199, b: 0.199, a: 1}
+    - {r: 1, g: 0.55639535, b: 0.125, a: 1}
+    - {r: 0.8721447, g: 0, b: 1, a: 1}
+  FriendlyColor: {r: 0.216981, g: 0.8520563, b: 1, a: 1}
+  EnemyColor: {r: 1, g: 0.37309763, b: 0.26226407, a: 1}
+  FriendlyTrailColor: {r: 0.073584795, g: 0.7365969, b: 1, a: 1}
+  EnemyTrailColor: {r: 1, g: 0.18739915, b: 0.13396227, a: 1}
+  powerOver: {r: 0.6509804, g: 0.99607843, b: 0.4117647, a: 1}
+  powerUnder: {r: 0.99607843, g: 0.22745098, b: 0.29411766, a: 1}
+  attributeEnemyUnknown: {r: 1, g: 0, b: 0.68235296, a: 1}
+  attributeEnemyVeryLow: {r: 1, g: 0.83137256, b: 0.47058824, a: 1}
+  attributeEnemyLow: {r: 0.9098039, g: 0.7607843, b: 0.42745098, a: 1}
+  attributeEnemyNormal: {r: 0.94509804, g: 0.70980394, b: 0.34509805, a: 1}
+  attrubuteEnemyHigh: {r: 0.93333334, g: 0.27450982, b: 0.101960786, a: 1}
+  attributeEnemyVeryHigh: {r: 1, g: 0.09019608, b: 0.050980393, a: 1}

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b785fd1066d45a1aa445cf91dd4069, type: 3}
+  m_Name: plot_seq_c001_01
+  m_EditorClassIdentifier: 
+  plotSeqID: plot_seq_c001_01
+  delay: 0
+  isDeleteOnRelease: 0
+  listSequenceTaskItem:
+  - seqItemType: 1
+    seqItemName: plot_c001_01_01
+    plotData: {fileID: 11400000, guid: e7816d04ecaeb4b48925c1ae55e62a49, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_01_01_enter_talent
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: 6dd69b0d1957f4644851dc2fd69b41c8, type: 2}
+  - seqItemType: 1
+    seqItemName: plot_c001_01_02
+    plotData: {fileID: 11400000, guid: dd01701661ad748f3915ddea0fd06a42, type: 2}
+    tutData: {fileID: 0}
+  - seqItemType: 2
+    seqItemName: tut_c001_01_02_tap_talent
+    plotData: {fileID: 0}
+    tutData: {fileID: 11400000, guid: ec6c5fbaa4c5c4962813ebc27ab9a7a9, type: 2}
+  - seqItemType: 1
+    seqItemName: plot_c001_01_03
+    plotData: {fileID: 11400000, guid: 839367f048198455f91639bcdd4a1c3f, type: 2}
+    tutData: {fileID: 0}

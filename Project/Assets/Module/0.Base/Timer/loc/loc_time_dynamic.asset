@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_time_dynamic
+  m_EditorClassIdentifier: 
+  type: 0
+  isEdit: 0
+  hint: "\u672C\u6761\u76EE\u662F\u901A\u7528\u578B\u52A8\u6001\u672C\u5730\u5316\uFF0C\u901A\u7528\u624D\u80FD\u52A0\uFF0C\u72EC\u7ACB\u6A21\u5757\u529F\u80FD\u91CC\u7684\u672C\u5730\u5316\u6761\u76EE\u4E0D\u8981\u52A0\u5165\u8FD9\u91CC"
+  list:
+  - key: time/dynamic/time_x_s
+    textEnglish: '{0} S'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u79D2"
+    textTraditionChinese: "{0}\u79D2"
+    textJapanese: "{0}\u79D2"
+    textKorean: "{0}\uCD08"
+    textFrench: '{0}S'
+    textGerman: '{0}S'
+    textSpanish: '{0}S'
+    textPortuguese: '{0}S'
+    textItalian: '{0}S'
+    textDutch: '{0}S'
+    textRussian: '{0}S'
+    textThai: '{0}S'
+  - key: time/dynamic/time_x_m
+    textEnglish: '{0} M'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5206\u949F"
+    textTraditionChinese: "{0}\u5206"
+    textJapanese: "{0}\u5206"
+    textKorean: "{0}\uBD84"
+    textFrench: '{0}M'
+    textGerman: '{0}M'
+    textSpanish: '{0}M'
+    textPortuguese: '{0}M'
+    textItalian: '{0}M'
+    textDutch: '{0}M'
+    textRussian: '{0}M'
+    textThai: '{0}M'
+  - key: time/dynamic/time_x_h
+    textEnglish: '{0} H'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5C0F\u65F6"
+    textTraditionChinese: "{0}\u5C0F\u6642"
+    textJapanese: "{0}\u6642\u9593"
+    textKorean: "{0}\uC2DC\uAC04"
+    textFrench: '{0}H'
+    textGerman: '{0}H'
+    textSpanish: '{0}H'
+    textPortuguese: '{0}H'
+    textItalian: '{0}H'
+    textDutch: '{0}H'
+    textRussian: '{0}H'
+    textThai: '{0}H'
+  - key: time/dynamic/time_x_d
+    textEnglish: '{0} D'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5929"
+    textTraditionChinese: "{0}\u65E5"
+    textJapanese: "{0}\u65E5"
+    textKorean: "{0}\uC77C"
+    textFrench: '{0}D'
+    textGerman: '{0}D'
+    textSpanish: '{0}D'
+    textPortuguese: '{0}D'
+    textItalian: '{0}D'
+    textDutch: '{0}D'
+    textRussian: '{0}D'
+    textThai: '{0}D'
+  - key: time/dynamic/time_x_day_y_hour
+    textEnglish: '{0}D{1}H'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5929{1}\u5C0F\u65F6"
+    textTraditionChinese: "{0}\u65E5{1}\u5C0F\u6642"
+    textJapanese: "{0}\u65E5{1}\u6642\u9593"
+    textKorean: "{0}\uC77C{1}\uC2DC\uAC04"
+    textFrench: '{0}D{1}H'
+    textGerman: '{0}D{1}H'
+    textSpanish: '{0}D{1}H'
+    textPortuguese: '{0}D{1}H'
+    textItalian: '{0}D{1}H'
+    textDutch: '{0}D{1}H'
+    textRussian: '{0}D{1}H'
+    textThai: '{0}D{1}H'
+  - key: time/dynamic/time_x_hour_y_min
+    textEnglish: '{0}H{1} M'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5C0F\u65F6{1}\u5206\u949F"
+    textTraditionChinese: "{0}\u5C0F\u6642{1}\u5206"
+    textJapanese: "{0}\u6642\u9593{1}\u5206"
+    textKorean: "{0}\uC2DC\uAC04{1}\uBD84"
+    textFrench: '{0}H{1}M'
+    textGerman: '{0}H{1}M'
+    textSpanish: '{0}H{1}M'
+    textPortuguese: '{0}H{1}M'
+    textItalian: '{0}H{1}M'
+    textDutch: '{0}H{1}M'
+    textRussian: '{0}H{1}M'
+    textThai: '{0}H{1}M'
+  - key: time/dynamic/time_x_min_y_sec
+    textEnglish: '{0}M{1}S'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "{0}\u5206\u949F{1}\u79D2"
+    textTraditionChinese: "{0}\u5206{1}\u79D2"
+    textJapanese: "{0}\u5206{1}\u79D2"
+    textKorean: "{0}\uBD84{1}\uCD08"
+    textFrench: '{0}M{1}S'
+    textGerman: '{0}M{1}S'
+    textSpanish: '{0}M{1}S'
+    textPortuguese: '{0}M{1}S'
+    textItalian: '{0}M{1}S'
+    textDutch: '{0}M{1}S'
+    textRussian: '{0}M{1}S'
+    textThai: '{0}M{1}S'
+  - key: time/dynamic/end_in_x
+    textEnglish: 'Ends In: {0}'
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7ED3\u675F\u4E8E\uFF1A{0}"
+    textTraditionChinese: "\u7D50\u675F\u65BC: {0}"
+    textJapanese: "\u7D42\u4E86\uFF1A{0}"
+    textKorean: "\uB05D\uB098\uB294 \uB0A0\uC9DC: {0}"
+    textFrench: 'SE TERMINE EN : {0}'
+    textGerman: 'ENDLOSS IN: {0}'
+    textSpanish: 'TERMINA EN: {0}'
+    textPortuguese: 'TERMINA EM: {0}'
+    textItalian: 'FINISCE IN: {0}'
+    textDutch: 'EINDIGT IN: {0}'
+    textRussian: "\u0417\u0410\u041A\u0410\u041D\u0427\u0418\u0412\u0410\u0415\u0422\u0421\u042F
+      \u041D\u0410: {0}"
+    textThai: "\u0E08\u0E1A\u0E25\u0E07: {0}"

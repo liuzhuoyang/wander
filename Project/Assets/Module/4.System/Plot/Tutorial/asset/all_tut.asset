@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f5a2c4cc1b9a42b581c2173a2fa4321, type: 3}
+  m_Name: all_tut
+  m_EditorClassIdentifier: 
+  path: Assets/Module/4.System/Plot/Tutorial/asset/
+  listTutData:
+  - {fileID: 11400000, guid: d2ed48fae6f3d44e492a427af056442a, type: 2}
+  - {fileID: 11400000, guid: 6dd69b0d1957f4644851dc2fd69b41c8, type: 2}
+  - {fileID: 11400000, guid: ec6c5fbaa4c5c4962813ebc27ab9a7a9, type: 2}
+  - {fileID: 11400000, guid: bdcb1a21a0a29491ba43da0b269f84c7, type: 2}
+  - {fileID: 11400000, guid: 5d90c24d774b244e2a5eae44c34a57e5, type: 2}
+  - {fileID: 11400000, guid: 6c3edcdf99e2943e2a6b77ca9b6b578a, type: 2}
+  - {fileID: 11400000, guid: d5d1186adcac949c09b632bd29af48ab, type: 2}
+  - {fileID: 11400000, guid: 01dc712b9c2454bcb8400a309b64c630, type: 2}
+  - {fileID: 11400000, guid: 5a5677f771f9341d18bf908e5c5645e7, type: 2}
+  - {fileID: 11400000, guid: 80bc6da6139d5477697ce6fcc70f3304, type: 2}

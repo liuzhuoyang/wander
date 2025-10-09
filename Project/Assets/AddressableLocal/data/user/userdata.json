@@ -1,0 +1,131 @@
+﻿{
+  "userAccount": {
+    "udid": null,
+    "userID": 0,
+    "openID": null,
+    "registerTime": 1759944571,
+    "saveTime": 1759944645,
+    "loginTime": 1759944571
+  },
+  "userServer": null,
+  "userProgress": {
+    "isRegister": false,
+    "isFirstGame": true
+  },
+  "userTag": null,
+  "userItem": {
+    "userItemDict": {},
+    "dictItemCustomExpiry": null
+  },
+  "userStats": {
+    "highestPower": 0,
+    "totalPlayTime": 0,
+    "battleCount": 0,
+    "winCount": 0,
+    "failCount": 0,
+    "mergeCount": 0,
+    "wavePassed": 0,
+    "battleTokenEarned": 0,
+    "enemyKill": 0,
+    "eliteKill": 0,
+    "bossKill": 0
+  },
+  "userEnergy": {
+    "dailyAdEnergy": 0,
+    "dailyGemEnergy": 0,
+    "energyRecoverTimer": 0
+  },
+  "userLevel": {
+    "levelProgressMain": {
+      "levelIndex": 1,
+      "bestWave": 0
+    },
+    "levelLuck": null
+  },
+  "userTower": {
+    "currentFloor": 1,
+    "claimed": false,
+    "dailyClaimFloor": 0,
+    "rewardFloor": false
+  },
+  "userDungeon": {
+    "dictDungeonLevel": {}
+  },
+  "userTask": {
+    "dailyPoint": 0,
+    "dailyClaimPoint": 0,
+    "weeklyPoint": 0,
+    "weeklyClaimPoint": 0,
+    "dictUserTask": null
+  },
+  "userSequenceTask": {
+    "listSeqTask": []
+  },
+  "userAchievement": {
+    "dictUserAchievement": null
+  },
+  "userCheckIn": {
+    "checkInDay": 0,
+    "canReceiveDay": 0,
+    "isFirst": 0
+  },
+  "userGear": {
+    "listEquipGear": null,
+    "dictGear": null,
+    "dictVolatileData": null
+  },
+  "userTalent": {
+    "advancedLevel": 0,
+    "takeRewardLevel": 0,
+    "listTalentLevel": null
+  },
+  "userLoot": {
+    "point": 0,
+    "lockIndex": 0
+  },
+  "userRelic": {
+    "dictRelic": null
+  },
+  "userPet": {
+    "dictPet": null,
+    "listPet": null
+  },
+  "userProfile": {
+    "userName": null,
+    "userAvatar": null,
+    "userFrame": null
+  },
+  "userAvatar": {
+    "listUnlockedAvatar": [],
+    "listUnlockedAvatarFrame": []
+  },
+  "userAFK": {
+    "afkTime": 0,
+    "maxHour": 8
+  },
+  "userShop": null,
+  "userMarket": null,
+  "userFund": null,
+  "userPrivilege": null,
+  "userRoadmap": null,
+  "userHandbook": null,
+  "userAd": null,
+  "userAnalytics": {
+    "loginCount": 0,
+    "loginCountDaily": 0,
+    "loginDay": 2,
+    "isPayDaily": false,
+    "iapCount": 0,
+    "iapTotalValue": 0.0,
+    "rewardAdCount": 0,
+    "rewardAdCountDaily": 0,
+    "interstitialAdCount": 0,
+    "interstitialAdCountDaily": 0,
+    "groupABType": 0
+  },
+  "userLiveEvent": null,
+  "userMisc": {
+    "isNewDayLogin": false,
+    "loginVersion": "0.0.1"
+  }
+}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b7ac9f6a3a6459ea6d19694cb2e039, type: 3}
+  m_Name: relic_rare_01
+  m_EditorClassIdentifier: 
+  relicName: relic_rare_01
+  previewDisplayName: Geological Logbook
+  previewInfo: Geological Logbook Info
+  displayName: relic/rare/name/001
+  info: relic/rare/info/001
+  rarity: 2
+  effectDamageType: 0
+  effectAttributeType: 0
+  passiveType: 1
+  value: 0.01

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_tip_misc
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: "\u8D26\u6237\u76F8\u5173\u63D0\u793A"
+  list:
+  - key: tip/tip_misc_slot_empty
+    textEnglish: Slot can not be empty
+    textHint: "Reinforcement \u7FFB\u8BD1\u6210\u589E\u63F4"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u63D2\u69FD\u4E0D\u80FD\u4E3A\u7A7A"
+    textTraditionChinese: "\u63D2\u69FD\u4E0D\u80FD\u70BA\u7A7A"
+    textJapanese: "\u30B9\u30ED\u30C3\u30C8\u306F\u7A7A\u306B\u3067\u304D\u307E\u305B\u3093\uFF08\u5897\u63F4\uFF09"
+    textKorean: "\uC2AC\uB86F\uC740 \uBE44\uC6CC\uB458 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4"
+    textFrench: "L'emplacement ne peut pas \xEAtre vide."
+    textGerman: Slot darf nicht leer sein
+    textSpanish: "La ranura no puede estar vac\xEDa."
+    textPortuguese: "O slot n\xE3o pode estar vazio."
+    textItalian: "Lo slot non pu\xF2 essere vuoto"
+    textDutch: Sleuf kan niet leeg zijn
+    textRussian: "\u0421\u043B\u043E\u0442 \u043D\u0435 \u043C\u043E\u0436\u0435\u0442
+      \u0431\u044B\u0442\u044C \u043F\u0443\u0441\u0442\u044B\u043C."
+    textThai: "\u0E2A\u0E25\u0E47\u0E2D\u0E15\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E27\u0E48\u0E32\u0E07\u0E44\u0E14\u0E49"
+  - key: tip/tip_misc_no_wingman
+    textEnglish: Equip at least one wingman
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u81F3\u5C11\u88C5\u5907\u4E00\u540D\u50DA\u673A"
+    textTraditionChinese: "\u88DD\u5099\u81F3\u5C11\u4E00\u540D\u50DA\u6A5F"
+    textJapanese: "\u5C11\u306A\u304F\u3068\u30821\u3064\u306E\u30A6\u30A3\u30F3\u30B0\u30DE\u30F3\u3092\u88C5\u5099\u3059\u308B"
+    textKorean: "\uCD5C\uC18C \uD558\uB098\uC758 \uC719\uB9E8\uC744 \uC7A5\uBE44\uD558\uC138\uC694."
+    textFrench: "\xC9quipez au moins un ailier"
+    textGerman: "R\xFCste mindestens einen Wingman aus."
+    textSpanish: "Equipa al menos un compa\xF1ero de ala."
+    textPortuguese: Equipe pelo menos um wingman.
+    textItalian: Equipaggi almeno un gregario.
+    textDutch: "Rust ten minste \xE9\xE9n wingman uit"
+    textRussian: "\u041E\u0441\u043D\u0430\u0441\u0442\u0438\u0442\u0435 \u0445\u043E\u0442\u044F
+      \u0431\u044B \u043E\u0434\u043D\u043E\u0433\u043E \u0432\u0435\u0434\u043E\u043C\u043E\u0433\u043E."
+    textThai: "\u0E15\u0E34\u0E14\u0E15\u0E31\u0E49\u0E07\u0E27\u0E34\u0E07\u0E41\u0E21\u0E19\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E19\u0E49\u0E2D\u0E22\u0E2B\u0E19\u0E36\u0E48\u0E07\u0E04\u0E19"
+  - key: tip/tip_misc_max_level
+    textEnglish: Already Reached the Current Rank's Maximum Level
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u8FBE\u5F53\u524D\u7B49\u7EA7\u6700\u9AD8\u7EA7"
+    textTraditionChinese: "\u5DF2\u9054\u5230\u7576\u524D\u7B49\u7D1A\u7684\u6700\u5927\u7D1A\u5225"
+    textJapanese: "\u73FE\u5728\u306E\u30E9\u30F3\u30AF\u306E\u6700\u5927\u30EC\u30D9\u30EB\u306B\u5230\u9054\u6E08\u307F"
+    textKorean: "\uD604\uC7AC \uB7AD\uD06C\uC758 \uCD5C\uB300 \uB808\uBCA8\uC5D0
+      \uC774\uBBF8 \uB3C4\uB2EC\uD588\uC2B5\uB2C8\uB2E4"
+    textFrench: "Niveau maximum du rang actuel d\xE9j\xE0 atteint"
+    textGerman: Bereits die maximale Stufe des aktuellen Rangs erreicht
+    textSpanish: "Ya alcanzaste el nivel m\xE1ximo del rango actual."
+    textPortuguese: "J\xE1 atingiu o n\xEDvel m\xE1ximo do rank atual"
+    textItalian: "Gi\xE0 Raggiunto il Livello Massimo del Grado Attuale"
+    textDutch: Al het maximale niveau van de huidige rang bereikt
+    textRussian: "\u0423\u0436\u0435 \u0434\u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442
+      \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C
+      \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u0440\u0430\u043D\u0433\u0430."
+    textThai: "\u0E16\u0E36\u0E07\u0E23\u0E30\u0E14\u0E31\u0E1A\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14\u0E02\u0E2D\u0E07\u0E15\u0E33\u0E41\u0E2B\u0E19\u0E48\u0E07\u0E1B\u0E31\u0E08\u0E08\u0E38\u0E1A\u0E31\u0E19\u0E41\u0E25\u0E49\u0E27"
+  - key: tip/tip_misc_no_equiped
+    textEnglish: The maximum number of warships that can be deployed has been reached
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6218\u8230\u53EF\u4E0A\u9635\u6570\u91CF\u8FBE\u5230\u4E0A\u9650"
+    textTraditionChinese: "\u6230\u8266\u53EF\u4E0A\u9663\u6578\u91CF\u9054\u5230\u4E0A\u9650"
+    textJapanese: "\u914D\u7F6E\u53EF\u80FD\u306A\u6226\u8266\u6570\u306E\u4E0A\u9650\u306B\u9054\u3057\u307E\u3057\u305F"
+    textKorean: "\uBC30\uCE58 \uAC00\uB2A5\uD55C \uC804\uD568 \uC218 \uCD5C\uB300\uCE58\uC5D0
+      \uB3C4\uB2EC\uD588\uC2B5\uB2C8\uB2E4"
+    textFrench: Nombre max de vaisseaux atteint
+    textGerman: Max. Anzahl an Kriegsschiffen erreicht
+    textSpanish: "Se alcanz\xF3 el l\xEDmite de naves de guerra"
+    textPortuguese: "N\xFAmero m\xE1ximo de naves atingido"
+    textItalian: Numero massimo di navi raggiunto
+    textDutch: Maximumaantal oorlogsschepen bereikt
+    textRussian: "\u0414\u043E\u0441\u0442\u0438\u0433\u043D\u0443\u0442 \u043F\u0440\u0435\u0434\u0435\u043B
+      \u0440\u0430\u0437\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u043A\u043E\u0440\u0430\u0431\u043B\u0435\u0439"
+    textThai: "\u0E08\u0E33\u0E19\u0E27\u0E19\u0E40\u0E23\u0E37\u0E2D\u0E23\u0E1A\u0E17\u0E35\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E2A\u0E48\u0E07\u0E44\u0E14\u0E49\u0E16\u0E36\u0E07\u0E02\u0E35\u0E14\u0E08\u0E33\u0E01\u0E31\u0E14\u0E41\u0E25\u0E49\u0E27"

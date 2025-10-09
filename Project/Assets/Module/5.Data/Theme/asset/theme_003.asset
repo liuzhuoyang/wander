@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c8559d9f8c042a0bffafb56fea114d, type: 3}
+  m_Name: theme_003
+  m_EditorClassIdentifier: 
+  themeName: theme_003
+  displayName: 
+  themeBGMAsset: {fileID: 0}
+  audioConfig: {fileID: 11400000, guid: 3b67703043f8ea7439e02cd5d13fc9c7, type: 2}
+  themeBGM: 
+  audioConfigName: BattleAudio_Config_theme_001

@@ -1,0 +1,856 @@
+fileFormatVersion: 2
+guid: 6db37a9281ec99844ada27f5272fb97e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4231856919506053986
+    second: vfx_battle_shieldpattern_0
+  - first:
+      213: -2141349984645233625
+    second: vfx_battle_shieldpattern_1
+  - first:
+      213: -8028365707728870176
+    second: vfx_battle_shieldpattern_2
+  - first:
+      213: 5930270600437083637
+    second: vfx_battle_shieldpattern_3
+  - first:
+      213: 1433648329382577152
+    second: vfx_battle_shieldpattern_4
+  - first:
+      213: -7386535987026747996
+    second: vfx_battle_shieldpattern_5
+  - first:
+      213: -8137974523150263056
+    second: vfx_battle_shieldpattern_6
+  - first:
+      213: 3762603854317430443
+    second: vfx_battle_shieldpattern_7
+  - first:
+      213: -4951944706810043264
+    second: vfx_battle_shieldpattern_8
+  - first:
+      213: -2069252938151721826
+    second: vfx_battle_shieldpattern_9
+  - first:
+      213: -4000914135562298347
+    second: vfx_battle_shieldpattern_10
+  - first:
+      213: 7765936066476554003
+    second: vfx_battle_shieldpattern_11
+  - first:
+      213: -1617861901946707166
+    second: vfx_battle_shieldpattern_12
+  - first:
+      213: 8457489951770182562
+    second: vfx_battle_shieldpattern_13
+  - first:
+      213: 6788731801403871262
+    second: vfx_battle_shieldpattern_14
+  - first:
+      213: -2395369232939128914
+    second: vfx_battle_shieldpattern_15
+  - first:
+      213: 5299400355342374981
+    second: vfx_battle_shieldpattern_16
+  - first:
+      213: 3432937278344038007
+    second: vfx_battle_shieldpattern_17
+  - first:
+      213: 252400494995326135
+    second: vfx_battle_shieldpattern_18
+  - first:
+      213: -2227285146175143117
+    second: vfx_battle_shieldpattern_19
+  - first:
+      213: 7017223696915201409
+    second: vfx_battle_shieldpattern_20
+  - first:
+      213: 4436812763526984550
+    second: vfx_battle_shieldpattern_21
+  - first:
+      213: -7447944696121502077
+    second: vfx_battle_shieldpattern_22
+  - first:
+      213: -1942470025347905004
+    second: vfx_battle_shieldpattern_23
+  - first:
+      213: -5874065364100733402
+    second: vfx_battle_shieldpattern_24
+  - first:
+      213: -7192073961360627255
+    second: vfx_battle_shieldpattern_25
+  - first:
+      213: -5454374648754008944
+    second: vfx_battle_shieldpattern_26
+  - first:
+      213: 8429489196448800067
+    second: vfx_battle_shieldpattern_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 755
+        width: 179
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9410949d8c6545c0800000000000000
+      internalID: -4231856919506053986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1011
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 724ce69c8856842e0800000000000000
+      internalID: -2141349984645233625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 755
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4a4e7cce3859090800000000000000
+      internalID: -8028365707728870176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1011
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdaef0f0bd8c4250800000000000000
+      internalID: 5930270600437083637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_4
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 755
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0044ead4f8755e310800000000000000
+      internalID: 1433648329382577152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_5
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1011
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad91a4c7a0cd7990800000000000000
+      internalID: -7386535987026747996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_6
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 755
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc137cb94b101f80800000000000000
+      internalID: -8137974523150263056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_7
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1011
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba62b173544773430800000000000000
+      internalID: 3762603854317430443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_8
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 785
+        width: 51
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08426339688274bb0800000000000000
+      internalID: -4951944706810043264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 529
+        width: 51
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9488078a698843e0800000000000000
+      internalID: -2069252938151721826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 499
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c58fc9ac5e978c0800000000000000
+      internalID: -4000914135562298347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_11
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 499
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317babee4b526cb60800000000000000
+      internalID: 7765936066476554003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_12
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 499
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22324d60c233c89e0800000000000000
+      internalID: -1617861901946707166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_13
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 499
+        width: 179
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a382ba2d4a0f5570800000000000000
+      internalID: 8457489951770182562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 179
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10531aea9b663e50800000000000000
+      internalID: 6788731801403871262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_15
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 243
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea763c4bf50f1ced0800000000000000
+      internalID: -2395369232939128914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_16
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 243
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548d2c6bb804b8940800000000000000
+      internalID: 5299400355342374981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_17
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 243
+        width: 230
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77684e3244e34af20800000000000000
+      internalID: 3432937278344038007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_18
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 273
+        width: 51
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b44455b9e4b08300800000000000000
+      internalID: 252400494995326135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 51
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3330ab0d5f71711e0800000000000000
+      internalID: -2227285146175143117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_20
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d751406cf226160800000000000000
+      internalID: 7017223696915201409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663f1f083b9b29d30800000000000000
+      internalID: 4436812763526984550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 0
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3865ce082c593a890800000000000000
+      internalID: -7447944696121502077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_23
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 179
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a4b48bdc5fa05e0800000000000000
+      internalID: -1942470025347905004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626a9596ca02b7ea0800000000000000
+      internalID: -5874065364100733402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_25
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c963ce56de903c90800000000000000
+      internalID: -7192073961360627255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_26
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c0f1dc72b2e44b0800000000000000
+      internalID: -5454374648754008944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_battle_shieldpattern_27
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 0
+        width: 56
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34dd25843cf8bf470800000000000000
+      internalID: 8429489196448800067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

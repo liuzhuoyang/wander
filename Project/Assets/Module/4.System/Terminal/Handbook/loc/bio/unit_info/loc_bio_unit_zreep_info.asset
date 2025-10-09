@@ -1,0 +1,519 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_bio_unit_zreep_info
+  m_EditorClassIdentifier: 
+  isEdit: 0
+  hint: 
+  list:
+  - key: page/bio/unit/zreep/unit_zreep_melee_common_01_info
+    textEnglish: Hey, can you believe it? These things, bigger than you, are their
+      larvae
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u563F\uFF0C\u4F60\u80FD\u76F8\u4FE1\u5417\uFF1F\u8FD9\u4E9B\u6BD4\u4F60\u8FD8\u5927\u7684\u4E1C\u897F\u662F\u5B83\u4EEC\u7684\u5E7C\u866B"
+    textTraditionChinese: "\u563F\uFF0C\u4F60\u80FD\u76F8\u4FE1\u55CE\uFF1F\u9019\u4E9B\u6BD4\u4F60\u9084\u5927\u7684\u6771\u897F\u662F\u5B83\u5011\u7684\u5E7C\u87F2"
+    textJapanese: "\u306D\u3048\u3001\u4FE1\u3058\u3089\u308C\u308B\uFF1F\u541B\u3088\u308A\u5927\u304D\u3044\u3053\u308C\u3089\u306F\u5F7C\u3089\u306E\u5E7C\u866B\u3060"
+    textKorean: "\uC57C, \uBBFF\uC744 \uC218 \uC788\uC5B4? \uB108\uBCF4\uB2E4 \uD070
+      \uC774\uAC8C \uC560\uBC8C\uB808\uB77C\uACE0"
+    textFrench: "H\xE9, tu peux y croire? Ces choses, plus grandes que toi, sont
+      leurs larves"
+    textGerman: "Hey, kannst du es glauben? Diese Dinge, gr\xF6\xDFer als du, sind
+      ihre Larven"
+    textSpanish: "Oye, \xBFpuedes creerlo? Estas cosas, m\xE1s grandes que t\xFA,
+      son sus larvas"
+    textPortuguese: "Ei, voc\xEA acredita? Essas coisas, maiores que voc\xEA, s\xE3o
+      suas larvas"
+    textItalian: "Ehi, ci credi? Queste cose, pi\xF9 grandi di te, sono le loro larve"
+    textDutch: "H\xE9, kun je het geloven? Deze dingen, groter dan jij, zijn hun
+      larven"
+    textRussian: "\u042D\u0439, \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C
+      \u0432 \u044D\u0442\u043E \u043F\u043E\u0432\u0435\u0440\u0438\u0442\u044C?
+      \u042D\u0442\u0438 \u0432\u0435\u0449\u0438, \u0431\u043E\u043B\u044C\u0448\u0435
+      \u0442\u0435\u0431\u044F, \u0438\u0445 \u043B\u0438\u0447\u0438\u043D\u043A\u0438"
+    textThai: "\u0E40\u0E2E\u0E49 \u0E19\u0E36\u0E01\u0E44\u0E21\u0E48\u0E2D\u0E2D\u0E01\u0E40\u0E25\u0E22
+      \u0E44\u0E2D\u0E49\u0E2A\u0E34\u0E48\u0E07\u0E1E\u0E27\u0E01\u0E19\u0E35\u0E49\u0E43\u0E2B\u0E0D\u0E48\u0E01\u0E27\u0E48\u0E32\u0E04\u0E38\u0E13
+      \u0E19\u0E31\u0E48\u0E19\u0E04\u0E37\u0E2D\u0E15\u0E31\u0E27\u0E2D\u0E48\u0E2D\u0E19\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19"
+  - key: page/bio/unit/zreep/unit_zreep_melee_common_02_info
+    textEnglish: Such creatures, born solely for slaughter, are an abomination to
+      the universe
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD9\u4E9B\u53EA\u4E3A\u5C60\u6740\u800C\u751F\u7684\u9020\u7269\u662F\u5BF9\u5B87\u5B99\u7684\u4EB5\u6E0E"
+    textTraditionChinese: "\u6B64\u985E\u751F\u7269\uFF0C\u751F\u4F86\u53EA\u70BA\u5C60\u622E\uFF0C\u662F\u5B87\u5B99\u4E2D\u7684\u893B\u7006"
+    textJapanese: "\u305D\u306E\u3088\u3046\u306A\u751F\u7269\u306F\u3001\u6BBA\u622E\u306E\u307F\u306E\u305F\u3081\u306B\u751F\u307E\u308C\u305F\u5B58\u5728\u3067\u3042\u308A\u3001\u5B87\u5B99\u306B\u3068\u3063\u3066\u306F\u5FCC\u3080\u3079\u304D\u3082\u306E\u3060"
+    textKorean: "\uADF8\uB7F0 \uC0DD\uBB3C\uB4E4\uC740 \uB2E8\uC9C0 \uB3C4\uC0B4\uC744
+      \uC704\uD574 \uD0DC\uC5B4\uB09C \uAC83\uC73C\uB85C \uC6B0\uC8FC\uC5D0 \uC788\uC5B4\uC11C
+      \uD610\uC624\uC2A4\uB7EC\uC6B4 \uC874\uC7AC\uC774\uB2E4"
+    textFrench: "De telles cr\xE9atures, n\xE9es uniquement pour le carnage, sont
+      une abomination pour l'univers"
+    textGerman: "Solche Kreaturen, allein f\xFCr die Schlachtung geboren, sind ein
+      Gr\xE4uel f\xFCr das Universum"
+    textSpanish: "Esas criaturas, nacidas \xFAnicamente para la matanza, son una
+      abominaci\xF3n para el universo"
+    textPortuguese: "Essas criaturas, nascidas apenas para o massacre, s\xE3o uma
+      abomina\xE7\xE3o para o universo"
+    textItalian: Tali creature, nate unicamente per il massacro, sono un'abominio
+      per l'universo
+    textDutch: Zulke wezens, uitsluitend geboren om geslacht te worden, zijn een
+      gruwel voor het universum
+    textRussian: "\u0422\u0430\u043A\u0438\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430,
+      \u0440\u043E\u0436\u0434\u0435\u043D\u043D\u044B\u0435 \u0438\u0441\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+      \u0434\u043B\u044F \u0443\u0431\u0438\u0439\u0441\u0442\u0432\u0430, \u043C\u0435\u0440\u0437\u043E\u0441\u0442\u044C
+      \u0434\u043B\u044F \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439"
+    textThai: "\u0E2A\u0E34\u0E48\u0E07\u0E21\u0E35\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E17\u0E35\u0E48\u0E40\u0E01\u0E34\u0E14\u0E21\u0E32\u0E40\u0E1E\u0E35\u0E22\u0E07\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E07\u0E2B\u0E32\u0E23\u0E40\u0E1B\u0E47\u0E19\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E19\u0E48\u0E32\u0E23\u0E31\u0E07\u0E40\u0E01\u0E35\u0E22\u0E08\u0E15\u0E48\u0E2D\u0E08\u0E31\u0E01\u0E23\u0E27\u0E32\u0E25"
+  - key: page/bio/unit/zreep/unit_zreep_melee_common_03_info
+    textEnglish: "Surface covered with volatile energy glands; detonates explosively
+      upon collision. High velocity\u2014can only be reliably stopped by accurate
+      single-target fire or overlapping fields of fire"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u53C2\u8003\u7FFB\u8BD1\uFF1A\u4F53\u8868\u8986\u76D6\u9AD8\u80FD\u817A\u4F53\uFF0C\u9047\u5230\u969C\u788D\u4F1A\u89E6\u53D1\u5267\u70C8\u7206\u70B8\uFF0C\u901F\u5EA6\u6781\u5FEB\uFF0C\u9700\u8981\u7CBE\u786E\u70B9\u6740\u6216\u5BC6\u96C6\u706B\u529B\u7F51\u8986\u76D6"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4F53\u8868\u8986\u76D6\u9AD8\u80FD\u817A\u4F53\uFF0C\u9047\u5230\u969C\u788D\u4F1A\u89E6\u53D1\u5267\u70C8\u7206\u70B8\uFF0C\u901F\u5EA6\u6781\u5FEB\uFF0C\u9700\u8981\u7CBE\u786E\u70B9\u6740\u6216\u5BC6\u96C6\u706B\u529B\u7F51\u8986\u76D6"
+    textTraditionChinese: "\u9AD4\u8868\u8986\u84CB\u63EE\u767C\u6027\u80FD\u91CF\u817A\u9AD4\uFF0C\u78B0\u649E\u6642\u6703\u7206\u70B8\u6027\u5F15\u7206\u3002\u9AD8\u901F\u79FB\u52D5\uFF0D\u53EA\u80FD\u901A\u904E\u7CBE\u6E96\u55AE\u9EDE\u5C04\u64CA\u6216\u91CD\u758A\u706B\u529B\u7DB2\u53EF\u9760\u6514\u622A"
+    textJapanese: "\u63EE\u767A\u6027\u30A8\u30CD\u30EB\u30AE\u30FC\u817A\u306B\u8986\u308F\u308C\u305F\u8868\u9762\uFF1B\u885D\u7A81\u6642\u306B\u7206\u767A\u7684\u306B\u70B8\u88C2\u3002\u9AD8\u901F\u79FB\u52D5\u2015\u6B63\u78BA\u306A\u5358\u4F53\u5C04\u6483\u307E\u305F\u306F\u91CD\u8907\u3059\u308B\u5C04\u6483\u7DB2\u3067\u306E\u307F\u78BA\u5B9F\u306B\u963B\u6B62\u53EF\u80FD"
+    textKorean: "\uD718\uBC1C\uC131 \uC5D0\uB108\uC9C0 \uBD84\uBE44\uC120\uC73C\uB85C
+      \uB36E\uC778 \uD45C\uBA74; \uCDA9\uB3CC \uC2DC \uD3ED\uBC1C\uC801\uC73C\uB85C
+      \uD130\uC9D1\uB2C8\uB2E4. \uACE0\uC18D\u2014\uC815\uD655\uD55C \uB2E8\uC77C
+      \uB300\uC0C1 \uC0AC\uACA9 \uB610\uB294 \uC911\uCCA9\uB41C \uD654\uB825\uB9DD\uC73C\uB85C\uB9CC
+      \uD655\uC2E4\uD788 \uB9C9\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4"
+    textFrench: "Surface recouverte de glandes \xE9nerg\xE9tiques volatiles ; explose
+      violemment \xE0 l'impact. Vitesse \xE9lev\xE9e\u2014ne peut \xEAtre arr\xEAt\xE9e
+      que par des tirs pr\xE9cis ou des champs de tir superpos\xE9s"
+    textGerman: "Oberfl\xE4che mit fl\xFCchtigen Energiedr\xFCsen bedeckt; detoniert
+      bei Kollision explosiv Hohe Geschwindigkeit \u2013 kann nur durch pr\xE4zises
+      Einzelfeuer oder \xFCberlappende Feuerfelder zuverl\xE4ssig gestoppt werden"
+    textSpanish: "Superficie cubierta de gl\xE1ndulas energ\xE9ticas vol\xE1tiles;
+      detona explosivamente al colisionar. Alta velocidad\u2014solo puede detenerse
+      de manera confiable con fuego preciso de un solo objetivo o campos de fuego
+      superpuestos"
+    textPortuguese: "Superf\xEDcie coberta com gl\xE2ndulas de energia vol\xE1teis;
+      detona explosivamente ao colidir. Alta velocidade\u2014s\xF3 pode ser parada
+      com precis\xE3o por fogo direcionado ou campos de fogo sobrepostos"
+    textItalian: "Superficie ricoperta di ghiandole energetiche volatili; esplode
+      violentemente all'impatto. Alta velocit\xE0\u2014pu\xF2 essere fermata solo
+      da fuoco preciso su singolo bersaglio o campi di fuoco sovrapposti"
+    textDutch: "Oppervlak bedekt met vluchtige energieklieren; ontploft explosief
+      bij botsing. Hoge snelheid\u2014alleen betrouwbaar te stoppen met nauwkeurig
+      enkeldoelvuur of overlappende vuurvelden"
+    textRussian: "\u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C
+      \u043F\u043E\u043A\u0440\u044B\u0442\u0430 \u043B\u0435\u0442\u0443\u0447\u0438\u043C\u0438
+      \u044D\u043D\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u043C\u0438
+      \u0436\u0435\u043B\u0435\u0437\u0430\u043C\u0438, \u0432\u0437\u0440\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+      \u043F\u0440\u0438 \u0441\u0442\u043E\u043B\u043A\u043D\u043E\u0432\u0435\u043D\u0438\u0438.
+      \u0412\u044B\u0441\u043E\u043A\u0430\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C
+      \u2014 \u043C\u043E\u0436\u043D\u043E \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+      \u0442\u043E\u043B\u044C\u043A\u043E \u0442\u043E\u0447\u043D\u044B\u043C \u043E\u0433\u043D\u0451\u043C
+      \u043F\u043E \u043E\u0434\u043D\u043E\u0439 \u0446\u0435\u043B\u0438 \u0438\u043B\u0438
+      \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0432\u0430\u044E\u0449\u0438\u043C\u0438\u0441\u044F
+      \u043F\u043E\u043B\u044F\u043C\u0438 \u043E\u0433\u043D\u044F"
+    textThai: "\u0E1E\u0E37\u0E49\u0E19\u0E1C\u0E34\u0E27\u0E1B\u0E01\u0E04\u0E25\u0E38\u0E21\u0E14\u0E49\u0E27\u0E22\u0E15\u0E48\u0E2D\u0E21\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19\u0E23\u0E30\u0E40\u0E2B\u0E22
+      \u0E23\u0E30\u0E40\u0E1A\u0E34\u0E14\u0E40\u0E21\u0E37\u0E48\u0E2D\u0E0A\u0E19
+      \u0E04\u0E27\u0E32\u0E21\u0E40\u0E23\u0E47\u0E27\u0E2A\u0E39\u0E07\u2014\u0E2B\u0E22\u0E38\u0E14\u0E44\u0E14\u0E49\u0E14\u0E49\u0E27\u0E22\u0E01\u0E32\u0E23\u0E22\u0E34\u0E07\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E14\u0E35\u0E22\u0E27\u0E17\u0E35\u0E48\u0E41\u0E21\u0E48\u0E19\u0E22\u0E33\u0E2B\u0E23\u0E37\u0E2D\u0E2A\u0E19\u0E32\u0E21\u0E22\u0E34\u0E07\u0E17\u0E35\u0E48\u0E17\u0E31\u0E1A\u0E0B\u0E49\u0E2D\u0E19"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_common_01_info
+    textEnglish: Remember to salvage them while cleaning up the battlefield. The
+      launcher organs sometimes produce crystals that shine brighter than diamonds
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u6E05\u7406\u6218\u573A\u65F6\u8BB0\u5F97\u56DE\u6536\u5B83\u4EEC\uFF0C\u53D1\u5C04\u5668\u5668\u5B98\u6709\u65F6\u4F1A\u4EA7\u751F\u6BD4\u94BB\u77F3\u66F4\u95EA\u4EAE\u7684\u6676\u4F53"
+    textTraditionChinese: "\u6E05\u7406\u6230\u5834\u6642\u8A18\u5F97\u56DE\u6536\u5B83\u5011\uFF0C\u767C\u5C04\u5668\u5B98\u6709\u6642\u6703\u7522\u751F\u6BD4\u947D\u77F3\u66F4\u9583\u4EAE\u7684\u6676\u9AD4"
+    textJapanese: "\u6226\u5834\u3092\u6383\u9664\u3059\u308B\u969B\u306B\u305D\u308C\u3089\u3092\u56DE\u53CE\u3059\u308B\u3053\u3068\u3092\u5FD8\u308C\u306A\u3044\u3067\u304F\u3060\u3055\u3044\u3002\u30E9\u30F3\u30C1\u30E3\u30FC\u5668\u5B98\u306F\u6642\u3005\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9\u3088\u308A\u3082\u8F1D\u304F\u7D50\u6676\u3092\u751F\u307F\u51FA\u3057\u307E\u3059"
+    textKorean: "\uC804\uC7A5\uC744 \uC815\uB9AC\uD560 \uB54C \uADF8\uB4E4\uC744
+      \uD68C\uC218\uD558\uB294 \uAC78 \uC78A\uC9C0 \uB9C8\uC138\uC694 \uBC1C\uC0AC\uAE30
+      \uC7A5\uAE30\uB294 \uB54C\uB54C\uB85C \uB2E4\uC774\uC544\uBAAC\uB4DC\uBCF4\uB2E4
+      \uB354 \uBC1D\uAC8C \uBE5B\uB098\uB294 \uACB0\uC815\uC744 \uB9CC\uB4E4\uC5B4
+      \uB0B4\uC8E0"
+    textFrench: "N\u2019oubliez pas de les r\xE9cup\xE9rer en nettoyant le champ
+      de bataille Les organes lanceurs produisent parfois des cristaux qui brillent
+      plus que les diamants"
+    textGerman: "Denk daran, sie bei der S\xE4uberung des Schlachtfeldes zu bergen
+      Die Abschussorgane produzieren manchmal Kristalle, die heller als Diamanten
+      leuchten"
+    textSpanish: "Recuerda recuperarlos al limpiar el campo de batalla. Los \xF3rganos
+      lanzadores a veces producen cristales que brillan m\xE1s que los diamantes"
+    textPortuguese: "Lembre-se de recuper\xE1-los ao limpar o campo de batalha. Os
+      \xF3rg\xE3os lan\xE7adores \xE0s vezes produzem cristais que brilham mais do
+      que diamantes"
+    textItalian: "Ricorda di recuperarli durante la pulizia del campo di battaglia,
+      gli organi di lancio a volte producono cristalli che brillano pi\xF9 dei diamanti"
+    textDutch: Vergeet niet ze te redden tijdens het opruimen van het slagveld. De
+      lanceerorganen produceren soms kristallen die helderder schijnen dan diamanten
+    textRussian: "\u041D\u0435 \u0437\u0430\u0431\u0443\u0434\u044C\u0442\u0435 \u0441\u043E\u0431\u0440\u0430\u0442\u044C
+      \u0438\u0445 \u043F\u0440\u0438 \u0443\u0431\u043E\u0440\u043A\u0435 \u043F\u043E\u043B\u044F
+      \u0431\u043E\u044F. \u041F\u0443\u0441\u043A\u043E\u0432\u044B\u0435 \u043E\u0440\u0433\u0430\u043D\u044B
+      \u0438\u043D\u043E\u0433\u0434\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u044F\u0442
+      \u043A\u0440\u0438\u0441\u0442\u0430\u043B\u043B\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435
+      \u0441\u0438\u044F\u044E\u0442 \u044F\u0440\u0447\u0435 \u0430\u043B\u043C\u0430\u0437\u043E\u0432"
+    textThai: "\u0E08\u0E33\u0E44\u0E27\u0E49\u0E43\u0E2B\u0E49\u0E40\u0E01\u0E47\u0E1A\u0E01\u0E39\u0E49\u0E1E\u0E27\u0E01\u0E21\u0E31\u0E19\u0E02\u0E13\u0E30\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E30\u0E2D\u0E32\u0E14\u0E2A\u0E19\u0E32\u0E21\u0E23
+      battle \u0E23\u0E30\u0E27\u0E31\u0E07\u0E2D\u0E27\u0E31\u0E22\u0E27\u0E30\u0E1B\u0E25\u0E48\u0E2D\u0E22\u0E1A\u0E32\u0E07\u0E04\u0E23\u0E31\u0E49\u0E07\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E04\u0E23\u0E34\u0E2A\u0E15\u0E31\u0E25\u0E17\u0E35\u0E48\u0E40\u0E1B\u0E25\u0E48\u0E07\u0E1B\u0E23\u0E30\u0E01\u0E32\u0E22\u0E2A\u0E27\u0E48\u0E32\u0E07\u0E01\u0E27\u0E48\u0E32\u0E40\u0E1E\u0E0A\u0E23"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_common_02_info
+    textEnglish: Neurotoxin l-7 is synthesized within the venom glands. Each salvo
+      covers a 15-meter radius. It is recommended to prioritize the destruction of
+      its wing balance organs
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u795E\u7ECF\u6BD2\u7D20l-7\u5728\u6BD2\u817A\u4E2D\u5408\u6210\uFF0C\u6BCF\u6B21\u653B\u51FB\u8986\u76D615\u7C73\u534A\u5F84\uFF0C\u5EFA\u8BAE\u4F18\u5148\u7834\u574F\u5176\u7FC5\u8180\u5E73\u8861\u5668\u5B98"
+    textTraditionChinese: "\u795E\u7D93\u6BD2\u7D20 l-7 \u5728\u6BD2\u817A\u5167\u5408\u6210\uFF0C\u6BCF\u6B21\u653B\u64CA\u8986\u84CB\u534A\u5F9115\u7C73\uFF0C\u5EFA\u8B70\u512A\u5148\u7834\u58DE\u5176\u7FC5\u8180\u5E73\u8861\u5668\u5B98"
+    textJapanese: "\u795E\u7D4C\u6BD2l-7\u306F\u6BD2\u817A\u5185\u3067\u5408\u6210\u3055\u308C\u307E\u3059\u3002\u5404\u6589\u5C04\u306F15\u30E1\u30FC\u30C8\u30EB\u306E\u7BC4\u56F2\u3092\u30AB\u30D0\u30FC\u3057\u307E\u3059\u3002\u305D\u306E\u7FFC\u306E\u5E73\u8861\u5668\u5B98\u306E\u7834\u58CA\u3092\u512A\u5148\u3059\u308B\u3053\u3068\u3092\u63A8\u5968\u3057\u307E\u3059"
+    textKorean: "\uC2E0\uACBD\uB3C5\uC18C l-7\uC740 \uB3C5\uC0D8 \uB0B4\uC5D0\uC11C
+      \uD569\uC131\uB429\uB2C8\uB2E4. \uAC01 \uBC1C\uC0AC\uB294 15\uBBF8\uD130 \uBC18\uACBD\uC744
+      \uCEE4\uBC84\uD558\uBA70 \uB0A0\uAC1C \uADE0\uD615 \uAE30\uAD00\uC758 \uD30C\uAD34\uB97C
+      \uC6B0\uC120\uC2DC\uD558\uB294 \uAC83\uC774 \uAD8C\uC7A5\uB429\uB2C8\uB2E4"
+    textFrench: "La neurotoxine l-7 est synth\xE9tis\xE9e dans les glandes \xE0 venin.
+      Chaque salve couvre un rayon de 15 m\xE8tres. Il est recommand\xE9 de prioriser
+      la destruction de ses organes d'\xE9quilibre alaire"
+    textGerman: "Neurotoxin l-7 wird in den Giftdr\xFCsen synthetisiert Jeder Schuss
+      deckt einen Radius von 15 Metern ab Es wird empfohlen, die Zerst\xF6rung seiner
+      Fl\xFCgelgleichgewichtsorgane zu priorisieren"
+    textSpanish: "La neurotoxina l-7 se sintetiza en las gl\xE1ndulas venenosas.
+      Cada descarga cubre un radio de 15 metros. Se recomienda priorizar la destrucci\xF3n
+      de sus \xF3rganos de equilibrio alar"
+    textPortuguese: "A neurotoxina l-7 \xE9 sintetizada nas gl\xE2ndulas de veneno.
+      Cada salva cobre um raio de 15 metros. \xC9 recomendado priorizar a destrui\xE7\xE3o
+      dos \xF3rg\xE3os de equil\xEDbrio das asas"
+    textItalian: "La neurotossina l-7 viene sintetizzata nelle ghiandole velenifere.
+      Ogni salva copre un raggio di 15 metri. Si consiglia di dare priorit\xE0 alla
+      distruzione dei suoi organi di equilibrio delle ali"
+    textDutch: Neurotoxine l-7 wordt gesynthetiseerd in de gifklieren. Elke salvo
+      bestrijkt een straal van 15 meter. Het wordt aanbevolen om de vernietiging
+      van zijn vleugelbalansorganen prioriteit te geven
+    textRussian: "\u041D\u0435\u0439\u0440\u043E\u0442\u043E\u043A\u0441\u0438\u043D
+      l-7 \u0441\u0438\u043D\u0442\u0435\u0437\u0438\u0440\u0443\u0435\u0442\u0441\u044F
+      \u0432 \u044F\u0434\u043E\u0432\u0438\u0442\u044B\u0445 \u0436\u0435\u043B\u0435\u0437\u0430\u0445.
+      \u041A\u0430\u0436\u0434\u044B\u0439 \u0437\u0430\u043B\u043F \u043E\u0445\u0432\u0430\u0442\u044B\u0432\u0430\u0435\u0442
+      \u0440\u0430\u0434\u0438\u0443\u0441 15 \u043C\u0435\u0442\u0440\u043E\u0432.
+      \u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u0442\u0441\u044F
+      \u043F\u0440\u0438\u043E\u0440\u0438\u0442\u0435\u0442\u043D\u043E \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0430\u0442\u044C
+      \u043E\u0440\u0433\u0430\u043D\u044B \u0431\u0430\u043B\u0430\u043D\u0441\u0430
+      \u043A\u0440\u044B\u043B\u044C\u0435\u0432"
+    textThai: "\u0E19\u0E34\u0E27\u0E42\u0E23\u0E17\u0E2D\u0E01\u0E0B\u0E34\u0E19
+      l-7 \u0E16\u0E39\u0E01\u0E2A\u0E31\u0E07\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E20\u0E32\u0E22\u0E43\u0E19\u0E15\u0E48\u0E2D\u0E21\u0E1E\u0E34\u0E29
+      \u0E41\u0E15\u0E48\u0E25\u0E30\u0E04\u0E23\u0E31\u0E49\u0E07\u0E04\u0E23\u0E2D\u0E1A\u0E04\u0E25\u0E38\u0E21\u0E23\u0E31\u0E28\u0E21\u0E35
+      15 \u0E40\u0E21\u0E15\u0E23 \u0E41\u0E19\u0E30\u0E19\u0E33\u0E43\u0E2B\u0E49\u0E17\u0E33\u0E25\u0E32\u0E22\u0E2D\u0E27\u0E31\u0E22\u0E27\u0E30\u0E17\u0E23\u0E07\u0E15\u0E31\u0E27\u0E02\u0E2D\u0E07\u0E1B\u0E35\u0E01\u0E40\u0E1B\u0E47\u0E19\u0E25\u0E33\u0E14\u0E31\u0E1A\u0E41\u0E23\u0E01"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_common_03_info
+    textEnglish: They streak across the sky like a toxic wind, their acid breath
+      turning steel strongholds into oozing ruins
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u53C2\u8003\u7FFB\u8BD1\uFF1A\u5B83\u4EEC\u8EAB\u5F71\u5982\u75BE\u98CE\u822C\u63A0\u8FC7\u5929\u9645\uFF0C\u55B7\u5410\u7684\u9178\u6DB2\u8BA9\u4E00\u5207\u94A2\u94C1\u90FD\u5316\u4E3A\u6D41\u6DCC\u7684\u5E9F\u589F\u3002"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B83\u4EEC\u5982\u6BD2\u98CE\u822C\u5212\u8FC7\u5929\u9645\uFF0C\u9178\u8680\u5410\u606F\u5C06\u94A2\u94C1\u5821\u5792\u5316\u4F5C\u6D41\u6DCC\u7684\u5E9F\u589F"
+    textTraditionChinese: "\u5B83\u5011\u5982\u6BD2\u98A8\u822C\u5283\u904E\u5929\u969B\uFF0C\u9178\u8755\u7684\u5410\u606F\u5C07\u92FC\u9435\u5821\u58D8\u5316\u70BA\u6D41\u6DCC\u7684\u5EE2\u589F"
+    textJapanese: "\u305D\u308C\u3089\u306F\u6709\u6BD2\u306A\u98A8\u306E\u3088\u3046\u306B\u7A7A\u3092\u99C6\u3051\u629C\u3051\u3001\u9178\u306E\u606F\u3067\u92FC\u306E\u7826\u3092\u6EB6\u304B\u3057\u5EC3\u589F\u3068\u5316\u3059"
+    textKorean: "\uADF8\uB4E4\uC740 \uC720\uB3C5\uD55C \uBC14\uB78C\uCC98\uB7FC \uD558\uB298\uC744
+      \uAC00\uB85C\uC9C0\uB974\uBA70, \uAC15\uCCA0 \uC694\uC0C8\uB4E4\uC744 \uD750\uB974\uB294
+      \uD3D0\uD5C8\uB85C \uB9CC\uB4DC\uB294 \uC0B0\uC131\uC758 \uC228\uC744 \uB0B4\uBFDC\uB294\uB2E4"
+    textFrench: Ils traversent le ciel comme un vent toxique, leur souffle acide
+      transformant les forteresses d'acier en ruines suintantes
+    textGerman: "Sie ziehen wie ein giftiger Wind \xFCber den Himmel, ihr \xE4tzender
+      Atem verwandelt st\xE4hlerne Festungen in flie\xDFende Ruinen"
+    textSpanish: "Surcan el cielo como un viento t\xF3xico, su aliento \xE1cido convierte
+      fortalezas de acero en ruinas rezumantes"
+    textPortuguese: "Elas cruzam o c\xE9u como um vento t\xF3xico, seu h\xE1lito
+      \xE1cido transformando fortalezas de a\xE7o em ru\xEDnas escorrendo"
+    textItalian: Sfrecciano nel cielo come un vento tossico, il loro alito acido
+      trasforma le fortezze d'acciaio in rovine grondanti
+    textDutch: "Ze schieten als een giftige wind door de lucht, hun zure adem verandert
+      stalen vestingen in sissende ru\xEFnes"
+    textRussian: "\u041E\u043D\u0438 \u043F\u0440\u043E\u043D\u043E\u0441\u044F\u0442\u0441\u044F
+      \u043F\u043E \u043D\u0435\u0431\u0443, \u043A\u0430\u043A \u044F\u0434\u043E\u0432\u0438\u0442\u044B\u0439
+      \u0432\u0435\u0442\u0435\u0440, \u0438\u0445 \u043A\u0438\u0441\u043B\u043E\u0442\u043D\u043E\u0435
+      \u0434\u044B\u0445\u0430\u043D\u0438\u0435 \u043F\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442
+      \u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u0442\u0432\u0435\u0440\u0434\u044B\u043D\u0438
+      \u0432 \u0442\u0435\u043A\u0443\u0447\u0438\u0435 \u0440\u0443\u0438\u043D\u044B"
+    textThai: "\u0E1E\u0E27\u0E01\u0E21\u0E31\u0E19\u0E1E\u0E38\u0E48\u0E07\u0E1C\u0E48\u0E32\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E1F\u0E49\u0E32\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E25\u0E21\u0E1E\u0E34\u0E29
+      \u0E25\u0E21\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E01\u0E23\u0E14\u0E02\u0E2D\u0E07\u0E1E\u0E27\u0E01\u0E21\u0E31\u0E19\u0E40\u0E1B\u0E25\u0E35\u0E48\u0E22\u0E19\u0E1B\u0E49\u0E2D\u0E21\u0E40\u0E2B\u0E25\u0E47\u0E01\u0E43\u0E2B\u0E49\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E0B\u0E32\u0E01\u0E17\u0E35\u0E48\u0E44\u0E2B\u0E25\u0E40\u0E22\u0E34\u0E49\u0E21"
+  - key: page/bio/unit/zreep/unit_zreep_melee_tank_01_info
+    textEnglish: "A moving, living mountain\u2014an endless march. Unless you authorize
+      me to use orbital bombardment first, I will not allow my soldiers to enter
+      the battlefield"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u4E00\u5EA7\u79FB\u52A8\u7684\u3001\u6D3B\u7740\u7684\u5C71\u8109\u2014\u2014\u65E0\u5C3D\u7684\u8FDB\u519B\u3002\u9664\u975E\u4F60\u6388\u6743\u6211\u9996\u5148\u4F7F\u7528\u8F68\u9053\u8F70\u70B8\uFF0C\u5426\u5219\u6211\u4E0D\u4F1A\u8BA9\u6211\u7684\u58EB\u5175\u8FDB\u5165\u6218\u573A"
+    textTraditionChinese: "\u4E00\u5EA7\u79FB\u52D5\u7684\u3001\u6D3B\u751F\u751F\u7684\u5C71\u8108\u2014\u2014\u7121\u76E1\u7684\u884C\u8ECD\uFF0C\u9664\u975E\u4F60\u6388\u6B0A\u6211\u9996\u5148\u4F7F\u7528\u8ECC\u9053\u8F5F\u70B8\uFF0C\u5426\u5247\u6211\u4E0D\u6703\u8B93\u6211\u7684\u58EB\u5175\u9032\u5165\u6230\u5834"
+    textJapanese: "\u52D5\u304D\u7D9A\u3051\u308B\u751F\u304D\u305F\u5C71\u2014\u2014\u679C\u3066\u3057\u306A\u3044\u884C\u9032\u3060\u3002\u8ECC\u9053\u7206\u6483\u3092\u307E\u305A\u8A31\u53EF\u3057\u306A\u3044\u9650\u308A\u3001\u5175\u58EB\u305F\u3061\u3092\u6226\u5834\u306B\u9001\u308A\u51FA\u3055\u306A\u3044"
+    textKorean: "\uC6C0\uC9C1\uC774\uB294, \uC0B4\uC544\uC788\uB294 \uC0B0\u2014\uB05D\uC5C6\uB294
+      \uD589\uC9C4 \uC624\uBE44\uD138 \uD3ED\uACA9\uC744 \uBA3C\uC800 \uC0AC\uC6A9\uD560
+      \uC218 \uC788\uB3C4\uB85D \uD5C8\uB77D\uD558\uC9C0 \uC54A\uB294\uB2E4\uBA74,
+      \uB0B4 \uBCD1\uC0AC\uB4E4\uC774 \uC804\uC7A5\uC5D0 \uB4E4\uC5B4\uAC00\uB294
+      \uAC83\uC744 \uD5C8\uB77D\uD558\uC9C0 \uC54A\uACA0\uB2E4"
+    textFrench: "Une montagne mouvante et vivante\u2014une marche sans fin. \xC0
+      moins que vous ne m'autorisiez \xE0 utiliser d'abord le bombardement orbital,
+      je n'autoriserai pas mes soldats \xE0 entrer sur le champ de bataille"
+    textGerman: "Ein beweglicher, lebendiger Berg\u2014ein endloser Marsch. Wenn
+      Sie mir nicht zuerst die Genehmigung f\xFCr den Orbitalbeschuss erteilen, werde
+      ich meine Soldaten nicht auf das Schlachtfeld schicken"
+    textSpanish: "Una monta\xF1a en movimiento, viviente\u2014una marcha interminable.
+      A menos que me autorices a usar bombardeo orbital primero, no permitir\xE9
+      que mis soldados entren en el campo de batalla"
+    textPortuguese: "Uma montanha em movimento, viva\u2014uma marcha intermin\xE1vel.
+      A menos que voc\xEA me autorize a usar bombardeio orbital primeiro, n\xE3o
+      permitirei que meus soldados entrem no campo de batalha"
+    textItalian: "Una montagna in movimento, vivente\u2014una marcia infinita. A
+      meno che non mi autorizzi a usare prima il bombardamento orbitale, non permetter\xF2
+      ai miei soldati di entrare nel campo di battaglia"
+    textDutch: "Een bewegende, levende berg\u2014een eindeloze mars. Tenzij u mij
+      toestemming geeft om eerst orbitale bombardementen te gebruiken, zal ik mijn
+      soldaten niet toestaan het slagveld te betreden"
+    textRussian: "\u0414\u0432\u0438\u0436\u0443\u0449\u0430\u044F\u0441\u044F, \u0436\u0438\u0432\u0430\u044F
+      \u0433\u043E\u0440\u0430 \u2014 \u0431\u0435\u0441\u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0439
+      \u043C\u0430\u0440\u0448. \u0415\u0441\u043B\u0438 \u0432\u044B \u043D\u0435
+      \u0443\u043F\u043E\u043B\u043D\u043E\u043C\u043E\u0447\u0438\u0442\u0435 \u043C\u0435\u043D\u044F
+      \u0441\u043D\u0430\u0447\u0430\u043B\u0430 \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C
+      \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u0443\u044E \u0431\u043E\u043C\u0431\u0430\u0440\u0434\u0438\u0440\u043E\u0432\u043A\u0443,
+      \u044F \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044E \u0441\u0432\u043E\u0438\u043C
+      \u0441\u043E\u043B\u0434\u0430\u0442\u0430\u043C \u0432\u0441\u0442\u0443\u043F\u0438\u0442\u044C
+      \u043D\u0430 \u043F\u043E\u043B\u0435 \u0431\u043E\u044F"
+    textThai: "\u0E20\u0E39\u0E40\u0E02\u0E32\u0E17\u0E35\u0E48\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E44\u0E2B\u0E27\u0E41\u0E25\u0E30\u0E21\u0E35\u0E0A\u0E35\u0E27\u0E34\u0E15\u2014\u0E01\u0E32\u0E23\u0E40\u0E14\u0E34\u0E19\u0E17\u0E31\u0E1E\u0E17\u0E35\u0E48\u0E44\u0E21\u0E48\u0E21\u0E35\u0E17\u0E35\u0E48\u0E2A\u0E34\u0E49\u0E19\u0E2A\u0E38\u0E14
+      \u0E40\u0E27\u0E49\u0E19\u0E41\u0E15\u0E48\u0E04\u0E38\u0E13\u0E08\u0E30\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E43\u0E2B\u0E49\u0E09\u0E31\u0E19\u0E43\u0E0A\u0E49\u0E01\u0E32\u0E23\u0E42\u0E08\u0E21\u0E15\u0E35\u0E08\u0E32\u0E01\u0E27\u0E07\u0E42\u0E04\u0E08\u0E23\u0E01\u0E48\u0E2D\u0E19
+      \u0E09\u0E31\u0E19\u0E08\u0E30\u0E44\u0E21\u0E48\u0E2D\u0E19\u0E38\u0E0D\u0E32\u0E15\u0E43\u0E2B\u0E49\u0E17\u0E2B\u0E32\u0E23\u0E02\u0E2D\u0E07\u0E09\u0E31\u0E19\u0E40\u0E02\u0E49\u0E32\u0E2A\u0E39\u0E48\u0E2A\u0E19\u0E32\u0E21\u0E23\u0E1A"
+  - key: page/bio/unit/zreep/unit_zreep_melee_elite_01_info
+    textEnglish: "Once drilled asteroid crusts\u2014now it tears steel with equal
+      ease"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u66FE\u662F\u7528\u6765\u5F00\u51FF\u592A\u7A7A\u5CA9\u5C42\u7684\u6218\u517D\uFF0C\u5982\u4ECA\u5728\u6218\u573A\u4E0A\u6495\u788E\u94A2\u94C1"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u66FE\u662F\u7528\u6765\u5F00\u51FF\u592A\u7A7A\u5CA9\u5C42\u7684\u6218\u517D\uFF0C\u5982\u4ECA\u5728\u6218\u573A\u4E0A\u6495\u788E\u94A2\u94C1"
+    textTraditionChinese: "\u66FE\u662F\u7528\u4F86\u958B\u947F\u592A\u7A7A\u5CA9\u5C64\u7684\u6230\u7378\uFF0C\u5982\u4ECA\u5728\u6230\u5834\u4E0A\u6495\u788E\u92FC\u9435"
+    textJapanese: "\u304B\u3064\u3066\u5C0F\u60D1\u661F\u306E\u5730\u6BBB\u3092\u6398\u524A\u3057\u305F\u6226\u7363\u3001\u4ECA\u306F\u92FC\u9244\u3092\u5BB9\u6613\u306B\u5F15\u304D\u88C2\u304F"
+    textKorean: "\uD55C\uB54C \uC18C\uD589\uC131 \uC9C0\uAC01\uC744 \uB6AB\uB358
+      \uC804\uD22C\uC218\u2014\uC774\uC81C\uB294 \uAC15\uCCA0\uB3C4 \uC27D\uAC8C
+      \uCC22\uC5B4\uBC84\uB9B0\uB2E4"
+    textFrench: "Autrefois destin\xE9 \xE0 percer les cro\xFBtes d'ast\xE9ro\xEFdes,
+      il d\xE9chire maintenant l'acier avec la m\xEAme facilit\xE9"
+    textGerman: "Einst durchbohrte es Asteroidenkrusten \u2013 jetzt zerrei\xDFt
+      es Stahl mit gleicher Leichtigkeit"
+    textSpanish: "Una vez perfor\xF3 costras de asteroides\u2014ahora desgarra acero
+      con la misma facilidad"
+    textPortuguese: "Antes perfurava crostas de asteroides\u2014agora rasga a\xE7o
+      com a mesma facilidade"
+    textItalian: "Una volta perforava croste di asteroidi, ora lacera l'acciaio con
+      uguale facilit\xE0"
+    textDutch: "Eens geboorde astero\xEFde korsten\u2014nu scheurt het staal met
+      hetzelfde gemak"
+    textRussian: "\u041A\u043E\u0433\u0434\u0430-\u0442\u043E \u0431\u0443\u0440\u0438\u0432\u0448\u0438\u0435
+      \u0430\u0441\u0442\u0435\u0440\u043E\u0438\u0434\u043D\u044B\u0435 \u043A\u043E\u0440\u043A\u0438,
+      \u0442\u0435\u043F\u0435\u0440\u044C \u0441 \u043B\u0435\u0433\u043A\u043E\u0441\u0442\u044C\u044E
+      \u0440\u0432\u0443\u0442 \u0441\u0442\u0430\u043B\u044C"
+    textThai: "\u0E40\u0E04\u0E22\u0E40\u0E08\u0E32\u0E30\u0E40\u0E1B\u0E25\u0E37\u0E2D\u0E01\u0E14\u0E32\u0E27\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E19\u0E49\u0E2D\u0E22\u2014\u0E15\u0E2D\u0E19\u0E19\u0E35\u0E49\u0E09\u0E35\u0E01\u0E40\u0E2B\u0E25\u0E47\u0E01\u0E44\u0E14\u0E49\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E07\u0E48\u0E32\u0E22\u0E14\u0E32\u0E22"
+  - key: page/bio/unit/zreep/unit_zreep_melee_elite_02_info
+    textEnglish: ardened spikes inflict lethal melee punctures
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u786C\u5316\u5C16\u523A\u9020\u6210\u81F4\u547D\u8FD1\u6218\u7A7F\u523A"
+    textTraditionChinese: "\u786C\u5316\u5C16\u523A\u9020\u6210\u81F4\u547D\u8FD1\u6230\u7A7F\u523A"
+    textJapanese: "\u786C\u5316\u3057\u305F\u30B9\u30D1\u30A4\u30AF\u306F\u81F4\u547D\u7684\u306A\u8FD1\u63A5\u523A\u50B7\u3092\u4E0E\u3048\u308B"
+    textKorean: "\uB2E8\uB2E8\uD55C \uAC00\uC2DC\uAC00 \uCE58\uBA85\uC801\uC778 \uADFC\uC811
+      \uACF5\uACA9\uC744 \uAC00\uD55C\uB2E4"
+    textFrench: "des pointes durcies infligent des perforations mortelles au corps
+      \xE0 corps"
+    textGerman: "geh\xE4rtete Spitzen verursachen t\xF6dliche Nahkampfstiche"
+    textSpanish: "p\xFAas endurecidas infligen pinchazos mortales cuerpo a cuerpo"
+    textPortuguese: "espinhos endurecidos infligem perfura\xE7\xF5es letais corpo
+      a corpo"
+    textItalian: aculei induriti infliggono perforazioni letali a distanza ravvicinata
+    textDutch: verharde punten veroorzaken dodelijke steekwonden
+    textRussian: "\u0417\u0430\u043A\u0430\u043B\u0435\u043D\u043D\u044B\u0435 \u0448\u0438\u043F\u044B
+      \u043D\u0430\u043D\u043E\u0441\u044F\u0442 \u0441\u043C\u0435\u0440\u0442\u0435\u043B\u044C\u043D\u044B\u0435
+      \u043A\u043E\u043B\u043E\u0442\u044B\u0435 \u0440\u0430\u043D\u044B \u0432
+      \u0431\u043B\u0438\u0436\u043D\u0435\u043C \u0431\u043E\u044E"
+    textThai: "\u0E2B\u0E19\u0E32\u0E21\u0E41\u0E2B\u0E25\u0E21\u0E04\u0E21\u0E17\u0E33\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E23\u0E30\u0E22\u0E30\u0E1B\u0E23\u0E30\u0E0A\u0E34\u0E14\u0E16\u0E36\u0E07\u0E15\u0E32\u0E22"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_elite_01_info
+    textEnglish: "These floaters are the Overlord\u2019s nerves made flesh\u2014its
+      will, weaponized"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u662F\u866B\u7FA4\u4E3B\u5BB0\u7684\u201C\u795E\u7ECF\u5EF6\u4F38\u201D\uFF0C\u5B83\u4EEC\u7684\u5B58\u5728\u672C\u8EAB\u5C31\u662F\u547D\u4EE4\u7684\u5177\u8C61\u5316"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD9\u4E9B\u6D6E\u6E38\u8005\u662F\u866B\u7FA4\u4E3B\u5BB0\u7684\u201C\u795E\u7ECF\u5EF6\u4F38\u201D\uFF0C\u5B83\u4EEC\u7684\u5B58\u5728\u672C\u8EAB\u5C31\u662F\u547D\u4EE4\u7684\u5177\u8C61\u5316"
+    textTraditionChinese: "\u9019\u4E9B\u6F02\u6D6E\u8005\u662F\u87F2\u7FA4\u4E3B\u5BB0\u7684\u795E\u7D93\u5177\u73FE\u5316\u2014\u2014\u5B83\u7684\u610F\u5FD7\uFF0C\u6B66\u5668\u5316"
+    textJapanese: "\u3053\u308C\u3089\u306E\u30D5\u30ED\u30FC\u30C0\u30FC\u306F\u30AA\u30FC\u30D0\u30FC\u30ED\u30FC\u30C9\u306E\u795E\u7D4C\u304C\u5177\u73FE\u5316\u3057\u305F\u3082\u306E\u2014\u305D\u306E\u610F\u601D\u3092\u6B66\u5668\u5316\u3057\u305F\u3082\u306E"
+    textKorean: "\uC774 \uD50C\uB85C\uD130\uB4E4\uC740 \uC624\uBC84\uB85C\uB4DC\uC758
+      \uC2E0\uACBD\uC774 \uC721\uCCB4\uB85C \uAD6C\uD604\uB41C \uAC83\uC774\uBA70,
+      \uADF8\uC758 \uC758\uC9C0\uAC00 \uBB34\uAE30\uD654\uB41C \uAC83"
+    textFrench: "Ces flotteurs sont les nerfs du Supr\xEAme incarn\xE9s\u2014sa volont\xE9,
+      arm\xE9e"
+    textGerman: "Diese Schwebewesen sind die verk\xF6rperten Nerven des Overlords
+      \u2013 sein Wille, bewaffnet"
+    textSpanish: 'Estos flotadores son los nervios del Overlord hechos carne: su
+      voluntad, convertida en arma'
+    textPortuguese: "Esses flutuadores s\xE3o os nervos do Supremo feitos carne\u2014sua
+      vontade, armada"
+    textItalian: "Questi corpi fluttuanti sono i nervi dell'Overlord resi carne\u2014la
+      sua volont\xE0, armata"
+    textDutch: "Deze zwevers zijn de Overheersers zenuwen in vlees veranderd\u2014zijn
+      wil, verwekt als wapen"
+    textRussian: "\u042D\u0442\u0438 \u043F\u043B\u0430\u0432\u0443\u043D\u044B \u2014
+      \u043F\u043B\u043E\u0442\u044C \u043D\u0435\u0440\u0432\u043E\u0432 \u041F\u043E\u0432\u0435\u043B\u0438\u0442\u0435\u043B\u044F,
+      \u0435\u0433\u043E \u0432\u043E\u043B\u044F, \u0432\u043E\u043F\u043B\u043E\u0449\u0435\u043D\u043D\u0430\u044F
+      \u0432 \u043E\u0440\u0443\u0436\u0438\u0435"
+    textThai: "\u0E1F\u0E25\u0E39\u0E15\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E40\u0E2B\u0E25\u0E48\u0E32\u0E19\u0E35\u0E49\u0E04\u0E37\u0E2D\u0E40\u0E2A\u0E49\u0E19\u0E1B\u0E23\u0E30\u0E2A\u0E32\u0E17\u0E02\u0E2D\u0E07\u0E42\u0E2D\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E25\u0E2D\u0E23\u0E4C\u0E14\u0E17\u0E35\u0E48\u0E01\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E2B\u0E19\u0E31\u0E07\u2014\u0E40\u0E1B\u0E47\u0E19\u0E40\u0E08\u0E15\u0E08\u0E33\u0E19\u0E07\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19\u0E17\u0E35\u0E48\u0E16\u0E39\u0E01\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E1B\u0E47\u0E19\u0E2D\u0E32\u0E27\u0E38\u0E18"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_elite_02_info
+    textEnglish: Spits corrosive venom, melts armored targets
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u55B7\u5C04\u8150\u8680\u6027\u6BD2\u6DB2\uFF0C\u7194\u5316\u88C5\u7532\u76EE\u6807"
+    textTraditionChinese: "\u5674\u5410\u8150\u8755\u6027\u6BD2\u6DB2\uFF0C\u878D\u5316\u88DD\u7532\u76EE\u6A19"
+    textJapanese: "\u8150\u98DF\u6027\u306E\u6BD2\u3092\u5410\u304D\u3001\u88C5\u7532\u76EE\u6A19\u3092\u6EB6\u304B\u3059"
+    textKorean: "\uBD80\uC2DD\uC131 \uB3C5\uC561\uC744  \uC5B4\uB0B4\uBA70 \uC7A5\uAC11
+      \uD45C\uC801\uC744 \uB179\uC778\uB2E4"
+    textFrench: "Crache un venin corrosif, fond les cibles blind\xE9es"
+    textGerman: "Spuckt \xE4tzendes Gift, schmilzt gepanzerte Ziele"
+    textSpanish: Escupe veneno corrosivo, derrite objetivos blindados
+    textPortuguese: Cospe veneno corrosivo, derrete alvos blindados
+    textItalian: Sputa veleno corrosivo, scioglie bersagli corazzati
+    textDutch: Spuwt bijtend gif, smelt gepantserde doelen
+    textRussian: "\u0418\u0437\u0440\u044B\u0433\u0430\u0435\u0442 \u0435\u0434\u043A\u0438\u0439
+      \u044F\u0434, \u043F\u043B\u0430\u0432\u0438\u0442 \u0431\u0440\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435
+      \u0446\u0435\u043B\u0438"
+    textThai: "\u0E1E\u0E48\u0E19\u0E1E\u0E34\u0E29\u0E01\u0E31\u0E14\u0E01\u0E23\u0E48\u0E2D\u0E19
+      \u0E25\u0E30\u0E25\u0E32\u0E22\u0E40\u0E1B\u0E49\u0E32\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E01\u0E23\u0E32\u0E30"
+  - key: page/bio/unit/zreep/unit_zreep_melee_boss_01_info
+    textEnglish: "Not a king, but the \u201CI\u201D of the swarm\u2014the source
+      of its will and its ruin"
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7\uFF0C\u4E2D\u6587\u7FFB\u8BD1\u53C2\u8003\uFF1A\u5B83\u4E0D\u662F\u738B\uFF0C\u5B83\u662F\u866B\u7FA4\u4E4B\u201C\u6211\u201D\uFF0C\u4E00\u5207\u610F\u5FD7\u4E0E\u6BC1\u706D\u7684\u6E90\u5934"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5B83\u4E0D\u662F\u738B\uFF0C\u5B83\u662F\u866B\u7FA4\u4E4B\u201C\u6211\u201D\uFF0C\u4E00\u5207\u610F\u5FD7\u4E0E\u6BC1\u706D\u7684\u6E90\u5934"
+    textTraditionChinese: "\u5B83\u4E0D\u662F\u738B\uFF0C\u5B83\u662F\u87F2\u7FA4\u4E4B\u300C\u6211\u300D\uFF0C\u4E00\u5207\u610F\u5FD7\u8207\u6BC0\u6EC5\u7684\u6E90\u982D"
+    textJapanese: "\u738B\u3067\u306F\u306A\u304F\u3001\u7FA4\u308C\u306E\u300C\u6211\u300D\u2014\u305D\u306E\u610F\u5FD7\u3068\u7834\u6EC5\u306E\u6E90"
+    textKorean: "\uC655\uC774 \uC544\uB2C8\uB77C, \uAD70\uB2E8\uC758 '\uB098'\u2014\uADF8\uAC83\uC758
+      \uC758\uC9C0\uC640 \uD30C\uBA78\uC758 \uADFC\uC6D0"
+    textFrench: "Pas un roi, mais le \xAB je \xBB de l'essaim\u2014la source de sa
+      volont\xE9 et de sa ruine"
+    textGerman: "Kein K\xF6nig, sondern das \u201EIch\u201C des Schwarms\u2014der
+      Ursprung seines Willens und seines Untergangs"
+    textSpanish: No un rey, sino el "yo" del enjambre, la fuente de su voluntad y
+      su ruina
+    textPortuguese: "N\xE3o um rei, mas o \u201Ceu\u201D do enxame\u2014a fonte de
+      sua vontade e sua ru\xEDna"
+    textItalian: "Non un re, ma l'\u201Cio\u201D dello sciame\u2014la fonte della
+      sua volont\xE0 e della sua rovina"
+    textDutch: Geen koning, maar het "ik" van de zwerm - de bron van zijn wil en
+      zijn ondergang
+    textRussian: "\u041D\u0435 \u043A\u043E\u0440\u043E\u043B\u044C, \u043D\u043E
+      \xAB\u042F\xBB \u0440\u043E\u044F \u2014 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A
+      \u0435\u0433\u043E \u0432\u043E\u043B\u0438 \u0438 \u0435\u0433\u043E \u0433\u0438\u0431\u0435\u043B\u0438"
+    textThai: "\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E01\u0E29\u0E31\u0E15\u0E23\u0E34\u0E22\u0E4C
+      \u0E41\u0E15\u0E48\u0E40\u0E1B\u0E47\u0E19 \"\u0E09\u0E31\u0E19\" \u0E02\u0E2D\u0E07\u0E1D\u0E39\u0E07
+      \u2014 \u0E41\u0E2B\u0E25\u0E48\u0E07\u0E01\u0E33\u0E40\u0E19\u0E34\u0E14\u0E41\u0E2B\u0E48\u0E07\u0E40\u0E08\u0E15\u0E08\u0E33\u0E19\u0E07\u0E41\u0E25\u0E30\u0E04\u0E27\u0E32\u0E21\u0E1E\u0E34\u0E19\u0E32\u0E28"
+  - key: page/bio/unit/zreep/unit_zreep_melee_boss_02_info
+    textEnglish: Crimson spikes, blades tearing battlefields
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7EEF\u7EA2\u5C16\u523A \u5229\u5203\u6495\u88C2\u6218\u573A"
+    textTraditionChinese: "\u6DF1\u7D05\u5C16\u523A\uFF0C\u5200\u92D2\u6495\u88C2\u6230\u5834"
+    textJapanese: "\u6DF1\u7D05\u306E\u30B9\u30D1\u30A4\u30AF\u3001\u6226\u5834\u3092\u5F15\u304D\u88C2\u304F\u5203"
+    textKorean: "\uC9C4\uD64D\uBE5B \uAC00\uC2DC, \uC804\uC7A5\uC744 \uAC00\uB974\uB294
+      \uCE7C\uB0A0"
+    textFrench: "Pointes cramoisies, lames d\xE9chirant les champs de bataille"
+    textGerman: "Karmesinrote Spitzen, Klingen zerrei\xDFen Schlachtfelder"
+    textSpanish: "P\xFAas carmes\xED, hojas desgarrando campos de batalla"
+    textPortuguese: "Espinhos carmesim, l\xE2minas rasgando campos de batalha"
+    textItalian: Punte cremisi, lame che squarciano i campi di battaglia
+    textDutch: Karmozijnrode pieken, zwaarden verscheurende slagvelden
+    textRussian: "\u0411\u0430\u0433\u0440\u043E\u0432\u044B\u0435 \u0448\u0438\u043F\u044B,
+      \u043A\u043B\u0438\u043D\u043A\u0438 \u0440\u0432\u0443\u0442 \u043F\u043E\u043B\u044F
+      \u0431\u0438\u0442\u0432"
+    textThai: "\u0E2B\u0E19\u0E32\u0E21\u0E2A\u0E35\u0E41\u0E14\u0E07\u0E40\u0E02\u0E49\u0E21
+      \u0E14\u0E32\u0E1A\u0E09\u0E35\u0E01\u0E2A\u0E19\u0E32\u0E21\u0E23\u0E1A"
+  - key: page/bio/unit/zreep/unit_zreep_ranged_boss_01_info
+    textEnglish: Acid rains sweep earth and steel alike
+    textHint: "\u7ED3\u5C3E\u4E0D\u9700\u8981\u53E5\u53F7"
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9178\u96E8\u4FB5\u8680\u5927\u5730\u4E0E\u94A2\u94C1"
+    textTraditionChinese: "\u9178\u96E8\u6A6B\u6383\u5927\u5730\u8207\u92FC\u9435"
+    textJapanese: "\u9178\u6027\u96E8\u306F\u5927\u5730\u3082\u92FC\u9244\u3082\u306A\u304E\u5012\u3059"
+    textKorean: "\uC0B0\uC131\uBE44\uB294  \uB545\uACFC \uAC15\uCCA0\uC744 \uAC00\uB9AC\uC9C0
+      \uC54A\uACE0  \uD729\uC4F4\uB2E4"
+    textFrench: Les pluies acides balaient terre et acier
+    textGerman: "Saurer Regen fegt \xFCber Erde und Stahl gleicherma\xDFen"
+    textSpanish: "Las lluvias \xE1cidas arrasan tierra y acero por igual"
+    textPortuguese: "Chuvas \xE1cidas varrem a terra e o a\xE7o por igual"
+    textItalian: Le piogge acide spazzano terra e acciaio
+    textDutch: Zure regen vegen aarde en staal weg
+    textRussian: "\u041A\u0438\u0441\u043B\u043E\u0442\u043D\u044B\u0435 \u0434\u043E\u0436\u0434\u0438
+      \u0440\u0430\u0437\u044A\u0435\u0434\u0430\u044E\u0442 \u0438 \u0437\u0435\u043C\u043B\u044E,
+      \u0438 \u0441\u0442\u0430\u043B\u044C"
+    textThai: "\u0E1D\u0E19\u0E01\u0E23\u0E14\u0E0A\u0E30\u0E25\u0E49\u0E32\u0E07\u0E17\u0E31\u0E49\u0E07\u0E14\u0E34\u0E19\u0E41\u0E25\u0E30\u0E40\u0E2B\u0E25\u0E47\u0E01"
+  - key: page/bio/unit/zreep/page_bio_unit_zreep_overlord_01_info
+    textEnglish: Millions of hearts beat here, and billions of egg sacs tremble.
+      Its breath weaves the collective mind of the swarm, with every spore singing
+      the praises of this bloody, flesh-driven evolution
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5343\u4E07\u9897\u5FC3\u810F\u5728\u6B64\u640F\u52A8\uFF0C\u4EBF\u4E07\u4E2A\u5375\u56CA\u5728\u6B64\u9707\u98A4\u3002\u5B83\u7684\u547C\u5438\u7F16\u7EC7\u7740\u866B\u7FA4\u7684\u601D\u60F3\u7F51\u7EDC\uFF0C\u6BCF\u4E2A\u5B62\u5B50\u90FD\u5728\u6B4C\u9882\u8FD9\u573A\u8840\u8089\u8FDB\u5316\u8BBA\u7684\u72C2\u6B22"
+    textTraditionChinese: "\u5343\u842C\u9846\u5FC3\u81DF\u5728\u6B64\u640F\u52D5\uFF0C\u5104\u842C\u500B\u5375\u56CA\u5728\u6B64\u9707\u986B\u3002\u5B83\u7684\u547C\u5438\u7DE8\u7E54\u8457\u87F2\u7FA4\u7684\u601D\u60F3\u7DB2\u7D61\uFF0C\u6BCF\u500B\u5B62\u5B50\u90FD\u5728\u6B4C\u980C\u9019\u5834\u8840\u8089\u9032\u5316\u8AD6\u7684\u72C2\u6B61"
+    textJapanese: "\u3053\u3053\u3067\u306F\u6570\u767E\u4E07\u306E\u5FC3\u81D3\u304C\u9F13\u52D5\u3057\u3001\u6570\u5341\u5104\u306E\u5375\u56A2\u304C\u9707\u3048\u308B\u3002\u305D\u306E\u547C\u5438\u304C\u7FA4\u308C\u306E\u96C6\u5408\u610F\u8B58\u3092\u7E54\u308A\u306A\u3057\u3001\u3059\u3079\u3066\u306E\u80DE\u5B50\u304C\u3053\u306E\u8840\u5857\u3089\u308C\u305F\u8089\u306E\u9032\u5316\u306E\u8CDB\u6B4C\u3092\u6B4C\u3046"
+    textKorean: "\uC218\uBC31\uB9CC \uAC1C\uC758 \uC2EC\uC7A5\uC774 \uC774\uACF3\uC5D0\uC11C
+      \uB6F0\uACE0, \uC218\uC2ED\uC5B5 \uAC1C\uC758 \uC54C\uC8FC\uBA38\uB2C8\uAC00
+      \uB5A8\uB9B0\uB2E4. \uADF8 \uC228\uACB0\uC740 \uAD70\uC9D1\uC758 \uC9D1\uB2E8
+      \uC815\uC2E0\uC744 \uC5EE\uC73C\uBA70, \uBAA8\uB4E0 \uD3EC\uC790\uAC00 \uC774
+      \uD53C\uBE44\uB9B0\uB0B4 \uB098\uB294 \uC721\uCCB4 \uC911\uC2EC\uC758 \uC9C4\uD654\uB97C
+      \uCC2C\uC591\uD55C\uB2E4."
+    textFrench: "Des millions de c\u0153urs battent ici, des milliards de sacs d'\u0153ufs
+      tremblent. Son souffle tisse l'esprit collectif de l'essaim, chaque spore chantant
+      les louanges de cette \xE9volution sanglante et charnelle"
+    textGerman: "Millionen Herzen schlagen hier, Milliarden Eiers\xE4cke zittern.
+      Sein Atem webt das kollektive Bewusstsein des Schwarms, jeder Spore lobt diese
+      blutige, fleischgetriebene Evolution"
+    textSpanish: "Millones de corazones laten aqu\xED, y miles de millones de sacos
+      de huevos tiemblan. Su respiraci\xF3n teje la mente colectiva del enjambre,
+      cada espora canta las alabanzas de esta sangrienta evoluci\xF3n impulsada por
+      la carne"
+    textPortuguese: "Milh\xF5es de cora\xE7\xF5es batem aqui, e bilh\xF5es de sacos
+      de ovos tremem. Sua respira\xE7\xE3o tece a mente coletiva do enxame, com cada
+      esporo cantando as gl\xF3rias dessa evolu\xE7\xE3o sangrenta e movida pela
+      carne"
+    textItalian: Milioni di cuori battono qui e miliardi di sacche di uova tremano.
+      Il suo respiro intesse la mente collettiva dello sciame, con ogni spora che
+      canta le lodi di questa sanguinosa evoluzione guidata dalla carne.
+    textDutch: Miljoenen harten kloppen hier, en miljarden eierzakjes trillen. Zijn
+      adem weeft het collectieve bewustzijn van de zwerm, elk spoor zingt de lof
+      van deze bloedige, vleesgedreven evolutie
+    textRussian: "\u041C\u0438\u043B\u043B\u0438\u043E\u043D\u044B \u0441\u0435\u0440\u0434\u0435\u0446
+      \u0431\u044C\u044E\u0442\u0441\u044F \u0437\u0434\u0435\u0441\u044C, \u0438
+      \u043C\u0438\u043B\u043B\u0438\u0430\u0440\u0434\u044B \u044F\u0439\u0446\u0435\u0432\u044B\u0445
+      \u043C\u0435\u0448\u043E\u0447\u043A\u043E\u0432 \u0434\u0440\u043E\u0436\u0430\u0442.
+      \u0415\u0433\u043E \u0434\u044B\u0445\u0430\u043D\u0438\u0435 \u043F\u043B\u0435\u0442\u0451\u0442
+      \u043A\u043E\u043B\u043B\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u0439 \u0440\u0430\u0437\u0443\u043C
+      \u0440\u043E\u044F, \u0438 \u043A\u0430\u0436\u0434\u0430\u044F \u0441\u043F\u043E\u0440\u0430
+      \u0432\u043E\u0441\u0445\u0432\u0430\u043B\u044F\u0435\u0442 \u044D\u0442\u0443
+      \u043A\u0440\u043E\u0432\u0430\u0432\u0443\u044E, \u043F\u043B\u043E\u0442\u044C\u044E
+      \u0434\u0432\u0438\u0436\u0438\u043C\u0443\u044E \u044D\u0432\u043E\u043B\u044E\u0446\u0438\u044E"
+    textThai: "\u0E25\u0E49\u0E32\u0E19\u0E2B\u0E31\u0E27\u0E43\u0E08\u0E40\u0E15\u0E49\u0E19\u0E23\u0E31\u0E27\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48
+      \u0E1E\u0E31\u0E19\u0E25\u0E49\u0E32\u0E19\u0E16\u0E38\u0E07\u0E44\u0E02\u0E48\u0E2A\u0E31\u0E48\u0E19\u0E2A\u0E30\u0E40\u0E17\u0E37\u0E2D\u0E19
+      \u0E25\u0E21\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E02\u0E2D\u0E07\u0E21\u0E31\u0E19\u0E16\u0E31\u0E01\u0E17\u0E2D\u0E08\u0E34\u0E15\u0E43\u0E08\u0E2B\u0E21\u0E39\u0E48\u0E02\u0E2D\u0E07\u0E1D\u0E39\u0E07\u0E28\u0E31\u0E15\u0E23\u0E39
+      \u0E17\u0E38\u0E01\u0E2A\u0E1B\u0E2D\u0E23\u0E4C\u0E23\u0E49\u0E2D\u0E07\u0E40\u0E1E\u0E25\u0E07\u0E2A\u0E23\u0E23\u0E40\u0E2A\u0E23\u0E34\u0E0D\u0E27\u0E34\u0E27\u0E31\u0E12\u0E19\u0E32\u0E01\u0E32\u0E23\u0E17\u0E35\u0E48\u0E02\u0E31\u0E1A\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E14\u0E49\u0E27\u0E22\u0E40\u0E25\u0E37\u0E2D\u0E14\u0E40\u0E19\u0E37\u0E49\u0E2D"

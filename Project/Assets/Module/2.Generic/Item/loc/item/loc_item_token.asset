@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_item_token
+  m_EditorClassIdentifier: 
+  isMapping: 0
+  isEdit: 0
+  hint: 
+  list:
+  - key: item/token/relic
+    textEnglish: Relic Token
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9057\u8FF9\u4EE3\u5E01"
+    textTraditionChinese: "\u907A\u7269\u4EE3\u5E63"
+    textJapanese: "\u30EC\u30EA\u30C3\u30AF\u30C8\u30FC\u30AF\u30F3"
+    textKorean: "\uB810\uB9AD \uD1A0\uD070"
+    textFrench: Jeton Relique
+    textGerman: Relikt-Token
+    textSpanish: Token de Reliquia
+    textPortuguese: "Token de Rel\xEDquia"
+    textItalian: Token Reliquia
+    textDutch: Relictoken
+    textRussian: "\u0420\u0435\u043B\u0438\u043A \u0422\u043E\u043A\u0435\u043D"
+    textThai: "\u0E42\u0E17\u0E40\u0E04\u0E19\u0E02\u0E2D\u0E07\u0E42\u0E1A\u0E23\u0E32\u0E13\u0E27\u0E31\u0E15\u0E16\u0E38"
+  - key: item/token/tavern
+    textEnglish: Tavern Token
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9152\u9986\u4EE3\u5E01"
+    textTraditionChinese: "\u9152\u9928\u4EE3\u5E63"
+    textJapanese: "\u9152\u5834\u306E\u30C8\u30FC\u30AF\u30F3"
+    textKorean: "\uD0C0\uBC88 \uD1A0\uD070"
+    textFrench: Jeton de taverne
+    textGerman: Taverne-Token
+    textSpanish: Token de Taberna
+    textPortuguese: Ficha da Taverna
+    textItalian: Gettoni della Taverna
+    textDutch: Herberg Token
+    textRussian: "\u0422\u0430\u0432\u0435\u0440\u043D\u0430 \u0422\u043E\u043A\u0435\u043D"
+    textThai: "\u0E42\u0E17\u0E40\u0E04\u0E19\u0E42\u0E23\u0E07\u0E40\u0E15\u0E35\u0E4A\u0E22\u0E21"
+  - key: item/token/ticket_ad
+    textEnglish: Ads Free Ticket
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5E7F\u544A\u514D\u8D39\u7968"
+    textTraditionChinese: "\u7121\u5EE3\u544A\u9580\u7968"
+    textJapanese: "\u5E83\u544A\u306A\u3057\u30C1\u30B1\u30C3\u30C8"
+    textKorean: "\uAD11\uACE0 \uC5C6\uB294  \uD2F0\uCF13"
+    textFrench: "Billet sans publicit\xE9"
+    textGerman: Werbe-freies Ticket
+    textSpanish: Boleto sin Anuncios
+    textPortuguese: "Bilhete Sem An\xFAncios"
+    textItalian: "Biglietto Senza Pubblicit\xE0"
+    textDutch: Advertentievrij Ticket
+    textRussian: "\u0411\u0438\u043B\u0435\u0442 \u0431\u0435\u0437 \u0440\u0435\u043A\u043B\u0430\u043C\u044B"
+    textThai: "\u0E15\u0E31\u0E4B\u0E27\u0E44\u0E21\u0E48\u0E21\u0E35\u0E42\u0E06\u0E29\u0E13\u0E32"

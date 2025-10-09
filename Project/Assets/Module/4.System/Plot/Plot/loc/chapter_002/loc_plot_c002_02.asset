@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c4f2fe6703420aa2090f1cb36e746, type: 3}
+  m_Name: loc_plot_c002_02
+  m_EditorClassIdentifier: 
+  type: 1
+  isEdit: 0
+  hint: 
+  list:
+  - key: loc_plot_c002_02_01
+    textEnglish: "There\u2019s a strange device here."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD9\u91CC\u6709\u4E2A\u5947\u602A\u7684\u8BBE\u5907\u3002"
+    textTraditionChinese: "\u9019\u88E1\u6709\u500B\u5947\u602A\u7684\u88DD\u7F6E\u3002"
+    textJapanese: "\u3053\u3053\u306B\u5947\u5999\u306A\u88C5\u7F6E\u304C\u3042\u308A\u307E\u3059\u3002"
+    textKorean: "\uC5EC\uAE30\uC5D0 \uC774\uC0C1\uD55C \uC7A5\uCE58\uAC00 \uC788\uC5B4\uC694."
+    textFrench: "Il y a un \xE9trange appareil ici."
+    textGerman: "Hier ist ein seltsames Ger\xE4t."
+    textSpanish: "Hay un dispositivo extra\xF1o aqu\xED."
+    textPortuguese: "H\xE1 um dispositivo estranho aqui."
+    textItalian: "C'\xE8 uno strano dispositivo qui."
+    textDutch: Er is hier een vreemd apparaat.
+    textRussian: "\u0417\u0434\u0435\u0441\u044C \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435
+      \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E."
+    textThai: "\u0E21\u0E35\u0E2D\u0E38\u0E1B\u0E01\u0E23\u0E13\u0E4C\u0E41\u0E1B\u0E25\u0E01\u0E46\u0E2D\u0E22\u0E39\u0E48\u0E17\u0E35\u0E48\u0E19\u0E35\u0E48"
+  - key: loc_plot_c002_02_02
+    textEnglish: "Looks like a server, but it\u2019s completely fried\u2014no way
+      to recover any data."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u770B\u8D77\u6765\u50CF\u53F0\u670D\u52A1\u5668\uFF0C\u4F46\u5B8C\u5168\u70E7\u6BC1\u4E86\u2014\u2014\u6570\u636E\u65E0\u6CD5\u6062\u590D\u3002"
+    textTraditionChinese: "\u770B\u8D77\u4F86\u50CF\u500B\u4F3A\u670D\u5668\uFF0C\u4F46\u5B8C\u5168\u71D2\u6BC0\u4E86\u2014\u2014\u7121\u6CD5\u6062\u5FA9\u4EFB\u4F55\u6578\u64DA\u3002"
+    textJapanese: "\u30B5\u30FC\u30D0\u30FC\u306E\u3088\u3046\u3060\u304C\u3001\u5B8C\u5168\u306B\u6545\u969C\u3057\u3066\u3044\u3066\u3001\u30C7\u30FC\u30BF\u3092\u56DE\u5FA9\u3059\u308B\u65B9\u6CD5\u306F\u306A\u3044\u3002"
+    textKorean: "\uC11C\uBC84\uCC98\uB7FC \uBCF4\uC774\uC9C0\uB9CC \uC644\uC804\uD788
+      \uB9DD\uAC00\uC838\uC11C \uB370\uC774\uD130\uB97C \uBCF5\uAD6C\uD560 \uBC29\uBC95\uC774
+      \uC5C6\uC5B4\uC694."
+    textFrench: "On dirait un serveur, mais il est compl\xE8tement grill\xE9\u2014aucun
+      moyen de r\xE9cup\xE9rer des donn\xE9es."
+    textGerman: "Sieht aus wie ein Server, aber er ist v\xF6llig durchgebrannt \u2013
+      keine Chance, Daten wiederherzustellen."
+    textSpanish: "Parece un servidor, pero est\xE1 completamente frito\u2014no hay
+      forma de recuperar ning\xFAn dato."
+    textPortuguese: "Parece um servidor, mas est\xE1 completamente frito\u2014sem
+      chance de recuperar nenhum dado."
+    textItalian: "Sembra un server, ma \xE8 completamente fritto\u2014nessun modo
+      di recuperare i dati."
+    textDutch: 
+    textRussian: "\u041F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u0441\u0435\u0440\u0432\u0435\u0440,
+      \u043D\u043E \u043E\u043D \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0441\u0433\u043E\u0440\u0435\u043B \u2014 \u043D\u0438\u043A\u0430\u043A
+      \u043D\u0435 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+      \u0434\u0430\u043D\u043D\u044B\u0435."
+    textThai: "\u0E14\u0E39\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E40\u0E0B\u0E34\u0E23\u0E4C\u0E1F\u0E40\u0E27\u0E2D\u0E23\u0E4C
+      \u0E41\u0E15\u0E48\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E08\u0E19\u0E44\u0E21\u0E48\u0E2A\u0E32\u0E21\u0E32\u0E23\u0E16\u0E01\u0E39\u0E49\u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25\u0E43\u0E14\u0E46
+      \u0E44\u0E14\u0E49"
+  - key: loc_plot_c002_02_03
+    textEnglish: "This wasn\u2019t done by those machines\u2014someone did this on
+      purpose."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u8FD9\u4E0D\u662F\u90A3\u4E9B\u673A\u5668\u505A\u7684\u2014\u2014\u662F\u6709\u4EBA\u6545\u610F\u4E3A\u4E4B\u3002"
+    textTraditionChinese: "\u9019\u4E0D\u662F\u90A3\u4E9B\u6A5F\u5668\u505A\u7684\u2014\u2014\u662F\u6709\u4EBA\u6545\u610F\u70BA\u4E4B\u3002"
+    textJapanese: "\u3053\u308C\u306F\u6A5F\u68B0\u304C\u3084\u3063\u305F\u3053\u3068\u3067\u306F\u306A\u304F\u3001\u8AB0\u304B\u304C\u610F\u56F3\u7684\u306B\u3084\u3063\u305F\u3053\u3068\u3067\u3059\u3002"
+    textKorean: "\uC774\uAC83\uC740 \uADF8 \uAE30\uACC4\uB4E4\uC774 \uD55C \uAC8C
+      \uC544\uB2C8\uC5D0\uC694\u2014\uB204\uAD70\uAC00\uAC00 \uC77C\uBD80\uB7EC \uC774\uB807\uAC8C
+      \uD588\uC5B4\uC694."
+    textFrench: "Ce n'\xE9tait pas fait par ces machines\u2014quelqu'un l'a fait
+      expr\xE8s."
+    textGerman: "Das wurde nicht von diesen Maschinen gemacht \u2013 jemand hat das
+      absichtlich getan."
+    textSpanish: "Esto no fue hecho por esas m\xE1quinas, alguien lo hizo a prop\xF3sito."
+    textPortuguese: "Isso n\xE3o foi feito por essas m\xE1quinas \u2014 algu\xE9m
+      fez isso de prop\xF3sito."
+    textItalian: "Non \xE8 stato fatto da quelle macchine\u2014qualcuno l'ha fatto
+      apposta."
+    textDutch: "Dit is niet door die machines gedaan\u2014iemand heeft dit met opzet
+      gedaan."
+    textRussian: "\u042D\u0442\u043E \u0431\u044B\u043B\u043E \u0441\u0434\u0435\u043B\u0430\u043D\u043E
+      \u043D\u0435 \u043C\u0430\u0448\u0438\u043D\u0430\u043C\u0438 \u2014 \u043A\u0442\u043E-\u0442\u043E
+      \u0441\u0434\u0435\u043B\u0430\u043B \u044D\u0442\u043E \u043D\u0430\u043C\u0435\u0440\u0435\u043D\u043D\u043E."
+    textThai: "\u0E19\u0E35\u0E48\u0E44\u0E21\u0E48\u0E43\u0E0A\u0E48\u0E2A\u0E34\u0E48\u0E07\u0E17\u0E35\u0E48\u0E40\u0E04\u0E23\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E31\u0E01\u0E23\u0E17\u0E33\u2014\u0E21\u0E35\u0E04\u0E19\u0E17\u0E33\u0E41\u0E1A\u0E1A\u0E19\u0E35\u0E49\u0E42\u0E14\u0E22\u0E40\u0E08\u0E15\u0E19\u0E32"
+  - key: loc_plot_c002_02_04
+    textEnglish: The chips were deliberately melted using specialized methods.
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u82AF\u7247\u88AB\u4E13\u95E8\u65B9\u6CD5\u6545\u610F\u7194\u5316\u3002"
+    textTraditionChinese: "\u6676\u7247\u88AB\u523B\u610F\u4F7F\u7528\u5C08\u9580\u65B9\u6CD5\u7194\u5316\u3002"
+    textJapanese: "\u30C1\u30C3\u30D7\u306F\u5C02\u9580\u7684\u306A\u65B9\u6CD5\u3067\u610F\u56F3\u7684\u306B\u6EB6\u304B\u3055\u308C\u307E\u3057\u305F\u3002"
+    textKorean: "\uCE69\uC740 \uD2B9\uC218\uD55C \uBC29\uBC95\uC73C\uB85C \uC758\uB3C4\uC801\uC73C\uB85C
+      \uB179\uC5EC\uC84C\uC2B5\uB2C8\uB2E4."
+    textFrench: "Les puces ont \xE9t\xE9 d\xE9lib\xE9r\xE9ment fondues en utilisant
+      des m\xE9thodes sp\xE9cialis\xE9es."
+    textGerman: Die Chips wurden absichtlich mit speziellen Methoden geschmolzen.
+    textSpanish: "Las fichas se derritieron deliberadamente utilizando m\xE9todos
+      especializados."
+    textPortuguese: "Os chips foram derretidos deliberadamente usando m\xE9todos
+      especializados."
+    textItalian: I chip sono stati deliberatamente sciolti utilizzando metodi specializzati.
+    textDutch: De chips werden opzettelijk gesmolten met gespecialiseerde methoden.
+    textRussian: "\u0427\u0438\u043F\u0441\u044B \u0431\u044B\u043B\u0438 \u043D\u0430\u043C\u0435\u0440\u0435\u043D\u043D\u043E
+      \u0440\u0430\u0441\u043F\u043B\u0430\u0432\u043B\u0435\u043D\u044B \u0441 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435\u043C
+      \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445
+      \u043C\u0435\u0442\u043E\u0434\u043E\u0432."
+    textThai: "\u0E0A\u0E34\u0E1B\u0E16\u0E39\u0E01\u0E2B\u0E25\u0E2D\u0E21\u0E25\u0E30\u0E25\u0E32\u0E22\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E08\u0E07\u0E43\u0E08\u0E42\u0E14\u0E22\u0E43\u0E0A\u0E49\u0E27\u0E34\u0E18\u0E35\u0E01\u0E32\u0E23\u0E40\u0E09\u0E1E\u0E32\u0E30"
+  - key: loc_plot_c002_02_05_option_1
+    textEnglish: Wait, did you hear that?
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u7B49\u7B49\uFF0C\u4F60\u542C\u5230\u4E86\u5417\uFF1F"
+    textTraditionChinese: "\u7B49\u7B49\uFF0C\u4F60\u807D\u5230\u4E86\u55CE\uFF1F"
+    textJapanese: "\u5F85\u3063\u3066\u3001\u305D\u308C\u805E\u3053\u3048\u305F\uFF1F"
+    textKorean: "\uC7A0\uAE50, \uADF8\uAC70 \uB4E4\uC5C8\uC5B4?"
+    textFrench: "Attends, tu as entendu \xE7a ?"
+    textGerman: "Warte, hast du das geh\xF6rt?"
+    textSpanish: "Espera, \xBFescuchaste eso?"
+    textPortuguese: "Espere, voc\xEA ouviu isso?"
+    textItalian: Aspetta, hai sentito quello?
+    textDutch: Wacht, heb je dat gehoord?
+    textRussian: "\u041F\u043E\u0434\u043E\u0436\u0434\u0438, \u0442\u044B \u044D\u0442\u043E
+      \u0441\u043B\u044B\u0448\u0430\u043B?"
+    textThai: "\u0E23\u0E2D\u0E40\u0E14\u0E35\u0E4B\u0E22\u0E27 \u0E04\u0E38\u0E13\u0E44\u0E14\u0E49\u0E22\u0E34\u0E19\u0E19\u0E31\u0E48\u0E19\u0E44\u0E2B\u0E21?"
+  - key: loc_plot_c002_02_05_option_2
+    textEnglish: "Sounds like something\u2019s moving closer."
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u542C\u8D77\u6765\u6709\u4EC0\u4E48\u4E1C\u897F\u6B63\u5728\u9760\u8FD1\u3002"
+    textTraditionChinese: "\u807D\u8D77\u4F86\u6709\u6771\u897F\u6B63\u5728\u9760\u8FD1\u3002"
+    textJapanese: "\u4F55\u304B\u304C\u8FD1\u3065\u3044\u3066\u304F\u308B\u3088\u3046\u3060\u3002"
+    textKorean: "\uBB54\uAC00 \uC810\uC810 \uAC00\uAE4C\uC6CC\uC9C0\uB294 \uAC83
+      \uAC19\uC544."
+    textFrench: On dirait que quelque chose se rapproche.
+    textGerman: "Klingt, als ob sich etwas n\xE4hert."
+    textSpanish: "Parece que algo se est\xE1 acercando."
+    textPortuguese: "Parece que algo est\xE1 se aproximando."
+    textItalian: Sembra che qualcosa si stia avvicinando.
+    textDutch: Het klinkt alsof er iets dichterbij komt.
+    textRussian: "\u041F\u043E\u0445\u043E\u0436\u0435, \u0447\u0442\u043E-\u0442\u043E
+      \u043F\u0440\u0438\u0431\u043B\u0438\u0436\u0430\u0435\u0442\u0441\u044F."
+    textThai: "\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E19\u0E27\u0E48\u0E32\u0E21\u0E35\u0E2D\u0E30\u0E44\u0E23\u0E1A\u0E32\u0E07\u0E2D\u0E22\u0E48\u0E32\u0E07\u0E01\u0E33\u0E25\u0E31\u0E07\u0E40\u0E04\u0E25\u0E37\u0E48\u0E2D\u0E19\u0E17\u0E35\u0E48\u0E40\u0E02\u0E49\u0E32\u0E21\u0E32\u0E43\u0E01\u0E25\u0E49"
+  - key: loc_plot_c002_02_06
+    textEnglish: "\u2026\u2026"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u2026\u2026"
+    textTraditionChinese: "\u2026\u2026"
+    textJapanese: "\u2026\u2026"
+    textKorean: "\u2026\u2026"
+    textFrench: "\u2026\u2026"
+    textGerman: "\u2026\u2026"
+    textSpanish: "\u2026\u2026"
+    textPortuguese: "\u2026\u2026"
+    textItalian: "\u2026\u2026"
+    textDutch: "\u2026\u2026"
+    textRussian: "\u2026\u2026"
+    textThai: "\u2026\u2026"
