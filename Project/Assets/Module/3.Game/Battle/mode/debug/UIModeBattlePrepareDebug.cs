@@ -13,9 +13,9 @@ public class UIModeBattlePrepareDebug : DebuggerSharedMenu
        
     }
 
-    public void OnDebugGetTileBrick()
+    public void OnDebugFight()
     {
-        BattleSystem.Instance.OnRefreshBrick();
+        BattleSystem.Instance.OnWaveFightStart();
     }
 
     public void OnDebugOpen()
