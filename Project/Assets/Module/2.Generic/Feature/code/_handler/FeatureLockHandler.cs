@@ -33,7 +33,7 @@ public class FeatureLockHandler : MonoBehaviour
         string content = "";
         switch (featureData.unlockConditionType)
         {
-            case FeatureUnlockConditionType.Progress:
+            case FeatureUnlockConditionType.Level:
                 content = UtilityLocalization.GetLocalization("feature/dynamic/unlock_at_level_x", $"{featureData.unlockLevelID}");
                 break;
             case FeatureUnlockConditionType.Coming:

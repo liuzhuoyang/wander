@@ -14,7 +14,7 @@ public class DebuggerFeatureUnlockerSlot : MonoBehaviour
     public void Init(FeatureData featureData)
     {
         this.featureData = featureData;
-        textName.text = UtilityLocalization.GetLocalization(featureData.displayName);
+        textName.text = featureData.featureType.ToString();
 
         objTick.SetActive(false);
     }

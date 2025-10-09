@@ -17,7 +17,7 @@ public class RoadmapSystem : Singleton<RoadmapSystem>
         uiRoadmapArgs = new UIRoadmapArgs();
         uiRoadmapArgs.listRoadmapSlot = new List<RoadmapSlotArgs>();
         //筛选根据进度解锁且有弹窗的 TODO 这里新框架有调整
-        List<FeatureData> listFeatureData = AllFeature.dictData.Values.Where(x => x.unlockConditionType == FeatureUnlockConditionType.Progress).ToList();
+        List<FeatureData> listFeatureData = AllFeature.dictData.Values.Where(x => x.unlockConditionType == FeatureUnlockConditionType.Level).ToList();
         //根据进度排序
         listFeatureData = listFeatureData.OrderBy(x => x.unlockLevelID).ToList();
         //根据进度筛选
