@@ -622,10 +622,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5712364045662786195, guid: 12e0e346df9c8f049906162f53c5e766, type: 3}
-      propertyPath: BlackScreenCanvasGroup
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

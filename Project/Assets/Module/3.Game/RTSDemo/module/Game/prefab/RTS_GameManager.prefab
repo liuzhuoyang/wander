@@ -64,10 +64,6 @@ PrefabInstance:
       propertyPath: launchSettings
       value: 
       objectReference: {fileID: 11400000, guid: a42f1e21bfa7a9c4abd2c31d3c1d7376, type: 2}
-    - target: {fileID: 4759861360168245595, guid: 673d4b80d3fbfb84fbac90a49b24e3aa, type: 3}
-      propertyPath: BlackScreenCanvasGroup
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
