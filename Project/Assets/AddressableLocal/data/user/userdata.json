@@ -4,8 +4,8 @@
     "userID": 0,
     "openID": null,
     "registerTime": 1759944571,
-    "saveTime": 1759944645,
-    "loginTime": 1759944571
+    "saveTime": 1759980737,
+    "loginTime": 1759980717
   },
   "userServer": null,
   "userProgress": {
@@ -126,6 +126,6 @@
   "userLiveEvent": null,
   "userMisc": {
     "isNewDayLogin": false,
-    "loginVersion": "0.0.1"
+    "loginVersion": "1.0"
   }
 }
