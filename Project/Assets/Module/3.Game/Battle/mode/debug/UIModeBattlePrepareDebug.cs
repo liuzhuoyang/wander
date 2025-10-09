@@ -13,9 +13,9 @@ public class UIModeBattlePrepareDebug : DebuggerSharedMenu
        
     }
 
-    public void OnDebugFight()
+    public void OnDebugPrepareEnd()
     {
-        BattleSystem.Instance.OnChangeBattleState(BattleStates.WaveFightStart);
+        BattleSystem.Instance.OnChangeBattleState(BattleStates.PrepareEnd);
     }
 
     public void OnDebugOpen()

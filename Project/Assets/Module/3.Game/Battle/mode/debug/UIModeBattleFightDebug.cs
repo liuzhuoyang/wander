@@ -15,8 +15,8 @@ public class UIModeBattleFightDebug : DebuggerSharedMenu
         gameObject.SetActive(false);
     }
 
-    public void OnDebugWaveEnd()
+    public void OnDebugFightEnd()
     {
-        BattleSystem.Instance.OnChangeBattleState(BattleStates.WaveFightEnd);
+        BattleSystem.Instance.OnChangeBattleState(BattleStates.FightEnd);
     }
 }

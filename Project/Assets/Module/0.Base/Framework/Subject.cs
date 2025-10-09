@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 
 /// <summary>
-/// 观察者模式 多用于UI监听数据的更新
+/// 观察者模式 用于UI监听数据的更新，比如战斗中金币变化，血量变化等
+/// 
 /// </summary>
 public class Subject<T>
 {

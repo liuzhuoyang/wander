@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1579857896343909632}
   - component: {fileID: 6861282987567472691}
   m_Layer: 5
-  m_Name: ui_damage_stats
+  m_Name: ui_battle_stats_damage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -402,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4297761788896336118, guid: ed0b69e5aac89458fbbb59076cf02f09, type: 3}
       propertyPath: m_Name
-      value: damage_stats_slot
+      value: ui_battle_stats_damage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4297761788896336118, guid: ed0b69e5aac89458fbbb59076cf02f09, type: 3}
       propertyPath: m_Name
-      value: damage_stats_slot (1)
+      value: ui_battle_stats_damage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
