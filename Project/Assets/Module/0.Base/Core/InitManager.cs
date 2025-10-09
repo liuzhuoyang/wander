@@ -21,23 +21,7 @@ public class InitManager : Singleton<InitManager>
     // 预初始化
     async void OnPreset()
     {
-        #region 这区域内不能使用异步，因为需要先于其他模块初始化
-        
-        #endregion
 
-        //创建Audio音效管理器
-        GameObject audio = Instantiate(await GameAsset.GetPrefabAsync("audio"));
-        audio.name = "[Audio]";
-        audio.GetComponent<AudioControl>().Init();
-
-        //创建Input输入管理器
-        GameObject input = new GameObject("[Input]");
-        input.AddComponent<InputControl>().Init();
-        input.AddComponent<BattleInputControl>().Init();
-
-        // //创建VFX特效管理器
-        // GameObject vfx = new GameObject("[VFX]");
-        // vfx.AddComponent<VFXControl>().Init();
     }
 
     #region 初始化阶段1: 读取CSV表数据，创建initmanager

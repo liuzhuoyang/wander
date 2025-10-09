@@ -13,22 +13,21 @@ namespace PlayerInteraction
         protected override void Awake()
         {
             base.Awake();
-            EventHandler.E_AfterLoadScene += FindPlayerInput;
             PlayerInputEvent.E_OnFlashPlayerInput += FlashInput;
         }
         protected override void OnDestroy()
         {
             base.OnDestroy();
-            EventHandler.E_AfterLoadScene -= FindPlayerInput;
             PlayerInputEvent.E_OnFlashPlayerInput -= FlashInput;
         }
-        void Start()
+        internal void RegisterInput(PlayerInputControl input)
         {
-            FindPlayerInput();
+            m_currentPlayerInput = input;
         }
-        void FindPlayerInput()
+        internal void UnregisterInput(PlayerInputControl input)
         {
-            m_currentPlayerInput = FindAnyObjectByType<PlayerInputControl>();
+            if(m_currentPlayerInput == input)
+                m_currentPlayerInput = null;
         }
         void FlashInput()
         {
