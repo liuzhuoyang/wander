@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
-  m_Name: group_battle_share_explosion
+  m_Name: sfxgroup_battle_share_explosion
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 09a135e7c0d861a4a88171d4ba30c7a1, type: 3}
   clips:

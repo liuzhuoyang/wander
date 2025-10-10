@@ -157,8 +157,7 @@ public class ItemData : ScriptableObject
         List<string> listKey = new List<string>();
         listKey.Add("");
         //Item Audio在上级目录下的audio/asset/目录下
-        string path = AssetDatabase.GetAssetPath(this);
-        path = Path.GetDirectoryName(Path.GetDirectoryName(path)).Replace("asset", "audio")+"/asset/";
+        string path = GameDataControl.GetLocPath("all_audio");
         List<AudioData_SO> asset = AssetsFinder.FindAllAssetsOfAllSubFolders<AudioData_SO>(path);
         foreach (AudioData_SO item in asset)
         {
