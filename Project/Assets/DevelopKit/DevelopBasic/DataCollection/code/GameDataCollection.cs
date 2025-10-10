@@ -10,6 +10,9 @@ public class GameDataCollection : ScriptableObject
 {
     public Dictionary<string, GameDataCollectionBase> dictGameData;
 
+    public List<GameDataCollectionBase> listGameData;
+
+/*
     [BoxGroup("系统数据资源")]
     public List<GameDataCollectionBase> listGameData;
     
@@ -45,53 +48,35 @@ public class GameDataCollection : ScriptableObject
 
     [BoxGroup("杂项数据资源")]
     public List<GameDataCollectionBase> listGameDataMisc;
+*/
 
     public void Init()
     {
         dictGameData = new Dictionary<string, GameDataCollectionBase>();
-        AddGameDataList(listGameData);
-        AddGameDataList(listGameDataGeneric);
-        AddGameDataList(listGameDataGameplay);
-        AddGameDataList(listGameDataMeta);
-        AddGameDataList(listGameDataLevel);
-        AddGameDataList(listGameDataObejctive);
-        AddGameDataList(listGameDataPlot);
-        AddGameDataList(listGameDataSocial);
-        AddGameDataList(listGameDataMonetization);
-        AddGameDataList(listGameDataFX);
-        AddGameDataList(listGameDataLocalization);
-        AddGameDataList(listGameDataMisc);
-    }
-
-    void AddGameDataList(List<GameDataCollectionBase> list)
-    {
-        if (list != null)
+        foreach (GameDataCollectionBase gameData in listGameData)
         {
-            foreach (GameDataCollectionBase gameData in list)
-            {
-                dictGameData.TryAdd(gameData.name, gameData);
-            }
+            dictGameData.TryAdd(gameData.name, gameData);
         }
     }
 
     #if UNITY_EDITOR
     [BoxGroup("初始化", Order = 0)]
+
+    [Button("Fetch Game Data Collection 获取资源组列表", ButtonSizes.Gigantic)]
+    public void FetchData()
+    {
+        listGameData = AssetsFinder.FindAllAssetsOfAllSubFolders<GameDataCollectionBase>("Assets");
+        Init();
+    }
+
     [InfoBox("可能出现删减资源导致数据组没有更新，开始游戏出现数据错误，这个快捷功能方便意见刷新所有数据组", InfoMessageType.Info)]
     [Button("Init Data 一键刷新所有数据", ButtonSizes.Gigantic) , GUIColor(0.4f, 0.8f, 1f)]
     public void InitData()
     {
-        InitGameDataList(listGameData);
-        InitGameDataList(listGameDataGeneric);
-        InitGameDataList(listGameDataGameplay);
-        InitGameDataList(listGameDataMeta);
-        InitGameDataList(listGameDataLevel);
-        InitGameDataList(listGameDataObejctive);
-        InitGameDataList(listGameDataPlot);
-        InitGameDataList(listGameDataSocial);
-        InitGameDataList(listGameDataMonetization);
-        InitGameDataList(listGameDataFX);
-        InitGameDataList(listGameDataLocalization);
-        InitGameDataList(listGameDataMisc);
+        foreach (GameDataCollectionBase gameData in listGameData)
+        {
+            gameData.InitData();
+        }
     }
 
     void InitGameDataList(List<GameDataCollectionBase> list)
