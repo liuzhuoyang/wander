@@ -9,6 +9,7 @@ using UnityEngine;
 
 namespace RTSDemo.Game
 {
+    //以下Manager，都需要执行资源加载的异步初始化，因此需要通过Initiator进行
     public class RTS_Initiator : Initiator
     {
         [Header("Init")]
