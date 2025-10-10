@@ -110,7 +110,7 @@ namespace BattleActor.Unit
             timer = 0;
             unit.ApplyAttributeModify(modifier, attributeModifyType, attributeType);
             VFXManager.Instance.PlayVFX(vfxKey, unit.position, 0, 1, null, new GameObject[] { unit.gameObject })
-                               .GetComponent<VFX_Buff<UnitStatusBuff>>()
+                               .GetComponent<VFXBuff<UnitStatusBuff>>()
                                .SetControlBuff(this);
         }
         protected override void BuffRemove()

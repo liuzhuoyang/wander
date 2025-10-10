@@ -2,7 +2,7 @@ using RTSDemo.Zone;
 using SimpleVFXSystem;
 using UnityEngine;
 
-public class VFX_Zone : VFXMono
+public class VFXZone : VFXMono
 {
     private BuffZone zone;
     private ParticleSystem zoneParticle;

@@ -3,7 +3,7 @@ using SimpleVFXSystem;
 using UnityEngine;
 
 //修改目标颜色，并附着在目标身上
-public class VFX_ChangeUnitColor : VFX_Buff<UnitStatusBuff>
+public class VFXChangeUnitColor : VFXBuff<UnitStatusBuff>
 {
     [SerializeField] private Color colorOverride;
     private UnitViewBasic targetUnit;

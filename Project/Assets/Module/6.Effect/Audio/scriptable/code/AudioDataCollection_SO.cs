@@ -45,6 +45,7 @@ namespace SimpleAudioSystem
             {
                 amb_dict.Add(item.name, item);
             }
+            
             foreach (var item in sfx_list)
             {
                 sfx_dict.Add(item.name, item);
@@ -58,15 +59,24 @@ namespace SimpleAudioSystem
         }
         public AudioClip GetSFXClipByKey(string key)
         {
-            return sfx_dict[key].GetClip();
+            if (sfx_dict.TryGetValue(key, out var sfxData))
+                return sfxData.GetClip();
+            Debug.LogError("No Clip Found By Key: " + key);
+            return null;
         }
         public AssetReference GetBGMRefByKey(string key)
         {
-            return bgm_dict[key].assetReference;
+            if (bgm_dict.TryGetValue(key, out var bgmData))
+                return bgmData.assetReference;
+            Debug.LogError("No BGM Found By Key: " + key);
+            return null;
         }
         public AssetReference GetAMBRefByKey(string key)
         {
-            return amb_dict[key].assetReference;
+            if (amb_dict.TryGetValue(key, out var ambData))
+                return ambData.assetReference;
+            Debug.LogError("No AMB Found By Key: " + key);
+            return null;
         }
 
 #if UNITY_EDITOR
@@ -78,7 +88,8 @@ namespace SimpleAudioSystem
 
             bgm_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("bgm"));
             amb_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("amb"));
-            sfx_list = GetDataFromPath<AudioData_SO>("Assets");
+            sfx_list = GetDataFromPath<AudioData_SO>("Assets").FindAll(a=>a is not AudioGroupData_SO);
+
             sfx_group_list = GetDataFromPath<AudioGroupData_SO>("Assets");
 
             EditorUtility.SetDirty(this);

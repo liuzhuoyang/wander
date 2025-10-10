@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1580045001096856459}
   - component: {fileID: 8023283415301672557}
   m_Layer: 0
-  m_Name: RTS_VFXManager
+  m_Name: VFXManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
