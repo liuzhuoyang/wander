@@ -19,7 +19,7 @@ public class PlotDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listPlotData = AssetsFinder.FindAllAssets<PlotData>(path);
+        listPlotData = FileFinder.FindAllAssets<PlotData>(path);
     }
 #endif
 }

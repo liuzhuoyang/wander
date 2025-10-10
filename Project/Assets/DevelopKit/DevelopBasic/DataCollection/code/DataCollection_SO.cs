@@ -21,7 +21,7 @@ public abstract class DataCollection<T> : ScriptableObject where T : ScriptableO
     {
         string path = AssetDatabase.GetAssetPath(this);
         path = Path.GetDirectoryName(path);
-        DataList = AssetsFinder.FindAllAssetsOfAllSubFolders<T>(path);
+        DataList = FileFinder.FindAllAssetsOfAllSubFolders<T>(path);
         EditorUtility.SetDirty(this);
     }
 #endif

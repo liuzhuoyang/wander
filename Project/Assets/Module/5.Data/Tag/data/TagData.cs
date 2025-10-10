@@ -45,7 +45,7 @@ public class TagData : ScriptableObject
     public List<string> GetLocalizationKey()
     {
         List<string> listKey = new List<string>();
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(EditorPathUtility.localizationPath + "/ui/tag");
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(EditorPathUtility.localizationPath + "/ui/tag");
         foreach (LocalizationData asset in listAssets)
         {
             foreach (LocalizationSerializedItem item in asset.list)
@@ -73,7 +73,7 @@ public struct Resistance
     {
         List<string> listKey = new List<string>();
         listKey.Add("");
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(EditorPathUtility.localizationPath + "/ui/mapping/loc_mapping_unit");
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(EditorPathUtility.localizationPath + "/ui/mapping/loc_mapping_unit");
         foreach (LocalizationData asset in listAssets)
         {
             foreach (LocalizationSerializedItem item in asset.list)

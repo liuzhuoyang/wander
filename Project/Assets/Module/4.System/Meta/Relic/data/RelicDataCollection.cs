@@ -19,7 +19,7 @@ public class RelicDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listRelicData = AssetsFinder.FindAllAssets<RelicData>(path);
+        listRelicData = FileFinder.FindAllAssets<RelicData>(path);
     }
 #endif
 }

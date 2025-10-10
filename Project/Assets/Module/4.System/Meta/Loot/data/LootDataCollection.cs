@@ -17,7 +17,7 @@ public class LootDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listLootData = AssetsFinder.FindAllAssets<LootData>(path);
+        listLootData = FileFinder.FindAllAssets<LootData>(path);
     }
 #endif
 }

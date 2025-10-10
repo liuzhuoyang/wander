@@ -65,7 +65,7 @@ public class PrivilegeData : ScriptableObject
     void OnProductIDChanged()
     {
         string path = GameDataControl.GetAssetPath("all_iap");
-        List<IAPData> listIAPAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
+        List<IAPData> listIAPAsset = FileFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
         foreach (IAPData asset in listIAPAsset)
         {
             if(productID == asset.productID)
@@ -80,7 +80,7 @@ public class PrivilegeData : ScriptableObject
         List<string> list = new List<string>();
         list.Add("");
         string path = GameDataControl.GetAssetPath("all_iap");
-        List<IAPData> listIAPAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
+        List<IAPData> listIAPAsset = FileFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
         foreach (IAPData asset in listIAPAsset)
         {
             list.Add(asset.productID);
@@ -93,7 +93,7 @@ public class PrivilegeData : ScriptableObject
         List<string> list = new List<string>();
         list.Add("");
         string path = GameDataControl.GetLocPath("all_privilege");
-        List<LocalizationData> listLocalizationAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listLocalizationAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData data in listLocalizationAsset)
         {
             foreach (LocalizationSerializedItem item in data.list)

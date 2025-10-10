@@ -79,7 +79,7 @@ namespace onicore.editor
         List<string> listMap;
         void InitFiles()
         {
-            listMap = AssetsFinder.FindAllFilesOfAllSubFolders("Assets/AddressableLocal/data/level");
+            listMap = FileFinder.FindAllFilesOfAllSubFolders("Assets/AddressableLocal/data/level");
         }
 
         #region 重置数据
@@ -113,7 +113,7 @@ namespace onicore.editor
             Debug.Log("=== MapAssertMenu: 打开地图:" + selectedMap + " ===");
 
             string path = GameDataControl.GetAssetPath("all_level");
-            levelAsset = AssetsFinder.FindAssetByName<LevelData>(path, selectedMap);
+            levelAsset = FileFinder.FindAssetByName<LevelData>(path, selectedMap);
             
             levelArgs = new LevelData() 
             { 

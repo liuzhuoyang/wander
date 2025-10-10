@@ -5,7 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 
 // 编辑器用与查找资源的工具类
-public static class AssetsFinder
+public static class FileFinder
 {
     public static Sprite FindSprite(string folderPath, string fileName)
     {

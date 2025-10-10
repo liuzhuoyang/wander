@@ -34,7 +34,7 @@ public class DungeonData : ScriptableObject
     {
         List<string> list = new List<string>();
         string path = GameDataControl.GetAssetPath("all_theme");
-        List<ThemeData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
+        List<ThemeData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
         foreach (ThemeData asset in listAsset)
         {
             list.Add(asset.themeName);
@@ -45,7 +45,7 @@ public class DungeonData : ScriptableObject
     public List<string> GetLocalizationLevelDisplayNameList()
     {
         List<string> listKey = new List<string>();
-        LocalizationData asset = AssetsFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "/ui", "loc_page_dungeon");
+        LocalizationData asset = FileFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "/ui", "loc_page_dungeon");
         foreach (var item in asset.list)
         {
             listKey.Add(item.key);

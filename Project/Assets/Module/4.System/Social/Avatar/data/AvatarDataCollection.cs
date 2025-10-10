@@ -19,7 +19,7 @@ public class AvatarDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listAvatarData = AssetsFinder.FindAllAssetsOfAllSubFolders<AvatarData>(path);
+        listAvatarData = FileFinder.FindAllAssetsOfAllSubFolders<AvatarData>(path);
     }
 #endif
 }

@@ -18,7 +18,7 @@ public class AdDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listAdData = AssetsFinder.FindAllAssets<AdData>(path);
+        listAdData = FileFinder.FindAllAssets<AdData>(path);
     }
 #endif
 }

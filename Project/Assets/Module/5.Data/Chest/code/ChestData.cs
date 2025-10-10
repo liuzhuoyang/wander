@@ -46,7 +46,7 @@ public class ChestData : ScriptableObject
     {
         List<string> listKey = new List<string>();
         string path = GameDataControl.GetLocPath("all_chest");
-        List<LocalizationData> list = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> list = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData data in list)
         {
             foreach (LocalizationSerializedItem item in data.list)

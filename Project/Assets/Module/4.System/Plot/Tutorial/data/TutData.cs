@@ -27,7 +27,7 @@ public class TutData : ScriptableObject
     void OnInitData()
     {
         tutName = this.name;
-        LocalizationData locAsset = AssetsFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "/plot/", "loc_" + tutName);
+        LocalizationData locAsset = FileFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "/plot/", "loc_" + tutName);
 
         totalStep = listAction.Count;
         for (int i = 0; i < totalStep; i++)
