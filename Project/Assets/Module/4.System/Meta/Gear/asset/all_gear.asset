@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd38ed8fde3240e8b1ac1e3afde1150, type: 3}
+  m_Name: all_gear
+  m_EditorClassIdentifier: Assembly-CSharp::GearDataCollection
+  path: Assets/Module/4.System/Meta/Gear/asset/
+  listGearData:
+  - {fileID: 11400000, guid: 4ec60ce4112c34d8c953abb6045d0347, type: 2}
+  - {fileID: 11400000, guid: b036679cdc1d848c5817e1d6e94549d2, type: 2}
+  - {fileID: 11400000, guid: e59c07a9e4ae543d6a9841a4f9820238, type: 2}

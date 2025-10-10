@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: module_mode
   m_GUID: 202698a9135f04d93897cfbfd59c97c1
   m_SerializeEntries:
+  - m_GUID: 0c36c38bec07f4e4cbe46ed43614d471
+    m_Address: ui_mode_home_gear
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 124b6028fa1e44dc8a95f45ac65c66d3
     m_Address: ui_mode_home
     m_ReadOnly: 0

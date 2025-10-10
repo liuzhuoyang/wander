@@ -320,7 +320,7 @@ public class InitManager : Singleton<InitManager>
             // 主界面五个页面，需要创建页面并放在mode ui上
             // 注意：这里要按照Footer排列的从左到右顺序来创建，否则动画方向会错乱
             //await system.AddComponent<LootSystem>().Init();
-            //await system.AddComponent<GearSystem>().Init();
+            await system.AddComponent<GearSystem>().Init();
             await system.AddComponent<LobbySystem>().Init();
             // await system.AddComponent<EquipSystem>().Init();
             //await system.AddComponent<TalentSystem>().Init();

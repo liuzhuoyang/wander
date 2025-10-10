@@ -16,8 +16,8 @@ MonoBehaviour:
   isEdit: 0
   hint: 
   list:
-  - key: gear/info/101
-    textEnglish: Gear 101 Info
+  - key: gear/info/001
+    textEnglish: Gear 001 Info
     textHint: "\u4E2D\u6587\u7FFB\u8BD1\u4E3A\u7CBE\u51C6\uFF0C\u66B4\u51FB\uFF0C\u9AD8\u5C04\u901F"
     mappingList: []
     allLanguage: 0
@@ -36,39 +36,39 @@ MonoBehaviour:
       \u0411\u044B\u0441\u0442\u0440\u0430\u044F \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u0430"
     textThai: "\u0E41\u0E21\u0E48\u0E19\u0E22\u0E33, \u0E27\u0E34\u0E01\u0E24\u0E15,
       \u0E23\u0E27\u0E14\u0E40\u0E23\u0E47\u0E27"
-  - key: gear/info/102
-    textEnglish: Gear 102 Info
+  - key: gear/info/002
+    textEnglish: 
     textHint: 
     mappingList: []
     allLanguage: 0
     isMapping: 0
-    textSimpleChinese: "\u9F7F\u8F6E102\u4FE1\u606F"
-    textTraditionChinese: "\u9F52\u8F2A102\u8CC7\u8A0A"
-    textJapanese: "\u30AE\u30A2102\u60C5\u5831"
-    textKorean: "\uAE30\uC5B4 102 \uC815\uBCF4"
-    textFrench: Engrenage 102 Info
-    textGerman: Getriebe 102 Info
-    textSpanish: Engranaje 102 Info
-    textPortuguese: Engrenagem 102 Info
-    textItalian: Ingranaggio 102 Info
-    textDutch: Uitrusting 102 Info
-    textRussian: "\u0428\u0435\u0441\u0442\u0435\u0440\u043D\u044F 102 \u0418\u043D\u0444\u043E"
-    textThai: "\u0E40\u0E01\u0E35\u0E22\u0E23\u0E4C 102 \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25"
-  - key: gear/info/103
-    textEnglish: Gear 103 Info
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/003
+    textEnglish: 
     textHint: 
     mappingList: []
     allLanguage: 0
     isMapping: 0
-    textSimpleChinese: "\u9F7F\u8F6E103\u4FE1\u606F"
-    textTraditionChinese: "\u9F52\u8F2A 103 \u8CC7\u8A0A"
-    textJapanese: "\u30AE\u30A2103\u60C5\u5831"
-    textKorean: "\uAE30\uC5B4 103 \uC815\uBCF4"
-    textFrench: Engrenage 103 Info
-    textGerman: Zahnrad 103 Info
-    textSpanish: "Engranaje 103 Informaci\xF3n"
-    textPortuguese: Engrenagem 103 Info
-    textItalian: Ingranaggio 103 Info
-    textDutch: Uitrusting 103 Info
-    textRussian: "\u0428\u0435\u0441\u0442\u0435\u0440\u043D\u044F 103 \u0418\u043D\u0444\u043E"
-    textThai: "\u0E40\u0E01\u0E35\u0E22\u0E23\u0E4C 103 \u0E02\u0E49\u0E2D\u0E21\u0E39\u0E25"
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
