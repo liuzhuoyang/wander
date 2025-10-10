@@ -44,7 +44,7 @@ public class RewardSystem : Singleton<RewardSystem>
 
         if (rewardViewType == RewardViewType.Flyer)
         {
-            VFXManager.Instance.OnVFXFlayerBatchUI(listRewardArgs);
+            UIItemFlyerManager.Instance.OnVFXFlayerBatchUI(listRewardArgs);
         }
     }
 

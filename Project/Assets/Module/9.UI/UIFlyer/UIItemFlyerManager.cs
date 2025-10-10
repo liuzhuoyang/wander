@@ -3,25 +3,32 @@ using DG.Tweening;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 
-using ObjectPool;
 using SimpleVFXSystem;
+using System.Collections.Generic;
 
-//UI特效的现实层组件
+//UI道具飞行的现实管理，播放特效与音效
 //使用场景：
 //1. 领取金币，金币飞到目标ui位置
 //2. 常规ui特效，播放一次
-public class UIVFX : Singleton<UIVFX>
+public class UIItemFlyerManager : Singleton<UIItemFlyerManager>
 {
-    public GameObject prefabFlyer;
+    private const string FLYER_POOL_KEY = "vfx_ui_flyer";
 
     //常规ui特效，播放一次
     public void OnVFXUI(UIVFXArgs args)
     {
-        GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
-        go.transform.position = new Vector2(args.posX, args.posY);
-        StartCoroutine(TimerTick.Start(args.life, () => { PoolManager.Instance.Release($"uivfx_{args.target}", go);}));
+        // GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
+        var go = VFXManager.Instance.PlayVFX($"uivfx_{args.target}", new Vector2(args.posX, args.posY)).GetComponent<VFXItemFlyer>();
+        StartCoroutine(TimerTick.Start(args.life, () => go.OnItemFlyEnd()));
     }
 
+    public async void OnVFXFlayerBatchUI(List<RewardArgs> listReward)
+    {
+        OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
+        {
+            listReward = listReward
+        });
+    }
     //飞行特效
     //会创建一堆物品，散落在屏幕上，然后飞到目标位置
     public async void OnVFXFlayerBatchUI(UIVFXFlyerBatchArgs args)
@@ -38,8 +45,8 @@ public class UIVFX : Singleton<UIVFX>
 
             ItemSystem.OnPlayItemDropSFX(rewardName);
 
-            float x = UnityEngine.Random.Range(-250, 250); // 假设Canvas中心为坐标原点
-            float y = UnityEngine.Random.Range(-250, 250);
+            float x = Random.Range(-250, 250); // 假设Canvas中心为坐标原点
+            float y = Random.Range(-250, 250);
             Vector2 spawmPosition = new Vector3(x, y, 0);
 
             float delay = 0;
@@ -47,7 +54,8 @@ public class UIVFX : Singleton<UIVFX>
             {
                 delay = j * 0.02f;
 
-                GameObject go = PoolManager.Instance.GetObject("vfx_ui_flyer", prefabFlyer, this.transform, true);
+                var go = VFXManager.Instance.PlayVFX(FLYER_POOL_KEY, spawmPosition).GetComponent<VFXItemFlyer>();
+
                 go.transform.localScale = Vector2.zero;
                 RectTransform rectTransform = go.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = spawmPosition;
@@ -92,8 +100,13 @@ public class UIVFX : Singleton<UIVFX>
                         .OnComplete(() =>
                         {
                             ItemSystem.OnPlayItemCollectSFX(rewardName);
-                            VFXManager.Instance.OnUIVFX("vfx_ui_shared_impact_generic_001", targetPosition);
-                            PoolManager.Instance.Release("vfx_ui_flyer", go);
+                            OnVFXUI(new UIVFXArgs()
+                            {
+                                target = "vfx_ui_shared_impact_generic_001",
+                                posX = targetPosition.x,
+                                posY = targetPosition.y,
+                            });
+                            go.OnItemFlyEnd();
                         });
                 });
             }
@@ -106,35 +119,25 @@ public class UIVFX : Singleton<UIVFX>
     //单个创建UI飞行物VFX
     public void OnUIFlyerVFX(UIVFXFlyerArgs args)
     {
-        GameObject go = PoolManager.Instance.GetObject("vfx_ui_flyer", prefabFlyer, this.transform, true);
+        // GameObject go = PoolManager.Instance.GetObject(FLYER_POOL_KEY, prefabFlyer, this.transform, true);
+        var go = VFXManager.Instance.PlayVFX(FLYER_POOL_KEY, args.spawmPos).GetComponent<VFXItemFlyer>();
 
         //设置位置
         Vector2 spawmPos = args.spawmPos;
-
-        //设置缩放
-        go.transform.localScale = Vector2.one * args.scale;
-
-        //如果是世界坐标，则转换成屏幕坐标
-        if (args.isWorldSpaceSpawn)
-        {
-            spawmPos = CameraManager.Instance.WorldToScreenPos(args.spawmPos);
-        }
-
-        //设置位置
-        go.transform.position = spawmPos;
 
         //设置图标
         GameAssetControl.AssignIcon(args.rewardName, go.GetComponent<Image>());
 
         //设置缩放
         go.transform.localScale = Vector2.zero;
-        go.transform.DOScale(Vector2.one, 0.35f).SetEase(Ease.OutBack);
+        go.transform.DOScale(Vector2.one * args.scale, 0.35f).SetEase(Ease.OutBack);
 
         //设置路径
         Vector3 targetPos = args.targetPos;
         go.transform.DOPath(new Vector3[] { spawmPos, targetPos }, 0.8f, PathType.CatmullRom, PathMode.Sidescroller2D).SetEase(Ease.InSine).SetDelay(args.delay).OnComplete(() =>
         {
-            PoolManager.Instance.Release("vfx_ui_flyer", go);
+            go.OnItemFlyEnd();
+            // PoolManager.Instance.Release(FLYER_POOL_KEY, go);
         });
     }
 }

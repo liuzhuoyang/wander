@@ -129,25 +129,5 @@ namespace SimpleVFXSystem
             vfxObj.transform.localScale *= scaleMultiplier;
         }
         #endregion
-
-        public void OnVFXFlayerBatchUI(List<RewardArgs> listRewardArgs)
-        {
-            UIVFX.Instance.OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
-            {
-                listReward = listRewardArgs,
-            });
-        }
-
-        public void OnUIVFX(string targetName, Vector2 pos)
-        {
-            var args = AllVFX.dictData[targetName];
-            UIVFX.Instance.OnVFXUI(new UIVFXArgs()
-            {
-            target = args.vfxName,
-            posX = pos.x,
-            posY = pos.y,
-            life = args.life
-            });
-        }
     }
 }
