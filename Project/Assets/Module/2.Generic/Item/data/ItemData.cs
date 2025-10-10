@@ -131,7 +131,7 @@ public class ItemData : ScriptableObject
         List<string> listKey = new List<string>();
         listKey.Add("");
         string path = GameDataControl.GetLocPath("all_item");
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData asset in listAssets)
         {
             foreach (LocalizationSerializedItem item in asset.list)
@@ -158,7 +158,7 @@ public class ItemData : ScriptableObject
         listKey.Add("");
         //Item Audio在上级目录下的audio/asset/目录下
         string path = GameDataControl.GetLocPath("all_audio");
-        List<AudioData_SO> asset = AssetsFinder.FindAllAssetsOfAllSubFolders<AudioData_SO>(path);
+        List<AudioData_SO> asset = FileFinder.FindAllAssetsOfAllSubFolders<AudioData_SO>(path);
         foreach (AudioData_SO item in asset)
         {
             listKey.Add(item.name);
@@ -179,7 +179,7 @@ public class ItemData : ScriptableObject
         List<string> listKey = new List<string>();
         listKey.Add("");
         string path = GameDataControl.GetAssetPath("all_navigator");
-        List<NavigatorData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<NavigatorData>(path);
+        List<NavigatorData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<NavigatorData>(path);
         foreach (NavigatorData item in listAssets)
         {
             listKey.Add(item.navigatorName);

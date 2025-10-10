@@ -12,7 +12,7 @@ public class PinDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        pinAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<PinData>(path).ToArray();
+        pinAssets = FileFinder.FindAllAssetsOfAllSubFolders<PinData>(path).ToArray();
         UnityEditor.EditorUtility.SetDirty(this);
     }
 #endif

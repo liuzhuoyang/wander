@@ -12,7 +12,6 @@ public enum ActionType
     CompleteOpeningBattle = 107,  //完成开场战斗
     Register = 108,               //注册账号
     UseItem = 109,                //使用物品
-    OpenCheat = 110,           //作弊
     UpdateGroupAB = 111,          //更新AB测试
 
     //UI事件
@@ -36,16 +35,16 @@ public enum ActionType
     ShopBuy = 319,                //商城购买
     BattleBaseUnlock = 320,       //战斗基地解锁
     RelicUpgrade = 321,           //遗物升级
-    RelicUnlock = 322,           //遗物解锁
-    EnergyBuy = 323,            //购买体力
-    TavernRefresh = 324,        //酒馆刷新
-    UpdatePromo = 325,          //更新礼包
-    UpdateLiveEvent = 326,      //更新活动
-    GetLiveEventToken = 327,    //获取活动token
-    RankingLike = 328,          //排行榜点赞
-    EnergyRecover = 329,        //体力恢复（包含离线恢复和自动恢复）
-    MailDataUpdate = 331,      //邮件数据更新
-    TowerDataUpdate = 332,      //塔数据更新
+    RelicUnlock = 322,            //遗物解锁
+    EnergyBuy = 323,              //购买体力
+    TavernRefresh = 324,          //酒馆刷新
+    UpdatePromo = 325,            //更新礼包
+    UpdateLiveEvent = 326,        //更新活动
+    GetLiveEventToken = 327,      //获取活动token
+    RankingLike = 328,            //排行榜点赞
+    EnergyRecover = 329,          //体力恢复（包含离线恢复和自动恢复）
+    MailDataUpdate = 331,         //邮件数据更新
+    TowerDataUpdate = 332,        //塔数据更新
 
     //关卡事件
     LevelStart = 401,             //关卡开始
@@ -67,7 +66,7 @@ public enum BattleActionType
 {
     None = 0,
     //战斗事件
-    EnemyKilled = 101,              //击杀时间,不区分Boss和普通敌人，通过传入参数判断
+    EnemyKilled = 101,            //击杀时间,不区分Boss和普通敌人，通过传入参数判断
     PlayerDead = 102,             //玩家死亡
     FriendDead = 103,             //友方单位死亡
 

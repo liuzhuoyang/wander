@@ -17,7 +17,7 @@ public class NavigatorDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listItemData = AssetsFinder.FindAllAssetsOfAllSubFolders<NavigatorData>(path);
+        listItemData = FileFinder.FindAllAssetsOfAllSubFolders<NavigatorData>(path);
     }
 #endif
 }

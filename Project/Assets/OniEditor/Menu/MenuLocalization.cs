@@ -61,7 +61,7 @@ public class MenuLocalization
         foreach (var lang in languages)
         {
             List<LocalizationSerializedItem> list = new List<LocalizationSerializedItem>();
-            List<LocalizationData> listGroup = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>("Assets/Moduel/8.Localization/asset/" + folderName);
+            List<LocalizationData> listGroup = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>("Assets/Moduel/8.Localization/asset/" + folderName);
             foreach (LocalizationData group in listGroup)
             {
                 foreach (LocalizationSerializedItem item in group.list)

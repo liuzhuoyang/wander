@@ -96,7 +96,7 @@ namespace SimpleAudioSystem
         }
         List<T> GetDataFromPath<T>(string _path) where T : ScriptableObject
         {
-            var asset = AssetsFinder.FindAllAssetsOfAllSubFolders<T>(_path);
+            var asset = FileFinder.FindAllAssetsOfAllSubFolders<T>(_path);
             if(asset != null && asset.Count > 0)
                 return asset;
             else

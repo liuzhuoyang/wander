@@ -20,7 +20,7 @@ public class ItemDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listItemData = AssetsFinder.FindAllAssetsOfAllSubFolders<ItemData>(path);
+        listItemData = FileFinder.FindAllAssetsOfAllSubFolders<ItemData>(path);
     }
 #endif
 }

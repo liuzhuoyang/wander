@@ -50,7 +50,7 @@ public class PlotData : ScriptableObject
         rewardName = reward == null ? string.Empty : reward.itemName;
 
         string path = GameDataControl.GetLocPath("all_plot");
-        LocalizationData target = AssetsFinder.FindAssetByName<LocalizationData>(path, "loc_" + this.name);
+        LocalizationData target = FileFinder.FindAssetByName<LocalizationData>(path, "loc_" + this.name);
         if (target == null)
         {
             Debug.LogError("PlotAsset: 没有找到对应的本地化资源");
@@ -259,7 +259,7 @@ public class PlotItem
         List<string> listKey = new List<string>();
         listKey.Add("");
         string path = GameDataControl.GetAssetPath("all_avatar");
-        List<AvatarData> listAssets = AssetsFinder.FindAllAssets<AvatarData>(path);
+        List<AvatarData> listAssets = FileFinder.FindAllAssets<AvatarData>(path);
 
         foreach (AvatarData item in listAssets)
         {
@@ -273,7 +273,7 @@ public class PlotItem
         List<string> listKey = new List<string>();
         listKey.Add("");
         string path = GameDataControl.GetLocPath("all_loc");
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData item in listAssets)
         {
             foreach (LocalizationSerializedItem child in item.list)

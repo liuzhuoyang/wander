@@ -29,14 +29,14 @@ public class GameDataControl : MonoBehaviour
     // 编辑器中获取GameDataCollection
     public static GameDataCollection GetGameDataCollectionEDITOR()
     {
-        GameDataCollection gameDataControl = AssetsFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
+        GameDataCollection gameDataControl = FileFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
         return gameDataControl;
     }
 
     // 传入数据名字，获取数据的路径
     public static string GetAssetPath(string dataName)
     {
-        GameDataCollection gameDataControl = AssetsFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
+        GameDataCollection gameDataControl = FileFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
         gameDataControl.Init();
         return gameDataControl.dictGameData[dataName].path;
     }
@@ -44,14 +44,14 @@ public class GameDataControl : MonoBehaviour
     // 获取本地化数据的路径
     public static string GetLocPath(string dataName)
     {
-        GameDataCollection gameDataControl = AssetsFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
+        GameDataCollection gameDataControl = FileFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
         gameDataControl.Init();
         return gameDataControl.dictGameData[dataName].GetLocPath();
     }
 
     public static string GetAudioPath(string dataName)
     {
-        GameDataCollection gameDataControl = AssetsFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
+        GameDataCollection gameDataControl = FileFinder.FindAssetByName<GameDataCollection>(ASSETS_PATH, "all_game_data");
         gameDataControl.Init();
         return gameDataControl.dictGameData[dataName].GetAudioPath();
     }

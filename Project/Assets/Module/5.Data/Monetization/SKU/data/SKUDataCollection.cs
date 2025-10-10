@@ -19,7 +19,7 @@ public class SKUDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listSKUData = AssetsFinder.FindAllAssets<SKUData>(path);
+        listSKUData = FileFinder.FindAllAssets<SKUData>(path);
     }
 #endif
 }

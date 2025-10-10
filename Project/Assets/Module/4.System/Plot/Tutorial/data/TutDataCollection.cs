@@ -18,7 +18,7 @@ public class TutDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listTutData = AssetsFinder.FindAllAssets<TutData>(path);
+        listTutData = FileFinder.FindAllAssets<TutData>(path);
     }
     #endif
 }

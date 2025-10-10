@@ -32,7 +32,7 @@ public class AvatarFrameData : ScriptableObject
     {
         List<string> listKey = new List<string>();
         string path = GameDataControl.GetLocPath("avatar_frame");
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData data in listAssets)
         {
             foreach (LocalizationSerializedItem item in data.list)

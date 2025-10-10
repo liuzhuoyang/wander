@@ -18,7 +18,7 @@ public class DungeonDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listDungeonData = AssetsFinder.FindAllAssets<DungeonData>(path);
+        listDungeonData = FileFinder.FindAllAssets<DungeonData>(path);
     }
 #endif
 }

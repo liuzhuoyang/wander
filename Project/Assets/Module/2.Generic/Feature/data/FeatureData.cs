@@ -74,7 +74,7 @@ public class FeatureData : ScriptableObject
     {
         List<string> listKey = new List<string>();
 
-        List<LocalizationData> listAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(FeatureDataCollection.LOC_PATH);
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(FeatureDataCollection.LOC_PATH);
         foreach (LocalizationData asset in listAssets)
         {
             foreach (LocalizationSerializedItem item in asset.list)

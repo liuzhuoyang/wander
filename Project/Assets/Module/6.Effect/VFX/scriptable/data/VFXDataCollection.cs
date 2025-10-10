@@ -18,7 +18,7 @@ public class VFXDataCollection : GameDataCollectionBase
     {
         base.InitData();
         //初始化资源列表,查询整个目录，因为特效资源会放在不同的模块里，当前目录只放共享特效资源
-        vfxAssets = AssetsFinder.FindAllAssetsOfAllSubFolders<VFXData>("Assets").ToArray();
+        vfxAssets = FileFinder.FindAllAssetsOfAllSubFolders<VFXData>("Assets").ToArray();
         EditorUtility.SetDirty(this);
     }
 #endif

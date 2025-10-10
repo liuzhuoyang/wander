@@ -97,7 +97,7 @@ namespace onicore.editor
         void LoadAssets(string blockPath, List<TerrainAssetGroup> terrainItemList, TerrainLayer terrainType)
         {
             terrainItemList.Clear();
-            List<Sprite> listBlockSprite = AssetsFinder.FindAllSprites(blockPath);
+            List<Sprite> listBlockSprite = FileFinder.FindAllSprites(blockPath);
             List<List<Sprite>> listGroup = OniEditorUtility.GroupItemGeneric<Sprite>(listBlockSprite);
             for (int i = 0; i < listGroup.Count; i++)
             {

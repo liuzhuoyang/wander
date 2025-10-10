@@ -29,7 +29,7 @@ public class LocalizationDataCollection : GameDataCollectionBase
 
         listLocalizationModule = new List<LocalizationData>();
 
-        List<LocalizationData> list = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>("Assets");
+        List<LocalizationData> list = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>("Assets");
         
         foreach (LocalizationData data in list)
         {
@@ -52,7 +52,7 @@ public class LocalizationDataCollection : GameDataCollectionBase
     const string ALL_ASSETS_PATH = "Assets/Module/8.Localization/asset/";
     public static LocalizationDataCollection GetData()
     {
-        return AssetsFinder.FindAssetByName<LocalizationDataCollection>(ALL_ASSETS_PATH, "all_localization");
+        return FileFinder.FindAssetByName<LocalizationDataCollection>(ALL_ASSETS_PATH, "all_localization");
     }
 
     // 获取本地化值, 在编辑器中使用

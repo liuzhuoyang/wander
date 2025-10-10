@@ -65,7 +65,7 @@ public class GameDataCollection : ScriptableObject
     [Button("Fetch Game Data Collection 获取资源组列表", ButtonSizes.Gigantic)]
     public void FetchData()
     {
-        listGameData = AssetsFinder.FindAllAssetsOfAllSubFolders<GameDataCollectionBase>("Assets");
+        listGameData = FileFinder.FindAllAssetsOfAllSubFolders<GameDataCollectionBase>("Assets");
         Init();
     }
 
