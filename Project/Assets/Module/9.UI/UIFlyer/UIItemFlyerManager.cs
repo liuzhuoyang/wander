@@ -15,13 +15,13 @@ public class UIItemFlyerManager : Singleton<UIItemFlyerManager>
     private const string FLYER_POOL_KEY = "vfx_ui_flyer";
 
     //常规ui特效，播放一次
-    public void OnVFXUI(UIVFXArgs args)
+    void OnVFXUI(UIVFXArgs args)
     {
         // GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
         var go = VFXManager.Instance.PlayVFX($"uivfx_{args.target}", new Vector2(args.posX, args.posY)).GetComponent<VFXItemFlyer>();
         StartCoroutine(TimerTick.Start(args.life, () => go.OnItemFlyEnd()));
     }
-
+    //批量创建UI飞行物VFX
     public async void OnVFXFlayerBatchUI(List<RewardArgs> listReward)
     {
         OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
@@ -100,13 +100,9 @@ public class UIItemFlyerManager : Singleton<UIItemFlyerManager>
                         .OnComplete(() =>
                         {
                             ItemSystem.OnPlayItemCollectSFX(rewardName);
-                            OnVFXUI(new UIVFXArgs()
-                            {
-                                target = "vfx_ui_shared_impact_generic_001",
-                                posX = targetPosition.x,
-                                posY = targetPosition.y,
-                            });
+                            // GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
                             go.OnItemFlyEnd();
+                            VFXManager.Instance.PlayVFX("vfx_ui_shared_impact_generic_001", targetPosition);
                         });
                 });
             }
