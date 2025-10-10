@@ -63,7 +63,7 @@ public class ChapterData : ScriptableObject
                 plotSequenceID = "";
             }
 
-            listLevelAssets = AssetsFinder.FindAllAssets<LevelData>(path);
+            listLevelAssets = FileFinder.FindAllAssets<LevelData>(path);
         }
 #endif
 
@@ -113,7 +113,7 @@ public class ChapterData : ScriptableObject
         {
             List<string> list = new List<string>();
             string path = GameDataControl.GetAssetPath("all_theme");
-            List<ThemeData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
+            List<ThemeData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
             foreach (ThemeData asset in listAsset)
             {
                 list.Add(asset.themeName);
@@ -126,7 +126,7 @@ public class ChapterData : ScriptableObject
             List<string> list = new List<string>();
             list.Add("");
             string path = GameDataControl.GetLocPath("all_chapter");
-            List<LocalizationData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+            List<LocalizationData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
             foreach (LocalizationData asset in listAsset)
             {
                 foreach (LocalizationSerializedItem item in asset.list)

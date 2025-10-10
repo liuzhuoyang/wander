@@ -18,7 +18,7 @@ namespace BattleActor.Building
         async UniTask LoadBuildingPrefab(BuildingData_SO data)
         {
             //单位身体素材获取
-            GameObject go = await GameAssets.GetAssetAsync<GameObject>(data.bodyRef);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.bodyRef);
             if (go == null)
             {
                 Debug.LogError($"未找到 {data.m_actorKey} 的身体素材.");
@@ -36,7 +36,7 @@ namespace BattleActor.Building
             playerBuildings = new HashSet<BuildingBase>();
 
             buildingPrefabDict = new Dictionary<string, GameObject>();
-            await GameAssets.LoadAssets(buildingDataCollection.GetDataCollection(), LoadBuildingPrefab);
+            await GameAsset.LoadAssets(buildingDataCollection.GetDataCollection(), LoadBuildingPrefab);
         }
         void OnEnable()
         {

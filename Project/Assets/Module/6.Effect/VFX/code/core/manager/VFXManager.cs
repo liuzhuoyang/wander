@@ -35,7 +35,7 @@ namespace SimpleVFXSystem
         }
         async UniTask LoadVFXPrefab(VFXData_SO data)
         {
-            GameObject go = await GameAssets.GetAssetAsync<GameObject>(data.vfxKey);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.vfxKey);
             if (!vfxPrefabDict.ContainsKey(data.vfxKey))
                 vfxPrefabDict.Add(data.vfxKey, go);
         }
@@ -49,7 +49,7 @@ namespace SimpleVFXSystem
             vfxParticleManager = gameObject.AddComponent<VFXParticleManager>();
 
             vfxPrefabDict = new Dictionary<string, GameObject>();
-            await GameAssets.LoadAssets(vfxDataCollection.GetDataCollection(), LoadVFXPrefab);
+            await GameAsset.LoadAssets(vfxDataCollection.GetDataCollection(), LoadVFXPrefab);
         }
         #endregion
 
@@ -129,25 +129,5 @@ namespace SimpleVFXSystem
             vfxObj.transform.localScale *= scaleMultiplier;
         }
         #endregion
-
-        public void OnVFXFlayerBatchUI(List<RewardArgs> listRewardArgs)
-        {
-            UIVFX.Instance.OnVFXFlayerBatchUI(new UIVFXFlyerBatchArgs()
-            {
-                listReward = listRewardArgs,
-            });
-        }
-
-        public void OnUIVFX(string targetName, Vector2 pos)
-        {
-            var args = AllVFX.dictData[targetName];
-            UIVFX.Instance.OnVFXUI(new UIVFXArgs()
-            {
-            target = args.vfxName,
-            posX = pos.x,
-            posY = pos.y,
-            life = args.life
-            });
-        }
     }
 }

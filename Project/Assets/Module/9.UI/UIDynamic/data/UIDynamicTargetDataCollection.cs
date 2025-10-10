@@ -19,7 +19,7 @@ public class UIDynamicTargetDataCollection : GameDataCollectionBase
     {
         base.InitData();
         listData = new List<UIDynamicTargetData>();
-        List<UIDynamicTargetData> list = AssetsFinder.FindAllAssetsOfAllSubFolders<UIDynamicTargetData>(path);
+        List<UIDynamicTargetData> list = FileFinder.FindAllAssetsOfAllSubFolders<UIDynamicTargetData>(path);
         foreach (UIDynamicTargetData data in list)
         {
             listData.Add(data);

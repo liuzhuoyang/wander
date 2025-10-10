@@ -12,6 +12,7 @@ using UnityEngine.ResourceManagement.ResourceLocations;
 
 public static class GameAsset
 {
+    public const string ICON_TAG = "icon_";
     public static T GetAssetEditor<T>(string targetName)
     {
         AsyncOperationHandle<T> obj = Addressables.LoadAssetAsync<T>(targetName);
@@ -82,7 +83,26 @@ public static class GameAsset
             handleDict.Clear();
         }
     }
+    public static async UniTask LoadAssets<T>(IEnumerable<T> items, Func<T, UniTask> loadFunc, int batchSize = 50)
+    {
+        List<UniTask> batchTasks = new List<UniTask>(batchSize);
 
+        foreach (var item in items)
+        {
+            batchTasks.Add(loadFunc(item));
+
+            if (batchTasks.Count >= batchSize)
+            {
+                await UniTask.WhenAll(batchTasks);
+                batchTasks.Clear();
+            }
+        }
+
+        if (batchTasks.Count > 0)
+        {
+            await UniTask.WhenAll(batchTasks);
+        }
+    }
     public static async UniTask<GameObject> GetPrefabAsync(string prefabName)
     {
         AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(prefabName);
@@ -132,6 +152,23 @@ public static class GameAsset
 
         return handle.Result;
     }
+    public static async UniTask<AudioClip> GetAudioAsync(AssetReference assetReference)
+    {
+        AsyncOperationHandle<AudioClip> handle = assetReference.LoadAssetAsync<AudioClip>();
+        await handle.Task;
+
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            if (!audioHandleDict.ContainsKey(assetReference.RuntimeKey.ToString()))
+                audioHandleDict.Add(assetReference.RuntimeKey.ToString(), handle);
+        }
+        else
+        {
+            Debug.LogError($"=== GameAssets: failed to load bgm: {assetReference.RuntimeKey} ===");
+        }
+
+        return handle.Result;
+    }
 
     public static async UniTask<Sprite> GetSpriteAsync(string assetName)
     {
@@ -157,6 +194,13 @@ public static class GameAsset
     public static async UniTask<T> GetAssetAsync<T>(string assetName)
     {
         AsyncOperationHandle<T> handle = Addressables.LoadAssetAsync<T>(assetName);
+        await handle.Task;
+        return handle.Result;
+    }
+
+    public static async UniTask<T> GetAssetAsync<T>(AssetReference assetReference)
+    {
+        AsyncOperationHandle<T> handle = assetReference.LoadAssetAsync<T>();
         await handle.Task;
         return handle.Result;
     }

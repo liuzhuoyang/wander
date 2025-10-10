@@ -14,7 +14,7 @@ namespace SimpleAudioSystem
     /// 用于收集AudioData_SO的集合
     /// </summary>
     [CreateAssetMenu(fileName = "AudioDataCollection_SO", menuName = "DevelopBasic/AudioSystem/AudioDataCollection_SO")]
-    public class AudioDataCollection_SO : ScriptableObject
+    public class AudioDataCollection_SO : GameDataCollectionBase
     {
         public List<AudioRefData_SO> bgm_list;
         public List<AudioRefData_SO> amb_list;
@@ -96,7 +96,7 @@ namespace SimpleAudioSystem
         }
         List<T> GetDataFromPath<T>(string _path) where T : ScriptableObject
         {
-            var asset = AssetsFinder.FindAllAssetsOfAllSubFolders<T>(_path);
+            var asset = FileFinder.FindAllAssetsOfAllSubFolders<T>(_path);
             if(asset != null && asset.Count > 0)
                 return asset;
             else

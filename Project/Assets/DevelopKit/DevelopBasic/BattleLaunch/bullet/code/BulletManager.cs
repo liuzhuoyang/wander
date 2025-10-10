@@ -20,7 +20,7 @@ namespace BattleLaunch.Bullet
         public async UniTask Init()
         {
             bulletDict = new Dictionary<string, GameObject>();
-            await GameAssets.LoadAssets(bulletDataCollection.GetDataCollection(), LoadBulletPrefab);
+            await GameAsset.LoadAssets(bulletDataCollection.GetDataCollection(), LoadBulletPrefab);
         }
         #endregion
 
@@ -36,7 +36,7 @@ namespace BattleLaunch.Bullet
         async UniTask LoadBulletPrefab(BulletData_SO data)
         {
             //子弹素材获取
-            GameObject go = await GameAssets.GetAssetAsync<GameObject>(data.m_bulletRef);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.m_bulletRef);
             if (go == null)
             {
                 Debug.LogError($"未找到 {data.BulletKey} 的素材.");

@@ -14,7 +14,7 @@ public class RaceDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listRaceData = AssetsFinder.FindAllAssetsOfAllSubFolders<RaceData>(path);
+        listRaceData = FileFinder.FindAllAssetsOfAllSubFolders<RaceData>(path);
     }
 #endif
 }

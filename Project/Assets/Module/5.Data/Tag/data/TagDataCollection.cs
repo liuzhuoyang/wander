@@ -19,7 +19,7 @@ public class TagDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listTagData = AssetsFinder.FindAllAssetsOfAllSubFolders<TagData>(path);
+        listTagData = FileFinder.FindAllAssetsOfAllSubFolders<TagData>(path);
     }
 #endif
 }

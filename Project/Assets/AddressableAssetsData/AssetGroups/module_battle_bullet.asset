@@ -36,16 +36,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4e322166c0fa9994098a7c5292072b5d
-    m_Address: sfx_battle_bullet_101_impact
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 901510a4f53394389bf42fd6f6e1e9e4
-    m_Address: sfx_battle_bullet_103_impact
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b89ee034290283d4599760175b0b3e8a
     m_Address: bullet_103_parabola
     m_ReadOnly: 0
@@ -57,11 +47,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - bullet
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e722265af1f6740109cedd2bd89578a2
-    m_Address: sfx_battle_bullet_102_impact
-    m_ReadOnly: 0
-    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}

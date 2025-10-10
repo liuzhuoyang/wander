@@ -187,7 +187,7 @@ public class UILocalizationHandler : MonoBehaviour
         List<LocalizationData> dataList = new List<LocalizationData>();
 
         //获取通用资源
-        dataList.AddRange(AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(ASSETS_PATH));
+        dataList.AddRange(FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(ASSETS_PATH));
 
         // 从当前 GameObject 开始往上查找 prefab 文件夹
 
@@ -198,7 +198,7 @@ public class UILocalizationHandler : MonoBehaviour
 
         if (!string.IsNullOrEmpty(moduleLocPath))
         {
-            dataList.AddRange(AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(moduleLocPath));
+            dataList.AddRange(FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(moduleLocPath));
         }
 
         return dataList;

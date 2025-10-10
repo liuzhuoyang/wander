@@ -17,7 +17,7 @@ public class IAPData : ScriptableObject
     {
         string path = GameDataControl.GetAssetPath("all_sku");
         List<SKUData> list = new List<SKUData>();
-        List<SKUData> listSKUAsset = AssetsFinder.FindAllAssets<SKUData>(path);
+        List<SKUData> listSKUAsset = FileFinder.FindAllAssets<SKUData>(path);
         foreach (SKUData asset in listSKUAsset)
         {
             list.Add(asset);
