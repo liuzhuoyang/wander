@@ -39,7 +39,7 @@ namespace BattleActor.Unit
         async UniTask LoadUnitPrefab(UnitData_SO data)
         {
             //单位身体素材获取
-            GameObject go = await GameAssets.GetAssetAsync<GameObject>(data.m_bodyRef);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.m_bodyRef);
             if (go == null)
             {
                 Debug.LogError($"未找到 {data.m_actorKey} 的身体素材.");
@@ -58,7 +58,7 @@ namespace BattleActor.Unit
 
             unitPrefabDict = new Dictionary<string, GameObject>();
 
-            await GameAssets.LoadAssets(unitDataCollection_SO.GetDataCollection(), LoadUnitPrefab);
+            await GameAsset.LoadAssets(unitDataCollection_SO.GetDataCollection(), LoadUnitPrefab);
         }
         void OnEnable()
         {

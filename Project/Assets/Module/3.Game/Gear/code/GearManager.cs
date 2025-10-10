@@ -27,7 +27,7 @@ namespace BattleGear
         async UniTask LoadGearPrefab(GearData_SO data)
         {
             //单位身体素材获取
-            GameObject go = await GameAssets.GetAssetAsync<GameObject>(data.gearPrefab);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.gearPrefab);
             if (go == null)
             {
                 Debug.LogError($"未找到 {data.m_gearKey} 的身体素材.");
@@ -39,7 +39,7 @@ namespace BattleGear
                 gearShapeDict.Add(data.m_gearKey, data.gearShape);
         }
         public float GetGearDamageByLevel(string gearKey, int level) => gearDamageBonus.GetGearDamageByLevel(gearKey, level);
-        public async Task<Sprite> GetGearIcon(string gearKey) => await GameAssets.GetSpriteAsync(GameAssets.ICON_TAG + gearKey);
+        public async Task<Sprite> GetGearIcon(string gearKey) => await GameAsset.GetSpriteAsync(GameAsset.ICON_TAG + gearKey);
         #endregion
 
         #region 自身生命周期
@@ -49,7 +49,7 @@ namespace BattleGear
             gearPrefabDict = new Dictionary<string, GameObject>();
             gearShapeDict = new Dictionary<string, GridShape>();
 
-            await GameAssets.LoadAssets(gearDataCollection.GetDataCollection(), LoadGearPrefab);
+            await GameAsset.LoadAssets(gearDataCollection.GetDataCollection(), LoadGearPrefab);
         }
         #endregion
 

@@ -38,8 +38,8 @@ namespace BattleActor.Basement
             SetOffsetAndDirection();
 
             isNewCreated = true;
-            render.sprite = await GameAssets.GetSpriteAsync(spriteName);
-            decal.sprite = await GameAssets.GetSpriteAsync(decalSpriteName);
+            render.sprite = await GameAsset.GetSpriteAsync(spriteName);
+            decal.sprite = await GameAsset.GetSpriteAsync(decalSpriteName);
 
             if (isPreview)
             {

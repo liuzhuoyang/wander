@@ -55,8 +55,8 @@ namespace SimpleAudioSystem
         #endregion
 
         #region 数据获取
-        protected async UniTask<AudioClip> GetBGMClipByKey(string audioKey) => await GameAssets.GetAudioAsync(audioDataCollection.GetBGMRefByKey(audioKey));
-        protected async UniTask<AudioClip> GetAMBClipByKey(string audioKey) => await GameAssets.GetAudioAsync(audioDataCollection.GetAMBRefByKey(audioKey));
+        protected async UniTask<AudioClip> GetBGMClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetBGMRefByKey(audioKey));
+        protected async UniTask<AudioClip> GetAMBClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetAMBRefByKey(audioKey));
         protected AudioClip GetSFXClipByKey(string audioKey) => audioDataCollection.GetSFXClipByKey(audioKey);
         #endregion
 

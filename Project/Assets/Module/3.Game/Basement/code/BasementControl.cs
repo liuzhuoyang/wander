@@ -35,7 +35,7 @@ namespace BattleActor.Basement
         {
             basementRoot = new GameObject("[Basement]").transform;
             DictWallGridCoord = new Dictionary<Vector2Int, BasementWall>();
-            basementwall_prefab = await GameAssets.GetPrefabAsync("battle_base_wall");
+            basementwall_prefab = await GameAsset.GetPrefabAsync("battle_base_wall");
         }
         public void CleanUp()
         {
