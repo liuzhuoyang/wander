@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437331f2d273f754cb6d1fb742323b0b, type: 3}
   m_Name: all_audio
   m_EditorClassIdentifier: 
+  path: Assets/Module/6.Effect/Audio/asset/
   bgm_list:
   - {fileID: 11400000, guid: 5a34ae9c0e5742e41ace4b2da62aa5ae, type: 2}
   - {fileID: 11400000, guid: 53a1b126fa6edc94c8ed787ce18a5066, type: 2}
@@ -19,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ab8a6dee214ba434ebbf8cfe42ca4e5c, type: 2}
   amb_list: []
   sfx_list:
+  - {fileID: 11400000, guid: 0104bef866677a54d9ec79a4c49bfba1, type: 2}
   - {fileID: 11400000, guid: ab42fe6c00ea8684dbe03f8e2de10841, type: 2}
   - {fileID: 11400000, guid: 108c68ebf7e7fdd47a46e038d096705f, type: 2}
   - {fileID: 11400000, guid: 70478eda3680d6845a11c910f95a943e, type: 2}
