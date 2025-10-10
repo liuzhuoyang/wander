@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
-  m_Name: gear_002
+  m_Name: gear_001_shuriken
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 002_sword
-  editorName: "\u5251"
-  displayName: gear/name/002
-  info: gear/info/002
-  rarity: 2
-  attack: 10
-  triggerSpeed: 2
+  gearName: 001_shuriken
+  editorName: "\u624B\u91CC\u5251"
+  displayName: gear/name/001
+  info: gear/info/001
+  rarity: 1
+  attack: 5
+  triggerSpeed: 1
   listData:
   - level: 5
     attributeType: 0
