@@ -21,7 +21,7 @@ public class CharacterCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listCharacterData = AssetsFinder.FindAllAssets<CharacterData>(path);
+        listCharacterData = FileFinder.FindAllAssets<CharacterData>(path);
     }
 #endif
 }

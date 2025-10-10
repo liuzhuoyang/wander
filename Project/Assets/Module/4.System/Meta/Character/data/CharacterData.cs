@@ -33,7 +33,7 @@ public class CharacterData : ScriptableObject
         List<string> list = new List<string>();
         list.Add("");
         string path = GameDataControl.GetLocPath("all_character");
-        List<LocalizationData> listLocalizationAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listLocalizationAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData data in listLocalizationAsset)
         {
             foreach (LocalizationSerializedItem item in data.list)

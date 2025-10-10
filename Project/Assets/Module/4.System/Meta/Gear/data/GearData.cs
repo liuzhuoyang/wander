@@ -49,7 +49,7 @@ public class GearData : ScriptableObject
         List<string> list = new List<string>();
         list.Add("");
         string path = GameDataControl.GetLocPath("all_gear");
-        List<LocalizationData> listLocalizationAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listLocalizationAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData data in listLocalizationAsset)
         {
             foreach (LocalizationSerializedItem item in data.list)

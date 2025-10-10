@@ -22,7 +22,7 @@ public class GearDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listGearData = AssetsFinder.FindAllAssets<GearData>(path);
+        listGearData = FileFinder.FindAllAssets<GearData>(path);
     }
 #endif
 }
