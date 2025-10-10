@@ -23,3 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d0df4e964a4fb66478c6dc22a70583e1, type: 2}
   - {fileID: 11400000, guid: ffb55c88663cb044da2d98c93b2ae034, type: 2}
   - {fileID: 11400000, guid: 40de608452bd1134f8694b09e9365723, type: 2}
+  findOnlyLocal: 1

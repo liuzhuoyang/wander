@@ -18,3 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3d02d96e66fcfdd4aa37d53ea84d3a97, type: 2}
   - {fileID: 11400000, guid: f406191129cd67946accf406f70c0b14, type: 2}
   - {fileID: 11400000, guid: 0918f43ea65bc9649a28eabd2b002d68, type: 2}
+  findOnlyLocal: 1

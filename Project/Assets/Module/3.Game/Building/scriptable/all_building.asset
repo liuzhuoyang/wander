@@ -15,3 +15,4 @@ MonoBehaviour:
   DataList:
   - {fileID: 11400000, guid: 3395508ff5cf1a549bb6be9ab5f0978a, type: 2}
   - {fileID: 11400000, guid: 7eaaed55ec77e0448805e506bd6a9819, type: 2}
+  findOnlyLocal: 1
