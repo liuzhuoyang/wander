@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 573847469782123279}
   - component: {fileID: 4338471667308111966}
   m_Layer: 0
-  m_Name: vfx_world_addicon_template
+  m_Name: vfx_world_template_addicon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

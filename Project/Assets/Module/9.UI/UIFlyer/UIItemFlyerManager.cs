@@ -99,10 +99,10 @@ public class UIItemFlyerManager : Singleton<UIItemFlyerManager>
                         .SetDelay(1f) // 开始之前的延迟
                         .OnComplete(() =>
                         {
-                            ItemSystem.OnPlayItemCollectSFX(rewardName);
                             // GameObject go = PoolManager.Instance.GetObject($"uivfx_{args.target}", GameAssetGenericManager.Instance.GetVFXPrefab(args.target), this.transform, true);
-                            go.OnItemFlyEnd();
+                            ItemSystem.OnPlayItemCollectSFX(rewardName);
                             VFXManager.Instance.PlayVFX("vfx_ui_shared_impact_generic_001", targetPosition);
+                            go.OnItemFlyEnd();
                         });
                 });
             }

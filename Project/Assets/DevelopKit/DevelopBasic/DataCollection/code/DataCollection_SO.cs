@@ -16,10 +16,14 @@ public abstract class DataCollection<T> : ScriptableObject where T : ScriptableO
     public List<T> GetDataCollection() => DataList;
 
 #if UNITY_EDITOR
+    [SerializeField] protected bool findOnlyLocal = false;
     [Button("Find All Data")]
     public void FindAllData()
     {
-        string path = AssetDatabase.GetAssetPath(this);
+        string path = "Assets/";
+        if (findOnlyLocal)
+            path = AssetDatabase.GetAssetPath(this);
+        
         path = Path.GetDirectoryName(path);
         DataList = FileFinder.FindAllAssetsOfAllSubFolders<T>(path);
         EditorUtility.SetDirty(this);

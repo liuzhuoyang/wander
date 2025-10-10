@@ -15,7 +15,7 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
     public async UniTask Init()
     {
         await InitFont();
-        await InitVFXAsset(); //后续可优化放到动态加载里
+        // await InitVFXAsset(); //后续可优化放到动态加载里
         return;
     }
 
@@ -51,25 +51,25 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
         }
     }
 
-    #region 读取VFX资源
-    Dictionary<string, GameObject> vfxPrefabDict; //特效预制体
-    async UniTask InitVFXAsset()
-    {
-        vfxPrefabDict = new Dictionary<string, GameObject>();
-        await LoadAsset(AllVFX.dictData.Keys, LoadVFX);
-    }
+    // #region 读取VFX资源
+    // Dictionary<string, GameObject> vfxPrefabDict; //特效预制体
+    // async UniTask InitVFXAsset()
+    // {
+    //     vfxPrefabDict = new Dictionary<string, GameObject>();
+    //     await LoadAsset(AllVFX.dictData.Keys, LoadVFX);
+    // }
 
-    async UniTask LoadVFX(string vfxName)
-    {
-        GameObject vfx = await GameAsset.GetAssetAsync<GameObject>(vfxName);
-        vfxPrefabDict.Add(vfxName, vfx);
-    }
+    // async UniTask LoadVFX(string vfxName)
+    // {
+    //     GameObject vfx = await GameAsset.GetAssetAsync<GameObject>(vfxName);
+    //     vfxPrefabDict.Add(vfxName, vfx);
+    // }
 
-    public GameObject GetVFXPrefab(string vfxName)
-    {
-        return vfxPrefabDict[vfxName];
-    }
-    #endregion
+    // public GameObject GetVFXPrefab(string vfxName)
+    // {
+    //     return vfxPrefabDict[vfxName];
+    // }
+    // #endregion
 
 /*
     async UniTask LoadUnitPrefab(string key)

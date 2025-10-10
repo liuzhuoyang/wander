@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4641382410284652586}
   - component: {fileID: -8408968412652708903}
   m_Layer: 0
-  m_Name: vfx_world_tint_template
+  m_Name: vfx_world_template_tint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
