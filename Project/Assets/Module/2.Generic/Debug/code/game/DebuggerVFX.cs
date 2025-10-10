@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using SimpleVFXSystem;
 
 public class DebuggerVFX : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class DebuggerVFX : MonoBehaviour
     public void OnDebugUIVFXFlyerCoin()
     {
         Debugger.Instance.OnCloseDebug();
-        VFXControl.Instance.OnVFXFlayerBatchUI(new List<RewardArgs>()
+        VFXManager.Instance.OnVFXFlayerBatchUI(new List<RewardArgs>()
         {
             new RewardArgs()
             {

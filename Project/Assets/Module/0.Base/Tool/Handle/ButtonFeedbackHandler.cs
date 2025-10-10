@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using SimpleAudioSystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -135,13 +136,13 @@ public class ButtonFeedbackHandler : MonoBehaviour, IPointerUpHandler, IPointerD
         switch (sfxType)
         {
             case UIButtonSFXType.Generic:
-                AudioControl.Instance.PlaySFX("sfx_ui_shared_btn_generic");
+                AudioManager.Instance.PlaySFX("sfx_ui_shared_btn_generic");
                 break;
             case UIButtonSFXType.OpenUI:
-                AudioControl.Instance.PlaySFX("sfx_ui_shared_btn_page_open");
+                AudioManager.Instance.PlaySFX("sfx_ui_shared_btn_page_open");
                 break;
             case UIButtonSFXType.CloseUI:
-                AudioControl.Instance.PlaySFX("sfx_ui_shared_btn_page_close");
+                AudioManager.Instance.PlaySFX("sfx_ui_shared_btn_page_close");
                 break;
         }
     }

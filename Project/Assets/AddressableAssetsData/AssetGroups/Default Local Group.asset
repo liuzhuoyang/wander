@@ -13,13 +13,65 @@ MonoBehaviour:
   m_Name: Default Local Group
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
-  m_Data:
-    m_SerializedData: []
   m_GUID: d4a384778c6f44d3b8a9f774e1b54c0f
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 1150679d06e2f430a9e83d687621fa2b
+    m_Address: basement_02_wall_edge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1aa3df21f25c94f9297b1df6fcac0ba8
+    m_Address: basement_02_wall_corner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2da78e99beb444f6790958b34f3ab343
+    m_Address: basement_decal_corner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e7a3e79531724fcea4f24a2b5470863
+    m_Address: battle_base_wall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 694a9bc66f9076642bb3a7c0274a2963
+    m_Address: building_turret
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - building
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fe61fb4f7f144b418a59cea1cb64f7d
+    m_Address: basement_01_wall_corner
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a04674dd0af124f229af9de9a0934814
+    m_Address: basement_01_wall_edge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db9aff2129886e1459b90e225fb08fd2
+    m_Address: building_cocoon
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - building
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e191829c2c7f1447c98ed73b30b56862
+    m_Address: basement_decal_edge
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: c4a8d071d44c14e0f946e84c302aab2e, type: 2}
     - {fileID: 11400000, guid: efe73a978cfb349469b7913a7545f53b, type: 2}
+    - {fileID: 11400000, guid: c4a8d071d44c14e0f946e84c302aab2e, type: 2}

@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: 0b52bd8cdc27b0449b5b6a62214b8935
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6557149786261351242
+    second: vfx_seq_battle_fire_1_0
+  - first:
+      213: 5117732257924890607
+    second: vfx_seq_battle_fire_1_1
+  - first:
+      213: 4911361549756734262
+    second: vfx_seq_battle_fire_1_2
+  - first:
+      213: 3520120245496705418
+    second: vfx_seq_battle_fire_1_3
+  - first:
+      213: 3641622304075685450
+    second: vfx_seq_battle_fire_1_4
+  - first:
+      213: -4196946209788889863
+    second: vfx_seq_battle_fire_1_5
+  - first:
+      213: 2646319958265317535
+    second: vfx_seq_battle_fire_1_6
+  - first:
+      213: 3067551132246145425
+    second: vfx_seq_battle_fire_1_7
+  - first:
+      213: 3526897747391448765
+    second: vfx_seq_battle_fire_1_8
+  - first:
+      213: 5482013555214879640
+    second: vfx_seq_battle_fire_1_9
+  - first:
+      213: -1991830725648588303
+    second: vfx_seq_battle_fire_1_10
+  - first:
+      213: -2898291761782989378
+    second: vfx_seq_battle_fire_1_11
+  - first:
+      213: 3035575181440660384
+    second: vfx_seq_battle_fire_1_12
+  - first:
+      213: -5812869086953975521
+    second: vfx_seq_battle_fire_1_13
+  - first:
+      213: 703036965489913851
+    second: vfx_seq_battle_fire_1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305685df213d9d644937eb2bbb4f2d1d
+      internalID: 24981210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 270
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cd087e2c7678b41b8114f40dd6195e
+      internalID: 576651786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 270
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd015f5a79e0fb45a54fdb68e985451
+      internalID: 398745300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed31aa5c17ef124794809f8cad06021
+      internalID: -1513529131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 135
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faad9e6ad15e9f4b9f3903c695f0a54
+      internalID: 745265203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 135
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3814f519c705b44aaccd137e242156b
+      internalID: 601164438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abe9e4e4304a9b42a31d25a9e1247b3
+      internalID: 1741958718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_7
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f8a32114b837844b5de9fc7f8f3804
+      internalID: -611546413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_fire_1_8
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 117
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23a83fdf113e824ba31a0e8174619fa
+      internalID: 2079499264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f24848e315f9c9841af05f53717bd260
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vfx_seq_battle_fire_1_0: 24981210
+      vfx_seq_battle_fire_1_1: 576651786
+      vfx_seq_battle_fire_1_2: 398745300
+      vfx_seq_battle_fire_1_3: -1513529131
+      vfx_seq_battle_fire_1_4: 745265203
+      vfx_seq_battle_fire_1_5: 601164438
+      vfx_seq_battle_fire_1_6: 1741958718
+      vfx_seq_battle_fire_1_7: -611546413
+      vfx_seq_battle_fire_1_8: 2079499264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

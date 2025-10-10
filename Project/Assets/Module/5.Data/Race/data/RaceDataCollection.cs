@@ -9,13 +9,14 @@ public class RaceDataCollection : GameDataCollectionBase
 {
     [ReadOnly]
     public List<RaceData> listRaceData;
-
+#if UNITY_EDITOR
     [Button("Init Data", ButtonSizes.Gigantic)]
     public override void InitData()
     {
         base.InitData();
         listRaceData = AssetsFinder.FindAllAssetsOfAllSubFolders<RaceData>(path);
     }
+#endif
 }
 
 public static class AllRace

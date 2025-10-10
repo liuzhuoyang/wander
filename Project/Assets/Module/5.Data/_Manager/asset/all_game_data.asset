@@ -48,7 +48,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 41b9c2a0f78074296b6066ad824cad6a, type: 2}
   listGameDataFX:
   - {fileID: 11400000, guid: 2858feeda02ba8d4fbe91a427063b2c6, type: 2}
-  - {fileID: 11400000, guid: b22d56ecb11ecc24893b3dfbbc1803f5, type: 2}
   listGameDataLocalization:
   - {fileID: 11400000, guid: ea3d4a1b481244010be26b27c6047666, type: 2}
   listGameDataMisc:

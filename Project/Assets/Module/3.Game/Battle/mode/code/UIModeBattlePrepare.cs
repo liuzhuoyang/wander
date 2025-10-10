@@ -14,7 +14,7 @@ public class UIModeBattlePrepare : UIBase
 
     [Header("基地血条")]
     [SerializeField] BattleHealthBase battleBaseHealth;
-    [SerializeField] UIBattleMergeDebug uiBattleMergeDebug;
+    [SerializeField] UIModeBattlePrepareDebug uiBattleMergeDebug;
     [SerializeField] TextMeshProUGUI textExpandCost, textRefreshCost, textExpandCount;
     [SerializeField] TextMeshProUGUI textToken; //洛能矿数量
 

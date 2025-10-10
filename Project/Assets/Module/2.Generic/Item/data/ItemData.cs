@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using System;
+using SimpleAudioSystem;
+using System.IO;
 
 
 #if UNITY_EDITOR
@@ -142,6 +144,7 @@ public class ItemData : ScriptableObject
     #endregion
 
     #region Odin辅助
+    
     void OnDisplayNameChanged()
     {
         //更新预览名字
@@ -153,12 +156,13 @@ public class ItemData : ScriptableObject
     {
         List<string> listKey = new List<string>();
         listKey.Add("");
-        string path = GameDataControl.GetAudioPath("all_item");
-        List<AudioData> asset = AssetsFinder.FindAllAssetsOfAllSubFolders<AudioData>(path);
-        foreach (AudioData item in asset)
+        //Item Audio在上级目录下的audio/asset/目录下
+        string path = AssetDatabase.GetAssetPath(this);
+        path = Path.GetDirectoryName(Path.GetDirectoryName(path)).Replace("asset", "audio")+"/asset/";
+        List<AudioData_SO> asset = AssetsFinder.FindAllAssetsOfAllSubFolders<AudioData_SO>(path);
+        foreach (AudioData_SO item in asset)
         {
-            if (item.clipName.Contains("bgm")) continue;
-            listKey.Add(item.clipName);
+            listKey.Add(item.name);
         }
         return listKey;
     }
