@@ -103,7 +103,7 @@ public class PowerSystem : Singleton<PowerSystem>
         return totalGearPower;
     }
 
-    public float GetGearTotalStar()
+ /*    public float GetGearTotalStar()
     {
         int result = 0;
         foreach (var gear in GameData.userData.userGear.dictGear)
@@ -111,7 +111,7 @@ public class PowerSystem : Singleton<PowerSystem>
             result += gear.Value.star;
         }
         return result * 0.05f;
-    }
+    } */
     #endregion
 
     #region 天赋战力

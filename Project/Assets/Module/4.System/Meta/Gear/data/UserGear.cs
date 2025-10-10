@@ -2,38 +2,51 @@ using System.Collections.Generic;
 
 public class UserGear
 {
+    //上阵武器
     public List<string> listEquipGear;
+
+    //武器数据
     public Dictionary<string, UserGearArgs> dictGear;
-    public Dictionary<string, List<int>> dictVolatileData;
+
+    //允许上证武器的数量
+    public int unlockGearCount;
+
+    //武器临时数据
     public void InitData()
     {
         listEquipGear = new List<string>();
         dictGear = new Dictionary<string, UserGearArgs>();
+        unlockGearCount = 4;
         //@todo新号 解锁
-        OnUnlockGear("101_gatling");
-        OnUnlockGear("102_missile");
-        OnUnlockGear("103_bomb");
-        OnUnlockGear("104_frost");
-        OnUnlockGear("203_mine");
-        OnUnlockGear("201_drone");
-        //临时装备上述六个
-        listEquipGear.Add("101_gatling");
-        listEquipGear.Add("102_missile");
-        listEquipGear.Add("103_bomb");
-        listEquipGear.Add("203_mine");
-        listEquipGear.Add("104_frost");
-        listEquipGear.Add("201_drone");
-        dictVolatileData = new Dictionary<string, List<int>>();
+        OnUnlockGear("001_shuriken");
+        OnUnlockGear("002_sword");
+        OnUnlockGear("003_arrow");
+        OnUnlockGear("004_axe");
+        //临时装备上述四个
+        listEquipGear.Add("001_shuriken");
+        listEquipGear.Add("002_sword");
+        listEquipGear.Add("003_arrow");
+        listEquipGear.Add("004_axe");
     }
+
+
     public void OnUnlockGear(string gearName)
     {
         if (dictGear.ContainsKey(gearName)) return;
         dictGear.Add(gearName, new UserGearArgs()
         {
             level = 1,
-            star = 0,
-            evolve = 0
         });
+
+        if (dictGear.Count >= unlockGearCount)
+        {
+            unlockGearCount = dictGear.Count;
+        }
+
+        if (unlockGearCount >= 8)
+        {
+            unlockGearCount = 8;
+        }
     }
 
     public bool IsGearUnlocked(string gearName)
@@ -48,22 +61,10 @@ public class UserGear
         }
     }
 
-    public bool IsUltimate2Unlock(string gearName)
-    {
-        if (dictGear.ContainsKey(gearName) && dictGear[gearName].star >= 3)
-        {
-            return true;
-        }
-        return false;
-    }
 }
 
 public class UserGearArgs
 {
     //等级
     public int level;
-    //星级
-    public int star;
-    //觉醒
-    public int evolve;
 }
