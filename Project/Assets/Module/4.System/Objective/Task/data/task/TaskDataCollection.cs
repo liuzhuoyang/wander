@@ -19,7 +19,7 @@ public class TaskDataCollection : GameDataCollectionBase
     {
         base.InitData();
         path = $"{path}task/";
-        listTaskData = AssetsFinder.FindAllAssets<TaskData>(path);
+        listTaskData = FileFinder.FindAllAssets<TaskData>(path);
     }
 #endif
 }

@@ -54,3 +54,21 @@ MonoBehaviour:
     textRussian: "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439
       \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D"
     textThai: "\u0E40\u0E25\u0E40\u0E27\u0E25\u0E2A\u0E39\u0E07\u0E2A\u0E38\u0E14\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E02\u0E36\u0E49\u0E19"
+  - key: gear/ui/type_unlock
+    textEnglish: Unlocked
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5DF2\u89E3\u9501"
+    textTraditionChinese: "\u5DF2\u89E3\u9396"
+    textJapanese: "\u30A2\u30F3\u30ED\u30C3\u30AF"
+    textKorean: "\uC7A0\uAE08 \uD574\uC81C\uB428"
+    textFrench: "D\xE9verrouill\xE9"
+    textGerman: Entsperrt
+    textSpanish: Desbloqueado
+    textPortuguese: Desbloqueado
+    textItalian: Sbloccato
+    textDutch: Ontgrendeld
+    textRussian: "\u0420\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043E"
+    textThai: "\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01"

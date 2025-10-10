@@ -40,9 +40,9 @@ public class MapControl : Singleton<MapControl>
         mapCollider.AddComponent<MapColliderControl>().Init();
         mapCollider.transform.SetParent(transform);
 
-        groupVFX = new GameObject("VFX");
-        groupVFX.AddComponent<EnvVfxControl>().Init();
-        groupVFX.transform.SetParent(transform);
+        // groupVFX = new GameObject("VFX");
+        // groupVFX.AddComponent<EnvVfxControl>().Init();
+        // groupVFX.transform.SetParent(transform);
     }
 
     public void Clear()
@@ -221,7 +221,7 @@ public class MapControl : Singleton<MapControl>
                 float posY = float.Parse(array[1], new CultureInfo("en-US").NumberFormat);
                 Vector2 worldPosition = new Vector2(posX, posY);
 
-                taskGroup[batchIndex].Add(EnvVfxControl.Instance.CreateViewObject(worldPosition, itemName));
+                // taskGroup[batchIndex].Add(EnvVfxControl.Instance.CreateViewObject(worldPosition, itemName));
             }
         }
 
@@ -268,10 +268,10 @@ public class MapControl : Singleton<MapControl>
         switch (editTargetArgs.mapObjectType)
         {
             case MapObjectType.VFX:
-                await EnvVfxControl.Instance.CreateViewObject(worldPosition, editTargetArgs.targetName);
-                posX = (float)Math.Round(worldPosition.x, 3);
-                posY = (float)Math.Round(worldPosition.y, 3);
-                levelData.AddVFX(posX, posY, editTargetArgs.targetName);
+                // await EnvVfxControl.Instance.CreateViewObject(worldPosition, editTargetArgs.targetName);
+                // posX = (float)Math.Round(worldPosition.x, 3);
+                // posY = (float)Math.Round(worldPosition.y, 3);
+                // levelData.AddVFX(posX, posY, editTargetArgs.targetName);
                 break;
             case MapObjectType.Terrain:
                 //地形

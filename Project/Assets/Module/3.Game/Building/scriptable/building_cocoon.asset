@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a01dc032aa26004ca6906f195f9178b, type: 3}
+  m_Name: building_cocoon
+  m_EditorClassIdentifier: 
+  actorKey: building_zreep_cocoon
+  maxLevel: 1000
+  healthRange: {x: 10000, y: 100000}
+  shieldRange: {x: 0, y: 0}
+  penetrateArmor: 0
+  attackRange: 2
+  damageType: 0
+  attackDamage: {x: 10, y: 100}
+  damageMultiToBuilding: 0
+  damageMultiToShield: 0
+  criticRate: 0
+  criticDamageMultiplier: 0
+  attackSpeed: 1
+  bodyRef:
+    m_AssetGUID: db9aff2129886e1459b90e225fb08fd2
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
+  _bodyRef: construct_enemy_zreep_cocoon
+  autoProduceSpeed: 1
+  globalProduceSpeed: 1
+  productionList: []
+  launchConfigs: {fileID: 0}

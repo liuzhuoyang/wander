@@ -18,7 +18,7 @@ public class ChapterDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listChapterData = AssetsFinder.FindAllAssets<ChapterData>(path);
+        listChapterData = FileFinder.FindAllAssets<ChapterData>(path);
     }
 #endif
 }

@@ -9,11 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a75131080313242348021da8d3ae69fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 7918da5cef69646649744b0deff194f7, type: 3}
   m_Name: vfx_ui_shared_upgrade
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 772947633750512940, guid: e819b7fa424764e5e9e91ffb7ba04df2, type: 3}
-  vfxName: vfx_ui_shared_upgrade
-  life: 2
-  lifeMode: 1
-  type: 1
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleVFXSystem.VFXData_SO
+  vfx_ref:
+    m_AssetGUID: e819b7fa424764e5e9e91ffb7ba04df2
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  manageMode: 1

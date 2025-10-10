@@ -79,7 +79,7 @@ namespace onicore.editor
         List<string> listMap;
         void InitFiles()
         {
-            listMap = AssetsFinder.FindAllFilesOfAllSubFolders("Assets/AddressableLocal/data/level");
+            listMap = FileFinder.FindAllFilesOfAllSubFolders("Assets/AddressableLocal/data/level");
         }
 
         #region 重置数据
@@ -113,7 +113,7 @@ namespace onicore.editor
             Debug.Log("=== MapAssertMenu: 打开地图:" + selectedMap + " ===");
 
             string path = GameDataControl.GetAssetPath("all_level");
-            levelAsset = AssetsFinder.FindAssetByName<LevelData>(path, selectedMap);
+            levelAsset = FileFinder.FindAssetByName<LevelData>(path, selectedMap);
             
             levelArgs = new LevelData() 
             { 
@@ -124,7 +124,7 @@ namespace onicore.editor
             //存入EditorData，用作编辑时期全局访问使用
             EditorData.currentLevelAsset = levelAsset;
 
-            await MapControl.Instance.OpenLevel(levelArgs, true);
+            // await MapControl.Instance.OpenLevel(levelArgs, true);
         }
 
         [ShowIf("toggleInit")]
@@ -157,7 +157,7 @@ namespace onicore.editor
         [ShowIf("toggleInit")]
         public void OnMapTool()
         {
-            EditMapTool.OpenWindow();
+            // EditMapTool.OpenWindow();
         }
 
         [BoxGroup("BoxTool", Order = 10)]
@@ -165,7 +165,7 @@ namespace onicore.editor
         [ShowIf("toggleInit")]
         public void OnTerrainTool()
         {
-            EditTerrainTool.OpenWindow();
+            // EditTerrainTool.OpenWindow();
         }
 
     }

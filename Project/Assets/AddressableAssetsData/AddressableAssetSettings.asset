@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d4a384778c6f44d3b8a9f774e1b54c0f
   m_currentHash:
     serializedVersion: 2
-    Hash: 2e180bf0ef8f74adac76755847833e50
+    Hash: ad8b8256b3cf4d765af1e2c3a95503c8
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -132,7 +132,14 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - default
+    - basement
+    - building
+    - unit
+    - bullet
+    - gear
+    - icon
+    - building
+    - vfx
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 272e7aa0ab6b2492caf335fe6544327f, type: 2}

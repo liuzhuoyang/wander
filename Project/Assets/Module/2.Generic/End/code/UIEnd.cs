@@ -1,6 +1,7 @@
 using UnityEngine;
 using Cysharp.Threading.Tasks;
 using System;
+using SimpleAudioSystem;
 
 public class UIEnd : UIBase
 {
@@ -13,14 +14,12 @@ public class UIEnd : UIBase
     [SerializeField] GameObject objBtnClaim;
     [SerializeField] GameObject objBtnClaimAd;
     [SerializeField] GameObject objInfo;
-    //[SerializeField] UIBattleStats uiBattleStats;
     [SerializeField] GameObject objBtnBattleStats;
-    AudioEndHandler audioHandler;
     bool isOpenInfo;
+
     private void Awake()
     {
         EventManager.StartListening<UIEndArgs>(EndEventName.EVENT_END_INIT_UI, OnInitUI);
-        audioHandler = GetComponent<AudioEndHandler>();
     }
 
     private void OnDestroy()
@@ -40,11 +39,11 @@ public class UIEnd : UIBase
 
         if (args.isWin)
         {
-            audioHandler.OnSFXVictory();
+            AudioManager.Instance.PlaySFX("sfx_ui_end_victory");
         }
         else
         {
-            audioHandler.OnSFXDefeat();
+            AudioManager.Instance.PlaySFX("sfx_ui_end_defeat");
         }
 
         foreach (Transform child in groupItem)

@@ -21,7 +21,7 @@ public class FeatureDataCollection : GameDataCollectionBase
     {
         base.InitData();
         listFeatureData = new List<FeatureData>();
-        List<FeatureData> list = AssetsFinder.FindAllAssetsOfAllSubFolders<FeatureData>(path);
+        List<FeatureData> list = FileFinder.FindAllAssetsOfAllSubFolders<FeatureData>(path);
         foreach (FeatureData featureData in list)
         {
             listFeatureData.Add(featureData);

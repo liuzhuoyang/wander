@@ -25,7 +25,7 @@ public static class CSVWriter
     public static List<T> LoadAllAssets<T>(string path, List<string> excludeFolderList = null) where T : ScriptableObject
     {
         // 获取所有资源
-        var allAssets = new List<T>(AssetsFinder.FindAllAssetsOfAllSubFolders<T>(path, excludeFolderList));
+        var allAssets = new List<T>(FileFinder.FindAllAssetsOfAllSubFolders<T>(path, excludeFolderList));
 
         return allAssets;
     }

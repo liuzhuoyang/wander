@@ -1,7 +1,12 @@
 using System;
 using System.Collections.Generic;
-using Sirenix.OdinInspector;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using Sirenix.OdinInspector;
+using UnityEditor;
+#endif
+
 
 [CreateAssetMenu(fileName = "all_gear", menuName = "OniData/System/Meta/Gear/GearDataList", order = 1)]
 public class GearDataCollection : GameDataCollectionBase
@@ -35,7 +40,7 @@ public static class AllGear
         GearDataCollection collection = GameDataControl.Instance.Get("all_gear") as GearDataCollection;
         foreach (GearData data in collection.listGearData)
         {
-            dictData.Add(data.gearIndex, data);
+            dictData.Add(data.gearName, data);
         }
     }
 }

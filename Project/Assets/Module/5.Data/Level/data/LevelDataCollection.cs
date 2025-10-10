@@ -22,8 +22,8 @@ public class LevelDataCollection : GameDataCollectionBase
     public override void InitData()
     {   
         base.InitData();
-        listLevelData = AssetsFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "main/");
-        listLevelDungeonData =  AssetsFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "dungeon/");
+        listLevelData = FileFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "main/");
+        listLevelDungeonData =  FileFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "dungeon/");
     }
 
     public void OnInitLevelIndex()

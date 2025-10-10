@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 595024973983871133}
   - component: {fileID: 2652348415577811966}
   - component: {fileID: 1314677149826479800}
-  - component: {fileID: 5861642442088931658}
+  - component: {fileID: 2975733605701525996}
   m_Layer: 5
   m_Name: ui_reward
   m_TagString: Untagged
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
---- !u!114 &5861642442088931658
+--- !u!114 &2975733605701525996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1737943197692362489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15529bed8059c4a678d654d78142e708, type: 3}
+  m_Script: {fileID: 11500000, guid: 7386cc1115d8e4b2eaf4837fc9864164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioAwake: sfx_ui_reward_open

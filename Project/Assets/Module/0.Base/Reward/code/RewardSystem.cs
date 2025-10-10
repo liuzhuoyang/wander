@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cysharp.Threading.Tasks;
 using System;
+using SimpleVFXSystem;
 
 public class RewardSystem : Singleton<RewardSystem>
 {
@@ -43,7 +44,7 @@ public class RewardSystem : Singleton<RewardSystem>
 
         if (rewardViewType == RewardViewType.Flyer)
         {
-            VFXControl.Instance.OnVFXFlayerBatchUI(listRewardArgs);
+            UIItemFlyerManager.Instance.OnVFXFlayerBatchUI(listRewardArgs);
         }
     }
 

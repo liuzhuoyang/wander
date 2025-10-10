@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using System;
@@ -14,15 +12,10 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
     public Material fontMaterialTitle;
     public Material fontMaterialContent; 
 
-    Dictionary<string, GameObject> unitPrefabDict; //单位预制体
-    Dictionary<string, GameObject> bulletPrefabDict; //子弹预制体
-    Dictionary<string, GameObject> dynamicPrefabDict; //动态预制体
-
     public async UniTask Init()
     {
         await InitFont();
-        await InitVFXAsset(); //后续可优化放到动态加载里
-        await InitAudioAsset();
+        // await InitVFXAsset(); //后续可优化放到动态加载里
         return;
     }
 
@@ -58,50 +51,25 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
         }
     }
 
-    public GameObject GetUnitPrefab(string prefabName)
-    {
-        return unitPrefabDict[prefabName];
-    }
+    // #region 读取VFX资源
+    // Dictionary<string, GameObject> vfxPrefabDict; //特效预制体
+    // async UniTask InitVFXAsset()
+    // {
+    //     vfxPrefabDict = new Dictionary<string, GameObject>();
+    //     await LoadAsset(AllVFX.dictData.Keys, LoadVFX);
+    // }
 
-    #region Audio资源
-    Dictionary<string, AudioClip> sfxClipDict; //音效剪辑
-    public AudioClip GetAudioClip(string sfxName)
-    {
-        return sfxClipDict[sfxName];
-    }
+    // async UniTask LoadVFX(string vfxName)
+    // {
+    //     GameObject vfx = await GameAsset.GetAssetAsync<GameObject>(vfxName);
+    //     vfxPrefabDict.Add(vfxName, vfx);
+    // }
 
-    async UniTask InitAudioAsset()
-    {
-        sfxClipDict = new Dictionary<string, AudioClip>();
-        await LoadAsset(AllAudio.dictSFX.Values, args => LoadSFXAudioClip(args));
-    }
-
-    async UniTask LoadSFXAudioClip(string sfxName)
-    {
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(sfxName);
-        sfxClipDict.Add(sfxName, clip);
-    }
-    #endregion
-
-    #region 读取VFX资源
-    Dictionary<string, GameObject> vfxPrefabDict; //特效预制体
-    async UniTask InitVFXAsset()
-    {
-        vfxPrefabDict = new Dictionary<string, GameObject>();
-        await LoadAsset(AllVFX.dictData.Keys, LoadVFX);
-    }
-
-    async UniTask LoadVFX(string vfxName)
-    {
-        GameObject vfx = await GameAsset.GetAssetAsync<GameObject>(vfxName);
-        vfxPrefabDict.Add(vfxName, vfx);
-    }
-
-    public GameObject GetVFXPrefab(string vfxName)
-    {
-        return vfxPrefabDict[vfxName];
-    }
-    #endregion
+    // public GameObject GetVFXPrefab(string vfxName)
+    // {
+    //     return vfxPrefabDict[vfxName];
+    // }
+    // #endregion
 
 /*
     async UniTask LoadUnitPrefab(string key)

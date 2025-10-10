@@ -17,7 +17,7 @@ public class ChestDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listChestData = AssetsFinder.FindAllAssets<ChestData>(path);
+        listChestData = FileFinder.FindAllAssets<ChestData>(path);
     }
     #endif
 }

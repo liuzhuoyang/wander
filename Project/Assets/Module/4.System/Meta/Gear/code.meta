@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/Assets/Module/4.System/Meta/Gear/code.meta
 guid: 8cfbc46e550674c2e9d7e572f2c6c8b3
+========
+guid: 7d78fceb5a1b67c48901f6f87629ef8b
+>>>>>>>> 0304b7ad96c41a1654b9beb61d13dbaf12d4f5ff:Project/Assets/DevelopKit.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

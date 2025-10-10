@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d57eeb961bb98f4d97a744dc5d4f1e0, type: 3}
+  m_Name: activeskill_basement_recover
+  m_EditorClassIdentifier: 
+  buffTag: 0
+  immuneTag: 0
+  buffs:
+  - {fileID: 11400000, guid: 9f61e13811fbf1b44accf5bb753a0114, type: 2}
+  triggerCount: -1
+  areaTeamMask: 4
+  areaRadius: 2
+  abilityTargetType: 1

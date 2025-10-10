@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SimpleAudioSystem;
 using UnityEngine;
 
 public class UITransition : UIBase
@@ -36,11 +37,11 @@ public class UITransition : UIBase
 
     public void OnSFXIn()
     {
-        AudioControl.Instance.PlaySFX("sfx_ui_transit_in");
+        AudioManager.Instance.PlaySFX("sfx_ui_transit_in");
     }
 
     public void OnSFXOut()
     {
-        AudioControl.Instance.PlaySFX("sfx_ui_transit_out");
+        AudioManager.Instance.PlaySFX("sfx_ui_transit_out");
     }   
 }

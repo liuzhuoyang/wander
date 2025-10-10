@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: 376455f62e3d6ee41842844ac991ce04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5724403326124203153
+    second: vfx_seq_battle_impact_3_0
+  - first:
+      213: -3907370222380067547
+    second: vfx_seq_battle_impact_3_1
+  - first:
+      213: -2219828976749457792
+    second: vfx_seq_battle_impact_3_2
+  - first:
+      213: 4473214769478022689
+    second: vfx_seq_battle_impact_3_3
+  - first:
+      213: -1687898103157039607
+    second: vfx_seq_battle_impact_3_4
+  - first:
+      213: 7321599875590972179
+    second: vfx_seq_battle_impact_3_5
+  - first:
+      213: 3732339972908124501
+    second: vfx_seq_battle_impact_3_6
+  - first:
+      213: 1478109298360138610
+    second: vfx_seq_battle_impact_3_7
+  - first:
+      213: -1091835724547420956
+    second: vfx_seq_battle_impact_3_8
+  - first:
+      213: 7073402420721351544
+    second: vfx_seq_battle_impact_3_9
+  - first:
+      213: -3238212735959095762
+    second: vfx_seq_battle_impact_3_10
+  - first:
+      213: 1296985303233458751
+    second: vfx_seq_battle_impact_3_11
+  - first:
+      213: 2946064338523625705
+    second: vfx_seq_battle_impact_3_12
+  - first:
+      213: 8857002058875415785
+    second: vfx_seq_battle_impact_3_13
+  - first:
+      213: -2862420464912382204
+    second: vfx_seq_battle_impact_3_14
+  - first:
+      213: 5224885374419089357
+    second: vfx_seq_battle_impact_3_15
+  - first:
+      213: 3684789945371772467
+    second: vfx_seq_battle_impact_3_16
+  - first:
+      213: -3237747633372477365
+    second: vfx_seq_battle_impact_3_17
+  - first:
+      213: 8236446538863761684
+    second: vfx_seq_battle_impact_3_18
+  - first:
+      213: -5294670495273079170
+    second: vfx_seq_battle_impact_3_19
+  - first:
+      213: 5416438450081928788
+    second: vfx_seq_battle_impact_3_20
+  - first:
+      213: -7963439150340341540
+    second: vfx_seq_battle_impact_3_21
+  - first:
+      213: 760203778388697963
+    second: vfx_seq_battle_impact_3_22
+  - first:
+      213: 9198818564174945249
+    second: vfx_seq_battle_impact_3_23
+  - first:
+      213: -1420131461694236593
+    second: vfx_seq_battle_impact_3_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a7dd848aea67240ae473a8f66c876d
+      internalID: 897377665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5f22e4e155888448e3c5efae9bb91c
+      internalID: -1230520025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4eebeabb192554f95e8b15fb85f580
+      internalID: 1264973150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002840461c69c434f9304b480e93bd80
+      internalID: 954073162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e4137ade90b09428e782b7479cde33
+      internalID: -140980782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_5
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236018d34b8cfe147b707d9a626c707c
+      internalID: -112101637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c516bf2e1db0d90428056c497cf7c421
+      internalID: -784316968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_7
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf421e0af03a1a840a1f049c52e8f4e7
+      internalID: 1179508926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_seq_battle_impact_2_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878a95733e7b06241897b0730ff0032b
+      internalID: 2095867478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 025f531fd5575be40bb3d03e3dc933f9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vfx_seq_battle_impact_2_0: 897377665
+      vfx_seq_battle_impact_2_1: -1230520025
+      vfx_seq_battle_impact_2_2: 1264973150
+      vfx_seq_battle_impact_2_3: 954073162
+      vfx_seq_battle_impact_2_4: -140980782
+      vfx_seq_battle_impact_2_5: -112101637
+      vfx_seq_battle_impact_2_6: -784316968
+      vfx_seq_battle_impact_2_7: 1179508926
+      vfx_seq_battle_impact_2_8: 2095867478
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

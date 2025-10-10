@@ -20,7 +20,7 @@ public class TaskBaseData : ScriptableObject
     public List<string> GetLocalizationKeyList()
     {
         List<string> listKey = new List<string>();
-        LocalizationData asset = AssetsFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "ui/", "loc_page_task");
+        LocalizationData asset = FileFinder.FindAssetByName<LocalizationData>(EditorPathUtility.localizationPath + "ui/", "loc_page_task");
         foreach (LocalizationSerializedItem item in asset.list)
         {
             listKey.Add(item.key);

@@ -286,7 +286,7 @@ public class LevelData : ScriptableObject
         List<string> list = new List<string>();
 
         string path = GameDataControl.GetAssetPath("all_theme");
-        List<ThemeData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
+        List<ThemeData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
         foreach (ThemeData asset in listAsset)
         {
             list.Add(asset.themeName);
@@ -369,7 +369,7 @@ public class LevelData : ScriptableObject
         List<string> list = new List<string>();
 
         string path = GameDataControl.GetAssetPath("all_race");
-        List<ThemeData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
+        List<ThemeData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
         foreach (ThemeData asset in listAsset)
         {
             list.Add(asset.themeName);

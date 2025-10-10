@@ -71,7 +71,7 @@ public class RelicData : ScriptableObject
     {
         List<string> listKey = new List<string>();
         string path = GameDataControl.GetLocPath("all_relic");
-        List<LocalizationData> listAsset = AssetsFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        List<LocalizationData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
         foreach (LocalizationData asset in listAsset)
         {
             foreach (LocalizationSerializedItem item in asset.list)

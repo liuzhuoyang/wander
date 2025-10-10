@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
+
+#if UNITY_EDITOR
 using Sirenix.OdinInspector;
 using UnityEditor;
-using UnityEngine;
+#endif
 
 [Serializable]
 public class GearDataEditor
@@ -17,8 +20,7 @@ public class GearDataEditor
 [CreateAssetMenu(fileName = "GearData", menuName = "OniData/System/Meta/Gear/GearData", order = 1)]
 public class GearData : ScriptableObject
 {
-    [ReadOnly]
-    [LabelText("装备序号")] public string gearIndex;
+    [LabelText("装备名")] public string gearName;
 
     [LabelText("识别名(编辑器内才会显示)")] public string editorName;
 
@@ -39,7 +41,6 @@ public class GearData : ScriptableObject
     [Button("Init Data")]
     public void InitData()
     {
-        gearIndex = this.name.Split('_')[1];
         EditorUtility.SetDirty(this);
     }
 

@@ -18,7 +18,7 @@ public class AvatarFrameDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listAvatarFrameData = AssetsFinder.FindAllAssetsOfAllSubFolders<AvatarFrameData>(path);
+        listAvatarFrameData = FileFinder.FindAllAssetsOfAllSubFolders<AvatarFrameData>(path);
     }
 #endif
 }

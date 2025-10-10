@@ -19,7 +19,7 @@ public class ThemeDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listThemeData = AssetsFinder.FindAllAssets<ThemeData>(path);
+        listThemeData = FileFinder.FindAllAssets<ThemeData>(path);
     }
     
     #endif

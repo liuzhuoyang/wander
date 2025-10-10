@@ -18,7 +18,7 @@ public class PlotSequenceDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listSequenceTaskData = AssetsFinder.FindAllAssets<PlotSequenceData>(path);
+        listSequenceTaskData = FileFinder.FindAllAssets<PlotSequenceData>(path);
     }
 #endif
 }

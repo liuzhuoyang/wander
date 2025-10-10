@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+using SimpleAudioSystem;
 
 public class DebuggerSFX : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class DebuggerSFX : MonoBehaviour
 
     public void OnDebugPlay()
     {        
-        AudioControl.Instance.PlaySFX(inputField.text);
+        AudioManager.Instance.PlaySFXLoop(inputField.text);
     }
 
     public void OnDebugStop()
     {
-        AudioControl.Instance.StopSFX(inputField.text);
+        AudioManager.Instance.StopSFXLoop(inputField.text);
     }
 }

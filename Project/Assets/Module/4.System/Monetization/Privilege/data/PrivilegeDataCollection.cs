@@ -16,7 +16,7 @@ public class PrivilegeDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listPrivilegeData = AssetsFinder.FindAllAssetsOfAllSubFolders<PrivilegeData>(path);
+        listPrivilegeData = FileFinder.FindAllAssetsOfAllSubFolders<PrivilegeData>(path);
     }
 #endif
 }

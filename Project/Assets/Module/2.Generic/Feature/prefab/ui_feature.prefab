@@ -474,8 +474,7 @@ GameObject:
   - component: {fileID: 8722213888282569082}
   - component: {fileID: 8737368959709061642}
   - component: {fileID: 6536533901736228949}
-  - component: {fileID: 7517398686000210901}
-  - component: {fileID: 7728924625765461277}
+  - component: {fileID: 2815122794920795187}
   m_Layer: 5
   m_Name: ui_feature
   m_TagString: Untagged
@@ -525,7 +524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabFlyer: {fileID: 5602187234533752569, guid: c97d2e64054b74a5cbdbdf57edfaff2e, type: 3}
-  canvas: {fileID: 4710879891088073644}
   textFeature: {fileID: 5116362322121499478}
   imgFeature: {fileID: 7822363437330585070}
   animator: {fileID: 6536533901736228949}
@@ -551,7 +549,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7517398686000210901
+--- !u!114 &2815122794920795187
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -560,22 +558,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5602187234533752569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93bbc3246c59e412bb1fbde9622b2f8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7386cc1115d8e4b2eaf4837fc9864164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioAwake: 
---- !u!114 &7728924625765461277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5602187234533752569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9559442d5f04b7295b59c8e1d6e060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5700941534698432015
 GameObject:
   m_ObjectHideFlags: 0

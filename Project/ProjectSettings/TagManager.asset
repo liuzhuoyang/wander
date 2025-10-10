@@ -2,17 +2,18 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Unit
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interactable
   - Water
   - UI
-  - 
-  - 
+  - Bullet
+  - Enemy
   - 
   - 
   - 
@@ -38,6 +39,29 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Terrain
+    uniqueID: 1260975185
+    locked: 0
+  - name: Decal
+    uniqueID: 863842557
+    locked: 0
+  - name: Basement
+    uniqueID: 3304765649
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Flyer
+    uniqueID: 1939455975
+    locked: 0
+  - name: Bullet
+    uniqueID: 3151448391
+    locked: 0
+  - name: VFX
+    uniqueID: 3013109761
+    locked: 0
+  - name: HUD
+    uniqueID: 2759597715
+    locked: 0
+  m_RenderingLayers:
+  - Default

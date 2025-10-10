@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a93b857d3d8ddb40b11eff9a6875c07, type: 3}
+  m_Name: Damage_Text_Style
+  m_EditorClassIdentifier: 
+  textFlyDistance: -0.75
+  textFlyDuration: 0.4
+  textBounceDuration: 0.3
+  textFadeDuration: 0.35
+  textFadeDelay: 0.4

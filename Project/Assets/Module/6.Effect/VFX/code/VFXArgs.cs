@@ -11,7 +11,6 @@ public class EventNameVFX
 //批量创建UI飞行物VFX参数
 public class UIVFXFlyerBatchArgs
 {
-    public bool isWorld;
     public Vector2 spawmPoint;
     public Vector3 targetPoint;
     public List<RewardArgs> listReward;
@@ -23,8 +22,6 @@ public class UIVFXFlyerArgs
     public string rewardName;
     //生成位置
     public Vector2 spawmPos;
-    //是否在世界坐标下生成,如果是的话，在VFXControl里会转换一次屏幕坐标
-    public bool isWorldSpaceSpawn;
     //目标位置
     public Vector2 targetPos;
     //缩放
@@ -33,15 +30,15 @@ public class UIVFXFlyerArgs
     public float delay;
 }
 
-public class UIVFXJumpArgs
-{
-    public string target;
-    public Vector2 pos;
-    public float scale;
-    public float force;
-    public float life;
-    public bool isWorldSpace;
-}
+// public class UIVFXJumpArgs
+// {
+//     public string target;
+//     public Vector2 pos;
+//     public float scale;
+//     public float force;
+//     public float life;
+//     public bool isWorldSpace;
+// }
 
 public class UIVFXArgs
 {

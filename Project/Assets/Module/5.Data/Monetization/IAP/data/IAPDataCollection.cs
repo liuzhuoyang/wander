@@ -18,7 +18,7 @@ public class IAPDataCollection : GameDataCollectionBase
     public override void InitData()
     {
         base.InitData();
-        listIapData = AssetsFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
+        listIapData = FileFinder.FindAllAssetsOfAllSubFolders<IAPData>(path);
     }
 #endif
 }

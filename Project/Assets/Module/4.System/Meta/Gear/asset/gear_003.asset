@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
   m_Name: gear_003
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearIndex: 003
+  gearName: 003_arrow
   editorName: "\u5F13\u7BAD"
   displayName: gear/name/003
   info: gear/info/003

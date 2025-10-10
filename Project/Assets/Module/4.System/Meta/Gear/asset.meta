@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/Assets/Module/4.System/Meta/Gear/asset.meta
 guid: 98650346af4954a4f96771f978526da3
 folderAsset: yes
+========
+guid: 73e48f4f23785cd4e990d1a310d1e43d
+>>>>>>>> 0304b7ad96c41a1654b9beb61d13dbaf12d4f5ff:Project/Assets/Module/3.Game/RTSDemo/demo/scene/RTS_Persistence.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
