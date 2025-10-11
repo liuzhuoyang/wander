@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
+  m_Name: sfxgroup_unit_zreep_killed
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioGroupData_SO
+  clip: {fileID: 8300000, guid: 16e98e1ae249c4767bb5b45bdce7f026, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 16e98e1ae249c4767bb5b45bdce7f026, type: 3}
+  - {fileID: 8300000, guid: da1b5ed6c8bdd40dab16150df4724aa3, type: 3}
+  - {fileID: 8300000, guid: c2876de2ef3254010852efda5567930d, type: 3}

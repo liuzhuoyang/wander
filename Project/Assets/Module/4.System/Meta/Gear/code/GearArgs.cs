@@ -1,7 +1,9 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class UIGearArgs : UIBaseArgs
 {
+    public List<string> listGearName;
 
 }
 

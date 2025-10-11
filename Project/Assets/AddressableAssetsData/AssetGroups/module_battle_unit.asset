@@ -102,11 +102,6 @@ MonoBehaviour:
     m_SerializedLabels:
     - unit
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9973ffc15e3f3ee4fa6e01e52c5a2683
-    m_Address: sfx_unit_zreep_hit_001
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9a2b40194eaecdd49b05e49ece0847ee
     m_Address: vfx_battle_starion_melee_1_attack
     m_ReadOnly: 0

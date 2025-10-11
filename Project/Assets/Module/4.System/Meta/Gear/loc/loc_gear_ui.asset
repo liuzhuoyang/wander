@@ -72,3 +72,21 @@ MonoBehaviour:
     textDutch: Ontgrendeld
     textRussian: "\u0420\u0430\u0437\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043E"
     textThai: "\u0E1B\u0E25\u0E14\u0E25\u0E47\u0E2D\u0E01"
+  - key: gear/ui/btn_upgrade
+    textEnglish: Upgrade
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u5347\u7EA7"
+    textTraditionChinese: "\u5347\u7D1A"
+    textJapanese: "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9"
+    textKorean: "\uC5C5\uADF8\uB808\uC774\uB4DC"
+    textFrench: "Mise \xE0 niveau"
+    textGerman: Aktualisierung
+    textSpanish: Actualizar
+    textPortuguese: Atualizar
+    textItalian: Aggiornare
+    textDutch: Upgraden
+    textRussian: "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C"
+    textThai: "\u0E2D\u0E31\u0E1B\u0E40\u0E01\u0E23\u0E14"
