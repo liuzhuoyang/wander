@@ -3,12 +3,12 @@ using UnityEngine;
 using BattleGear;
 using PlayerInteraction;
 
-[RequireComponent(typeof(Draggable_UI))]
+[RequireComponent(typeof(DraggableUI))]
 public class GearDragHandler_UI : MonoBehaviour
 {
     [SerializeField] private GearData gearData;
 
-    private Draggable_UI draggable;
+    private DraggableUI draggable;
     private Camera mainCam;
     private Vector2 initPos;
     private Vector2Int lastSnapGridPoint = Vector2Int.zero;
@@ -16,7 +16,7 @@ public class GearDragHandler_UI : MonoBehaviour
     void Awake()
     {
         mainCam = Camera.main;
-        draggable = GetComponent<Draggable_UI>();
+        draggable = GetComponent<DraggableUI>();
     }
     void OnEnable()
     {

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace PlayerInteraction
 {
-    public class Clickable_UI : MonoBehaviour, IPointerClickHandler
+    public class ClickableUI : MonoBehaviour, IPointerClickHandler
     {
         private Action<Vector2> onClickAction;
         public void Init(Action<Vector2> onClickAction)

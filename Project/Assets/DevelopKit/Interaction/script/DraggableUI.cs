@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace PlayerInteraction
 {
-    public class Draggable_UI : MonoBehaviour, IInteractable_UI
+    public class DraggableUI : MonoBehaviour, IInteractableUI
     {
         [SerializeField] private RectTransform rectTransform;
 

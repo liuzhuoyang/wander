@@ -6,7 +6,7 @@ namespace BattleActor.Basement.Skill
 {
     public class UI_BasementSkillCaster : MonoBehaviour
     {
-        [SerializeField] private Clickable_UI clickable_UI;
+        [SerializeField] private ClickableUI clickable_UI;
         private Action<Vector2> onLocationChosen;
         public void Init(Action<Vector2> onLocationChosen)
         {
