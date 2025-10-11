@@ -8,6 +8,6 @@ namespace BattleGear
     public class GearData_Summon_SO : GearData_SO
     {
         public override GearType gearType => GearType.SummonGear;
-        [BoxGroup("召唤参数")] public SummonData_SO summonData_SO;
+        [BoxGroup("召唤参数")] public SummonData summonData_SO;
     }
 }

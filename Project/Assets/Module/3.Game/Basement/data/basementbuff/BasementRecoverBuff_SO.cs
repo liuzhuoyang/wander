@@ -4,7 +4,7 @@ using UnityEngine;
 namespace BattleActor.Basement
 {
     [CreateAssetMenu(fileName = "BasementRecoverBuff_SO", menuName = "RTS_Demo/Actor/Basement/Buff/BasementRecoverBuff_SO")]
-    public class BasementRecoverBuff_SO : BuffData_SO
+    public class BasementRecoverBuff_SO : BuffData
     {
         public float recoverValue;
         public AttributeModifyType recoverType;

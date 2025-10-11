@@ -51,8 +51,8 @@ namespace BattleActor.Unit
         public UnitRace Race => unitData.unitRace;
         public ElementType DamageElementType => unitData.damageType;
         public BattleActorMotionLayer MotionLayer => unitData.motionLayer;
-        public BulletData_SO bulletData => unitData.m_bulletData;
-        public BuffData_SO[] abilities => unitData.m_unitAbilites;
+        public BulletData bulletData => unitData.m_bulletData;
+        public BuffData[] abilities => unitData.m_unitAbilites;
         
         public UnitObjectArgs(UnitData_SO unitData, int level)
         {

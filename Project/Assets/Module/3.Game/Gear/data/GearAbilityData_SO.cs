@@ -5,7 +5,7 @@ using UnityEngine;
 namespace BattleGear
 {
     [CreateAssetMenu(fileName = "GearAbilityData_SO", menuName = "RTS_Demo/Gear/GearAbilityData_SO")]
-    public class GearAbilityData_SO : AbilityData_SO
+    public class GearAbilityData_SO : AbilityData
     {
         [SerializeField] private GearAbilityTriggerType gearAbilityTriggerType;
         [SerializeField] private GearAbilityTargetType gearAbilityTargetType;

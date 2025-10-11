@@ -5,7 +5,7 @@ using UnityEngine;
 namespace BattleActor.Unit
 {
     [CreateAssetMenu(fileName = "UnitAbilityData_SO", menuName = "RTS_Demo/Actor/Unit/UnitAbilityData_SO")]
-    public class UnitAbilityData_SO : AbilityData_SO
+    public class UnitAbilityData_SO : AbilityData
     {
         [SerializeField] private UnitAbilityTriggerType abilityTriggerType;
         [SerializeField] private UnitAbilityTargetType abilityTargetType;

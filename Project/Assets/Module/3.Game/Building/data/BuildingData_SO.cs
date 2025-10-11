@@ -9,7 +9,7 @@ namespace BattleActor.Building
     [System.Serializable]
     public struct ProductionData
     {
-        public SummonData_SO summonData_SO;
+        public SummonData summonData_SO;
         public float produceTime;
         public int produceCount;
         public bool infiniteRound;

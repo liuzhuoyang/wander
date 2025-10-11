@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "UnitStatusBuff_SO", menuName = "RTS_Demo/Actor/Unit/Buff/UnitStatusBuff")]
-public class UnitStatusBuff_SO : BuffData_SO
+public class UnitStatusBuff_SO : BuffData
 {
     [Header("Status Life Time")]
     public bool isPermanent;

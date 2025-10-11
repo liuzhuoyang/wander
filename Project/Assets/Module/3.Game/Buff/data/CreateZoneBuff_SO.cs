@@ -6,14 +6,14 @@ using SimpleVFXSystem;
 namespace RTSDemo.Zone
 {
     [CreateAssetMenu(fileName = "CreateZoneBuff_SO", menuName = "Assets/Buff/CreateZoneBuff_SO")]
-    public class CreateZoneBuff_SO : BuffData_SO
+    public class CreateZoneBuff_SO : BuffData
     {
         [SerializeField] private float zoneRadius;
         [SerializeField] private float refreshRate;
         [SerializeField] private float duration;
         [SerializeField] private bool isPermanent;
         [SerializeField] private TeamRelation zoneTeam;
-        [SerializeField] private BuffData_SO[] zoneBuffs;
+        [SerializeField] private BuffData[] zoneBuffs;
 
         [Header("区域表现")]
         [SerializeField] private VFXData_SO zoneVFX;

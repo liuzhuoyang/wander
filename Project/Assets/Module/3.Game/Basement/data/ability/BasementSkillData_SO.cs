@@ -5,7 +5,7 @@ using UnityEngine;
 namespace BattleActor.Basement.Skill
 {
     [CreateAssetMenu(fileName = "BasementAbilityData_SO", menuName = "RTS_Demo/Actor/Basement/BasementAbilityData_SO")]
-    public class BasementSkillData_SO : AbilityData_SO
+    public class BasementSkillData_SO : AbilityData
     {
         [SerializeField] private BasementAbilityType basementAbilityType;
 

@@ -26,7 +26,7 @@ namespace BattleActor.Unit
 
         #region 单位配置
         [TabGroup("单位素材"), SerializeField] private AssetReference bodyRef;
-        [TabGroup("单位素材"), SerializeField] private BulletData_SO bulletData;
+        [TabGroup("单位素材"), SerializeField] private BulletData bulletData;
         #endregion
 
         #region 技能配置
@@ -34,7 +34,7 @@ namespace BattleActor.Unit
         #endregion
 
         public AssetReference m_bodyRef => bodyRef;
-        public BulletData_SO m_bulletData => bulletData;
+        public BulletData m_bulletData => bulletData;
         public UnitAbilityData_SO[] m_unitAbilites => unitAbilites;
         protected override bool IsRange() => isRange;
     }

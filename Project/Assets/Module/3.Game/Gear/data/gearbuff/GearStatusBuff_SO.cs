@@ -5,7 +5,7 @@ using BattleGear;
 using Sirenix.OdinInspector;
 
 [CreateAssetMenu(fileName = "GearStatusBuff_SO", menuName = "RTS_Demo/Gear/Buff/GearStatusBuff_SO")]
-public class GearStatusBuff_SO : BuffData_SO
+public class GearStatusBuff_SO : BuffData
 {
     [Header("Status Life Time")]
     public bool isPermanent;

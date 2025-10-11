@@ -6,7 +6,7 @@ namespace BattleGear
     public class Gear_Summon : GearBase
     {
         [SerializeField] private BattleSummonArg battleSummonArg;
-        public void InitSummonArg(SummonData_SO summonData)
+        public void InitSummonArg(SummonData summonData)
         {
             battleSummonArg = new BattleSummonArg(summonData.actorData,
                                                   summonData.summonLimit,
