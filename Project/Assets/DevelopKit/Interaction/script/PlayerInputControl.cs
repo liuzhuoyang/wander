@@ -6,7 +6,7 @@ namespace PlayerInteraction
 {
     public class PlayerInputControl : MonoBehaviour
     {
-        private InputSystem_Actions.BattleActions battleActions;
+        private InputSystemActions.BattleActions battleActions;
         private Camera mainCam;
         private Vector2 pointerScrPos;
         private IInteractable holdingInteractable;
@@ -28,7 +28,7 @@ namespace PlayerInteraction
         }
         private void OnEnable()
         {
-            battleActions = new InputSystem_Actions().Battle;
+            battleActions = new InputSystemActions().Battle;
             battleActions.TouchPress.performed += OnFingerDown;
             battleActions.TouchPress.canceled += OnFingerUp;
             battleActions.TouchPosition.performed += OnFingerMove;

@@ -27,7 +27,8 @@ public class UIGear : UIBase
 
     void OnRefresh(UIGearArgs args)
     {
-
+        //关闭所有
+        DestroyUnitContainer();
     }
 
 
