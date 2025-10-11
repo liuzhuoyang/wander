@@ -13,17 +13,17 @@ namespace SimpleAudioSystem
     /// <summary>
     /// 用于收集AudioData_SO的集合
     /// </summary>
-    [CreateAssetMenu(fileName = "AudioDataCollection_SO", menuName = "DevelopBasic/AudioSystem/AudioDataCollection_SO")]
-    public class AudioDataCollection_SO : GameDataCollectionBase
+    [CreateAssetMenu(fileName = "all_audio", menuName = "OniData/Effect/Audio/AudioDataCollection")]
+    public class AudioDataCollection : GameDataCollectionBase
     {
-        public List<AudioRefData_SO> bgm_list;
-        public List<AudioRefData_SO> amb_list;
-        public List<AudioData_SO> sfx_list;
-        public List<AudioGroupData_SO> sfx_group_list;
+        public List<AudioRefData> bgm_list;
+        public List<AudioRefData> amb_list;
+        public List<AudioData> sfx_list;
+        public List<AudioGroupData> sfx_group_list;
 
-        private Dictionary<string, AudioRefData_SO> bgm_dict;
-        private Dictionary<string, AudioRefData_SO> amb_dict;
-        private Dictionary<string, AudioData_SO> sfx_dict;
+        private Dictionary<string, AudioRefData> bgm_dict;
+        private Dictionary<string, AudioRefData> amb_dict;
+        private Dictionary<string, AudioData> sfx_dict;
 
         // private const string BGM_DIRECTOR_KEY = "/bgm";
         // private const string AMB_DIRECTOR_KEY = "/amb";
@@ -33,9 +33,9 @@ namespace SimpleAudioSystem
         void OnEnable()
         {
             Debug.Log("-------Initializing Audio Data Collection-------");
-            bgm_dict = new Dictionary<string, AudioRefData_SO>();
-            amb_dict = new Dictionary<string, AudioRefData_SO>();
-            sfx_dict = new Dictionary<string, AudioData_SO>();
+            bgm_dict = new Dictionary<string, AudioRefData>();
+            amb_dict = new Dictionary<string, AudioRefData>();
+            sfx_dict = new Dictionary<string, AudioData>();
 
             foreach (var item in bgm_list)
             {
@@ -86,11 +86,11 @@ namespace SimpleAudioSystem
             string path = AssetDatabase.GetAssetPath(this);
             path = Path.GetDirectoryName(path);
 
-            bgm_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("bgm"));
-            amb_list = GetDataFromPath<AudioRefData_SO>("Assets").FindAll(a => a.name.Contains("amb"));
-            sfx_list = GetDataFromPath<AudioData_SO>("Assets").FindAll(a=>a is not AudioGroupData_SO);
+            bgm_list = GetDataFromPath<AudioRefData>("Assets").FindAll(a => a.name.Contains("bgm"));
+            amb_list = GetDataFromPath<AudioRefData>("Assets").FindAll(a => a.name.Contains("amb"));
+            sfx_list = GetDataFromPath<AudioData>("Assets").FindAll(a=>a is not AudioGroupData);
 
-            sfx_group_list = GetDataFromPath<AudioGroupData_SO>("Assets");
+            sfx_group_list = GetDataFromPath<AudioGroupData>("Assets");
 
             EditorUtility.SetDirty(this);
         }

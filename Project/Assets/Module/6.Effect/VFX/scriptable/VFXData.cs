@@ -4,8 +4,8 @@ using UnityEngine.AddressableAssets;
 
 namespace SimpleVFXSystem
 {
-    [CreateAssetMenu(fileName = "VFXData_SO", menuName = "DevelopBasic/VFX_System/VFXData_SO")]
-    public class VFXData_SO : ScriptableObject
+    [CreateAssetMenu(fileName = "vfx_data", menuName = "OniData/Effect/VFX/VFXData")]
+    public class VFXData : ScriptableObject
     {
         public AssetReference vfx_ref;
         [LabelText("VFX的创建方式")]

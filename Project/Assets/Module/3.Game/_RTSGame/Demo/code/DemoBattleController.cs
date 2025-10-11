@@ -10,7 +10,7 @@ using UnityEngine;
 
 public class DemoBattleController : MonoBehaviour
 {
-    [SerializeField] private AudioRefData_SO bgmData;
+    [SerializeField] private AudioRefData bgmData;
     void Awake()
     {
         new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>().Init();
