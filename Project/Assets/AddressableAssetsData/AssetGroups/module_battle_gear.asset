@@ -53,18 +53,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - gear
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7a50d5d0760ee410cb6812fd79f0889b
-    m_Address: sfx_battle_gear_102_launch
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 81511ca4d1a974aefac5a54082b93849
     m_Address: vfx_battle_gear_launch_103_bomb_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 98f8c9034c075451fab74e94b08bd32d
-    m_Address: sfx_battle_gear_101_launch
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -96,11 +86,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: df13b6cf7148847fb88cf299b623de60
     m_Address: vfx_battle_gear_launch_101_gatling_1
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5e9a289d295e40f4b4eb50d26fd270b
-    m_Address: sfx_battle_gear_103_launch
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -12,6 +12,6 @@ namespace PlayerInteraction
         void OnFailInteract(PlayerInputControl inputControl);
         void HoldingUpdate(PlayerInputControl inputControl);
     }
-    public interface IInteractable_UI : IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+    public interface IInteractableUI : IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
     {}
 }
