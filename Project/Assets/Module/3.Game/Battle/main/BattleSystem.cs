@@ -72,7 +72,16 @@ public class BattleSystem : Singleton<BattleSystem>
     }
 
     #region 战斗系统的开始结束唯一出入口
+    //
+    public void OnBattleStart()
+    {
+        OnChangeBattleState(BattleStates.BattleStart);
+    }
 
+    public void OnBattleEnd()
+    {
+        OnChangeBattleState(BattleStates.BattleEnd);
+    }
     #endregion
 
     #region 状态机

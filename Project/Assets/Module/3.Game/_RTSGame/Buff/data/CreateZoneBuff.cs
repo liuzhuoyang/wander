@@ -16,7 +16,7 @@ namespace RTSDemo.Zone
         [SerializeField] private BuffData[] zoneBuffs;
 
         [Header("区域表现")]
-        [SerializeField] private VFXData_SO zoneVFX;
+        [SerializeField] private VFXData zoneVFX;
 
         public override bool m_positionbasedBuff => true;
         protected override Buff GetBuffInstance()

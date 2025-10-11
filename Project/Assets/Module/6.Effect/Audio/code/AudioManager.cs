@@ -10,7 +10,7 @@ namespace SimpleAudioSystem
 {
     public class AudioManager : Singleton<AudioManager>
     {
-        [SerializeField] private AudioDataCollection_SO audioDataCollection;
+        [SerializeField] private AudioDataCollection audioDataCollection;
 
         [Header("Audio source")]
         [SerializeField] private AudioSource ambience_loop;

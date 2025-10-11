@@ -6,11 +6,12 @@ using BattleLaunch.Bullet;
 using Cysharp.Threading.Tasks;
 using SimpleVFXSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RTSDemo.Game
 {
     //以下Manager，都需要执行资源加载的异步初始化，因此需要通过Initiator进行
-    public class RTSInitiator : Initiator
+    public class RTSInitiator : MonoBehaviour
     {
         [Header("Init")]
         [SerializeField] private string InitScene;
@@ -19,8 +20,8 @@ namespace RTSDemo.Game
         [SerializeField] private GameObject bulletManager;
         [SerializeField] private GameObject gearManager;
         [SerializeField] private GameObject vfxManager;
-
-        public override async UniTask Init()
+        
+        public async void Start()
         {
             //初始化游戏必要模组
             //@todo应该有更好的方式来处理模组的初始化
@@ -32,6 +33,7 @@ namespace RTSDemo.Game
 
             List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
             await UniTask.WhenAll(loadingTask);
+            await SceneManager.LoadSceneAsync(InitScene, LoadSceneMode.Additive);
         }
     }
 }

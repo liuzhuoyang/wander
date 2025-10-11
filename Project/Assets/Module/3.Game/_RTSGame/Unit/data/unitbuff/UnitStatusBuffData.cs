@@ -12,7 +12,7 @@ public class UnitStatusBuffData : BuffData
     [HideIf("isPermanent")] public float durtaion;
     [Header("Attribute Modify")]
     public UnitAttributeModifier attributeModifier;
-    public VFXData_SO statusVFX;
+    public VFXData statusVFX;
     protected override Buff GetBuffInstance()
     {
         UnitStatusBuff buff;

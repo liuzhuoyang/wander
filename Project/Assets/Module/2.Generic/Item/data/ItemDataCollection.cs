@@ -6,7 +6,7 @@ using Cysharp.Threading.Tasks;
 
 //数据编辑器使用，这个scriptableObject包含所有遗物数据的List，游戏开始的时候先加载这个资源，后续转换成AllItem来使用
 [Serializable]
-[CreateAssetMenu(fileName = "all_item", menuName = "OniData/Generic/VFX/ItemDataCollection", order = 1)]
+[CreateAssetMenu(fileName = "all_item", menuName = "OniData/Generic/Item/ItemDataCollection", order = 1)]
 public class ItemDataCollection : GameDataCollectionBase
 {
     //单个资源的路径
