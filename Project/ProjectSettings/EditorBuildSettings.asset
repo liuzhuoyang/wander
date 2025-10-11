@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/main.unity
     guid: acd7d3881f030446481301e5702a6762
   - enabled: 1
-    path: Assets/Module/3.Game/RTSDemo/scene/RTS_Persistence.unity
+    path: Assets/Module/3.Game/_RTSGame/Demo/scene/rts_persistence.unity
     guid: 73e48f4f23785cd4e990d1a310d1e43d
   - enabled: 1
-    path: Assets/Module/3.Game/RTSDemo/scene/RTS_Demo.unity
+    path: Assets/Module/3.Game/_RTSGame/Demo/scene/rts_demo.unity
     guid: 12e1fcd487b4774409b0b6cfeabcd4af
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a035ea893ff7946e19a3bbbfcb5fcd38, type: 2}
