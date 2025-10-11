@@ -16,7 +16,7 @@ namespace BattleGear
 
         private const float TARGET_UPDATE_CYCLE = 0.5f;
 
-        public void InitLaunchData(LaunchConfig_SO launchConfig)
+        public void InitLaunchData(LaunchConfig launchConfig)
         {
             targetFinder = GetComponent<BattleLaunchTargetFinder>();
             targetFinder.Init(TeamMask.Enemy, launchConfig.scanOrder, BattleActorMotionLayerMask.All);

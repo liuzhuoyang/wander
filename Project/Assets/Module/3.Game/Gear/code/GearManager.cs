@@ -15,8 +15,8 @@ namespace BattleGear
     /// </summary>
     public class GearManager : Singleton<GearManager>
     {
-        [SerializeField] private GearDataCollection_SO gearDataCollection;
-        [SerializeField] private GearDamageBonusData_SO gearDamageBonus;
+        [SerializeField] private GearDataCollection gearDataCollection;
+        [SerializeField] private GearDamageBonusData gearDamageBonus;
 
         private Transform gearRoot;
         private HashSet<GearBase> playerGears;
@@ -24,7 +24,7 @@ namespace BattleGear
         private Dictionary<string, GridShape> gearShapeDict; //记录武器形状
 
         #region 数据获取
-        async UniTask LoadGearPrefab(GearData_SO data)
+        async UniTask LoadGearPrefab(GearData data)
         {
             //单位身体素材获取
             GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.gearPrefab);
@@ -84,7 +84,7 @@ namespace BattleGear
         public Vector2 GetGearPlaceOffset(string gearKey) => gearDataCollection.GetDataByKey(gearKey).placeOffset;
         public GearBase CreateGear(string gearKey, Vector2 worldPos, int gearLevel)
         {
-            GearData_SO gearData = gearDataCollection.GetDataByKey(gearKey);
+            GearData gearData = gearDataCollection.GetDataByKey(gearKey);
             GearDynamicArgs gearDynamicArgs = new GearDynamicArgs(gearData, gearLevel);
 
             GameObject gearObj = Instantiate(gearPrefabDict[gearKey], gearRoot);
@@ -98,13 +98,13 @@ namespace BattleGear
                     gearObj.AddComponent<BattleLaunchTargetFinder>();
                     var gear_launch = gearObj.AddComponent<Gear_Launch>();
                     gear_launch.Init(gearDynamicArgs);
-                    gear_launch.InitLaunchData((gearData as GearData_Launch_SO).launchConfig_SO);
+                    gear_launch.InitLaunchData((gearData as GearDataLaunch).launchConfig);
                     gear = gear_launch;
                     break;
                 case GearType.SummonGear:
                     var gear_summon = gearObj.AddComponent<Gear_Summon>();
                     gear_summon.Init(gearDynamicArgs);
-                    gear_summon.InitSummonArg((gearData as GearData_Summon_SO).summonData_SO);
+                    gear_summon.InitSummonArg((gearData as GearDataSummon).summonData_SO);
                     gear = gear_summon;
                     break;
             }

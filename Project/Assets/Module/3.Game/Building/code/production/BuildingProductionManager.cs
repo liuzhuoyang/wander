@@ -10,7 +10,7 @@ namespace BattleActor.Building
     [System.Serializable]
     public struct ProductionArgs
     {
-        public BattleActorData_SO actorData;
+        public BattleActorData actorData;
         public int produceLevelAdjustment; //等级修改值，生产单位的等级 = 建筑等级+等级修改值
         public int produceCount; //每批次 生产多少单位
         public float produceTime; //生产时长

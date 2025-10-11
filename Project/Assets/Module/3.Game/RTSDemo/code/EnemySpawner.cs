@@ -5,7 +5,7 @@ namespace RTSDemo.Level
 { 
     public class EnemySpawner : BattleBehaviour
     {
-        [SerializeField] private UnitData_SO spawnUnitData;
+        [SerializeField] private UnitData spawnUnitData;
         [SerializeField] private Vector2Int countPerSpawn;
         [SerializeField] private int maxCount = 50;
         [SerializeField] private float spawnFreq = 1f;

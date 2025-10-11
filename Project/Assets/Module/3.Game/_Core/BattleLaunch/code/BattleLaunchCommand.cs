@@ -35,16 +35,16 @@ namespace BattleLaunch
 
         public bool requireTargetToLaunch => launchableData.launchableType != LaunchableType.CircularSpread;
 
-        public BattleLaunchCommandData(LaunchConfig_SO launchConfig_SO)
+        public BattleLaunchCommandData(LaunchConfig launchConfig)
         {
-            burstCount = new BuffProperty(launchConfig_SO.burstCount,-1,true);
-            burstInterval = launchConfig_SO.burstInterval;
-            spreadCount = launchConfig_SO.spreadCount;
-            spreadAngle = launchConfig_SO.spreadAngle;
-            launchableData = launchConfig_SO.launchableData_SO;
-            retargetPerLaunch = launchConfig_SO.retargetPerLaunch;
-            retargetPerCount = launchConfig_SO.retargetPerCount;
-            trackTargetIfCan = launchConfig_SO.trackTargetIfCan;
+            burstCount = new BuffProperty(launchConfig.burstCount,-1,true);
+            burstInterval = launchConfig.burstInterval;
+            spreadCount = launchConfig.spreadCount;
+            spreadAngle = launchConfig.spreadAngle;
+            launchableData = launchConfig.launchableData_SO;
+            retargetPerLaunch = launchConfig.retargetPerLaunch;
+            retargetPerCount = launchConfig.retargetPerCount;
+            trackTargetIfCan = launchConfig.trackTargetIfCan;
         }
     }
 

@@ -35,7 +35,7 @@ namespace BattleActor.Basement
         public const float COLLISION_EXTRUDE = 0.5f;
 
         #region 基地生命周期
-        public void Init(BasementData_SO basementData, Vector2 basementSize)
+        public void Init(BasementData basementData, Vector2 basementSize)
         {
             dynamicArgs = new BasementDynamicArgs(basementData);
             teamMask = TeamMask.Player;

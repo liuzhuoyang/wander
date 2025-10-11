@@ -26,11 +26,11 @@ MonoBehaviour:
   gearPrefab:
     m_AssetGUID: c8703be7b59d3b64591d2d38dd347dd0
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 1
   gearAbilites:
   - {fileID: 11400000, guid: 0577b1ca652e4c94593b08c68a584fa9, type: 2}
   vfx_gearBeginFire: {fileID: 11400000, guid: b530951e30859ac4e8391b21a2b2d8ec, type: 2}
   sfx_gearBeginFire: {fileID: 11400000, guid: 76b09bf2cd333e645bfae3994b8826cc, type: 2}
-  launchConfig_SO: {fileID: 11400000, guid: 76cd324ac79e91d43a95844f7beb6bbb, type: 2}
+  launchConfig: {fileID: 11400000, guid: 76cd324ac79e91d43a95844f7beb6bbb, type: 2}

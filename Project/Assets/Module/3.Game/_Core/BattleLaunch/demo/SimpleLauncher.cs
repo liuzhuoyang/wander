@@ -13,7 +13,7 @@ namespace BattleLaunch.Demo
             Ready = 2,
             Shooting = 3,
         }
-        [SerializeField] private LaunchConfig_SO launchConfig;
+        [SerializeField] private LaunchConfig launchConfig;
         [SerializeField] private BattleLaunchTargetFinder targetFinder;
         [SerializeField] private LaunchLayer mainLaunchLayer;
         [Header("Search Target")]

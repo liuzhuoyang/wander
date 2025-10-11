@@ -7,7 +7,7 @@ namespace BattleActor.Building
 {
     public class BuildingManager : Singleton<BuildingManager>
     {
-        [SerializeField] private BuildingDataCollection_SO buildingDataCollection;
+        [SerializeField] private BuildingDataCollection buildingDataCollection;
 
         private Transform buildingRoot;
         private HashSet<BuildingBase> playerBuildings;
@@ -15,7 +15,7 @@ namespace BattleActor.Building
         private Dictionary<string, GameObject> buildingPrefabDict;
 
         #region 数据获取
-        async UniTask LoadBuildingPrefab(BuildingData_SO data)
+        async UniTask LoadBuildingPrefab(BuildingData data)
         {
             //单位身体素材获取
             GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.bodyRef);
@@ -64,7 +64,7 @@ namespace BattleActor.Building
         }
         public BuildingBase CreateBuilding(string buildingKey, int buildingLevel, Vector2 worldPos, bool isEnemy, bool autoActivate = true)
         {
-            BuildingData_SO buildingData = buildingDataCollection.GetDataByKey(buildingKey);
+            BuildingData buildingData = buildingDataCollection.GetDataByKey(buildingKey);
 
             GameObject buildingObj = Instantiate(buildingPrefabDict[buildingData.m_actorKey], buildingRoot);
             buildingObj.transform.position = worldPos;

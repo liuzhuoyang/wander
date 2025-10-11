@@ -6,7 +6,7 @@ namespace BattleActor.Basement
 {
     public class BasementBuilder : MonoBehaviour
     {
-        [SerializeField] private BasementData_SO basementData_SO; 
+        [SerializeField] private BasementData basementData_SO; 
         [SerializeField] private Vector2Int defaultGridSize = new Vector2Int(3, 3);
         [SerializeField] private RTS_NodeObject basementCenterNode;
         async void Start()

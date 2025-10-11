@@ -14,7 +14,7 @@ namespace HUD_TEXT
         [Range(0, 1)]
         [SerializeField] private float textAnimationDurationMulti = 0.5f;
         [SerializeField] private float textDistanceMulti = 0.5f;
-        [SerializeField] private HUD_Text_Style_SO textStyleSO;
+        [SerializeField] private HUDTextStyleData textStyleSO;
         [Header("Prefab")]
         [SerializeField] private GameObject TextDamage;
 

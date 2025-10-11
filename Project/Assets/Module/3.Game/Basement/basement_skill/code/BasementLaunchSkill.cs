@@ -12,7 +12,7 @@ namespace BattleActor.Basement.Skill
         protected BattleLaunchControl battleLaunchControl;
         protected BattleLaunchCommandData battleLaunchCommandData;
 
-        public BasementLaunchSkill(LaunchConfig_SO launchConfig, AttackData attackData, int launchLayerIndex,
+        public BasementLaunchSkill(LaunchConfig launchConfig, AttackData attackData, int launchLayerIndex,
         string buffTypeID, string[] buffIDs, float areaRadius, TeamMask areaTeamMask)
             : base(buffTypeID, buffIDs, areaRadius, areaTeamMask)
         {

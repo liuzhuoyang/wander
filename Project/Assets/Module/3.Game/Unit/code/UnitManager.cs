@@ -16,8 +16,8 @@ namespace BattleActor.Unit
     /// </summary>
     public class UnitManager : Singleton<UnitManager>
     {
-        [SerializeField] private UnitDataCollection_SO unitDataCollection_SO;
-        [SerializeField] private UnitConfig_SO unitViewConfig_SO; //单位表现信息集
+        [SerializeField] private UnitDataCollection unitDataCollection_SO;
+        [SerializeField] private UnitViewConfig unitViewConfig_SO; //单位表现信息集
 
         private Transform unitRoot;
         private HashSet<UnitBase> enemyUnitList;
@@ -36,7 +36,7 @@ namespace BattleActor.Unit
             if (isBoss) return unitViewConfig_SO.boss_Hit;
             else return unitViewConfig_SO.default_Hit;
         }
-        async UniTask LoadUnitPrefab(UnitData_SO data)
+        async UniTask LoadUnitPrefab(UnitData data)
         {
             //单位身体素材获取
             GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.m_bodyRef);
@@ -130,7 +130,7 @@ namespace BattleActor.Unit
         public UnitBase CreateUnit(string unitName, Vector3 worldPos, bool isEnemy, int unitLevel = 1, bool autoActivate = true)
         {
             //基础单位数据
-            UnitData_SO unitData = unitDataCollection_SO.GetDataByKey(unitName);
+            UnitData unitData = unitDataCollection_SO.GetDataByKey(unitName);
             var objectArgs = new UnitObjectArgs(unitData, unitLevel);
             return CreateUnitRaw(objectArgs, worldPos, isEnemy, autoActivate);
         }

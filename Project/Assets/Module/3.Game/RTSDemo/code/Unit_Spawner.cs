@@ -7,7 +7,7 @@ public class Unit_Spawner : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private InputAction spawnInput;
-    [SerializeField] private UnitData_SO unitData;
+    [SerializeField] private UnitData unitData;
     [SerializeField] private bool isEnemy;
     private Camera mainCam;
 

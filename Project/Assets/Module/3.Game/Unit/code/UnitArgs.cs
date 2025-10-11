@@ -16,7 +16,7 @@ namespace BattleActor.Unit
     //实例化的单位原始数据，一般在单位创建前，应用全局加成时做修改
     public struct UnitObjectArgs
     {
-        private readonly UnitData_SO unitData; //单位静态数据，禁止修改
+        private readonly UnitData unitData; //单位静态数据，禁止修改
         private readonly int unitLevel; //单位等级，此等级并非小兵的合成等级，需要区分
         private float baseMaxHealth;
         private float baseMaxShield;
@@ -54,7 +54,7 @@ namespace BattleActor.Unit
         public BulletData bulletData => unitData.m_bulletData;
         public BuffData[] abilities => unitData.m_unitAbilites;
         
-        public UnitObjectArgs(UnitData_SO unitData, int level)
+        public UnitObjectArgs(UnitData unitData, int level)
         {
             this.unitData = unitData;
             unitLevel = Mathf.Max(1, level);

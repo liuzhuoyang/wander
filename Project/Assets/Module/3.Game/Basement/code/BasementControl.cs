@@ -12,7 +12,7 @@ namespace BattleActor.Basement
 {
     public class BasementControl : Singleton<BasementControl>
     {
-        [SerializeField] private BasementDataCollection_SO basementDataCollection;
+        [SerializeField] private BasementDataCollection basementDataCollection;
         [SerializeField] private GameObject ui_activeskill_caster_prefab;
         [SerializeField] private Transform ui_root;
         private Transform basementRoot;

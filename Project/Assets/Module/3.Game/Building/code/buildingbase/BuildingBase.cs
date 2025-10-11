@@ -66,7 +66,7 @@ namespace BattleActor.Building
         protected const int MAX_QUEUE_SIZE = 16;
 
         #region 建筑生命周期
-        public BuildingBase Init(BuildingData_SO buildingData, int buildingLevel, bool activateOnStart = false)
+        public BuildingBase Init(BuildingData buildingData, int buildingLevel, bool activateOnStart = false)
         {
             teamType = gameObject.layer == BattleActorService.FriendlyLayer ? TeamMask.Player : TeamMask.Enemy;
             isBattleBuilding = buildingData.launchConfigs != null;
@@ -224,7 +224,7 @@ namespace BattleActor.Building
         #endregion
 
         #region 单位生产
-        public virtual ISummonnee SpawnBattleActor(BattleActorData_SO summoneeData, int summonLevel, int summonLimit)
+        public virtual ISummonnee SpawnBattleActor(BattleActorData summoneeData, int summonLevel, int summonLimit)
         {
             return BattleSummonManage.Instance.TryCreateSummon(new BattleSummonArg(summoneeData,
                                                                summonLimit,

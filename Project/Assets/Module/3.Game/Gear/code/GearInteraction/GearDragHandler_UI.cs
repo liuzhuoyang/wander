@@ -6,7 +6,7 @@ using PlayerInteraction;
 [RequireComponent(typeof(Draggable_UI))]
 public class GearDragHandler_UI : MonoBehaviour
 {
-    [SerializeField] private GearData_SO gearData;
+    [SerializeField] private GearData gearData;
 
     private Draggable_UI draggable;
     private Camera mainCam;

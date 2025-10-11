@@ -7,7 +7,7 @@ namespace BattleActor.Building
     public struct BuildingDynamicArgs
     {
         //建筑物配置数据，可通过此获得原始数据
-        private readonly BuildingData_SO baseBuildingData;
+        private readonly BuildingData baseBuildingData;
         public readonly int level;
         public readonly float maxHealth;
         public readonly float maxShield;
@@ -31,7 +31,7 @@ namespace BattleActor.Building
         public bool penetrateArmor => baseBuildingData.penetrateArmor;
         public ElementType elementType => baseBuildingData.damageType;
 
-        public BuildingDynamicArgs(BuildingData_SO buildingData, int level)
+        public BuildingDynamicArgs(BuildingData buildingData, int level)
         {
             this.level = level;
             this.baseBuildingData = buildingData;

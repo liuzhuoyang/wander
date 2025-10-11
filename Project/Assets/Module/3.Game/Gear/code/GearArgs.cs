@@ -12,7 +12,7 @@ namespace BattleGear
     public struct GearDynamicArgs
     {
         //建筑物配置数据，可通过此获得原始数据
-        private readonly GearData_SO baseGearData;
+        private readonly GearData baseGearData;
 
         #region 动态数据
         public BuffProperty attackSpeed;
@@ -27,11 +27,11 @@ namespace BattleGear
         public readonly float damageMultiToBuilding => baseGearData.damageMultiToBuilding;
         public readonly float damageMultiToShield => baseGearData.damageMultiToShield;
         public readonly ElementType damageElement => baseGearData.damageElement;
-        public readonly GearAbilityData_SO[] gearAbilities => baseGearData.gearAbilites;
+        public readonly GearAbilityData[] gearAbilities => baseGearData.gearAbilites;
         public readonly string vfx_beginFire => baseGearData.vfx_gearBeginFire?.vfxKey;
         public readonly string sfx_beginFire => baseGearData.sfx_gearBeginFire?.name;
 
-        public GearDynamicArgs(GearData_SO gearData_SO, int level)
+        public GearDynamicArgs(GearData gearData_SO, int level)
         {
             baseGearData = gearData_SO;
             float damage = GearManager.Instance.GetGearDamageByLevel(gearData_SO.m_gearKey, level);

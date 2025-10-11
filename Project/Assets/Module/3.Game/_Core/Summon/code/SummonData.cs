@@ -16,7 +16,7 @@ namespace BattleSummon
         public int summonLimit; //召唤物最大数量, -1表示无限
         #endregion
 
-        public BattleSummonArg(BattleActorData_SO summonneeData, int summonLimit, Vector3 summonPosition, string summonnerID, bool isEnemy, int summonLevel)
+        public BattleSummonArg(BattleActorData summonneeData, int summonLimit, Vector3 summonPosition, string summonnerID, bool isEnemy, int summonLevel)
         {
             summonneeType = summonneeData.actorType;
             summonneeKey = summonneeData.m_actorKey;

@@ -6,7 +6,7 @@ namespace BattleActor.Basement
     [System.Serializable]
     public struct BasementDynamicArgs
     {
-        private readonly BasementData_SO baseBasementData;
+        private readonly BasementData baseBasementData;
 
         #region 可增益数据
         public BuffProperty maxHealth;
@@ -20,7 +20,7 @@ namespace BattleActor.Basement
         public float currentMana;
         #endregion
 
-        public BasementDynamicArgs(BasementData_SO basementData_SO)
+        public BasementDynamicArgs(BasementData basementData_SO)
         {
             baseBasementData = basementData_SO;
             maxHealth = new BuffProperty(basementData_SO.maxHealth);
