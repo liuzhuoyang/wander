@@ -23,10 +23,21 @@ public class GearSystem : Singleton<GearSystem>
 
         Refresh();
     }
-    
+
     public void Refresh()
     {
         EventManager.TriggerEvent<UIGearArgs>(GearEventName.EVENT_GEAR_REFRESH_UI, new UIGearArgs());
+    }
+
+    public void OnClickSlot(string gearName)
+    {
+        PopupGearInfoArgs args = new PopupGearInfoArgs
+        {
+            popupName = "popup_gear_info",
+            gearName = gearName,
+        };
+
+        PopupManager.Instance.OnPopup(args);
     }
 
 }

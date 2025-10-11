@@ -884,7 +884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 585, y: -370}
+  m_AnchoredPosition: {x: 585, y: -2080}
   m_SizeDelta: {x: 1170, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4847774895757800626
@@ -1054,6 +1054,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9907c224e13674ef8b3a0b2db96f3dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIGear
+  listTransform: {fileID: 0}
+  unlockTransform: {fileID: 0}
+  lockTransform: {fileID: 0}
+  gearSlotPrefab: {fileID: 0}
 --- !u!1 &8378958134575294812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 585, y: -170}
+  m_AnchoredPosition: {x: 585, y: -740}
   m_SizeDelta: {x: 1170, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4671692849695150792
