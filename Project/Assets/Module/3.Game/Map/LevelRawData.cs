@@ -24,6 +24,7 @@ public class LevelRawData
     public Dictionary<byte, List<string>> nodeData = new Dictionary<byte, List<string>>();
     //碰撞节点数据
     public List<string> colliderData = new List<string>();
+    
 #if UNITY_EDITOR
     //编辑器场景创建的编辑器控制组件列表
     List<EditHandleTerrain> listTerrainHandle = new List<EditHandleTerrain>();
@@ -47,39 +48,6 @@ public class LevelRawData
             var pos = item.transform.position;
             AddVFX((float)Math.Round(pos.x, 2), (float)Math.Round(pos.y, 2), item.targetName);
         }
-
-/*
-        foreach (var item in listSpawnPointHandle)
-        {
-            SpawnPointArgs args = new SpawnPointArgs()
-            {
-                posX = (float)Math.Round(item.transform.position.x, 2),
-                posY = (float)Math.Round(item.transform.position.y, 2),
-                spawnPointType = item.spawnPointType,
-                unlockWaveID = item.unlockWaveID,
-                delay = item.delay,
-                spawnFrequency = item.spawnFrequency,
-                unitName = item.unitName,
-                unitNum = item.unitNum,
-                canSpawnSummonners = item.isSpawnBossSummonners
-            };
-            var pos = item.transform.position;
-            AddSpawnPoint(args);
-        }
-        
-
-        foreach (var item in listTowerDefensePointHandle)
-        {
-            DefenseTowerPointArgs args = new DefenseTowerPointArgs()
-            {
-                posX = (float)Math.Round(item.transform.position.x, 2),
-                posY = (float)Math.Round(item.transform.position.y, 2),
-                towerKey = item.towerKey,
-                isActiveOnStart = item.isActiveOnStart
-            };
-            defenseTowerPointArgs.Add(args);
-        }
-        */
 
         foreach (var item in listColliderHandle)
             {
