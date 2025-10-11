@@ -1,9 +1,21 @@
 using UnityEngine;
 
-public class UIGear : MonoBehaviour
+public class UIGear : UIBase
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] Transform listTransform;
+
+
+
+    [SerializeField] Transform unlockTransform;
+
+    [SerializeField] Transform lockTransform;
+
+    [SerializeField] GameObject gearSlotPrefab;
+
+
+
+
+    void Awake()
     {
         EventManager.StartListening<UIGearArgs>(GearEventName.EVENT_GEAR_REFRESH_UI, OnRefresh);
     }
@@ -15,7 +27,21 @@ public class UIGear : MonoBehaviour
 
     void OnRefresh(UIGearArgs args)
     {
-        //刷新UI
+
+    }
+
+
+    private void DestroyUnitContainer()
+    {
+        foreach (Transform child in unlockTransform)
+        {
+            child.gameObject.SetActive(false);
+        }
+
+        foreach (Transform child in lockTransform)
+        {
+            child.gameObject.SetActive(false);
+        }
     }
 
 
