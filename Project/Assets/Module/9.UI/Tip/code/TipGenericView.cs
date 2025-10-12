@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 
-public class TipView : MonoBehaviour
+public class TipGenericView : MonoBehaviour
 {
     public TextMeshProUGUI textTip;
     public Transform transformTip;
