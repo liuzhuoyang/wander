@@ -111,7 +111,7 @@ public class UIModeBattlePrepare : UIBase
 
     public void OnRefreshItem()
     {
-        BattleSystem.Instance.OnRefreshBrick();
+        //BattleSystem.Instance.OnRefreshBrick();
     }
 
     public void OnPause()

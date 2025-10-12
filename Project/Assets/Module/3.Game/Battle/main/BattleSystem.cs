@@ -1,47 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
-using MonsterLove.StateMachine;
-using System.Threading.Tasks;
 
 
-public enum BattleStates
+public class BattleSystem : BattleSystemBase<BattleSystem>
 {
-    Init,
-    Pause, //暂停
-    BattleStart, //战斗开始
-    PrepareStart,    //准备阶段开始
-    PrepareRun, //准备阶段运行中
-    PrepareEnd, //准备阶段结束
-    FightStart, //战斗阶段
-    FightRun,   //战斗阶段运行中
-    FightEnd,   //战斗阶段结束
-    BattleEnd,  //战斗结束
-}
-
-public class BattleSystem : Singleton<BattleSystem>
-{
-    public bool isSandboxBattle = false;
-
-    StateMachine<BattleStates> fsm;
-
-    LevelData currentLevelData; //当前关卡数据
-
-    public async UniTask Init()
+    public override async UniTask Init()
     {
-        await UIMain.Instance.CreateModeSubPage("prepare", "battle");
-        await UIMain.Instance.CreateModeSubPage("fight", "battle");
-
-        //添加功能事件，点击按钮后开启战斗功能
-        FeatureUtility.OnAddFeature(FeatureType.Battle, () => {
-            Game.Instance.OnChangeState(GameStates.Battle);
-        });
-
-        fsm = StateMachine<BattleStates>.Initialize(this);
-        fsm.ChangeState(BattleStates.Init);
+        await base.Init();
     }
 
-    public void Clear()
+    public override void Clear()
     {
         foreach (Transform child in transform)
         {
@@ -53,199 +22,148 @@ public class BattleSystem : Singleton<BattleSystem>
     {
         switch (args.battleAction)
         {
-            case BattleActionType.EnemyKilled:
-
-                break;
-            case BattleActionType.WaveStart:
-               
-                break;
-            case BattleActionType.WaveEnd:
-                GameData.userData.userStats.OnWavePassed();
-                break;
-            case BattleActionType.LevelUp:
-                
-                break;
-            case BattleActionType.PlayerDead:
-              
-                break;
+            case BattleActionType.EnemyKilled: OnEnemyKilled(args); break;
+            case BattleActionType.WaveStart: OnWaveStart(args); break;
+            case BattleActionType.WaveEnd: OnWaveEnd(args); break;
+            case BattleActionType.LevelUp: OnLevelUp(args); break;
+            case BattleActionType.PlayerDead: OnPlayerDead(args); break;
         }
     }
 
-    #region 战斗系统的开始结束唯一出入口
-    //
-    public void OnBattleStart()
-    {
-        OnChangeBattleState(BattleStates.BattleStart);
-    }
-
-    public void OnBattleEnd()
-    {
-        OnChangeBattleState(BattleStates.BattleEnd);
-    }
+    #region 战斗开始状态机
+    
     #endregion
 
-    #region 状态机
-    // 进入战斗开始状态
-    async void BattleStart_Enter()
+
+    #region 抽象方法 - 子类必须实现
+    //读取关卡数据
+    protected override async UniTask OnLoadLevel()
     {
-        Debug.Log($"=== BattleSystem: 进入 BattleStart_Enter 战斗开始状态机 ===");
-
-         //禁止用户输入
-        ActingSystem.Instance.OnActing(this.name); 
-
         await LevelControl.OnLoadLevel(LevelType.Main, 1, 1);
+    }
 
+    //播放准备阶段音乐
+    protected override void OnPlayBattlePrepareBGM()
+    {
+        //播放准备音乐
+        // AudioControl.Instance.PlayBGM(battleAudioConfig.GetPrepareBGM());
+    }
+
+    //播放战斗阶段音乐
+    protected override void OnPlayBattleFightBGM()
+    {
+        //播放战斗音乐
+        // AudioControl.Instance.PlayBGM(battleAudioConfig.GetFightBGM());
+    }
+    
+    #endregion
+
+    #region 状态机虚方法 - 子类可以重写
+    //准备阶段开始
+    protected override async UniTask OnBattleStartPhaseEnter()
+    {   
+        await base.OnBattleStartPhaseEnter();
+        ActingSystem.Instance.OnActing(this.name);
+        await OnLoadLevel();
         OnChangeBattleState(BattleStates.PrepareStart);
-        //这个允许用户输入的位置，还需要考虑后续添加的动画
         ActingSystem.Instance.StopActing(this.name);
     }
-
-    // 退出战斗开始状态
-    void BattleStart_Exit()
+    protected override async UniTask OnBattleStartPhaseExit()
     {
-
+        await base.OnBattleStartPhaseExit();
+        //战斗阶段退出
     }
 
-    // 进入波段准备状态
-    async void PrepareStart_Enter()
+    protected override async UniTask OnPrepareStartPhaseEnter()
     {
-        Debug.Log($"=== BattleSystem: 进入 Prepare_Enter 波段准备状态机 ===");
-
-        //播放准备音乐
-        PlayBattlePrepareBGM();
-    
-        //打开准备界面
         ModeBattleControl.OnOpen("prepare");
-
-        TipManager.Instance.OnTip("DEBUG: Enter Prepare Start Phase");
-        await OnDebugTipCountDown();
-
-        //准备结束，进入PrepareRun状态
-        OnChangeBattleState(BattleStates.PrepareRun);
+        await base.OnPrepareStartPhaseEnter();
     }
 
-    void PrepareRun_Enter()
+    protected override async UniTask OnPrepareRunPhaseEnter()
     {
-        TipManager.Instance.OnTip("DEBUG: Enter Prepare Run Phase");
+        //准备阶段运行
+        await base.OnPrepareRunPhaseEnter();
+    }
+    protected override async UniTask OnPrepareEndPhaseEnter()
+    {
+        ModeBattleControl.OnCloseActive();
+        await base.OnPrepareEndPhaseEnter();
+        //准备阶段结束
     }
 
-    //进入准备结束状态
-    async void PrepareEnd_Enter()
+    protected override async UniTask OnFightStartPhaseEnter()
     {
-        //这是一个很微妙的状态，但需要有
-        //比如说装备状态结束，需要有一个状态是拉远镜头，可以放这里，虽然也可以放到FightStart里面，但假设FightStart里已经需要做一些战斗相关操作
-        //那么这个PrepareEnd就可以作为一个缓冲地带，在做真正的波段战斗之前的一些表现等操作
-        TipManager.Instance.OnTip("DEBUG: Enter Prepare End Phase");   
-        await OnDebugTipCountDown();
-
-        //准备结束，进入FightStart状态
-        OnChangeBattleState(BattleStates.FightStart);
-    }
-
-    // 进入波段战斗开始状态
-    async void FightStart_Enter()
-    {
-        Debug.Log($"=== BattleSystem: 进入 FightStart_Enter 波段战斗开始状态机 ===");
-
-        //播放战斗音乐
-        //PlayBattleFightBGM();
-
-        //打开战斗界面
         ModeBattleControl.OnOpen("fight");
-
-        TipManager.Instance.OnTip("DEBUG: Enter Fight Start Phase");
-        //await是Debug观察状态用，实际使用可以替换为一些动画表现，拉远镜头等
-        await OnDebugTipCountDown();
-        
-        //战斗结束，进入FightRun状态
-        OnChangeBattleState(BattleStates.FightRun);
+        await base.OnFightStartPhaseEnter();
+        //战斗阶段开始
     }
-
-    //FightRun 状态
-    //用途：为什么需要和FightStart状态区分，比如中间切入到升级的状态，接着要回来战斗，就是FightRun状态，而不是FightStart状态
-    void FightRun_Enter()
+    protected override async UniTask OnFightRunPhaseEnter()
     {
-        TipManager.Instance.OnTip("DEBUG: Enter Fight Run Phase");
+        await base.OnFightRunPhaseEnter();
+        //战斗阶段运行
     }
-
-    void FightRun_Exit()
+    protected override async UniTask OnFightRunPhaseExit()
     {
-        //Fight Run阶段一般来说，不需要做任何操作
+        await base.OnFightRunPhaseExit();
+        //战斗阶段退出
     }
-
-    async void FightEnd_Enter()
+    protected override async UniTask OnFightEndPhaseEnter()
     {
-        //进入波段战斗结束的状态，这里可以做一些波段结算工作，比如说掉落宝箱，跳出金币等
-        TipManager.Instance.OnTip("DEBUG: Enter Fight End Phase");
-
-        await  OnDebugTipCountDown();
-
-        //波段结束后，进入准备阶段
-        //如果是胜利的话，不会进入这个阶段，而是进入战斗结束阶段
-        OnChangeBattleState(BattleStates.PrepareStart);
+        ModeBattleControl.OnCloseActive();
+        await base.OnFightEndPhaseEnter();
+        //战斗阶段结束
     }
-
-    void FightEnd_Exit()
+    protected override async UniTask OnFightEndPhaseExit()
     {
-        //这里离开FightEnd状态，可以做一些操作，比如停止战斗音乐，单位等
-        TipManager.Instance.OnTip("DEBUG: Exit Fight End Phase");
+        await base.OnFightEndPhaseExit();
+        //战斗阶段退出
     }
-
-    // 进入暂停状态
-    void Pause_Enter()
+    protected override async UniTask OnPausePhaseEnter()
     {
-        //
-        Debug.Log($"=== BattleSystem: 进入 Pause_Enter 停止状态机 ===");
+        await base.OnPausePhaseEnter();
+        //暂停阶段
     }
-
-    // 退出暂停状态
-    void Pause_Exit()
+    protected override async UniTask OnPausePhaseExit()
     {
-        //这里离开Pause状态，可以做一些操作，比如恢复战斗音乐，单位等
-        TipManager.Instance.OnTip("DEBUG: Exit Pause Phase");
+        await base.OnPausePhaseExit();
+        //暂停阶段退出
     }
-
-    // 进入整场战斗结束状态
-    void BattleEnd_Enter()
+    protected override async UniTask OnBattleEndPhaseEnter()
     {
-        Debug.Log($"=== BattleSystem: 进入 BattleEnd_Enter 战斗结束状态机 ===");
-        //战斗结束，进入BattleEnd状态
-        //整个战斗正式结束，这时候可以进行一些清理，结算等工作
-        //清理也可以根据情况放到BattleEnd_Exit中
-        TipManager.Instance.OnTip("DEBUG: Enter Battle End Phase");
+        await base.OnBattleEndPhaseEnter();
+        //战斗结束阶段
     }
-
-    // 退出整场战斗结束状态
-    void BattleEnd_Exit()
+    protected override async UniTask OnBattleEndPhaseExit()
     {
-        
-    }
-
-    public void OnChangeBattleState(BattleStates state)
-    {
-        fsm.ChangeState(state);
+        await base.OnBattleEndPhaseExit();
+        //战斗结束阶段退出
     }
     #endregion
 
-    public void OnRevive()
+    #region 战斗事件处理
+    void OnEnemyKilled(BattleActionArgs args)
     {
-        //AnalyticsControl.Instance.OnLogLevelRevive(BattleData.levelType, BattleData.chapterID, BattleData.levelID, BattleData.currentWave);
+        //敌人击杀
     }
-
-    public void OnRefreshBrick(bool isFree = false)
+    void OnWaveStart(BattleActionArgs args)
     {
-
+        //波段开始
     }
-
-    public void OnPause()
+    void OnWaveEnd(BattleActionArgs args)
     {
-        
+        GameData.userData.userStats.OnWavePassed();
+        //波段结束
     }
-
-    public void OnResume()
+    void OnLevelUp(BattleActionArgs args)
     {
-
+        //升级获取能力
     }
+    void OnPlayerDead(BattleActionArgs args)
+    {
+        //玩家死亡
+    }
+    #endregion
 
     #region 音乐
     protected void PlayBattlePrepareBGM()
@@ -254,16 +172,4 @@ public class BattleSystem : Singleton<BattleSystem>
        // AudioControl.Instance.PlayBGM(battleAudioConfig.GetPrepareBGM());
     }
     #endregion
-
-    async UniTask OnDebugTipCountDown()
-    {
-        int delayTime = 800;
-        await UniTask.Delay(delayTime);
-        TipManager.Instance.OnTip("3");
-        await UniTask.Delay(delayTime);
-        TipManager.Instance.OnTip("2");
-        await UniTask.Delay(delayTime);
-        TipManager.Instance.OnTip("1");
-        await UniTask.Delay(delayTime);
-    }
 }
