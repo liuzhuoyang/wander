@@ -35,32 +35,6 @@ public static class Utility
         return Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
     }
 
-    public static float ConvertPercentTypeToFloat(PercentType percentType)
-    {
-        string input = percentType.ToString();
-        if (!input.StartsWith("P") && !input.StartsWith("Z") && !input.StartsWith("D"))
-        {
-            Debug.Log("ConvertPercentTypeToFloat Failed!");
-            return -1;
-        }
-        int number = 0;
-        if (input.Contains("Z"))
-        {
-            number = -int.Parse(input.Substring(1));
-        }
-        else if (input.Contains("P"))
-        {
-            number = int.Parse(input.Substring(1));
-        }
-        else
-        {
-            return float.Parse(input.Substring(1).Replace('_', '.')) / 100;
-        }
-
-        float result = (float)number / 100;
-        return result;
-    }
-
     #region Extension
     public static Color GetOpaqueColor(this Color color)
     {
