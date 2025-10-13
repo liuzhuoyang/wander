@@ -10,11 +10,6 @@ public class BattleBehaviourManager : Singleton<BattleBehaviourManager>
     List<BattleBehaviour> _behaviours = new List<BattleBehaviour>();
     HashSet<Rigidbody2D> _battleDynamics = new HashSet<Rigidbody2D>();
 
-    public void Init()
-    {
-        _behaviours = new List<BattleBehaviour>();
-    }
-
     public void RegisterBehaviour(BattleBehaviour behaviour)
     {
         Rigidbody2D rigid = behaviour.GetComponent<Rigidbody2D>();
