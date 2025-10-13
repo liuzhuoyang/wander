@@ -98,7 +98,7 @@ namespace PlayerInteraction
                 onClickEmpty?.Invoke(true);
                 return;
             }
-
+            
             RaycastHit2D hit = Physics2D.Raycast(mainCam.ScreenToWorldPoint(pointerScrPos), Vector2.zero, 100, 1 << PlayerInputService.InteractableLayer);
             if (hit.collider != null)
             {

@@ -1,13 +1,21 @@
 using UnityEngine;
-using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using SimpleAudioSystem;
+using RTSDemo.Unit;
+using RTSDemo.Building;
+using BattleLaunch.Bullet;
+using BattleGear;
+using RTSDemo.Zone;
 
 
 public class BattleSystem : BattleSystemBase<BattleSystem>
 {
+    private GameObject battleControllerPrefab;
+    private GameObject battleController;
     public override async UniTask Init()
     {
         await base.Init();
+        battleControllerPrefab = await GameAsset.GetPrefabAsync("rts_battle_controller");
     }
 
     public override void Clear()
@@ -46,14 +54,14 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override void OnPlayBattlePrepareBGM()
     {
         //播放准备音乐
-        // AudioControl.Instance.PlayBGM(battleAudioConfig.GetPrepareBGM());
+        AudioManager.Instance.PlayBGM("bgm_pvebattle_prep_1");
     }
 
     //播放战斗阶段音乐
     protected override void OnPlayBattleFightBGM()
     {
         //播放战斗音乐
-        // AudioControl.Instance.PlayBGM(battleAudioConfig.GetFightBGM());
+        AudioManager.Instance.PlayBGM("bgm_pvebattle_fight_1");
     }
     
     #endregion
@@ -65,6 +73,17 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         await base.OnBattleStartPhaseEnter();
         ActingSystem.Instance.OnActing(this.name);
         await OnLoadLevel();
+
+        //开启各项游戏系统
+        UnitManager.Instance.StartBattle();
+        BulletManager.Instance.StartBattle();
+        BuildingManager.Instance.StartBattle();
+        GearManager.Instance.StartBattle();
+        BuffZoneManager.Instance.StartBattle();
+
+        //创建战斗内控制器
+        battleController = Instantiate(battleControllerPrefab, this.transform);
+
         OnChangeBattleState(BattleStates.PrepareStart);
         ActingSystem.Instance.StopActing(this.name);
     }
@@ -132,7 +151,15 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnBattleEndPhaseEnter()
     {
         await base.OnBattleEndPhaseEnter();
+
         //战斗结束阶段
+        Destroy(battleController);
+        //清理各项游戏系统
+        UnitManager.Instance.CleanUpBattle();
+        BulletManager.Instance.CleanUpBattle();
+        BuildingManager.Instance.CleanUpBattle();
+        GearManager.Instance.CleanUpBattle();
+        BuffZoneManager.Instance.CleanUpBattle();
     }
     protected override async UniTask OnBattleEndPhaseExit()
     {
@@ -162,14 +189,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     void OnPlayerDead(BattleActionArgs args)
     {
         //玩家死亡
-    }
-    #endregion
-
-    #region 音乐
-    protected void PlayBattlePrepareBGM()
-    {
-        //播放准备音乐
-       // AudioControl.Instance.PlayBGM(battleAudioConfig.GetPrepareBGM());
     }
     #endregion
 }
