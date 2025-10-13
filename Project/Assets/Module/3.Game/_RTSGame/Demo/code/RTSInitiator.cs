@@ -16,7 +16,7 @@ namespace RTSDemo.Game
     {
         [Header("Init")]
         [SerializeField] private string InitScene;
-        [SerializeField] private GamePlayConfig gameConfig;
+        [SerializeField] private GameInitConfig gameConfig;
         
         public async void Start()
         {

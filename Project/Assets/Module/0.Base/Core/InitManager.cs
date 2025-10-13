@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
+using RTSDemo.Game;
 using UnityEngine;
 
 public class InitManager : Singleton<InitManager>
@@ -10,6 +11,7 @@ public class InitManager : Singleton<InitManager>
     float waitTime = 0.05f;
     CancellationTokenSource cancellationTokenSource;
     public bool isTimeOut;
+    [SerializeField] private GameInitConfig gamePlayConfig;
     public async void Init()
     {
         OnPreset();
@@ -22,9 +24,9 @@ public class InitManager : Singleton<InitManager>
     async void OnPreset()
     {
         #region 这区域内不能使用异步，因为需要先于其他模块初始化
-        
-        #endregion
 
+        #endregion
+        await gamePlayConfig.GamePlaySetUp();
         // //创建VFX特效管理器
         // GameObject vfx = new GameObject("[VFX]");
         // vfx.AddComponent<VFXControl>().Init();

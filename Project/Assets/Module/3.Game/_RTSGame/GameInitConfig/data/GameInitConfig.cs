@@ -9,8 +9,8 @@ using UnityEngine;
 
 namespace RTSDemo.Game
 {
-    [CreateAssetMenu(fileName = "GamePlayConfig", menuName = "RTS_Demo/Game/GamePlayConfig")]
-    public class GamePlayConfig : ScriptableObject
+    [CreateAssetMenu(fileName = "GameInitConfig", menuName = "RTS_Demo/Game/GameInitConfig")]
+    public class GameInitConfig : ScriptableObject
     {
         [Header("Async Loading")]
         public GameObject unitManagerPrefab;
