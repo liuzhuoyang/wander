@@ -40,15 +40,5 @@ namespace SimpleRVO
 
             RVOSimManager.SetAgentPrefVelocity(this.agentID, goalVector);
         }
-
-        // private void Update()
-        // {
-        //     var goal = SampleGameObjects.GetGoal();
-        //     this.SetPreferredVelocities(goal);
-
-        //     var position = RVOSimManager.GetAgentPos(this.agentID);
-        //     var prevPosition = this.transform.position;
-        //     this.transform.position = new Vector3(position.x, position.y, prevPosition.z);
-        // }
     }
 }
