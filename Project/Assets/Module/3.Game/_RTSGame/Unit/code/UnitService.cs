@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     public static class UnitService
     {

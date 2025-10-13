@@ -1,4 +1,4 @@
-using BattleActor.Unit;
+using RTSDemo.Unit;
 using UnityEngine;
 
 namespace RTSDemo.Level

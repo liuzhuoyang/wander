@@ -1,5 +1,5 @@
 using BattleActor;
-using BattleActor.Unit;
+using RTSDemo.Unit;
 using UnityEngine;
 
 public class UB_BombDrone : UB_DroneBasic

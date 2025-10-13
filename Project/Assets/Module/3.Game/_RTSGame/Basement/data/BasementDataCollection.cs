@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     [CreateAssetMenu(fileName = "BasementDataCollection", menuName = "RTS_Demo/Actor/Basement/BasementDataCollection")]
     public class BasementDataCollection : DataCollection<BasementData>

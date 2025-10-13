@@ -1,7 +1,8 @@
 using UnityEngine;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
+    using BattleActor;
     public class BuildingProductionManager : CommandManager<BuildingBase>
     {
         public BuildingProductionManager(BuildingBase context) : base(context){}

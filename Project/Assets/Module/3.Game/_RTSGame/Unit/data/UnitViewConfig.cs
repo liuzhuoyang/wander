@@ -1,8 +1,11 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "UnitViewConfig", menuName = "RTS_Demo/Actor/Unit/UnitViewConfig")]
-public class UnitViewConfig : ScriptableObject
+namespace RTSDemo.Unit
 {
-    public Material default_Hit;
-    public Material boss_Hit;
+    [CreateAssetMenu(fileName = "UnitViewConfig", menuName = "RTS_Demo/Actor/Unit/UnitViewConfig")]
+    public class UnitViewConfig : ScriptableObject
+    {
+        public Material default_Hit;
+        public Material boss_Hit;
+    }
 }

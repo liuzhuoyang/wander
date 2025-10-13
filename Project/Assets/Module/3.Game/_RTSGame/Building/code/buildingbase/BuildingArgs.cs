@@ -1,7 +1,7 @@
 
 using BattleLaunch;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
     [System.Serializable]
     public struct BuildingDynamicArgs

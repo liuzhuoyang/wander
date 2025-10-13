@@ -1,7 +1,7 @@
 using BattleBuff;
 using UnityEngine;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     [CreateAssetMenu(fileName = "BasementRecoverBuffData", menuName = "RTS_Demo/Actor/Basement/Buff/BasementRecoverBuffData")]
     public class BasementRecoverBuffData : BuffData

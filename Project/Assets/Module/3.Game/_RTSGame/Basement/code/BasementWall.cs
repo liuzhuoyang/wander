@@ -1,7 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     public enum BaseWallDirection
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     public class BasementShieldView : MonoBehaviour
     {
