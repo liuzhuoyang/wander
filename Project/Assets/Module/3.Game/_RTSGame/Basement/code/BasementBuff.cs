@@ -1,7 +1,6 @@
 using BattleBuff;
-using RTSDemo;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     public class BasementRecoverBuff : AttributeModifierBuff
     {
@@ -23,8 +22,4 @@ namespace BattleActor.Basement
             ChangeBuffState(BuffState.Complete);
         }
     }
-    // public class BasementLaunchBuff : LaunchBuff
-    // {
-
-    // }
 }

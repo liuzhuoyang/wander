@@ -1,7 +1,6 @@
 using BattleBuff;
-using UnityEngine;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     [System.Serializable]
     public struct BasementDynamicArgs

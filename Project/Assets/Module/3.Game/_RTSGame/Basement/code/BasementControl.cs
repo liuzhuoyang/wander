@@ -5,10 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 using RTSDemo.Grid;
-using BattleActor.Basement.Skill;
-using Sirenix.OdinInspector;
+using RTSDemo.Basement.Skill;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     public class BasementControl : Singleton<BasementControl>
     {
