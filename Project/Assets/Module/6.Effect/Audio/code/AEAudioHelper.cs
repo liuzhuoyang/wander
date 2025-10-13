@@ -6,7 +6,7 @@ namespace SimpleAudioSystem
     [System.Serializable]
     public struct SFXInfo
     {
-        public AudioData_SO audioData;
+        public AudioData audioData;
         public float audioStep;
         public float volumeScale;
     }
@@ -46,7 +46,7 @@ namespace SimpleAudioSystem
         }
         public void AE_PlaySFX(Object audioData)
         {
-            if (audioData is AudioData_SO data)
+            if (audioData is AudioData data)
             {
                 AudioManager.Instance.PlaySFX(data.name, 1);
             }

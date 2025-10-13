@@ -222,14 +222,14 @@ public class Game : Singleton<Game>
         UIMain.Instance.OnModeUI("battle");
         HeaderControl.OnHide();
         FooterControl.OnHide();
-        BattleSystem.Instance.OnChangeBattleState(BattleStates.BattleStart);
+        BattleSystem.Instance.OnBattleStart();
     }
 
     void Battle_Exit()
     {
         HeaderControl.OnShow();
         FooterControl.OnShow();
-        BattleSystem.Instance.OnChangeBattleState(BattleStates.BattleEnd);
+        BattleSystem.Instance.OnBattleEnd();
     }
     public void OnChangeState(GameStates s)
     {

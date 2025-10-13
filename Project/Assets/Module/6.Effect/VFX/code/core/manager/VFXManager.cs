@@ -15,7 +15,7 @@ namespace SimpleVFXSystem
     }
     public class VFXManager : Singleton<VFXManager>
     {
-        [SerializeField] private VFXDataCollection_SO vfxDataCollection;
+        [SerializeField] private VFXDataCollection vfxDataCollection;
         //记录与管理vfx对象池
         private VFXPoolManager vfxPoolManager;
         //记录与管理Particles
@@ -33,7 +33,7 @@ namespace SimpleVFXSystem
             Debug.LogError($"VFX prefab not found: {vfxKey}");
             return null;
         }
-        async UniTask LoadVFXPrefab(VFXData_SO data)
+        async UniTask LoadVFXPrefab(VFXData data)
         {
             GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.vfxKey);
             if (!vfxPrefabDict.ContainsKey(data.vfxKey))

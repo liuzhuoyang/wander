@@ -28,8 +28,8 @@ namespace BattleGear
         [TabGroup("武器素材")] public AssetReference gearPrefab;
         [BoxGroup("武器技能")] public GearAbilityData[] gearAbilites;
         
-        [TabGroup("武器表现")] public VFXData_SO vfx_gearBeginFire;
-        [TabGroup("武器表现")] public AudioData_SO sfx_gearBeginFire;
+        [TabGroup("武器表现")] public VFXData vfx_gearBeginFire;
+        [TabGroup("武器表现")] public AudioData sfx_gearBeginFire;
         public string m_gearKey => this.name;
     }
 }

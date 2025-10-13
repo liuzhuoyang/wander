@@ -12,14 +12,12 @@ public class UIPopup : MonoBehaviour
         //dict = new Dictionary<string, GameObject>();
         EventManager.StartListening<PopupArgs>(EventNamePopup.EVENT_POPUP_UI, OnPopup);
         EventManager.StartListening<PopupArgs>(EventNamePopup.EVENT_CLOSE_ALL_POPUP_UI, CloseAllPopup);
-        EventManager.StartListening<PopupArgs>(EventNamePopup.EVENT_CLOSE_BY_NAME, CloseByName);
     }
 
     void OnDestroy()
     {
         EventManager.StopListening<PopupArgs>(EventNamePopup.EVENT_POPUP_UI, OnPopup);
         EventManager.StopListening<PopupArgs>(EventNamePopup.EVENT_CLOSE_ALL_POPUP_UI, CloseAllPopup);
-        EventManager.StopListening<PopupArgs>(EventNamePopup.EVENT_CLOSE_BY_NAME, CloseByName);
     }
 
     async void OnPopup(PopupArgs args)
