@@ -1,10 +1,10 @@
 using UnityEngine;
 
 using BattleActor;
-using BattleActor.Unit;
 using BattleGear;
 using BattleLaunch.Bullet;
 using BattleSummon;
+using RTSDemo.Unit;
 using RTSDemo.Zone;
 using RTSDemo.Building;
 using SimpleAudioSystem;

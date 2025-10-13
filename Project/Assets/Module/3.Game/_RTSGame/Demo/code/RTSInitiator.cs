@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 
-using BattleActor.Unit;
+using RTSDemo.Unit;
 using BattleGear;
 using BattleLaunch.Bullet;
 using SimpleVFXSystem;

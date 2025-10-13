@@ -2,7 +2,7 @@ using BattleBuff;
 using BattleBuff.Ability;
 using UnityEngine;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     [CreateAssetMenu(fileName = "UnitAbilityData", menuName = "RTS_Demo/Actor/Unit/UnitAbilityData")]
     public class UnitAbilityData : AbilityData

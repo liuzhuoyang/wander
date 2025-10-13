@@ -1,6 +1,5 @@
 using UnityEngine;
 using BattleActor;
-using BattleActor.Unit;
 using Sirenix.OdinInspector;
 
 namespace RTSDemo.Unit

@@ -1,10 +1,9 @@
 using Unity.Mathematics;
 using UnityEngine;
 
-using BattleActor.Unit;
 using SimpleRVO;
 
-namespace RTSDemo
+namespace RTSDemo.Unit
 {
     public class UnitRTSMovement : UnitMovement
     {

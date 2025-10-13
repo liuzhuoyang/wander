@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     public class UnitMovement : MonoBehaviour
     {
