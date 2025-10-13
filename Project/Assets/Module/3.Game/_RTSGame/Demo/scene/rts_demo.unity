@@ -3314,6 +3314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 889758336}
   - component: {fileID: 889758337}
+  - component: {fileID: 889758338}
   m_Layer: 0
   m_Name: BasementControl
   m_TagString: Untagged
@@ -3352,6 +3353,21 @@ MonoBehaviour:
   basementDataCollection: {fileID: 11400000, guid: c428e2406fbceb043be98c7b6b03ebf9, type: 2}
   ui_activeskill_caster_prefab: {fileID: 7573278204616008087, guid: 6f6ee631e185b3946bec18b3d0565b05, type: 3}
   ui_root: {fileID: 1997128917}
+--- !u!114 &889758338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889758335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a4400d835f6f7458fe732f6b5d7bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basementData_SO: {fileID: 11400000, guid: 92ab9a6cf533a5d489c90dc37db46992, type: 2}
+  defaultGridSize: {x: 3, y: 3}
+  basementCenterNode: {fileID: 4718432813848080115}
 --- !u!1001 &920101677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5615,7 +5631,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1523530003}
   - component: {fileID: 1523530006}
-  - component: {fileID: 1523530007}
   m_Layer: 0
   m_Name: RTS Battle Controller
   m_TagString: Untagged
@@ -5652,21 +5667,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgmData: {fileID: 11400000, guid: 93d9434361aa7cc4c998916e142c2c39, type: 2}
---- !u!114 &1523530007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523530002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a4400d835f6f7458fe732f6b5d7bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basementData_SO: {fileID: 11400000, guid: 92ab9a6cf533a5d489c90dc37db46992, type: 2}
-  defaultGridSize: {x: 3, y: 3}
-  basementCenterNode: {fileID: 4718432813848080115}
 --- !u!1 &1539078909
 GameObject:
   m_ObjectHideFlags: 0

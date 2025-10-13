@@ -341,8 +341,9 @@ public class InitManager : Singleton<InitManager>
     }
 
     // 在 Play 模式结束时取消所有异步操作
-    void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
         if (cancellationTokenSource != null)
         {
             cancellationTokenSource.Cancel();
