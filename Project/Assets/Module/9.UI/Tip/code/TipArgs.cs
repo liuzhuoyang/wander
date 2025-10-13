@@ -1,4 +1,4 @@
-
+using UnityEngine;
 public class EventNameTip
 {
     public const string EVENT_TIP_ON_UI = "EVENT_TIP_ON_UI";
@@ -21,5 +21,5 @@ public class UITipFrameArgs : UITipArgs
 //自定义类型提示
 public class UITipCustomArgs : UITipArgs
 {
-
+    public GameObject customTipPrefab;
 }

@@ -39,4 +39,10 @@ public class DebuggerSystem : MonoBehaviour
         //args.popupName = "debug_popup_feature_unlock";
         //PopupManager.Instance.OnPopup(args);
     }
+
+    public void OnDebugTipPower()
+    {
+        Debugger.Instance.OnCloseDebug();
+        PowerSystem.Instance.OnDebugTipPower();
+    }
 }
