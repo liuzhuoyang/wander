@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 492250275545012636}
   - component: {fileID: 4976194728792255434}
   m_Layer: 5
-  m_Name: popup_power_change
+  m_Name: tip_power_change
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

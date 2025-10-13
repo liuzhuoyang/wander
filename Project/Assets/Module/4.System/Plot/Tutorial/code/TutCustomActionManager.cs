@@ -13,7 +13,7 @@ public class TutCustomActionManager : MonoBehaviour
     public void InitCustomAction(TutCustomAction tutCustomAction)
     {
         EventManager.StartListening<ActionArgs>(EventNameAction.EVENT_ON_ACTION, OnAction);
-        EventManager.StartListening<BattleActionArgs>(EventNameAction.EVENT_ON_BATTLE_ACTION, OnBattleAction);
+        EventManager.StartListening<BattleActionArgs>(EventNameBattleAction.EVENT_ON_BATTLE_ACTION, OnBattleAction);
 
         switch (tutCustomAction)
         {
@@ -46,7 +46,7 @@ public class TutCustomActionManager : MonoBehaviour
     public void FinalizeCustomAction(TutCustomAction tutCustomAction)
     {
         EventManager.StopListening<ActionArgs>(EventNameAction.EVENT_ON_ACTION, OnAction);
-        EventManager.StopListening<BattleActionArgs>(EventNameAction.EVENT_ON_BATTLE_ACTION, OnBattleAction);
+        EventManager.StopListening<BattleActionArgs>(EventNameBattleAction.EVENT_ON_BATTLE_ACTION, OnBattleAction);
 
         switch (tutCustomAction)
         {

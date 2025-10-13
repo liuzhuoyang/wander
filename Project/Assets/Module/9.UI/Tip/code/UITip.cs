@@ -5,16 +5,17 @@ using UnityEngine;
 public class UITip : MonoBehaviour
 {
     public GameObject prefabTipText;
-    public GameObject prefabTipHubReward;
+    public GameObject prefabTipFrame;
+    public GameObject prefabTipCustom;
     public Transform containerTipText;
-    public Transform containerTipHub;
+    public Transform containerTipFrame;
+    public Transform containerTipCustom;
 
     int maxTip = 1;
     List<GameObject> listTip;
 
     void Start()
     {
-        containerTipHub.gameObject.SetActive(false);
         listTip = new List<GameObject>();
         EventManager.StartListening<UITipArgs>(EventNameTip.EVENT_TIP_ON_UI, OnTip);
     }
@@ -29,7 +30,7 @@ public class UITip : MonoBehaviour
         GameObject go;
         switch (args.tipType)
         {
-            case TipType.Text:
+            case TipType.Generic:
                 if (listTip.Count >= maxTip)
                 {
                     go = listTip[0];
@@ -40,20 +41,27 @@ public class UITip : MonoBehaviour
                     listTip.Add(go);
                 }
 
-                go.gameObject.SetActive(true);
-                go.GetComponent<TipView>().Init(args.textTip);
+                go.GetComponent<TipGenericView>().Init(args.textTip);
                 go.transform.localPosition = Vector2.zero;
                 break;
+            case TipType.Frame:
+                foreach (Transform child in containerTipFrame)
+                {
+                    Destroy(child.gameObject);
+                }
+                UITipFrameArgs frameArgs = args as UITipFrameArgs;
+                go = Instantiate(prefabTipText, containerTipFrame);
+                go.GetComponent<TipFrameView>().Init(frameArgs.posX, frameArgs.posY, frameArgs.textTip);
+                break;
+            case TipType.Custom:
+                foreach (Transform child in containerTipCustom)
+                {
+                    Destroy(child.gameObject);
+                }
+                UITipCustomArgs customArgs = args as UITipCustomArgs;
+                go = Instantiate(prefabTipText, containerTipCustom);
+                go.GetComponent<UITipCustomView>().Init(customArgs);
+                break;
         }
-    }
-
-    public void OnCloseTipHub()
-    {
-        foreach (Transform child in containerTipHub)
-        {
-            Destroy(child.gameObject); //TODO 对象池
-        }
-
-        containerTipHub.gameObject.SetActive(false);
     }
 }

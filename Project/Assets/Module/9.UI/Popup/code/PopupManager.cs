@@ -15,11 +15,6 @@ public class PopupManager : Singleton<PopupManager>
         EventManager.TriggerEvent<PopupArgs>(EventNamePopup.EVENT_CLOSE_ALL_POPUP_UI, new PopupArgs() { });
     }
 
-    public void CloseByName(string name)
-    {
-        EventManager.TriggerEvent<PopupArgs>(EventNamePopup.EVENT_CLOSE_BY_NAME, new PopupArgs() { popupName = name });
-    }
-
     #region
     public void OnPopupRate()
     {

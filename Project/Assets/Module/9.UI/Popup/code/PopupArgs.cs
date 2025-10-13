@@ -5,7 +5,6 @@ public class EventNamePopup
 {
     public const string EVENT_POPUP_UI = "OnPopupUI";
     public const string EVENT_CLOSE_ALL_POPUP_UI = "OnCloseAllPopupUI";
-    public const string EVENT_CLOSE_BY_NAME = "OnCloseByName";
 }
 
 public class PopupArgs : EventArgs

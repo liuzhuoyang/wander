@@ -146,7 +146,7 @@ public class PowerSystem : Singleton<PowerSystem>
     {
         int oldPower = totalAllPower;
         totalAllPower = totalGearPower + totalTalentPower;
-        ChangeTotalPower(oldPower, totalAllPower);
+        UpdatePower(oldPower, totalAllPower);
 
         EventManager.TriggerEvent<UIHeaderArgs>(EventNameHeader.EVENT_HEADER_REFRESH_POWER, new UIHeaderArgs()
         {
@@ -163,22 +163,17 @@ public class PowerSystem : Singleton<PowerSystem>
     #endregion
 
     #region 战力变化
-    void ChangeTotalPower(int oldPower, int newPower)
+    void UpdatePower(int oldPower, int newPower)
     {
         if (isInit || oldPower == newPower)
         {
             return;
         }
-        //关闭上一次战力界面
-        PopupManager.Instance.CloseByName("popup_power_change");
-        //打开新战力界面
-        PopupPowerChangeArgs args = new PopupPowerChangeArgs
+        TipManager.Instance.OnCustomTip(new UITipPowerArgs
         {
-            popupName = "popup_power_change",
             oldPower = oldPower,
             newPower = newPower,
-        };
-        PopupManager.Instance.OnPopup(args);
+        });
     }
     #endregion
 }

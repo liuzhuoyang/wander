@@ -8,12 +8,6 @@ public class ActionArgs : UIBaseArgs
 public class EventNameAction
 {
     public const string EVENT_ON_ACTION = "OnAction";
-    public const string EVENT_ON_BATTLE_ACTION = "OnBattleAction";
-    public const string EVENT_ON_MERGEVIEW_REFRESH = "OnMergeViewRefresh";
+    //这里不要加其他事件
 }
 
-public class BattleActionArgs : UIBaseArgs
-{
-    public BattleActionType battleAction;
-    public string target;
-}

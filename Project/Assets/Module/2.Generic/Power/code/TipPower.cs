@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 //战力变化
-public class PopupPowerChangeArgs : PopupArgs
+public class UITipPowerArgs : UITipCustomArgs
 {
     public int oldPower;
     public int newPower;
@@ -17,7 +17,7 @@ public class PopupPowerChange : PopupBase
     float animationDuration = 1f; // 动画持续时间
     public override void OnOpen<T>(T args)
     {
-        PopupPowerChangeArgs popupPowerChangeArgs = args as PopupPowerChangeArgs;
+        UITipPowerArgs popupPowerChangeArgs = args as UITipPowerArgs;
         //判断是否增加
         if (popupPowerChangeArgs.oldPower < popupPowerChangeArgs.newPower)
         {
