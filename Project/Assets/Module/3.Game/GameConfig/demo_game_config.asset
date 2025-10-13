@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae18ee8ed4c8c044d98a27c41efae9b0, type: 3}
+  m_Name: demo_game_config
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Game.GamePlayConfig
+  unitManagerPrefab: {fileID: 5706696137093070573, guid: 100b51426436c744f80a9770ffa8c59b, type: 3}
+  buildingManagerPrefab: {fileID: 5626329598954423740, guid: b7459744fbc91ed4b8a864a3504823bc, type: 3}
+  bulletManagerPrefab: {fileID: 282324518614872755, guid: 95e0452ec452f2343b8835ec023870d2, type: 3}
+  gearManagerPrefab: {fileID: 7059569754194893741, guid: 008a73517c988d044a86feaab9367936, type: 3}
+  vfxManagerPrefab: {fileID: 5306898750596224420, guid: 1fdf0f159a27e9644a5d87a36fe1f718, type: 3}
+  BuffManagerPrefab: {fileID: 3256833929623426319, guid: 65a02d2e913b6334b89932bc0e77f17b, type: 3}
+  PlayerInputManager: {fileID: 4051154644729189666, guid: 49ecdd7f371a74b46a63b5897eeb1c76, type: 3}
+  PoolManager: {fileID: 7224084974312272543, guid: 00c4512b21d8bd84b93d94f9bada9720, type: 3}
+  AudioManager: {fileID: 5275165434864665116, guid: f4cc90233b21bf44a97430a50eb6ece2, type: 3}

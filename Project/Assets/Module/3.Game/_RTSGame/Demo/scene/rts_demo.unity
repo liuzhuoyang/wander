@@ -4147,8 +4147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeWidth: 1
-  gridOffset: {x: -5, y: -11}
-  gridSize: {x: 11, y: 25}
+  gridOffset: {x: -14, y: -14}
+  gridSize: {x: 30, y: 30}
 --- !u!1001 &1049840889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5437,10 +5437,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4375764380372199345, guid: aece1e89d9876084b98b3494b63e9876, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4375764380372199345, guid: aece1e89d9876084b98b3494b63e9876, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4375764380372199345, guid: aece1e89d9876084b98b3494b63e9876, type: 3}
