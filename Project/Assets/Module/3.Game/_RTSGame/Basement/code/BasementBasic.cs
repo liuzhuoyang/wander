@@ -3,8 +3,9 @@ using UnityEngine;
 
 using Random = UnityEngine.Random;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
+    using BattleActor;
     using Skill;
     public class BasementBasic : MonoBehaviour, IBattleActor
     {

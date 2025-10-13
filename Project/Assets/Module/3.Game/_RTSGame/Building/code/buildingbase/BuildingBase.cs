@@ -4,8 +4,9 @@ using BattleSummon;
 using Sirenix.OdinInspector;
 using BattleLaunch;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
+    using BattleActor;
     /// <summary>
     /// 能够执行战斗，但不能够移动，且能够被摧毁的实体
     /// </summary>

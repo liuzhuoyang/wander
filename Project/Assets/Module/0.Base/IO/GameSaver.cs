@@ -15,8 +15,9 @@ public class GameSaver : Singleton<GameSaver>
     private ActionType currentDelayedAction = ActionType.None; // 当前延迟保存的事件
     private int cancelledSaveCount = 0; // 被取消的保存次数
     
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
         EventManager.StopListening<ActionArgs>(EventNameAction.EVENT_ON_ACTION, OnActionSave);
         delayedSaveCancellation?.Cancel();
         delayedSaveCancellation?.Dispose();

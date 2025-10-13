@@ -4,8 +4,9 @@ using Sirenix.OdinInspector;
 using BattleLaunch;
 using BattleSummon;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
+    using BattleActor;
     [System.Serializable]
     public struct ProductionData
     {

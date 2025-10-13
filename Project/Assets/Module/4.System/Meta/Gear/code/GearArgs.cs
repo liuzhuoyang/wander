@@ -3,7 +3,12 @@ using System.Collections.Generic;
 
 public class UIGearArgs : UIBaseArgs
 {
-    public List<string> listGearName;
+    //所有武器的数据
+    public List<GearSlotViewArgs> listGearSlotViewArgs;
+
+    public int unlockSlot;
+
+    public Dictionary<int, string> dictEquipGear;
 
 }
 

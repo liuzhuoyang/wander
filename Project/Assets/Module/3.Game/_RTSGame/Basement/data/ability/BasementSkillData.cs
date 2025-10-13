@@ -2,7 +2,7 @@ using BattleBuff;
 using BattleBuff.Ability;
 using UnityEngine;
 
-namespace BattleActor.Basement.Skill
+namespace RTSDemo.Basement.Skill
 {
     [CreateAssetMenu(fileName = "BasementSkillData", menuName = "RTS_Demo/Actor/Basement/BasementSkillData")]
     public class BasementSkillData : AbilityData

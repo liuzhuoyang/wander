@@ -2,7 +2,7 @@ using System;
 using PlayerInteraction;
 using UnityEngine;
 
-namespace BattleActor.Basement.Skill
+namespace RTSDemo.Basement.Skill
 {
     public class UI_BasementSkillCaster : MonoBehaviour
     {

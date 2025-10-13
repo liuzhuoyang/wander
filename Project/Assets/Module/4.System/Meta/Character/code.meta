@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/Assets/Module/4.System/Meta/Character/code.meta
 guid: f09454896db7a4d6b9444b9e850f1598
+========
+guid: 3ef7963fecf0ec341a86854805d36ddd
+>>>>>>>> ef2b9457f2a09b9201e19dce920528a50dd255b5:Project/Assets/Module/3.Game/_RTSGame/Map/prefab.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

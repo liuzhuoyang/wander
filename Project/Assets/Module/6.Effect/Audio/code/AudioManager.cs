@@ -47,13 +47,6 @@ namespace SimpleAudioSystem
         protected const int MAX_LOOP_SOURCE = 10;
         protected const string SFX_GROUP = "SFX";
 
-        #region 
-        public void Init()
-        {
-            //@todo获取用户数据, 并设置音效的开关
-        }
-        #endregion
-
         #region 数据获取
         protected async UniTask<AudioClip> GetBGMClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetBGMRefByKey(audioKey));
         protected async UniTask<AudioClip> GetAMBClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetAMBRefByKey(audioKey));

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     public enum UnitFaceType
     {

@@ -2,8 +2,9 @@ using BattleBuff;
 using BattleBuff.Ability;
 using BattleLaunch;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
+    using BattleActor;
     public enum UnitAbilityTriggerType
     {
         OnUnitSpawned,

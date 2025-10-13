@@ -1,34 +1,31 @@
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class PowerSystem : Singleton<PowerSystem>
 {
     //每个武器战力
     Dictionary<string, int> dictGearPower;
     //上阵武器战力总和
-    int totalGearPower;
+    int gearPower;
 
     //天赋战力总和
-    int totalTalentPower;
+    int talentPower;
 
     //总战力
-    int totalAllPower;
-
-    bool isInit;
+    int totalPower;
 
     #region 初始化
     public void Init()
     {
         dictGearPower = new Dictionary<string, int>();
-        totalAllPower = 0;
-        isInit = true;
+        totalPower = 0;
         //计算武器战力
-        CalculateWeaponPower();
+        //CalculateWeaponPower();
         //计算天赋战力
         // CalculateTalentPower();
         //计算总战力
-        OnTotalPowerChanged();
-        isInit = false;
+        OnUpdatePower(false); //初始化更新战力不出tip
     }
     #endregion
 
@@ -48,7 +45,7 @@ public class PowerSystem : Singleton<PowerSystem>
 
     void CalculateGearPower(string gearName)
     {
-        
+
     }
     //获取指定武器战力
     public int GetGearPower(string gearName)
@@ -65,7 +62,7 @@ public class PowerSystem : Singleton<PowerSystem>
         //计算武器战力
         CalculateGearPower(gearName);
         //判断是否上阵
-        if (GameData.userData.userGear.listEquipGear.Contains(gearName))
+        if (GameData.userData.userGear.dictEquipGear.ContainsValue(gearName))
         {
             //更新战力
             ChangeGearTeamPower();
@@ -75,10 +72,10 @@ public class PowerSystem : Singleton<PowerSystem>
     public void ChangeGearTeamPower()
     {
         //计算上阵武器战力总和
-        totalGearPower = 0;
-        foreach (var equipName in GameData.userData.userGear.listEquipGear)
+        gearPower = 0;
+        foreach (var equipName in GameData.userData.userGear.dictEquipGear.Values)
         {
-            totalGearPower += dictGearPower[equipName];
+            gearPower += dictGearPower[equipName];
         }
         //计算武器总星级
         // int totalStar = GetGearTotalStar();
@@ -88,30 +85,20 @@ public class PowerSystem : Singleton<PowerSystem>
         // OnTotalPowerChanged();
     }
 
-    // int GetGearTotalStar()
-    // {
-    //     int result = 0;
-    //     foreach (var gear in GameData.userData.userGear.dictGear)
-    //     {
-    //         result += gear.Value.star;
-    //     }
-    //     return result;
-    // }
-
     public int GetTotalGearPower()
     {
-        return totalGearPower;
+        return gearPower;
     }
 
- /*    public float GetGearTotalStar()
+    public float GetGearTotalStar()
     {
         int result = 0;
         foreach (var gear in GameData.userData.userGear.dictGear)
         {
-            result += gear.Value.star;
+            result += gear.Value.level;
         }
         return result * 0.05f;
-    } */
+    }
     #endregion
 
     #region 天赋战力
@@ -139,41 +126,50 @@ public class PowerSystem : Singleton<PowerSystem>
     #region 总战力
     public int GetTotalPower()
     {
-        return totalAllPower;
+        return totalPower;
     }
 
-    public void OnTotalPowerChanged()
+    public void OnUpdatePower(bool isShowTip = true)
     {
-        int oldPower = totalAllPower;
-        totalAllPower = totalGearPower + totalTalentPower;
-        UpdatePower(oldPower, totalAllPower);
+        int oldPower = totalPower;
+        totalPower = gearPower + talentPower;
+
+        if (isShowTip)
+        {
+            ShowPowerTip(oldPower, totalPower);
+        }
 
         EventManager.TriggerEvent<UIHeaderArgs>(EventNameHeader.EVENT_HEADER_REFRESH_POWER, new UIHeaderArgs()
         {
-            power = totalAllPower
+            power = totalPower
         });
 
         //更新用户历史最高战力
-        if (totalAllPower > GameData.userData.userStats.highestPower)
+        if (totalPower > GameData.userData.userStats.highestPower)
         {
-            GameData.userData.userStats.highestPower = totalAllPower;
+            GameData.userData.userStats.highestPower = totalPower;
         }
     }
-
     #endregion
 
     #region 战力变化
-    void UpdatePower(int oldPower, int newPower)
+    async void ShowPowerTip(int oldPower, int newPower)
     {
-        if (isInit || oldPower == newPower)
-        {
-            return;
-        }
+        GameObject customTipPrefab = await GameAsset.GetPrefabAsync("tip_power");
+
         TipManager.Instance.OnCustomTip(new UITipPowerArgs
         {
             oldPower = oldPower,
             newPower = newPower,
+            customTipPrefab = customTipPrefab
         });
+    }
+    #endregion
+
+    #region 调试
+    public void OnDebugTipPower()
+    {
+        ShowPowerTip(0, 1000);
     }
     #endregion
 }

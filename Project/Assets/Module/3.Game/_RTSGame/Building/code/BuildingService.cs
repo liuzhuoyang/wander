@@ -1,7 +1,8 @@
 using UnityEngine;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
+    using BattleActor;
     public static class BuildingService
     {
         public static float GetBuildingAttributeByLevel(Vector2 valueRange, int level, int maxLevel)

@@ -3,18 +3,22 @@ using System.Collections.Generic;
 public class UserGear
 {
     //上阵武器
-    public List<string> listEquipGear;
+    public Dictionary<int, string> dictEquipGear;
 
     //武器数据
     public Dictionary<string, UserGearArgs> dictGear;
 
     //允许上证武器的数量
     public int unlockGearCount;
+    public UserGear()
+    {
+        InitData();
+    }
 
     //武器临时数据
     public void InitData()
     {
-        listEquipGear = new List<string>();
+        dictEquipGear = new Dictionary<int, string>();
         dictGear = new Dictionary<string, UserGearArgs>();
         unlockGearCount = 4;
         //@todo新号 解锁
@@ -23,10 +27,10 @@ public class UserGear
         OnUnlockGear("003_arrow");
         OnUnlockGear("004_axe");
         //临时装备上述四个
-        listEquipGear.Add("001_shuriken");
-        listEquipGear.Add("002_sword");
-        listEquipGear.Add("003_arrow");
-        listEquipGear.Add("004_axe");
+        dictEquipGear.Add(0, "001_shuriken");
+        dictEquipGear.Add(1, "002_sword");
+        dictEquipGear.Add(2, "003_arrow");
+        dictEquipGear.Add(3, "004_axe");
     }
 
 

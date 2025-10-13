@@ -32,4 +32,9 @@ public static class GearFormula
     {
         return "item_shard_gear_" + gearName;
     }
+
+    public static string GetGearIconName(string gearName)
+    {
+        return "gear_" + gearName;
+    }
 }

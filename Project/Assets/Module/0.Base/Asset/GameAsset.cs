@@ -154,7 +154,7 @@ public static class GameAsset
     }
     public static async UniTask<AudioClip> GetAudioAsync(AssetReference assetReference)
     {
-        AsyncOperationHandle<AudioClip> handle = assetReference.LoadAssetAsync<AudioClip>();
+        AsyncOperationHandle<AudioClip> handle = Addressables.LoadAssetAsync<AudioClip>(assetReference);
         await handle.Task;
 
         if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -200,7 +200,7 @@ public static class GameAsset
 
     public static async UniTask<T> GetAssetAsync<T>(AssetReference assetReference)
     {
-        AsyncOperationHandle<T> handle = assetReference.LoadAssetAsync<T>();
+        AsyncOperationHandle<T> handle = Addressables.LoadAssetAsync<T>(assetReference);
         await handle.Task;
         return handle.Result;
     }

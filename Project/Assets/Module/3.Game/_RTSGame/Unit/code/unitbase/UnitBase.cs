@@ -7,8 +7,9 @@ using BattleBuff;
 
 using Random = UnityEngine.Random;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
+    using BattleActor;
     /// <summary>
     /// 能够执行战斗，并能够在战场内移动的，与被消灭的复杂实体
     /// /// </summary>

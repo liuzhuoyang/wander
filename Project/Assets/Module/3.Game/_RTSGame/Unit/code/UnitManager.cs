@@ -4,8 +4,9 @@ using UnityEngine;
 using BattleSummon;
 using HUD_TEXT;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
+    using BattleActor;
     /// <summary>
     /// 单位系统
     /// 管理战场上所有可在地图中移动的单位

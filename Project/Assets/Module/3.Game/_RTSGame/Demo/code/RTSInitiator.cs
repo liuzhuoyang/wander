@@ -1,12 +1,13 @@
-using System.Collections.Generic;
-using BattleActor.Building;
-using BattleActor.Unit;
-using BattleGear;
-using BattleLaunch.Bullet;
-using Cysharp.Threading.Tasks;
-using SimpleVFXSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+
+using RTSDemo.Unit;
+using BattleGear;
+using BattleLaunch.Bullet;
+using SimpleVFXSystem;
+using RTSDemo.Building;
 
 namespace RTSDemo.Game
 {
@@ -15,25 +16,13 @@ namespace RTSDemo.Game
     {
         [Header("Init")]
         [SerializeField] private string InitScene;
-        [SerializeField] private GameObject unitManager;
-        [SerializeField] private GameObject buildingManager;
-        [SerializeField] private GameObject bulletManager;
-        [SerializeField] private GameObject gearManager;
-        [SerializeField] private GameObject vfxManager;
+        [SerializeField] private GameInitConfig gameConfig;
         
         public async void Start()
         {
-            //初始化游戏必要模组
-            //@todo应该有更好的方式来处理模组的初始化
-            var building = Instantiate(buildingManager).GetComponent<BuildingManager>();
-            var unit = Instantiate(unitManager).GetComponent<UnitManager>();
-            var bullet = Instantiate(bulletManager).GetComponent<BulletManager>();
-            var gear = Instantiate(gearManager).GetComponent<GearManager>();
-            var vfx = Instantiate(vfxManager).GetComponent<VFXManager>();
-
-            List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
-            await UniTask.WhenAll(loadingTask);
+            await gameConfig.GamePlaySetUp();
             await SceneManager.LoadSceneAsync(InitScene, LoadSceneMode.Additive);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(InitScene));
         }
     }
 }
