@@ -3,8 +3,9 @@ using BattleBuff;
 using BattleLaunch;
 using UnityEngine;
 
-namespace BattleActor.Basement.Skill
+namespace RTSDemo.Basement.Skill
 {
+    using BattleActor;
     public class BasementLaunchSkill : BasementSkill
     {
         protected Transform launchTrans;

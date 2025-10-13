@@ -1,10 +1,9 @@
-using BattleActor.Basement.Skill;
 using BattleBuff;
 using BattleLaunch;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace BattleActor.Basement.Skill
+namespace RTSDemo.Basement.Skill
 {
     [CreateAssetMenu(fileName = "BasementLaunchSkillData", menuName = "RTS_Demo/Actor/Basement/BasementLaunchSkillData")]
     public class BasementLaunchSkillData : BasementSkillData

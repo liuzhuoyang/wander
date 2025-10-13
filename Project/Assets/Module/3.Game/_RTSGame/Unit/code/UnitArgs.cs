@@ -3,8 +3,9 @@ using System;
 using BattleLaunch.Bullet;
 using BattleBuff;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
+    using BattleActor;
     //单位种族
     public enum UnitRace
     {

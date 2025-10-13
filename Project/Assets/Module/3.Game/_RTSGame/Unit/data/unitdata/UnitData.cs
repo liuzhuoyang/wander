@@ -3,8 +3,9 @@ using UnityEngine.AddressableAssets;
 using Sirenix.OdinInspector;
 using BattleLaunch.Bullet;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
+    using BattleActor;
     [CreateAssetMenu(fileName = "UnitData", menuName = "RTS_Demo/Actor/Unit/UnitData")]
     public class UnitData : BattleActorData
     {

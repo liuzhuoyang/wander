@@ -54,6 +54,7 @@ SpriteAtlas:
     - 49c4c5b14c1ae4b13b5dddc6a0f41dac: 21300000
     - 78d60c120da7a4ec9afbd85aeb9bef55: 21300000
     - cba4fe125a19b4351b7daefe99bf0442: 21300000
+    - e95efc22f67eb44e6a2338b383f4cc89: 21300000
     - 1ca1a542a6f2741a49170a40f9ac4ad4: 21300000
     - 9d041182e2e8e43e1a36605dead76c4a: 21300000
     - a1a5f2d2b046e4337b15b94773860668: 21300000
@@ -176,6 +177,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 49c4c5b14c1ae4b13b5dddc6a0f41dac, type: 3}
   - {fileID: 21300000, guid: 78d60c120da7a4ec9afbd85aeb9bef55, type: 3}
   - {fileID: 21300000, guid: cba4fe125a19b4351b7daefe99bf0442, type: 3}
+  - {fileID: 21300000, guid: e95efc22f67eb44e6a2338b383f4cc89, type: 3}
   - {fileID: 21300000, guid: 1ca1a542a6f2741a49170a40f9ac4ad4, type: 3}
   - {fileID: 21300000, guid: 9d041182e2e8e43e1a36605dead76c4a, type: 3}
   - {fileID: 21300000, guid: a1a5f2d2b046e4337b15b94773860668, type: 3}
@@ -283,7 +285,7 @@ SpriteAtlas:
   - icon_shared_attribute_crit_rate_resist
   - icon_shared_attribute_coin
   - icon_shared_attribute_armor_break
-  - ui_shared_arrow_3_cyan_up
+  - ui_shared_arrow_003_cyan_up
   - icon_shared_attribute_defense
   - ui_shared_trim_1_l
   - ui_shared_arrow_left
@@ -297,6 +299,7 @@ SpriteAtlas:
   - ui_shared_node_rarity_legendary
   - ui_shared_node_rarity_epic
   - icon_shared_damage_type_cryo
+  - ui_shared_arrow_001_down
   - icon_shared_shard_generic
   - icon_shared_attribute_summon_limit
   - ui_shared_node_on
@@ -319,7 +322,7 @@ SpriteAtlas:
   - icon_shared_support
   - icon_shared_attribute_health
   - icon_shared_attribute_damage
-  - ui_shared_arrow_up
+  - ui_shared_arrow_001_up
   - icon_shared_attribute_damage_bonus
   - ui_shared_btn_info
   - icon_shared_difficulity
@@ -350,7 +353,7 @@ SpriteAtlas:
   - ui_shared_btn_green_light
   - icon_shared_attribute_crit_damage_resist
   - icon_shared_race_zreep
-  - ui_shared_arrow_3_cyan_left
+  - ui_shared_arrow_003_cyan_left
   - ui_shared_symbol_add_green
   - ui_shared_btn_orange
   - icon_shared_copy
@@ -358,7 +361,7 @@ SpriteAtlas:
   - icon_shared_race_iron
   - ui_shared_toggle_nvg_on
   - icon_shared_attribute_crit_rate
-  - ui_shared_arrow_2_green_right
+  - ui_shared_arrow_002_green_right
   - icon_loading_spinner
   - shape_round_capsule
   - ui_shadow_1
@@ -369,14 +372,14 @@ SpriteAtlas:
   - icon_shared_attribute_final_damage_bonus
   - ui_shared_btn_purple
   - ui_shared_trim_1_r
-  - ui_shared_arrow_2_green_down
+  - ui_shared_arrow_002_green_down
   - icon_shared_damage_type_thermal
   - ui_shared_btn_green_s
   - ui_shared_btn_arrow_right
   - icon_shared_gear_star_1
   - icon_shared_attribute_attack_range
-  - ui_shared_arrow_3_cyan_down
-  - ui_shared_arrow_2_green_up
+  - ui_shared_arrow_003_cyan_down
+  - ui_shared_arrow_002_green_up
   - icon_shared_gear_star_2
   - icon_shared_shard_arcane
   - pixel_4x4
@@ -389,13 +392,13 @@ SpriteAtlas:
   - icon_terminal_mail
   - icon_terminal_check_in
   - ui_shared_btn_green_light_s
-  - ui_shared_arrow_2_green_left
+  - ui_shared_arrow_002_green_left
   - ui_shared_node_rarity_mythic
   - icon_shared_damage_type_electro
   - icon_shared_attribute_attack_speed
   - ui_shared_arrow_right
   - icon_shared_attribute_shield
-  - ui_shared_arrow_3_cyan_right
+  - ui_shared_arrow_003_cyan_right
   - icon_shared_gear_star_lock
   - ui_hub_tip_2
   - icon_shared_shard_rare

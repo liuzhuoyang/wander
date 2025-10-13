@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     [CreateAssetMenu(fileName = "UnitDataCollection", menuName = "RTS_Demo/Actor/Unit/UnitDataCollection")]
     public class UnitDataCollection : DataCollection<UnitData>

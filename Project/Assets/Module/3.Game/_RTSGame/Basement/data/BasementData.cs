@@ -2,7 +2,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     using Skill;
     [CreateAssetMenu(fileName = "BasementData", menuName = "RTS_Demo/Actor/Basement/BasementData", order = 1)]

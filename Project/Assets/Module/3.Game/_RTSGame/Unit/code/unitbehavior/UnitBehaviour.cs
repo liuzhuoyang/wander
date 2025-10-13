@@ -1,4 +1,4 @@
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     public interface IUnitBehaviour
     {

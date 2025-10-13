@@ -3,8 +3,9 @@ using BattleBuff;
 using BattleBuff.Ability;
 using Sirenix.OdinInspector;
 
-namespace BattleActor.Basement.Skill
+namespace RTSDemo.Basement.Skill
 {
+    using BattleActor;
     public enum BasementAbilityType
     {
         [LabelText("直接触发")]

@@ -1,118 +1,121 @@
 using UnityEngine;
 using BattleActor;
-using BattleActor.Unit;
 using Sirenix.OdinInspector;
 
-public class UB_Simple : MonoBehaviour, IUnitBehaviour
+namespace RTSDemo.Unit
 {
-    protected enum UnitState
+    public class UB_Simple : MonoBehaviour, IUnitBehaviour
     {
-        Idle,
-        Approach,
-        Attack
-    }
-    [ReadOnly, SerializeField] protected UnitState currentState;
-    protected IBattleActor potentialTarget;
-    protected float detectTimer = 0;
-    protected UnitBase self;
-
-    public void Init(UnitBase _unit)
-    {
-        detectTimer = 0;
-        potentialTarget = null;
-        currentState = UnitState.Idle;
-        this.self = _unit;
-        _unit.OnUnitAttackExcute += UnitAttack;
-    }
-    public void UnitUpdate()
-    {
-        switch(currentState)
+        protected enum UnitState
         {
-            case UnitState.Attack:
-                if(IBattleActor.IsInvalid(potentialTarget))
-                {
-                    ChangeState(UnitState.Idle);
-                }
-                else if(!self.IsActorInAttackRange(potentialTarget, 1))
-                {
-                    ChangeState(UnitState.Approach);
-                }
-                break;
-            case UnitState.Idle:
-                if(IBattleActor.IsInvalid(potentialTarget))
-                {
-                    detectTimer += Time.deltaTime;
-                    if (detectTimer > UnitService.UNIT_SCAN_INTERSECT) {
-                        detectTimer = 0;
-                        //扫描范围内是否有敌人，有则在 下一帧 开始接近
-                        if (self.TrySearchOpponentActor(out potentialTarget, self.currentAttackRange * UnitService.UNIT_SEARCH_RANGE_MULTIPLIER))
+            Idle,
+            Approach,
+            Attack
+        }
+        [ReadOnly, SerializeField] protected UnitState currentState;
+        protected IBattleActor potentialTarget;
+        protected float detectTimer = 0;
+        protected UnitBase self;
+
+        public void Init(UnitBase _unit)
+        {
+            detectTimer = 0;
+            potentialTarget = null;
+            currentState = UnitState.Idle;
+            this.self = _unit;
+            _unit.OnUnitAttackExcute += UnitAttack;
+        }
+        public void UnitUpdate()
+        {
+            switch (currentState)
+            {
+                case UnitState.Attack:
+                    if (IBattleActor.IsInvalid(potentialTarget))
+                    {
+                        ChangeState(UnitState.Idle);
+                    }
+                    else if (!self.IsActorInAttackRange(potentialTarget, 1))
+                    {
+                        ChangeState(UnitState.Approach);
+                    }
+                    break;
+                case UnitState.Idle:
+                    if (IBattleActor.IsInvalid(potentialTarget))
+                    {
+                        detectTimer += Time.deltaTime;
+                        if (detectTimer > UnitService.UNIT_SCAN_INTERSECT)
                         {
-                            if (self.IsActorInAttackRange(potentialTarget))
+                            detectTimer = 0;
+                            //扫描范围内是否有敌人，有则在 下一帧 开始接近
+                            if (self.TrySearchOpponentActor(out potentialTarget, self.currentAttackRange * UnitService.UNIT_SEARCH_RANGE_MULTIPLIER))
                             {
-                                ChangeState(UnitState.Attack);
-                            }
-                            else
-                            {
-                                ChangeState(UnitState.Approach);
+                                if (self.IsActorInAttackRange(potentialTarget))
+                                {
+                                    ChangeState(UnitState.Attack);
+                                }
+                                else
+                                {
+                                    ChangeState(UnitState.Approach);
+                                }
                             }
                         }
                     }
-                }
-                break;
-            case UnitState.Approach:
-                if(IBattleActor.IsInvalid(potentialTarget))
-                {
-                    ChangeState(UnitState.Idle);
-                }
-                else
-                {
-                    self.MoveToActor(potentialTarget);
-                    if(self.IsActorInAttackRange(potentialTarget))
+                    break;
+                case UnitState.Approach:
+                    if (IBattleActor.IsInvalid(potentialTarget))
                     {
-                        ChangeState(UnitState.Attack);
+                        ChangeState(UnitState.Idle);
                     }
-                }
-                break;
+                    else
+                    {
+                        self.MoveToActor(potentialTarget);
+                        if (self.IsActorInAttackRange(potentialTarget))
+                        {
+                            ChangeState(UnitState.Attack);
+                        }
+                    }
+                    break;
+            }
         }
-    }
-    void ChangeState(UnitState nextState)
-    {
-        if(this.currentState == nextState) return;
-        if(this.currentState == UnitState.Attack) self.StopAttack();
-        this.currentState = nextState;
+        void ChangeState(UnitState nextState)
+        {
+            if (this.currentState == nextState) return;
+            if (this.currentState == UnitState.Attack) self.StopAttack();
+            this.currentState = nextState;
 
-        switch(nextState)
-        {
-            case UnitState.Idle:
-                self.StopMotion();
-                break;
-            case UnitState.Attack:
-                self.StopMotion();
-                self.StartAttack();
-                break;
-            case UnitState.Approach:
-                self.StopAttack();
-                self.StartMoving();
-                break;
+            switch (nextState)
+            {
+                case UnitState.Idle:
+                    self.StopMotion();
+                    break;
+                case UnitState.Attack:
+                    self.StopMotion();
+                    self.StartAttack();
+                    break;
+                case UnitState.Approach:
+                    self.StopAttack();
+                    self.StartMoving();
+                    break;
+            }
         }
-    }
-    public void CleanUp()
-    {
-        detectTimer = 0;
-        potentialTarget = null;
-        self.OnUnitAttackExcute -= UnitAttack;
-    }
-    void UnitAttack()
-    {
-        if(!IBattleActor.IsInvalid(potentialTarget))
+        public void CleanUp()
         {
-            self.AttackAtActor(potentialTarget);
+            detectTimer = 0;
+            potentialTarget = null;
+            self.OnUnitAttackExcute -= UnitAttack;
         }
-    }
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        if(!IBattleActor.IsInvalid(potentialTarget))
-            Gizmos.DrawSphere(potentialTarget.GetClosestPointTo(self.position), 0.2f);
+        void UnitAttack()
+        {
+            if (!IBattleActor.IsInvalid(potentialTarget))
+            {
+                self.AttackAtActor(potentialTarget);
+            }
+        }
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            if (!IBattleActor.IsInvalid(potentialTarget))
+                Gizmos.DrawSphere(potentialTarget.GetClosestPointTo(self.position), 0.2f);
+        }
     }
 }

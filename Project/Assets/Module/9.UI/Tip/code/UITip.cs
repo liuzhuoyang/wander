@@ -59,8 +59,8 @@ public class UITip : MonoBehaviour
                     Destroy(child.gameObject);
                 }
                 UITipCustomArgs customArgs = args as UITipCustomArgs;
-                go = Instantiate(prefabTipText, containerTipCustom);
-                go.GetComponent<UITipCustomView>().Init(customArgs);
+                go = Instantiate(customArgs.customTipPrefab, containerTipCustom);
+                go.GetComponent<TipCustomView>().Init(customArgs);
                 break;
         }
     }

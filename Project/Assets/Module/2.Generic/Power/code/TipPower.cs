@@ -9,17 +9,18 @@ public class UITipPowerArgs : UITipCustomArgs
     public int newPower;
 }
 
-public class PopupPowerChange : PopupBase
+public class TipPower : TipCustomView
 {
     [SerializeField] TextMeshProUGUI textOldPower, textNewPower;
     [SerializeField] GameObject objMain;
     [SerializeField] GameObject objUp, objDown;
     float animationDuration = 1f; // 动画持续时间
-    public override void OnOpen<T>(T args)
+    
+    public override void Init(UITipCustomArgs args)
     {
-        UITipPowerArgs popupPowerChangeArgs = args as UITipPowerArgs;
+        UITipPowerArgs powerArgs = args as UITipPowerArgs;
         //判断是否增加
-        if (popupPowerChangeArgs.oldPower < popupPowerChangeArgs.newPower)
+        if (powerArgs.oldPower < powerArgs.newPower)
         {
             textNewPower.color = Color.green;
             objUp.SetActive(true);
@@ -32,8 +33,8 @@ public class PopupPowerChange : PopupBase
             objDown.SetActive(true);
         }
         //赋值
-        textOldPower.text = popupPowerChangeArgs.oldPower.ToString();
-        UpdatePower(popupPowerChangeArgs.oldPower, popupPowerChangeArgs.newPower);
+        textOldPower.text = powerArgs.oldPower.ToString();
+        UpdatePower(powerArgs.oldPower, powerArgs.newPower);
     }
 
     void UpdatePower(int oldPower, int newPower)
@@ -114,7 +115,7 @@ public class PopupPowerChange : PopupBase
         });
     }
 
-    public override void OnClose()
+    public void OnClose()
     {
         // 检查 objMain 是否为 null
         if (objMain != null)

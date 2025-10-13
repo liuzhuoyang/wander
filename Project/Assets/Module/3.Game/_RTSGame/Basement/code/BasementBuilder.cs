@@ -2,7 +2,7 @@ using UnityEngine;
 
 using RTSDemo.Grid;
 
-namespace BattleActor.Basement
+namespace RTSDemo.Basement
 {
     public class BasementBuilder : MonoBehaviour
     {

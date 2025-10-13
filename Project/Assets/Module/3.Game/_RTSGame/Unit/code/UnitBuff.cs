@@ -1,9 +1,8 @@
 using BattleBuff;
 using SimpleVFXSystem;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
-namespace BattleActor.Unit
+namespace RTSDemo.Unit
 {
     public enum UnitModifiableAttributeType
     {
