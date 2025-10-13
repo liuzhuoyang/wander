@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 1940691357931763199}
   - component: {fileID: 5814925719763669065}
   m_Layer: 5
-  m_Name: tip_text
+  m_Name: tip_frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

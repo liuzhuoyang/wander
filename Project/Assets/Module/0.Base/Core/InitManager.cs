@@ -250,6 +250,7 @@ public class InitManager : Singleton<InitManager>
 
             GameObject system = new GameObject("[System]");
             //Generic
+            system.AddComponent<PowerSystem>().Init();
             //system.AddComponent<PinSystem>().Init();
             //system.AddComponent<CheckInSystem>().Init();
             //system.AddComponent<TutSystem>().Init();
@@ -287,7 +288,7 @@ public class InitManager : Singleton<InitManager>
             system.AddComponent<EndSystem>().Init();
             system.AddComponent<BioSystem>().Init();
             system.AddComponent<PetSystem>().Init();
-            system.AddComponent<PowerSystem>().Init();
+
             system.AddComponent<BattleBaseSystem>().Init();
             // system.AddComponent<RecruitSystem>().Init();
             system.AddComponent<ChanceSystem>().Init();

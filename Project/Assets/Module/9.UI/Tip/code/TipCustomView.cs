@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class UITipCustomView : MonoBehaviour
+public class TipCustomView : MonoBehaviour
 {
-    public void Init(UITipCustomArgs args)
+    public virtual void Init(UITipCustomArgs args)
     {
         //TODO:
     }
