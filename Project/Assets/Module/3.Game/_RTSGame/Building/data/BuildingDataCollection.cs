@@ -7,7 +7,7 @@ using System.IO;
 using UnityEditor;
 #endif
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
     [CreateAssetMenu(fileName = "BuildingDataCollection", menuName = "RTS_Demo/Actor/Building/BuildingDataCollection")]
     public class BuildingDataCollection : DataCollection<BuildingData>

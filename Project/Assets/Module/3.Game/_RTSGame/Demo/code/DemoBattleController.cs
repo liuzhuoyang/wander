@@ -1,30 +1,34 @@
+using UnityEngine;
+
 using BattleActor;
-using BattleActor.Building;
 using BattleActor.Unit;
 using BattleGear;
 using BattleLaunch.Bullet;
 using BattleSummon;
 using RTSDemo.Zone;
+using RTSDemo.Building;
 using SimpleAudioSystem;
-using UnityEngine;
 
-public class DemoBattleController : MonoBehaviour
+namespace RTSDemo.Game
 {
-    [SerializeField] private AudioRefData bgmData;
-    void Awake()
+    public class DemoBattleController : MonoBehaviour
     {
-        new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>().Init();
-        new GameObject("BattleActor Scan System").AddComponent<BattleActorScanSystem>();
-        new GameObject("Battle Summon Manager").AddComponent<BattleSummonManage>();
+        [SerializeField] private AudioRefData bgmData;
+        void Awake()
+        {
+            new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>().Init();
+            new GameObject("BattleActor Scan System").AddComponent<BattleActorScanSystem>();
+            new GameObject("Battle Summon Manager").AddComponent<BattleSummonManage>();
 
-        UnitManager.Instance.StartBattle();
-        BulletManager.Instance.StartBattle();
-        BuildingManager.Instance.StartBattle();
-        GearManager.Instance.StartBattle();
-        BuffZoneManager.Instance.StartBattle();
-    }
-    void Start()
-    {
-        AudioManager.Instance.PlayBGM(bgmData.name);
+            UnitManager.Instance.StartBattle();
+            BulletManager.Instance.StartBattle();
+            BuildingManager.Instance.StartBattle();
+            GearManager.Instance.StartBattle();
+            BuffZoneManager.Instance.StartBattle();
+        }
+        void Start()
+        {
+            AudioManager.Instance.PlayBGM(bgmData.name);
+        }
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
     //一个production handler负责一组自动生产，productionArgs会维持不变
     public class BuildingProductionHandler : MonoBehaviour

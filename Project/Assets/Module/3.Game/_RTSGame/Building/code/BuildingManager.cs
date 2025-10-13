@@ -3,8 +3,9 @@ using BattleSummon;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace BattleActor.Building
+namespace RTSDemo.Building
 {
+    using BattleActor;
     public class BuildingManager : Singleton<BuildingManager>
     {
         [SerializeField] private BuildingDataCollection buildingDataCollection;
