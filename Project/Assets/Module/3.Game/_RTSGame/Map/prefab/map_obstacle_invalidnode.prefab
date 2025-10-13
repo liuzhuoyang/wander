@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3701231706392395603}
   - component: {fileID: 4493163581459797082}
   - component: {fileID: 8266178098598743207}
-  m_Layer: 0
-  m_Name: Cube
+  m_Layer: 1
+  m_Name: rvo_obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
