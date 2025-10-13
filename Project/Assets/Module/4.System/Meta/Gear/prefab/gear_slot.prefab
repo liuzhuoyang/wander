@@ -995,7 +995,7 @@ MonoBehaviour:
   m_text: name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
-  m_sharedMaterial: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 6a0154c92fbe2484fa8f08d82ad36f6a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UILocalizationHandler
   isDynamic: 0
   localizationKey: 
-  fontType: 0
+  fontType: 1
   localizationKeyEditor: 
   localizationContent: 
 --- !u!1 &6234043199550874757

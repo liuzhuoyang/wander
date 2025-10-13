@@ -1128,6 +1128,7 @@ GameObject:
   - component: {fileID: 7872238240182741254}
   - component: {fileID: 4637653750190188229}
   - component: {fileID: 4405252142960574771}
+  - component: {fileID: 5891431401715074047}
   m_Layer: 5
   m_Name: btn_equip
   m_TagString: Untagged
@@ -1144,7 +1145,7 @@ RectTransform:
   m_GameObject: {fileID: 7024156346369641282}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4769276849739241608}
@@ -1237,18 +1238,34 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1384734047271494442}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 76545480394714129}
+        m_TargetAssemblyTypeName: PopupGearInfo, Assembly-CSharp
+        m_MethodName: OnClickEquip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5891431401715074047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7024156346369641282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0666409b350df43afac039e3a3fff235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonFeedbackHandler
+  noScale: 0
+  sfxType: 1
+  hapticType: 0
+  throttleType: 0
 --- !u!1 &7288511048474125784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,6 +1687,7 @@ GameObject:
   - component: {fileID: 5073291418138358418}
   - component: {fileID: 6329602751073061964}
   - component: {fileID: 2075418766297912670}
+  - component: {fileID: 3205048478877676948}
   m_Layer: 5
   m_Name: btn_upgrade
   m_TagString: Untagged
@@ -1686,7 +1704,7 @@ RectTransform:
   m_GameObject: {fileID: 8357995862254297204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4073734452999118500}
@@ -1779,18 +1797,34 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1384734047271494442}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 76545480394714129}
+        m_TargetAssemblyTypeName: PopupGearInfo, Assembly-CSharp
+        m_MethodName: OnClickUpgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3205048478877676948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8357995862254297204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0666409b350df43afac039e3a3fff235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonFeedbackHandler
+  noScale: 0
+  sfxType: 1
+  hapticType: 0
+  throttleType: 0
 --- !u!1 &8636495273886592727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,7 +2376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5777513248464075625, guid: 8b2d5ef9512904a7ebf93edb6efff069, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 397.24
       objectReference: {fileID: 0}
     - target: {fileID: 5777513248464075625, guid: 8b2d5ef9512904a7ebf93edb6efff069, type: 3}
       propertyPath: m_AnchoredPosition.x

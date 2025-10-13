@@ -25,7 +25,7 @@ public class UIGearSlot : MonoBehaviour
     public void Init(GearSlotViewArgs args)
     {
         this.args = args;
-        textName.text = args.displayName;
+        textName.text = UtilityLocalization.GetLocalization(args.displayName);
         SetRarityImage(args.rarity);
         GameAssetControl.AssignIcon(args.iconName, imgIcon);
 

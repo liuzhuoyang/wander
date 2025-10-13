@@ -16,16 +16,22 @@ public class UIGear : UIBase
     [SerializeField] GameObject gearSlotPrefab;
     [SerializeField] GameObject gearEquipSlotPrefab;
 
+    [SerializeField] Transform maskTransform;
+
 
 
     void Awake()
     {
         EventManager.StartListening<UIGearArgs>(GearEventName.EVENT_GEAR_REFRESH_UI, OnRefresh);
+        EventManager.StartListening<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_START, OnEquipStart);
+        EventManager.StartListening<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_END, OnEquipEnd);
     }
 
     void OnDestroy()
     {
         EventManager.StopListening<UIGearArgs>(GearEventName.EVENT_GEAR_REFRESH_UI, OnRefresh);
+        EventManager.StopListening<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_START, OnEquipStart);
+        EventManager.StopListening<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_END, OnEquipEnd);
     }
 
     void OnRefresh(UIGearArgs args)
@@ -79,6 +85,24 @@ public class UIGear : UIBase
             gearSlotObj.GetComponent<UIGearSlot>().Init(listLockGearSlot[i]);
         }
 
+    }
+
+    void OnEquipStart(UIGearArgs args)
+    {
+        maskTransform.gameObject.SetActive(true);
+        foreach (Transform child in listTransform)
+        {
+            child.GetComponent<GearSlotHelper>().StartEquiping();
+        }
+    }
+
+    void OnEquipEnd(UIGearArgs args)
+    {
+        maskTransform.gameObject.SetActive(false);
+        foreach (Transform child in listTransform)
+        {
+            child.GetComponent<GearSlotHelper>().StopEquiping();
+        }
     }
 
 

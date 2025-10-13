@@ -15,4 +15,6 @@ public class UIGearArgs : UIBaseArgs
 public class GearEventName
 {
     public const string EVENT_GEAR_REFRESH_UI = "EVENT_GEAR_REFRESH_UI";
+    public const string EVENT_GEAR_EQUIP_START = "EVENT_GEAR_EQUIP_START";
+    public const string EVENT_GEAR_EQUIP_END = "EVENT_GEAR_EQUIP_END";
 }
