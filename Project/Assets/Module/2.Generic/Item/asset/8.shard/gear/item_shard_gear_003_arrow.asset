@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd3e33bbf9374f20b4d97e4f75c4174, type: 3}
   m_Name: item_shard_gear_003_arrow
   m_EditorClassIdentifier: 
-  itemName: item_shard_gear_101_gatling
-  rarity: 0
+  itemName: item_shard_gear_003_arrow
+  rarity: 2
   displayName: item/shard/gear/gear_shard_101
   previewDisplayname: ' {0} {1} (Gatling Gear Shard) '
   infoKey: 
@@ -28,4 +28,4 @@ MonoBehaviour:
   customResetTime: 0
   sfxDrop: 
   sfxCollect: 
-  listFeatureType: 
+  listNavigatorName: []

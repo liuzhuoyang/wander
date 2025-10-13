@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: module_gear
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: module_gear
+  m_GUID: 8754e9f932e84434e86cae201bedef02
+  m_SerializeEntries:
+  - m_GUID: 22c2832a9f1d243d1917c5ee84ee470a
+    m_Address: icon_gear_010
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ae632a3915f5404695ef7e91c903ac9
+    m_Address: icon_gear_006
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f8b42946f9b348d39f36d476d6011f4
+    m_Address: icon_gear_004_axe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48d22d7507f854c4491b7d6df546e9a1
+    m_Address: icon_gear_001_shuriken
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f9de6ddfe4f84d9891e70006fb35d6a
+    m_Address: popup_gear_info
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56cb98e75128e458b894c3944e2e780f
+    m_Address: icon_gear_003_arrow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81ce1d43fd84c403dba871406f5296db
+    m_Address: icon_gear_002_sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d0ce470dd39148d5b0de911be90b7ca
+    m_Address: icon_gear_008
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9335b0ba78eb4039abcd361fb381ab4
+    m_Address: icon_gear_007
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7ea7507cbeba45d6b37453d27de228f
+    m_Address: icon_gear_009
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de7f4d952cd82408a974d420dd776538
+    m_Address: icon_gear_005
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 04ec994a37f8b45e189519ab173347ca, type: 2}
+    - {fileID: 11400000, guid: 3fa4b2fe7c9034f879e2bc65407d434b, type: 2}

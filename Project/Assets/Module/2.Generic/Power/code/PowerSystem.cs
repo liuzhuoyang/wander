@@ -48,7 +48,7 @@ public class PowerSystem : Singleton<PowerSystem>
 
     void CalculateGearPower(string gearName)
     {
-        
+
     }
     //获取指定武器战力
     public int GetGearPower(string gearName)
@@ -65,7 +65,7 @@ public class PowerSystem : Singleton<PowerSystem>
         //计算武器战力
         CalculateGearPower(gearName);
         //判断是否上阵
-        if (GameData.userData.userGear.listEquipGear.Contains(gearName))
+        if (GameData.userData.userGear.dictEquipGear.ContainsValue(gearName))
         {
             //更新战力
             ChangeGearTeamPower();
@@ -76,9 +76,9 @@ public class PowerSystem : Singleton<PowerSystem>
     {
         //计算上阵武器战力总和
         totalGearPower = 0;
-        foreach (var equipName in GameData.userData.userGear.listEquipGear)
+        foreach (var equipName in GameData.userData.userGear.dictEquipGear)
         {
-            totalGearPower += dictGearPower[equipName];
+            totalGearPower += dictGearPower[equipName.Value];
         }
         //计算武器总星级
         // int totalStar = GetGearTotalStar();
@@ -103,15 +103,15 @@ public class PowerSystem : Singleton<PowerSystem>
         return totalGearPower;
     }
 
- /*    public float GetGearTotalStar()
-    {
-        int result = 0;
-        foreach (var gear in GameData.userData.userGear.dictGear)
-        {
-            result += gear.Value.star;
-        }
-        return result * 0.05f;
-    } */
+    /*    public float GetGearTotalStar()
+       {
+           int result = 0;
+           foreach (var gear in GameData.userData.userGear.dictGear)
+           {
+               result += gear.Value.star;
+           }
+           return result * 0.05f;
+       } */
     #endregion
 
     #region 天赋战力
