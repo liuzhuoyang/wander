@@ -6841,6 +6841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RTS_Battle_Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 2298618909516137913, guid: 038f0c3f7ea41d64ead63c8d0727cb3c, type: 3}
+      propertyPath: basementCenterNode
+      value: 
+      objectReference: {fileID: 4718432813848080115}
     - target: {fileID: 3722442060723434904, guid: 038f0c3f7ea41d64ead63c8d0727cb3c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.07715
@@ -6881,6 +6885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5776279853112424533, guid: 038f0c3f7ea41d64ead63c8d0727cb3c, type: 3}
+      propertyPath: ui_root
+      value: 
+      objectReference: {fileID: 1997128917}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7941,6 +7949,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f043e0e2f4d2fc14abfef634904dcbb4, type: 3}
+--- !u!114 &4718432813848080115 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3665731948707282945, guid: f043e0e2f4d2fc14abfef634904dcbb4, type: 3}
+  m_PrefabInstance: {fileID: 4718432813848080114}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 761277fbeea7cbd4289b5131a48caefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
