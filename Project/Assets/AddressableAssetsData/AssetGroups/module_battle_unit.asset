@@ -47,6 +47,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d2868ca87acbb9478ddfcf737a8eceb
+    m_Address: unit_minion_trooper_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1ff551146bd2bfb49b4dc3105089a3d2
     m_Address: unit_zreep_melee_3
     m_ReadOnly: 0

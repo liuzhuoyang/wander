@@ -5,14 +5,18 @@ namespace BattleActor.Unit
 {
     public class UnitMovement : MonoBehaviour
     {
-        private float moveSpeed = 1f;
-        private Vector2 velocityVector;
-        private Vector2 externalForce;
-        private Rigidbody2D m_rigid;
+        protected float moveSpeed = 1f;
+        protected Vector2 targetPoint;
+        protected Vector2 velocityVector;
+        protected Vector2 externalForce;
+        protected Rigidbody2D rigid;
+        protected bool isUpdating = true;
 
-        public void Init(Rigidbody2D _rigid)
+        public float maxSpeed => moveSpeed;
+
+        public virtual void Init(Rigidbody2D _rigid)
         {
-            m_rigid = _rigid;
+            rigid = _rigid;
         }
         public void SwitchModule(bool isActivated) => this.enabled = isActivated;
 
@@ -26,7 +30,7 @@ namespace BattleActor.Unit
             return velocityVector * moveSpeed;
         }
 
-        public void SetMoveSpeed(float speed)
+        public virtual void SetMoveSpeed(float speed)
         {
             moveSpeed = speed;
         }
@@ -38,15 +42,22 @@ namespace BattleActor.Unit
             else
                 this.velocityVector = targetVector;
         }
+        public void MoveTowards(Vector2 targetPos)
+        {
+            targetPoint = targetPos;
+            Vector2 diff = targetPoint - (Vector2)transform.position;
+
+            SetVelocityVector(diff);
+        }
         public void StopMovement()
         {
             velocityVector = Vector2.zero;
-            m_rigid.linearVelocity = Vector2.zero;
-            this.enabled = false;
+            rigid.linearVelocity = Vector2.zero;
+            isUpdating = false;
         }
         public void BeginMovement()
         {
-            this.enabled = true;
+            isUpdating = true;
         }
 
         public void SlerpVelocity(Vector3 targetVector, float lerpSpeed = 2, bool normalized = true)
@@ -60,13 +71,10 @@ namespace BattleActor.Unit
 
         public void UpdateMovement()
         {
+            Vector2 rigidPos = rigid.position;
+            rigidPos = CalculateMovement(rigidPos);
 
-            Vector2 rigidPos = m_rigid.position;
-            if (this.enabled)
-            {
-                rigidPos += velocityVector * moveSpeed * Time.fixedDeltaTime;
-            }
-
+            //External Force Handle
             if (externalForce.sqrMagnitude >= 0.01f)
             {
                 externalForce *= 0.95f;
@@ -75,12 +83,18 @@ namespace BattleActor.Unit
             else
                 externalForce = Vector2.zero;
 
-            rigidPos += externalForce * Time.fixedDeltaTime;
-            m_rigid.MovePosition(rigidPos);
+            rigid.MovePosition(rigidPos);
         }
+        protected virtual Vector2 CalculateMovement(Vector2 currentPos)
+        {
+            if (isUpdating)
+                currentPos += velocityVector * moveSpeed * Time.fixedDeltaTime;
+            return currentPos;
+        }
+
         public void AddForce(Vector2 force)
         {
-            m_rigid.MovePosition(m_rigid.position + force * Time.fixedDeltaTime);
+            rigid.MovePosition(rigid.position + force * Time.fixedDeltaTime);
         }
         public void AddImpulse(Vector2 impulse)
         {
