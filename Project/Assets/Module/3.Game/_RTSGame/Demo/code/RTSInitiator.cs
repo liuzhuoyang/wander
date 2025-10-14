@@ -20,7 +20,8 @@ namespace RTSDemo.Game
         
         public async void Start()
         {
-            await gameConfig.GamePlaySetUp();
+            GameObject root = new GameObject("[GameplayManager]");
+            await gameConfig.GamePlaySetUp(root.transform);
             await SceneManager.LoadSceneAsync(InitScene, LoadSceneMode.Additive);
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(InitScene));
         }

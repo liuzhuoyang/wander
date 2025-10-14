@@ -54,7 +54,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3726363548810033545, guid: a277a752a64e7fa4f8b98296d7a7f614, type: 3}
       propertyPath: m_Name
-      value: RTS_BuffManager Variant
+      value: RTS_BuffManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726363548810033545, guid: a277a752a64e7fa4f8b98296d7a7f614, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
