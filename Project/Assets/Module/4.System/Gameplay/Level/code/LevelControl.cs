@@ -29,7 +29,7 @@ public class LevelControl
  
         await TransitControl.OnTransit();
 
-        await GameAssetBattleManager.Instance.OnLoadBattleAsset();
+        await GameAssetManagerBattle.Instance.OnLoadBattleAsset();
 
         UIMain.Instance.OnModeUI("battle");
         //await MapControl.Instance.OpenLevel(args);

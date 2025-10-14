@@ -3,19 +3,24 @@ using UnityEngine;
 using Cysharp.Threading.Tasks;
 using TMPro;
 using System;
+using SimpleAudioSystem;
 
 
 //经常需要初始化的资源才需要预加载
-public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
+public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
 {
     public TMP_FontAsset font;
     public Material fontMaterialTitle;
     public Material fontMaterialContent; 
 
+    public Dictionary<string, AudioClip> dictSFXClip;
+    public Dictionary<string, AudioClip> dictSFXGroupClip;
+
     public async UniTask Init()
     {
         await InitFont();
         // await InitVFXAsset(); //后续可优化放到动态加载里
+        await InitAudioAsset();
         return;
     }
 
@@ -50,6 +55,29 @@ public class GameAssetGenericManager : Singleton<GameAssetGenericManager>
             fallbackFont.ClearFontAssetData(true);
         }
     }
+
+    #region 读取音频资源
+    async UniTask InitAudioAsset()
+    {
+        dictSFXClip = new Dictionary<string, AudioClip>();
+        dictSFXGroupClip = new Dictionary<string, AudioClip>();
+        await LoadAsset(AllAudio.dictSFXData.Keys, LoadAudio);
+    }
+
+    async UniTask LoadAudio(string audioName)
+    {
+        AudioData data = AllAudio.dictSFXData[audioName];
+        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.clipName);
+        dictSFXGroupClip.Add(audioName, clip);
+    }
+
+    async UniTask LoadAudioGroup(string audioName)
+    {
+        AudioGroupData data = AllAudio.dictSFXGroupData[audioName];
+        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.clipName);
+        dictSFXGroupClip.Add(audioName, clip);
+    }
+    #endregion
 
     // #region 读取VFX资源
     // Dictionary<string, GameObject> vfxPrefabDict; //特效预制体

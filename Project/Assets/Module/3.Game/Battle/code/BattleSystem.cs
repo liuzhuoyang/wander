@@ -55,7 +55,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //播放准备音乐
         Debug.LogWarning("where is my music??");
-        AudioManager.Instance.PlayBGM("bgm_pvebattle_prep_1");
+        AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
     }
 
     //播放战斗阶段音乐
@@ -63,7 +63,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //播放战斗音乐
         Debug.LogWarning("where is my music??");
-        AudioManager.Instance.PlayBGM("bgm_pvebattle_fight_1");
+        AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
     }
     
     #endregion
@@ -101,7 +101,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //准备开始 - 进入阶段
         ModeBattleControl.OnOpen("prepare");
-        AudioManager.Instance.PlayBGM("bgm_pvebattle_prep_1");
+        AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
         await base.OnPrepareStartPhaseEnter();
     }
 
@@ -121,7 +121,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //波段战斗开始 - 进入阶段
         ModeBattleControl.OnOpen("fight");
-        AudioManager.Instance.PlayBGM("bgm_pvebattle_fight_1");
+        AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()

@@ -21,7 +21,7 @@ public class GameDataControl : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    const string ASSETS_PATH = "Assets/Module/5.Data/_Manager/asset/";
+    const string ASSETS_PATH = "Assets/Module/5.Data/_Data/asset/";
 
     // 只会在编辑器里使用,因为不想在所有数据文件都写死Path，而且静态参数在编辑器里无法存储
     // 通过这个方法，通过找到这个管理器来找到对象的GameDataCollectionBase里定义的路径
