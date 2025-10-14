@@ -7,7 +7,6 @@ namespace RTSDemo.Unit
 {
     public class UnitRTSMovement : UnitMovement
     {
-        [SerializeField] private float slerpSpeed = 7;
         private int agentID;
 
         private const float STOP_DIST = 0.1f;
@@ -41,7 +40,7 @@ namespace RTSDemo.Unit
                 goalVector = math.normalize(goalVector);
                 goalVector += (float2)UnityEngine.Random.insideUnitCircle * 0.001f;
             }
-            RVOSimManager.SetAgentPrefVelocity(this.agentID, goalVector * 0.1f);
+            RVOSimManager.SetAgentPrefVelocity(this.agentID, goalVector * 0.5f);
 
             return RVOSimManager.GetAgentPos(this.agentID);
         }

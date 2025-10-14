@@ -103,6 +103,14 @@ public static class GameAsset
             await UniTask.WhenAll(batchTasks);
         }
     }
+    public static async UniTask<GameObject> GetPrefabAsync(string operationKey, AssetReferenceGameObject assetReference)
+    {
+        AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(assetReference);
+        await handle.Task;
+        if (!prefabHandleDict.ContainsKey(operationKey))
+            prefabHandleDict.Add(operationKey, handle);
+        return handle.Result;
+    }
     public static async UniTask<GameObject> GetPrefabAsync(string prefabName)
     {
         AsyncOperationHandle<GameObject> handle = Addressables.LoadAssetAsync<GameObject>(prefabName);

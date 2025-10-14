@@ -23,8 +23,8 @@ namespace RTSDemo.Game
         public GameObject PoolManager;
         public GameObject AudioManager;
         public GameObject BattleFormatianManager;
-        public GameObject BattleScensManager;
-        public GameObject MapDataManager;
+        public GameObject BattleScenesManager;
+        public GameObject LevelSystem;
         public GameObject CameraManager;
 
         //加载战斗所需的必要模组，若有其他模组，可以考虑添加在这里
@@ -36,8 +36,8 @@ namespace RTSDemo.Game
             Instantiate(PoolManager, root);
             Instantiate(AudioManager, root);
             Instantiate(BattleFormatianManager, root);
-            Instantiate(BattleScensManager, root);
-            Instantiate(MapDataManager, root);
+            Instantiate(BattleScenesManager, root);
+            Instantiate(LevelSystem, root);
             Instantiate(CameraManager, root);
             //初始化游戏必要模组
             var unit = Instantiate(unitManagerPrefab, root).GetComponent<UnitManager>();

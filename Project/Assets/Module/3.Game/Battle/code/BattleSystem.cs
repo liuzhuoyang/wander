@@ -7,7 +7,6 @@ using BattleGear;
 using RTSDemo.Zone;
 using CameraUtility;
 
-
 public class BattleSystem : BattleSystemBase<BattleSystem>
 {
     private GameObject battleControllerPrefab;
@@ -38,16 +37,23 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         }
     }
 
-    #region 战斗开始状态机
-
-    #endregion
-
-
     #region 抽象方法 - 子类必须实现
     //读取关卡数据
     protected override async UniTask OnLoadLevel()
     {
-        await LevelControl.OnLoadLevel(LevelType.Main, 1, 1);
+        //获取 章节1关卡1作为测试
+        LevelData levelData = LevelSystem.Instance.GetLevelData(1, 1);
+
+        await TransitControl.OnTransit();
+        await GameAssetManagerBattle.Instance.OnLoadBattleAsset();
+
+        UIMain.Instance.OnModeUI("battle");
+        Debug.Log(levelData == null);
+        BattleFormationMangaer.Instance.CraftFormatian(levelData.formationName);
+        await BattleScenesMangaer.Instance.LoadScene(levelData);
+
+        //关闭过场
+        TransitControl.CloseTransit();
     }
 
     //播放准备阶段音乐
@@ -84,7 +90,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
 
         //读取玩家数据，然后创建对应场景人物
         CameraManager.Instance.OnBattleEnter();
-        BattleScensMangaer.Instance.LoadUserData();
+        BattleScenesMangaer.Instance.LoadUserData();
 
         //创建战斗内控制器
         battleController = Instantiate(battleControllerPrefab, this.transform);
@@ -171,6 +177,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
 
         });
         CameraManager.Instance.OnBattleEnd();
+        BattleScenesMangaer.Instance.CleanUpScene();
         //战斗结束阶段
         Destroy(battleController);
         //清理各项游戏系统
@@ -182,7 +189,11 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnBattleEndPhaseExit()
     {
         //退出关卡
-        LevelControl.OnQuitLevel();
+        await TransitControl.OnTransit();
+        //清除用户战斗数据
+        Game.Instance.OnChangeState(GameStates.Home);
+
+        TransitControl.CloseTransit();
         //战斗结束 - 退出阶段
         await base.OnBattleEndPhaseExit();
     }

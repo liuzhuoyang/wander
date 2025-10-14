@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c347f912033845faaf817ee10e70458, type: 3}
+  m_Name: level_001_001
+  m_EditorClassIdentifier: 
+  chapterID: 1
+  levelID: 1
+  mapPrefab:
+    m_AssetGUID: c95a28bf23da54969b41bed99fe15b96
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  formationName: formatian_asset_001
+  totalWave: 15
+  unitStartLevel: 1
+  boss: {fileID: 11400000, guid: 331864784af12ec4d924c3ca7182f51e, type: 2}
+  enemyList:
+  - unitData: {fileID: 11400000, guid: 331864784af12ec4d924c3ca7182f51e, type: 2}
+    unlockWave: 0
+  - unitData: {fileID: 11400000, guid: 1d7387500d484fb42a0cdd0eedd9a953, type: 2}
+    unlockWave: 0
+  - unitData: {fileID: 11400000, guid: 693042833578d1a40817e5606c3c4a96, type: 2}
+    unlockWave: 0
+  - unitData: {fileID: 11400000, guid: 540fce506ee46b2429d38e3dc3fa7b72, type: 2}
+    unlockWave: 0

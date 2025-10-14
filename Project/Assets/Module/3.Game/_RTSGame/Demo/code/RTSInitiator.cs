@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 using Cysharp.Threading.Tasks;
 
 using RTSDemo.Building;
-using UnityEditor;
 
 namespace RTSDemo.Game
 {

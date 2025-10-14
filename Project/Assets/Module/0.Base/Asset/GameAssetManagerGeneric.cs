@@ -16,8 +16,6 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     public Dictionary<string, AudioClip> dictSFXClip;
     public Dictionary<string, AudioClip> dictSFXGroupClip;
 
-    public Dictionary<int, GameObject> dictMapPrefab;
-
     public async UniTask Init()
     {
         await InitFont();

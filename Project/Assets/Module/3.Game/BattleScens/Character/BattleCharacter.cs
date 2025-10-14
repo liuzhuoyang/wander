@@ -31,7 +31,7 @@ public class BattleCharacter : MonoBehaviour
         currentNodeIndex = nodeIndex;
         
         // 获取节点位置并放置角色
-        GameObject node = BattleFormatianMangaer.Instance.GetNodeByIndex(nodeIndex);
+        GameObject node = BattleFormationMangaer.Instance.GetNodeByIndex(nodeIndex);
         if (node != null)
         {
             transform.position = node.transform.position;
@@ -87,7 +87,7 @@ public class BattleCharacter : MonoBehaviour
         while (true)
         {
             // 获取下一个节点
-            int nextNodeIndex = BattleFormatianMangaer.Instance.GetNextNodeIndex(currentNodeIndex);
+            int nextNodeIndex = BattleFormationMangaer.Instance.GetNextNodeIndex(currentNodeIndex);
             
             if (nextNodeIndex == -1)
             {
@@ -121,7 +121,7 @@ public class BattleCharacter : MonoBehaviour
     /// <returns>第一个节点的索引，如果找不到返回-1</returns>
     private int GetFirstNodeIndex()
     {
-        var formatianNodes = BattleFormatianMangaer.Instance.GetCurrentFormatianNodes();
+        var formatianNodes = BattleFormationMangaer.Instance.GetCurrentFormatianNodes();
         if (formatianNodes.Count == 0) return -1;
         
         int firstNodeIndex = int.MaxValue;
@@ -151,7 +151,7 @@ public class BattleCharacter : MonoBehaviour
     /// <param name="targetNodeIndex">目标节点索引</param>
     private IEnumerator MoveToNode(int targetNodeIndex)
     {
-        GameObject targetNode = BattleFormatianMangaer.Instance.GetNodeByIndex(targetNodeIndex);
+        GameObject targetNode = BattleFormationMangaer.Instance.GetNodeByIndex(targetNodeIndex);
         if (targetNode == null)
         {
             Debug.LogError($"无法找到目标节点 {targetNodeIndex}");
@@ -194,10 +194,10 @@ public class BattleCharacter : MonoBehaviour
         // 例如：播放特效、触发技能、改变节点状态等
         
         // 获取节点组件（如果存在）
-        GameObject currentNode = BattleFormatianMangaer.Instance.GetNodeByIndex(currentNodeIndex);
+        GameObject currentNode = BattleFormationMangaer.Instance.GetNodeByIndex(currentNodeIndex);
         if (currentNode != null)
         {
-            FormatianNode formatianNode = currentNode.GetComponent<FormatianNode>();
+            FormationNode formatianNode = currentNode.GetComponent<FormationNode>();
             if (formatianNode != null)
             {
                 // 可以在这里调用FormatianNode的特定方法
@@ -212,7 +212,7 @@ public class BattleCharacter : MonoBehaviour
     /// <param name="nodeIndex">节点索引</param>
     public void TeleportToNode(int nodeIndex)
     {
-        GameObject node = BattleFormatianMangaer.Instance.GetNodeByIndex(nodeIndex);
+        GameObject node = BattleFormationMangaer.Instance.GetNodeByIndex(nodeIndex);
         if (node != null)
         {
             transform.position = node.transform.position;

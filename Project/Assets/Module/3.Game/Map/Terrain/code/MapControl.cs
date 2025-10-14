@@ -68,7 +68,7 @@ public class MapControl : Singleton<MapControl>
 
     public async UniTask OpenLevel(LevelData args, bool isEditor = false)
     {
-        GameObject bg = Instantiate(args.mapPrefab, groupTerrain.transform);
+        // GameObject bg = Instantiate(args.mapPrefab, groupTerrain.transform);
         /*    string stream = await ReadWrite.ReadDataAsync(args.levelName);
 
            //处理派生类的情况，如FeaturePointArgs会被
@@ -105,7 +105,7 @@ public class MapControl : Singleton<MapControl>
         float tileSize = 2;
         float offsetX = -16;
         float offsetY = -26;
-        string tileName = $"ter_{args.themeName}_tile_01";
+        string tileName = $"ter_theme_001_tile_01";
         //创建背景
         for (int i = 0; i < 16; i++)
         {

@@ -69,7 +69,7 @@ namespace onicore.editor
         [Button("Init Terrain Assets 初始化资源", ButtonHeight = 48), GUIColor(0.4f, 0.9f, 1f)]
         public void OnInit()
         {
-            string currentTheme = EditorData.currentLevelAsset.themeName;
+            string currentTheme = string.Empty;
 
             if (string.IsNullOrEmpty(currentTheme))
             {

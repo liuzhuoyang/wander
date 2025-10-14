@@ -59,7 +59,7 @@ public class DungeonData : ScriptableObject
     {
         dungeonName = this.name;
         costItemName = costItem ? costItem.itemName : "";
-        levelName = levelAsset ? levelAsset.levelName : "";
+        // levelName = levelAsset ? levelAsset.levelName : "";
     }
     #endif
 }

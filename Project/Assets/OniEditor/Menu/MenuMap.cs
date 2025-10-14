@@ -115,11 +115,12 @@ namespace onicore.editor
             string path = GameDataControl.GetAssetPath("all_level");
             levelAsset = FileFinder.FindAssetByName<LevelData>(path, selectedMap);
             
-            levelArgs = new LevelData() 
-            { 
-                levelName = selectedMap, 
-                themeName = levelAsset.themeName
-            };
+            //ScriptableObject不能使用New，请用Instantiate
+            // levelArgs = new LevelData() 
+            // { 
+            //     levelName = selectedMap, 
+            //     themeName = levelAsset.themeName
+            // };
 
             //存入EditorData，用作编辑时期全局访问使用
             EditorData.currentLevelAsset = levelAsset;
