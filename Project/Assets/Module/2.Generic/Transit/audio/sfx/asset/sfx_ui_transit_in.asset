@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sfx_ui_transit_in
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioData_SO
   clip:
-    m_AssetGUID: 
+    m_AssetGUID: 6346cfa84fd7c4c279761b885d18db22
     m_SubObjectName: 
     m_SubObjectType: 
     m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
+    m_EditorAssetChanged: 1

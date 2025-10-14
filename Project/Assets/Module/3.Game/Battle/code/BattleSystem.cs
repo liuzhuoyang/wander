@@ -2,7 +2,6 @@ using UnityEngine;
 using Cysharp.Threading.Tasks;
 using SimpleAudioSystem;
 using RTSDemo.Unit;
-using RTSDemo.Building;
 using BattleLaunch.Bullet;
 using BattleGear;
 using RTSDemo.Zone;
@@ -54,7 +53,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override void OnPlayBattlePrepareBGM()
     {
         //播放准备音乐
-        Debug.LogWarning("where is my music??");
         AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
     }
 
@@ -62,7 +60,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override void OnPlayBattleFightBGM()
     {
         //播放战斗音乐
-        Debug.LogWarning("where is my music??");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
     }
     

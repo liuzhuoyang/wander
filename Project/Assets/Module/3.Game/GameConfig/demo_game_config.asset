@@ -21,3 +21,4 @@ MonoBehaviour:
   PoolManager: {fileID: 7224084974312272543, guid: 00c4512b21d8bd84b93d94f9bada9720, type: 3}
   AudioManager: {fileID: 5275165434864665116, guid: f4cc90233b21bf44a97430a50eb6ece2, type: 3}
   BattleFormatianManager: {fileID: 3449745185094178799, guid: 97c475fc6f2c54ec8a75269982fe152d, type: 3}
+  MapDataManager: {fileID: 5174272267076918271, guid: 2b6867d1cb7f65447b0418168d911b49, type: 3}

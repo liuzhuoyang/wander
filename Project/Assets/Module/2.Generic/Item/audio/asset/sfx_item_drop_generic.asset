@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: sfx_item_drop_generic
   m_EditorClassIdentifier: 
   clip:
-    m_AssetGUID: 
+    m_AssetGUID: 7a4ada5f45e664a41bca170af72d0875
     m_SubObjectName: 
     m_SubObjectType: 
     m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
+    m_EditorAssetChanged: 1

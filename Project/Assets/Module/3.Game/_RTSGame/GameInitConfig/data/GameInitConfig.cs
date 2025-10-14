@@ -23,6 +23,7 @@ namespace RTSDemo.Game
         public GameObject PoolManager;
         public GameObject AudioManager;
         public GameObject BattleFormatianManager;
+        public GameObject MapDataManager;
 
         //加载战斗所需的必要模组，若有其他模组，可以考虑添加在这里
         public async UniTask GamePlaySetUp(Transform root)
@@ -33,6 +34,7 @@ namespace RTSDemo.Game
             Instantiate(PoolManager, root);
             Instantiate(AudioManager, root);
             Instantiate(BattleFormatianManager, root);
+            Instantiate(MapDataManager, root);
             //初始化游戏必要模组
             var unit = Instantiate(unitManagerPrefab, root).GetComponent<UnitManager>();
             var bullet = Instantiate(bulletManagerPrefab, root).GetComponent<BulletManager>();
