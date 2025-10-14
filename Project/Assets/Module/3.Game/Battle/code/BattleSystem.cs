@@ -85,7 +85,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         BuffZoneManager.Instance.StartBattle();
 
         //读取玩家数据，然后创建对应场景人物
-        BattleScensMangaer.Instance.StartBattle();
+        BattleScensMangaer.Instance.LoadUserData();
 
         //创建战斗内控制器
         battleController = Instantiate(battleControllerPrefab, this.transform);
