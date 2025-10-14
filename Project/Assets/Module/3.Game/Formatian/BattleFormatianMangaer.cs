@@ -6,6 +6,8 @@ public class BattleFormatianMangaer : Singleton<BattleFormatianMangaer>
     [Header("法阵配置")]
     public GameObject formatianPrefab;
 
+    // public GameObject 
+
     [Header("法阵管理")]
     [SerializeField] private Transform formatianParent; // 法阵节点的父对象
 
