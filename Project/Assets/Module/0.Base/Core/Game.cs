@@ -77,7 +77,7 @@ public class Game : Singleton<Game>
         // 取消所有异步任务（如网络请求、动画等）
         ResetStaticData();
 
-        GameAssetGenericManager.Instance.ResetDynamicFont();
+        GameAssetManagerGeneric.Instance.ResetDynamicFont();
 
         // 停止所有的事件监听器
         EventManager.StopAllListening();
@@ -188,7 +188,7 @@ public class Game : Singleton<Game>
     void Home_Enter()
     {
         //清理资源缓存
-        GameAssetGenericManager.Instance.ResetDynamicFont();
+        GameAssetManagerGeneric.Instance.ResetDynamicFont();
         //开启外围主页面
         UIMain.Instance.OnModeUI("home");
         // 显示背景
@@ -212,7 +212,7 @@ public class Game : Singleton<Game>
     void Home_Exit()
     {
         //清理资源缓存
-        GameAssetGenericManager.Instance.ResetDynamicFont();
+        GameAssetManagerGeneric.Instance.ResetDynamicFont();
         // 隐藏背景
         UIBackgroundControl.OnHideUIBackground();
     }

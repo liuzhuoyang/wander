@@ -58,9 +58,9 @@ public class UILocalizationHandler : MonoBehaviour
         }
 
         // 优化字体更新逻辑，只有在字体发生变化时才更新
-        if (GameAssetGenericManager.Instance != null && content.font != GameAssetGenericManager.Instance.font)
+        if (GameAssetManagerGeneric.Instance != null && content.font != GameAssetManagerGeneric.Instance.font)
         {
-            content.font = GameAssetGenericManager.Instance.font;
+            content.font = GameAssetManagerGeneric.Instance.font;
         }
 
         RefreshFontStyle();
@@ -119,18 +119,18 @@ public class UILocalizationHandler : MonoBehaviour
 
 #endif
 
-        if (GameAssetGenericManager.Instance == null || GameAssetGenericManager.Instance.fontMaterialTitle == null)
+        if (GameAssetManagerGeneric.Instance == null || GameAssetManagerGeneric.Instance.fontMaterialTitle == null)
         {
             return;
         }
 
         if (fontType == FontType.Title)
         {
-            content.fontMaterial = GameAssetGenericManager.Instance.fontMaterialTitle;
+            content.fontMaterial = GameAssetManagerGeneric.Instance.fontMaterialTitle;
         }
         else if (fontType == FontType.Content)
         {
-            content.fontMaterial = GameAssetGenericManager.Instance.fontMaterialContent;
+            content.fontMaterial = GameAssetManagerGeneric.Instance.fontMaterialContent;
         }
     }
 

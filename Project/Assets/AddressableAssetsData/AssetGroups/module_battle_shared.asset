@@ -65,6 +65,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a915748272adf4b428e334f10907f564
+    m_Address: sfx_battle_shared_explosion_electro_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be94f93b0abac694d8a6523019ca6b4b
     m_Address: sfx_battle_shared_cannonfire_001
     m_ReadOnly: 0

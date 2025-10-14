@@ -8,7 +8,7 @@ using System.Linq;
 
 //动态资源管理器
 //这里读取的资源需要释放，比如说战斗预制体
-public class GameAssetBattleManager : Singleton<GameAssetBattleManager>
+public class GameAssetManagerBattle : Singleton<GameAssetManagerBattle>
 {
     bool isLoading = false;
     public bool IsLoading => isLoading;
@@ -88,8 +88,8 @@ public class GameAssetBattleManager : Singleton<GameAssetBattleManager>
         List<string> prefabNameList = new List<string>();
     
         //TODO这里需要获取本关的武器预制体列表
-        prefabNameList.Add("ui_acting"); //测试
-        prefabNameList.Add("ui_transit"); //测试
+        //prefabNameList.Add("ui_acting"); //测试
+        //prefabNameList.Add("ui_transit"); //测试
 
         await LoadAssets(prefabNameList, LoadGearPrefab);
     }
