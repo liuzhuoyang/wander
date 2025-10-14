@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_battle_shared_cannonfire_001
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: be94f93b0abac694d8a6523019ca6b4b, type: 3}
+  clip:
+    m_AssetGUID: be94f93b0abac694d8a6523019ca6b4b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

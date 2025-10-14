@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
   m_Name: sfxgroup_unit_zreep_killed
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioGroupData_SO
-  clip: {fileID: 8300000, guid: 16e98e1ae249c4767bb5b45bdce7f026, type: 3}
+  clip:
+    m_AssetGUID: 16e98e1ae249c4767bb5b45bdce7f026
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   clips:
-  - {fileID: 8300000, guid: 16e98e1ae249c4767bb5b45bdce7f026, type: 3}
-  - {fileID: 8300000, guid: da1b5ed6c8bdd40dab16150df4724aa3, type: 3}
-  - {fileID: 8300000, guid: c2876de2ef3254010852efda5567930d, type: 3}
+  - m_AssetGUID: 16e98e1ae249c4767bb5b45bdce7f026
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: da1b5ed6c8bdd40dab16150df4724aa3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: c2876de2ef3254010852efda5567930d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

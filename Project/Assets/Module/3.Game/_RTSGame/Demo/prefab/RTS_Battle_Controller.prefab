@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf5282c757f74849a26da0729c58bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmData: {fileID: 11400000, guid: 93d9434361aa7cc4c998916e142c2c39, type: 2}
+  bgmData: {fileID: 11400000, guid: e858f41bc5047fd4fbabc63615844395, type: 2}
 --- !u!1 &2637779477525683659
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +293,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basementDataCollection: {fileID: 11400000, guid: c428e2406fbceb043be98c7b6b03ebf9, type: 2}
   ui_activeskill_caster_prefab: {fileID: 7573278204616008087, guid: 6f6ee631e185b3946bec18b3d0565b05, type: 3}
-  ui_root: {fileID: 0}
 --- !u!114 &2298618909516137913
 MonoBehaviour:
   m_ObjectHideFlags: 0

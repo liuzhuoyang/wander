@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_item_drop_generic
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 7a4ada5f45e664a41bca170af72d0875, type: 3}
+  clip:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0

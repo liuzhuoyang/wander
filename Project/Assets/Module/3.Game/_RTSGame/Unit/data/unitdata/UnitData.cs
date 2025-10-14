@@ -26,7 +26,7 @@ namespace RTSDemo.Unit
         #endregion
 
         #region 单位配置
-        [TabGroup("单位素材"), SerializeField] private AssetReference bodyRef;
+        [TabGroup("单位素材"), SerializeField] private AssetReferenceGameObject bodyRef;
         [TabGroup("单位素材"), SerializeField] private BulletData bulletData;
         #endregion
 
@@ -34,7 +34,7 @@ namespace RTSDemo.Unit
         [BoxGroup("技能配置"), SerializeField] private UnitAbilityData[] unitAbilites;
         #endregion
 
-        public AssetReference m_bodyRef => bodyRef;
+        public AssetReferenceGameObject m_bodyRef => bodyRef;
         public BulletData m_bulletData => bulletData;
         public UnitAbilityData[] m_unitAbilites => unitAbilites;
         protected override bool IsRange() => isRange;

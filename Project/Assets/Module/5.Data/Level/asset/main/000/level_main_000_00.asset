@@ -22,6 +22,8 @@ MonoBehaviour:
   totalWave: 1
   unitLevel: 120
   difficulty: 0
+  mapPrefab: {fileID: 2044480566523000302, guid: 06bc24cbfd5634f4e84fc0f8334bf2ff, type: 3}
+  formatianName: formatian_asset_001
   unitRace: zreep
   bossName: 
   previewBossIcon: {fileID: 0}

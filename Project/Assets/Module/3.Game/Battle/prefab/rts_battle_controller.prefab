@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &288205771018151138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2120014919475604153}
-  - component: {fileID: 4400157625502946680}
-  m_Layer: 0
-  m_Name: '[Debug]_Basement_Ability'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2120014919475604153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288205771018151138}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1200428007555806503}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4400157625502946680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288205771018151138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d21ce1e5cd1424abf9a6f47d9bec14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3127724616702157655
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,14 +54,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1200428007555806503}
   - component: {fileID: 9075359006113661769}
-  - component: {fileID: 2181161961618044893}
   m_Layer: 0
   m_Name: BasementControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1200428007555806503
 Transform:
   m_ObjectHideFlags: 0
@@ -118,8 +73,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2120014919475604153}
+  m_Children: []
   m_Father: {fileID: 7158258548300280642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9075359006113661769
@@ -136,22 +90,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basementDataCollection: {fileID: 11400000, guid: c428e2406fbceb043be98c7b6b03ebf9, type: 2}
   ui_activeskill_caster_prefab: {fileID: 7573278204616008087, guid: 6f6ee631e185b3946bec18b3d0565b05, type: 3}
-  ui_root: {fileID: 0}
---- !u!114 &2181161961618044893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4340689639133422072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a4400d835f6f7458fe732f6b5d7bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basementData_SO: {fileID: 11400000, guid: 92ab9a6cf533a5d489c90dc37db46992, type: 2}
-  defaultGridSize: {x: 3, y: 3}
-  basementCenterNode: {fileID: 0}
 --- !u!1 &6616915399758377021
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,8 +228,8 @@ Transform:
   - {fileID: 2731615079248849902}
   - {fileID: 4503255577004470433}
   - {fileID: 8934237956253315947}
-  - {fileID: 5577310151499559892}
   - {fileID: 1200428007555806503}
+  - {fileID: 5577310151499559892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8829664233586340295
@@ -305,12 +243,12 @@ GameObject:
   - component: {fileID: 5577310151499559892}
   - component: {fileID: 3070615678626845527}
   m_Layer: 0
-  m_Name: BattleSummonManage
+  m_Name: 'BattleSummonManage-[NotInUsed]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5577310151499559892
 Transform:
   m_ObjectHideFlags: 0

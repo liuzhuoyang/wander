@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
   m_Name: sfxgroup_unit_iron_killed
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioGroupData_SO
-  clip: {fileID: 8300000, guid: 0fbed7f54c337af48bf62d5d3607fdee, type: 3}
+  clip:
+    m_AssetGUID: 0fbed7f54c337af48bf62d5d3607fdee
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   clips:
-  - {fileID: 8300000, guid: 0fbed7f54c337af48bf62d5d3607fdee, type: 3}
-  - {fileID: 8300000, guid: baf3c3a28d68e8b4ba261b6a5c0c4395, type: 3}
-  - {fileID: 8300000, guid: 7ebb36ef6f9528e4986e894139ef2d7d, type: 3}
+  - m_AssetGUID: 0fbed7f54c337af48bf62d5d3607fdee
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: baf3c3a28d68e8b4ba261b6a5c0c4395
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 7ebb36ef6f9528e4986e894139ef2d7d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

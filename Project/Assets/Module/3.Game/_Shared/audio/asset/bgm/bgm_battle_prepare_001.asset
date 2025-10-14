@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f44bb97b25e974fabb9ae339a5d311, type: 3}
-  m_Name: bgm_pvebattle_boss_1
-  m_EditorClassIdentifier: 
-  assetReference:
-    m_AssetGUID: 8b158e8accdbcc947856d0ae97912758
+  m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
+  m_Name: bgm_battle_prepare_001
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioData
+  clip:
+    m_AssetGUID: 903bc811e3c12544abf7083ae1c9b79d
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 1

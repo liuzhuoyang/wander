@@ -25,7 +25,7 @@ namespace BattleGear
         [TabGroup("攻击参数")] public float criticRate;
         [TabGroup("攻击参数")] public float criticDamageMultiplier;
 
-        [TabGroup("武器素材")] public AssetReference gearPrefab;
+        [TabGroup("武器素材")] public AssetReferenceGameObject gearPrefab;
         [BoxGroup("武器技能")] public GearAbilityData[] gearAbilites;
         
         [TabGroup("武器表现")] public VFXData vfx_gearBeginFire;

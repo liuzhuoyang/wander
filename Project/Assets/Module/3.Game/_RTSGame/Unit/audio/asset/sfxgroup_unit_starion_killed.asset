@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
   m_Name: sfxgroup_unit_starion_killed
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioGroupData_SO
-  clip: {fileID: 8300000, guid: 6834f1e310fd068479344e73634f7f38, type: 3}
+  clip:
+    m_AssetGUID: 6834f1e310fd068479344e73634f7f38
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   clips:
-  - {fileID: 8300000, guid: 6834f1e310fd068479344e73634f7f38, type: 3}
-  - {fileID: 8300000, guid: bbab9838c510aff44882de450858d22b, type: 3}
-  - {fileID: 8300000, guid: 1511431383c645c4aba63ec1361cf3d9, type: 3}
+  - m_AssetGUID: 6834f1e310fd068479344e73634f7f38
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: bbab9838c510aff44882de450858d22b
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 1511431383c645c4aba63ec1361cf3d9
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_unit_boss_die_001
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioData_SO
-  clip: {fileID: 8300000, guid: fa53794dc90a1564d822f13a6012472a, type: 3}
+  clip:
+    m_AssetGUID: fa53794dc90a1564d822f13a6012472a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

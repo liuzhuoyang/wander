@@ -87,7 +87,7 @@ namespace RTSDemo.Unit
             dynamicArgs = new UnitDynamicArgs(objectArgs);
 
             //初始化组件
-            unitMovement = gameObject.AddComponent<UnitMovement>();
+            unitMovement = gameObject.AddComponent<UnitRTSMovement>();
             buffHandler = gameObject.AddComponent<BuffHandler>();
             unitViewBasic = gameObject.GetComponent<UnitViewBasic>();
             hitBox = gameObject.GetComponent<Collider2D>();
