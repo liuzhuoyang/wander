@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8fb8f352112d4cb38628d67297e3867, type: 3}
+  m_Name: all_formatian
+  m_EditorClassIdentifier: Assembly-CSharp::FormatianDataCollection
+  path: Assets/Module/5.Data/Formatian/asset/
+  listFormatianData:
+  - {fileID: 11400000, guid: 86ed2ce06c50a45f8a9081a0b7e979f5, type: 2}
