@@ -15,6 +15,7 @@ namespace ProjectWander.Map
     [CreateAssetMenu(fileName = "map_asset", menuName = "ProjectWander/Data/Map/MapData")]
     public class MapData : ScriptableObject
     {
+        public int chapterID;
         public int levelID;
 
         [BoxGroup("Scene")]

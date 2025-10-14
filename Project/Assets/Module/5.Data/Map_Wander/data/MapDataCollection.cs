@@ -10,11 +10,7 @@ namespace ProjectWander.Map
         public override MapData GetDataByKey(string key)
         {
             int id = int.Parse(key);
-            return allMapData.Find(mapData => mapData.levelID == id);
-        }
-        public MapData GetMapDataByID(int id)
-        {
-            return allMapData.Find(mapData => mapData.levelID == id);
+            return allMapData.Find(mapData => mapData.name == key);
         }
     }
 }

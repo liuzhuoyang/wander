@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e0f6ff98941ee748b739681f655277a, type: 3}
   m_Name: all_map
   m_EditorClassIdentifier: Assembly-CSharp::ProjectWander.Map.MapDataCollection
-  path: 
+  DataList:
+  - {fileID: 11400000, guid: d1fc33f6c281f9b4a86f7be3912a86c9, type: 2}
+  findOnlyLocal: 0
   allMapData:
   - {fileID: 11400000, guid: d1fc33f6c281f9b4a86f7be3912a86c9, type: 2}

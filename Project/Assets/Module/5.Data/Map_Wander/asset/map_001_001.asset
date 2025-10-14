@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edac197e7f1cf994a8932cdbfbca327b, type: 3}
-  m_Name: map_001
+  m_Name: map_001_001
   m_EditorClassIdentifier: Assembly-CSharp::ProjectWander.Map.MapData
   levelID: 1
   mapPrefab:

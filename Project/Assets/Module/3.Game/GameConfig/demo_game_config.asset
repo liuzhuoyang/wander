@@ -22,3 +22,4 @@ MonoBehaviour:
   AudioManager: {fileID: 5275165434864665116, guid: f4cc90233b21bf44a97430a50eb6ece2, type: 3}
   BattleFormatianManager: {fileID: 3449745185094178799, guid: 97c475fc6f2c54ec8a75269982fe152d, type: 3}
   BattleScensManager: {fileID: 4243667103795497106, guid: 801b50d142e0a4b93afd614940439467, type: 3}
+  MapDataManager: {fileID: 5174272267076918271, guid: 2b6867d1cb7f65447b0418168d911b49, type: 3}
