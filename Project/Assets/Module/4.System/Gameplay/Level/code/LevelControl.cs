@@ -1,5 +1,6 @@
 using System;
 using Cysharp.Threading.Tasks;
+using ProjectWander.Map;
 
 public class LevelControl
 {
@@ -24,8 +25,9 @@ public class LevelControl
     /// </summary>
     public static async UniTask OnLoadLevel(LevelType levelType, int chapterID, int levelID)
     {
-        string levelName = UtilityParse.GetLevelName(chapterID, levelID, levelType);
-        LevelData args = AllLevel.dictData[levelName];
+        // string levelName = UtilityParse.GetLevelName(chapterID, levelID, levelType);
+        // LevelData args = AllLevel.dictData[levelName];
+        MapData mapData = MapDataManager.Instance.GetMapData(chapterID, levelID);
 
         await TransitControl.OnTransit();
 
@@ -33,8 +35,8 @@ public class LevelControl
 
         UIMain.Instance.OnModeUI("battle");
 
-        BattleFormatianMangaer.Instance.CraftFormatian(args.formatianName);
-        BattleScensMangaer.Instance.LoadLevelData(args);
+        BattleFormatianMangaer.Instance.CraftFormatian(mapData.formationName);
+        await BattleScensMangaer.Instance.LoadLevelData(mapData);
 
         // await MapControl.Instance.OpenLevel(args);
         //关闭过场

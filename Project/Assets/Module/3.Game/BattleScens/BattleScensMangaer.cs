@@ -1,11 +1,13 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
+using ProjectWander.Map;
 using UnityEngine;
 
 
 //不管数据，只管显示
 public class BattleScensMangaer : Singleton<BattleScensMangaer>
 {
-
     [Header("人物模型")]
     public GameObject characterPrefab;
 
@@ -39,12 +41,12 @@ public class BattleScensMangaer : Singleton<BattleScensMangaer>
 
 
     //加载关卡数据，读取天气，水流，环境。障碍物不从这里进，可以理解为地图贴图
-    public void LoadLevelData(LevelData levelData)
+    public async UniTask LoadLevelData(MapData mapData)
     {
         Debug.Log("加载关卡数据");
-        GameObject map = Instantiate(levelData.mapPrefab, mapParent);
+        GameObject map = Instantiate(await GameAsset.GetPrefabAsync(mapData.name), mapParent);
         map.name = "Map";
-        map.transform.position += new Vector3(0, -1.5f, 0);
+        // map.transform.position += new Vector3(0, -1.5f, 0);
     }
 
 

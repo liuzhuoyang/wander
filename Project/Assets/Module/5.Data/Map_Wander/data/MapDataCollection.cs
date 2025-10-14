@@ -9,7 +9,6 @@ namespace ProjectWander.Map
         [SerializeField] private List<MapData> allMapData;
         public override MapData GetDataByKey(string key)
         {
-            int id = int.Parse(key);
             return allMapData.Find(mapData => mapData.name == key);
         }
     }

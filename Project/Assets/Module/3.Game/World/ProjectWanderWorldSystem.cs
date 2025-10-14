@@ -1,16 +1,5 @@
 using UnityEngine;
 
-public class ProjectWanderWorldSystem : MonoBehaviour
+public class ProjectWanderWorldSystem : Singleton<ProjectWanderWorldSystem>
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
