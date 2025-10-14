@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using BattleGear;
 using BattleLaunch.Bullet;
 using Cysharp.Threading.Tasks;
-using RTSDemo.Building;
 using RTSDemo.Unit;
 using SimpleVFXSystem;
 using UnityEngine;
@@ -12,19 +11,19 @@ namespace RTSDemo.Game
     [CreateAssetMenu(fileName = "GameInitConfig", menuName = "RTS_Demo/Game/GameInitConfig")]
     public class GameInitConfig : ScriptableObject
     {
-        [Header("Async Loading")]
+        [Header("异步加载模组")]
         public GameObject unitManagerPrefab;
-        public GameObject buildingManagerPrefab;
         public GameObject bulletManagerPrefab;
         public GameObject gearManagerPrefab;
         public GameObject vfxManagerPrefab;
 
-        [Header("Direct Config")]
+        [Header("直接加载模组")]
         public GameObject BuffManagerPrefab;
         public GameObject PlayerInputManager;
         public GameObject PoolManager;
         public GameObject AudioManager;
 
+        //加载战斗所需的必要模组，若有其他模组，可以考虑添加在这里
         public async UniTask GamePlaySetUp(Transform root)
         {
             //直接实例化不需要异步加载的模组
@@ -33,14 +32,12 @@ namespace RTSDemo.Game
             Instantiate(PoolManager, root);
             Instantiate(AudioManager, root);
             //初始化游戏必要模组
-            //@todo应该有更好的方式来处理模组的初始化
-            var building = Instantiate(buildingManagerPrefab, root).GetComponent<BuildingManager>();
             var unit = Instantiate(unitManagerPrefab, root).GetComponent<UnitManager>();
             var bullet = Instantiate(bulletManagerPrefab, root).GetComponent<BulletManager>();
             var gear = Instantiate(gearManagerPrefab, root).GetComponent<GearManager>();
             var vfx = Instantiate(vfxManagerPrefab, root).GetComponent<VFXManager>();
 
-            List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
+            List<UniTask> loadingTask = new List<UniTask>() { unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
             await UniTask.WhenAll(loadingTask);
         }
     }

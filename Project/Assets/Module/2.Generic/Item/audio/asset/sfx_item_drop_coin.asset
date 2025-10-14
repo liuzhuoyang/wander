@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_item_drop_coin
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: cd7d1173071a94c758d6bd611b361481, type: 3}
+  clip:
+    m_AssetGUID: cd7d1173071a94c758d6bd611b361481
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

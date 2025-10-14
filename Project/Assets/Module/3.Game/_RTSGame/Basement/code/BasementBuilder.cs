@@ -13,7 +13,7 @@ namespace RTSDemo.Basement
         {
             await BasementControl.Instance.Init();
             Vector2Int targetGrid = RTSGridWorldSystem.Instance.GetGridPointFromWorld(basementCenterNode.transform.position);
-            BasementControl.Instance.CreateBasement(basementData_SO.m_basementKey, targetGrid-defaultGridSize/2, defaultGridSize);
+            BasementControl.Instance.CreateBasement(basementData_SO.m_basementKey, targetGrid, defaultGridSize);
         }
     }
 }

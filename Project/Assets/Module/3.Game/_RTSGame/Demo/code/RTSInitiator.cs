@@ -1,13 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 
-using RTSDemo.Unit;
-using BattleGear;
-using BattleLaunch.Bullet;
-using SimpleVFXSystem;
 using RTSDemo.Building;
+using UnityEditor;
 
 namespace RTSDemo.Game
 {
@@ -17,11 +13,14 @@ namespace RTSDemo.Game
         [Header("Init")]
         [SerializeField] private string InitScene;
         [SerializeField] private GameInitConfig gameConfig;
+        [Header("Extra")]
+        [SerializeField] private GameObject building; 
         
         public async void Start()
         {
             GameObject root = new GameObject("[GameplayManager]");
             await gameConfig.GamePlaySetUp(root.transform);
+            await Instantiate(building).GetComponent<BuildingManager>().Init();
             await SceneManager.LoadSceneAsync(InitScene, LoadSceneMode.Additive);
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(InitScene));
         }

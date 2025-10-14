@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_battle_shared_impact_001
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 4a148f3d2a1d1b542aa613f4592e71aa, type: 3}
+  clip:
+    m_AssetGUID: 4a148f3d2a1d1b542aa613f4592e71aa
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

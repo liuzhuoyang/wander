@@ -67,14 +67,14 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     async UniTask LoadAudio(string audioName)
     {
         AudioData data = AllAudio.dictSFXData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.clipName);
+        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
         dictSFXGroupClip.Add(audioName, clip);
     }
 
     async UniTask LoadAudioGroup(string audioName)
     {
         AudioGroupData data = AllAudio.dictSFXGroupData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.clipName);
+        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
         dictSFXGroupClip.Add(audioName, clip);
     }
     #endregion
