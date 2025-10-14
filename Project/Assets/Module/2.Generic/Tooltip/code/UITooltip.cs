@@ -7,21 +7,19 @@ public class UITooltip : MonoBehaviour
     [SerializeField] GameObject mask;
 
     [SerializeField] GameObject prefabText;
-    [SerializeField] GameObject prefabImage;
     [SerializeField] GameObject prefabItem;
-    [SerializeField] GameObject prefabItemInfo;
 
     void Start()
     {
-        EventManager.StartListening<UITooltipArgs>(EventNameTooltip.EVENT_OPEN_UI, OnOpen);
-        EventManager.StartListening<UITooltipArgs>(EventNameTooltip.EVENT_CLOSE_UI, OnSystemClose);
+        EventManager.StartListening<UITooltipArgs>(EventNameTooltip.EVENT_TOOLTIP_OPEN_UI, OnOpen);
+        EventManager.StartListening<UITooltipArgs>(EventNameTooltip.EVENT_TOOLTIP_CLOSE_UI, OnClose);
         mask.SetActive(false);
     }
 
     void OnDestroy()
     {
-        EventManager.StopListening<UITooltipArgs>(EventNameTooltip.EVENT_OPEN_UI, OnOpen);
-        EventManager.StopListening<UITooltipArgs>(EventNameTooltip.EVENT_CLOSE_UI, OnSystemClose);
+        EventManager.StopListening<UITooltipArgs>(EventNameTooltip.EVENT_TOOLTIP_OPEN_UI, OnOpen);
+        EventManager.StopListening<UITooltipArgs>(EventNameTooltip.EVENT_TOOLTIP_CLOSE_UI, OnClose);
     }
 
     void OnOpen(UITooltipArgs args)
@@ -32,23 +30,17 @@ public class UITooltip : MonoBehaviour
         }
 
         GameObject objContent;
-        switch (args.tooltipArgs.tooltipType)
+        switch (args.tooltipType)
         {
-            case TooltipType.TEXT:
+            case TooltipType.Text:
                 objContent = Instantiate(prefabText, container);
-                objContent.GetComponent<TooltipViewText>().Init(args.tooltipArgs.contentArgs, args.tooltipArgs.posArgs);
+                objContent.GetComponent<TooltipViewText>().Init();
                 break;
-            case TooltipType.IMAGE:
-                objContent = Instantiate(prefabImage, container);
-                objContent.GetComponent<TooltipViewImage>().Init(args.tooltipArgs.contentArgs, args.tooltipArgs.posArgs);
-                break;
-            case TooltipType.ITEMREWARD:
+            case TooltipType.ItemHub:
+                TooltipItemHubArgs tooltipItemHubArgs = args as TooltipItemHubArgs;
                 objContent = Instantiate(prefabItem, container);
-                objContent.GetComponent<TooltipViewItemReward>().Init(args.tooltipArgs.contentArgs, args.tooltipArgs.posArgs);
-                break;
-            case TooltipType.ITEMINFO:
-                objContent = Instantiate(prefabItemInfo, container);
-                objContent.GetComponent<TooltipViewItemInfo>().Init(args.tooltipArgs.contentArgs, args.tooltipArgs.posArgs);
+                //TooltipItemHubArgs tooltipItemHubArgs = args.tooltipArgs as TooltipItemHubArgs;
+                objContent.GetComponent<TooltipViewItemHub>().Init(tooltipItemHubArgs);
                 break;
         }
 
@@ -65,7 +57,7 @@ public class UITooltip : MonoBehaviour
         }
     }
 
-    void OnSystemClose(UITooltipArgs args)
+    void OnClose(UITooltipArgs args)
     {
         OnClose();
     }

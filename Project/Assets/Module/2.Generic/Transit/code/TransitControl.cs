@@ -14,7 +14,7 @@ public class TransitControl
     public static async UniTask OnTransit(Action callback = null)
     {
         await UIMain.Instance.OpenUI("transit", UIPageType.Overlay);
-        await UniTask.Delay(500);
+        await UniTask.Delay(1000);
         callback?.Invoke();
     }
 

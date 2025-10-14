@@ -55,9 +55,7 @@ MonoBehaviour:
   container: {fileID: 6623090307734194182}
   mask: {fileID: 1987483401297515474}
   prefabText: {fileID: 5237940969509205435, guid: 7772f0740343a47958f6ad892b5cd9c0, type: 3}
-  prefabImage: {fileID: 5237940969509205435, guid: 55bf3f2e3ca5b429ab681a7d55f49939, type: 3}
   prefabItem: {fileID: 5237940969509205435, guid: 3fcc6e758e1ec495cbaff90eb88a6e93, type: 3}
-  prefabItemInfo: {fileID: 5237940969509205435, guid: afbd9e217a5064c588c453a05b3a3e97, type: 3}
 --- !u!223 &6250698134382937721
 Canvas:
   m_ObjectHideFlags: 0

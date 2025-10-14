@@ -18,8 +18,8 @@ public class PopupGearInfo : PopupBase
     [SerializeField] Image imgGear, imgNeed1;
     [SerializeField] TextMeshProUGUI textName, textLevel, textInfo, textNeed1;
     [SerializeField] RectTransform rectGet;
-    [SerializeField] Transform propertyTransform;
-    [SerializeField] UIGearPropertySlot uiGearPropertySlot1,uiGearPropertySlot2;
+    [SerializeField] Transform propertyTransform,equipTransform;
+    [SerializeField] UIGearPropertySlot uiGearPropertySlot1, uiGearPropertySlot2;
 
     string gearName;
     public override void OnOpen<T>(T args)
@@ -52,17 +52,27 @@ public class PopupGearInfo : PopupBase
         string needCard = GearFormula.GetGearCard(gearName);
 
         GameAssetControl.AssignIcon(needCard, imgNeed1);
-        //  GameAssetControl.AssignIcon(ConstantItem.COIN, imgNeed2);
+        
+        bool isEquip = GameData.userData.userGear.dictEquipGear.ContainsValue(gearName);
+        if (isEquip)
+        {
+            equipTransform.gameObject.SetActive(false);
+        }
+        else
+        {
+            equipTransform.gameObject.SetActive(true);
+        }
 
         int num = ItemSystem.Instance.GetItemNum(needCard);
-        textNeed1.text = GearFormula.GetGearNeedCardCount(userGearArgs.level, gearData.rarity).ToString() + "/" + num;
+        textNeed1.text = num + "/" + GearFormula.GetGearNeedCardCount(userGearArgs.level, gearData.rarity);
+        //  GameAssetControl.AssignIcon(ConstantItem.COIN, imgNeed2);
         //  textNeed2.text = GearFormula.GetGearCoin(userGearArgs.level).ToString();
 
 
         StartCoroutine(RefreshLayoutNextFrame());
     }
 
-    
+
 
     IEnumerator RefreshLayoutNextFrame()
     {

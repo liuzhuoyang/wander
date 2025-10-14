@@ -219,7 +219,6 @@ public class Game : Singleton<Game>
 
     void Battle_Enter()
     {
-        UIMain.Instance.OnModeUI("battle");
         HeaderControl.OnHide();
         FooterControl.OnHide();
         BattleSystem.Instance.OnBattleStart();
@@ -229,7 +228,8 @@ public class Game : Singleton<Game>
     {
         HeaderControl.OnShow();
         FooterControl.OnShow();
-        BattleSystem.Instance.OnBattleEnd();
+        //这里不能调用OnBattleEnd，因为战斗结算界面调用OnBattleFinished，会直接切换到Finished状态，然后切出去
+        //BattleSystem.Instance.OnBattleEnd(); 
     }
     public void OnChangeState(GameStates s)
     {

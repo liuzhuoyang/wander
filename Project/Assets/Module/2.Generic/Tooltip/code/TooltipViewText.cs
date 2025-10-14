@@ -12,10 +12,11 @@ public class TooltipViewText : MonoBehaviour
     [SerializeField] TextMeshProUGUI textContent;
     int marginY = 80; //边缘距离
 
-    public void Init(TooltipContentArgs args, TooltipPosArgs posArgs)
+    public void Init()
     {
+        /*
         textContent.text = string.Join("\n", args.contentList);
-
+        
         // 计算限宽
         textContent.ForceMeshUpdate();
         float preferredWidth = textContent.preferredWidth;
@@ -49,7 +50,7 @@ public class TooltipViewText : MonoBehaviour
         // 动画
         transform.localScale = Vector2.zero;
         transform.DOScale(Vector2.one, 0.25f).SetEase(Ease.OutBack).SetUpdate(true);
-
+        */
 
     }
 }
