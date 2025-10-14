@@ -15,5 +15,13 @@ public class FormatianData : ScriptableObject
     [ReadOnly]
     public string formatianName;
 
-    
+#if UNITY_EDITOR
+    [Button("初始化数据", ButtonSizes.Gigantic)]
+    public void InitData()
+    {
+        formatianName = this.name;
+    }
+#endif
+
+
 }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7f7731bae7f4beab047aaccd5dceb9, type: 3}
   m_Name: formatian_asset_001
   m_EditorClassIdentifier: Assembly-CSharp::FormatianData
-  formatianName: 
+  formatianName: formatian_asset_001

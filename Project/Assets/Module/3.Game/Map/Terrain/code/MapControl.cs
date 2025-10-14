@@ -68,24 +68,25 @@ public class MapControl : Singleton<MapControl>
 
     public async UniTask OpenLevel(LevelData args, bool isEditor = false)
     {
-        string stream = await ReadWrite.ReadDataAsync(args.levelName);
+        GameObject bg = Instantiate(args.mapPrefab, groupTerrain.transform);
+        /*    string stream = await ReadWrite.ReadDataAsync(args.levelName);
 
-        //处理派生类的情况，如FeaturePointArgs会被
-        var settings = new JsonSerializerSettings
-        {
-            TypeNameHandling = TypeNameHandling.Objects, // 使用Objects来处理类型信息
-            SerializationBinder = new FeaturePointBinder() // 添加自定义的Binder
-        };
-        //反序列化
-        levelData = JsonConvert.DeserializeObject<LevelRawData>(stream, settings);
+           //处理派生类的情况，如FeaturePointArgs会被
+           var settings = new JsonSerializerSettingss
+           {
+               TypeNameHandling = TypeNameHandling.Objects, // 使用Objects来处理类型信息
+               SerializationBinder = new FeaturePointBinder() // 添加自定义的Binder
+           };
+           //反序列化
+           levelData = JsonConvert.DeserializeObject<LevelRawData>(stream, settings);
 
-        Debug.Log($"=== MapControl: open map: {args.levelName} ===");
+           Debug.Log($"=== MapControl: open map: {args.levelName} ===");
 
-        MapNodeControl.Instance.OnEnableMapNode(levelData.nodeData);
+           MapNodeControl.Instance.OnEnableMapNode(levelData.nodeData);
 
-        await GenerateTerrain(args);
+           await GenerateTerrain(args);
 
-        await GenerateCollider();
+           await GenerateCollider(); */
 
         // 如果是在编辑器中，则生成编辑器Gizmos
         if (isEditor)
@@ -167,19 +168,20 @@ public class MapControl : Singleton<MapControl>
         List<string> colliderData = levelData.colliderData;
 
         //清理功能
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         List<string> tempList = new List<string>();
-        for(int i = 0; i < colliderData.Count; i++)
+        for (int i = 0; i < colliderData.Count; i++)
         {
-            if(!tempList.Contains(colliderData[i]))
+            if (!tempList.Contains(colliderData[i]))
             {
                 tempList.Add(colliderData[i]);
-            }else
+            }
+            else
             {
                 colliderData.Remove(colliderData[i]);
             }
         }
-        #endif
+#endif
 
         foreach (string xy in colliderData)
         {
