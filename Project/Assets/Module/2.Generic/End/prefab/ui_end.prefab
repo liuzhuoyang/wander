@@ -217,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3032048017611015257
 RectTransform:
   m_ObjectHideFlags: 0
@@ -668,7 +668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6527658982377377485}
   - component: {fileID: 6091975648176877945}
-  - component: {fileID: 3920808661512359089}
   - component: {fileID: 1011793609891021860}
   - component: {fileID: 4113051077843222492}
   m_Layer: 5
@@ -706,36 +705,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682971563629993197}
   m_CullTransparentMesh: 1
---- !u!114 &3920808661512359089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682971563629993197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: db0c6de480b064fb5967ecc52d154b1f, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &1011793609891021860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1526,7 +1495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8613331687520139389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2315,7 +2284,6 @@ GameObject:
   - component: {fileID: 2969090149253873052}
   - component: {fileID: 1304544445642803496}
   - component: {fileID: 9195926226790675420}
-  - component: {fileID: 2860273066876796964}
   - component: {fileID: 5720508811537384580}
   m_Layer: 5
   m_Name: btn_show
@@ -2323,7 +2291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6059680144654703709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2438,19 +2406,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2860273066876796964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6932284884680673593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ff460f4bfd314374be1fce4d24bcac7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPanel: {fileID: 0}
 --- !u!114 &5720508811537384580
 MonoBehaviour:
   m_ObjectHideFlags: 0

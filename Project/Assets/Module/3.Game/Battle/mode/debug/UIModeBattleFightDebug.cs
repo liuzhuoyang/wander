@@ -20,6 +20,18 @@ public class UIModeBattleFightDebug : DebuggerSharedMenu
     {
         BattleSystem.Instance.OnChangeBattleState(BattleStates.FightEnd);
     }
+
+    public void OnDebugBattleEndVictory()
+    {
+        BattleData.isVictory = true; //Debug假设满足胜利条件
+        BattleSystem.Instance.OnBattleEnd();
+    }
+
+    public void OnDebugBattleEndDefeat()
+    {
+        BattleSystem.Instance.OnBattleEnd();
+    }
+
     public void OnDebugSpawnEnemy()
     {
         UnitManager.Instance.CreateUnit("unit_zreep_melee_001", Random.insideUnitCircle * 5, true, 1);
