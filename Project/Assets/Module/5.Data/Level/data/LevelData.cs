@@ -98,6 +98,7 @@ public class LevelData : ScriptableObject
     public GameObject mapPrefab;
 
     //未来写地图相关的参数设置
+    
 
 
     [BoxGroup("Scene")]
