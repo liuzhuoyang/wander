@@ -44,6 +44,7 @@ public class BattleScensMangaer : Singleton<BattleScensMangaer>
         Debug.Log("加载关卡数据");
         GameObject map = Instantiate(levelData.mapPrefab, mapParent);
         map.name = "Map";
+        map.transform.position += new Vector3(0, -1.5f, 0);
     }
 
 
