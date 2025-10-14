@@ -15,10 +15,22 @@ MonoBehaviour:
   m_GroupName: module_battle_unit
   m_GUID: 5cdbf871a471c41599ad5c135798c553
   m_SerializeEntries:
+  - m_GUID: 027af65efb21c45bc846894fb0822696
+    m_Address: unit_minion_drone_001_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 05dfe854c4babd4458d9efdfb0b84b9e
     m_Address: vfx_battle_starion_range_2_laser_launch_trail
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dbfc54de9535407fabf08be9d518967
+    m_Address: unit_minion_drone_001_5_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0fbed7f54c337af48bf62d5d3607fdee
     m_Address: sfx_unit_iron_killed_001
@@ -41,15 +53,39 @@ MonoBehaviour:
     m_SerializedLabels:
     - unit
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ff551146bd2bfb49b4dc3105089a3d2
+    m_Address: unit_zreep_melee_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3ed846f145fe2c74e9b2487181f0d72b
     m_Address: sfx_unit_throgg_killed_002
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 431d2806745e7b24db4122494203754d
+    m_Address: unit_zreep_boss_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60da8a1b30c681b46bc1549f6291bd55
+    m_Address: unit_zreep_tank_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6834f1e310fd068479344e73634f7f38
     m_Address: sfx_unit_starion_killed_001
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e76e4e1dad434d87a833723e39c0b26
+    m_Address: unit_zreep_melee_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 76617e9cfa6255c4693c78062e3453a7
     m_Address: sfx_unit_throgg_killed_003
@@ -66,15 +102,39 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9333577cf5f764bf0a6ddbebe5a2b5b4
+    m_Address: unit_minion_drone_001_3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9a2b40194eaecdd49b05e49ece0847ee
     m_Address: vfx_battle_starion_melee_1_attack
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a16baab99d6d4421faeb540b3a6b9d8d
+    m_Address: unit_zreep_ranged_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a999be57b2adf486f863f319dfeab79b
+    m_Address: unit_minion_drone_001_5_1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ab5745abab880fb499e666fea1b86178
     m_Address: sfx_unit_throgg_killed_001
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af9a1b60eb3304f07a466da96164fa12
+    m_Address: unit_zreep_elite_002
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: baf3c3a28d68e8b4ba261b6a5c0c4395
     m_Address: sfx_unit_iron_killed_002
@@ -91,6 +151,24 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c73c4b83a7f7647ad82e59eec6f82c57
+    m_Address: unit_zreep_melee_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cb7ccaf5a459d4297800f13186d6b88b
+    m_Address: unit_minion_drone_001_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8d32c5630793b74dbeb5400e8481728
+    m_Address: unit_zreep_ranged_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: da1b5ed6c8bdd40dab16150df4724aa3
     m_Address: sfx_unit_zreep_killed_002
     m_ReadOnly: 0
@@ -101,10 +179,22 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb9b7b85aeef0441298c796da561a226
+    m_Address: unit_minion_drone_001_2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fa53794dc90a1564d822f13a6012472a
     m_Address: sfx_unit_boss_die_001
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: faa063cc4ea55304d943ce875102b782
+    m_Address: unit_zreep_ranged_003
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}

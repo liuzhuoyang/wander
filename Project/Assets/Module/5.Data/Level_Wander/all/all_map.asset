@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: all_map
   m_EditorClassIdentifier: Assembly-CSharp::ProjectWander.Map.MapDataCollection
   path: 
-  allMapData: []
+  allMapData:
+  - {fileID: 11400000, guid: d1fc33f6c281f9b4a86f7be3912a86c9, type: 2}

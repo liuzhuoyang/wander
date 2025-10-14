@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: edac197e7f1cf994a8932cdbfbca327b, type: 3}
-  m_Name: level_001
+  m_Name: map_001
   m_EditorClassIdentifier: Assembly-CSharp::ProjectWander.Map.MapData
   levelID: 1
   mapPrefab:
-    m_AssetGUID: 
+    m_AssetGUID: c95a28bf23da54969b41bed99fe15b96
     m_SubObjectName: 
     m_SubObjectType: 
     m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
+    m_EditorAssetChanged: 1
+  formationName: formatian_asset_001
   totalWave: 15
   unitStartLevel: 1
   boss: {fileID: 11400000, guid: 331864784af12ec4d924c3ca7182f51e, type: 2}

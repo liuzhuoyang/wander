@@ -16,6 +16,8 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     public Dictionary<string, AudioClip> dictSFXClip;
     public Dictionary<string, AudioClip> dictSFXGroupClip;
 
+    public Dictionary<int, GameObject> dictMapPrefab;
+
     public async UniTask Init()
     {
         await InitFont();
@@ -55,6 +57,10 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
             fallbackFont.ClearFontAssetData(true);
         }
     }
+
+    #region 读取地图资源
+    
+    #endregion
 
     #region 读取音频资源
     async UniTask InitAudioAsset()

@@ -17,8 +17,11 @@ namespace ProjectWander.Map
     {
         public int levelID;
 
-        [BoxGroup("关卡素材")]
+        [BoxGroup("Scene")]
         public AssetReferenceGameObject mapPrefab;
+        [BoxGroup("Scene")]
+        [ValueDropdown("GetFormationList")]
+        public string formationName;
 
         [BoxGroup("Difficulity"), Min(5)]
         public int totalWave = 15;
@@ -31,5 +34,17 @@ namespace ProjectWander.Map
         public UnitData boss;
         [BoxGroup("敌人")]
         public List<EnemyData> enemyList;
+
+        public List<string> GetFormationList()
+        {
+            List<string> list = new List<string>();
+            string path = GameDataControl.GetAssetPath("all_formatian");
+            List<FormatianData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<FormatianData>(path);
+            foreach (FormatianData asset in listAsset)
+            {
+                list.Add(asset.formatianName);
+            }
+            return list;
+        }
     }
 }
