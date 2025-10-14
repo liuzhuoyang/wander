@@ -26,17 +26,12 @@ public class LevelControl
     {
         string levelName = UtilityParse.GetLevelName(chapterID, levelID, levelType);
         LevelData args = AllLevel.dictData[levelName];
-        //过场
+ 
         await TransitControl.OnTransit();
-        //资源
-        await GameAssetBattleManager.Instance.OnLoadBattleAsset();
 
-        //打开UI
+        await GameAssetManagerBattle.Instance.OnLoadBattleAsset();
+
         UIMain.Instance.OnModeUI("battle");
-
-        //地图
-        MapControl.Instance.OnLoadMap(args.mapName);
-
         //await MapControl.Instance.OpenLevel(args);
         //关闭过场
         TransitControl.CloseTransit();
@@ -50,7 +45,7 @@ public class LevelControl
         await TransitControl.OnTransit();
         //清除用户战斗数据
         Game.Instance.OnChangeState(GameStates.Home);
-
+        
         TransitControl.CloseTransit();
     }
 

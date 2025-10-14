@@ -57,8 +57,8 @@ public class InitManager : Singleton<InitManager>
         await UniTask.Delay(TimeSpan.FromSeconds(waitTime));
 
         GameObject manager = new GameObject("[Manager]");
-        await manager.AddComponent<GameAssetGenericManager>().Init(); //加入基础资源管理器
-        manager.AddComponent<GameAssetBattleManager>().Init(); //加入战斗资源管理器（需要动态加载释放）
+        await manager.AddComponent<GameAssetManagerGeneric>().Init(); //加入基础资源管理器
+        manager.AddComponent<GameAssetManagerBattle>().Init(); //加入战斗资源管理器（需要动态加载释放）
 
         //加入15%进度，观察上面GameAssets读取是否费时间
         OnSendLoadingEvent(0.15f);

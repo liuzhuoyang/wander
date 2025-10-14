@@ -80,7 +80,20 @@ namespace SimpleAudioSystem
         }
 
 #if UNITY_EDITOR
-        [Button("Find All Data")]
+        [Button("Init Data 所有音频资源重命名", ButtonSizes.Gigantic)]
+        public override void InitData()
+        {
+            foreach (var item in sfx_list)
+            {
+                item.clipName = item.name;
+            }
+            foreach (var item in sfx_group_list)
+            {
+                item.clipName = item.name;
+            }
+        }
+
+        [Button("Find All Data", ButtonSizes.Gigantic)]
         public void FindAllAudioData()
         {
             string path = AssetDatabase.GetAssetPath(this);
@@ -103,5 +116,28 @@ namespace SimpleAudioSystem
                 return new List<T>();
         }
 #endif
+    }
+
+    public static class AllAudio
+    {
+        public static Dictionary<string, AudioData> dictSFXData;
+        public static Dictionary<string, AudioGroupData> dictSFXGroupData;
+        
+         //初始化数据，从资源中加载
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        public static void Init()
+        {
+            dictSFXData = new Dictionary<string, AudioData>();
+            dictSFXGroupData = new Dictionary<string, AudioGroupData>();
+            AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
+            foreach (AudioData data in collection.sfx_list)
+            {
+                dictSFXData.Add(data.clipName, data);
+            }
+            foreach (AudioGroupData data in collection.sfx_group_list)
+            {
+                dictSFXGroupData.Add(data.clipName, data);
+            }
+        }
     }
 }
