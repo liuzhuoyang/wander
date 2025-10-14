@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a2d89f5bb458453f918c2a867593cd6
+guid: 4bc37275b0fcb4d9b95195fc0ee304f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3023947217505616116
-    second: island_0
+      213: -8144395273742018924
+    second: pic_pet_legendary_03_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: island_0
+      name: pic_pet_legendary_03_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 842
-        height: 553
+        width: 220
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f004f609f737f920800000000000000
-      internalID: 3023947217505616116
+      spriteID: 4969c3e36ab49fe80800000000000000
+      internalID: -8144395273742018924
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      island_0: 3023947217505616116
+      pic_pet_legendary_03_1_0: -8144395273742018924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

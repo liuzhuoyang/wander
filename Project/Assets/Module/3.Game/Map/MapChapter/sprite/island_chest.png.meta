@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a2d89f5bb458453f918c2a867593cd6
+guid: a6517c4ed251c40689c5e9cbc2a77015
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3023947217505616116
-    second: island_0
+      213: 4320263094622076496
+    second: island_chest_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: island_0
+      name: island_chest_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 842
-        height: 553
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 147
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f004f609f737f920800000000000000
-      internalID: 3023947217505616116
+      spriteID: 05ebd231568a4fb30800000000000000
+      internalID: 4320263094622076496
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a2960d06d807f41509944abbde292f6e
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      island_0: 3023947217505616116
+      island_chest_0: 4320263094622076496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

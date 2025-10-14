@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a2d89f5bb458453f918c2a867593cd6
+guid: b5e57e71f405d44daa6535f4303244a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3023947217505616116
-    second: island_0
+      213: -3062127281327116881
+    second: battle_grid_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: island_0
+      name: battle_grid_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 842
-        height: 553
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f004f609f737f920800000000000000
-      internalID: 3023947217505616116
+      spriteID: fade67326732185d0800000000000000
+      internalID: -3062127281327116881
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      island_0: 3023947217505616116
+      battle_grid_0: -3062127281327116881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
