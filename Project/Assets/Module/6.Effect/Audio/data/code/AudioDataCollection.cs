@@ -16,25 +16,20 @@ namespace SimpleAudioSystem
     [CreateAssetMenu(fileName = "all_audio", menuName = "OniData/Effect/Audio/AudioDataCollection")]
     public class AudioDataCollection : GameDataCollectionBase
     {
-        public List<AudioRefData> bgm_list;
-        public List<AudioRefData> amb_list;
+        public List<AudioData> bgm_list;
+        public List<AudioData> amb_list;
         public List<AudioData> sfx_list;
         public List<AudioGroupData> sfx_group_list;
 
-        private Dictionary<string, AudioRefData> bgm_dict;
-        private Dictionary<string, AudioRefData> amb_dict;
+        private Dictionary<string, AudioData> bgm_dict;
+        private Dictionary<string, AudioData> amb_dict;
         private Dictionary<string, AudioData> sfx_dict;
-
-        // private const string BGM_DIRECTOR_KEY = "/bgm";
-        // private const string AMB_DIRECTOR_KEY = "/amb";
-        // private const string SFX_DIRECTOR_KEY = "/sfx";
-        // private const string SFX_GROUP_DIRECTOR_KEY = "/sfx_group";
 
         void OnEnable()
         {
             Debug.Log("-------Initializing Audio Data Collection-------");
-            bgm_dict = new Dictionary<string, AudioRefData>();
-            amb_dict = new Dictionary<string, AudioRefData>();
+            bgm_dict = new Dictionary<string, AudioData>();
+            amb_dict = new Dictionary<string, AudioData>();
             sfx_dict = new Dictionary<string, AudioData>();
 
             foreach (var item in bgm_list)
@@ -57,50 +52,37 @@ namespace SimpleAudioSystem
 
             Debug.Log("-------Finish Initializing Audio Data Collection-------");
         }
-        public AudioClip GetSFXClipByKey(string key)
+        public AssetReferenceT<AudioClip> GetSFXByKey(string key)
         {
             if (sfx_dict.TryGetValue(key, out var sfxData))
-                return sfxData.GetClip();
+                return sfxData.GetClipRef();
             Debug.LogError("No Clip Found By Key: " + key);
             return null;
         }
-        public AssetReference GetBGMRefByKey(string key)
+        public AssetReferenceT<AudioClip> GetBGMByKey(string key)
         {
             if (bgm_dict.TryGetValue(key, out var bgmData))
-                return bgmData.assetReference;
+                return bgmData.GetClipRef();
             Debug.LogError("No BGM Found By Key: " + key);
             return null;
         }
-        public AssetReference GetAMBRefByKey(string key)
+        public AssetReferenceT<AudioClip> GetAMBByKey(string key)
         {
             if (amb_dict.TryGetValue(key, out var ambData))
-                return ambData.assetReference;
+                return ambData.GetClipRef();
             Debug.LogError("No AMB Found By Key: " + key);
             return null;
         }
 
 #if UNITY_EDITOR
-        [Button("Init Data 所有音频资源重命名", ButtonSizes.Gigantic)]
-        public override void InitData()
-        {
-            foreach (var item in sfx_list)
-            {
-                item.clipName = item.name;
-            }
-            foreach (var item in sfx_group_list)
-            {
-                item.clipName = item.name;
-            }
-        }
-
         [Button("Find All Data", ButtonSizes.Gigantic)]
         public void FindAllAudioData()
         {
             string path = AssetDatabase.GetAssetPath(this);
             path = Path.GetDirectoryName(path);
 
-            bgm_list = GetDataFromPath<AudioRefData>("Assets").FindAll(a => a.name.Contains("bgm"));
-            amb_list = GetDataFromPath<AudioRefData>("Assets").FindAll(a => a.name.Contains("amb"));
+            bgm_list = GetDataFromPath<AudioData>("Assets").FindAll(a => a.name.Contains("bgm"));
+            amb_list = GetDataFromPath<AudioData>("Assets").FindAll(a => a.name.Contains("amb"));
             sfx_list = GetDataFromPath<AudioData>("Assets").FindAll(a=>a is not AudioGroupData);
 
             sfx_group_list = GetDataFromPath<AudioGroupData>("Assets");
@@ -132,11 +114,11 @@ namespace SimpleAudioSystem
             AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
             foreach (AudioData data in collection.sfx_list)
             {
-                dictSFXData.Add(data.clipName, data);
+                dictSFXData.Add(data.name, data);
             }
             foreach (AudioGroupData data in collection.sfx_group_list)
             {
-                dictSFXGroupData.Add(data.clipName, data);
+                dictSFXGroupData.Add(data.name, data);
             }
         }
     }

@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab3f2991fa627f4ebf51e5b98f01271, type: 3}
   m_Name: sfx_ui_transit_in
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioSystem.AudioData_SO
-  clip: {fileID: 8300000, guid: 6346cfa84fd7c4c279761b885d18db22, type: 3}
+  clip:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0

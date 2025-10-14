@@ -12,8 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
   m_Name: sfxgroup_battle_shared_earthquake
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 670c033086138904ea1c77b270607a76, type: 3}
+  clip:
+    m_AssetGUID: 670c033086138904ea1c77b270607a76
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   clips:
-  - {fileID: 8300000, guid: 670c033086138904ea1c77b270607a76, type: 3}
-  - {fileID: 8300000, guid: 8449c12a360d28a44a1069703f6b608d, type: 3}
-  - {fileID: 8300000, guid: 7c6f98210d09c8946ac2323a92035d3d, type: 3}
+  - m_AssetGUID: 670c033086138904ea1c77b270607a76
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 8449c12a360d28a44a1069703f6b608d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 7c6f98210d09c8946ac2323a92035d3d
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1

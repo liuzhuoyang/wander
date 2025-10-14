@@ -13,7 +13,7 @@ namespace RTSDemo.Game
 {
     public class DemoBattleController : MonoBehaviour
     {
-        [SerializeField] private AudioRefData bgmData;
+        [SerializeField] private AudioData bgmData;
         void Awake()
         {
             new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>();

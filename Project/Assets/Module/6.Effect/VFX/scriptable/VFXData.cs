@@ -7,7 +7,7 @@ namespace SimpleVFXSystem
     [CreateAssetMenu(fileName = "vfx_data", menuName = "OniData/Effect/VFX/VFXData")]
     public class VFXData : ScriptableObject
     {
-        public AssetReference vfx_ref;
+        public AssetReferenceGameObject vfx_ref;
         [LabelText("VFX的创建方式")]
         public VFXManageMode manageMode = VFXManageMode.Pooled;
 

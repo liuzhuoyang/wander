@@ -35,7 +35,7 @@ namespace SimpleVFXSystem
         }
         async UniTask LoadVFXPrefab(VFXData data)
         {
-            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.vfxKey);
+            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.vfx_ref);
             if (!vfxPrefabDict.ContainsKey(data.vfxKey))
                 vfxPrefabDict.Add(data.vfxKey, go);
         }

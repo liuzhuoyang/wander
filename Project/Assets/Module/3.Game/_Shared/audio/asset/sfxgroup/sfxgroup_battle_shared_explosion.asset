@@ -12,9 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263d03ba561a4f14fa0204a1aec8c84e, type: 3}
   m_Name: sfxgroup_battle_shared_explosion
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 59887dd78cb5c1d4c9ab077134cff211, type: 3}
+  clip:
+    m_AssetGUID: 59887dd78cb5c1d4c9ab077134cff211
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
   clips:
-  - {fileID: 8300000, guid: 59887dd78cb5c1d4c9ab077134cff211, type: 3}
-  - {fileID: 8300000, guid: 0052abb8b5558c240b1d00b25d401dbc, type: 3}
-  - {fileID: 8300000, guid: 3b1858549b8197d4290f11aa55874399, type: 3}
-  - {fileID: 8300000, guid: 2dc61396e523b1c439b7ecdf824db7ca, type: 3}
+  - m_AssetGUID: 59887dd78cb5c1d4c9ab077134cff211
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 0052abb8b5558c240b1d00b25d401dbc
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 3b1858549b8197d4290f11aa55874399
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  - m_AssetGUID: 2dc61396e523b1c439b7ecdf824db7ca
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
