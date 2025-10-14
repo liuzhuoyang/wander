@@ -5,11 +5,15 @@ using UnityEngine;
 //不管数据，只管显示
 public class BattleScensMangaer : Singleton<BattleScensMangaer>
 {
+
     [Header("人物模型")]
     public GameObject characterPrefab;
 
     [Header("角色管理")]
     [SerializeField] private Transform characterParent; // 角色的父对象
+
+    [Header("map管理")]
+    [SerializeField] private Transform mapParent; // 角色的父对象
 
 
     // 当前场景中的角色列表
@@ -25,6 +29,12 @@ public class BattleScensMangaer : Singleton<BattleScensMangaer>
             GameObject parentObj = new GameObject("Characters");
             characterParent = parentObj.transform;
         }
+
+        if (mapParent == null)
+        {
+            GameObject parentObj = new GameObject("Map");
+            mapParent = parentObj.transform;
+        }
     }
 
 
@@ -32,6 +42,8 @@ public class BattleScensMangaer : Singleton<BattleScensMangaer>
     public void LoadLevelData(LevelData levelData)
     {
         Debug.Log("加载关卡数据");
+        GameObject map = Instantiate(levelData.mapPrefab, mapParent);
+        map.name = "Map";
     }
 
 
