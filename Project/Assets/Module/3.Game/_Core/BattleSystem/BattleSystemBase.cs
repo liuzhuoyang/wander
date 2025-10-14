@@ -278,6 +278,9 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
     #region 调试方法
     protected async UniTask OnDebugTipCountDown(BattleStates currentBattleState, string phase)
     {
+        //先留着，如果需要测试再打开
+        await UniTask.Delay(1);
+        /*
         int delayTime = 400;
         await UniTask.Delay(delayTime);
         Debug.Log($"DEBUG: OnDebugTipCountDown: 当前状态 {currentBattleState} {phase} 切换状态倒计时: 3");
@@ -288,7 +291,7 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
         await UniTask.Delay(delayTime);
         //TipManager.Instance.OnTip("1");
          Debug.Log($"DEBUG: OnDebugTipCountDown: 当前状态 {currentBattleState} {phase} 切换状态倒计时: 1");
-        await UniTask.Delay(delayTime);
+        await UniTask.Delay(delayTime);*/
     }
     #endregion
 }
