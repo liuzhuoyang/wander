@@ -25,20 +25,20 @@ namespace RTSDemo.Game
         public GameObject PoolManager;
         public GameObject AudioManager;
 
-        public async UniTask GamePlaySetUp()
+        public async UniTask GamePlaySetUp(Transform root)
         {
             //直接实例化不需要异步加载的模组
-            Instantiate(BuffManagerPrefab);
-            Instantiate(PlayerInputManager);
-            Instantiate(PoolManager);
-            Instantiate(AudioManager);
+            Instantiate(BuffManagerPrefab, root);
+            Instantiate(PlayerInputManager, root);
+            Instantiate(PoolManager, root);
+            Instantiate(AudioManager, root);
             //初始化游戏必要模组
             //@todo应该有更好的方式来处理模组的初始化
-            var building = Instantiate(buildingManagerPrefab).GetComponent<BuildingManager>();
-            var unit = Instantiate(unitManagerPrefab).GetComponent<UnitManager>();
-            var bullet = Instantiate(bulletManagerPrefab).GetComponent<BulletManager>();
-            var gear = Instantiate(gearManagerPrefab).GetComponent<GearManager>();
-            var vfx = Instantiate(vfxManagerPrefab).GetComponent<VFXManager>();
+            var building = Instantiate(buildingManagerPrefab, root).GetComponent<BuildingManager>();
+            var unit = Instantiate(unitManagerPrefab, root).GetComponent<UnitManager>();
+            var bullet = Instantiate(bulletManagerPrefab, root).GetComponent<BulletManager>();
+            var gear = Instantiate(gearManagerPrefab, root).GetComponent<GearManager>();
+            var vfx = Instantiate(vfxManagerPrefab, root).GetComponent<VFXManager>();
 
             List<UniTask> loadingTask = new List<UniTask>() { building.Init(), unit.Init(), bullet.Init(), gear.Init(), vfx.Init()};
             await UniTask.WhenAll(loadingTask);

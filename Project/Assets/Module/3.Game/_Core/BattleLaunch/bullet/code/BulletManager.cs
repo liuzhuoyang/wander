@@ -57,7 +57,7 @@ namespace BattleLaunch.Bullet
             {
                 Destroy(child.gameObject);
             }
-            Destroy(bulletRoot);
+            Destroy(bulletRoot.gameObject);
         }
         #endregion
 

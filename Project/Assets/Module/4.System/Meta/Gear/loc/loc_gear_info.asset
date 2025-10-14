@@ -37,7 +37,7 @@ MonoBehaviour:
     textThai: "\u0E41\u0E21\u0E48\u0E19\u0E22\u0E33, \u0E27\u0E34\u0E01\u0E24\u0E15,
       \u0E23\u0E27\u0E14\u0E40\u0E23\u0E47\u0E27"
   - key: gear/info/002
-    textEnglish: 
+    textEnglish: 111111111
     textHint: 
     mappingList: []
     allLanguage: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
     textRussian: 
     textThai: 
   - key: gear/info/003
-    textEnglish: 
+    textEnglish: 22222222
     textHint: 
     mappingList: []
     allLanguage: 0

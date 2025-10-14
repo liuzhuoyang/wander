@@ -65,7 +65,7 @@ namespace RTSDemo.Zone
             buffZones = new HashSet<BuffZone>();
             zoneRoot = new GameObject("[BuffZone]").transform;
         }
-        public void CleanUpZones()
+        public void CleanUpBattle()
         {
             if (buffZones != null)
             {
@@ -75,6 +75,7 @@ namespace RTSDemo.Zone
                 }
                 buffZones.Clear();
             }
+            Destroy(zoneRoot.gameObject);
         }
         #endregion
     }

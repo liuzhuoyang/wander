@@ -26,7 +26,8 @@ public class InitManager : Singleton<InitManager>
         #region 这区域内不能使用异步，因为需要先于其他模块初始化
 
         #endregion
-        await gamePlayConfig.GamePlaySetUp();
+        GameObject root = new GameObject("[GameplayManager]");
+        await gamePlayConfig.GamePlaySetUp(root.transform);
         // //创建VFX特效管理器
         // GameObject vfx = new GameObject("[VFX]");
         // vfx.AddComponent<VFXControl>().Init();

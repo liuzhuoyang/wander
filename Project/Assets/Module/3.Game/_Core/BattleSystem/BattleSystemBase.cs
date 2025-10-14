@@ -120,6 +120,7 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
 
     async void FightStart_Enter()
     {
+        OnPlayBattleFightBGM();
         await OnFightStartPhaseEnter();
     }
 

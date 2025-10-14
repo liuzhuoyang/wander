@@ -16,7 +16,7 @@ namespace RTSDemo.Game
         [SerializeField] private AudioRefData bgmData;
         void Awake()
         {
-            new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>().Init();
+            new GameObject("Battle Behaviour Manager").AddComponent<BattleBehaviourManager>();
             new GameObject("BattleActor Scan System").AddComponent<BattleActorScanSystem>();
             new GameObject("Battle Summon Manager").AddComponent<BattleSummonManage>();
 

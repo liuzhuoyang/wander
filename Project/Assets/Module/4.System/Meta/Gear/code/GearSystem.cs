@@ -106,13 +106,15 @@ public class GearSystem : Singleton<GearSystem>
     public void OnEquipStart(string gearName)
     {
         currentEquipGearName = gearName;
-
+        EventManager.TriggerEvent<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_START, new UIGearArgs());
 
     }
     //结束装备模式
     public void OnEquipEnd()
     {
         currentEquipGearName = null;
+        EventManager.TriggerEvent<UIGearArgs>(GearEventName.EVENT_GEAR_EQUIP_END, new UIGearArgs());
+        Refresh();
     }
 
     //升级
