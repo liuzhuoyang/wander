@@ -39,7 +39,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     }
 
     #region 战斗开始状态机
-    
+
     #endregion
 
 
@@ -65,13 +65,13 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         Debug.LogWarning("where is my music??");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
     }
-    
+
     #endregion
 
     #region 状态机虚方法 - 子类可以重写
     //准备阶段开始
     protected override async UniTask OnBattleStartPhaseEnter()
-    {   
+    {
         //战斗开始 - 进入阶段
 
         await base.OnBattleStartPhaseEnter();
@@ -84,6 +84,9 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         GearManager.Instance.StartBattle();
         BuffZoneManager.Instance.StartBattle();
 
+        //读取玩家数据，然后创建对应场景人物
+        BattleScensMangaer.Instance.LoadUserData();
+
         //创建战斗内控制器
         battleController = Instantiate(battleControllerPrefab, this.transform);
 
@@ -94,7 +97,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //战斗开始 - 退出阶段
         await base.OnBattleStartPhaseExit();
-       
+
     }
 
     protected override async UniTask OnPrepareStartPhaseEnter()
@@ -140,7 +143,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //波段战斗结束 - 进入阶段
         ModeBattleControl.OnCloseActive();
         await base.OnFightEndPhaseEnter();
-        
+
     }
     protected override async UniTask OnFightEndPhaseExit()
     {

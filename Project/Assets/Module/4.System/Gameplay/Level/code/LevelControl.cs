@@ -34,6 +34,7 @@ public class LevelControl
         UIMain.Instance.OnModeUI("battle");
 
         BattleFormatianMangaer.Instance.CraftFormatian(args.formatianName);
+        BattleScensMangaer.Instance.LoadLevelData(args);
 
         // await MapControl.Instance.OpenLevel(args);
         //关闭过场
