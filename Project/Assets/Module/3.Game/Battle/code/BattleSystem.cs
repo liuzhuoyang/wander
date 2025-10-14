@@ -81,7 +81,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //开启各项游戏系统
         UnitManager.Instance.StartBattle();
         BulletManager.Instance.StartBattle();
-        BuildingManager.Instance.StartBattle();
         GearManager.Instance.StartBattle();
         BuffZoneManager.Instance.StartBattle();
 
@@ -174,7 +173,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //清理各项游戏系统
         UnitManager.Instance.CleanUpBattle();
         BulletManager.Instance.CleanUpBattle();
-        BuildingManager.Instance.CleanUpBattle();
         GearManager.Instance.CleanUpBattle();
         BuffZoneManager.Instance.CleanUpBattle();
     }

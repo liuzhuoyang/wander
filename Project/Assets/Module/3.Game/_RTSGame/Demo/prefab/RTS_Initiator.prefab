@@ -46,3 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Game.RTSInitiator
   InitScene: rts_demo
   gameConfig: {fileID: 11400000, guid: ae40017a3a031e84c87e8aff04bede5e, type: 2}
+  building: {fileID: 5626329598954423740, guid: b7459744fbc91ed4b8a864a3504823bc, type: 3}

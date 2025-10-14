@@ -42,6 +42,7 @@ namespace RTSDemo.Unit
                 goalVector += (float2)UnityEngine.Random.insideUnitCircle * 0.001f;
             }
             RVOSimManager.SetAgentPrefVelocity(this.agentID, goalVector * 0.1f);
+
             return RVOSimManager.GetAgentPos(this.agentID);
         }
         public override void SetMoveSpeed(float speed)

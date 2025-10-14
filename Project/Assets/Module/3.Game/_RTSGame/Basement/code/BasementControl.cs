@@ -13,7 +13,6 @@ namespace RTSDemo.Basement
     {
         [SerializeField] private BasementDataCollection basementDataCollection;
         [SerializeField] private GameObject ui_activeskill_caster_prefab;
-        [SerializeField] private Transform ui_root;
         private Transform basementRoot;
         private GameObject basementwall_prefab;
         private BasementBasic currentBasement;
@@ -41,8 +40,9 @@ namespace RTSDemo.Basement
             Destroy(basementRoot.gameObject);
             basementwall_prefab = null;
         }
-        public void CreateBasement(string basementKey, Vector2Int lbPoint, Vector2Int gridSize)
+        public void CreateBasement(string basementKey, Vector2Int center, Vector2Int gridSize)
         {
+            Vector2Int lbPoint = center - gridSize / 2;
             minX = lbPoint.x;
             minY = lbPoint.y;
             maxX = lbPoint.x + gridSize.x - 1;
@@ -308,9 +308,10 @@ namespace RTSDemo.Basement
         #endregion
 
         #region 基地技能
-        public void OnChooseAbilityLocation(Action<Vector2> onLocationChosen)
+        public void OnChooseAbilityTargetPosition(Action<Vector2> onLocationChosen)
         {
-            Instantiate(ui_activeskill_caster_prefab, ui_root).GetComponent<UI_BasementSkillCaster>().Init(onLocationChosen);
+            //@todo 这里可以采用Popup的方式呼出技能发射菜单替代
+            Instantiate(ui_activeskill_caster_prefab).GetComponent<UI_BasementSkillCaster>().Init(onLocationChosen);
         }
         #endregion
     }

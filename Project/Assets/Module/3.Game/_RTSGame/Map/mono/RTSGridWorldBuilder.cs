@@ -16,7 +16,7 @@ namespace RTSDemo.Grid
         protected override RTSGridWorld CreateGraph() => new RTSGridWorld(nodeWidth, gridSize, gridOffset.x, gridOffset.y);
 
         [Button("Refresh Grid World")]
-        public void Editor_RefreshGridWorld()
+        public void RefreshGridWorld()
         {
             Start();
         }

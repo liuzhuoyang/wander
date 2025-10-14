@@ -185,7 +185,7 @@ namespace RTSDemo.Basement
                 var ability = abilities[abilityIndex];
                 if (ability.requireTarget)
                 {
-                    BasementControl.Instance.OnChooseAbilityLocation(ability.ExcuteBasementAbilityOnNearPos);
+                    BasementControl.Instance.OnChooseAbilityTargetPosition(ability.ExcuteBasementAbilityOnNearPos);
                 }
                 else
                 {
