@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: demo_game_config
   m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Game.GamePlayConfig
   unitManagerPrefab: {fileID: 5706696137093070573, guid: 100b51426436c744f80a9770ffa8c59b, type: 3}
-  buildingManagerPrefab: {fileID: 5626329598954423740, guid: b7459744fbc91ed4b8a864a3504823bc, type: 3}
   bulletManagerPrefab: {fileID: 282324518614872755, guid: 95e0452ec452f2343b8835ec023870d2, type: 3}
   gearManagerPrefab: {fileID: 7059569754194893741, guid: 008a73517c988d044a86feaab9367936, type: 3}
   vfxManagerPrefab: {fileID: 5306898750596224420, guid: 1fdf0f159a27e9644a5d87a36fe1f718, type: 3}
@@ -21,3 +20,4 @@ MonoBehaviour:
   PlayerInputManager: {fileID: 4051154644729189666, guid: 49ecdd7f371a74b46a63b5897eeb1c76, type: 3}
   PoolManager: {fileID: 7224084974312272543, guid: 00c4512b21d8bd84b93d94f9bada9720, type: 3}
   AudioManager: {fileID: 5275165434864665116, guid: f4cc90233b21bf44a97430a50eb6ece2, type: 3}
+  BattleFormatianManager: {fileID: 3449745185094178799, guid: 97c475fc6f2c54ec8a75269982fe152d, type: 3}
