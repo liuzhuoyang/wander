@@ -114,10 +114,6 @@ namespace SimpleAudioSystem
             {
                 dictSFXData.Add(data.name, data);
             }
-            foreach (AudioGroupData data in collection.sfx_group_list)
-            {
-                dictSFXData.Add(data.name, data);
-            }
         }
     }
 }

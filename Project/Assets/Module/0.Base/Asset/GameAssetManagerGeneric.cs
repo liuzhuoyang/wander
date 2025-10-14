@@ -13,7 +13,7 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     public Material fontMaterialTitle;
     public Material fontMaterialContent; 
 
-    public Dictionary<string, AudioClip> dictSFXClip;
+    Dictionary<string, AudioClip> dictSFXClip;
 
     public async UniTask Init()
     {
@@ -68,7 +68,6 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
         AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
         dictSFXClip.Add(audioName, clip);
     }
-
     #endregion
 
     // #region 读取VFX资源
