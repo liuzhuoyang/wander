@@ -23,6 +23,6 @@ public class TagView : MonoBehaviour
     public void OnClick()
     {
         string content = UtilityLocalization.GetLocalization(tagData.contentKey);
-        TooltipManager.Instance.ShowTooltipText(new List<string> { content }, transform as RectTransform, transform.position, Direction.Bottom);
+        TooltipManager.Instance.ShowTooltipText(new List<string> { content }, transform as RectTransform, transform.position, Direction.Down);
     }
 }

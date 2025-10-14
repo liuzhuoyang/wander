@@ -31,6 +31,7 @@ public class LevelControl
 
         await GameAssetBattleManager.Instance.OnLoadBattleAsset();
 
+        UIMain.Instance.OnModeUI("battle");
         //await MapControl.Instance.OpenLevel(args);
         //关闭过场
         TransitControl.CloseTransit();
@@ -39,21 +40,13 @@ public class LevelControl
     /// <summary>
     /// 退出游戏唯一出口
     /// </summary>
-    public static async void OnQuitLevel(bool needTransit = false)
+    public static async void OnQuitLevel()
     {
-        if (needTransit)
-        {
-            await TransitControl.OnTransit();
-        }
-
-        //MapControl.Instance.Clear();
+        await TransitControl.OnTransit();
         //清除用户战斗数据
-        // BattleData.ClearUserBattleData();
         Game.Instance.OnChangeState(GameStates.Home);
-        if (needTransit)
-        {
-            TransitControl.CloseTransit();
-        }
+        
+        TransitControl.CloseTransit();
     }
 
     #region 关卡详情
