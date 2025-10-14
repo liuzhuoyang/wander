@@ -15,7 +15,7 @@ namespace SimpleAudioSystem
             if (clips == null || clips.Length == 0)
                 return base.GetClipRef();
             else
-                return null;
+                return clips[Random.Range(0, clips.Length)];
         }
     }
 }
