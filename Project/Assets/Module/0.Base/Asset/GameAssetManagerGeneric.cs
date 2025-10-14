@@ -14,7 +14,6 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     public Material fontMaterialContent; 
 
     public Dictionary<string, AudioClip> dictSFXClip;
-    public Dictionary<string, AudioClip> dictSFXGroupClip;
 
     public async UniTask Init()
     {
@@ -60,7 +59,6 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     async UniTask InitAudioAsset()
     {
         dictSFXClip = new Dictionary<string, AudioClip>();
-        dictSFXGroupClip = new Dictionary<string, AudioClip>();
         await LoadAsset(AllAudio.dictSFXData.Keys, LoadAudio);
     }
 
@@ -68,15 +66,9 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     {
         AudioData data = AllAudio.dictSFXData[audioName];
         AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
-        dictSFXGroupClip.Add(audioName, clip);
+        dictSFXClip.Add(audioName, clip);
     }
 
-    async UniTask LoadAudioGroup(string audioName)
-    {
-        AudioGroupData data = AllAudio.dictSFXGroupData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
-        dictSFXGroupClip.Add(audioName, clip);
-    }
     #endregion
 
     // #region 读取VFX资源

@@ -103,14 +103,12 @@ namespace SimpleAudioSystem
     public static class AllAudio
     {
         public static Dictionary<string, AudioData> dictSFXData;
-        public static Dictionary<string, AudioGroupData> dictSFXGroupData;
-        
+
          //初始化数据，从资源中加载
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Init()
         {
             dictSFXData = new Dictionary<string, AudioData>();
-            dictSFXGroupData = new Dictionary<string, AudioGroupData>();
             AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
             foreach (AudioData data in collection.sfx_list)
             {
@@ -118,7 +116,7 @@ namespace SimpleAudioSystem
             }
             foreach (AudioGroupData data in collection.sfx_group_list)
             {
-                dictSFXGroupData.Add(data.name, data);
+                dictSFXData.Add(data.name, data);
             }
         }
     }
