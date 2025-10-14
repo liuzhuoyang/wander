@@ -5,6 +5,7 @@ using RTSDemo.Unit;
 using BattleLaunch.Bullet;
 using BattleGear;
 using RTSDemo.Zone;
+using CameraUtility;
 
 
 public class BattleSystem : BattleSystemBase<BattleSystem>
@@ -82,6 +83,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         BuffZoneManager.Instance.StartBattle();
 
         //读取玩家数据，然后创建对应场景人物
+        CameraManager.Instance.OnBattleEnter();
         BattleScensMangaer.Instance.LoadUserData();
 
         //创建战斗内控制器
@@ -94,7 +96,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //战斗开始 - 退出阶段
         await base.OnBattleStartPhaseExit();
-
     }
 
     protected override async UniTask OnPrepareStartPhaseEnter()
@@ -102,6 +103,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //准备开始 - 进入阶段
         ModeBattleControl.OnOpen("prepare");
         AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
+        CameraManager.Instance.OnPrepareStart();
         await base.OnPrepareStartPhaseEnter();
     }
 
@@ -122,6 +124,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //波段战斗开始 - 进入阶段
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
+        CameraManager.Instance.OnFightStart();
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()
@@ -167,7 +170,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         {
 
         });
-
+        CameraManager.Instance.OnBattleEnd();
         //战斗结束阶段
         Destroy(battleController);
         //清理各项游戏系统

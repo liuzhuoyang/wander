@@ -1,21 +1,24 @@
 using UnityEngine;
 
-//一个简单的工具，让camera能够对齐另一个camera的OrthScale
-[RequireComponent(typeof(Camera))]
-public class CameraMatching : MonoBehaviour
+namespace CameraUtility
 {
-    private Camera self;
-    private Camera target;
-    public void Init(Camera targetCam)
+    //一个简单的工具，让camera能够对齐另一个camera的OrthScale
+    [RequireComponent(typeof(Camera))]
+    public class CameraMatching : MonoBehaviour
     {
-        target = targetCam; 
-    }
-    void Awake()
-    {
-        self = GetComponent<Camera>();
-    }
-    void Update()
-    {
-        self.orthographicSize = target.orthographicSize;
+        private Camera self;
+        private Camera target;
+        public void Init(Camera targetCam)
+        {
+            target = targetCam; 
+        }
+        void Awake()
+        {
+            self = GetComponent<Camera>();
+        }
+        void Update()
+        {
+            self.orthographicSize = target.orthographicSize;
+        }
     }
 }

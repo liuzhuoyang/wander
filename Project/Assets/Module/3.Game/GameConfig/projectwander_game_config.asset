@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae18ee8ed4c8c044d98a27c41efae9b0, type: 3}
-  m_Name: demo_game_config
+  m_Name: projectwander_game_config
   m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Game.GamePlayConfig
   unitManagerPrefab: {fileID: 5706696137093070573, guid: 100b51426436c744f80a9770ffa8c59b, type: 3}
   bulletManagerPrefab: {fileID: 282324518614872755, guid: 95e0452ec452f2343b8835ec023870d2, type: 3}
@@ -23,3 +23,4 @@ MonoBehaviour:
   BattleFormatianManager: {fileID: 3449745185094178799, guid: 97c475fc6f2c54ec8a75269982fe152d, type: 3}
   BattleScensManager: {fileID: 4243667103795497106, guid: 801b50d142e0a4b93afd614940439467, type: 3}
   MapDataManager: {fileID: 5174272267076918271, guid: 2b6867d1cb7f65447b0418168d911b49, type: 3}
+  CameraManager: {fileID: 7501990201108036740, guid: 9a2730f1f8ceb034d8cbd082fbf2e01c, type: 3}
