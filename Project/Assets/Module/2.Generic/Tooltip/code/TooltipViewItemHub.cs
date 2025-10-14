@@ -3,20 +3,41 @@ using UnityEngine.UI;
 using DG.Tweening;
 
 //代码手动设置提示物品奖励的参数
-public class TooltipViewItemReward : MonoBehaviour
+public class TooltipViewItemHub : MonoBehaviour
 {
-    [SerializeField] GameObject prefabArrow;
     public GameObject prefabItemSlot;
+    public Transform container;
 
-    public void Init(TooltipContentArgs args, TooltipPosArgs posArgs)
+    public GridLayoutGroup gridLayoutGroup;
+
+    public void Init(TooltipItemHubArgs args)
     {
-        foreach (RewardArgs reward in args.itemRewardList)
+        foreach (Transform child in container)
         {
-            GameObject objItemSlot = Instantiate(prefabItemSlot, transform);
+            Destroy(child.gameObject);
+        }
+
+        Debug.Log("args.listRewardArgs.Count: " + args.listRewardArgs.Count);
+
+        int maxCountPerRow = args.listRewardArgs.Count;
+        if(maxCountPerRow > 3)
+        {
+            maxCountPerRow = 3;
+        }
+        gridLayoutGroup.constraintCount = maxCountPerRow;
+
+        Debug.Log("gridLayoutGroup.constraintCount: " + gridLayoutGroup.constraintCount);
+
+        foreach (RewardArgs reward in args.listRewardArgs)
+        {
+            GameObject objItemSlot = Instantiate(prefabItemSlot, container);
             ItemData itemArgs = AllItem.dictData[reward.reward];
             objItemSlot.GetComponent<ItemViewSlot>().Init(reward.reward, reward.num);//, itemArgs.rarity);
         }
 
+        
+
+        /*
         //宽度自适应
         int width = 70;
         width += args.itemRewardList.Count * 120;
@@ -41,5 +62,6 @@ public class TooltipViewItemReward : MonoBehaviour
         //播放动画
         transform.localScale = Vector2.zero;
         transform.DOScale(Vector2.one, 0.25f).SetEase(Ease.OutBack).SetUpdate(true);
+        */
     }
 }

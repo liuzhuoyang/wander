@@ -15,6 +15,7 @@ public enum BattleStates
     FightRun,
     FightEnd,
     BattleEnd,
+    Finished,
 }
 
 public class BattleSystemFSM : MonoBehaviour

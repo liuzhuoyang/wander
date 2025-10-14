@@ -1005,7 +1005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 585, y: -1900}
+  m_AnchoredPosition: {x: 585, y: -370}
   m_SizeDelta: {x: 1170, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4847774895757800626
@@ -1255,6 +1255,7 @@ MonoBehaviour:
   lockTransform: {fileID: 6835512607926027138}
   gearSlotPrefab: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
   gearEquipSlotPrefab: {fileID: 7782018155158092467, guid: f40d43ca523884f22904396367940894, type: 3}
+  maskTransform: {fileID: 0}
 --- !u!1 &7500416475781812955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 585, y: -680}
+  m_AnchoredPosition: {x: 585, y: -170}
   m_SizeDelta: {x: 1170, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4671692849695150792
@@ -1761,6 +1762,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (8)
@@ -1863,6 +1868,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (1)
@@ -1965,6 +1974,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (6)
@@ -2067,6 +2080,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (7)
@@ -2169,6 +2186,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (5)
@@ -2475,6 +2496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot
@@ -2679,6 +2704,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (3)
@@ -2781,6 +2810,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (2)
@@ -2985,6 +3018,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (4)
@@ -3087,6 +3124,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (7)
@@ -3189,6 +3230,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (8)
@@ -3393,6 +3438,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (1)
@@ -3597,6 +3646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot
@@ -3801,6 +3854,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6835512607926027138}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (3)
@@ -3903,6 +3960,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (5)
@@ -4005,6 +4066,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (6)
@@ -4107,6 +4172,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (2)
@@ -4209,6 +4278,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574101394021089220}
     m_Modifications:
+    - target: {fileID: 2791437559774087070, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 584932816670303711, guid: 09246f4c517b44538a2f5ce051788dae, type: 2}
     - target: {fileID: 7782018155158092467, guid: b36982367f1634dd6ad6e0aa53908071, type: 3}
       propertyPath: m_Name
       value: gear_slot (4)

@@ -263,6 +263,8 @@ public class InitManager : Singleton<InitManager>
             system.AddComponent<FeatureSystem>().Init();
             system.AddComponent<ActingSystem>().Init();
             system.AddComponent<ItemSystem>().Init();
+
+            system.AddComponent<EndSystem>().Init();
             /*system.AddComponent<ItemExpirationSystem>().Init();
             system.AddComponent<RewardSystem>().Init();
             system.AddComponent<ChestSystem>().Init();
@@ -288,7 +290,7 @@ public class InitManager : Singleton<InitManager>
             system.AddComponent<TavernSystem>().Init();
             // system.AddComponent<TravelSystem>().Init();
             system.AddComponent<SupplySystem>().Init();
-            system.AddComponent<EndSystem>().Init();
+            
             system.AddComponent<BioSystem>().Init();
             system.AddComponent<PetSystem>().Init();
 

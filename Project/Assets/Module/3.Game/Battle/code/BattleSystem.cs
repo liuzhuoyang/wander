@@ -72,6 +72,8 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     //准备阶段开始
     protected override async UniTask OnBattleStartPhaseEnter()
     {   
+        //战斗开始 - 进入阶段
+
         await base.OnBattleStartPhaseEnter();
         ActingSystem.Instance.OnActing(this.name);
         await OnLoadLevel();
@@ -91,12 +93,14 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     }
     protected override async UniTask OnBattleStartPhaseExit()
     {
+        //战斗开始 - 退出阶段
         await base.OnBattleStartPhaseExit();
-        //战斗阶段退出
+       
     }
 
     protected override async UniTask OnPrepareStartPhaseEnter()
     {
+        //准备开始 - 进入阶段
         ModeBattleControl.OnOpen("prepare");
         AudioManager.Instance.PlayBGM("bgm_pvebattle_prep_1");
         await base.OnPrepareStartPhaseEnter();
@@ -104,57 +108,66 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
 
     protected override async UniTask OnPrepareRunPhaseEnter()
     {
-        //准备阶段运行
+        //准备运行 - 进入阶段
         await base.OnPrepareRunPhaseEnter();
     }
     protected override async UniTask OnPrepareEndPhaseEnter()
     {
+        //准备结束 - 进入阶段
         ModeBattleControl.OnCloseActive();
         await base.OnPrepareEndPhaseEnter();
-        //准备阶段结束
     }
 
     protected override async UniTask OnFightStartPhaseEnter()
     {
+        //波段战斗开始 - 进入阶段
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_pvebattle_fight_1");
         await base.OnFightStartPhaseEnter();
-        //战斗阶段开始
     }
     protected override async UniTask OnFightRunPhaseEnter()
     {
+        //波段战斗进行 - 进入阶段
         await base.OnFightRunPhaseEnter();
-        //战斗阶段运行
     }
+
     protected override async UniTask OnFightRunPhaseExit()
     {
+        //波段战斗进行 - 退出阶段
         await base.OnFightRunPhaseExit();
-        //战斗阶段退出
     }
     protected override async UniTask OnFightEndPhaseEnter()
     {
+        //波段战斗结束 - 进入阶段
         ModeBattleControl.OnCloseActive();
         await base.OnFightEndPhaseEnter();
-        //战斗阶段结束
+        
     }
     protected override async UniTask OnFightEndPhaseExit()
     {
+        //波段战斗结束 - 退出阶段
         await base.OnFightEndPhaseExit();
-        //战斗阶段退出
     }
     protected override async UniTask OnPausePhaseEnter()
     {
+        //暂停 - 进入阶段
         await base.OnPausePhaseEnter();
-        //暂停阶段
     }
     protected override async UniTask OnPausePhaseExit()
     {
+        //暂停 - 退出阶段
         await base.OnPausePhaseExit();
-        //暂停阶段退出
     }
     protected override async UniTask OnBattleEndPhaseEnter()
     {
+        //战斗结束 - 进入阶段
         await base.OnBattleEndPhaseEnter();
+
+        //这里出结算面板
+        await EndSystem.Instance.OnOpen(new EndArgs()
+        {
+
+        });
 
         //战斗结束阶段
         Destroy(battleController);
@@ -167,8 +180,10 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     }
     protected override async UniTask OnBattleEndPhaseExit()
     {
+        //退出关卡
+        LevelControl.OnQuitLevel();
+        //战斗结束 - 退出阶段
         await base.OnBattleEndPhaseExit();
-        //战斗结束阶段退出
     }
     #endregion
 

@@ -10,8 +10,9 @@ public class EndSystem : Singleton<EndSystem>
 
     }
 
-    public async void OnOpen(EndArgs args)
+    public async UniTask OnOpen(EndArgs args)
     {
+        await UIMain.Instance.OpenUI("end", UIPageType.Overlay);
         //恢复速度
         UtilityGameSpeed.OnDefaultGameSpeed();
         //TODO 处理战斗奖励，道具奖励，章节进度等等
@@ -19,6 +20,8 @@ public class EndSystem : Singleton<EndSystem>
 
     public void OnClaim(int multiplier = 1, Action callback = null)
     {
-        
+        BattleSystem.Instance.OnBattleFinished();
+
+        callback?.Invoke();
     }
 }
