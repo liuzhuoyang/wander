@@ -14,18 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: Assets/Module/8.Localization/asset/
   listLocalizationDataGeneric:
-  - {fileID: 11400000, guid: d0718a29b361a4b6fad6ced2764d7aef, type: 2}
   - {fileID: 11400000, guid: 8a8c21f76bbd2424cb89f63d36c487b4, type: 2}
   - {fileID: 11400000, guid: 2ad90a072f3ab4796ac76859b1e1866e, type: 2}
   - {fileID: 11400000, guid: 300acf1f7dccb42a08ffb5c32661cdb8, type: 2}
   - {fileID: 11400000, guid: dd545a839701948b8a5a21384e5c8534, type: 2}
   - {fileID: 11400000, guid: d3317af29eefa4561800cadc336502e2, type: 2}
-  - {fileID: 11400000, guid: 453598bf40cc24709a0b8c56f82447a9, type: 2}
-  - {fileID: 11400000, guid: ac4057c4a27a741e0a54a5ac7adf5307, type: 2}
+  - {fileID: 11400000, guid: d0718a29b361a4b6fad6ced2764d7aef, type: 2}
   - {fileID: 11400000, guid: 315233b0c97914161952fd9a3ab70f83, type: 2}
   - {fileID: 11400000, guid: 28f69203d1ba0421cb9d4ab0fdb8c7a8, type: 2}
   - {fileID: 11400000, guid: 72e13c859e6d342d7ab73cde72046ceb, type: 2}
   - {fileID: 11400000, guid: cfebea3a9bbca40858f327db7a81bba4, type: 2}
+  - {fileID: 11400000, guid: 579472c53a509496e981e460b5449569, type: 2}
   - {fileID: 11400000, guid: a31442d77d60d4a15a50a11ff74f5291, type: 2}
   - {fileID: 11400000, guid: 61a56cf271c564667aa1fdd784c3f10a, type: 2}
   - {fileID: 11400000, guid: a301c6d73155341ccab50f745b561fac, type: 2}
@@ -54,6 +53,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 51ca80972f99d47fa988e34cee85cf6c, type: 2}
   - {fileID: 11400000, guid: a0c2add2a2df84488a5874d067f735e5, type: 2}
   - {fileID: 11400000, guid: 0791879400dca4665b2730ab90bd1775, type: 2}
+  - {fileID: 11400000, guid: 453598bf40cc24709a0b8c56f82447a9, type: 2}
+  - {fileID: 11400000, guid: ac4057c4a27a741e0a54a5ac7adf5307, type: 2}
   - {fileID: 11400000, guid: 92d98f245d45e4a4f927ee42b09cd86b, type: 2}
   - {fileID: 11400000, guid: 8e7b356cd5fab48218f18f416f89cea6, type: 2}
   - {fileID: 11400000, guid: 1aeaa6848be5e4280b388e566a540656, type: 2}

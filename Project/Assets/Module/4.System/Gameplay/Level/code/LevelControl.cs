@@ -8,17 +8,6 @@ public class LevelControl
 
     }
 
-    public static void OnRefreshLevelLobbyUI(LevelData args)
-    {
-        EventManager.TriggerEvent<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_REFRESH_UI, new UILobbyArgs()
-        {
-            chapterID = args.chapterID,
-            levelID = args.levelID,
-            //chapterDisplayName = args.chapterDisplayName,
-            //picName = args.picName,
-        });
-    }
-
     /// <summary>
     /// 开始游戏，打开对应levelType，chapterID, levelID的关卡文件。如: normal_001_01
     /// </summary>

@@ -64,6 +64,10 @@ public class LevelData : ScriptableObject
     [BoxGroup("Info", LabelText = "基础信息")]
     public string levelName;
 
+    [ValueDropdown("GetLocalizationKeyList")]
+    [BoxGroup("Info")]
+    public string displayName;
+
     [ReadOnly]
     [BoxGroup("Info")]
     public int levelIndex;
@@ -88,6 +92,34 @@ public class LevelData : ScriptableObject
     [BoxGroup("Info")]
     [ValueDropdown("GetMapNameList")]
     public string mapName;
+
+
+#region 外围选关编辑
+    [BoxGroup("Meta", LabelText = "外围选关内容编辑")]
+    [ValueDropdown("GetThemeVarientList")]
+    [OnValueChanged("OnThemeVarientChanged")]
+    public int themeVarient;
+
+    public List<int> GetThemeVarientList()
+    {
+        List<int> list = new List<int>();
+        list.Add(1);
+        list.Add(2);
+        list.Add(3);
+        return list;
+    }
+
+    //这个preview是用来给编辑器更直观地预览当前关卡是哪个主题变种
+    [BoxGroup("Meta")]
+    [PreviewField(64)]
+    [ReadOnly]
+    public Sprite previewPic;
+
+    void OnThemeVarientChanged()
+    {
+        previewPic = GameAsset.GetAssetEditor<Sprite>("pic_" + themeName + "_" + themeVarient);
+    }
+#endregion
 
     [BoxGroup("Camera", LabelText = "镜头配置")]
     public LevelCameraPos cameraPos;
@@ -400,14 +432,30 @@ public class LevelData : ScriptableObject
     {
         List<string> list = new List<string>();
         list.Add("");
-        string path = GameDataControl.GetAssetPath("all_level");
-        path = path.Replace("asset", "map");
+        string path = GameDataControl.GetLocPath("all_level");
         List<string> listFileName = FileFinder.FindAllFilesOfAllSubFolders(path);
         foreach (string fileNme in listFileName)
         {
             list.Add(fileNme);
         }
         return list;
+    }
+
+     // 获取本地化键列表的通用方法
+    List<string> GetLocalizationKeyList()
+    {
+        List<string> listKey = new List<string>();
+        listKey.Add("");
+        string path = GameDataControl.GetLocPath("all_level");
+        List<LocalizationData> listAssets = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        foreach (LocalizationData asset in listAssets)
+        {
+            foreach (LocalizationSerializedItem item in asset.list)
+            {
+                listKey.Add(item.key);
+            }
+        }
+        return listKey;
     }
 #endif
 }

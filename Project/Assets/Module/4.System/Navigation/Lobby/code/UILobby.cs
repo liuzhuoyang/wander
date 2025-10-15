@@ -14,13 +14,17 @@ public class UILobby : Singleton<UILobby>
 
     void Start()
     {
+        EventManager.StartListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_INIT, OnInit);
         EventManager.StartListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_REFRESH_UI, OnRefresh);
+        EventManager.StartListening<UILobbyChangeLevelArgs>(LobbyEventName.EVENT_LOBBY_CHANGE_LEVEL, OnChangeLevel);
         EventManager.StartListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_SHOW_BOTTOM, OnShowBottom);
     }
 
     void OnDestroy()
     {
+        EventManager.StopListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_INIT, OnInit);
         EventManager.StopListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_REFRESH_UI, OnRefresh);
+        EventManager.StopListening<UILobbyChangeLevelArgs>(LobbyEventName.EVENT_LOBBY_CHANGE_LEVEL, OnChangeLevel);
         EventManager.StopListening<UILobbyArgs>(LobbyEventName.EVENT_LOBBY_SHOW_BOTTOM, OnShowBottom);
     }
 
@@ -49,13 +53,29 @@ public class UILobby : Singleton<UILobby>
         objBottom.SetActive(true);
     }
 
+    void OnInit(UILobbyArgs args)
+    {
+        viewLevel.Init(args.themeName, args.themeVarient, args.selectedLevel, args.totalLevel);
+    }
+
     /// <summary>
     /// 刷新指定的章节
     /// </summary>
     /// <param name="args"></param>
     void OnRefresh(UILobbyArgs args)
     {
-        viewLevel.Init(args.chapterDisplayName, args.picName, args.chapterID, args.levelID);
+        viewLevel.OnRefresh(args.displayName, args.levelID);
+    }
+
+    void OnChangeLevel(UILobbyChangeLevelArgs args)
+    {
+        viewLevel.OnChangeLevel(
+            args.isNextLevel, 
+            args.selectedLevel, 
+            args.totalLevel,
+            args.commingThemeName,
+            args.commingThemeVarient
+            );
     }
 
     public void OnChangeMode()
