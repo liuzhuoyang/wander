@@ -9,14 +9,18 @@ public class FormationItem : MonoBehaviour
     [Header("物品信息")]
     [SerializeField] private string itemName;
     [SerializeField] private FormationItemType itemType;
-    [SerializeField] private bool isTriggered = false;
     [SerializeField] private int level;
 
-    [Header("触发计数")]
-    [SerializeField] private int requiredTriggerCount = 1;  // 需要触发的次数
-    [SerializeField] private int currentTriggerCount = 0;   // 当前触发次数
-    [SerializeField] private bool autoResetOnComplete = true;  // 完成后是否自动重置计数
-    
+    [Header("充能计数")]
+    [SerializeField] private int requiredChargeCount = 1;  // 需要触发的次数
+    [SerializeField] private int currentChargeCount = 0;   // 当前触发次数
+
+    [SerializeField] private bool isActivated = false;     // 是否激活
+
+    [Header("充能消耗")]
+    [SerializeField] private int requiredEnergyConsumption = 0;     // 需要消耗的能量
+    [SerializeField] private int energyConsumption = 0;     // 消耗能量
+
     [Header("冷却系统")]
     [SerializeField] private bool hasCooldown = false;      // 是否有冷却
     [SerializeField] private float cooldownTime = 0f;       // 冷却时间
@@ -48,11 +52,6 @@ public class FormationItem : MonoBehaviour
     public FormationItemType ItemType => itemType;
 
     /// <summary>
-    /// 是否已被触发
-    /// </summary>
-    public bool IsTriggered => isTriggered;
-
-    /// <summary>
     /// 关联的节点
     /// </summary>
     public FormationNode ParentNode => parentNode;
@@ -60,33 +59,29 @@ public class FormationItem : MonoBehaviour
     /// <summary>
     /// 需要触发的次数
     /// </summary>
-    public int RequiredTriggerCount => requiredTriggerCount;
+    public int RequiredTriggerCount => requiredChargeCount;
 
     /// <summary>
     /// 当前触发次数
     /// </summary>
-    public int CurrentTriggerCount => currentTriggerCount;
+    public int CurrentTriggerCount => currentChargeCount;
 
-    /// <summary>
-    /// 是否完成后自动重置
-    /// </summary>
-    public bool AutoResetOnComplete => autoResetOnComplete;
-    
+
     /// <summary>
     /// 是否有冷却
     /// </summary>
     public bool HasCooldown => hasCooldown;
-    
+
     /// <summary>
     /// 冷却时间
     /// </summary>
     public float CooldownTime => cooldownTime;
-    
+
     /// <summary>
     /// 是否在冷却中
     /// </summary>
     public bool IsInCooldown => isInCooldown;
-    
+
     /// <summary>
     /// 剩余冷却时间
     /// </summary>
@@ -108,19 +103,22 @@ public class FormationItem : MonoBehaviour
         itemType = config.itemType;
         level = config.level;
         parentNode = node;
-        isTriggered = false;
-        
+
         // 触发设置
-        requiredTriggerCount = config.requiredTriggerCount;
-        currentTriggerCount = 0;
-        autoResetOnComplete = config.autoResetOnComplete;
-        
+        requiredChargeCount = config.requiredChargeCount;
+        currentChargeCount = 0;
+        isActivated = false;
+
         // 冷却设置
         hasCooldown = config.hasCooldown;
         cooldownTime = config.cooldownTime;
         isInCooldown = false;
         lastTriggerTime = 0f;
-        
+
+        // 充能消耗设置
+        requiredEnergyConsumption = config.energyConsumption;
+        energyConsumption = 0;
+
         // 效果配置
         effects.Clear();
         effects.AddRange(config.effects);
@@ -137,18 +135,7 @@ public class FormationItem : MonoBehaviour
     /// </summary>
     private void InitializeVisuals(FormationItemConfig config = null)
     {
-        // 设置图标
-        if (config != null && config.itemIcon != null && itemSprite != null)
-        {
-            itemSprite.sprite = config.itemIcon;
-        }
-        
-        // 创建视觉效果
-        if (config != null && config.visualEffectPrefab != null)
-        {
-            visualEffect = Instantiate(config.visualEffectPrefab, transform);
-            visualEffect.SetActive(false);
-        }
+
     }
 
 
@@ -174,73 +161,53 @@ public class FormationItem : MonoBehaviour
             }
         }
 
-        // 检查是否已完成且不自动重置
-        if (isTriggered && !autoResetOnComplete) return;
-
-        currentTriggerCount++;
+        Debug.Log($"物品 {itemName} 被 {triggerer.name} 触发 ({currentChargeCount}/{requiredChargeCount})");
         lastTriggerTime = Time.time;
 
-        Debug.Log($"物品 {itemName} 被 {triggerer.name} 触发 ({currentTriggerCount}/{requiredTriggerCount})");
-
-        // 通知进度更新
-        OnTriggerProgress?.Invoke(currentTriggerCount, requiredTriggerCount);
-
-        // 检查是否达到触发条件
-        bool shouldExecute = false;
-
-        if (currentTriggerCount >= requiredTriggerCount)
+        if (isActivated)
         {
-            shouldExecute = true;
-            isTriggered = true;
-            OnTriggerComplete?.Invoke();
-
-            // 开始冷却
-            if (hasCooldown)
-            {
-                isInCooldown = true;
-            }
-
-            // 自动重置计数
-            if (autoResetOnComplete)
-            {
-                currentTriggerCount = 0;
-                isTriggered = false;
-            }
-        }
-
-        // 执行效果
-        if (shouldExecute)
-        {
+            energyConsumption--;
             ExecuteEffects(triggerer);
+            if (energyConsumption <= 0)
+            {
+                if (hasCooldown)
+                {
+                    isInCooldown = true;
+                }
+                isActivated = false;
+            }
         }
         else
         {
-            // 执行部分效果（如果配置了中途触发）
-            ExecutePartialEffects(triggerer);
+            currentChargeCount++;
+            // 通知进度更新
+            OnTriggerProgress?.Invoke(currentChargeCount, requiredChargeCount);
+
+
+            if (currentChargeCount >= requiredChargeCount)
+            {
+                //激活完成
+                OnTriggerComplete?.Invoke();
+                currentChargeCount = 0;
+                isActivated = true;
+                energyConsumption = requiredEnergyConsumption;
+
+                //直接触发
+                if (energyConsumption == 0)
+                {
+                    ExecuteEffects(triggerer);
+
+                    // 开始冷却
+                    if (hasCooldown)
+                    {
+                        isInCooldown = true;
+                    }
+                }
+            }
         }
 
         // 播放触发视觉效果
-        PlayTriggerEffect();
-    }
-
-    /// <summary>
-    /// 处理武器触发
-    /// </summary>
-    /// <param name="triggerer">触发者</param>
-    private void HandleWeaponTrigger(GameObject triggerer)
-    {
-        Debug.Log($"武器 {itemName} 被触发，给予 {triggerer.name} 武器效果");
-        // TODO: 实现武器效果逻辑
-    }
-
-    /// <summary>
-    /// 处理技能触发
-    /// </summary>
-    /// <param name="triggerer">触发者</param>
-    private void HandleSkillTrigger(GameObject triggerer)
-    {
-        Debug.Log($"技能 {itemName} 被触发，给予 {triggerer.name} 技能效果");
-        // TODO: 实现技能效果逻辑
+        RefreshShow();
     }
 
     /// <summary>
@@ -251,41 +218,21 @@ public class FormationItem : MonoBehaviour
     {
         foreach (var effect in effects)
         {
-            if (effect.requireFullCount)
-            {
-                FormationEffectManager.Instance.ExecuteEffect(effect, triggerer);
-                Debug.Log($"执行完整效果: {effect.effectType} 给 {triggerer.name}");
-            }
+            FormationEffectManager.Instance.ExecuteEffect(effect, triggerer);
+            
+            Debug.Log($"执行完整效果: {effect.effectType} 给 {triggerer.name}");
+
         }
     }
 
-    /// <summary>
-    /// 执行部分效果
-    /// </summary>
-    /// <param name="triggerer">触发者</param>
-    private void ExecutePartialEffects(GameObject triggerer)
-    {
-        foreach (var effect in effects)
-        {
-            if (!effect.requireFullCount && currentTriggerCount >= effect.triggerThreshold)
-            {
-                FormationEffectManager.Instance.ExecuteEffect(effect, triggerer);
-                Debug.Log($"执行部分效果: {effect.effectType} 给 {triggerer.name}");
-            }
-        }
-    }
 
 
     /// <summary>
     /// 播放触发视觉效果
     /// </summary>
-    private void PlayTriggerEffect()
+    private void RefreshShow()
     {
-        if (visualEffect != null)
-        {
-            visualEffect.SetActive(true);
-            // TODO: 播放特效动画
-        }
+
     }
 
     /// <summary>
@@ -293,8 +240,7 @@ public class FormationItem : MonoBehaviour
     /// </summary>
     public void Reset()
     {
-        isTriggered = false;
-        currentTriggerCount = 0;
+        currentChargeCount = 0;
         isInCooldown = false;
         lastTriggerTime = 0f;
         InitializeVisuals();
@@ -312,7 +258,7 @@ public class FormationItem : MonoBehaviour
 /// </summary>
 public enum FormationItemType
 {
-    Weapon,  // 武器
+    Gear,  // 武器
     Skill,   // 技能
 }
 
@@ -321,7 +267,7 @@ public enum FormationItemType
 /// </summary>
 public enum EffectType
 {
-    DirectionReverse,   // 反转方向
+    ReverseDirection,   // 反转方向
     Health,             // 恢复血量
     Shield,             // 护盾
     Coin,               // 金币奖励
@@ -341,16 +287,17 @@ public class FormationItemConfig
     public string itemName;
     public FormationItemType itemType;
     public int level = 1;
-    
+
     [Header("触发设置")]
-    public int requiredTriggerCount = 1;  // 需要触发的次数
+    public int requiredChargeCount = 1;  // 需要触发的次数
     public bool hasCooldown = false;      // 是否有冷却
     public float cooldownTime = 0f;       // 冷却时间（秒）
-    public bool autoResetOnComplete = true; // 完成后是否自动重置计数
-    
+    public int energyConsumption = 0;     // 消耗能量
+
+
     [Header("效果配置")]
     public List<FormationEffectData> effects = new List<FormationEffectData>();
-    
+
     [Header("显示设置")]
     public GameObject visualEffectPrefab;
     public Sprite itemIcon;
@@ -366,9 +313,4 @@ public class FormationEffectData
     public EffectType effectType;
     public float value;           // 效果数值
     public float duration;        // 持续时间（如果需要）
-    public string targetTag;      // 目标标签
-
-    [Header("条件设置")]
-    public bool requireFullCount; // 是否需要完整计数才生效
-    public int triggerThreshold;  // 触发阈值（部分效果可能中途触发）
 }

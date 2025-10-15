@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 {
-    [Header("法阵配置")]
-    public GameObject formatianPrefab;
+    [Header("法阵节点")]
+    public GameObject formatianNodePrefab;
 
     [Header("法阵管理")]
     [SerializeField] private Transform formatianParent; // 法阵节点的父对象
@@ -39,7 +39,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public void CraftFormatian(FormatianData formatianData)
     {
         // 检查输入是否合法和Prefab是否设置
-        if (formatianData == null || formatianPrefab == null || formatianData.listNodeData == null)
+        if (formatianData == null || formatianNodePrefab == null || formatianData.listNodeData == null)
         {
             Debug.LogWarning("法阵数据或Prefab为空，无法创建法阵");
             return;
@@ -55,7 +55,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
             Vector2 pos2D = nodeData.position;
             Vector3 worldPos = new Vector3(pos2D.x, pos2D.y, 0f);
-            GameObject instance = Instantiate(formatianPrefab, worldPos, Quaternion.identity, formatianParent);
+            GameObject instance = Instantiate(formatianNodePrefab, worldPos, Quaternion.identity, formatianParent);
 
             // 获取FormationNode组件并初始化
             FormationNode formationNode = instance.GetComponent<FormationNode>();
@@ -74,7 +74,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
 
         Debug.Log($"成功创建法阵 '{formatianData.formatianName}'，包含 {currentFormatianNodes.Count} 个节点");
-        
+
         // 输出每个节点的详细信息
         foreach (var node in currentFormatianNodes)
         {
@@ -288,7 +288,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
         return null;
     }
-    
+
     /// <summary>
     /// 移除指定节点上的物品
     /// </summary>
@@ -305,7 +305,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
             }
         }
     }
-    
+
     /// <summary>
     /// 获取指定节点上的物品
     /// </summary>
@@ -321,7 +321,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
         return null;
     }
-    
+
     /// <summary>
     /// 检查指定节点是否有物品
     /// </summary>
@@ -337,7 +337,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
         return false;
     }
-    
+
     /// <summary>
     /// 重置所有节点的物品状态
     /// </summary>
@@ -353,7 +353,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
         Debug.Log("已重置所有节点的物品状态");
     }
-    
+
     /// <summary>
     /// 获取所有有物品的节点
     /// </summary>
@@ -361,7 +361,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public List<FormationNode> GetNodesWithItems()
     {
         List<FormationNode> nodesWithItems = new List<FormationNode>();
-        
+
         foreach (var node in currentFormatianNodes)
         {
             if (node != null)
@@ -373,7 +373,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
                 }
             }
         }
-        
+
         return nodesWithItems;
     }
 

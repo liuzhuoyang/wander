@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3499590576993211897}
   - component: {fileID: 2364591841447961231}
   m_Layer: 0
-  m_Name: formatianPrefab
+  m_Name: formation_node
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,3 +106,4 @@ MonoBehaviour:
   nodeIndex: 0
   nodePosition: {x: 0, y: 0}
   isActive: 1
+  item: {fileID: 0}
