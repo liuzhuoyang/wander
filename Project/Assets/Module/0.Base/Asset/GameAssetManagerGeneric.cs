@@ -77,9 +77,15 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     #endregion
 
     #region 获取单位身体素材
-    async UniTask InitUnitPrefab()
+    async UniTask InitUnitPrefab() => dictUnit = await UnitManager.Instance.LoadAllUnitPrefabAsDict();
+    public GameObject GetUnitPrefab(string unitKey)
     {
-        dictUnit = await UnitManager.Instance.LoadAllUnitPrefabAsDict();
+        if (dictUnit.TryGetValue(unitKey, out var prefab))
+        {
+            return prefab;
+        }
+        Debug.LogWarning($"未找到单位预制体: {unitKey}");
+        return null;
     }
     #endregion
 

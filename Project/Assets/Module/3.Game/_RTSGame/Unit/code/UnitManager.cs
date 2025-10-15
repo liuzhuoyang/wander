@@ -17,7 +17,6 @@ namespace RTSDemo.Unit
     /// </summary>
     public class UnitManager : Singleton<UnitManager>
     {
-        [SerializeField] private UnitDataCollection unitDataCollection_SO;
         [SerializeField] private UnitViewConfig unitViewConfig_SO; //单位表现信息集
 
         private Transform unitRoot;
@@ -29,24 +28,11 @@ namespace RTSDemo.Unit
 
         private int SpawnedCount = 0; //记录当前已创建单位的数量，作为单位的标识
 
-        private Dictionary<string, GameObject> unitPrefabDict;
-
         #region 数据获取
         public Material GetHitFeedbackMat(bool isBoss)
         {
             if (isBoss) return unitViewConfig_SO.boss_Hit;
             else return unitViewConfig_SO.default_Hit;
-        }
-        async UniTask LoadUnitPrefab(UnitData data)
-        {
-            //单位身体素材获取
-            GameObject go = await GameAsset.GetAssetAsync<GameObject>(data.m_bodyRef);
-            if (go == null)
-            {
-                Debug.LogError($"未找到 {data.m_actorKey} 的身体素材.");
-            }
-            if (!unitPrefabDict.ContainsKey(data.m_actorKey))
-                unitPrefabDict.Add(data.m_actorKey, go);
         }
         async UniTask LoadUnitPrefabToDict(Dictionary<string, GameObject> dictTarget, UnitData unitData) 
             => dictTarget[unitData.m_actorKey] = await GameAsset.GetPrefabAsync(unitData.m_actorKey, unitData.m_bodyRef);
@@ -54,7 +40,7 @@ namespace RTSDemo.Unit
         {
             var dictUnitPrefab = new Dictionary<string, GameObject>();
             var listHandle = new List<UniTask>();
-            foreach (var data in AllUnit.dictUnitData)
+            foreach (var data in AllUnit.GetUnitDict())
             {
                 listHandle.Add(LoadUnitPrefabToDict(dictUnitPrefab, data.Value));
             }
@@ -70,10 +56,6 @@ namespace RTSDemo.Unit
         {
             enemyUnitList = new HashSet<UnitBase>();
             playerUnitList = new HashSet<UnitBase>();
-
-            unitPrefabDict = new Dictionary<string, GameObject>();
-
-            await GameAsset.LoadAssets(unitDataCollection_SO.GetUnitCollection(), LoadUnitPrefab);
         }
         void OnEnable()
         {
@@ -145,7 +127,7 @@ namespace RTSDemo.Unit
         public UnitBase CreateUnit(string unitName, Vector3 worldPos, bool isEnemy, int unitLevel = 1, bool autoActivate = true)
         {
             //基础单位数据
-            UnitData unitData = unitDataCollection_SO.GetDataByKey(unitName);
+            UnitData unitData = AllUnit.GetUnitData(unitName);
             var objectArgs = new UnitObjectArgs(unitData, unitLevel);
             return CreateUnitRaw(objectArgs, worldPos, isEnemy, autoActivate);
         }
@@ -163,7 +145,7 @@ namespace RTSDemo.Unit
         {
             //创建单位实体
             string unitKey = unitObjectArgs.UnitName;
-            GameObject unit = Instantiate(unitPrefabDict[unitKey], unitRoot);
+            GameObject unit = Instantiate(GameAssetManagerGeneric.Instance.GetUnitPrefab(unitKey), unitRoot);
             unit.name = unitKey + SpawnedCount.ToString("f2");
             unit.transform.position = worldPos;
 
