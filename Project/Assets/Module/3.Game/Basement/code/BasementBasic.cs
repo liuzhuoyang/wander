@@ -99,7 +99,6 @@ namespace RTSDemo.Basement
             }
 
             dynamicArgs.currentMana = Mathf.Min(dynamicArgs.currentMana, dynamicArgs.maxMana.cachedValue);
-            // onManaChange?.Invoke(currentMana, maxMana);
         }
         #endregion
 
