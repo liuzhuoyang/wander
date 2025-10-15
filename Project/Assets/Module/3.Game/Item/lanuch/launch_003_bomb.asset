@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9561dfed2d429469b5b8a5e8be8e63, type: 3}
+  m_Name: launch_003_bomb
+  m_EditorClassIdentifier: 
+  launchableData_SO: {fileID: 11400000, guid: 4844af3dc7f1c5f499589c19cf78bf6d, type: 2}
+  requireTargetToLaunch: 1
+  scanOrder: 2
+  trackTargetIfCan: 0
+  retargetPerLaunch: 1
+  retargetPerCount: 1
+  burstCount: 2
+  burstInterval: 0.3
+  spreadCount: 1
+  spreadAngle: 20
+  gearLaunchVFX: {fileID: 0}
+  gearLaunchSFX: {fileID: 11400000, guid: 76b09bf2cd333e645bfae3994b8826cc, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d95d6e1b9a04370b0b83a54ee4fdac, type: 3}
+  m_Name: all_formation_item
+  m_EditorClassIdentifier: Assembly-CSharp::FormationItemDataCollection
+  DataList:
+  - {fileID: 11400000, guid: 7623991b28b9d4a60adb7cf68e2562fe, type: 2}
+  - {fileID: 11400000, guid: b19312148c4074061a225045ce895b11, type: 2}
+  - {fileID: 11400000, guid: 2cf92a8ceedc54eba9ad9e90f30b5d3f, type: 2}
+  - {fileID: 11400000, guid: 1fb0b47c9ce2c490fb6af3be544c9889, type: 2}
+  - {fileID: 11400000, guid: eee91bec9623d4078a70e91d3e58d439, type: 2}
+  - {fileID: 11400000, guid: 98427a27ef37546e1a2dcd65d0ea888e, type: 2}
+  - {fileID: 11400000, guid: 30d7643c396e64300865a158f330ad7d, type: 2}
+  - {fileID: 11400000, guid: 442a88c38a31a4da78fd1639ae80073d, type: 2}
+  - {fileID: 11400000, guid: a85e4776917c64667b10d656cb0d7627, type: 2}
+  findOnlyLocal: 0

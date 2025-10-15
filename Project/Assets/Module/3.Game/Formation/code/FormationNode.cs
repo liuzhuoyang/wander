@@ -196,17 +196,17 @@ public class FormationNode : MonoBehaviour
         {
             RemoveItem();
         }
-        
+
         // 创建新的物品
         GameObject itemObject = new GameObject();
         itemObject.transform.SetParent(transform);
         itemObject.transform.localPosition = Vector3.zero;
-        
+
         item = itemObject.AddComponent<FormationItem>();
         item.Initialize(config, this);
-        
-        Debug.Log($"节点 {nodeIndex} 设置了物品: {config.itemName} ({config.itemType}), 需要触发 {config.requiredTriggerCount} 次, 冷却: {config.hasCooldown}");
-        
+
+        Debug.Log($"节点 {nodeIndex} 设置了物品: {config.itemName} ({config.itemType}), 需要触发 {config.requiredChargeCount} 次, 冷却: {config.hasCooldown}");
+
         return item;
     }
 
@@ -232,14 +232,6 @@ public class FormationNode : MonoBehaviour
         return item != null;
     }
 
-    /// <summary>
-    /// 检查节点上的物品是否已被触发
-    /// </summary>
-    /// <returns>物品是否已被触发</returns>
-    public bool IsItemTriggered()
-    {
-        return item != null && item.IsTriggered;
-    }
 
     /// <summary>
     /// 触发节点上的物品
@@ -247,7 +239,7 @@ public class FormationNode : MonoBehaviour
     /// <param name="triggerer">触发者</param>
     public void TriggerItem(GameObject triggerer)
     {
-        if (item != null && !item.IsTriggered)
+        if (item != null)
         {
             item.Trigger(triggerer);
         }
@@ -317,7 +309,7 @@ public class FormationNode : MonoBehaviour
         // 如果有物品，绘制物品指示器
         if (item != null)
         {
-            Gizmos.color = item.IsTriggered ? Color.yellow : Color.cyan;
+            Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, 0.3f);
         }
 
@@ -327,10 +319,6 @@ public class FormationNode : MonoBehaviour
         if (item != null)
         {
             label += $"\n{item.ItemName}";
-            if (item.IsTriggered)
-            {
-                label += " (已触发)";
-            }
         }
         UnityEditor.Handles.Label(transform.position + Vector3.up * 0.8f, label);
 #endif

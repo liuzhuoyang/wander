@@ -23,8 +23,13 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
         effectHandlers = new Dictionary<EffectType, System.Action<FormationEffectData, GameObject>>
         {
             { EffectType.SpeedBoost, HandleSpeedBoost },
-            { EffectType.DirectionReverse, HandleDirectionReverse },
+            { EffectType.ReverseDirection, HandleDirectionReverse },
             { EffectType.Shield, HandleShield },
+            { EffectType.Health, HandleHealthRestore },
+            { EffectType.Coin, HandleCoinReward },
+            { EffectType.DoubleJump, HandleDoubleJump },
+            { EffectType.Dash, HandleDash },
+            { EffectType.Clone, HandleClone },
         };
     }
 
@@ -67,7 +72,7 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     /// <param name="triggerer">触发者</param>
     private void HandleSpeedBoost(FormationEffectData effectData, GameObject triggerer)
     {
-        Debug.Log($"执行加速效果：增加 {effectData.value} 速度给 {triggerer.name}，持续 {effectData.duration} 秒");
+        Debug.Log($"执行加速效果：增加 {effectData.value} 速度给 {triggerer.name}，持续 {effectData.value} 秒");
 
         // TODO: 实现加速逻辑
         // 例如：triggerer.GetComponent<MovementComponent>()?.ApplySpeedBoost(effectData.value, effectData.duration);
@@ -100,19 +105,6 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     }
 
     /// <summary>
-    /// 处理武器效果
-    /// </summary>
-    /// <param name="effectData">效果数据</param>
-    /// <param name="triggerer">触发者</param>
-    private void HandleWeaponEffect(FormationEffectData effectData, GameObject triggerer)
-    {
-        Debug.Log($"执行武器效果：给予 {triggerer.name} 武器效果");
-
-        // TODO: 通过其他接口处理武器效果
-        // 例如：WeaponManager.Instance.ApplyWeaponEffect(triggerer, effectData);
-    }
-
-    /// <summary>
     /// 处理护盾效果
     /// </summary>
     /// <param name="effectData">效果数据</param>
@@ -123,6 +115,37 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
 
         // TODO: 实现护盾逻辑
         // 例如：triggerer.GetComponent<ShieldComponent>()?.ApplyShield(effectData.value, effectData.duration);
+    }
+
+    /// <summary>
+    /// 处理双跳效果
+    /// </summary>
+    /// <param name="effectData">效果数据</param>
+    /// <param name="triggerer">触发者</param>
+    private void HandleDoubleJump(FormationEffectData effectData, GameObject triggerer)
+    {
+        Debug.Log($"执行双跳效果：给予 {triggerer.name} 双跳，持续 {effectData.duration} 秒");
+    }
+
+
+    /// <summary>
+    /// 处理冲刺效果
+    /// </summary>
+    /// <param name="effectData">效果数据</param>
+    /// <param name="triggerer">触发者</param>
+    private void HandleDash(FormationEffectData effectData, GameObject triggerer)
+    {
+        Debug.Log($"执行冲刺效果：给予 {triggerer.name} 冲刺，持续 {effectData.duration} 秒");
+    }
+
+    /// <summary>
+    /// 处理复制效果
+    /// </summary>
+    /// <param name="effectData">效果数据</param>
+    /// <param name="triggerer">触发者</param>
+    private void HandleClone(FormationEffectData effectData, GameObject triggerer)
+    {
+        Debug.Log($"执行复制效果：给予 {triggerer.name} 复制，持续 {effectData.duration} 秒");
     }
 
 
