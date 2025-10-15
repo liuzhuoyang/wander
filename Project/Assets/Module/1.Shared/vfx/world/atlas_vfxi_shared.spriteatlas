@@ -39,15 +39,18 @@ SpriteAtlas:
     packedSpriteRenderDataKeys:
     - 85a7d7d4b20ed43ad8ed1bd6c91ba037: 21300000
     - 1b5b2a560c34a43c89d2607a53be209e: 21300000
+    - e8c48f69f973342058fb8f2568a54635: 21300000
     - df3002b9b0d194ee59e5271386eef34a: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 85a7d7d4b20ed43ad8ed1bd6c91ba037, type: 3}
   - {fileID: 21300000, guid: 1b5b2a560c34a43c89d2607a53be209e, type: 3}
+  - {fileID: 21300000, guid: e8c48f69f973342058fb8f2568a54635, type: 3}
   - {fileID: 21300000, guid: df3002b9b0d194ee59e5271386eef34a, type: 3}
   m_PackedSpriteNamesToIndex:
   - vfx_tex_shared_ring_001
   - vfx_tex_shared_star_001
+  - vfx_tex_shared_ring_002
   - vfx_tex_shared_smoke_001
   m_RenderDataMap: {}
   m_Tag: atlas_vfxi_shared
