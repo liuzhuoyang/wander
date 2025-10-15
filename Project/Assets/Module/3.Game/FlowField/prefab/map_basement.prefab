@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5374145857144959714, guid: e0137b43a1f2e334682a676b61e12e01, type: 3}
       propertyPath: nodeCost
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6940279618473316405, guid: e0137b43a1f2e334682a676b61e12e01, type: 3}
       propertyPath: m_Name

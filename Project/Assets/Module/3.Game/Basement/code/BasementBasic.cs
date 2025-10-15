@@ -23,7 +23,7 @@ namespace RTSDemo.Basement
         public float currentShield => dynamicArgs.currentShield;
         public float currentShieldRatio => dynamicArgs.currentShield / currentMaxShield;
         public float currentMaxShield => dynamicArgs.maxShield.cachedValue;
-        public float currentMaxMana => dynamicArgs.maxMana.cachedValue;
+        
         //Others
         public bool IsDead => isDead;
         public bool IsTargetable => !isDead;
@@ -33,10 +33,8 @@ namespace RTSDemo.Basement
         public BattleActorMotionLayer motionLayer => BattleActorMotionLayer.Ground;
         public BuffHandler m_buffHandler => buffHandler;
 
-        public const float COLLISION_EXTRUDE = 0.5f;
-
         #region 基地生命周期
-        public void Init(BasementData basementData, Vector2 basementSize)
+        public void Init(BasementData basementData)
         {
             dynamicArgs = new BasementDynamicArgs(basementData);
             teamMask = TeamMask.Player;
@@ -44,13 +42,6 @@ namespace RTSDemo.Basement
             //添加初始组件
             buffHandler = gameObject.AddComponent<BuffHandler>();
             hitBox = GetComponent<Collider2D>();
-
-            //设置碰撞体
-            if (hitBox == null)
-            {
-                hitBox = gameObject.AddComponent<BoxCollider2D>();
-            }
-            (hitBox as BoxCollider2D).size = basementSize + Vector2.one * COLLISION_EXTRUDE;
 
             //初始化技能
             if (basementData.basementAbilities != null && basementData.basementAbilities.Length > 0)
@@ -69,36 +60,7 @@ namespace RTSDemo.Basement
         {
             dynamicArgs.currentHealth = currentMaxHealth;
             dynamicArgs.currentShield = currentMaxShield;
-            dynamicArgs.currentMana = currentMaxMana;
             isDead = false;
-        }
-        #endregion
-
-        #region Mana支持
-        public bool IsManaEnough(float manaCost)
-        {
-            return dynamicArgs.currentMana >= manaCost;
-        }
-        public void UseMana(float manaCost)
-        {
-            dynamicArgs.currentMana -= manaCost;
-        }
-        public void GainMana(AttributeModifyType modifyType, float value)
-        {
-            switch (modifyType)
-            {
-                case AttributeModifyType.Add:
-                    dynamicArgs.currentMana += value;
-                    break;
-                case AttributeModifyType.AddPercentage:
-                    dynamicArgs.currentMana += currentMaxMana * value;
-                    break;
-                case AttributeModifyType.Multiply:
-                    dynamicArgs.currentMana *= value;
-                    break;
-            }
-
-            dynamicArgs.currentMana = Mathf.Min(dynamicArgs.currentMana, dynamicArgs.maxMana.cachedValue);
         }
         #endregion
 

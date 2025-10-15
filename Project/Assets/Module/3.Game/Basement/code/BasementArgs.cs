@@ -16,7 +16,6 @@ namespace RTSDemo.Basement
         #region 动态数据
         public float currentHealth;
         public float currentShield;
-        public float currentMana;
         #endregion
 
         public BasementDynamicArgs(BasementData basementData_SO)
@@ -27,7 +26,6 @@ namespace RTSDemo.Basement
             maxMana = new BuffProperty(basementData_SO.maxMana);
             currentHealth = maxHealth.cachedValue;
             currentShield = maxShield.cachedValue;
-            currentMana = maxMana.cachedValue;
         }
     }
 }
