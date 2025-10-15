@@ -12,6 +12,7 @@ namespace SimpleAudioSystem
         [InfoBox("若配置设置了多个音频，随机选中播放，否则播放默认的音频")]
         [SerializeField] private AssetReferenceT<AudioClip>[] clips;
         [SerializeField, ReadOnly] private string[] clipKeys;
+        //获取音频clip，用于AudioManager执行播放
         public override string GetClipKey()
         {
             if (clips == null || clips.Length == 0)
@@ -19,6 +20,7 @@ namespace SimpleAudioSystem
             else
                 return clipKeys[Random.Range(0, clipKeys.Length)];
         }
+        //获取所有的音频clips，用于AudioManager预先加载
         public string[] GetClipKeys()
         {
             if (clips == null || clips.Length == 0)

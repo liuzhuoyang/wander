@@ -266,9 +266,9 @@ namespace SimpleAudioSystem
 
         #region SFX音效
         //默认AudioSource播放音频
-        public async Task<AudioClip> PlaySFX(string sfxKey, float volumeScale = 1) => await PlaySFX(sfx_default, sfxKey, volumeScale);
+        public AudioClip PlaySFX(string sfxKey, float volumeScale = 1) => PlaySFX(sfx_default, sfxKey, volumeScale);
         //指定AudioSource播放音频
-        public async UniTask<AudioClip> PlaySFX(AudioSource targetSource, string sfxKey, float volumeScale)
+        public AudioClip PlaySFX(AudioSource targetSource, string sfxKey, float volumeScale)
         {
             if (string.IsNullOrEmpty(sfxKey))
                 return null;
@@ -280,7 +280,7 @@ namespace SimpleAudioSystem
             return clip;
         }
         //指定AudioSource播放循环音频
-        async Task<AudioClip> PlaySFXLoop(AudioSource targetSource, string sfxKey, float volumeScale, float transition = 1f)
+        AudioClip PlaySFXLoop(AudioSource targetSource, string sfxKey, float volumeScale, float transition = 1f)
         {
             if (string.IsNullOrEmpty(sfxKey))
             {
@@ -295,7 +295,7 @@ namespace SimpleAudioSystem
 
             return clip;
         }
-        public async Task<AudioClip> PlaySFXLoop(string sfxKey, float volumeScale = 1)
+        public AudioClip PlaySFXLoop(string sfxKey, float volumeScale = 1)
         {
             if (loopSources == null)
             {
@@ -306,14 +306,14 @@ namespace SimpleAudioSystem
             if (source != null)
             {
                 source.volume = volumeScale;
-                return await source.PlaySFX(sfxKey);
+                return source.PlaySFX(sfxKey);
             }
             
             source = loopSources.First(x => !x.isPlaying);
             if (source != null)
             {
                 source.volume = volumeScale;
-                return await source.PlaySFX(sfxKey);
+                return source.PlaySFX(sfxKey);
             }
 
             if (loopSources.Count < MAX_LOOP_SOURCE)
@@ -323,13 +323,13 @@ namespace SimpleAudioSystem
                 loopSources.Add(source);
 
                 source.volume = volumeScale;
-                return await source.PlaySFX(sfxKey);
+                return source.PlaySFX(sfxKey);
             }
             else
             {
                 source = loopSources[0];
                 source.volume = volumeScale;
-                return await source.PlaySFX(sfxKey);
+                return source.PlaySFX(sfxKey);
             }
         }
         public void StopSFXLoop(string sfxKey)
@@ -465,10 +465,10 @@ namespace SimpleAudioSystem
             {
                 source.outputAudioMixerGroup = group;
             }
-            public async Task<AudioClip> PlaySFX(string sfxKey)
+            public AudioClip PlaySFX(string sfxKey)
             {
                 this.sfxKey = sfxKey;
-                return await AudioManager.Instance.PlaySFXLoop(source, sfxKey, volume, 0);
+                return AudioManager.Instance.PlaySFXLoop(source, sfxKey, volume, 0);
             }
             public void Stop()
             {
