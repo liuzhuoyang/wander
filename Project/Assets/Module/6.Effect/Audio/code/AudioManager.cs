@@ -10,8 +10,6 @@ namespace SimpleAudioSystem
 {
     public class AudioManager : Singleton<AudioManager>
     {
-        [SerializeField] private AudioDataCollection audioDataCollection;
-
         [Header("Audio source")]
         [SerializeField] private AudioSource ambience_loop;
         [SerializeField] private AudioSource music_loop;
@@ -48,9 +46,39 @@ namespace SimpleAudioSystem
         protected const string SFX_GROUP = "SFX";
 
         #region 数据获取
-        protected async UniTask<AudioClip> GetBGMClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetBGMByKey(audioKey));
-        protected async UniTask<AudioClip> GetAMBClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetAMBByKey(audioKey));
-        protected async UniTask<AudioClip> GetSFXClipByKey(string audioKey) => await GameAsset.GetAudioAsync(audioDataCollection.GetSFXByKey(audioKey));
+        async UniTask<AudioClip> GetBGMClipByKey(string audioKey) => await GameAsset.GetAudioAsync(AllBGM.GetBGMData(audioKey).GetClipKey());
+        async UniTask<AudioClip> GetAMBClipByKey(string audioKey) => await GameAsset.GetAudioAsync(AllAMB.GetAMBData(audioKey).GetClipKey());
+        static AudioClip GetSFXClipByKey(string sfxKey) => GameAssetManagerGeneric.Instance.GetSFXClip(AllSFX.GetSFXData(sfxKey).GetClipKey());
+
+        async static UniTask LoadAudioClipToDict(Dictionary<string, AudioClip> dictTarget, AudioData audioData)
+        {
+            var groupData = audioData as AudioGroupData;
+            if (groupData != null)
+            {
+                var keys = groupData.GetClipKeys();
+                foreach (var key in keys)
+                {
+                    dictTarget[key] = await GameAsset.GetAudioAsync(key);
+                }
+            }
+            else
+            {
+                var key = audioData.GetClipKey();
+                dictTarget[key] = await GameAsset.GetAudioAsync(key);
+            }
+        }
+        public static async UniTask<Dictionary<string, AudioClip>> LoadAllSFXAsDict()
+        {
+            var dictSFXClip = new Dictionary<string, AudioClip>();
+            var listHandle = new List<UniTask>();
+            foreach (var data in AllSFX.GetDictSFXData())
+            {
+                listHandle.Add(LoadAudioClipToDict(dictSFXClip, data.Value));
+            }
+            await UniTask.WhenAll(listHandle);
+
+            return dictSFXClip;
+        }
         #endregion
 
         #region 音量控制
@@ -244,7 +272,7 @@ namespace SimpleAudioSystem
         {
             if (string.IsNullOrEmpty(sfxKey))
                 return null;
-            AudioClip clip = await GetSFXClipByKey(sfxKey);
+            AudioClip clip = GetSFXClipByKey(sfxKey);
             if (clip != null)
                 targetSource.PlayOneShot(clip, volumeScale);
             else
@@ -259,7 +287,7 @@ namespace SimpleAudioSystem
                 targetSource.Stop();
                 return null;
             }
-            AudioClip clip = await GetSFXClipByKey(sfxKey);
+            AudioClip clip = GetSFXClipByKey(sfxKey);
             targetSource.clip = clip;
             targetSource.loop = true;
             targetSource.Play();
@@ -315,7 +343,7 @@ namespace SimpleAudioSystem
         //将目标AudioSource从当前播放的SFX逐渐过渡到指定SFX
         public async void FadeInAndOutSFX(AudioSource targetSource, string sfxKey, float maxVolume, float duration, float fadeIn, float fadeOut)
         {
-            var clip = await GetSFXClipByKey(sfxKey);
+            var clip = GetSFXClipByKey(sfxKey);
             StartCoroutine(coroutineFadeInAndOutSFX(targetSource, clip, maxVolume, duration, fadeIn, fadeOut));
         }
         #endregion

@@ -62,17 +62,15 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     }
 
     #region 读取音频资源
-    async UniTask InitAudioAsset()
+    async UniTask InitAudioAsset() => dictSFXClip = await AudioManager.LoadAllSFXAsDict();
+    public AudioClip GetSFXClip(string sfxKey)
     {
-        dictSFXClip = new Dictionary<string, AudioClip>();
-        await LoadAsset(AllAudio.dictSFXData.Keys, LoadAudio);
-    }
-
-    async UniTask LoadAudio(string audioName)
-    {
-        AudioData data = AllAudio.dictSFXData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
-        dictSFXClip.Add(audioName, clip);
+        if (dictSFXClip.TryGetValue(sfxKey, out var clip))
+        {
+            return clip;
+        }
+        Debug.LogWarning($"未找到音效: {sfxKey}");
+        return null;
     }
     #endregion
 

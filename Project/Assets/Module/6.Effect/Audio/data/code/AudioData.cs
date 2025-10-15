@@ -8,6 +8,6 @@ namespace SimpleAudioSystem
     public class AudioData : ScriptableObject
     {
         [SerializeField] protected AssetReferenceT<AudioClip> clip;
-        public virtual AssetReferenceT<AudioClip> GetClipRef() => clip;
+        public virtual string GetClipKey() => this.name;
     }
 }

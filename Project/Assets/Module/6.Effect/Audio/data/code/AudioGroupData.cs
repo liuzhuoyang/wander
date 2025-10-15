@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine.AddressableAssets;
 using UnityEngine;
+using UnityEditor;
 
 namespace SimpleAudioSystem
 {
@@ -10,12 +11,32 @@ namespace SimpleAudioSystem
     {
         [InfoBox("若配置设置了多个音频，随机选中播放，否则播放默认的音频")]
         [SerializeField] private AssetReferenceT<AudioClip>[] clips;
-        public override AssetReferenceT<AudioClip> GetClipRef()
+        [SerializeField, ReadOnly] private string[] clipKeys;
+        public override string GetClipKey()
         {
             if (clips == null || clips.Length == 0)
-                return base.GetClipRef();
+                return base.GetClipKey();
             else
-                return clips[Random.Range(0, clips.Length)];
+                return clipKeys[Random.Range(0, clipKeys.Length)];
         }
+        public string[] GetClipKeys()
+        {
+            if (clips == null || clips.Length == 0)
+                return new string[] { base.GetClipKey() };
+            else
+                return clipKeys;
+        }
+#if UNITY_EDITOR
+        [Button("初始化数据")]
+        public void InitData()
+        {
+            clipKeys = new string[clips.Length];
+            for (int i = 0; i < clips.Length; i++)
+            {
+                clipKeys[i] = clips[i].editorAsset.name;
+            }
+            EditorUtility.SetDirty(this);
+        }
+#endif
     }
 }
