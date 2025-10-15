@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 {
+    #region 字段和属性
     [Header("法阵节点")]
     public GameObject formatianNodePrefab;
+
+    [SerializeField] private FormationItemDataCollection formationItemDataCollection;
 
     [Header("法阵管理")]
     [SerializeField] private Transform formatianParent; // 法阵节点的父对象
@@ -14,7 +17,9 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
     // 节点索引到节点的映射
     private Dictionary<int, GameObject> nodeIndexMap = new Dictionary<int, GameObject>();
+    #endregion
 
+    #region Unity生命周期
     protected override void Awake()
     {
         base.Awake();
@@ -27,6 +32,15 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
     }
 
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        // 清理当前法阵
+        DestroyCurrentFormatian();
+    }
+    #endregion
+
+    #region 法阵创建和销毁
     public void CraftFormatian(string formatianName)
     {
         CraftFormatian(AllFormatian.dictData[formatianName]);
@@ -106,7 +120,9 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
         Debug.Log("已删除当前法阵");
     }
+    #endregion
 
+    #region 法阵查询方法
     /// <summary>
     /// 获取当前法阵的所有节点
     /// </summary>
@@ -134,7 +150,9 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     {
         return nodeIndexMap.ContainsKey(index) ? nodeIndexMap[index] : null;
     }
+    #endregion
 
+    #region 节点导航方法
     /// <summary>
     /// 获取下一个节点的索引
     /// </summary>
@@ -260,7 +278,9 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         string lastName = currentFormatianNodes[currentFormatianNodes.Count - 1].name;
         return lastName.Contains($"_{index}");
     }
+    #endregion
 
+    #region 节点物品管理
     /// <summary>
     /// 为指定节点设置物品
     /// </summary>
@@ -376,11 +396,5 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
         return nodesWithItems;
     }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        // 清理当前法阵
-        DestroyCurrentFormatian();
-    }
+    #endregion
 }

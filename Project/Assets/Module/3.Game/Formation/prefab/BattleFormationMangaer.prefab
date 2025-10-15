@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleFormatianMangaer
   formatianNodePrefab: {fileID: 6280529068264986759, guid: 9ff55512ccddf4dc481b592fb5e4f9ad, type: 3}
+  formationItemDataCollection: {fileID: 11400000, guid: 346ee543d986b43e1906a3fa29518e59, type: 2}
   formatianParent: {fileID: 0}
 --- !u!114 &8646376852680399350
 MonoBehaviour:

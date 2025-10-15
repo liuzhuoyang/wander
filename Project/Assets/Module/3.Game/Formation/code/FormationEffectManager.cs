@@ -111,7 +111,7 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     /// <param name="triggerer">触发者</param>
     private void HandleShield(FormationEffectData effectData, GameObject triggerer)
     {
-        Debug.Log($"执行护盾效果：给予 {triggerer.name} 护盾，持续 {effectData.duration} 秒");
+        //Debug.Log($"执行护盾效果：给予 {triggerer.name} 护盾，持续 {effectData} 秒");
 
         // TODO: 实现护盾逻辑
         // 例如：triggerer.GetComponent<ShieldComponent>()?.ApplyShield(effectData.value, effectData.duration);
@@ -124,7 +124,7 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     /// <param name="triggerer">触发者</param>
     private void HandleDoubleJump(FormationEffectData effectData, GameObject triggerer)
     {
-        Debug.Log($"执行双跳效果：给予 {triggerer.name} 双跳，持续 {effectData.duration} 秒");
+       // Debug.Log($"执行双跳效果：给予 {triggerer.name} 双跳，持续 {effectData} 秒");
     }
 
 
@@ -135,7 +135,7 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     /// <param name="triggerer">触发者</param>
     private void HandleDash(FormationEffectData effectData, GameObject triggerer)
     {
-        Debug.Log($"执行冲刺效果：给予 {triggerer.name} 冲刺，持续 {effectData.duration} 秒");
+      //  Debug.Log($"执行冲刺效果：给予 {triggerer.name} 冲刺，持续 {effectData} 秒");
     }
 
     /// <summary>
@@ -145,7 +145,7 @@ public class FormationEffectManager : Singleton<FormationEffectManager>
     /// <param name="triggerer">触发者</param>
     private void HandleClone(FormationEffectData effectData, GameObject triggerer)
     {
-        Debug.Log($"执行复制效果：给予 {triggerer.name} 复制，持续 {effectData.duration} 秒");
+       // Debug.Log($"执行复制效果：给予 {triggerer.name} 复制，持续 {effectData.duration} 秒");
     }
 
 

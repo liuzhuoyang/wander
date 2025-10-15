@@ -219,7 +219,7 @@ public class FormationItem : MonoBehaviour
         foreach (var effect in effects)
         {
             FormationEffectManager.Instance.ExecuteEffect(effect, triggerer);
-            
+
             Debug.Log($"执行完整效果: {effect.effectType} 给 {triggerer.name}");
 
         }
@@ -312,5 +312,4 @@ public class FormationEffectData
     [Header("效果基础信息")]
     public EffectType effectType;
     public float value;           // 效果数值
-    public float duration;        // 持续时间（如果需要）
 }
