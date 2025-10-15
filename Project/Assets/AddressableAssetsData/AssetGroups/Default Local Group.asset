@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: d4a384778c6f44d3b8a9f774e1b54c0f
   m_SerializeEntries:
+  - m_GUID: 4ec683c7e5597a24e84337d7fc1f5c5b
+    m_Address: basement_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - basement
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 694a9bc66f9076642bb3a7c0274a2963
     m_Address: building_turret
     m_ReadOnly: 0

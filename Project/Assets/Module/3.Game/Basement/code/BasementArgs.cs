@@ -10,7 +10,6 @@ namespace RTSDemo.Basement
         #region 可增益数据
         public BuffProperty maxHealth;
         public BuffProperty maxShield;
-        public BuffProperty maxMana;
         #endregion
 
         #region 动态数据
@@ -23,7 +22,6 @@ namespace RTSDemo.Basement
             baseBasementData = basementData_SO;
             maxHealth = new BuffProperty(basementData_SO.maxHealth);
             maxShield = new BuffProperty(basementData_SO.maxShield);
-            maxMana = new BuffProperty(basementData_SO.maxMana);
             currentHealth = maxHealth.cachedValue;
             currentShield = maxShield.cachedValue;
         }

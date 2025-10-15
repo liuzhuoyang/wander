@@ -26,14 +26,15 @@ namespace RTSDemo.Basement
         {
             Destroy(basementRoot.gameObject);
         }
-        public void CreateBasement(string basementKey, Vector2 center)
+        public async Task CreateBasement(string basementKey, Vector2 center)
         {
-            var basementObj = new GameObject("Basement");
+            var basementData = basementDataCollection.GetDataByKey(basementKey);
+            var basementObj = Instantiate(await GameAsset.GetPrefabAsync(basementKey, basementData.basementPrefab));
             basementObj.transform.SetParent(basementRoot);
             basementObj.transform.position = center;
 
             currentBasement = basementObj.AddComponent<BasementBasic>();
-            currentBasement.Init(basementDataCollection.GetDataByKey(basementKey));
+            currentBasement.Init(basementData);
         }
 
         #region 基地技能

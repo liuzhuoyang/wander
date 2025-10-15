@@ -10,10 +10,7 @@ namespace RTSDemo.Basement
     {
         [BoxGroup("基地基础数值")] public int maxHealth = 1000;
         [BoxGroup("基地基础数值")] public int maxShield = 1000;
-        [BoxGroup("基地基础数值")] public int maxMana = 100;
-        [TabGroup("墙体素材")] public AssetReference wallStraightRef;
-        [TabGroup("墙体素材")] public AssetReference wallCornerConnectSpriteRef;
-        [TabGroup("墙体素材")] public AssetReference wallCornerRef;
+        [TabGroup("基地素材")] public AssetReferenceGameObject basementPrefab;
         [TabGroup("基地技能")] public BasementSkillData[] basementAbilities;
         public string m_basementKey => this.name;
     }
