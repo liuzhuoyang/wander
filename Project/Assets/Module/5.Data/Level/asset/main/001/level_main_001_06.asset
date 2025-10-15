@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c347f912033845faaf817ee10e70458, type: 3}
   m_Name: level_main_001_06
   m_EditorClassIdentifier: 
-  levelName: level_main_001_05
-  levelIndex: 5
+  levelName: level_main_001_06
+  levelIndex: 6
   levelType: 0
   chapterID: 1
-  levelID: 5
+  levelID: 6
   themeName: theme_001
+  mapName: 
   cameraPos: 0
   totalWave: 15
   unitLevel: 20
