@@ -1,8 +1,10 @@
 using System.Collections.Generic;
-using RTSDemo.Unit;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+
+using RTSDemo.Basement;
+using RTSDemo.Unit;
 
 [System.Serializable]
 public struct EnemyData
@@ -17,6 +19,8 @@ public class LevelData : ScriptableObject
     public int levelID;
     [BoxGroup("Scene")]
     public AssetReferenceGameObject mapPrefab;
+    [BoxGroup("Basement")]
+    public BasementData basementData;
     [BoxGroup("Scene")]
     [ValueDropdown("GetFormationList")]
     public string formationName;

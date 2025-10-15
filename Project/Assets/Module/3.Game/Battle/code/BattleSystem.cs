@@ -1,11 +1,15 @@
 using UnityEngine;
 using Cysharp.Threading.Tasks;
-using SimpleAudioSystem;
-using RTSDemo.Unit;
+
 using BattleLaunch.Bullet;
+using SimpleAudioSystem;
+using CameraUtility;
+using RTSDemo.Unit;
 using BattleGear;
 using RTSDemo.Zone;
-using CameraUtility;
+using RTSDemo.Basement;
+using BattleMap.Grid.FlowField;
+using RTSDemo.Grid;
 
 public class BattleSystem : BattleSystemBase<BattleSystem>
 {
@@ -14,7 +18,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     public override async UniTask Init()
     {
         await base.Init();
-        battleControllerPrefab = await GameAsset.GetPrefabAsync("rts_battle_controller");
+        battleControllerPrefab = await GameAsset.GetPrefabAsync("projectwander_battle_controller");
     }
 
     public override void Clear()
@@ -48,10 +52,12 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         await GameAssetManagerBattle.Instance.OnLoadBattleAsset();
 
         UIMain.Instance.OnModeUI("battle");
-        Debug.Log(levelData == null);
         BattleFormationMangaer.Instance.CraftFormatian(levelData.formationName);
         await BattleScenesMangaer.Instance.LoadScene(levelData);
-
+        await BasementControl.Instance.CreateBasement(levelData.basementData.m_basementKey, Vector2.zero);
+        
+        //加载完各项地图后，刷新flowfield
+        RTSGridEvent.Call_OnGridNodeChange();
         //关闭过场
         TransitControl.CloseTransit();
     }
@@ -77,8 +83,11 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnBattleStartPhaseEnter()
     {
         //战斗开始 - 进入阶段
-
         await base.OnBattleStartPhaseEnter();
+
+        //创建必要的战斗内控制器
+        battleController = Instantiate(battleControllerPrefab, this.transform);
+
         ActingSystem.Instance.OnActing(this.name);
         await OnLoadLevel();
 
@@ -91,9 +100,6 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //读取玩家数据，然后创建对应场景人物
         CameraManager.Instance.OnBattleEnter();
         BattleScenesMangaer.Instance.LoadUserData();
-
-        //创建战斗内控制器
-        battleController = Instantiate(battleControllerPrefab, this.transform);
 
         OnChangeBattleState(BattleStates.PrepareStart);
         ActingSystem.Instance.StopActing(this.name);

@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: 72057adc819a0428f8d596815600ab86
   m_SerializeEntries:
   - m_GUID: d462c6ce92fdc3f4fbbbebc861723947
-    m_Address: rts_battle_controller
+    m_Address: projectwander_battle_controller
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

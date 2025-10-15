@@ -20,6 +20,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_SubObjectGUID: 
     m_EditorAssetChanged: 1
+  basementData: {fileID: 11400000, guid: 4732f65e994665a49b6d814c80d548ed, type: 2}
   formationName: formatian_asset_001
   totalWave: 15
   unitStartLevel: 1

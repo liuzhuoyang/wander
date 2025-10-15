@@ -14,32 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: module_battle_grid
   m_GUID: 9766db7096d724287bd04c39c00c53d2
-  m_SerializeEntries:
-  - m_GUID: 050e3cfbf405a3f4fb74ac85a516fc5f
-    m_Address: vfx_battle_grid_buff
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6769de0596c9943179ab9221de42d311
-    m_Address: vfx_battle_grid_merge
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6943f41805089461e9ee5b903cdbc564
-    m_Address: sfx_battle_grid_merge
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bebd722d7bf424b33a521a8a3a87b0d9
-    m_Address: sfx_battle_grid_place
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c3aa03a9f770548e9bfd158412846e92
-    m_Address: sfx_battle_grid_pickup
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}
   m_SchemaSet:
