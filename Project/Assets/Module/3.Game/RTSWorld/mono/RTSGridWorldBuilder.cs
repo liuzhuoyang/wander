@@ -13,6 +13,14 @@ namespace RTSDemo.Grid
             gridWorld = BuildGrid();
             RTSGridWorldSystem.Instance.Init(gridWorld);
         }
+        void OnEnable()
+        {
+            RTSGridEvent.E_OnGridNodeChange += RefreshGridWorld;
+        }
+        void OnDisable()
+        {
+            RTSGridEvent.E_OnGridNodeChange -= RefreshGridWorld;
+        }
         protected override RTSGridWorld CreateGraph() => new RTSGridWorld(nodeWidth, gridSize, gridOffset.x, gridOffset.y);
 
         [Button("Refresh Grid World")]

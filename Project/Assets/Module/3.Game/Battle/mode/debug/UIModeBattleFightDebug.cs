@@ -34,7 +34,7 @@ public class UIModeBattleFightDebug : DebuggerSharedMenu
 
     public void OnDebugSpawnEnemy()
     {
-        UnitManager.Instance.CreateUnit("unit_zreep_melee_001", Random.insideUnitCircle * 5, true, 1);
+        UnitManager.Instance.CreateUnit("unit_zreep_melee_001", GeometryUtil.RandomPointInCircle(Vector2.zero, 10, 15), true, 1);
     }
     public void OnDebugInvincible()
     {

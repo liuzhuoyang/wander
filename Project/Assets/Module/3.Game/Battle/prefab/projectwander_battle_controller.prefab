@@ -143,14 +143,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6478896493586131015}
-  - component: {fileID: 3718969409376988067}
-  - component: {fileID: 5919720574791407080}
+  - component: {fileID: 2240817524480802852}
+  - component: {fileID: 5442832894687022849}
   m_Layer: 0
   m_Name: GridControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6478896493586131015
 Transform:
@@ -167,7 +167,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7158258548300280642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3718969409376988067
+--- !u!114 &2240817524480802852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,24 +176,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7519982288373359520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db7c54b52d2814d76a36a4b64471266f, type: 3}
+  m_Script: {fileID: 11500000, guid: 038f397e83014bd42bd98381b4f6c8f1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BattleMap.Grid.FlowField.Demo.FlowFieldControl
---- !u!114 &5919720574791407080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7519982288373359520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65c1ffa239116547be2a673f980cfa6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BattleMap.Grid.FlowField.Demo.FlowFieldBuilder
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Grid.RTSGridWorldBuilder
   nodeWidth: 1
   gridOffset: {x: -14, y: -14}
   gridSize: {x: 30, y: 30}
+--- !u!114 &5442832894687022849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7519982288373359520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4ac12a3a099e7408c641e99b22f545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Grid.RTSGridWorldSystem
 --- !u!1 &8143090759060509429
 GameObject:
   m_ObjectHideFlags: 0

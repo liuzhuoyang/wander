@@ -1,10 +1,7 @@
 using UnityEngine;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
-using RTSDemo.Grid;
 using RTSDemo.Basement.Skill;
 
 namespace RTSDemo.Basement
@@ -18,12 +15,14 @@ namespace RTSDemo.Basement
 
         public BasementBasic m_currentBasement => currentBasement;
 
-        public async Task Init()
+        protected override void Awake()
         {
+            base.Awake();
             basementRoot = new GameObject("[Basement]").transform;
         }
-        public void CleanUp()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
             Destroy(basementRoot.gameObject);
         }
         public async Task CreateBasement(string basementKey, Vector2 center)

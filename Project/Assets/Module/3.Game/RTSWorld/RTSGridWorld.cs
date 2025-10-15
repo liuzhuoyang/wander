@@ -16,7 +16,7 @@ namespace RTSDemo.Grid
                 for (int y = 0; y < gridRange.y; y++)
                 {
                     Vector3 worldPos = new Vector3(nodeWidth * x + gridOffset.x, nodeWidth * y + gridOffset.y, 0);
-                    nodes[x, y] = new RTSGridNode(false, worldPos, new Vector2Int(x, y));
+                    nodes[x, y] = new RTSGridNode(worldPos, new Vector2Int(x, y));
                 }
             }
             //创建一个flowfield，该flowfield与grid world共享节点
