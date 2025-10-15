@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d671f19a047a64ec59086ab1a2e51158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleFormatianMangaer
-  formatianPrefab: {fileID: 6280529068264986759, guid: 9ff55512ccddf4dc481b592fb5e4f9ad, type: 3}
+  formatianNodePrefab: {fileID: 6280529068264986759, guid: 9ff55512ccddf4dc481b592fb5e4f9ad, type: 3}
   formatianParent: {fileID: 0}
 --- !u!114 &8646376852680399350
 MonoBehaviour:
