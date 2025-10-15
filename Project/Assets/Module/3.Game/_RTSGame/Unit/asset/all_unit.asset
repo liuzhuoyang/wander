@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2fc4c9d83a2dc643ae5071f84b2022b, type: 3}
   m_Name: all_unit
   m_EditorClassIdentifier: 
-  DataList:
+  path: Assets/Module/3.Game/_RTSGame/Unit/asset/
+  listUnitData:
   - {fileID: 11400000, guid: 331864784af12ec4d924c3ca7182f51e, type: 2}
   - {fileID: 11400000, guid: 1d7387500d484fb42a0cdd0eedd9a953, type: 2}
   - {fileID: 11400000, guid: 693042833578d1a40817e5606c3c4a96, type: 2}
   - {fileID: 11400000, guid: 540fce506ee46b2429d38e3dc3fa7b72, type: 2}
-  findOnlyLocal: 0

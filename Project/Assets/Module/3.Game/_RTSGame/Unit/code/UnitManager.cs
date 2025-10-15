@@ -48,6 +48,20 @@ namespace RTSDemo.Unit
             if (!unitPrefabDict.ContainsKey(data.m_actorKey))
                 unitPrefabDict.Add(data.m_actorKey, go);
         }
+        async UniTask LoadUnitPrefabToDict(Dictionary<string, GameObject> dictTarget, UnitData unitData) 
+            => dictTarget[unitData.m_actorKey] = await GameAsset.GetPrefabAsync(unitData.m_actorKey, unitData.m_bodyRef);
+        public async UniTask<Dictionary<string, GameObject>> LoadAllUnitPrefabAsDict()
+        {
+            var dictUnitPrefab = new Dictionary<string, GameObject>();
+            var listHandle = new List<UniTask>();
+            foreach (var data in AllUnit.dictUnitData)
+            {
+                listHandle.Add(LoadUnitPrefabToDict(dictUnitPrefab, data.Value));
+            }
+            await UniTask.WhenAll(listHandle);
+
+            return dictUnitPrefab;
+        }
         #endregion
 
         #region 自身生命周期
@@ -59,7 +73,7 @@ namespace RTSDemo.Unit
 
             unitPrefabDict = new Dictionary<string, GameObject>();
 
-            await GameAsset.LoadAssets(unitDataCollection_SO.GetDataCollection(), LoadUnitPrefab);
+            await GameAsset.LoadAssets(unitDataCollection_SO.GetUnitCollection(), LoadUnitPrefab);
         }
         void OnEnable()
         {

@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using TMPro;
 using System;
 using SimpleAudioSystem;
+using RTSDemo.Unit;
 
 
 //经常需要初始化的资源才需要预加载
@@ -11,15 +12,20 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
 {
     public TMP_FontAsset font;
     public Material fontMaterialTitle;
-    public Material fontMaterialContent; 
+    public Material fontMaterialContent;
 
+    //AudioClip
     Dictionary<string, AudioClip> dictSFXClip;
+    
+    //单位Prefab
+    Dictionary<string, GameObject> dictUnit;
 
     public async UniTask Init()
     {
         await InitFont();
         // await InitVFXAsset(); //后续可优化放到动态加载里
         await InitAudioAsset();
+        await InitUnitPrefab();
         return;
     }
 
@@ -67,6 +73,13 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
         AudioData data = AllAudio.dictSFXData[audioName];
         AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
         dictSFXClip.Add(audioName, clip);
+    }
+    #endregion
+
+    #region 获取单位身体素材
+    async UniTask InitUnitPrefab()
+    {
+        dictUnit = await UnitManager.Instance.LoadAllUnitPrefabAsDict();
     }
     #endregion
 
