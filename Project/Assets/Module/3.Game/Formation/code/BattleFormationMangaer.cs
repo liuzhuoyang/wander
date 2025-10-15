@@ -57,15 +57,33 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
             Vector3 worldPos = new Vector3(pos2D.x, pos2D.y, 0f);
             GameObject instance = Instantiate(formatianPrefab, worldPos, Quaternion.identity, formatianParent);
 
-            // 设置实例名称
-            instance.name = $"FormatianNode_{nodeData.index}";
+            // 获取FormationNode组件并初始化
+            FormationNode formationNode = instance.GetComponent<FormationNode>();
+            if (formationNode != null)
+            {
+                formationNode.Initialize(nodeData.index, nodeData.position, nodeData);
+            }
+            else
+            {
+                Debug.LogError($"FormatianNode 组件未找到在 {instance.name} 上");
+            }
 
             // 添加到当前法阵节点列表和索引映射
             currentFormatianNodes.Add(instance);
             nodeIndexMap[nodeData.index] = instance;
         }
 
-        Debug.Log($"成功创建法阵，包含 {currentFormatianNodes.Count} 个节点");
+        Debug.Log($"成功创建法阵 '{formatianData.formatianName}'，包含 {currentFormatianNodes.Count} 个节点");
+        
+        // 输出每个节点的详细信息
+        foreach (var node in currentFormatianNodes)
+        {
+            FormationNode formationNode = node.GetComponent<FormationNode>();
+            if (formationNode != null)
+            {
+                Debug.Log($"  - {formationNode.GetNodeInfo()}");
+            }
+        }
     }
 
     /// <summary>
@@ -241,6 +259,122 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         if (currentFormatianNodes.Count == 0) return false;
         string lastName = currentFormatianNodes[currentFormatianNodes.Count - 1].name;
         return lastName.Contains($"_{index}");
+    }
+
+    /// <summary>
+    /// 为指定节点设置物品
+    /// </summary>
+    /// <param name="nodeIndex">节点索引</param>
+    /// <param name="config">物品配置</param>
+    /// <returns>创建的物品</returns>
+    public FormationItem SetNodeItem(int nodeIndex, FormationItemConfig config)
+    {
+        GameObject nodeObject = GetNodeByIndex(nodeIndex);
+        if (nodeObject != null)
+        {
+            FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
+            if (formationNode != null)
+            {
+                return formationNode.SetItem(config);
+            }
+            else
+            {
+                Debug.LogError($"节点 {nodeIndex} 上没有 FormationNode 组件");
+            }
+        }
+        else
+        {
+            Debug.LogError($"找不到索引为 {nodeIndex} 的节点");
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// 移除指定节点上的物品
+    /// </summary>
+    /// <param name="nodeIndex">节点索引</param>
+    public void RemoveNodeItem(int nodeIndex)
+    {
+        GameObject nodeObject = GetNodeByIndex(nodeIndex);
+        if (nodeObject != null)
+        {
+            FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
+            if (formationNode != null)
+            {
+                formationNode.RemoveItem();
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 获取指定节点上的物品
+    /// </summary>
+    /// <param name="nodeIndex">节点索引</param>
+    /// <returns>物品组件，如果没有返回null</returns>
+    public FormationItem GetNodeItem(int nodeIndex)
+    {
+        GameObject nodeObject = GetNodeByIndex(nodeIndex);
+        if (nodeObject != null)
+        {
+            FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
+            return formationNode?.Item;
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// 检查指定节点是否有物品
+    /// </summary>
+    /// <param name="nodeIndex">节点索引</param>
+    /// <returns>是否有物品</returns>
+    public bool HasNodeItem(int nodeIndex)
+    {
+        GameObject nodeObject = GetNodeByIndex(nodeIndex);
+        if (nodeObject != null)
+        {
+            FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
+            return formationNode?.HasItem() ?? false;
+        }
+        return false;
+    }
+    
+    /// <summary>
+    /// 重置所有节点的物品状态
+    /// </summary>
+    public void ResetAllNodeItems()
+    {
+        foreach (var node in currentFormatianNodes)
+        {
+            if (node != null)
+            {
+                FormationNode formationNode = node.GetComponent<FormationNode>();
+                formationNode?.ResetItem();
+            }
+        }
+        Debug.Log("已重置所有节点的物品状态");
+    }
+    
+    /// <summary>
+    /// 获取所有有物品的节点
+    /// </summary>
+    /// <returns>有物品的节点列表</returns>
+    public List<FormationNode> GetNodesWithItems()
+    {
+        List<FormationNode> nodesWithItems = new List<FormationNode>();
+        
+        foreach (var node in currentFormatianNodes)
+        {
+            if (node != null)
+            {
+                FormationNode formationNode = node.GetComponent<FormationNode>();
+                if (formationNode != null && formationNode.HasItem())
+                {
+                    nodesWithItems.Add(formationNode);
+                }
+            }
+        }
+        
+        return nodesWithItems;
     }
 
     protected override void OnDestroy()

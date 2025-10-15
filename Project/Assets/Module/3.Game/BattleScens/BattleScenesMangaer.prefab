@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7428221572243187378}
   - component: {fileID: 4633408741434230128}
   m_Layer: 0
-  m_Name: BattleScenesManger
+  m_Name: BattleScenesMangaer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
