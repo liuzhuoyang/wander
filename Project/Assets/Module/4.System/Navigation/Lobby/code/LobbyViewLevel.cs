@@ -123,7 +123,7 @@ public class LobbyViewLevel : MonoBehaviour
         GameObject selectedLevel = groupIncoming.transform.GetChild(0).gameObject;  // 即将成为当前关卡的关卡
         GameObject nextLevel = groupSelected.transform.GetChild(0).gameObject;      // 当前关卡
 
-        nextLevel.GetComponent<LevelSlot>().Init(commingThemeName, commingThemeVarient);
+        selectedLevel.GetComponent<LevelSlot>().Init(commingThemeName, commingThemeVarient);
 
         // 交换父对象：让新关卡成为选中状态，当前关卡成为待切换状态
         selectedLevel.transform.SetParent(groupSelected);
