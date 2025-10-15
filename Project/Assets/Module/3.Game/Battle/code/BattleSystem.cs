@@ -14,7 +14,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     public override async UniTask Init()
     {
         await base.Init();
-        battleControllerPrefab = await GameAsset.GetPrefabAsync("rts_battle_controller");
+        battleControllerPrefab = await GameAsset.GetPrefabAsync("projectwander_battle_controller");
     }
 
     public override void Clear()

@@ -143,8 +143,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6478896493586131015}
-  - component: {fileID: 5633744630231435938}
-  - component: {fileID: 7212751502873108498}
+  - component: {fileID: 3718969409376988067}
+  - component: {fileID: 5919720574791407080}
   m_Layer: 0
   m_Name: GridControl
   m_TagString: Untagged
@@ -164,10 +164,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3424593899139678214}
   m_Father: {fileID: 7158258548300280642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5633744630231435938
+--- !u!114 &3718969409376988067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,10 +177,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7519982288373359520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4ac12a3a099e7408c641e99b22f545, type: 3}
+  m_Script: {fileID: 11500000, guid: db7c54b52d2814d76a36a4b64471266f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7212751502873108498
+  m_EditorClassIdentifier: Assembly-CSharp::BattleMap.Grid.FlowField.Demo.FlowFieldControl
+--- !u!114 &5919720574791407080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,9 +189,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7519982288373359520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038f397e83014bd42bd98381b4f6c8f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f65c1ffa239116547be2a673f980cfa6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleMap.Grid.FlowField.Demo.FlowFieldBuilder
   nodeWidth: 1
   gridOffset: {x: -14, y: -14}
   gridSize: {x: 30, y: 30}
@@ -204,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7158258548300280642}
   m_Layer: 0
-  m_Name: rts_battle_controller
+  m_Name: projectwander_battle_controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,6 +321,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbc7e507acbd7db4183d1ef4bc9c0c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleBehaviourManager
+--- !u!1001 &3044802111258914201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6478896493586131015}
+    m_Modifications:
+    - target: {fileID: 416536109967912351, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416536109967912351, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 416536109967912351, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3190680275217945615, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+      propertyPath: m_Name
+      value: map_target
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+--- !u!4 &3424593899139678214 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 416536109967912351, guid: 607e722e58fa03d40a9e435b5a2ede42, type: 3}
+  m_PrefabInstance: {fileID: 3044802111258914201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6743505041846914884
 PrefabInstance:
   m_ObjectHideFlags: 0
