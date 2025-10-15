@@ -18,12 +18,17 @@ public class LevelDataCollection : GameDataCollectionBase
 
 #if UNITY_EDITOR
 
-    [Button("Init Data")]
+    [Button("Init Data", ButtonSizes.Gigantic)]
     public override void InitData()
     {   
         base.InitData();
         listLevelData = FileFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "main/");
         listLevelDungeonData =  FileFinder.FindAllAssetsOfAllSubFolders<LevelData>(path + "dungeon/");
+
+        foreach (LevelData data in listLevelData)
+        {
+            data.InitData();
+        }
     }
 
     public void OnInitLevelIndex()

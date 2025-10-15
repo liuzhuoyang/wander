@@ -96,7 +96,7 @@ namespace onicore.editor
         float GetCameraPosOffsetY()
         {
             float offsetY = 0;
-            switch (EditorData.currentLevelAsset.cameraPos)
+            switch (EditorData.currentLevelData.cameraPos)
             {
                 case LevelCameraPos.Top:
                     offsetY = 5;

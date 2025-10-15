@@ -10,28 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c347f912033845faaf817ee10e70458, type: 3}
-  m_Name: level_main_001_02
+  m_Name: level_main_001_05
   m_EditorClassIdentifier: 
-  levelName: level_main_001_02
-  levelIndex: 2
+  levelName: level_main_001_05
+  levelIndex: 5
   levelType: 0
   chapterID: 1
-  levelID: 2
+  levelID: 5
   themeName: theme_001
-  mapName: map_theme_001_02
-  cameraPos: 2
-  totalWave: 10
-  unitLevel: 1
-  difficulty: 1
+  cameraPos: 0
+  totalWave: 15
+  unitLevel: 20
+  difficulty: 2
   unitRace: zreep
-  bossName: 
+  bossName: unit_zreep_overlord_01_1
   previewBossIcon: {fileID: 0}
   enemyUnitAssetList:
   - previewIcon: {fileID: 0}
     unlockWave: 0
-    unitName: unit_zreep_melee_common_01
-  plotSeqData: {fileID: 11400000, guid: 15a4ea7d782674867b9b9877964a7966, type: 2}
-  plotSeqID: plot_seq_c001_02
+    unitName: unit_zreep_ranged_elite_01
+  plotSeqData: {fileID: 11400000, guid: 97db3d0d7c5bf4c9c8e791784c43c310, type: 2}
+  plotSeqID: plot_seq_c001_04
   plotData: {fileID: 0}
   plotName: 
   listWaveMergePlotSeqData: []

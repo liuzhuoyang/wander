@@ -8,7 +8,7 @@ using UnityEditor;
 using onicore.editor;
 #endif
 
-public class LevelRawData
+public class MapJsonData
 {
     public int chapterID;
     public int levelID;
@@ -17,21 +17,18 @@ public class LevelRawData
 
     public Dictionary<string, Dictionary<string, List<string>>> terrainData = new Dictionary<string, Dictionary<string, List<string>>>();
     public Dictionary<string, List<string>> vfxData = new Dictionary<string, List<string>>();
-    //public List<SpawnPointArgs> spawnPointData =  new List<SpawnPointArgs>();
-    //public List<DefenseTowerPointArgs> defenseTowerPointArgs = new List<DefenseTowerPointArgs>();
 
     //节点数据,前面节点是权重，后面是x_y的格式
-    public Dictionary<byte, List<string>> nodeData = new Dictionary<byte, List<string>>();
+    //public Dictionary<byte, List<string>> nodeData = new Dictionary<byte, List<string>>();
     //碰撞节点数据
-    public List<string> colliderData = new List<string>();
+    //public List<string> colliderData = new List<string>();
     
 #if UNITY_EDITOR
+
     //编辑器场景创建的编辑器控制组件列表
     List<EditHandleTerrain> listTerrainHandle = new List<EditHandleTerrain>();
     List<EditHandleVFX> listVFXHandle = new List<EditHandleVFX>();
     List<EditHandleSpawnPoint> listSpawnPointHandle = new List<EditHandleSpawnPoint>();
-    List<EditHandleCollider> listColliderHandle = new List<EditHandleCollider>();
-    /*List<EditHandleTowerDefensePoint> listTowerDefensePointHandle = new List<EditHandleTowerDefensePoint>();*/
     //读取编辑器场景创建的编辑器控制组件列表，定义需要写入的数据结构
     public void InitEditorMapData()
     {
@@ -48,14 +45,6 @@ public class LevelRawData
             var pos = item.transform.position;
             AddVFX((float)Math.Round(pos.x, 2), (float)Math.Round(pos.y, 2), item.targetName);
         }
-
-        foreach (var item in listColliderHandle)
-            {
-                var pos = item.transform.position;
-                float posX = (float)Math.Round(pos.x, 3);
-                float posY = (float)Math.Round(pos.y, 3);
-                AddCollider(posX, posY);
-            }
     }
 
     #region 地形创建与移除
@@ -150,43 +139,7 @@ public class LevelRawData
     #endregion
     */
 
-    #region 碰撞创建与移除
-    public void AddColliderHandle(EditHandleCollider handle)
-    {
-        listColliderHandle.Add(handle);
-    }
-
-    public void RemoveColliderHandle(EditHandleCollider handle)
-    {
-        colliderData.Remove(handle.transform.position.x + "," + handle.transform.position.y);
-        listColliderHandle.Remove(handle);
-    }
-
-    public void AddCollider(float posX, float posY)
-    {
-        string element = posX + "," + posY;
-        if(!colliderData.Contains(element))
-        {
-            colliderData.Add(element);
-        }
-    }
-
-    //检查是否有这个位置的碰撞体，避免同一个位置重复点击，多次创建
-    public bool CheckIsContainsColliderHandle(float posX, float posY)
-    {
-        foreach (var item in listColliderHandle)
-        {
-            if(item.transform.position.x == posX && item.transform.position.y == posY)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-    
-    #endregion
-
-   /// <summary>
+    /// <summary>
     /// 验证地图数据是否有效
     /// 主要检查是否包含Boss出生点
     /// </summary>
@@ -217,6 +170,8 @@ public class LevelRawData
         if (!dict.ContainsKey(cost)) { dict[cost] = new List<string>(); }
         dict[cost].Add(x + "," + y);
     }
+    #endregion
+    /*
     public void AddNode(byte cost, int x, int y)
     {
         if (nodeData == null) { nodeData = new Dictionary<byte, List<string>>(); }
@@ -236,4 +191,5 @@ public class LevelRawData
         nodeData.Clear();
     }
     #endregion
+*/
 }

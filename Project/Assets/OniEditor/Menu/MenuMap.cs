@@ -12,8 +12,6 @@ namespace onicore.editor
         static bool toggleInit = false;
         static bool toggleOpen = false;
 
-        LevelData levelArgs;
-
         [InfoBox("点击开启编辑器，游戏会进入运行状态，再次点击关闭运行状态。编辑地图时，用这个按钮来开启/关闭游戏。不要使用自带的启动按钮开关游戏")]
         [HideIf("toggleInit")]
         [Button("开启地图编辑器", ButtonSizes.Gigantic)]
@@ -35,7 +33,7 @@ namespace onicore.editor
             if (!EditorApplication.isPlaying)
             {
                 EditorApplication.isPlaying = true;
-                InitFiles();
+                
                 ResetData();
                 //运行游戏会重置参数，这里要在运行后初始化一次
                 EditorData.Reset();
@@ -67,8 +65,7 @@ namespace onicore.editor
 
             toggleInit = false;
             toggleOpen = false;
-            levelArgs = null;
-            levelAsset = null;
+            levelData = null;
             //关闭编辑器
             if (EditorApplication.isPlaying)
             {
@@ -76,11 +73,6 @@ namespace onicore.editor
             }
         }
 
-        List<string> listMap;
-        void InitFiles()
-        {
-            listMap = FileFinder.FindAllFilesOfAllSubFolders("Assets/AddressableLocal/data/level");
-        }
 
         #region 重置数据
         void ResetData()
@@ -92,8 +84,28 @@ namespace onicore.editor
         [ShowIf("toggleInit")]
         [BoxGroup("BoxSelect", Order = 1, ShowLabel = false)]
         [TitleGroup("BoxSelect/选择地图")]
-        [ValueDropdown("listMap")]
-        public string selectedMap = "level_normal_001_01";
+        [ValueDropdown("GetLevelDataList")]
+        [OnValueChanged("OnValueChangedLevelData")]
+        public LevelData levelData;
+
+        void OnValueChangedLevelData()
+        {
+            EditorData.currentLevelData = levelData;
+            selectedMap = levelData.mapName;
+            mapType = levelData.levelType;
+        }
+
+        public List<LevelData> GetLevelDataList()
+        {
+            string path = GameDataControl.GetAssetPath("all_level");
+            return FileFinder.FindAllAssetsOfAllSubFolders<LevelData>(path);
+        }
+
+        [BoxGroup("BoxSelect")]
+        [ShowIf("toggleInit")]
+        [TitleGroup("BoxSelect/选择地图")]
+        [ReadOnly]
+        public string selectedMap = "";
 
         [ReadOnly]
         [ShowIf("toggleInit")]
@@ -111,20 +123,8 @@ namespace onicore.editor
         {
             toggleOpen = true;
             Debug.Log("=== MapAssertMenu: 打开地图:" + selectedMap + " ===");
-
-            string path = GameDataControl.GetAssetPath("all_level");
-            levelAsset = FileFinder.FindAssetByName<LevelData>(path, selectedMap);
             
-            levelArgs = new LevelData() 
-            { 
-                levelName = selectedMap, 
-                themeName = levelAsset.themeName
-            };
-
-            //存入EditorData，用作编辑时期全局访问使用
-            EditorData.currentLevelAsset = levelAsset;
-
-            // await MapControl.Instance.OpenLevel(levelArgs, true);
+            await MapControl.Instance.OpenLevel(levelData, true);
         }
 
         [ShowIf("toggleInit")]
@@ -144,13 +144,8 @@ namespace onicore.editor
         [Button("保存地图", ButtonSizes.Large)]
         public void OnSaveMap()
         {
-            ReadWrite.OnWriteMapJsonFile(levelArgs);
+            ReadWrite.OnWriteMapJsonFile(levelData);
         }
-
-        [ShowIf("toggleInit")]
-        [EnableIf("toggleOpen")]
-        [BoxGroup("LevelAsset", Order = 8)]
-        public LevelData levelAsset;
 
         [BoxGroup("BoxTool", Order = 10)]
         [Button("打开地图编辑工具页面", ButtonSizes.Large)]

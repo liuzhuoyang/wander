@@ -1,11 +1,11 @@
-using System;
+    using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 #if UNITY_EDITOR
-using onicore.editor;
 using System.Linq;
+using RTSDemo.Unit;
 #endif
 
 [Serializable]
@@ -29,14 +29,29 @@ public class EnemyUnitData
     //[VerticalGroup("Split/Ver")]
     public int unlockWave;
 
-    //[OnValueChanged("OnUpdateIcon")]
-    //[VerticalGroup("Split/Ver")]
+    [ValueDropdown("GetUnitNameList")]
     public string unitName;
 
 #if UNITY_EDITOR
     void OnUpdateIcon()
     {
         previewIcon = GameAsset.GetAssetEditor<Sprite>("icon_" + unitName);
+    }
+
+    public List<string> GetUnitNameList()
+    {
+        List<string> list = new List<string>();
+        list.Add("");
+        string path = GameDataControl.GetAssetPath("all_unit");
+        List<UnitData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<UnitData>(path);
+        foreach (UnitData asset in listAsset)
+        {
+            //获取同种族的单位
+            UnitRace selectedUnitRace = Enum.Parse<UnitRace>(unitRace);
+            if(asset.unitRace == selectedUnitRace)
+            list.Add(asset.name);
+        }
+        return list;
     }
 #endif
 
@@ -69,6 +84,10 @@ public class LevelData : ScriptableObject
     [BoxGroup("Info")]
     [ValueDropdown("GetThemeList")]
     public string themeName;
+
+    [BoxGroup("Info")]
+    [ValueDropdown("GetMapNameList")]
+    public string mapName;
 
     [BoxGroup("Camera", LabelText = "镜头配置")]
     public LevelCameraPos cameraPos;
@@ -369,10 +388,24 @@ public class LevelData : ScriptableObject
         List<string> list = new List<string>();
 
         string path = GameDataControl.GetAssetPath("all_race");
-        List<ThemeData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<ThemeData>(path);
-        foreach (ThemeData asset in listAsset)
+        List<RaceData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<RaceData>(path);
+        foreach (RaceData asset in listAsset)
         {
-            list.Add(asset.themeName);
+            list.Add(asset.raceName);
+        }
+        return list;
+    }
+
+    public List<string> GetMapNameList()
+    {
+        List<string> list = new List<string>();
+        list.Add("");
+        string path = GameDataControl.GetAssetPath("all_level");
+        path = path.Replace("asset", "map");
+        List<string> listFileName = FileFinder.FindAllFilesOfAllSubFolders(path);
+        foreach (string fileNme in listFileName)
+        {
+            list.Add(fileNme);
         }
         return list;
     }

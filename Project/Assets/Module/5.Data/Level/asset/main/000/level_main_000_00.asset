@@ -18,6 +18,7 @@ MonoBehaviour:
   chapterID: 0
   levelID: 0
   themeName: theme_001
+  mapName: map_theme_001_01
   cameraPos: 1
   totalWave: 1
   unitLevel: 120

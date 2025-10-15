@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
-  m_Name: module_audio_ContentUpdateGroupSchema
+  m_Name: Packed Assets_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 918f6bacb86244d1b99f0ed5ed98c82b, type: 2}
+  m_Group: {fileID: 11400000, guid: f7a674ef04cd74a74acfefececc6bb4f, type: 2}
   m_StaticContent: 0

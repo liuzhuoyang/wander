@@ -10,11 +10,11 @@ using onicore.editor;
 public static class EditorData
 {
     //public static string mapName;
-    public static LevelData currentLevelAsset;
+    public static LevelData currentLevelData;
 
     public static void Reset()
     {
-        currentLevelAsset = null;
+        currentLevelData = null;
     }
 }
 #endif

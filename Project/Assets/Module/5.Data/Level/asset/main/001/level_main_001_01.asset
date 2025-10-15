@@ -18,26 +18,18 @@ MonoBehaviour:
   chapterID: 1
   levelID: 1
   themeName: theme_001
+  mapName: map_theme_001_01
   cameraPos: 0
   totalWave: 5
   unitLevel: 1
   difficulty: 0
-  unitRace: zreep
+  unitRace: race_human
   bossName: 
   previewBossIcon: {fileID: 0}
   enemyUnitAssetList:
   - previewIcon: {fileID: 0}
     unlockWave: 0
     unitName: unit_zreep_melee_common_01
-  - previewIcon: {fileID: 0}
-    unlockWave: 3
-    unitName: unit_zreep_ranged_common_01
-  - previewIcon: {fileID: 0}
-    unlockWave: 0
-    unitName: unit_zreep_melee_elite_01
-  - previewIcon: {fileID: 0}
-    unlockWave: 0
-    unitName: unit_zreep_ranged_elite_01
   plotSeqData: {fileID: 11400000, guid: 65e620e0717034206ae15f85d90064ff, type: 2}
   plotSeqID: plot_seq_c001_01
   plotData: {fileID: 0}
