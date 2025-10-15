@@ -2,15 +2,23 @@ using System.Collections.Generic;
 
 public class UILobbyArgs : UIBaseArgs
 {
-    // public bool isLockChapter;
-    public string chapterDisplayName;
-    public bool isReadyToUnlockSector;
-    public int chapterID;
+    public string displayName;
+    //public int chapterID;
     public int levelID;
-    public string picName;
+    //public string pic;
+    public int selectedLevel;
+    public int totalLevel;
     public int currentWave;
     public Difficulty difficulty;
     public string themeName;
+    public int themeVarient;
+}
+
+public class UILobbyChangeLevelArgs : UILobbyArgs
+{
+    public bool isNextLevel;
+    public string commingThemeName;
+    public int commingThemeVarient;
 }
 
 public class UILobbyScrollArgs : UIBaseArgs
@@ -21,7 +29,9 @@ public class UILobbyScrollArgs : UIBaseArgs
 
 public class LobbyEventName
 {
+    public const string EVENT_LOBBY_INIT = "EVENT_LOBBY_INIT";
     public const string EVENT_LOBBY_REFRESH_UI = "EVENT_LOBBY_REFRESH_UI";
+    public const string EVENT_LOBBY_CHANGE_LEVEL = "EVENT_LOBBY_CHANGE_LEVEL";
     public const string EVENT_LOBBY_SHOW_BOTTOM = "EVENT_LOBBY_SHOW_BOTTOM";
 }
 

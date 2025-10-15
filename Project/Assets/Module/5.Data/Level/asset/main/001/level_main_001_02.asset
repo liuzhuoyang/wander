@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: level_main_001_02
   m_EditorClassIdentifier: 
   levelName: level_main_001_02
+  displayName: level/theme_001/title_002
   levelIndex: 2
   levelType: 0
   chapterID: 1
   levelID: 2
   themeName: theme_001
   mapName: map_theme_001_02
+  themeVarient: 2
+  previewPic: {fileID: 21300000, guid: a780da747c4454e648be12bc09bf9ccc, type: 3}
   cameraPos: 2
   totalWave: 10
   unitLevel: 1
