@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6386481342a324fb9afa0c6c65666b, type: 3}
   m_Name: level_main_000_001
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: level_main_000_000
+  levelName: level_main_000_001
   displayName: level/theme_001/title_001
-  levelIndex: 0
+  levelIndex: 1
   levelType: 0
   chapterID: 0
   levelID: 0
