@@ -1,7 +1,11 @@
-    using System;
+using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using RTSDemo.Basement;
+using UnityEngine.AddressableAssets;
+
+
 
 #if UNITY_EDITOR
 using System.Linq;
@@ -94,7 +98,7 @@ public class LevelData : ScriptableObject
     public string mapName;
 
 
-#region 外围选关编辑
+    #region 外围选关编辑
     [BoxGroup("Meta", LabelText = "外围选关内容编辑")]
     [ValueDropdown("GetThemeVarientList")]
     [OnValueChanged("OnThemeVarientChanged")]
@@ -119,12 +123,22 @@ public class LevelData : ScriptableObject
     {
         previewPic = GameAsset.GetAssetEditor<Sprite>("pic_" + themeName + "_" + themeVarient);
     }
-#endregion
+    #endregion
 
     [BoxGroup("Camera", LabelText = "镜头配置")]
     public LevelCameraPos cameraPos;
 
-#region 难度配置
+    #region 场景配置
+    [ValueDropdown("GetFormationList")]
+    [BoxGroup("Scene", LabelText = "场景配置")]
+    public string formationName;
+    [BoxGroup("Scene", LabelText = "场景配置")]
+    public BasementData basementData;
+    [BoxGroup("Scene")]
+    public AssetReferenceGameObject mapPrefab;
+    #endregion
+
+    #region 难度配置
     [BoxGroup("Difficulity")]
     [ShowIf("levelType", Value = LevelType.Main)]
     public int totalWave;
@@ -332,6 +346,17 @@ public class LevelData : ScriptableObject
 
 
 #if UNITY_EDITOR
+    public List<string> GetFormationList()
+    {
+        List<string> list = new List<string>();
+        string path = GameDataControl.GetAssetPath("all_formatian");
+        List<FormatianData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<FormatianData>(path);
+        foreach (FormatianData asset in listAsset)
+        {
+            list.Add(asset.formatianName);
+        }
+        return list;
+    }
     public List<string> GetThemeList()
     {
         List<string> list = new List<string>();
