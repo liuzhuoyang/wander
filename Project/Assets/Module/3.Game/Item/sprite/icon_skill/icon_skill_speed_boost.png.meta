@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c2548d95259424a6a840f64ce335d006
+guid: afd5d4fb0e80e406d883f0721d2561c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8535722320073078491
-    second: icon_gear_common_01_0
+      213: -1094678312422428690
+    second: icon_skill_speed_boost_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_gear_common_01_0
+      name: icon_skill_speed_boost_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 201
-        height: 229
+        x: 11
+        y: 36
+        width: 234
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 529cbaa26c50b8980800000000000000
-      internalID: -8535722320073078491
+      spriteID: eefacbcefdbeec0f0800000000000000
+      internalID: -1094678312422428690
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_gear_common_01_0: -8535722320073078491
+      icon_skill_speed_boost_0: -1094678312422428690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
