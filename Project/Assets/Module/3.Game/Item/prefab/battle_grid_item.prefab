@@ -1280,7 +1280,7 @@ MonoBehaviour:
   legendaryTransform: {fileID: 9034676513169614382}
   itemSprite: {fileID: 2268249648042076950}
   levelText: {fileID: 416277682039887770}
-  info: {fileID: 0}
+  info: {fileID: 789335610717159700}
   itemName: 
   itemType: 0
   level: 0

@@ -76,44 +76,55 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     }
     void HandleEndDrag(Vector2 scrPos)
     {
+        Debug.Log($"[调试] HandleEndDrag 被调用。currentHoverNode: {(currentHoverNode != null ? currentHoverNode.name : "null")}, itemConfig: {(itemConfig != null ? itemConfig.itemName : "null")}, 拖拽屏幕坐标: {scrPos}");
+
         if (currentHoverNode != null)
         {
+            Debug.Log($"[调试] 当前悬停节点: {currentHoverNode.name}, 物品配置: {(itemConfig != null ? itemConfig.itemName : "null")}");
+
             // 优先检查是否可以升级
             bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(currentHoverNode, itemConfig);
+            Debug.Log($"[调试] 是否可升级: {canUpgrade}");
 
             if (canUpgrade)
             {
-                // 升级节点上的物品
+                Debug.Log("[调试] 执行升级节点上的物品操作。");
                 UpgradeItemOnNode(currentHoverNode);
             }
             else
             {
                 // 检查是否可以放置
                 bool canPlace = BattleFormationMangaer.Instance.CanPlaceItemOnNode(currentHoverNode, itemConfig);
+                Debug.Log($"[调试] 是否可放置: {canPlace}");
 
                 if (canPlace)
                 {
-                    // 放置物品到节点
+                    Debug.Log("[调试] 执行放置物品到节点操作。");
                     PlaceItemOnNode(currentHoverNode);
                 }
                 else
                 {
-                    // 返回原位
+                    Debug.Log("[调试] 既不能放置也不能升级，物品回到原位。");
                     transform.position = initPos;
                 }
             }
         }
         else
         {
-            // 没有悬停到任何节点，返回原位
+            Debug.Log("[调试] 没有悬停到任何节点，物品回到原位。");
             transform.position = initPos;
         }
 
         // 清理悬停状态
         if (currentHoverNode != null)
         {
+            Debug.Log($"[调试] 清理悬停节点状态: {currentHoverNode.name}");
             OnNodeHoverExit(currentHoverNode);
             currentHoverNode = null;
+        }
+        else
+        {
+            Debug.Log("[调试] 无需清理悬停节点状态。");
         }
     }
 
@@ -196,7 +207,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
         //GameAssetControl.AssignIcon(config.itemName, imgIcon);
         imgIcon.sprite = config.itemIcon;
         level.text = config.level.ToString();
-        info.text = UtilityLocalization.GetLocalization(config.itemName);
+       // info.text = UtilityLocalization.GetLocalization(config.info);
         SetRarityImage(config.rarity);
     }
 

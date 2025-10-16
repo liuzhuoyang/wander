@@ -11,7 +11,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
     [Header("法阵管理")]
     [SerializeField] private Transform formatianParent; // 法阵节点的父对象
-    
+
     [Header("法阵配置")]
     [SerializeField] private float nodeDetectionRadius = 0.6f; // 节点检测半径，适合1.2大小的正方形节点
 
@@ -418,17 +418,17 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     {
         FormationNode nearestNode = null;
         float nearestDistance = float.MaxValue;
-        
+
         foreach (var node in currentFormatianNodes)
         {
             if (node == null) continue;
-            
+
             FormationNode formationNode = node.GetComponent<FormationNode>();
             if (formationNode == null || !formationNode.IsActive) continue;
-            
+
             // 计算到节点中心的距离
             float distance = Vector2.Distance(worldPos, formationNode.NodePosition);
-            
+
             // 如果在检测范围内且是最近的节点
             if (distance <= nodeDetectionRadius && distance < nearestDistance)
             {
@@ -436,7 +436,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
                 nearestDistance = distance;
             }
         }
-        
+
         return nearestNode;
     }
 
@@ -448,29 +448,29 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public List<FormationNode> GetFormationNodesInRange(Vector2 worldPos)
     {
         List<FormationNode> nodesInRange = new List<FormationNode>();
-        
+
         foreach (var node in currentFormatianNodes)
         {
             if (node == null) continue;
-            
+
             FormationNode formationNode = node.GetComponent<FormationNode>();
             if (formationNode == null || !formationNode.IsActive) continue;
-            
+
             float distance = Vector2.Distance(worldPos, formationNode.NodePosition);
             if (distance <= nodeDetectionRadius)
             {
                 nodesInRange.Add(formationNode);
             }
         }
-        
+
         // 按距离排序，最近的在前
-        nodesInRange.Sort((a, b) => 
+        nodesInRange.Sort((a, b) =>
         {
             float distA = Vector2.Distance(worldPos, a.NodePosition);
             float distB = Vector2.Distance(worldPos, b.NodePosition);
             return distA.CompareTo(distB);
         });
-        
+
         return nodesInRange;
     }
 
@@ -483,13 +483,13 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public bool CanPlaceItemOnNode(FormationNode node, FormationItemConfig itemConfig)
     {
         if (node == null || !node.IsActive) return false;
-        
+
         // 检查节点是否已有物品
         if (node.HasItem()) return false;
-        
+
         // 可以在这里添加更多检查逻辑
         // 比如：物品类型限制、节点类型限制等
-        
+
         return true;
     }
 
@@ -502,26 +502,27 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public bool CanUpgradeItemOnNode(FormationNode node, FormationItemConfig draggedItemConfig)
     {
         if (node == null || !node.IsActive) return false;
-        
+
         // 检查节点是否有物品
         if (!node.HasItem()) return false;
-        
+
         FormationItem existingItem = node.Item;
         if (existingItem == null) return false;
-        
+
         // 检查物品名称和类型是否相同
-        if (existingItem.ItemName != draggedItemConfig.itemName || 
-            existingItem.ItemType != draggedItemConfig.itemType)
+        if (existingItem.ItemName != draggedItemConfig.itemName ||
+            existingItem.ItemType != draggedItemConfig.itemType ||
+            existingItem.Level != draggedItemConfig.level)
         {
             return false;
         }
-        
+
         // 检查拖拽的物品是否可以升级
         if (!draggedItemConfig.canUpgrade) return false;
-        
+
         // 检查是否达到最大等级
         if (existingItem.Level >= draggedItemConfig.maxLevel) return false;
-        
+
         return true;
     }
 
@@ -534,13 +535,13 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public bool UpgradeItemOnNode(FormationNode node, FormationItemConfig draggedItemConfig)
     {
         if (!CanUpgradeItemOnNode(node, draggedItemConfig)) return false;
-        
+
         FormationItem existingItem = node.Item;
         if (existingItem == null) return false;
-        
+
         // 升级物品等级
         existingItem.UpgradeLevel();
-        
+
         return true;
     }
 
@@ -553,7 +554,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public FormationNode GetNearestPlaceableNode(Vector2 worldPos, FormationItemConfig itemConfig)
     {
         var nodesInRange = GetFormationNodesInRange(worldPos);
-        
+
         foreach (var node in nodesInRange)
         {
             if (CanPlaceItemOnNode(node, itemConfig))
@@ -561,7 +562,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
                 return node;
             }
         }
-        
+
         return null;
     }
 
@@ -574,7 +575,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     public FormationNode GetNearestInteractableNode(Vector2 worldPos, FormationItemConfig itemConfig)
     {
         var nodesInRange = GetFormationNodesInRange(worldPos);
-        
+
         foreach (var node in nodesInRange)
         {
             // 优先检查是否可以升级
@@ -588,7 +589,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
                 return node;
             }
         }
-        
+
         return null;
     }
     #endregion

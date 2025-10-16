@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: f9a32c96515534bc287b7028db1656e4, type: 3}
   canUpgrade: 0
   maxLevel: 1
   rarity: 4
   AdGet: 1
   coinCost: 0
-  displayName: 
+  displayName: formation/skill_001/name
   info: 
   effectType: 7
   requiredChargeCount: 4

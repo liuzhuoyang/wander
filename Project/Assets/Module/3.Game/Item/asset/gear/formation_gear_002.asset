@@ -16,7 +16,7 @@ MonoBehaviour:
   itemName: 
   gearData: {fileID: 11400000, guid: b036679cdc1d848c5817e1d6e94549d2, type: 2}
   coinCost: 2
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: f410f2ce2c82342548ac23c361a7c74f, type: 3}
   gearAbilites: []
   vfx_gearBeginFire: {fileID: 0}
   sfx_gearBeginFire: {fileID: 0}

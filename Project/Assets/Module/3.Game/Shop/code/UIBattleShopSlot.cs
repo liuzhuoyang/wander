@@ -6,6 +6,7 @@ public class UIBattleShopSlot : MonoBehaviour
 {
     public TextMeshProUGUI textName;
     public TextMeshProUGUI textCost;
+    public Transform cost;
 
     public GameObject objDrag;
 
@@ -15,8 +16,8 @@ public class UIBattleShopSlot : MonoBehaviour
     public void Init(FormationItemConfig itemConfig)
     {
         textName.gameObject.SetActive(true);
-        textName.text = UtilityLocalization.GetLocalization(itemConfig.itemName);
-        textCost.gameObject.SetActive(true);
+        textName.text = UtilityLocalization.GetLocalization(itemConfig.displayName);
+        cost.gameObject.SetActive(true);
         textCost.text = itemConfig.coinCost.ToString();
 
         if (currentDrag != null)
@@ -31,6 +32,6 @@ public class UIBattleShopSlot : MonoBehaviour
     {
         //成功放置时，隐藏UI
         textName.gameObject.SetActive(false);
-        textCost.gameObject.SetActive(false);
+        cost.gameObject.SetActive(false);
     }
 }

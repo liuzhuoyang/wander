@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: skill_002_health
+  itemIcon: {fileID: 21300000, guid: 0c306a16754394ea6b1754d9367e283d, type: 3}
   canUpgrade: 1
   maxLevel: 3
   rarity: 2
   AdGet: 0
   coinCost: 8
-  displayName: 
+  displayName: formation/skill_001/name
   info: 
   effectType: 1
   requiredChargeCount: 2

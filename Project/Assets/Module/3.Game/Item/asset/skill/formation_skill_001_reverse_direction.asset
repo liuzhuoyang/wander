@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: skill_001_reverse_direction
+  itemIcon: {fileID: 21300000, guid: b6eca0ca2a7aa438dbf3f615639074bb, type: 3}
   canUpgrade: 0
   maxLevel: 1
   rarity: 1
   AdGet: 0
   coinCost: 3
-  displayName: 
+  displayName: formation/skill_001/name
   info: 
   effectType: 0
   requiredChargeCount: 2
