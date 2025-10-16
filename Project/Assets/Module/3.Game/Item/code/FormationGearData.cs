@@ -13,10 +13,15 @@ public class FormationGearData : FormationItemData
     {
         itemType = FormationItemType.Gear;
     }
-    //内外对应名称
+
+    public GearData gearData;
+
     [BoxGroup("参数")]
-    [LabelText("装备名称(内外对应)")]
-    public string gearName;
+    [LabelText("金币消耗")]
+    public int coinCost = 0;
+
+
+    public Sprite itemIcon;
 
 
     [BoxGroup("武器技能")] public GearAbilityData[] gearAbilites;

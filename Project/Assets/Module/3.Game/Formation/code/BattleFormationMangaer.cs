@@ -7,16 +7,26 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     [Header("法阵节点")]
     public GameObject formatianNodePrefab;
 
-    [SerializeField] private FormationItemDataCollection formationItemDataCollection;
+    [SerializeField] public FormationItemDataCollection formationItemDataCollection;
 
     [Header("法阵管理")]
     [SerializeField] private Transform formatianParent; // 法阵节点的父对象
+    
+    [Header("法阵配置")]
+    [SerializeField] private float nodeDetectionRadius = 0.6f; // 节点检测半径，适合1.2大小的正方形节点
 
     // 当前法阵的节点列表
     private List<GameObject> currentFormatianNodes = new List<GameObject>();
 
     // 节点索引到节点的映射
     private Dictionary<int, GameObject> nodeIndexMap = new Dictionary<int, GameObject>();
+    #endregion
+
+    #region 公共属性
+    /// <summary>
+    /// 节点检测半径
+    /// </summary>
+    public float NodeDetectionRadius => nodeDetectionRadius;
     #endregion
 
     #region Unity生命周期
@@ -395,6 +405,191 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         }
 
         return nodesWithItems;
+    }
+    #endregion
+
+    #region 拖拽检测方法
+    /// <summary>
+    /// 检测世界坐标是否在法阵节点范围内
+    /// </summary>
+    /// <param name="worldPos">世界坐标</param>
+    /// <returns>最近的节点，如果没有则返回null</returns>
+    public FormationNode GetNearestFormationNode(Vector2 worldPos)
+    {
+        FormationNode nearestNode = null;
+        float nearestDistance = float.MaxValue;
+        
+        foreach (var node in currentFormatianNodes)
+        {
+            if (node == null) continue;
+            
+            FormationNode formationNode = node.GetComponent<FormationNode>();
+            if (formationNode == null || !formationNode.IsActive) continue;
+            
+            // 计算到节点中心的距离
+            float distance = Vector2.Distance(worldPos, formationNode.NodePosition);
+            
+            // 如果在检测范围内且是最近的节点
+            if (distance <= nodeDetectionRadius && distance < nearestDistance)
+            {
+                nearestNode = formationNode;
+                nearestDistance = distance;
+            }
+        }
+        
+        return nearestNode;
+    }
+
+    /// <summary>
+    /// 获取所有在检测范围内的法阵节点
+    /// </summary>
+    /// <param name="worldPos">世界坐标</param>
+    /// <returns>在范围内的节点列表，按距离排序</returns>
+    public List<FormationNode> GetFormationNodesInRange(Vector2 worldPos)
+    {
+        List<FormationNode> nodesInRange = new List<FormationNode>();
+        
+        foreach (var node in currentFormatianNodes)
+        {
+            if (node == null) continue;
+            
+            FormationNode formationNode = node.GetComponent<FormationNode>();
+            if (formationNode == null || !formationNode.IsActive) continue;
+            
+            float distance = Vector2.Distance(worldPos, formationNode.NodePosition);
+            if (distance <= nodeDetectionRadius)
+            {
+                nodesInRange.Add(formationNode);
+            }
+        }
+        
+        // 按距离排序，最近的在前
+        nodesInRange.Sort((a, b) => 
+        {
+            float distA = Vector2.Distance(worldPos, a.NodePosition);
+            float distB = Vector2.Distance(worldPos, b.NodePosition);
+            return distA.CompareTo(distB);
+        });
+        
+        return nodesInRange;
+    }
+
+    /// <summary>
+    /// 检查是否可以放置物品到指定节点
+    /// </summary>
+    /// <param name="node">目标节点</param>
+    /// <param name="itemConfig">物品配置</param>
+    /// <returns>是否可以放置</returns>
+    public bool CanPlaceItemOnNode(FormationNode node, FormationItemConfig itemConfig)
+    {
+        if (node == null || !node.IsActive) return false;
+        
+        // 检查节点是否已有物品
+        if (node.HasItem()) return false;
+        
+        // 可以在这里添加更多检查逻辑
+        // 比如：物品类型限制、节点类型限制等
+        
+        return true;
+    }
+
+    /// <summary>
+    /// 检查是否可以升级节点上的物品
+    /// </summary>
+    /// <param name="node">目标节点</param>
+    /// <param name="draggedItemConfig">拖拽的物品配置</param>
+    /// <returns>是否可以升级</returns>
+    public bool CanUpgradeItemOnNode(FormationNode node, FormationItemConfig draggedItemConfig)
+    {
+        if (node == null || !node.IsActive) return false;
+        
+        // 检查节点是否有物品
+        if (!node.HasItem()) return false;
+        
+        FormationItem existingItem = node.Item;
+        if (existingItem == null) return false;
+        
+        // 检查物品名称和类型是否相同
+        if (existingItem.ItemName != draggedItemConfig.itemName || 
+            existingItem.ItemType != draggedItemConfig.itemType)
+        {
+            return false;
+        }
+        
+        // 检查拖拽的物品是否可以升级
+        if (!draggedItemConfig.canUpgrade) return false;
+        
+        // 检查是否达到最大等级
+        if (existingItem.Level >= draggedItemConfig.maxLevel) return false;
+        
+        return true;
+    }
+
+    /// <summary>
+    /// 升级节点上的物品
+    /// </summary>
+    /// <param name="node">目标节点</param>
+    /// <param name="draggedItemConfig">拖拽的物品配置</param>
+    /// <returns>是否升级成功</returns>
+    public bool UpgradeItemOnNode(FormationNode node, FormationItemConfig draggedItemConfig)
+    {
+        if (!CanUpgradeItemOnNode(node, draggedItemConfig)) return false;
+        
+        FormationItem existingItem = node.Item;
+        if (existingItem == null) return false;
+        
+        // 升级物品等级
+        existingItem.UpgradeLevel();
+        
+        return true;
+    }
+
+    /// <summary>
+    /// 获取最近的可放置节点
+    /// </summary>
+    /// <param name="worldPos">世界坐标</param>
+    /// <param name="itemConfig">物品配置</param>
+    /// <returns>最近的可放置节点，如果没有则返回null</returns>
+    public FormationNode GetNearestPlaceableNode(Vector2 worldPos, FormationItemConfig itemConfig)
+    {
+        var nodesInRange = GetFormationNodesInRange(worldPos);
+        
+        foreach (var node in nodesInRange)
+        {
+            if (CanPlaceItemOnNode(node, itemConfig))
+            {
+                return node;
+            }
+        }
+        
+        return null;
+    }
+
+    /// <summary>
+    /// 获取最近的可交互节点（可放置或可升级）
+    /// </summary>
+    /// <param name="worldPos">世界坐标</param>
+    /// <param name="itemConfig">物品配置</param>
+    /// <returns>最近的可交互节点，如果没有则返回null</returns>
+    public FormationNode GetNearestInteractableNode(Vector2 worldPos, FormationItemConfig itemConfig)
+    {
+        var nodesInRange = GetFormationNodesInRange(worldPos);
+        
+        foreach (var node in nodesInRange)
+        {
+            // 优先检查是否可以升级
+            if (CanUpgradeItemOnNode(node, itemConfig))
+            {
+                return node;
+            }
+            // 然后检查是否可以放置
+            else if (CanPlaceItemOnNode(node, itemConfig))
+            {
+                return node;
+            }
+        }
+        
+        return null;
     }
     #endregion
 }

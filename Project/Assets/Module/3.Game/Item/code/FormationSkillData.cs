@@ -9,6 +9,9 @@ public class FormationSkillData : FormationItemData
     {
         itemType = FormationItemType.Skill;
     }
+
+    public Sprite itemIcon;
+
     [BoxGroup("参数"), LabelText("是否允许升级")]
     public bool canUpgrade = false;
 

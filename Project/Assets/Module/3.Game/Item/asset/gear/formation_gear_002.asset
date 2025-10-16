@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a65abfe3d36034020bf80f0642f0cd85, type: 3}
-  m_Name: formation_gear_001
+  m_Name: formation_gear_002
   m_EditorClassIdentifier: Assembly-CSharp::FormationGearData
   itemType: 0
   itemName: 
-  gearData: {fileID: 11400000, guid: 4ec60ce4112c34d8c953abb6045d0347, type: 2}
-  coinCost: 1
+  gearData: {fileID: 11400000, guid: b036679cdc1d848c5817e1d6e94549d2, type: 2}
+  coinCost: 2
   itemIcon: {fileID: 0}
   gearAbilites: []
   vfx_gearBeginFire: {fileID: 0}

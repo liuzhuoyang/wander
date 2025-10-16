@@ -24,11 +24,13 @@ namespace PlayerInteraction
         {
             hitbox = GetComponent<Collider2D>();
         }
+
         void Start()
         {
             if (dragRoot == null)
                 dragRoot = transform;
         }
+
         public virtual void OnInteract(PlayerInputControl playerInput)
         {
             Debug.Log($"开始交互 {gameObject.name}");

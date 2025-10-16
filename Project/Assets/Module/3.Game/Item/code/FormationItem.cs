@@ -1,11 +1,25 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 /// <summary>
 /// 法阵节点上的物品组件，负责处理触发逻辑和显示效果
 /// </summary>
 public class FormationItem : MonoBehaviour
 {
+    public Transform commonTransform;
+    public Transform rareTransform;
+    public Transform epicTransform;
+    public Transform legendaryTransform;
+
+    public SpriteRenderer itemSprite;
+
+    public TextMeshProUGUI levelText;
+    public TextMeshProUGUI info;
+
+
+
     [Header("物品信息")]
     [SerializeField] private string itemName;
     [SerializeField] private FormationItemType itemType;
@@ -32,7 +46,6 @@ public class FormationItem : MonoBehaviour
 
     [Header("显示设置")]
     [SerializeField] private GameObject visualEffect;
-    [SerializeField] private SpriteRenderer itemSprite;
 
     // 关联的节点引用
     private FormationNode parentNode;
@@ -50,6 +63,11 @@ public class FormationItem : MonoBehaviour
     /// 物品类型
     /// </summary>
     public FormationItemType ItemType => itemType;
+
+    /// <summary>
+    /// 物品等级
+    /// </summary>
+    public int Level => level;
 
     /// <summary>
     /// 关联的节点
@@ -135,7 +153,19 @@ public class FormationItem : MonoBehaviour
     /// </summary>
     private void InitializeVisuals(FormationItemConfig config = null)
     {
+        levelText.text = level.ToString();
+        info.text = UtilityLocalization.GetLocalization(itemName);
+        itemSprite.sprite = config.itemIcon;
+        // GameAssetControl.AssignSpriteUI(itemName, itemSprite.sprite);
+        SetRarityImage(config.rarity);
 
+    }
+    public void SetRarityImage(Rarity rarity)
+    {
+        commonTransform.gameObject.SetActive(rarity == Rarity.Common);
+        rareTransform.gameObject.SetActive(rarity == Rarity.Rare);
+        epicTransform.gameObject.SetActive(rarity == Rarity.Epic);
+        legendaryTransform.gameObject.SetActive(rarity == Rarity.Legendary);
     }
 
 
@@ -251,6 +281,15 @@ public class FormationItem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 升级物品等级
+    /// </summary>
+    public void UpgradeLevel()
+    {
+        level++;
+        Debug.Log($"物品 {itemName} 升级到等级 {level}");
+    }
+
 }
 
 /// <summary>
@@ -278,7 +317,7 @@ public enum EffectType
 }
 
 /// <summary>
-/// 法阵物品配置类
+/// 法阵物品数据类
 /// </summary>
 [System.Serializable]
 public class FormationItemConfig
@@ -287,6 +326,15 @@ public class FormationItemConfig
     public string itemName;
     public FormationItemType itemType;
     public int level = 1;
+    public int coinCost = 0;
+    public Rarity rarity = Rarity.Common;
+
+    [Header("合成设置")]
+    public bool canUpgrade = true;        // 是否可以升级
+    public int maxLevel = 5;              // 最大等级
+
+    [Header("是否通过广告获取")]
+    public bool AdGet = false;
 
     [Header("触发设置")]
     public int requiredChargeCount = 1;  // 需要触发的次数
