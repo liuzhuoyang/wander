@@ -55,7 +55,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         BattleFormationMangaer.Instance.CraftFormatian(levelData.formationName);
         await BattleScenesMangaer.Instance.LoadScene(levelData);
         await BasementControl.Instance.CreateBasement(levelData.basementData.m_basementKey, Vector2.zero);
-        
+
         //加载完各项地图后，刷新flowfield
         RTSGridEvent.Call_OnGridNodeChange();
         //关闭过场
@@ -96,6 +96,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         BulletManager.Instance.StartBattle();
         GearManager.Instance.StartBattle();
         BuffZoneManager.Instance.StartBattle();
+        BattleShopSystem.Instance.StartBattle();
 
         //读取玩家数据，然后创建对应场景人物
         CameraManager.Instance.OnBattleEnter();
@@ -116,6 +117,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         ModeBattleControl.OnOpen("prepare");
         AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
         CameraManager.Instance.OnPrepareStart();
+        BattleShopSystem.Instance.RefreshShopItem();
         await base.OnPrepareStartPhaseEnter();
     }
 

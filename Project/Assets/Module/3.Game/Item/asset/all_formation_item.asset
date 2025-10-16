@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationItemDataCollection
   DataList:
   - {fileID: 11400000, guid: 7623991b28b9d4a60adb7cf68e2562fe, type: 2}
+  - {fileID: 11400000, guid: 5c455b4c1e26d4ee3a428bea1ef35648, type: 2}
+  - {fileID: 11400000, guid: f82d7cdd120cf440c8976ebf090788a7, type: 2}
+  - {fileID: 11400000, guid: 2c0706bb3260346c8b68f19f73ef3cf5, type: 2}
   - {fileID: 11400000, guid: b19312148c4074061a225045ce895b11, type: 2}
   - {fileID: 11400000, guid: 2cf92a8ceedc54eba9ad9e90f30b5d3f, type: 2}
   - {fileID: 11400000, guid: 1fb0b47c9ce2c490fb6af3be544c9889, type: 2}

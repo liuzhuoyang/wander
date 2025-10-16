@@ -14,6 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: 
-  effectType: 0
-  value: 0
-  duration: 0
+  itemIcon: {fileID: 0}
+  canUpgrade: 1
+  maxLevel: 3
+  rarity: 2
+  AdGet: 0
+  coinCost: 11
+  displayName: 
+  info: 
+  effectType: 4
+  requiredChargeCount: 1
+  energyConsumption: 0
+  hasCooldown: 0
+  cooldownTime: 0
+  value:
+  - 2
+  - 4
+  - 6

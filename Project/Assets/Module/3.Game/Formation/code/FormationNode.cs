@@ -16,6 +16,16 @@ public class FormationNode : MonoBehaviour
     [Header("节点物品")]
     [SerializeField] private FormationItem item;
 
+    [Header("高亮效果")]
+    [SerializeField] private SpriteRenderer highlightRenderer;
+    [SerializeField] private Color normalColor = Color.white;
+    [SerializeField] private Color hoverColor = Color.yellow;
+    [SerializeField] private Color validColor = Color.green;
+    [SerializeField] private Color invalidColor = Color.red;
+
+    public GameObject itemPrefab;
+    
+
     // 节点数据引用
     private FormatianNodaData nodeData;
 
@@ -198,15 +208,9 @@ public class FormationNode : MonoBehaviour
         }
 
         // 创建新的物品
-        GameObject itemObject = new GameObject();
-        itemObject.transform.SetParent(transform);
-        itemObject.transform.localPosition = Vector3.zero;
-
-        item = itemObject.AddComponent<FormationItem>();
+        GameObject itemObject = Instantiate(itemPrefab, transform);
+        item = itemObject.GetComponent<FormationItem>();
         item.Initialize(config, this);
-
-        Debug.Log($"节点 {nodeIndex} 设置了物品: {config.itemName} ({config.itemType}), 需要触发 {config.requiredChargeCount} 次, 冷却: {config.hasCooldown}");
-
         return item;
     }
 
@@ -282,6 +286,57 @@ public class FormationNode : MonoBehaviour
     {
         return item?.RequiredTriggerCount ?? 0;
     }
+
+    #region 高亮效果方法
+    /// <summary>
+    /// 设置节点高亮效果
+    /// </summary>
+    /// <param name="active">是否激活高亮</param>
+    /// <param name="color">高亮颜色</param>
+    public void SetHighlight(bool active, Color color)
+    {
+        if (highlightRenderer != null)
+        {
+            highlightRenderer.gameObject.SetActive(active);
+            if (active)
+            {
+                highlightRenderer.color = color;
+            }
+        }
+    }
+
+    /// <summary>
+    /// 清除节点高亮效果
+    /// </summary>
+    public void ClearHighlight()
+    {
+        SetHighlight(false, normalColor);
+    }
+
+    /// <summary>
+    /// 设置悬停高亮
+    /// </summary>
+    public void SetHoverHighlight()
+    {
+        SetHighlight(true, hoverColor);
+    }
+
+    /// <summary>
+    /// 设置有效放置高亮
+    /// </summary>
+    public void SetValidHighlight()
+    {
+        SetHighlight(true, validColor);
+    }
+
+    /// <summary>
+    /// 设置无效放置高亮
+    /// </summary>
+    public void SetInvalidHighlight()
+    {
+        SetHighlight(true, invalidColor);
+    }
+    #endregion
 
     /// <summary>
     /// 为物品添加效果
