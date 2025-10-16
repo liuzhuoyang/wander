@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c2548d95259424a6a840f64ce335d006
+guid: 09ffecab79870470f9f679937091b4c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8535722320073078491
-    second: icon_gear_common_01_0
+      213: 2526870322590734138
+    second: icon_skill_shield_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_gear_common_01_0
+      name: icon_skill_shield_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 201
-        height: 229
+        x: 11
+        y: 12
+        width: 233
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 529cbaa26c50b8980800000000000000
-      internalID: -8535722320073078491
+      spriteID: a375f73ab2f311320800000000000000
+      internalID: 2526870322590734138
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_gear_common_01_0: -8535722320073078491
+      icon_skill_shield_0: 2526870322590734138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

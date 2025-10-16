@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: c2548d95259424a6a840f64ce335d006
+guid: ee52cd3a04fad429aaa1f6a1e19e90ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8535722320073078491
-    second: icon_gear_common_01_0
+      213: 5982143395746820946
+    second: icon_skill_double_jump_0
+  - first:
+      213: 3964960336377230268
+    second: icon_skill_double_jump_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icon_gear_common_01_0
+      name: icon_skill_double_jump_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 201
-        height: 229
+        x: 34
+        y: 54
+        width: 187
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 529cbaa26c50b8980800000000000000
-      internalID: -8535722320073078491
+      spriteID: 25330f249b7d40350800000000000000
+      internalID: 5982143395746820946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_skill_double_jump_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 4
+        width: 115
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3374e2b6e560730800000000000000
+      internalID: 3964960336377230268
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icon_gear_common_01_0: -8535722320073078491
+      icon_skill_double_jump_0: 5982143395746820946
+      icon_skill_double_jump_1: 3964960336377230268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
