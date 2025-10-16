@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using TMPro;
 using System;
 using SimpleAudioSystem;
+using RTSDemo.Unit;
 
 
 //经常需要初始化的资源才需要预加载
@@ -11,16 +12,20 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
 {
     public TMP_FontAsset font;
     public Material fontMaterialTitle;
-    public Material fontMaterialContent; 
+    public Material fontMaterialContent;
 
-    public Dictionary<string, AudioClip> dictSFXClip;
-    public Dictionary<string, AudioClip> dictSFXGroupClip;
+    //AudioClip
+    Dictionary<string, AudioClip> dictSFXClip;
+    
+    //单位Prefab
+    Dictionary<string, GameObject> dictUnit;
 
     public async UniTask Init()
     {
         await InitFont();
         // await InitVFXAsset(); //后续可优化放到动态加载里
         await InitAudioAsset();
+        await InitUnitPrefab();
         return;
     }
 
@@ -61,25 +66,28 @@ public class GameAssetManagerGeneric : Singleton<GameAssetManagerGeneric>
     #endregion
 
     #region 读取音频资源
-    async UniTask InitAudioAsset()
+    async UniTask InitAudioAsset() => dictSFXClip = await AudioManager.LoadAllSFXAsDict();
+    public AudioClip GetSFXClip(string sfxKey)
     {
-        dictSFXClip = new Dictionary<string, AudioClip>();
-        dictSFXGroupClip = new Dictionary<string, AudioClip>();
-        await LoadAsset(AllAudio.dictSFXData.Keys, LoadAudio);
+        if (dictSFXClip.TryGetValue(sfxKey, out var clip))
+        {
+            return clip;
+        }
+        Debug.LogWarning($"未找到音效: {sfxKey}");
+        return null;
     }
+    #endregion
 
-    async UniTask LoadAudio(string audioName)
+    #region 获取单位身体素材
+    async UniTask InitUnitPrefab() => dictUnit = await UnitManager.Instance.LoadAllUnitPrefabAsDict();
+    public GameObject GetUnitPrefab(string unitKey)
     {
-        AudioData data = AllAudio.dictSFXData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
-        dictSFXGroupClip.Add(audioName, clip);
-    }
-
-    async UniTask LoadAudioGroup(string audioName)
-    {
-        AudioGroupData data = AllAudio.dictSFXGroupData[audioName];
-        AudioClip clip = await GameAsset.GetAssetAsync<AudioClip>(data.name);
-        dictSFXGroupClip.Add(audioName, clip);
+        if (dictUnit.TryGetValue(unitKey, out var prefab))
+        {
+            return prefab;
+        }
+        Debug.LogWarning($"未找到单位预制体: {unitKey}");
+        return null;
     }
     #endregion
 

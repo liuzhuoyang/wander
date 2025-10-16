@@ -13,7 +13,9 @@ namespace RTSDemo.Game
         [SerializeField] private string InitScene;
         [SerializeField] private GameInitConfig gameConfig;
         [Header("Extra")]
-        [SerializeField] private GameObject building; 
+        [SerializeField] private GameObject building;
+
+        private GameAssetManagerGeneric gameAssetManagerGeneric; 
         
         public async void Start()
         {
@@ -21,6 +23,8 @@ namespace RTSDemo.Game
             await gameConfig.GamePlaySetUp(root.transform);
             await Instantiate(building).GetComponent<BuildingManager>().Init();
             await SceneManager.LoadSceneAsync(InitScene, LoadSceneMode.Additive);
+            gameAssetManagerGeneric = new GameObject("GameAssetManagerGeneric").AddComponent<GameAssetManagerGeneric>();
+            await gameAssetManagerGeneric.Init();
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(InitScene));
         }
     }

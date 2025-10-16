@@ -245,39 +245,33 @@ public static class ReadWrite
 #if UNITY_EDITOR
 
     // ************ 编辑器用 *****************
+    // <summary>
+    // 创建地图，并写入模版，同时检查路径及下面文件夹内是否有同名文件
+    // </summary>
+    public static void CreateLevelJsonFile(string path, string fileName, MapJsonData templateData)
+    {
+        string directoryPath = path;
+        string filePath = Path.Combine(directoryPath, fileName + ".json");
 
-    /// <summary>
-    /// 创建地图，并写入模版，同时检查路径及下面文件夹内是否有同名文件
-    /// </summary>
-    // public static void CreateLevelJsonFile(string fileName, LevelRawData templateData)
-    // {
-    //     string directoryPath = EditorPathUtility.levelFilePath;
-    //     string filePath = Path.Combine(directoryPath, fileName + ".json");
+        // Ensure the directory exists
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+        }
 
-    //     // Ensure the directory exists
-    //     if (!Directory.Exists(directoryPath))
-    //     {
-    //         Directory.CreateDirectory(directoryPath);
-    //     }
+        if (Directory.GetFiles(directoryPath, fileName + ".json", SearchOption.AllDirectories).Any())
+        {
+            Debug.LogError("=== ReadWrite: 已经有同名文件存在 : " + filePath + " ===");
+            return;
+        }
 
-    //     // Check if the file exists in the directory or any of its subdirectories
-    //     if (Directory.GetFiles(directoryPath, fileName + ".json", SearchOption.AllDirectories).Any())
-    //     {
-    //         Debug.LogError("=== ReadWrite: File already exists at: " + filePath + " ===");
-    //         return;
-    //     }
+        string jsonContent = JsonConvert.SerializeObject(templateData, Formatting.Indented);
 
-    //     // Serialize the template data to JSON
-    //     string jsonContent = JsonConvert.SerializeObject(templateData, Formatting.Indented);
+        File.WriteAllText(filePath, jsonContent);
+        Debug.Log("=== ReadWrite: 文件被创建在下列路径 : " + filePath + " ===");
 
-    //     // Create the file
-    //     File.WriteAllText(filePath, jsonContent);
-    //     Debug.Log("=== ReadWrite: File created at: " + filePath + " ===");
-
-    //     // Refresh the AssetDatabase if you're in the Unity Editor
-
-    //     AssetDatabase.Refresh();
-    // }
+        AssetDatabase.Refresh();
+    }
 
     /// <summary>
     /// 保存当前地图数据

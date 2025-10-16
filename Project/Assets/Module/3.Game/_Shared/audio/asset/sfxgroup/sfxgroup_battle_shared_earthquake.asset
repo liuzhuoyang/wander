@@ -34,3 +34,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_SubObjectGUID: 
     m_EditorAssetChanged: 1
+  clipKeys:
+  - sfx_battle_shared_earthquake_001
+  - sfx_battle_shared_earthquake_002
+  - sfx_battle_shared_earthquake_003

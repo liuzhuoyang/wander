@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c347f912033845faaf817ee10e70458, type: 3}
+  m_Name: level_main_002_01
+  m_EditorClassIdentifier: 
+  levelName: level_main_002_01
+  displayName: level/theme_002/title_001
+  levelIndex: 6
+  levelType: 0
+  chapterID: 2
+  levelID: 1
+  themeName: theme_002
+  mapName: 
+  themeVarient: 1
+  previewPic: {fileID: 21300000, guid: ccbaa99fafb894bb983a578b4b4092e5, type: 3}
+  cameraPos: 2
+  totalWave: 10
+  unitLevel: 25
+  difficulty: 0
+  unitRace: iron
+  bossName: 
+  previewBossIcon: {fileID: 0}
+  enemyUnitAssetList: []
+  plotSeqData: {fileID: 0}
+  plotSeqID: 
+  plotData: {fileID: 11400000, guid: a23784540082947de9fbc0d4e4d42eba, type: 2}
+  plotName: plot_c002_01
+  listWaveMergePlotSeqData: []
+  listWaveMergeSeqID: []
+  listWaveMergeSeqIndex: 
+  listWaveMergePlotData: []
+  listWaveMergePlotName: []
+  listWaveMergePlotIndex: 
+  listWaveFightPlotSeqData: []
+  listWaveFightSeqID: []
+  listWaveFightSeqIndex: 
+  listWaveFightPlotData: []
+  listWaveFightPlotName: []
+  listWaveFightPlotIndex: 

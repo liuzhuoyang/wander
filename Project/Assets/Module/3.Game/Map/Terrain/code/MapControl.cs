@@ -13,14 +13,11 @@ using onicore.editor;
 public class MapControl : Singleton<MapControl>
 {
     //地图数据
-    LevelRawData levelData;
-    public LevelRawData LevelData { get { return levelData; } }
+    MapJsonData levelData;
+    public MapJsonData LevelData { get { return levelData; } }
 
-    //基地组件
-    //GameObject groupBase;
-    GameObject mapNode;
-    //碰撞体组件
-    GameObject mapCollider;
+    //GameObject mapNode;
+
     //地形组件
     GameObject groupTerrain;
     //特效组件
@@ -32,14 +29,11 @@ public class MapControl : Singleton<MapControl>
         groupTerrain.AddComponent<TerrainControl>().Init();
         groupTerrain.transform.SetParent(transform);
 
+        /*
         mapNode = new GameObject("MapNode");
         mapNode.AddComponent<MapNodeControl>().Init();
         mapNode.transform.SetParent(transform);
-
-        mapCollider = new GameObject("MapCollider");
-        mapCollider.AddComponent<MapColliderControl>().Init();
-        mapCollider.transform.SetParent(transform);
-
+        */
         // groupVFX = new GameObject("VFX");
         // groupVFX.AddComponent<EnvVfxControl>().Init();
         // groupVFX.transform.SetParent(transform);
@@ -59,34 +53,26 @@ public class MapControl : Singleton<MapControl>
         {
             Destroy(child.gameObject);
         }
-
-        foreach (Transform child in mapCollider.transform)
-        {
-            Destroy(child.gameObject);
-        }
     }
 
-    public async UniTask OpenLevel(LevelData args, bool isEditor = false)
+    public async UniTask OpenLevel(LevelData levelData, bool isEditor = false)
     {
-        // GameObject bg = Instantiate(args.mapPrefab, groupTerrain.transform);
-        /*    string stream = await ReadWrite.ReadDataAsync(args.levelName);
+        string stream = await ReadWrite.ReadDataAsync(levelData.mapName);
 
-           //处理派生类的情况，如FeaturePointArgs会被
-           var settings = new JsonSerializerSettingss
-           {
-               TypeNameHandling = TypeNameHandling.Objects, // 使用Objects来处理类型信息
-               SerializationBinder = new FeaturePointBinder() // 添加自定义的Binder
-           };
-           //反序列化
-           levelData = JsonConvert.DeserializeObject<LevelRawData>(stream, settings);
+        //处理派生类的情况，如FeaturePointArgs会被
+        var settings = new JsonSerializerSettings
+        {
+            TypeNameHandling = TypeNameHandling.Objects, // 使用Objects来处理类型信息
+            SerializationBinder = new FeaturePointBinder() // 添加自定义的Binder
+        };
+        //反序列化
+        this.levelData = JsonConvert.DeserializeObject<MapJsonData>(stream, settings);
 
-           Debug.Log($"=== MapControl: open map: {args.levelName} ===");
+        Debug.Log($"=== MapControl: open map: {levelData.levelName} ===");
 
-           MapNodeControl.Instance.OnEnableMapNode(levelData.nodeData);
+        //MapNodeControl.Instance.OnEnableMapNode(levelData.nodeData);
 
-           await GenerateTerrain(args);
-
-           await GenerateCollider(); */
+        await GenerateTerrain(levelData);
 
         // 如果是在编辑器中，则生成编辑器Gizmos
         if (isEditor)
@@ -102,10 +88,11 @@ public class MapControl : Singleton<MapControl>
     {
         Dictionary<string, Dictionary<string, List<string>>> terrainData = levelData.terrainData;
 
+        /*
         float tileSize = 2;
         float offsetX = -16;
         float offsetY = -26;
-        string tileName = $"ter_theme_001_tile_01";
+        string tileName = $"ter_{args.themeName}_tile_01";
         //创建背景
         for (int i = 0; i < 16; i++)
         {
@@ -113,7 +100,7 @@ public class MapControl : Singleton<MapControl>
             {
                 await TerrainControl.Instance.CreateViewObject(new Vector2(i * tileSize + offsetX, j * tileSize + offsetY), tileName, TerrainLayer.Tile);
             }
-        }
+        }*/
 
         //float offset = 0.05f;//消除组装图的缝隙
         //await TerrainControl.Instance.CreateBG(args.themeName + "_tr", -offset, -offset);
@@ -159,37 +146,6 @@ public class MapControl : Singleton<MapControl>
         foreach (List<UniTask> group in taskGroup)
         {
             await UniTask.WhenAll(group);
-        }
-    }
-
-    //创建碰撞体
-    public async UniTask GenerateCollider()
-    {
-        List<string> colliderData = levelData.colliderData;
-
-        //清理功能
-#if UNITY_EDITOR
-        List<string> tempList = new List<string>();
-        for (int i = 0; i < colliderData.Count; i++)
-        {
-            if (!tempList.Contains(colliderData[i]))
-            {
-                tempList.Add(colliderData[i]);
-            }
-            else
-            {
-                colliderData.Remove(colliderData[i]);
-            }
-        }
-#endif
-
-        foreach (string xy in colliderData)
-        {
-            string[] array = xy.Split(",");
-            float x = float.Parse(array[0], new CultureInfo("en-US").NumberFormat);
-            float y = float.Parse(array[1], new CultureInfo("en-US").NumberFormat);
-
-            await MapColliderControl.Instance.CreateViewObject(new Vector2(x, y));
         }
     }
 
@@ -291,16 +247,6 @@ public class MapControl : Singleton<MapControl>
                     {
 
                     });
-                break;
-            case MapObjectType.Collider:
-                if (!LevelData.CheckIsContainsColliderHandle(worldPosition.x, worldPosition.y))
-                {
-                    await MapColliderControl.Instance.CreateViewObject(worldPosition);
-                }
-                else
-                {
-                    Debug.Log("=== MapControl: 这个格子已经放了碰撞体，跳过 collider already exists  ===");
-                }
                 break;
             default:
                 break;

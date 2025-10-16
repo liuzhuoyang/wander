@@ -21,59 +21,6 @@ namespace SimpleAudioSystem
         public List<AudioData> sfx_list;
         public List<AudioGroupData> sfx_group_list;
 
-        private Dictionary<string, AudioData> bgm_dict;
-        private Dictionary<string, AudioData> amb_dict;
-        private Dictionary<string, AudioData> sfx_dict;
-
-        void OnEnable()
-        {
-            Debug.Log("-------Initializing Audio Data Collection-------");
-            bgm_dict = new Dictionary<string, AudioData>();
-            amb_dict = new Dictionary<string, AudioData>();
-            sfx_dict = new Dictionary<string, AudioData>();
-
-            foreach (var item in bgm_list)
-            {
-                bgm_dict.Add(item.name, item);
-            }
-            foreach (var item in amb_list)
-            {
-                amb_dict.Add(item.name, item);
-            }
-            
-            foreach (var item in sfx_list)
-            {
-                sfx_dict.Add(item.name, item);
-            }
-            foreach (var item in sfx_group_list)
-            {
-                sfx_dict.Add(item.name, item);
-            }
-
-            Debug.Log("-------Finish Initializing Audio Data Collection-------");
-        }
-        public AssetReferenceT<AudioClip> GetSFXByKey(string key)
-        {
-            if (sfx_dict.TryGetValue(key, out var sfxData))
-                return sfxData.GetClipRef();
-            Debug.LogError("No Clip Found By Key: " + key);
-            return null;
-        }
-        public AssetReferenceT<AudioClip> GetBGMByKey(string key)
-        {
-            if (bgm_dict.TryGetValue(key, out var bgmData))
-                return bgmData.GetClipRef();
-            Debug.LogError("No BGM Found By Key: " + key);
-            return null;
-        }
-        public AssetReferenceT<AudioClip> GetAMBByKey(string key)
-        {
-            if (amb_dict.TryGetValue(key, out var ambData))
-                return ambData.GetClipRef();
-            Debug.LogError("No AMB Found By Key: " + key);
-            return null;
-        }
-
 #if UNITY_EDITOR
         [Button("Find All Data", ButtonSizes.Gigantic)]
         public void FindAllAudioData()
@@ -99,27 +46,78 @@ namespace SimpleAudioSystem
         }
 #endif
     }
-
-    public static class AllAudio
+    public static class AllBGM
     {
-        public static Dictionary<string, AudioData> dictSFXData;
-        public static Dictionary<string, AudioGroupData> dictSFXGroupData;
-        
-         //初始化数据，从资源中加载
+        private static Dictionary<string, AudioData> dictBGMData;
+
+        //初始化数据，从资源中加载
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        public static void Init()
+        {
+            dictBGMData = new Dictionary<string, AudioData>();
+            AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
+            foreach (AudioData data in collection.bgm_list)
+            {
+                dictBGMData.Add(data.name, data);
+            }
+        }
+        public static AudioData GetBGMData(string key)
+        {
+            if (dictBGMData.TryGetValue(key, out var data))
+                return data;
+            Debug.LogError("No BGM Data Found By Key: " + key);
+            return null;
+        }
+    }
+    public static class AllAMB
+    {
+        private static Dictionary<string, AudioData> dictAMBData;
+
+        //初始化数据，从资源中加载
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        public static void Init()
+        {
+            dictAMBData = new Dictionary<string, AudioData>();
+            AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
+            foreach (AudioData data in collection.amb_list)
+            {
+                dictAMBData.Add(data.name, data);
+            }
+        }
+        public static AudioData GetAMBData(string key)
+        {
+            if (dictAMBData.TryGetValue(key, out var data))
+                return data;
+            Debug.LogError("No AMB Data Found By Key: " + key);
+            return null;
+        }
+    }
+    public static class AllSFX
+    {
+        private static Dictionary<string, AudioData> dictSFXData;
+
+        //初始化数据，从资源中加载
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         public static void Init()
         {
             dictSFXData = new Dictionary<string, AudioData>();
-            dictSFXGroupData = new Dictionary<string, AudioGroupData>();
             AudioDataCollection collection = GameDataControl.Instance.Get("all_audio") as AudioDataCollection;
             foreach (AudioData data in collection.sfx_list)
             {
                 dictSFXData.Add(data.name, data);
             }
-            foreach (AudioGroupData data in collection.sfx_group_list)
+            foreach(AudioData data in collection.sfx_group_list)
             {
-                dictSFXGroupData.Add(data.name, data);
+                dictSFXData.Add(data.name, data);
             }
         }
+        public static AudioData GetSFXData(string key)
+        {
+            if (dictSFXData.TryGetValue(key, out var data))
+                return data;
+            Debug.LogError("No SFX Data Found By Key: " + key);
+            return null;
+        }
+        public static Dictionary<string, AudioData> GetDictSFXData() => dictSFXData;
     }
 }
