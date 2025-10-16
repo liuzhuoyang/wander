@@ -54,7 +54,9 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
     {
         FormationItemConfig newItemConfig = new FormationItemConfig()
         {
-            itemName = data.displayName,
+            itemName = data.itemName,
+            displayName = data.displayName,
+            info = data.info,
             itemType = FormationItemType.Skill,
             coinCost = BattleShopFormula.GetGearCoin(data.coinCost, level),
             AdGet = data.AdGet,
@@ -62,6 +64,7 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
             hasCooldown = data.hasCooldown,
             cooldownTime = data.cooldownTime,
             itemIcon = data.itemIcon,
+            level = level,
         };
         return newItemConfig;
     }
@@ -70,11 +73,14 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
     {
         FormationItemConfig newItemConfig = new FormationItemConfig()
         {
-            itemName = data.gearData.displayName,
+            itemName = data.gearData.gearName,
+            displayName = data.gearData.displayName,
+            info = data.gearData.info,
             itemType = FormationItemType.Gear,
             coinCost = BattleShopFormula.GetGearCoin(data.coinCost, level),
             rarity = data.gearData.rarity,
             itemIcon = data.itemIcon,
+            level = level,
         };
         return newItemConfig;
     }
@@ -89,6 +95,8 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
         FormationItemConfig copy = new FormationItemConfig()
         {
             itemName = original.itemName,
+            displayName = original.displayName,
+            info = original.info,
             itemType = original.itemType,
             level = original.level,
             coinCost = original.coinCost,

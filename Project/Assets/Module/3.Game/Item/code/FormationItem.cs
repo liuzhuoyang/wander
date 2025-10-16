@@ -324,6 +324,8 @@ public class FormationItemConfig
 {
     [Header("基础信息")]
     public string itemName;
+    public string displayName;
+    public string info;
     public FormationItemType itemType;
     public int level = 1;
     public int coinCost = 0;

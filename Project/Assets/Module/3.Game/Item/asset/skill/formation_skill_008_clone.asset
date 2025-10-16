@@ -20,7 +20,7 @@ MonoBehaviour:
   rarity: 4
   AdGet: 1
   coinCost: 0
-  displayName: 
+  displayName: formation/skill_001/name
   info: 
   effectType: 7
   requiredChargeCount: 4

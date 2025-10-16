@@ -17,20 +17,20 @@ MonoBehaviour:
   hint: 
   list:
   - key: formation/skill_001/name
-    textEnglish: aaa
+    textEnglish: skill
     textHint: 
     mappingList: []
-    allLanguage: 0
+    allLanguage: 1
     isMapping: 0
-    textSimpleChinese: 
-    textTraditionChinese: 
-    textJapanese: 
-    textKorean: 
-    textFrench: 
-    textGerman: 
-    textSpanish: 
-    textPortuguese: 
-    textItalian: 
-    textDutch: 
-    textRussian: 
-    textThai: 
+    textSimpleChinese: "\u6280\u80FD"
+    textTraditionChinese: "\u6280\u80FD"
+    textJapanese: "\u30B9\u30AD\u30EB"
+    textKorean: "\uAE30\uC220"
+    textFrench: "comp\xE9tence"
+    textGerman: "F\xE4higkeit"
+    textSpanish: habilidad
+    textPortuguese: habilidade
+    textItalian: "abilit\xE0"
+    textDutch: vaardigheid
+    textRussian: "\u043D\u0430\u0432\u044B\u043A"
+    textThai: "\u0E17\u0E31\u0E01\u0E29\u0E30"

@@ -430,6 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIBattleShopSlot
   textName: {fileID: 1758464168218005677}
   textCost: {fileID: 4435410247535042085}
+  cost: {fileID: 7293282449619877292}
   objDrag: {fileID: 1527780786258776814, guid: c5c423bbc0226431aad8e0eab30c60e3, type: 3}
 --- !u!1 &9210326203664365295
 GameObject:
