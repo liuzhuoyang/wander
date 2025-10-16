@@ -41,7 +41,6 @@ public class FormationSkillData : FormationItemData
 
     [BoxGroup("参数")]
     [LabelText("描述"), ValueDropdown("GetLocalizationKeyList")]
-    [ReadOnly]
     public string info;
 
 
