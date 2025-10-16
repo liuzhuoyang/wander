@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: skill_003_shield
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: 09ffecab79870470f9f679937091b4c4, type: 3}
   canUpgrade: 1
   maxLevel: 3
   rarity: 2

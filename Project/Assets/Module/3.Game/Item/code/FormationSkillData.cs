@@ -36,12 +36,11 @@ public class FormationSkillData : FormationItemData
 
 
     [BoxGroup("参数")]
-    [LabelText("显示名称（本地化，没整理完,之后写）")]
-    [ReadOnly]
+    [LabelText("显示名称"), ValueDropdown("GetLocalizationKeyList")]
     public string displayName;
 
     [BoxGroup("参数")]
-    [LabelText("描述（本地化，没整理完,之后写）")]
+    [LabelText("描述"), ValueDropdown("GetLocalizationKeyList")]
     [ReadOnly]
     public string info;
 
@@ -83,7 +82,22 @@ public class FormationSkillData : FormationItemData
         {
             itemName = this.name;
         }
+    }
 
+    private List<string> GetLocalizationKeyList()
+    {
+        List<string> list = new List<string>();
+        list.Add("");
+        string path = GameDataControl.GetLocPath("all_formation_item");
+        List<LocalizationData> listLocalizationAsset = FileFinder.FindAllAssetsOfAllSubFolders<LocalizationData>(path);
+        foreach (LocalizationData data in listLocalizationAsset)
+        {
+            foreach (LocalizationSerializedItem item in data.list)
+            {
+                list.Add(item.key);
+            }
+        }
+        return list;
     }
 #endif
 }

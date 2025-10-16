@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
   itemName: 
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: ee52cd3a04fad429aaa1f6a1e19e90ac, type: 3}
   canUpgrade: 0
   maxLevel: 1
   rarity: 3
