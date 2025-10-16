@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/Assets/Scenes/test_yif.unity.meta
 guid: 45444f33c16c2498abdef9aeea0d4061
+========
+guid: af9b47ba89dfc4ff5a1229696d67a38f
+folderAsset: yes
+>>>>>>>> framework/main:Project/Assets/Module/5.Data/Level/loc.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -28,6 +28,16 @@ MonoBehaviour:
     m_SerializedLabels:
     - gear
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09ffecab79870470f9f679937091b4c4
+    m_Address: icon_skill_shield
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c306a16754394ea6b1754d9367e283d
+    m_Address: icon_skill_health
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 34dfd36a341424d45815e9aad4202b31
     m_Address: icon_gear_103_bomb
     m_ReadOnly: 0
@@ -35,12 +45,22 @@ MonoBehaviour:
     - gear
     - icon
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c710d32d56d04c77b860358a2868338
+    m_Address: icon_skill_coin
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 52c911cbd3fd18645a48b73ed3db8028
     m_Address: icon_gear_104_frost
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
     - icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5978e4a7a2554462caf4e50ea9c0f608
+    m_Address: icon_gear_rare_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 691fa36e3a31fef4881818079de0091a
     m_Address: vfx_battle_gear_launch_102_missile_1
@@ -58,12 +78,42 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 952d78523327944d1a737b4ecdcaf182
+    m_Address: icon_gear_rare_03
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a6a3d46854eb6d74c8e0834c1dc362dc
     m_Address: icon_gear_102_missile
     m_ReadOnly: 0
     m_SerializedLabels:
     - gear
     - icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a700f352e3f0442edbcbc607feb8d0de
+    m_Address: icon_gear_rare_04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afd5d4fb0e80e406d883f0721d2561c8
+    m_Address: icon_skill_speed_boost
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6eca0ca2a7aa438dbf3f615639074bb
+    m_Address: icon_skill_reverse_direction
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b881594bb3fc64e8bbc966ed1da3c900
+    m_Address: icon_gear_rare_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2548d95259424a6a840f64ce335d006
+    m_Address: icon_gear_common_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c8703be7b59d3b64591d2d38dd347dd0
     m_Address: gear_103_bomb
@@ -95,6 +145,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - gear
     - icon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec08b0b72292d4fff8abfe5be467ef61
+    m_Address: icon_skill_dash
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee52cd3a04fad429aaa1f6a1e19e90ac
+    m_Address: icon_skill_double_jump
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f410f2ce2c82342548ac23c361a7c74f
+    m_Address: icon_gear_common_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9a32c96515534bc287b7028db1656e4
+    m_Address: icon_skill_clone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 92559aca95b3443df8b1d8e5aa810358, type: 2}

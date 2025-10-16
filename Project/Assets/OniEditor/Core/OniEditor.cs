@@ -26,6 +26,7 @@ namespace onicore.editor
             OdinMenuTree tree = new OdinMenuTree(supportsMultiSelect: true)
             {
                 { "Map",  new MenuMap()},
+                { "File", new MenuFile()}
             };
 
             string terrainAssetsPath = "Assets/EditorAssets/terrain/";
@@ -72,7 +73,6 @@ namespace onicore.editor
                 {
                     OpenEditScene();
                 }
-
             }
             //结束工具栏告知
             SirenixEditorGUI.EndHorizontalToolbar();

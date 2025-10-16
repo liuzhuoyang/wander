@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Project/Assets/Module/3.Game/Basement/basement_preview.unity.meta
 guid: b16f33feae40f94478e0467de77df74c
+========
+guid: 6bf6325e8dff94dd6a9998931d8cea9a
+folderAsset: yes
+>>>>>>>> framework/main:Project/Assets/Module/5.Data/Level/map.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

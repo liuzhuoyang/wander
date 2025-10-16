@@ -46,7 +46,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnLoadLevel()
     {
         //获取 章节1关卡1作为测试
-        LevelData levelData = LevelSystem.Instance.GetLevelData(1, 1);
+        LevelData levelData = LevelSystem.Instance.GetLevelData(LevelType.Main, 0, 1);
 
         await TransitControl.OnTransit();
         await GameAssetManagerBattle.Instance.OnLoadBattleAsset();

@@ -20,4 +20,4 @@ MonoBehaviour:
     modifier: 2
     attributeModifyType: 2
     attributeType: 3
-  statusVFX: {fileID: 11400000, guid: fbd80cd9e59fd63438545ae40977ea94, type: 2}
+  statusVFX: {fileID: 0}

@@ -46,12 +46,12 @@ public class MapNodeControl : Singleton<MapNodeControl>
                 // 跳过中心点
                 if (x == centerX && y == centerY)
                 {
-                    LevelRawData.AddNodeToDict(ref nodeDict, (byte)NodeDirectionUtility.NodeCostType.Target, x, y);
+                    MapJsonData.AddNodeToDict(ref nodeDict, (byte)NodeDirectionUtility.NodeCostType.Target, x, y);
                     continue;
                 }
                 if (x >= 0 && x < row && y >= 0 && y < col)
                 {
-                    LevelRawData.AddNodeToDict(ref nodeDict, (byte)NodeDirectionUtility.NodeCostType.Base, x, y);
+                    MapJsonData.AddNodeToDict(ref nodeDict, (byte)NodeDirectionUtility.NodeCostType.Base, x, y);
                 }
             }
         }
@@ -284,7 +284,7 @@ public class MapNodeControl : Singleton<MapNodeControl>
         {
             // 用户点击确认后执行的操作
             // flowFieldControl.OnClear();
-            MapControl.Instance.LevelData.ClearAllNode();
+            //MapControl.Instance.LevelData.ClearAllNode();
             
             // 显示成功提示
             EditorUtility.DisplayDialog("操作成功", "清除成功！请点击保存，然后重新加载地图以生效。", "确定");
