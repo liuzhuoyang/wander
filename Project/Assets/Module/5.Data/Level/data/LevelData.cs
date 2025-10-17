@@ -1,9 +1,12 @@
+using UnityEngine.AddressableAssets;
+using UnityEngine;
 using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using UnityEngine;
+
 using RTSDemo.Basement;
-using UnityEngine.AddressableAssets;
+using RTSDemo.Spawn;
+
 
 #if UNITY_EDITOR
 using System.Linq;
@@ -13,34 +16,18 @@ using RTSDemo.Unit;
 [Serializable]
 public class EnemySpawnData
 {
-    [System.Flags]
-    public enum SpawnArea
-    {
-        None = 0,
-        Top = 1 << 0,
-        Bottom = 1 << 1,
-        Left = 1 << 2,
-        Right = 1 << 3,
-        All = Top | Bottom | Left | Right
-    }
-    public enum SpawnRate
-    {
-        Slow = 1,
-        Normal = 2,
-        Fast = 3
-    }
-
     private UnitRace unitRace;
     public void InitUnitRace(UnitRace unitRace)
     {
         this.unitRace = unitRace;
     }
+//由于目前还没icon，暂时取消
+// #if UNITY_EDITOR
+//     [HideLabel]
+//     [PreviewField(55)]
+//     public Sprite previewIcon;
+// #endif
 
-#if UNITY_EDITOR
-    [HideLabel]
-    [PreviewField(55)]
-    public Sprite previewIcon;
-#endif
     [ValueDropdown("GetUnitNameList")]
     public string unitName;
 
@@ -63,11 +50,6 @@ public class EnemySpawnData
     public SpawnArea spawnArea = SpawnArea.All;
 
 #if UNITY_EDITOR
-    void OnUpdateIcon()
-    {
-        previewIcon = GameAsset.GetAssetEditor<Sprite>("icon_" + unitName);
-    }
-
     public List<string> GetUnitNameList()
     {
         List<string> list = new List<string>();
@@ -180,45 +162,11 @@ public class LevelData : ScriptableObject
     #endregion
 
     #region 敌人编辑
-
-
     [TabGroup("敌人")]
     public UnitRace unitRace;
-    
-    [ShowIf("levelType", Value = LevelType.Main)]
-    [TabGroup("敌人")]
-    [ValueDropdown("")]
-    [OnValueChanged("OnUpdateBossIcon")]
-    public string bossName;
-
-#if UNITY_EDITOR    
-    [TabGroup("敌人")]
-    [ReadOnly]
-    [PreviewField(55)]
-    public Sprite previewBossIcon;
-
-    void OnUpdateBossIcon()
-    {
-        if(!string.IsNullOrEmpty(bossName))
-        {
-            previewBossIcon = GameAsset.GetAssetEditor<Sprite>("icon_" + bossName);
-        }
-    }
-
     [TabGroup("敌人")]
     public List<EnemySpawnData> enemyUnitAssetList;
-
-    public List<string> GetBossNameList()
-    {
-        //等有单位后添加，只加入Boss
-        List<string> list = new List<string>();
-        list.Add("");
-        return list;
-    }
-        
-#endif
-
-#endregion
+    #endregion
 
 #region 剧情编辑
 #if UNITY_EDITOR

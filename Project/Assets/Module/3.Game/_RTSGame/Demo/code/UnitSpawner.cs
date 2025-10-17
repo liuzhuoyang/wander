@@ -36,6 +36,6 @@ public class UnitSpawner : MonoBehaviour
     }
     public void DestroyAllUnit()
     {
-        UnitManager.Instance.RemoveAllUnit();
+        UnitManager.Instance.CleanUpUnit();
     }
 }

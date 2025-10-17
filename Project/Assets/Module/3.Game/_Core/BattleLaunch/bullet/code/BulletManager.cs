@@ -49,15 +49,15 @@ namespace BattleLaunch.Bullet
         #region 战斗节点处理
         public void StartBattle()
         {
-            bulletRoot = new GameObject("[Bullet]").transform;
+            if(bulletRoot==null)
+                bulletRoot = new GameObject("[Bullet]").transform;
         }
-        public void CleanUpBattle()
+        public void CleanUpBullet()
         {
             foreach (Transform child in bulletRoot)
             {
                 Destroy(child.gameObject);
             }
-            Destroy(bulletRoot.gameObject);
         }
         #endregion
 

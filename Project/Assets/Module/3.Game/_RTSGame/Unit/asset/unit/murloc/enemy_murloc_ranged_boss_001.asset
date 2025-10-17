@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
+  m_Name: enemy_murloc_ranged_boss_001
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Unit.UnitData
+  maxLevel: 1000
+  healthRange: {x: 100, y: 1000}
+  shieldRange: {x: 0, y: 0}
+  penetrateArmor: 0
+  attackRange: 2
+  damageType: 0
+  attackDamage: {x: 10, y: 100}
+  damageMultiToBuilding: 0
+  damageMultiToShield: 0
+  criticRate: 0
+  criticDamageMultiplier: 0
+  attackSpeed: 1
+  unitRace: 1
+  unitClass: 2
+  armorRange: {x: 0, y: 0}
+  motionLayer: 0
+  moveSpeed: 3
+  attackLayer: 1
+  isRange: 1
+  maxAmmo: 0
+  reloadSpeed: 0
+  bodyRef:
+    m_AssetGUID: 82a7156bbcdbe1d43ab3ed59bb6c9137
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 1
+  bulletData: {fileID: 11400000, guid: a964e49ca75feb646b2b0bffaa70b20e, type: 2}
+  unitAbilites: []

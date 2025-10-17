@@ -106,7 +106,7 @@ public class UIModeBattlePrepare : UIBase
 
     public void OnFight()
     {
-        
+        BattleSystem.Instance.OnChangeBattleState(BattleStates.PrepareEnd);
     }
 
     public void OnRefreshItem()

@@ -104,7 +104,8 @@ GameObject:
   - component: {fileID: -7131596961099989948}
   - component: {fileID: 1637633055843556238}
   - component: {fileID: -1345090513064936598}
-  m_Layer: 0
+  - component: {fileID: 1798983580918887831}
+  m_Layer: 7
   m_Name: enemy_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,8 +122,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6584330942829295262}
   - {fileID: 3529642983896055324}
@@ -243,11 +244,23 @@ MonoBehaviour:
   PlayDeathAnimation: 0
   animationRoot: {fileID: 3529642983896055324}
   launchPoint: {fileID: 0}
-  isBoss: 0
   ignoreFlash: []
   minAttackPlayStep: 0.1
   overallVolume: 0.5
   hud_Pivot: {fileID: 885696602580672225}
+--- !u!114 &1798983580918887831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968306636356314493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad30e6b006e25d40a147f86d0263a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Unit.UB_RTSEnemy
+  currentState: 0
 --- !u!1 &2393394834167371368
 GameObject:
   m_ObjectHideFlags: 0

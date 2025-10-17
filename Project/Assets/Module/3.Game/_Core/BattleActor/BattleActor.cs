@@ -43,15 +43,17 @@ namespace BattleActor
     }
     public enum BattleActorMotionLayer
     {
-        Ground = 0, //地面层
-        Air = 1, //空中层
+        Surface = 0, //地面层
+        Submerged = 1, //水下层
+        Air = 2, //空中层
     }
     [System.Flags]
     public enum BattleActorMotionLayerMask
     {
         None = 0, //无层级
-        Ground = 1 << BattleActorMotionLayer.Ground, //地面层
+        Ground = 1 << BattleActorMotionLayer.Surface, //地面层
+        Submerged = 1 << BattleActorMotionLayer.Submerged, //水下层
         Air = 1 << BattleActorMotionLayer.Air, //空中层
-        All = Ground | Air, //所有层级
+        All = Ground | Submerged | Air, //所有层级
     }
 }
