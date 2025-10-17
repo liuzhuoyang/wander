@@ -1,18 +1,10 @@
 using UnityEngine;
-using Sirenix.OdinInspector;
 using System;
+using RTSDemo.Unit;
 
 [Serializable]
 [CreateAssetMenu(fileName = "race_asset", menuName = "OniData/Data/Race/RaceData", order = 1)]
 public class RaceData : ScriptableObject
 {
-    [BoxGroup("Info")]
-    [ReadOnly]
-    public string raceName;
-    
-    [Button("Init Data", ButtonSizes.Gigantic)]
-    void OnInitData()
-    {
-        raceName = this.name;
-    }
+    public UnitRace race;
 }

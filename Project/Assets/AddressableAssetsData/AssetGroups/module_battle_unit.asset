@@ -92,6 +92,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c69b220f4a4c4b4d883e2c6870c018b
+    m_Address: enemy_murloc_melee_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7ebb36ef6f9528e4986e894139ef2d7d
     m_Address: sfx_unit_iron_killed_003
     m_ReadOnly: 0

@@ -5,8 +5,6 @@ using UnityEngine;
 using RTSDemo.Basement;
 using UnityEngine.AddressableAssets;
 
-
-
 #if UNITY_EDITOR
 using System.Linq;
 using RTSDemo.Unit;
@@ -15,22 +13,18 @@ using RTSDemo.Unit;
 [Serializable]
 public class EnemyUnitData
 {
-    string unitRace;
-    public void InitUnitRace(string unitRace)
+    private UnitRace unitRace;
+    public void InitUnitRace(UnitRace unitRace)
     {
         this.unitRace = unitRace;
     }
 
 #if UNITY_EDITOR
-    //[ReadOnly]
-    [PreviewField(55)]
-    //[OnValueChanged("OnUpdateIcon")]
-    //[HorizontalGroup("Split", 55)]
     [HideLabel]
+    [PreviewField(55)]
     public Sprite previewIcon;
 #endif
 
-    //[VerticalGroup("Split/Ver")]
     public int unlockWave;
 
     [ValueDropdown("GetUnitNameList")]
@@ -51,14 +45,13 @@ public class EnemyUnitData
         foreach (UnitData asset in listAsset)
         {
             //获取同种族的单位
-            UnitRace selectedUnitRace = Enum.Parse<UnitRace>(unitRace);
+            UnitRace selectedUnitRace = unitRace;
             if(asset.unitRace == selectedUnitRace)
             list.Add(asset.name);
         }
         return list;
     }
 #endif
-
 }
 
 [CreateAssetMenu(fileName = "level_asset", menuName = "OniData/Data/Level/LevelData", order = 1)]
@@ -137,41 +130,30 @@ public class LevelData : ScriptableObject
     [BoxGroup("Scene")]
     public AssetReferenceGameObject mapPrefab;
     #endregion
+    
 
     #region 难度配置
     [BoxGroup("Difficulity")]
     [ShowIf("levelType", Value = LevelType.Main)]
-    public int totalWave;
+    public int totalWave = 15;
 
     [BoxGroup("Difficulity", LabelText = "难度配置")]
     [Tooltip("定义初始单位等级, 难度的基础值，定义关卡的难度基础")]
-    public int unitLevel;
-
-/*
-    [BoxGroup("Difficulity")]
-    [Tooltip("单位能力值变化")]
-    public float unitLevelGrowth;
-*/
+    public int unitLevel = 1;
 
     [Tooltip("定义难度系数，每波敌人能力值增长的幅度，定义关卡的难度增幅")]
     [BoxGroup("Difficulity")]
     [ShowIf("levelType", Value = LevelType.Main)]
     public Difficulty difficulty;
-#endregion
+    #endregion
 
-#region 敌人编辑
-   
+    #region 敌人编辑
 
-    [TabGroup("敌人")]
-    [ValueDropdown("GetRaceList")]
-    [ShowIf("levelType", Value = LevelType.Main)]
 
     [TabGroup("敌人")]
-    public string unitRace;
+    public UnitRace unitRace;
+    
     [ShowIf("levelType", Value = LevelType.Main)]
-
- 
-
     [TabGroup("敌人")]
     [ValueDropdown("")]
     [OnValueChanged("OnUpdateBossIcon")]
@@ -437,20 +419,6 @@ public class LevelData : ScriptableObject
         {
             listPlotName.RemoveRange(listPlotData.Count, listPlotName.Count - listPlotData.Count);
         }
-    }
-    
-    
-    public List<string> GetRaceList()
-    {
-        List<string> list = new List<string>();
-
-        string path = GameDataControl.GetAssetPath("all_race");
-        List<RaceData> listAsset = FileFinder.FindAllAssetsOfAllSubFolders<RaceData>(path);
-        foreach (RaceData asset in listAsset)
-        {
-            list.Add(asset.raceName);
-        }
-        return list;
     }
 
     public List<string> GetMapNameList()

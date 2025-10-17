@@ -29,11 +29,7 @@ namespace RTSDemo.Unit
         private int SpawnedCount = 0; //记录当前已创建单位的数量，作为单位的标识
 
         #region 数据获取
-        public Material GetHitFeedbackMat(bool isBoss)
-        {
-            if (isBoss) return unitViewConfig_SO.boss_Hit;
-            else return unitViewConfig_SO.default_Hit;
-        }
+        public Material GetHitFeedbackMat() => unitViewConfig_SO.default_Hit;
         async UniTask LoadUnitPrefabToDict(Dictionary<string, GameObject> dictTarget, UnitData unitData) 
             => dictTarget[unitData.m_actorKey] = await GameAsset.GetPrefabAsync(unitData.m_actorKey, unitData.m_bodyRef);
         public async UniTask<Dictionary<string, GameObject>> LoadAllUnitPrefabAsDict()
