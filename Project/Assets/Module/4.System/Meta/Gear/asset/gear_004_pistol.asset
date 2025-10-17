@@ -17,8 +17,8 @@ MonoBehaviour:
   displayName: gear/name/004
   info: gear/info/001
   rarity: 2
-  attack: 7
-  triggerSpeed: 2
+  attack: 6
+  triggerSpeed: 1
   listData:
   - level: 5
     attributeType: 0

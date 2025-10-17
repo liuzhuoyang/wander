@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
   m_Name: gear_008_harpoon gun
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 008
+  gearName: 008_harpoon gun
   editorName: "\u9C7C\u53C9\u67AA"
   displayName: gear/name/008
   info: gear/info/008
-  rarity: 2
-  attack: 7
-  triggerSpeed: 2
+  rarity: 3
+  attack: 12
+  triggerSpeed: 1
   listData:
   - level: 5
     attributeType: 0
