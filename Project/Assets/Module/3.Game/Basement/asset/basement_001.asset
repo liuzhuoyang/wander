@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd575987648f04e4bbb2c273b70739d4, type: 3}
   m_Name: basement_001
   m_EditorClassIdentifier: 
-  maxHealth: 1000
-  maxShield: 1000
+  maxHealth: 100
+  maxShield: 0
   basementPrefab:
     m_AssetGUID: 4ec683c7e5597a24e84337d7fc1f5c5b
     m_SubObjectName: 

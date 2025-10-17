@@ -35,6 +35,10 @@ namespace RTSDemo.Spawn
         {
             this.parent = parent;
             enemySpawnData = spawnData;
+            ResetHandler();
+        }
+        internal void ResetHandler()
+        {
             if (enemySpawnData.baseCount > 1)
             {
                 spawnedCount = enemySpawnData.baseCount + (parent.currentWave - 1) + (Random.value > 0.5f ? 1 : -1);
@@ -43,7 +47,8 @@ namespace RTSDemo.Spawn
             {
                 spawnedCount = enemySpawnData.baseCount;
             }
-            spawnCycle = spawnData.delay;
+            spawnCycle = enemySpawnData.delay;
+            spawnComplete = false;
             spawnTimer = 0;
         }
         internal void UpdateHandler(float dt)
@@ -84,7 +89,7 @@ namespace RTSDemo.Spawn
         public int maxWave{get; private set;}
 
         //在载入关卡数据后执行一次初始化
-        public void StartBattle(LevelData levelData)
+        public void InitSpawner(LevelData levelData)
         {
             currentWave = 0;
             maxWave = levelData.totalWave;
@@ -96,20 +101,24 @@ namespace RTSDemo.Spawn
                 listCurrentHandlers.Add(handler);
             }
         }
-        public void EndBattle()
+        public void CleanUpSpawner()
         {
             currentWave = 0;
             maxWave = 0;
             listCurrentHandlers.Clear();
         }
         //在每一波开始时打开敌人生成器
-        public void StartFight(int wave)
+        public void StartSpawning(int wave)
         {
             currentWave = wave;
             isSpawning = true;
+            foreach (var handler in listCurrentHandlers)
+            {
+                handler.ResetHandler();
+            }
         }
         //在每一波结束时关闭敌人生成器
-        public void EndFight()
+        public void StopSpawning()
         {
             isSpawning = false;
         }

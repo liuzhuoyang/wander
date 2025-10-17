@@ -69,19 +69,13 @@ namespace RTSDemo.Unit
             SpawnedCount = 0;
             enemyUnitList = new HashSet<UnitBase>();
             playerUnitList = new HashSet<UnitBase>();
-            unitRoot = new GameObject("[Unit]").transform;
+            if(unitRoot==null)
+                unitRoot = new GameObject("[Unit]").transform;
         }
-        public void RemoveAllUnit()
+        public void CleanUpUnit()
         {
             CleanUpHashSet(ref enemyUnitList);
             CleanUpHashSet(ref playerUnitList);
-        }
-        //战斗结束后清理
-        public void CleanUpBattle()
-        {
-            //清理单位
-            RemoveAllUnit();
-            Destroy(unitRoot.gameObject);
         }
         #endregion
 

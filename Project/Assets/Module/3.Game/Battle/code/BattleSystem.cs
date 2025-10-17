@@ -95,7 +95,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         await OnLoadLevel();
 
         //开启各项游戏系统
-        enemySpawner.StartBattle(currentLevelData);
+        enemySpawner.InitSpawner(currentLevelData);
         UnitManager.Instance.StartBattle();
         BulletManager.Instance.StartBattle();
         GearManager.Instance.StartBattle();
@@ -122,6 +122,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         AudioManager.Instance.PlayBGM("bgm_battle_prepare_001");
         CameraManager.Instance.OnPrepareStart();
         BattleShopSystem.Instance.RefreshShopItem();
+
         await base.OnPrepareStartPhaseEnter();
     }
 
@@ -143,7 +144,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         CameraManager.Instance.OnFightStart();
-        enemySpawner.StartFight(1);
+        enemySpawner.StartSpawning(1);
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()
@@ -160,8 +161,12 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnFightEndPhaseEnter()
     {
         //波段战斗结束 - 进入阶段
+        enemySpawner.StopSpawning();
         ModeBattleControl.OnCloseActive();
-        enemySpawner.EndFight();
+        UnitManager.Instance.CleanUpUnit();
+        BuffZoneManager.Instance.CleanUpBuffZone();
+        BulletManager.Instance.CleanUpBullet();
+        
         await base.OnFightEndPhaseEnter();
 
     }
@@ -196,10 +201,10 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         Destroy(battleController);
         Destroy(enemySpawner);
         //清理各项游戏系统
-        UnitManager.Instance.CleanUpBattle();
-        BulletManager.Instance.CleanUpBattle();
+        UnitManager.Instance.CleanUpUnit();
+        BulletManager.Instance.CleanUpBullet();
         GearManager.Instance.CleanUpBattle();
-        BuffZoneManager.Instance.CleanUpBattle();
+        BuffZoneManager.Instance.CleanUpBuffZone();
     }
     protected override async UniTask OnBattleEndPhaseExit()
     {
