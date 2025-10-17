@@ -62,10 +62,34 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2115a7cf59e78430aabcf9f554ef3912, type: 3}
     - target: {fileID: 5847573024934349277, guid: d32092b0ce773409dbc9e4212510af72, type: 3}
       propertyPath: m_Name
-      value: bullet_rare_02
+      value: bullet_rare_04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5847573024934349277, guid: d32092b0ce773409dbc9e4212510af72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8507594685561955009}
   m_SourcePrefab: {fileID: 100100000, guid: d32092b0ce773409dbc9e4212510af72, type: 3}
+--- !u!1 &4232000203464910145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5847573024934349277, guid: d32092b0ce773409dbc9e4212510af72, type: 3}
+  m_PrefabInstance: {fileID: 7754588794941500572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8507594685561955009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232000203464910145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453d062001e8e94f93781d8a40534b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleLaunch.Bullet.Projectile
+  life: 2
+  bulletSpeed: 12
+  effectRange: 0
+  aimRadius: 0
