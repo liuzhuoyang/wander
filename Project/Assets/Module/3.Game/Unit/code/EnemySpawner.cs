@@ -171,7 +171,7 @@ namespace RTSDemo.Spawn
                 else
                 {
                     spawnComplete = false;
-                    nextSpawnWave += Random.Range(enemySpawnData.waveIntersect.x, enemySpawnData.waveIntersect.y + 1);
+                    nextSpawnWave += Random.Range(enemySpawnData.waveIntersect.x, enemySpawnData.waveIntersect.y + 1)+1;
                 }
                 spawnTimer = 0;
             }
