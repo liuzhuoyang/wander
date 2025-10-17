@@ -26,7 +26,7 @@ public class UIBattleItemSlot : MonoBehaviour
         imgIcon.sprite = formationItem.itemConfig.itemIcon;
         levelText.text = formationItem.itemConfig.level.ToString();
         info.text = UtilityLocalization.GetLocalization(formationItem.itemConfig.itemName);
-        SetRarityImage(itemdata.rarity);
+        SetRarityImage(itemdata.Rarity);
         RefreshSetBar();
     }
 
@@ -37,6 +37,15 @@ public class UIBattleItemSlot : MonoBehaviour
         rareTransform.gameObject.SetActive(rarity == Rarity.Rare);
         epicTransform.gameObject.SetActive(rarity == Rarity.Epic);
         legendaryTransform.gameObject.SetActive(rarity == Rarity.Legendary);
+    }
+
+    public void Refresh()
+    {
+        imgIcon.sprite = itemdata.itemConfig.itemIcon;
+        levelText.text = itemdata.itemConfig.level.ToString();
+        info.text = UtilityLocalization.GetLocalization(itemdata.itemConfig.itemName);
+        SetRarityImage(itemdata.Rarity);
+        RefreshSetBar();
     }
 
     //刷新充能条
@@ -50,12 +59,12 @@ public class UIBattleItemSlot : MonoBehaviour
             }
             else
             {
-                doSlicedBar.OnSetFill(itemdata.energyConsumption / itemdata.requiredEnergyConsumption);
+                doSlicedBar.OnSetFill(0);
             }
         }
         else
         {
-            doSlicedBar.OnSetFill(itemdata.currentChargeCount / itemdata.requiredChargeCount);
+            doSlicedBar.OnSetFill((float)itemdata.currentChargeCount / (float)itemdata.requiredChargeCount);
         }
 
     }

@@ -27,17 +27,17 @@ public class FormationWorldItem : MonoBehaviour
     /// <summary>
     /// 物品名称
     /// </summary>
-    public string ItemName => item.itemName;
+    public string ItemName => item.ItemName;
 
     /// <summary>
     /// 物品类型
     /// </summary>
-    public FormationItemType ItemType => item.itemType;
+    public FormationItemType ItemType => item.ItemType;
 
     /// <summary>
     /// 物品等级
     /// </summary>
-    public int Level => item.level;
+    public int Level => item.Level;
 
     /// <summary>
     /// 关联的节点
@@ -95,7 +95,7 @@ public class FormationWorldItem : MonoBehaviour
         effects.AddRange(item.itemConfig.effects);
 
         // 设置GameObject名称
-        gameObject.name = $"FormationItem_{item.itemName}_{item.itemType}";
+        gameObject.name = $"FormationItem_{item.ItemName}_{item.ItemType}";
 
     }
 
@@ -112,7 +112,7 @@ public class FormationWorldItem : MonoBehaviour
             float remainingTime = item.hasCooldown ? Mathf.Max(0f, item.cooldownTime - (Time.time - item.lastTriggerTime)) : 0f;
             if (remainingTime > 0)
             {
-                Debug.Log($"物品 {item.itemName} 还在冷却中，剩余 {remainingTime:F1} 秒");
+                Debug.Log($"物品 {item.ItemName} 还在冷却中，剩余 {remainingTime:F1} 秒");
                 return;
             }
             else
@@ -122,7 +122,7 @@ public class FormationWorldItem : MonoBehaviour
             }
         }
 
-        Debug.Log($"物品 {item.itemName} 被 {triggerer.name} 触发 ({item.currentChargeCount}/{item.requiredChargeCount})");
+        Debug.Log($"物品 {item.ItemName} 被 {triggerer.name} 触发 ({item.currentChargeCount}/{item.requiredChargeCount})");
         item.lastTriggerTime = Time.time;
 
         if (item.isActivated)
@@ -211,8 +211,9 @@ public class FormationWorldItem : MonoBehaviour
     /// </summary>
     public void UpgradeLevel()
     {
-        item.level++;
-        Debug.Log($"物品 {item.itemName} 升级到等级 {item.level}");
+        item.Level++;
+        Debug.Log($"物品 {item.ItemName} 升级到等级 {item.Level}");
+        uIBattleItemSlot.Refresh();
     }
 
 

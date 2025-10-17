@@ -69,11 +69,11 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     }
     void HandleEndDrag(Vector2 scrPos)
     {
-        Debug.Log($"[调试] HandleEndDrag 被调用。currentHoverNode: {(currentHoverNode != null ? currentHoverNode.name : "null")}, itemData: {(itemData != null ? itemData.itemName : "null")}, 拖拽屏幕坐标: {scrPos}");
+        Debug.Log($"[调试] HandleEndDrag 被调用。currentHoverNode: {(currentHoverNode != null ? currentHoverNode.name : "null")}, itemData: {(itemData != null ? itemData.ItemName : "null")}, 拖拽屏幕坐标: {scrPos}");
 
         if (currentHoverNode != null)
         {
-            Debug.Log($"[调试] 当前悬停节点: {currentHoverNode.name}, 物品配置: {(itemData != null ? itemData.itemName : "null")}");
+            Debug.Log($"[调试] 当前悬停节点: {currentHoverNode.name}, 物品配置: {(itemData != null ? itemData.ItemName : "null")}");
 
             // 优先检查是否可以升级
             bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(currentHoverNode, itemData.itemConfig);
