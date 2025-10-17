@@ -4,7 +4,7 @@ using PlayerInteraction;
 public class UIFormationDragManager : MonoBehaviour
 {
     [Header("拖拽预制体")]
-   // public GameObject objDragPrefab; // 普通UI拖拽预制体
+    // public GameObject objDragPrefab; // 普通UI拖拽预制体
     public GameObject worldDragPrefab; // 世界层拖拽预制体
 
     private GameObject currentDrag;
@@ -14,7 +14,7 @@ public class UIFormationDragManager : MonoBehaviour
         EventManager.StartListening<FormationDragArgs>(FormationDragEvent.EVENT_FORMATION_DRAG_INIT_UI, OnInitUI);
         EventManager.StartListening<FormationDragArgs>(FormationDragEvent.EVENT_FORMATION_DRAG_CREATE_WORLD_DRAG, OnCreateWorldDrag);
     }
-    
+
     private void OnDestroy()
     {
         EventManager.StopListening<FormationDragArgs>(FormationDragEvent.EVENT_FORMATION_DRAG_INIT_UI, OnInitUI);
@@ -37,16 +37,16 @@ public class UIFormationDragManager : MonoBehaviour
             return;
         }
 
-        if (args.itemConfig == null)
+        if (args.formationItemData == null)
         {
-            Debug.LogError("[FormationDragManager] 物品配置为空");
+            Debug.LogError("[FormationDragManager] 物品数据为空");
             args.onDragComplete?.Invoke(false);
             return;
         }
 
         // 创建世界层拖拽物件
         GameObject dragObject = Instantiate(worldDragPrefab, transform);
-        
+
         // 获取FormationItemWorldDragHandlerUI组件
         var dragHandler = dragObject.GetComponent<FormationItemWorldDragHandlerUI>();
         if (dragHandler == null)
@@ -56,9 +56,9 @@ public class UIFormationDragManager : MonoBehaviour
             args.onDragComplete?.Invoke(false);
             return;
         }
-
+        dragHandler.Initialize(args.formationItemData, args.originalNode, args.onDragComplete);
         // 初始化拖拽物件
-        dragHandler.Initialize(args.itemConfig, args.originalNode, args.onDragComplete);
+
 
         // 设置拖拽物件位置到鼠标位置
         var rectTransform = dragObject.GetComponent<RectTransform>();
@@ -79,14 +79,14 @@ public class UIFormationDragManager : MonoBehaviour
         dragHandler.StartDrag(args.mousePosition);
 
         currentDrag = dragObject;
-        Debug.Log($"[FormationDragManager] 成功创建世界层拖拽物件: {args.itemConfig.itemName}，位置: {args.mousePosition}");
+        // Debug.Log($"[FormationDragManager] 成功创建世界层拖拽物件: {args.itemConfig.itemName}，位置: {args.mousePosition}");
     }
 }
 
 
 public class FormationDragArgs : UIBaseArgs
 {
-    public FormationItemConfig itemConfig; // 物品配置
+    public FormationItem formationItemData; // 物品数据
     public FormationNode originalNode; // 原始节点
     public Vector2 mousePosition; // 鼠标位置
     public System.Action<bool> onDragComplete; // 拖拽完成回调

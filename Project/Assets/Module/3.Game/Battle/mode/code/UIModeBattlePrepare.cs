@@ -111,6 +111,7 @@ public class UIModeBattlePrepare : UIBase
 
     public void OnRefreshItem()
     {
+        BattleShopSystem.Instance.RefreshShopItem();
         //BattleSystem.Instance.OnRefreshBrick();
     }
 

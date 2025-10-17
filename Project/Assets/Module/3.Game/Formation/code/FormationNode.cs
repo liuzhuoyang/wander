@@ -15,13 +15,11 @@ public class FormationNode : MonoBehaviour
     [SerializeField] private bool isActive = true;
 
     [Header("节点物品")]
-    [SerializeField] private FormationItem item;
+    [SerializeField] private FormationWorldItem worldItem;
 
-    [Header("高亮效果")]
-    [SerializeField] private SpriteRenderer highlightRenderer;
 
     public GameObject itemPrefab;
-    
+
     // 节点数据引用
     private FormatianNodaData nodeData;
 
@@ -52,7 +50,7 @@ public class FormationNode : MonoBehaviour
     /// <summary>
     /// 节点上的物品
     /// </summary>
-    public FormationItem Item => item;
+    public FormationWorldItem WorldItem => worldItem;
 
     #endregion
 
@@ -206,7 +204,7 @@ public class FormationNode : MonoBehaviour
             return $"Node {nodeIndex}: 未初始化";
         }
 
-        string itemInfo = item != null ? $", 物品: {item.ItemName}({item.ItemType})" : ", 无物品";
+        string itemInfo = worldItem != null ? $", 物品: {worldItem.ItemName}({worldItem.ItemType})" : ", 无物品";
         return $"Node {nodeIndex}: 位置({nodePosition.x:F2}, {nodePosition.y:F2}), 激活状态: {isActive}{itemInfo}";
     }
 
@@ -219,19 +217,20 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     /// <param name="config">物品配置</param>
     /// <returns>创建的物品</returns>
-    public FormationItem SetItem(FormationItemConfig config)
+    public FormationWorldItem SetItem(FormationItem formationItem)
     {
         // 如果已有物品，先移除
-        if (item != null)
+        if (worldItem != null)
         {
             RemoveItem();
         }
 
         // 创建新的物品
         GameObject itemObject = Instantiate(itemPrefab, transform);
-        item = itemObject.GetComponent<FormationItem>();
-        item.Initialize(config, this);
-        return item;
+        worldItem = itemObject.GetComponent<FormationWorldItem>();
+
+        worldItem.Initialize(formationItem, this);
+        return worldItem;
     }
 
     /// <summary>
@@ -239,11 +238,11 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public void RemoveItem()
     {
-        if (item != null)
+        if (worldItem != null)
         {
-            Debug.Log($"节点 {nodeIndex} 移除了物品: {item.ItemName}");
-            Destroy(item.gameObject);
-            item = null;
+            Debug.Log($"节点 {nodeIndex} 移除了物品: {worldItem.ItemName}");
+            Destroy(worldItem.gameObject);
+            worldItem = null;
         }
     }
 
@@ -253,7 +252,7 @@ public class FormationNode : MonoBehaviour
     /// <returns>是否有物品</returns>
     public bool HasItem()
     {
-        return item != null;
+        return worldItem != null;
     }
 
     #endregion
@@ -266,9 +265,9 @@ public class FormationNode : MonoBehaviour
     /// <param name="triggerer">触发者</param>
     public void TriggerItem(GameObject triggerer)
     {
-        if (item != null)
+        if (worldItem != null)
         {
-            item.Trigger(triggerer);
+            worldItem.Trigger(triggerer);
         }
     }
 
@@ -277,9 +276,9 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public void ResetItem()
     {
-        if (item != null)
+        if (worldItem != null)
         {
-            item.Reset();
+            worldItem.Reset();
         }
     }
 
@@ -289,7 +288,7 @@ public class FormationNode : MonoBehaviour
     /// <returns>触发进度 (0-1)</returns>
     public float GetTriggerProgress()
     {
-        return item != null ? (float)item.CurrentTriggerCount / item.RequiredTriggerCount : 0f;
+        return worldItem != null ? (float)worldItem.CurrentTriggerCount / worldItem.RequiredTriggerCount : 0f;
     }
 
     /// <summary>
@@ -298,7 +297,7 @@ public class FormationNode : MonoBehaviour
     /// <returns>当前触发次数</returns>
     public int GetCurrentTriggerCount()
     {
-        return item?.CurrentTriggerCount ?? 0;
+        return worldItem?.CurrentTriggerCount ?? 0;
     }
 
     /// <summary>
@@ -307,7 +306,7 @@ public class FormationNode : MonoBehaviour
     /// <returns>需要触发的次数</returns>
     public int GetRequiredTriggerCount()
     {
-        return item?.RequiredTriggerCount ?? 0;
+        return worldItem?.RequiredTriggerCount ?? 0;
     }
 
     #endregion
@@ -356,10 +355,10 @@ public class FormationNode : MonoBehaviour
     /// <param name="effectData">效果数据</param>
     public void AddItemEffect(FormationEffectData effectData)
     {
-        if (item != null)
+        if (worldItem != null)
         {
-            item.Effects.Add(effectData);
-            Debug.Log($"为节点 {nodeIndex} 的物品 {item.ItemName} 添加了效果: {effectData.effectType}");
+            worldItem.Effects.Add(effectData);
+            Debug.Log($"为节点 {nodeIndex} 的物品 {worldItem.ItemName} 添加了效果: {effectData.effectType}");
         }
         else
         {
@@ -378,7 +377,7 @@ public class FormationNode : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, 0.5f);
 
         // 如果有物品，绘制物品指示器
-        if (item != null)
+        if (worldItem != null)
         {
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, 0.3f);
@@ -387,9 +386,9 @@ public class FormationNode : MonoBehaviour
         // 绘制节点索引和物品信息
 #if UNITY_EDITOR
         string label = $"Node {nodeIndex}";
-        if (item != null)
+        if (worldItem != null)
         {
-            label += $"\n{item.ItemName}";
+            label += $"\n{worldItem.ItemName}";
         }
         UnityEditor.Handles.Label(transform.position + Vector3.up * 0.8f, label);
 #endif
