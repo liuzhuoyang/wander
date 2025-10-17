@@ -297,7 +297,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     /// <param name="nodeIndex">节点索引</param>
     /// <param name="config">物品配置</param>
     /// <returns>创建的物品</returns>
-    public FormationItem SetNodeItem(int nodeIndex, FormationItemConfig config)
+    public FormationWorldItem SetNodeItem(int nodeIndex, FormationItem formationItem)
     {
         GameObject nodeObject = GetNodeByIndex(nodeIndex);
         if (nodeObject != null)
@@ -305,7 +305,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
             FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
             if (formationNode != null)
             {
-                return formationNode.SetItem(config);
+                return formationNode.SetItem(formationItem);
             }
             else
             {
@@ -341,13 +341,13 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     /// </summary>
     /// <param name="nodeIndex">节点索引</param>
     /// <returns>物品组件，如果没有返回null</returns>
-    public FormationItem GetNodeItem(int nodeIndex)
+    public FormationWorldItem GetNodeItem(int nodeIndex)
     {
         GameObject nodeObject = GetNodeByIndex(nodeIndex);
         if (nodeObject != null)
         {
             FormationNode formationNode = nodeObject.GetComponent<FormationNode>();
-            return formationNode?.Item;
+            return formationNode?.WorldItem;
         }
         return null;
     }
@@ -506,7 +506,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
         // 检查节点是否有物品
         if (!node.HasItem()) return false;
 
-        FormationItem existingItem = node.Item;
+        FormationWorldItem existingItem = node.WorldItem;
         if (existingItem == null) return false;
 
         // 检查物品名称和类型是否相同
@@ -536,7 +536,7 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
     {
         if (!CanUpgradeItemOnNode(node, draggedItemConfig)) return false;
 
-        FormationItem existingItem = node.Item;
+        FormationWorldItem existingItem = node.WorldItem;
         if (existingItem == null) return false;
 
         // 升级物品等级

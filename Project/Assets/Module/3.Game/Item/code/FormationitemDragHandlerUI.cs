@@ -11,19 +11,12 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     private Camera mainCam;
     private Vector2 initPos;
     private FormationNode currentHoverNode; // 当前悬停的节点
-    private FormationItemConfig itemConfig; // 物品配置
+                                            // private FormationitemData itemData; // 物品配置
     private Action onEndDrag;
+    public UIBattleItemSlot uIBattleItemSlot;
 
+    public FormationItem itemData;
 
-    public Transform commonTransform;
-    public Transform rareTransform;
-    public Transform epicTransform;
-    public Transform legendaryTransform;
-
-    public Image imgIcon;
-
-    public TextMeshProUGUI level;
-    public TextMeshProUGUI info;
 
     void Awake()
     {
@@ -53,7 +46,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
             Vector2 worldPos = mainCam.ScreenToWorldPoint(screenPos);
 
             // 检测最近的可交互节点（可放置或可升级）
-            FormationNode nearestNode = BattleFormationMangaer.Instance.GetNearestInteractableNode(worldPos, itemConfig);
+            FormationNode nearestNode = BattleFormationMangaer.Instance.GetNearestInteractableNode(worldPos, itemData.itemConfig);
 
             // 如果悬停的节点发生变化
             if (nearestNode != currentHoverNode)
@@ -76,14 +69,14 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     }
     void HandleEndDrag(Vector2 scrPos)
     {
-        Debug.Log($"[调试] HandleEndDrag 被调用。currentHoverNode: {(currentHoverNode != null ? currentHoverNode.name : "null")}, itemConfig: {(itemConfig != null ? itemConfig.itemName : "null")}, 拖拽屏幕坐标: {scrPos}");
+        Debug.Log($"[调试] HandleEndDrag 被调用。currentHoverNode: {(currentHoverNode != null ? currentHoverNode.name : "null")}, itemData: {(itemData != null ? itemData.itemName : "null")}, 拖拽屏幕坐标: {scrPos}");
 
         if (currentHoverNode != null)
         {
-            Debug.Log($"[调试] 当前悬停节点: {currentHoverNode.name}, 物品配置: {(itemConfig != null ? itemConfig.itemName : "null")}");
+            Debug.Log($"[调试] 当前悬停节点: {currentHoverNode.name}, 物品配置: {(itemData != null ? itemData.itemName : "null")}");
 
             // 优先检查是否可以升级
-            bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(currentHoverNode, itemConfig);
+            bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(currentHoverNode, itemData.itemConfig);
             Debug.Log($"[调试] 是否可升级: {canUpgrade}");
 
             if (canUpgrade)
@@ -94,7 +87,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
             else
             {
                 // 检查是否可以放置
-                bool canPlace = BattleFormationMangaer.Instance.CanPlaceItemOnNode(currentHoverNode, itemConfig);
+                bool canPlace = BattleFormationMangaer.Instance.CanPlaceItemOnNode(currentHoverNode, itemData.itemConfig);
                 Debug.Log($"[调试] 是否可放置: {canPlace}");
 
                 if (canPlace)
@@ -132,16 +125,16 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     void OnNodeHoverEnter(FormationNode node)
     {
         // 优先检查是否可以升级
-        bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(node, itemConfig);
+        bool canUpgrade = BattleFormationMangaer.Instance.CanUpgradeItemOnNode(node, itemData.itemConfig);
 
         if (canUpgrade)
         {
-            
+
         }
         else
         {
             // 检查是否可以放置
-            bool canPlace = BattleFormationMangaer.Instance.CanPlaceItemOnNode(node, itemConfig);
+            bool canPlace = BattleFormationMangaer.Instance.CanPlaceItemOnNode(node, itemData.itemConfig);
 
             // 显示悬停效果
             if (canPlace)
@@ -168,7 +161,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     void PlaceItemOnNode(FormationNode node)
     {
         // 在节点上创建物品
-        FormationItem item = node.SetItem(itemConfig);
+        FormationWorldItem item = node.SetItem(itemData);
 
         onEndDrag?.Invoke();
         // 销毁UI物品
@@ -178,7 +171,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     void UpgradeItemOnNode(FormationNode node)
     {
         // 升级节点上的物品
-        bool success = BattleFormationMangaer.Instance.UpgradeItemOnNode(node, itemConfig);
+        bool success = BattleFormationMangaer.Instance.UpgradeItemOnNode(node, itemData.itemConfig);
 
         if (success)
         {
@@ -199,24 +192,14 @@ public class FormationitemDragHandlerUI : MonoBehaviour
     /// 设置物品配置
     /// </summary>
     /// <param name="config">物品配置</param>
-    public void SetItemConfig(FormationItemConfig config, Action onEndDrag)
+    public void SetitemData(FormationItem formationItemData, Action onEndDrag)
     {
-        itemConfig = config;
+        this.itemData = formationItemData;
         this.onEndDrag = onEndDrag;
-        //GameAssetControl.AssignIcon(config.itemName, imgIcon);
-        imgIcon.sprite = config.itemIcon;
-        level.text = config.level.ToString();
-       // info.text = UtilityLocalization.GetLocalization(config.info);
-        SetRarityImage(config.rarity);
+        uIBattleItemSlot.Init(formationItemData);
+
     }
 
-    public void SetRarityImage(Rarity rarity)
-    {
-        commonTransform.gameObject.SetActive(rarity == Rarity.Common);
-        rareTransform.gameObject.SetActive(rarity == Rarity.Rare);
-        epicTransform.gameObject.SetActive(rarity == Rarity.Epic);
-        legendaryTransform.gameObject.SetActive(rarity == Rarity.Legendary);
-    }
     #endregion
 }
 
