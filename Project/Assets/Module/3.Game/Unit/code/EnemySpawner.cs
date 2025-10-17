@@ -33,6 +33,7 @@ namespace RTSDemo.Spawn
 
         internal void Initialize(EnemySpawner parent, EnemySpawnData spawnData)
         {
+            this.parent = parent;
             enemySpawnData = spawnData;
             if (enemySpawnData.baseCount > 1)
             {
@@ -68,6 +69,7 @@ namespace RTSDemo.Spawn
     {
         [SerializeField] private List<EnemySpawnHandler> listCurrentHandlers;
         [SerializeField] private float spawnRadius = 10f;
+        [SerializeField] private float ellipseFactor = 1.77f;
         private bool isSpawning = false;
         public int currentWave{get; private set;}
         public int maxWave{get; private set;}
@@ -78,7 +80,7 @@ namespace RTSDemo.Spawn
             currentWave = 0;
             maxWave = levelData.totalWave;
             listCurrentHandlers = new List<EnemySpawnHandler>();
-            foreach (var spawnData in levelData.enemySpawnData)
+            foreach (var spawnData in levelData.enemyUnitAssetList)
             {
                 var handler = new EnemySpawnHandler();
                 handler.Initialize(this, spawnData);
@@ -116,7 +118,16 @@ namespace RTSDemo.Spawn
         }
         public Vector2 GetSpawnPosition(SpawnArea spawnArea)
         {
-            return GeometryUtil.GetCirclingPointPos(Vector2.zero, Random.Range(0, 360), spawnRadius);
+            return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(0, 360), spawnRadius, spawnRadius*ellipseFactor);
+        }
+
+        void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            var matrix = new Matrix4x4();
+            matrix.SetTRS(Vector3.zero, Quaternion.identity, new Vector3(1, ellipseFactor, 1));
+            Gizmos.matrix = matrix;
+            Gizmos.DrawWireSphere(Vector2.zero, spawnRadius);
         }
     }
 }

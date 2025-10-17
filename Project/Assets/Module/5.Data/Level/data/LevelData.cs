@@ -166,45 +166,11 @@ public class LevelData : ScriptableObject
     #endregion
 
     #region 敌人编辑
-
-
     [TabGroup("敌人")]
     public UnitRace unitRace;
-    
-    [ShowIf("levelType", Value = LevelType.Main)]
     [TabGroup("敌人")]
-    [ValueDropdown("")]
-    [OnValueChanged("OnUpdateBossIcon")]
-    public string bossName;
-
-#if UNITY_EDITOR    
-    [TabGroup("敌人")]
-    [ReadOnly]
-    [PreviewField(55)]
-    public Sprite previewBossIcon;
-
-    void OnUpdateBossIcon()
-    {
-        if(!string.IsNullOrEmpty(bossName))
-        {
-            previewBossIcon = GameAsset.GetAssetEditor<Sprite>("icon_" + bossName);
-        }
-    }
-
-    [TabGroup("敌人")]
-    public List<EnemySpawnData> enemySpawnData;
-
-    public List<string> GetBossNameList()
-    {
-        //等有单位后添加，只加入Boss
-        List<string> list = new List<string>();
-        list.Add("");
-        return list;
-    }
-        
-#endif
-
-#endregion
+    public List<EnemySpawnData> enemyUnitAssetList;
+    #endregion
 
 #region 剧情编辑
 #if UNITY_EDITOR
@@ -401,7 +367,7 @@ public class LevelData : ScriptableObject
         InitializePlotData(ref listWaveMergeSeqIndex, ref listWaveMergeSeqID, listWaveMergePlotSeqData, data => data.plotSeqID);
 
         //给每个资源加入种族数据，方便在选择中过滤单位，只能选择当前种族单位
-        foreach (EnemySpawnData data in enemySpawnData)
+        foreach (EnemySpawnData data in enemyUnitAssetList)
         {
             data.InitUnitRace(unitRace);
         }
