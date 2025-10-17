@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: formation_skill_006_dash
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
-  itemName: 
+  itemName: skill_006_dash
   itemIcon: {fileID: 21300000, guid: ec08b0b72292d4fff8abfe5be467ef61, type: 3}
   canUpgrade: 1
   maxLevel: 3
