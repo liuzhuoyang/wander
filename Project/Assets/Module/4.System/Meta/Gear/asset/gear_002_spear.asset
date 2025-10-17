@@ -16,9 +16,9 @@ MonoBehaviour:
   editorName: "\u957F\u77DB"
   displayName: gear/name/002
   info: gear/info/002
-  rarity: 2
-  attack: 10
-  triggerSpeed: 2
+  rarity: 1
+  attack: 6
+  triggerSpeed: 1
   listData:
   - level: 5
     attributeType: 0

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
   m_Name: gear_005_axe
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 005_Axe
+  gearName: 005_axe
   editorName: "\u65A7\u5934"
   displayName: gear/name/004
   info: gear/info/004
   rarity: 2
-  attack: 7
+  attack: 11
   triggerSpeed: 2
   listData:
   - level: 5

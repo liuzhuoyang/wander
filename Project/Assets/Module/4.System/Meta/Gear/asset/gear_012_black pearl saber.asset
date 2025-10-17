@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
   m_Name: gear_012_black pearl saber
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 012
+  gearName: 012_black pearl saber
   editorName: "\u9ED1\u73CD\u73E0\u4E4B\u5203"
   displayName: gear/name/012
   info: gear/info/012
-  rarity: 2
-  attack: 7
+  rarity: 5
+  attack: 24
   triggerSpeed: 2
   listData:
   - level: 5
