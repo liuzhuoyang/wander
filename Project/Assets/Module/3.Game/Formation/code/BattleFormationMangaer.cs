@@ -592,5 +592,36 @@ public class BattleFormationMangaer : Singleton<BattleFormationMangaer>
 
         return null;
     }
+
+    /// <summary>
+    /// 获取最近的可交互节点（可放置或可升级），排除指定节点
+    /// </summary>
+    /// <param name="worldPos">世界坐标</param>
+    /// <param name="itemConfig">物品配置</param>
+    /// <param name="excludeNode">要排除的节点</param>
+    /// <returns>最近的可交互节点，如果没有则返回null</returns>
+    public FormationNode GetNearestInteractableNodeExcluding(Vector2 worldPos, FormationItemConfig itemConfig, FormationNode excludeNode)
+    {
+        var nodesInRange = GetFormationNodesInRange(worldPos);
+
+        foreach (var node in nodesInRange)
+        {
+            // 排除指定节点
+            if (node == excludeNode) continue;
+
+            // 优先检查是否可以升级
+            if (CanUpgradeItemOnNode(node, itemConfig))
+            {
+                return node;
+            }
+            // 然后检查是否可以放置
+            else if (CanPlaceItemOnNode(node, itemConfig))
+            {
+                return node;
+            }
+        }
+
+        return null;
+    }
     #endregion
 }

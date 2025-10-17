@@ -98,7 +98,7 @@ public class BattleCharacter : MonoBehaviour
                     Debug.LogError("无法找到第一个节点");
                     break;
                 }
-                Debug.Log($"已到达最后一个节点，回到第一个节点 {nextNodeIndex}");
+               // Debug.Log($"已到达最后一个节点，回到第一个节点 {nextNodeIndex}");
             }
             
             // 移动到下一个节点
@@ -163,7 +163,7 @@ public class BattleCharacter : MonoBehaviour
         float distance = Vector3.Distance(startPosition, targetPosition);
         float moveTime = distance / moveSpeed;
         
-        Debug.Log($"开始移动到节点 {targetNodeIndex}，距离: {distance:F2}，预计时间: {moveTime:F2}秒");
+       // Debug.Log($"开始移动到节点 {targetNodeIndex}，距离: {distance:F2}，预计时间: {moveTime:F2}秒");
         
         float elapsedTime = 0f;
         

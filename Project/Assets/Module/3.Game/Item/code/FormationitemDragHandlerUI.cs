@@ -136,8 +136,7 @@ public class FormationitemDragHandlerUI : MonoBehaviour
 
         if (canUpgrade)
         {
-            // 蓝色高亮 - 可以升级
-            node.SetHighlight(true, Color.blue);
+            
         }
         else
         {
