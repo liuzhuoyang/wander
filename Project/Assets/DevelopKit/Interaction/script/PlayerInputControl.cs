@@ -6,16 +6,18 @@ namespace PlayerInteraction
 {
     public class PlayerInputControl : MonoBehaviour
     {
-        private InputSystemActions.BattleActions battleActions;
+        public InputSystemActions.BattleActions battleActions;
         private Camera mainCam;
         private Vector2 pointerScrPos;
         private IInteractable holdingInteractable;
 
         public Vector2 m_pointerWorldPos => mainCam.ScreenToWorldPoint(pointerScrPos);
+        public Vector2 m_pointerScreenPos => pointerScrPos;
 
         public event Action<bool> onClickEmpty; //点击空地事件
         public event Action onReleaseEmpty; //松开空地事件
         public event Action<Vector2> onMoveEmpty; //指针移动事件
+        public event Action onTouchPressCanceled; //触摸松开事件
 
         #region 生命周期
         void Awake()
@@ -44,7 +46,7 @@ namespace PlayerInteraction
         void OnDestroy()
         {
             ReleaseCurrentHolding();
-            if(PlayerInputManager.Instance)
+            if (PlayerInputManager.Instance)
             {
                 PlayerInputManager.Instance.UnregisterInput(this);
             }
@@ -58,7 +60,7 @@ namespace PlayerInteraction
         }
         #endregion
 
-        public void ReleaseCurrentHolding()=> ClearHoldingInteractable();
+        public void ReleaseCurrentHolding() => ClearHoldingInteractable();
         public void HoldingInteractable(IInteractable interactable)
         {
             if (holdingInteractable != null)
@@ -70,6 +72,7 @@ namespace PlayerInteraction
         }
         protected void ClearHoldingInteractable()
         {
+            onTouchPressCanceled?.Invoke();
             if (holdingInteractable != null)
             {
                 var holding = holdingInteractable;
@@ -98,7 +101,7 @@ namespace PlayerInteraction
                 onClickEmpty?.Invoke(true);
                 return;
             }
-            
+
             RaycastHit2D hit = Physics2D.Raycast(mainCam.ScreenToWorldPoint(pointerScrPos), Vector2.zero, 100, 1 << PlayerInputService.InteractableLayer);
             if (hit.collider != null)
             {
@@ -122,7 +125,7 @@ namespace PlayerInteraction
         void OnFingerMove(InputAction.CallbackContext context)
         {
             pointerScrPos = context.ReadValue<Vector2>();
-            if(holdingInteractable == null)
+            if (holdingInteractable == null)
             {
                 onMoveEmpty?.Invoke(m_pointerWorldPos);
             }

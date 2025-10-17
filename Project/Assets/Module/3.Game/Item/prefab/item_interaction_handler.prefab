@@ -91,3 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc22beaa30c1e418589f6c412c2a6129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FormationItemDragInteraction
+  dragRoot: {fileID: 0}
+  hitbox: {fileID: 7772073510024953504}
+  formationNode: {fileID: 0}

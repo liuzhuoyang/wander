@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: formation_skill_007_double_jump
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
-  itemName: 
+  itemName: skill_007_double_jump
   itemIcon: {fileID: 21300000, guid: ee52cd3a04fad429aaa1f6a1e19e90ac, type: 3}
   canUpgrade: 0
   maxLevel: 1

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: formation_skill_008_clone
   m_EditorClassIdentifier: Assembly-CSharp::FormationSkillData
   itemType: 1
-  itemName: 
+  itemName: skill_008_clone
   itemIcon: {fileID: 21300000, guid: f9a32c96515534bc287b7028db1656e4, type: 3}
   canUpgrade: 0
   maxLevel: 1

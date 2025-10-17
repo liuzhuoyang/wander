@@ -5,6 +5,8 @@ using UnityEngine;
 /// </summary>
 public class FormationNode : MonoBehaviour
 {
+    #region 字段和属性
+
     [Header("节点信息")]
     [SerializeField] private int nodeIndex;
     [SerializeField] private Vector2 nodePosition;
@@ -12,22 +14,20 @@ public class FormationNode : MonoBehaviour
     [Header("节点状态")]
     [SerializeField] private bool isActive = true;
 
-
     [Header("节点物品")]
     [SerializeField] private FormationItem item;
 
     [Header("高亮效果")]
     [SerializeField] private SpriteRenderer highlightRenderer;
-    [SerializeField] private Color normalColor = Color.white;
-    [SerializeField] private Color hoverColor = Color.yellow;
-    [SerializeField] private Color validColor = Color.green;
-    [SerializeField] private Color invalidColor = Color.red;
 
     public GameObject itemPrefab;
     
-
     // 节点数据引用
     private FormatianNodaData nodeData;
+
+    #endregion
+
+    #region 公共属性
 
     /// <summary>
     /// 节点索引
@@ -54,6 +54,10 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public FormationItem Item => item;
 
+    #endregion
+
+    #region 初始化方法
+
     /// <summary>
     /// 初始化节点
     /// </summary>
@@ -76,6 +80,10 @@ public class FormationNode : MonoBehaviour
         SetActive(true);
     }
 
+    #endregion
+
+    #region 节点状态管理
+
     /// <summary>
     /// 设置节点激活状态
     /// </summary>
@@ -85,6 +93,10 @@ public class FormationNode : MonoBehaviour
         isActive = active;
         gameObject.SetActive(active);
     }
+
+    #endregion
+
+    #region 节点关系查询
 
     /// <summary>
     /// 获取下一个节点的索引
@@ -170,6 +182,10 @@ public class FormationNode : MonoBehaviour
         return Vector2.Distance(nodePosition, targetNode.nodePosition);
     }
 
+    #endregion
+
+    #region 节点信息查询
+
     /// <summary>
     /// 检查节点是否已正确初始化
     /// </summary>
@@ -193,6 +209,10 @@ public class FormationNode : MonoBehaviour
         string itemInfo = item != null ? $", 物品: {item.ItemName}({item.ItemType})" : ", 无物品";
         return $"Node {nodeIndex}: 位置({nodePosition.x:F2}, {nodePosition.y:F2}), 激活状态: {isActive}{itemInfo}";
     }
+
+    #endregion
+
+    #region 物品管理
 
     /// <summary>
     /// 设置节点上的物品
@@ -236,6 +256,9 @@ public class FormationNode : MonoBehaviour
         return item != null;
     }
 
+    #endregion
+
+    #region 物品交互
 
     /// <summary>
     /// 触发节点上的物品
@@ -287,30 +310,16 @@ public class FormationNode : MonoBehaviour
         return item?.RequiredTriggerCount ?? 0;
     }
 
+    #endregion
+
     #region 高亮效果方法
-    /// <summary>
-    /// 设置节点高亮效果
-    /// </summary>
-    /// <param name="active">是否激活高亮</param>
-    /// <param name="color">高亮颜色</param>
-    public void SetHighlight(bool active, Color color)
-    {
-        if (highlightRenderer != null)
-        {
-            highlightRenderer.gameObject.SetActive(active);
-            if (active)
-            {
-                highlightRenderer.color = color;
-            }
-        }
-    }
 
     /// <summary>
     /// 清除节点高亮效果
     /// </summary>
     public void ClearHighlight()
     {
-        SetHighlight(false, normalColor);
+
     }
 
     /// <summary>
@@ -318,7 +327,7 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public void SetHoverHighlight()
     {
-        SetHighlight(true, hoverColor);
+
     }
 
     /// <summary>
@@ -326,7 +335,7 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public void SetValidHighlight()
     {
-        SetHighlight(true, validColor);
+
     }
 
     /// <summary>
@@ -334,9 +343,12 @@ public class FormationNode : MonoBehaviour
     /// </summary>
     public void SetInvalidHighlight()
     {
-        SetHighlight(true, invalidColor);
+
     }
+
     #endregion
+
+    #region 物品效果管理
 
     /// <summary>
     /// 为物品添加效果
@@ -354,6 +366,10 @@ public class FormationNode : MonoBehaviour
             Debug.LogWarning($"节点 {nodeIndex} 没有物品，无法添加效果");
         }
     }
+
+    #endregion
+
+    #region Unity编辑器方法
 
     private void OnDrawGizmos()
     {
@@ -378,4 +394,6 @@ public class FormationNode : MonoBehaviour
         UnityEditor.Handles.Label(transform.position + Vector3.up * 0.8f, label);
 #endif
     }
+
+    #endregion
 }

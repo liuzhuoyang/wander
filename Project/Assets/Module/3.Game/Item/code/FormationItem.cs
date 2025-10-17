@@ -17,6 +17,7 @@ public class FormationItem : MonoBehaviour
 
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI info;
+    public FormationItemConfig itemConfig;
 
 
 
@@ -40,6 +41,7 @@ public class FormationItem : MonoBehaviour
     [SerializeField] private float cooldownTime = 0f;       // 冷却时间
     [SerializeField] private float lastTriggerTime = 0f;    // 上次触发时间
     [SerializeField] private bool isInCooldown = false;     // 是否在冷却中
+    [SerializeField] private Rarity rarity = Rarity.Common; // 稀有度
 
     [Header("效果配置")]
     [SerializeField] private List<FormationEffectData> effects = new List<FormationEffectData>();
@@ -117,6 +119,7 @@ public class FormationItem : MonoBehaviour
     /// <param name="node">关联的节点</param>
     public void Initialize(FormationItemConfig config, FormationNode node)
     {
+        itemConfig = config;
         itemName = config.itemName;
         itemType = config.itemType;
         level = config.level;
@@ -126,6 +129,7 @@ public class FormationItem : MonoBehaviour
         requiredChargeCount = config.requiredChargeCount;
         currentChargeCount = 0;
         isActivated = false;
+        rarity = config.rarity;
 
         // 冷却设置
         hasCooldown = config.hasCooldown;
@@ -288,6 +292,43 @@ public class FormationItem : MonoBehaviour
     {
         level++;
         Debug.Log($"物品 {itemName} 升级到等级 {level}");
+    }
+
+    /// <summary>
+    /// 获取物品配置（用于拖拽检测）
+    /// </summary>
+    /// <returns>物品配置</returns>
+    public FormationItemConfig GetItemConfig()
+    {
+        return new FormationItemConfig
+        {
+            itemName = itemName,
+            itemType = itemType,
+            level = level,
+            canUpgrade = true, // 默认可以升级，实际应该从数据中获取
+            maxLevel = 5,      // 默认最大等级，实际应该从数据中获取
+            rarity = rarity
+        };
+    }
+
+    /// <summary>
+    /// 显示物品
+    /// </summary>
+    public void Show()
+    {
+        gameObject.SetActive(true);
+        if (visualEffect != null)
+            visualEffect.SetActive(true);
+    }
+
+    /// <summary>
+    /// 隐藏物品
+    /// </summary>
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+        if (visualEffect != null)
+            visualEffect.SetActive(false);
     }
 
 }
