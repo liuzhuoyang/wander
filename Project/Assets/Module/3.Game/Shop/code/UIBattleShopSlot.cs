@@ -25,7 +25,12 @@ public class UIBattleShopSlot : MonoBehaviour
             Destroy(currentDrag);
         }
         currentDrag = Instantiate(objDrag, transform);
-        currentDrag.GetComponent<FormationitemDragHandlerUI>().SetItemConfig(itemConfig, OnEndDrag);
+
+        FormationItem itemData = new FormationItem();
+        itemData.Init(itemConfig);
+
+
+        currentDrag.GetComponent<FormationitemDragHandlerUI>().SetitemData(itemData, OnEndDrag);
     }
 
     private void OnEndDrag()

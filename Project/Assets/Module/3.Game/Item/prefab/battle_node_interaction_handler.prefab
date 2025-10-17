@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7772073510024953504}
   - component: {fileID: 799166645769424800}
   m_Layer: 3
-  m_Name: item_interaction_handler
+  m_Name: battle_node_interaction_handler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

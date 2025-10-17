@@ -18,8 +18,8 @@ public class FormationItemDragInteraction : Draggable
 
         if (formationNode.HasItem())
         {
-            FormationItem formationItem = formationNode.Item;
-            FormationItemConfig itemConfig = formationItem.itemConfig;
+            FormationWorldItem formationItem = formationNode.WorldItem;
+            FormationItem formationItemData = formationItem.item;
 
             formationItem.Hide();
             // 将世界坐标转换为屏幕坐标
@@ -27,7 +27,7 @@ public class FormationItemDragInteraction : Draggable
 
             EventManager.TriggerEvent<FormationDragArgs>(FormationDragEvent.EVENT_FORMATION_DRAG_CREATE_WORLD_DRAG, new FormationDragArgs()
             {
-                itemConfig = itemConfig,
+                formationItemData = formationItemData,
                 originalNode = formationNode,
                 mousePosition = screenPosition,
                 onDragComplete = OnDragComplete
@@ -43,7 +43,7 @@ public class FormationItemDragInteraction : Draggable
         }
         else
         {
-            formationNode.Item.Show();
+            formationNode.WorldItem.Show();
         }
         dragRoot.transform.position = formationNode.transform.position;
     }
