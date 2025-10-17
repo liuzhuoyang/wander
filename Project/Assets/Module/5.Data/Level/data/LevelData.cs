@@ -21,12 +21,13 @@ public class EnemySpawnData
     {
         this.unitRace = unitRace;
     }
+//由于目前还没icon，暂时取消
+// #if UNITY_EDITOR
+//     [HideLabel]
+//     [PreviewField(55)]
+//     public Sprite previewIcon;
+// #endif
 
-#if UNITY_EDITOR
-    [HideLabel]
-    [PreviewField(55)]
-    public Sprite previewIcon;
-#endif
     [ValueDropdown("GetUnitNameList")]
     public string unitName;
 
@@ -49,11 +50,6 @@ public class EnemySpawnData
     public SpawnArea spawnArea = SpawnArea.All;
 
 #if UNITY_EDITOR
-    void OnUpdateIcon()
-    {
-        previewIcon = GameAsset.GetAssetEditor<Sprite>("icon_" + unitName);
-    }
-
     public List<string> GetUnitNameList()
     {
         List<string> list = new List<string>();
