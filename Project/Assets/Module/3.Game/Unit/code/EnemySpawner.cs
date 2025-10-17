@@ -25,11 +25,11 @@ namespace RTSDemo.Spawn
     {
         private EnemySpawnData enemySpawnData;
         private EnemySpawner parent;
-        private float spawnCycle = 0f;
+        [SerializeField] private float spawnCycle = 0f;
         [SerializeField] private int spawnedCount = 0;
         [SerializeField] private float spawnTimer = 0;
 
-        internal bool spawnComplete => spawnedCount <= 0;
+        internal bool spawnComplete{ get; private set; } = false;
 
         internal void Initialize(EnemySpawner parent, EnemySpawnData spawnData)
         {
@@ -37,9 +37,14 @@ namespace RTSDemo.Spawn
             enemySpawnData = spawnData;
             if (enemySpawnData.baseCount > 1)
             {
-                spawnedCount = enemySpawnData.baseCount + (parent.currentWave-1) + Random.value > 0.5f ? 1 : -1;
+                spawnedCount = enemySpawnData.baseCount + (parent.currentWave - 1) + (Random.value > 0.5f ? 1 : -1);
             }
-            spawnCycle = GetSpawnCycle(enemySpawnData.spawnRate);
+            else
+            {
+                spawnedCount = enemySpawnData.baseCount;
+            }
+            spawnCycle = spawnData.delay;
+            spawnTimer = 0;
         }
         internal void UpdateHandler(float dt)
         {
@@ -52,6 +57,10 @@ namespace RTSDemo.Spawn
                 spawnCycle = GetSpawnCycle(enemySpawnData.spawnRate);
                 UnitManager.Instance.CreateUnit(enemySpawnData.unitName, parent.GetSpawnPosition(enemySpawnData.spawnArea), true, 1);
                 spawnedCount--;
+                if(spawnedCount <= 0)
+                {
+                    spawnComplete = true;
+                }
             }
         }
         static float GetSpawnCycle(SpawnRate spawnRate)
@@ -68,8 +77,8 @@ namespace RTSDemo.Spawn
     public class EnemySpawner : BattleBehaviour
     {
         [SerializeField] private List<EnemySpawnHandler> listCurrentHandlers;
-        [SerializeField] private float spawnRadius = 10f;
-        [SerializeField] private float ellipseFactor = 1.77f;
+        [SerializeField] private float spawnRadius = 8f;
+        [SerializeField] private float ellipseFactor = 1.67f;
         private bool isSpawning = false;
         public int currentWave{get; private set;}
         public int maxWave{get; private set;}
