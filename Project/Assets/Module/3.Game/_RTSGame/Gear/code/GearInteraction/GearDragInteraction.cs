@@ -7,7 +7,7 @@ using RTSDemo.Grid;
 public class GearDragInteraction : Draggable
 {
     private Vector2 originalPos = Vector2.zero;
-    private Vector2Int lastSnapGridPoint = Vector2Int.zero; 
+    private Vector2Int lastSnapGridPoint = Vector2Int.zero;
     private GearBase gearBase;
 
     void Start()
