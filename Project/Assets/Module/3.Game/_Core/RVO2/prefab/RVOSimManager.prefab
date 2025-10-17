@@ -45,3 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimFreq: 30
+  neighborDist: 5
+  maxNeighbors: 10
+  timeHorizon: 10
+  timeHorizonObst: 2

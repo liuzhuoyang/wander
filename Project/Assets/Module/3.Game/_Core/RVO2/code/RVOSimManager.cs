@@ -8,6 +8,10 @@ namespace SimpleRVO
     internal class RVOSimManager : Singleton<RVOSimManager>
     {
         [SerializeField] private float SimFreq = 60;
+        [SerializeField] private float neighborDist = 5f;
+        [SerializeField] private int maxNeighbors = 10;
+        [SerializeField] private float timeHorizon = 7f;
+        [SerializeField] private float timeHorizonObst = 2f;
         private Simulator simulator
         {
             get
@@ -16,7 +20,7 @@ namespace SimpleRVO
                 {
                     _simulator = new Simulator();
                     _simulator.SetTimeStep(1 / SimFreq);
-                    _simulator.SetAgentDefaults(1, 10, 10.0f, 10.0f, 1, 1, new float2(0.0f, 0.0f));
+                    _simulator.SetAgentDefaults(neighborDist, maxNeighbors, timeHorizon, timeHorizonObst, 1, 1, new float2(0.0f, 0.0f));
                 }
                 return _simulator;
             }

@@ -6,9 +6,9 @@ namespace RTSDemo.Unit
     public class UnitMovement : MonoBehaviour
     {
         protected float moveSpeed = 1f;
-        protected Vector2 targetPoint;
         protected Vector2 velocityVector;
         protected Vector2 externalForce;
+        protected Vector2 targetPoint;
         protected Rigidbody2D rigid;
         protected bool isUpdating = true;
 

@@ -32,17 +32,17 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         }
     }
 
-    void OnBattleAction(BattleActionArgs args)
-    {
-        switch (args.battleAction)
-        {
-            case BattleActionType.EnemyKilled: OnEnemyKilled(args); break;
-            case BattleActionType.WaveStart: OnWaveStart(args); break;
-            case BattleActionType.WaveEnd: OnWaveEnd(args); break;
-            case BattleActionType.LevelUp: OnLevelUp(args); break;
-            case BattleActionType.PlayerDead: OnPlayerDead(args); break;
-        }
-    }
+    // void OnBattleAction(BattleActionArgs args)
+    // {
+    //     switch (args.battleAction)
+    //     {
+    //         case BattleActionType.EnemyKilled: OnEnemyKilled(args); break;
+    //         case BattleActionType.WaveStart: OnWaveStart(args); break;
+    //         case BattleActionType.WaveEnd: OnWaveEnd(args); break;
+    //         case BattleActionType.LevelUp: OnLevelUp(args); break;
+    //         case BattleActionType.PlayerDead: OnPlayerDead(args); break;
+    //     }
+    // }
 
     #region 抽象方法 - 子类必须实现
     //读取关卡数据
@@ -225,27 +225,27 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     }
     #endregion
 
-    #region 战斗事件处理
-    void OnEnemyKilled(BattleActionArgs args)
-    {
-        //敌人击杀
-    }
-    void OnWaveStart(BattleActionArgs args)
-    {
-        //波段开始
-    }
-    void OnWaveEnd(BattleActionArgs args)
-    {
-        GameData.userData.userStats.OnWavePassed();
-        //波段结束
-    }
-    void OnLevelUp(BattleActionArgs args)
-    {
-        //升级获取能力
-    }
-    void OnPlayerDead(BattleActionArgs args)
-    {
-        //玩家死亡
-    }
-    #endregion
+    // #region 战斗事件处理
+    // void OnEnemyKilled(BattleActionArgs args)
+    // {
+    //     //敌人击杀
+    // }
+    // void OnWaveStart(BattleActionArgs args)
+    // {
+    //     //波段开始
+    // }
+    // void OnWaveEnd(BattleActionArgs args)
+    // {
+    //     GameData.userData.userStats.OnWavePassed();
+    //     //波段结束
+    // }
+    // void OnLevelUp(BattleActionArgs args)
+    // {
+    //     //升级获取能力
+    // }
+    // void OnPlayerDead(BattleActionArgs args)
+    // {
+    //     //玩家死亡
+    // }
+    // #endregion
 }
