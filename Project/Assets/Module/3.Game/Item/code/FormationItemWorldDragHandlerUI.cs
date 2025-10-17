@@ -213,7 +213,7 @@ public class FormationItemWorldDragHandlerUI : MonoBehaviour
     #region 拖拽控制
     public void StartDrag(Vector2 mousePosition)
     {
-        Debug.Log($"[世界层拖拽] 开始拖拽物品: {itemData?.itemName}");
+        Debug.Log($"[世界层拖拽] 开始拖拽物品: {itemData?.ItemName}");
 
         initPos = transform.position;
         lastMousePosition = mousePosition;
@@ -372,7 +372,7 @@ public class FormationItemWorldDragHandlerUI : MonoBehaviour
 
         // 设置UI显示
         uIBattleItemSlot.Init(itemData);
-        Debug.Log($"[世界层拖拽] 初始化完成: {data.itemName} (等级 {data.level})");
+        Debug.Log($"[世界层拖拽] 初始化完成: {data.ItemName} (等级 {data.Level})");
     }
 
     #endregion
