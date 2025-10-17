@@ -7,16 +7,14 @@ public class FormationItem
     public void Init(FormationItemConfig config)
     {
         itemConfig = config;
-        itemConfig = config;
-        itemName = config.itemName;
+ /*        itemName = config.itemName;
         itemType = config.itemType;
-        level = config.level;
+        level = config.level; */
 
         // 触发设置
         requiredChargeCount = config.requiredChargeCount;
         currentChargeCount = 0;
         isActivated = false;
-        rarity = config.rarity;
 
         // 冷却设置
         hasCooldown = config.hasCooldown;
@@ -31,9 +29,23 @@ public class FormationItem
     }
 
 
-    public string itemName;
-    public FormationItemType itemType;
-    public int level;
+    public string ItemName
+    {
+        get => itemConfig.itemName;
+    }
+    public FormationItemType ItemType
+    {
+        get => itemConfig.itemType;
+    }
+    public int Level
+    {
+        get => itemConfig.level;
+        set => itemConfig.level = value;
+    }
+    public Rarity Rarity
+    {
+        get => itemConfig.rarity;
+    }
 
     [Header("充能计数")]
     public int requiredChargeCount = 1;  // 需要触发的次数
@@ -50,6 +62,5 @@ public class FormationItem
     public float cooldownTime = 0f;       // 冷却时间
     public float lastTriggerTime = 0f;    // 上次触发时间
     public bool isInCooldown = false;     // 是否在冷却中
-    public Rarity rarity = Rarity.Common; // 稀有度
 
 }
