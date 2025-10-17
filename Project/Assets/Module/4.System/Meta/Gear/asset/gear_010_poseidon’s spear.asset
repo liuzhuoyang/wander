@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
   m_Name: "gear_010_poseidon\u2019s spear"
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 010
+  gearName: "010_poseidon\u2019s spear"
   editorName: "\u6D77\u795E\u4E09\u53C9\u621F"
   displayName: gear/name/010
   info: gear/info/010
-  rarity: 2
-  attack: 7
-  triggerSpeed: 2
+  rarity: 4
+  attack: 15
+  triggerSpeed: 4
   listData:
   - level: 5
     attributeType: 0
