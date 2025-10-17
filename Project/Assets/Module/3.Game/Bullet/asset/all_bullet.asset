@@ -12,7 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c93581f1fab25044d8f08ff78e333f69, type: 3}
   m_Name: all_bullet
   m_EditorClassIdentifier: 
+  path: 
   DataList:
+  - {fileID: 11400000, guid: 528bf1293b95d41c589c0ac5058f28d5, type: 2}
+  - {fileID: 11400000, guid: 4c32da1b6153942a1aa1dcf36328a37e, type: 2}
+  - {fileID: 11400000, guid: 37e17d567e69e481f8c3e14ab95df894, type: 2}
+  - {fileID: 11400000, guid: f32089edb2c2547848b4a57f22f3f3cd, type: 2}
+  - {fileID: 11400000, guid: 8ce12e8a39831426083b4faacd2fb793, type: 2}
+  - {fileID: 11400000, guid: 75c89993b46b84481a82447189f1358e, type: 2}
+  - {fileID: 11400000, guid: ba73c2a50285b4442beee104880b7966, type: 2}
+  - {fileID: 11400000, guid: 27b900e96fc164732811f3bc078e0656, type: 2}
+  - {fileID: 11400000, guid: 44f7e801a2f0d4953b0b5208f1ee98e1, type: 2}
   - {fileID: 11400000, guid: a964e49ca75feb646b2b0bffaa70b20e, type: 2}
   - {fileID: 11400000, guid: 2cd70dce9f6c1dc4ebc461876e896041, type: 2}
   - {fileID: 11400000, guid: 4844af3dc7f1c5f499589c19cf78bf6d, type: 2}
+  findOnlyLocal: 0
