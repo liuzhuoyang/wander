@@ -19,7 +19,7 @@ MonoBehaviour:
   chapterID: 0
   levelID: 0
   themeName: theme_001
-  mapName: loc_level
+  mapName: 
   themeVarient: 1
   previewPic: {fileID: 21300000, guid: 062f4f774f5644399927d42393dfc552, type: 3}
   formationName: formatian_asset_001
@@ -34,9 +34,7 @@ MonoBehaviour:
   unitLevel: 1
   difficulty: 0
   unitRace: 1
-  bossName: 
-  previewBossIcon: {fileID: 0}
-  enemySpawnData: []
+  enemyUnitAssetList: []
   plotSeqData: {fileID: 0}
   plotSeqID: 
   plotData: {fileID: 0}

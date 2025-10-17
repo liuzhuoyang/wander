@@ -30,7 +30,7 @@ MonoBehaviour:
     m_SubObjectType: 
     m_SubObjectGUID: 
     m_EditorAssetChanged: 1
-  totalWave: 15
+  totalWave: 6
   unitLevel: 1
   difficulty: 0
   unitRace: 1
