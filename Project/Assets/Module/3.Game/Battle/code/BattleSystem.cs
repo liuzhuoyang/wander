@@ -16,6 +16,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     private GameObject battleControllerPrefab;
     private GameObject battleController;
     private EnemySpawner enemySpawner;
+    private int currentWaveIndex = 0;
 
     public override async UniTask Init()
     {
@@ -106,6 +107,10 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         CameraManager.Instance.OnBattleEnter();
         BattleScenesMangaer.Instance.LoadUserData();
 
+        //初始化战斗数据
+        currentWaveIndex = 0;
+
+        //进入准备阶段
         OnChangeBattleState(BattleStates.PrepareStart);
         ActingSystem.Instance.StopActing(this.name);
     }
@@ -144,7 +149,8 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         CameraManager.Instance.OnFightStart();
-        enemySpawner.StartSpawning(1);
+        currentWaveIndex++;
+        enemySpawner.StartSpawning(currentWaveIndex);
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()
