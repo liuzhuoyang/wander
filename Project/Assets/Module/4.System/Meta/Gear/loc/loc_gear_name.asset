@@ -17,26 +17,26 @@ MonoBehaviour:
   hint: 
   list:
   - key: gear/name/001
-    textEnglish: shuriken
+    textEnglish: Slingshot
     textHint: 
     mappingList: []
     allLanguage: 0
     isMapping: 0
-    textSimpleChinese: "\u624B\u91CC\u5251"
-    textTraditionChinese: "\u624B\u88CF\u528D"
-    textJapanese: "\u624B\u88CF\u5263"
-    textKorean: "\uC218\uB9AC\uAC80"
-    textFrench: shuriken
-    textGerman: Shuriken
-    textSpanish: shuriken
-    textPortuguese: shuriken
-    textItalian: shuriken
-    textDutch: shuriken
-    textRussian: "\u0441\u044E\u0440\u0438\u043A\u044D\u043D"
-    textThai: "\u0E0A\u0E39\u0E23\u0E34\u0E40\u0E01\u0E19"
+    textSimpleChinese: "\u5F39\u5F13"
+    textTraditionChinese: "\u5F48\u5F13"
+    textJapanese: "\u30B9\u30EA\u30F3\u30B0\u30B7\u30E7\u30C3\u30C8"
+    textKorean: "\uC0C8\uCD1D"
+    textFrench: Fronde
+    textGerman: Schleuder
+    textSpanish: Honda
+    textPortuguese: Estilingue
+    textItalian: Fionda
+    textDutch: Katapult
+    textRussian: "\u0420\u043E\u0433\u0430\u0442\u043A\u0430"
+    textThai: "\u0E2B\u0E19\u0E31\u0E07\u0E2A\u0E15\u0E34\u0E4A\u0E01"
   - key: gear/name/002
-    textEnglish: sword
-    textHint: "\u4E2D\u6587\u7684\u610F\u601D\u662F\uFF0C\u5251"
+    textEnglish: Spear
+    textHint: 
     mappingList: []
     allLanguage: 0
     isMapping: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
     textRussian: "\u043C\u0435\u0447"
     textThai: "\u0E14\u0E32\u0E1A"
   - key: gear/name/003
-    textEnglish: arrow
+    textEnglish: Cutlass
     textHint: 
     mappingList: []
     allLanguage: 0
@@ -70,3 +70,166 @@ MonoBehaviour:
     textDutch: pijl
     textRussian: "\u0441\u0442\u0440\u0435\u043B\u043A\u0430"
     textThai: "\u0E25\u0E39\u0E01\u0E28\u0E23"
+  - key: gear/name/004
+    textEnglish: Pistol
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/005
+    textEnglish: Axe
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/006
+    textEnglish: Shotgun
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/007
+    textEnglish: Cannon
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/008
+    textEnglish: Harpoon Gun
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/009
+    textEnglish: "Thor\u2019s Hammer"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/010
+    textEnglish: "Poseidon\u2019s Spear"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/011
+    textEnglish: "Kraken\u2019s Eye"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/name/012
+    textEnglish: Black Pearl Saber
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: "\u9ED1\u73CD\u73E0\u519B\u5200"
+    textTraditionChinese: "\u9ED1\u73CD\u73E0\u8ECD\u5200"
+    textJapanese: "\u30D6\u30E9\u30C3\u30AF\u30D1\u30FC\u30EB\u30BB\u30A4\u30D0\u30FC"
+    textKorean: "\uBE14\uB799 \uD384 \uC138\uC774\uBC84"
+    textFrench: Sabre de la Perle Noire
+    textGerman: "Schwarze Perlen S\xE4bel"
+    textSpanish: Espada Perla Negra
+    textPortuguese: "Sabre de P\xE9rola Negra"
+    textItalian: Spada della Perla Nera
+    textDutch: Zwarte Parel Sabel
+    textRussian: "\u0427\u0451\u0440\u043D\u0430\u044F \u0436\u0435\u043C\u0447\u0443\u0436\u0438\u043D\u0430
+      \u0441\u0430\u0431\u043B\u044F"
+    textThai: "\u0E14\u0E32\u0E1A\u0E44\u0E02\u0E48\u0E21\u0E38\u0E01\u0E14\u0E33"
