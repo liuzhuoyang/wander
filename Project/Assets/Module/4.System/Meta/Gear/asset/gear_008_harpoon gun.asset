@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
-  m_Name: gear_002_sword
+  m_Name: gear_008_harpoon gun
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 002_sword
-  editorName: "\u5251"
-  displayName: gear/name/002
-  info: gear/info/002
+  gearName: 008
+  editorName: "\u9C7C\u53C9\u67AA"
+  displayName: gear/name/008
+  info: gear/info/008
   rarity: 2
-  attack: 10
+  attack: 7
   triggerSpeed: 2
   listData:
   - level: 5

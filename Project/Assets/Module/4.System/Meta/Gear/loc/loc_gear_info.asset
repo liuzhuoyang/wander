@@ -17,27 +17,25 @@ MonoBehaviour:
   hint: 
   list:
   - key: gear/info/001
-    textEnglish: Gear 001 Info
-    textHint: "\u4E2D\u6587\u7FFB\u8BD1\u4E3A\u7CBE\u51C6\uFF0C\u66B4\u51FB\uFF0C\u9AD8\u5C04\u901F"
+    textEnglish: No special effects
+    textHint: 
     mappingList: []
     allLanguage: 0
     isMapping: 0
-    textSimpleChinese: "\u7CBE\u51C6\uFF0C\u66B4\u51FB\uFF0C\u9AD8\u5C04\u901F"
-    textTraditionChinese: "\u7CBE\u6E96\uFF0C\u66B4\u64CA\uFF0C\u9AD8\u5C04\u901F"
-    textJapanese: "\u7CBE\u5BC6\u3001\u30AF\u30EA\u30C6\u30A3\u30AB\u30EB\u3001\u9AD8\u901F\u5C04\u6483"
-    textKorean: "\uC815\uBC00, \uCE58\uBA85\uD0C0, \uACE0\uC0AC\uC18D"
-    textFrench: "Pr\xE9cision, Critique, Rapide"
-    textGerman: "Pr\xE4zision, Kritisch, Schnellfeuer"
-    textSpanish: "Precisi\xF3n, Cr\xEDtico, R\xE1pido"
-    textPortuguese: "Precis\xE3o, Cr\xEDtico, R\xE1pido"
-    textItalian: 'Precision, Critical, Rapid: Precisione, Critico, Rapido'
-    textDutch: Precisie, Kritiek, Snel
-    textRussian: "\u0422\u043E\u0447\u043D\u043E\u0441\u0442\u044C, \u041A\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439,
-      \u0411\u044B\u0441\u0442\u0440\u0430\u044F \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u0430"
-    textThai: "\u0E41\u0E21\u0E48\u0E19\u0E22\u0E33, \u0E27\u0E34\u0E01\u0E24\u0E15,
-      \u0E23\u0E27\u0E14\u0E40\u0E23\u0E47\u0E27"
+    textSimpleChinese: "\u65E0\u7279\u6548"
+    textTraditionChinese: "\u7121\u7279\u6B8A\u6548\u679C"
+    textJapanese: "\u7279\u6B8A\u52B9\u679C\u306A\u3057"
+    textKorean: "\uD2B9\uC218 \uD6A8\uACFC \uC5C6\uC74C"
+    textFrench: "Aucun effet sp\xE9cial"
+    textGerman: Keine besonderen Effekte
+    textSpanish: Sin efectos especiales
+    textPortuguese: sem efeitos especiais
+    textItalian: nessun effetto speciale
+    textDutch: geen speciaal effect
+    textRussian: "\u0411\u0435\u0437 \u0441\u043F\u0435\u0446\u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
+    textThai: "\u0E44\u0E21\u0E48\u0E21\u0E35\u0E40\u0E2D\u0E1F\u0E40\u0E40\u0E1F\u0E01\u0E15\u0E4C\u0E1E\u0E34\u0E40\u0E28\u0E29"
   - key: gear/info/002
-    textEnglish: 111111111
+    textEnglish: No special effects
     textHint: 
     mappingList: []
     allLanguage: 0
@@ -55,7 +53,171 @@ MonoBehaviour:
     textRussian: 
     textThai: 
   - key: gear/info/003
-    textEnglish: 22222222
+    textEnglish: Throws a cutlass and knocks back enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/004
+    textEnglish: Fire a bullet that penetrates 1 enemy
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/005
+    textEnglish: Throws an axe that flies out and returns, piercing through all enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/006
+    textEnglish: The shotgun deals cone-shaped area damage and pierces through all
+      enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/007
+    textEnglish: The cannon fires a projectile that deals area damage
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/008
+    textEnglish: Fires a harpoon, dealing area damage and knocking back enemies
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/009
+    textEnglish: A Thor's hammer falls from the sky, causing area damage and paralysis
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/010
+    textEnglish: "A Poseidon\u2019s Spear falls from the sky, causing area damage
+      and stun"
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/011
+    textEnglish: Shoots a ray that locks onto the enemy and causes continuous damage
+    textHint: 
+    mappingList: []
+    allLanguage: 0
+    isMapping: 0
+    textSimpleChinese: 
+    textTraditionChinese: 
+    textJapanese: 
+    textKorean: 
+    textFrench: 
+    textGerman: 
+    textSpanish: 
+    textPortuguese: 
+    textItalian: 
+    textDutch: 
+    textRussian: 
+    textThai: 
+  - key: gear/info/012
+    textEnglish: Black Pearl Saber falls from the sky, causing area damage and burning
     textHint: 
     mappingList: []
     allLanguage: 0

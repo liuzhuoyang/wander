@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bfec479a4dc54eafba386a9078fd65a, type: 3}
-  m_Name: gear_006
+  m_Name: gear_005_axe
   m_EditorClassIdentifier: Assembly-CSharp::GearData
-  gearName: 006
-  editorName: '?'
-  displayName: gear/name/003
-  info: gear/info/003
+  gearName: 005_Axe
+  editorName: "\u65A7\u5934"
+  displayName: gear/name/004
+  info: gear/info/004
   rarity: 2
   attack: 7
   triggerSpeed: 2
