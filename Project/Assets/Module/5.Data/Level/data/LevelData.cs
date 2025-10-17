@@ -11,8 +11,25 @@ using RTSDemo.Unit;
 #endif
 
 [Serializable]
-public class EnemyUnitData
+public class EnemySpawnData
 {
+    [System.Flags]
+    public enum SpawnArea
+    {
+        None = 0,
+        Top = 1 << 0,
+        Bottom = 1 << 1,
+        Left = 1 << 2,
+        Right = 1 << 3,
+        All = Top | Bottom | Left | Right
+    }
+    public enum SpawnRate
+    {
+        Slow = 1,
+        Normal = 2,
+        Fast = 3
+    }
+
     private UnitRace unitRace;
     public void InitUnitRace(UnitRace unitRace)
     {
@@ -24,11 +41,26 @@ public class EnemyUnitData
     [PreviewField(55)]
     public Sprite previewIcon;
 #endif
-
-    public int unlockWave;
-
     [ValueDropdown("GetUnitNameList")]
     public string unitName;
+
+    [TabGroup("波次配置"), LabelText("起始波次")]
+    public int startWave = 0;
+    [TabGroup("波次配置"), LabelText("波次间隔")]
+    public Vector2Int waveIntersect = Vector2Int.zero;
+    [TabGroup("波次配置"), LabelText("强制最后一波出现")]
+    public bool forceLastWaveSpawn = true;
+
+    [TabGroup("数量配置"), LabelText("基础数量"), PropertyTooltip("实际数量=基础数量+波次+正负1")]
+    public int baseCount = 10;
+
+    [TabGroup("生成时间配置"), LabelText("生成延迟")]
+    public float delay = 0f;
+    [TabGroup("生成时间配置"), LabelText("生成频率")]
+    public SpawnRate spawnRate = SpawnRate.Normal;
+
+    [LabelText("生成位置")]
+    public SpawnArea spawnArea = SpawnArea.All;
 
 #if UNITY_EDITOR
     void OnUpdateIcon()
@@ -46,8 +78,8 @@ public class EnemyUnitData
         {
             //获取同种族的单位
             UnitRace selectedUnitRace = unitRace;
-            if(asset.unitRace == selectedUnitRace)
-            list.Add(asset.name);
+            if (asset.unitRace == selectedUnitRace)
+                list.Add(asset.name);
         }
         return list;
     }
@@ -118,8 +150,8 @@ public class LevelData : ScriptableObject
     }
     #endregion
 
-    [BoxGroup("Camera", LabelText = "镜头配置")]
-    public LevelCameraPos cameraPos;
+    // [BoxGroup("Camera", LabelText = "镜头配置")]
+    // public LevelCameraPos cameraPos;
 
     #region 场景配置
     [ValueDropdown("GetFormationList")]
@@ -174,7 +206,7 @@ public class LevelData : ScriptableObject
     }
 
     [TabGroup("敌人")]
-    public List<EnemyUnitData> enemyUnitAssetList;
+    public List<EnemySpawnData> enemyUnitAssetList;
 
     public List<string> GetBossNameList()
     {
@@ -383,7 +415,7 @@ public class LevelData : ScriptableObject
         InitializePlotData(ref listWaveMergeSeqIndex, ref listWaveMergeSeqID, listWaveMergePlotSeqData, data => data.plotSeqID);
 
         //给每个资源加入种族数据，方便在选择中过滤单位，只能选择当前种族单位
-        foreach (EnemyUnitData data in enemyUnitAssetList)
+        foreach (EnemySpawnData data in enemyUnitAssetList)
         {
             data.InitUnitRace(unitRace);
         }

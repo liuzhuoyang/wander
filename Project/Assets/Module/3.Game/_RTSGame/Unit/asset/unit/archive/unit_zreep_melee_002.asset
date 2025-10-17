@@ -12,32 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
   m_Name: unit_zreep_melee_002
   m_EditorClassIdentifier: 
-  actorKey: unit_zreep_melee_2
   maxLevel: 1000
   healthRange: {x: 100, y: 1000}
   shieldRange: {x: 0, y: 0}
-  unitRace: 1
-  armorRange: {x: 0, y: 0}
-  motionLayer: 0
-  moveSpeed: 3
-  attackLayer: 1
-  isRange: 0
-  attackRange: 2
   penetrateArmor: 0
+  attackRange: 2
   damageType: 0
-  damageRange: {x: 10, y: 100}
+  attackDamage: {x: 10, y: 100}
   damageMultiToBuilding: 0
   damageMultiToShield: 0
   criticRate: 0
   criticDamageMultiplier: 0
   attackSpeed: 1
+  unitRace: 0
+  unitClass: 0
+  armorRange: {x: 0, y: 0}
+  motionLayer: 0
+  moveSpeed: 3
+  attackLayer: 1
+  isRange: 0
   maxAmmo: 0
   reloadSpeed: 0
   bodyRef:
     m_AssetGUID: 6e76e4e1dad434d87a833723e39c0b26
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 1
   bulletData: {fileID: 0}
-  _bodyRef: unit_zreep_melee_2
+  unitAbilites: []
