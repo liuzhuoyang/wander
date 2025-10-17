@@ -36,7 +36,7 @@ MonoBehaviour:
   unitRace: 1
   bossName: 
   previewBossIcon: {fileID: 0}
-  enemyUnitAssetList: []
+  enemySpawnData: []
   plotSeqData: {fileID: 0}
   plotSeqID: 
   plotData: {fileID: 0}

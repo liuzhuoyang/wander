@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
-  m_Name: enemy_murloc_ranged_elite_001
+  m_Name: enemy_murloc_ranged_boss_001
   m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Unit.UnitData
   maxLevel: 1000
   healthRange: {x: 100, y: 1000}
@@ -25,7 +25,7 @@ MonoBehaviour:
   criticDamageMultiplier: 0
   attackSpeed: 1
   unitRace: 1
-  unitClass: 1
+  unitClass: 2
   armorRange: {x: 0, y: 0}
   motionLayer: 0
   moveSpeed: 3

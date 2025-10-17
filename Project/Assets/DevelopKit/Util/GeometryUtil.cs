@@ -26,11 +26,19 @@ public static class GeometryUtil
         return GetCirclingPointPos(center, (clockwise?-1:1)*time*speed/radius + phaseOffset, radius);
     }
     //获取圆周上特定弧度的点
-    public static Vector2 GetCirclingPointPos(Vector2 center, float phase, float radius){
+    public static Vector2 GetCirclingPointPos(Vector2 center, float phase, float radius)
+    {
         Vector2 surroundPos = Vector2.zero;
-        surroundPos.x = Mathf.Cos(phase)*radius;
-        surroundPos.y = Mathf.Sin(phase)*radius;
-        return center+surroundPos;
+        surroundPos.x = Mathf.Cos(phase) * radius;
+        surroundPos.y = Mathf.Sin(phase) * radius;
+        return center + surroundPos;
+    }
+    public static Vector2 GetEllipsePointPos(Vector2 center, float phase, float radiusX, float radiusY)
+    {
+        Vector2 surroundPos = Vector2.zero;
+        surroundPos.x = Mathf.Cos(phase) * radiusX;
+        surroundPos.y = Mathf.Sin(phase) * radiusY;
+        return center + surroundPos;
     }
 #endregion
 

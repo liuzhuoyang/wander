@@ -34,10 +34,10 @@ MonoBehaviour:
   maxAmmo: 0
   reloadSpeed: 0
   bodyRef:
-    m_AssetGUID: 
+    m_AssetGUID: 7c69b220f4a4c4b4d883e2c6870c018b
     m_SubObjectName: 
     m_SubObjectType: 
     m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
-  bulletData: {fileID: 0}
+    m_EditorAssetChanged: 1
+  bulletData: {fileID: 11400000, guid: a964e49ca75feb646b2b0bffaa70b20e, type: 2}
   unitAbilites: []

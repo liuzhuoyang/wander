@@ -30,7 +30,7 @@ namespace RTSDemo.Basement
         public TeamMask teamType => teamMask;
         public Vector2 position => transform.position;
         public BattleActorType battleActorType => BattleActorType.Basement;
-        public BattleActorMotionLayer motionLayer => BattleActorMotionLayer.Ground;
+        public BattleActorMotionLayer motionLayer => BattleActorMotionLayer.Surface;
         public BuffHandler m_buffHandler => buffHandler;
 
         #region 基地生命周期

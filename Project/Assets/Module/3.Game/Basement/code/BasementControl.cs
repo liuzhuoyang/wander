@@ -23,7 +23,8 @@ namespace RTSDemo.Basement
         protected override void OnDestroy()
         {
             base.OnDestroy();
-            Destroy(basementRoot.gameObject);
+            if(basementRoot != null)
+                Destroy(basementRoot.gameObject);
         }
         public async Task CreateBasement(string basementKey, Vector2 center)
         {

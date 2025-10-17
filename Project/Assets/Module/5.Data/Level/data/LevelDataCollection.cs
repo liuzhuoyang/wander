@@ -50,7 +50,24 @@ public static class AllLevel
     //数据游戏中使用
     public static Dictionary<string, LevelData> dictData;
     public static Dictionary<int, LevelData> dictMainLevelData;
-
+    public static LevelData GetLevelData(LevelType levelType, int chapterID, int levelID)
+    {
+        string typeKey = string.Empty;
+        switch(levelType)
+        {
+            case LevelType.Main: typeKey = "main"; break;
+            case LevelType.Event: typeKey = "event"; break;
+            case LevelType.Dungeon: typeKey = "dungeon"; break;
+        }
+        var levelKey = $"level_{typeKey}_{chapterID:D3}_{levelID:D3}";
+        
+        if (dictData.ContainsKey(levelKey))
+        {
+            return dictData[levelKey];
+        }
+        Debug.LogError($"No Level Data for key {levelKey}");
+        return null;
+    }
     //初始化数据，从资源中加载
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     public static void Init()

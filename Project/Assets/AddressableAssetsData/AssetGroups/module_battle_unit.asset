@@ -103,6 +103,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82a7156bbcdbe1d43ab3ed59bb6c9137
+    m_Address: enemy_murloc_ranged_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 897a0cf980d138f47be66a52a0dd8768
     m_Address: vfx_battle_drone_attack_1
     m_ReadOnly: 0
