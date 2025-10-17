@@ -16,7 +16,7 @@ MonoBehaviour:
   healthRange: {x: 100, y: 1000}
   shieldRange: {x: 0, y: 0}
   penetrateArmor: 0
-  attackRange: 2
+  attackRange: 4
   damageType: 0
   attackDamage: {x: 10, y: 100}
   damageMultiToBuilding: 0
