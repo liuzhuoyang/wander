@@ -54,7 +54,7 @@ namespace RTSDemo.Building
         }
         public float productionSpeed => dynamicArgs.currentProduceSpeed;
         public float autoProduceSpeed => dynamicArgs.autoProduceSpeed;
-        public BattleActorMotionLayer motionLayer => BattleActorMotionLayer.Ground;
+        public BattleActorMotionLayer motionLayer => BattleActorMotionLayer.Surface;
         public BattleActorType battleActorType => BattleActorType.Building;
         public bool IsTargetable => !isDestroied && isActivated;
         public bool IsPlayerSide => gameObject.layer == BattleActorService.FriendlyLayer;

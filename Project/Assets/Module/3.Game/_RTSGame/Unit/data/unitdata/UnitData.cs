@@ -17,7 +17,7 @@ namespace RTSDemo.Unit
         [BoxGroup("基础数值")] public Vector2 armorRange = new Vector2(0, 0);
         #endregion
 
-        [TabGroup("移动参数")] public BattleActorMotionLayer motionLayer = BattleActorMotionLayer.Ground;
+        [TabGroup("移动参数")] public BattleActorMotionLayer motionLayer = BattleActorMotionLayer.Surface;
         [TabGroup("移动参数")] public float moveSpeed = 3;
 
         #region 战斗参数

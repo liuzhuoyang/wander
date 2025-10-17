@@ -95,7 +95,7 @@ namespace RTSDemo.Unit
             //设置physics位置否则phsyics可能还处于worldPosition Zero
             rigid2D.position = transform.position;
             //空中单位不触发碰撞，注意之后添加buff或被索敌的方式
-            if (motionLayer == BattleActorMotionLayer.Air)
+            if (motionLayer == BattleActorMotionLayer.Submerged)
             {
                 hitBox.isTrigger = true;
             }

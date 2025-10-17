@@ -23,30 +23,53 @@ namespace RTSDemo.Spawn
     [System.Serializable]
     public class EnemySpawnHandler
     {
-        private EnemySpawnData enemySpawnData;
-        private EnemySpawner parent;
+        private readonly EnemySpawnData enemySpawnData;
+        private readonly EnemySpawner parent;
+        private readonly Dictionary<SpawnArea, Vector2> validAreas;
+        private readonly float totalWeight = 0f;
         [SerializeField] private float spawnCycle = 0f;
         [SerializeField] private int spawnedCount = 0;
         [SerializeField] private float spawnTimer = 0;
 
         internal bool spawnComplete{ get; private set; } = false;
 
-        internal void Initialize(EnemySpawner parent, EnemySpawnData spawnData)
+        public EnemySpawnHandler(EnemySpawner parent, EnemySpawnData spawnData)
         {
             this.parent = parent;
             enemySpawnData = spawnData;
+            //初始化加权spawnArea
+            var spawnArea = enemySpawnData.spawnArea;
+            validAreas = new Dictionary<SpawnArea, Vector2>();
+            totalWeight = 0f;
+            if ((spawnArea & SpawnArea.Top) != 0)
+            {
+                validAreas.Add(SpawnArea.Top, new Vector2(totalWeight, totalWeight+1f));
+                totalWeight += 1f;
+            }
+            if ((spawnArea & SpawnArea.Bottom) != 0)
+            {
+                validAreas.Add(SpawnArea.Bottom, new Vector2(totalWeight, totalWeight+1f));
+                totalWeight += 1f;
+            }
+            if ((spawnArea & SpawnArea.Left) != 0)
+            {
+                validAreas.Add(SpawnArea.Left, new Vector2(totalWeight, totalWeight+0.5f));
+                totalWeight += 0.5f;
+            }
+            if ((spawnArea & SpawnArea.Right) != 0)
+            {
+                validAreas.Add(SpawnArea.Right, new Vector2(totalWeight, totalWeight+0.5f));
+                totalWeight += 0.5f;
+            }
+
             ResetHandler();
         }
         internal void ResetHandler()
         {
             if (enemySpawnData.baseCount > 1)
-            {
                 spawnedCount = enemySpawnData.baseCount + (parent.currentWave - 1) + (Random.value > 0.5f ? 1 : -1);
-            }
             else
-            {
                 spawnedCount = enemySpawnData.baseCount;
-            }
             spawnCycle = enemySpawnData.delay;
             spawnComplete = false;
             spawnTimer = 0;
@@ -58,10 +81,24 @@ namespace RTSDemo.Spawn
             spawnTimer += dt;
             if (spawnTimer >= spawnCycle)
             {
+                //找出加权后落在区间内的生成区域
+                var spawnFactor = Random.value * totalWeight;
+                var selectedArea = SpawnArea.None;
+                foreach (var area in validAreas)
+                {
+                    if (spawnFactor >= area.Value.x && spawnFactor < area.Value.y)
+                    {
+                        selectedArea = area.Key;
+                        break;
+                    }
+                }
+                //生成单位
+                UnitManager.Instance.CreateUnit(enemySpawnData.unitName, parent.GetSpawnPosition(selectedArea), true, 1);
+                //重置计数
                 spawnTimer = 0;
-                spawnCycle = GetSpawnCycle(enemySpawnData.spawnRate);
-                UnitManager.Instance.CreateUnit(enemySpawnData.unitName, parent.GetSpawnPosition(enemySpawnData.spawnArea), true, 1);
                 spawnedCount--;
+                spawnCycle = GetSpawnCycle(enemySpawnData.spawnRate);
+                //判断是否结束
                 if(spawnedCount <= 0)
                 {
                     spawnComplete = true;
@@ -86,7 +123,7 @@ namespace RTSDemo.Spawn
         [SerializeField] private float ellipseFactor = 1.67f;
         private bool isSpawning = false;
         public int currentWave{get; private set;}
-        public int maxWave{get; private set;}
+        public int maxWave { get; private set; }
 
         //在载入关卡数据后执行一次初始化
         public void InitSpawner(LevelData levelData)
@@ -96,8 +133,7 @@ namespace RTSDemo.Spawn
             listCurrentHandlers = new List<EnemySpawnHandler>();
             foreach (var spawnData in levelData.enemyUnitAssetList)
             {
-                var handler = new EnemySpawnHandler();
-                handler.Initialize(this, spawnData);
+                var handler = new EnemySpawnHandler(this, spawnData);
                 listCurrentHandlers.Add(handler);
             }
         }
@@ -136,7 +172,19 @@ namespace RTSDemo.Spawn
         }
         public Vector2 GetSpawnPosition(SpawnArea spawnArea)
         {
-            return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(0, 360), spawnRadius, spawnRadius*ellipseFactor);
+            switch (spawnArea)
+            {
+                case SpawnArea.Top:
+                    return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(180, 360) * Mathf.Deg2Rad, spawnRadius, spawnRadius * ellipseFactor);
+                case SpawnArea.Bottom:
+                    return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(0, 180) *Mathf.Deg2Rad, spawnRadius, spawnRadius * ellipseFactor);
+                case SpawnArea.Left:
+                    return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(90, 270) *Mathf.Deg2Rad, spawnRadius, spawnRadius * ellipseFactor);
+                case SpawnArea.Right:
+                    return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(-90, 90) * Mathf.Deg2Rad, spawnRadius, spawnRadius * ellipseFactor);
+                default:
+                    return GeometryUtil.GetEllipsePointPos(Vector2.zero, Random.Range(0, 360)*Mathf.Deg2Rad, spawnRadius, spawnRadius*ellipseFactor);
+            }            
         }
 
         void OnDrawGizmosSelected()
