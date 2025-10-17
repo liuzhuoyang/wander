@@ -103,7 +103,7 @@ public class BattleCharacter : MonoBehaviour
 
             // 触发当前节点
             TriggerCurrentNode();
-            
+
             // 移动到下一个节点
             yield return StartCoroutine(MoveToNode(nextNodeIndex));
 
@@ -192,8 +192,6 @@ public class BattleCharacter : MonoBehaviour
     {
         Debug.Log($"触发节点 {currentNodeIndex}");
 
-        // 这里可以添加具体的节点触发逻辑
-        // 例如：播放特效、触发技能、改变节点状态等
 
         // 获取节点组件（如果存在）
         GameObject currentNode = BattleFormationMangaer.Instance.GetNodeByIndex(currentNodeIndex);

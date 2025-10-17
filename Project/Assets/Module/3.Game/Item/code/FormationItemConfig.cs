@@ -17,6 +17,8 @@ public class FormationItemConfig
     public int coinCost = 0;
     public Rarity rarity = Rarity.Common;
 
+    public FormationGearData formationGearData;
+
     [Header("合成设置")]
     public bool canUpgrade = true;        // 是否可以升级
     public int maxLevel = 5;              // 最大等级

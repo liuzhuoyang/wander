@@ -28,7 +28,8 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
         await UIMain.Instance.CreateModeSubPage("prepare", "battle");
         await UIMain.Instance.CreateModeSubPage("fight", "battle");
 
-        FeatureUtility.OnAddFeature(FeatureType.Battle, () => {
+        FeatureUtility.OnAddFeature(FeatureType.Battle, () =>
+        {
             Game.Instance.OnChangeState(GameStates.Battle);
         });
 
@@ -42,7 +43,7 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
 
     //设置状态机里的回调方法，子类通过重写这些方法来实现自己的业务逻辑
     void SetupFSMCallback()
-    {   
+    {
         fsm.OnBattleStartEnterCallback = OnBattleStartPhaseEnter;
         fsm.OnBattleStartExitCallback = OnBattleStartPhaseExit;
         fsm.OnPrepareStartEnterCallback = OnPrepareStartPhaseEnter;
@@ -65,6 +66,11 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
         {
             Destroy(child.gameObject);
         }
+    }
+
+    public BattleStates GetCurrentBattleState()
+    {
+        return fsm.GetCurrentState();
     }
 
     #region 战斗系统的开始结束唯一出入口
@@ -191,38 +197,38 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
     #endregion
 
     #region 虚方法 - 子类可以重写
-    protected virtual async UniTask OnBattleStartPhaseEnter() 
+    protected virtual async UniTask OnBattleStartPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Battle Start Phase");
         await OnDebugTipCountDown(BattleStates.BattleStart, "Enter");
     }
-    protected virtual async UniTask OnBattleStartPhaseExit() 
+    protected virtual async UniTask OnBattleStartPhaseExit()
     {
         TipManager.Instance.OnTip("DEBUG: Exit Battle Start Phase");
         await OnDebugTipCountDown(BattleStates.BattleStart, "Exit");
     }
-    protected virtual async UniTask OnBattleEndPhaseEnter() 
+    protected virtual async UniTask OnBattleEndPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Battle End Phase");
         await OnDebugTipCountDown(BattleStates.BattleEnd, "Enter");
     }
-    protected virtual async UniTask OnBattleEndPhaseExit() 
+    protected virtual async UniTask OnBattleEndPhaseExit()
     {
         TipManager.Instance.OnTip("DEBUG: Exit Battle End Phase");
         await OnDebugTipCountDown(BattleStates.BattleEnd, "Exit");
     }
 
-    protected virtual async UniTask OnPrepareStartPhaseEnter() 
+    protected virtual async UniTask OnPrepareStartPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Prepare Start Phase");
         await OnDebugTipCountDown(BattleStates.PrepareStart, "Enter");
     }
-    protected virtual async UniTask OnPrepareRunPhaseEnter() 
+    protected virtual async UniTask OnPrepareRunPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Prepare Run Phase");
         await OnDebugTipCountDown(BattleStates.PrepareRun, "Enter");
     }
-    protected virtual async UniTask OnPrepareEndPhaseEnter() 
+    protected virtual async UniTask OnPrepareEndPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Prepare End Phase");
         await OnDebugTipCountDown(BattleStates.PrepareEnd, "Enter");
@@ -231,43 +237,43 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
         OnChangeBattleState(BattleStates.FightStart);
     }
 
-    protected virtual async UniTask OnPrepareEndPhaseExit() 
+    protected virtual async UniTask OnPrepareEndPhaseExit()
     {
         TipManager.Instance.OnTip("DEBUG: Exit Prepare End Phase");
         await OnDebugTipCountDown(BattleStates.PrepareEnd, "Exit");
     }
 
-    protected virtual async UniTask OnFightStartPhaseEnter() 
+    protected virtual async UniTask OnFightStartPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Fight Start Phase");
         await OnDebugTipCountDown(BattleStates.FightStart, "Enter");
     }
-    protected virtual async UniTask OnFightRunPhaseEnter() 
+    protected virtual async UniTask OnFightRunPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Fight Run Phase");
         await OnDebugTipCountDown(BattleStates.FightRun, "Enter");
     }
-    protected virtual async UniTask OnFightRunPhaseExit() 
-    { 
+    protected virtual async UniTask OnFightRunPhaseExit()
+    {
         TipManager.Instance.OnTip("DEBUG: Exit Fight Run Phase");
         await OnDebugTipCountDown(BattleStates.FightRun, "Exit");
     }
-    protected virtual async UniTask OnFightEndPhaseEnter() 
+    protected virtual async UniTask OnFightEndPhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Fight End Phase");
         await OnDebugTipCountDown(BattleStates.FightEnd, "Enter");
     }
-    protected virtual async UniTask OnFightEndPhaseExit() 
+    protected virtual async UniTask OnFightEndPhaseExit()
     {
         TipManager.Instance.OnTip("DEBUG: Exit Fight End Phase");
         await OnDebugTipCountDown(BattleStates.FightEnd, "Exit");
     }
-    protected virtual async UniTask OnPausePhaseEnter() 
+    protected virtual async UniTask OnPausePhaseEnter()
     {
         TipManager.Instance.OnTip("DEBUG: Enter Pause Phase");
         await OnDebugTipCountDown(BattleStates.Pause, "Enter");
     }
-    protected virtual async UniTask OnPausePhaseExit() 
+    protected virtual async UniTask OnPausePhaseExit()
     {
         TipManager.Instance.OnTip("DEBUG: Exit Pause Phase");
         await OnDebugTipCountDown(BattleStates.Pause, "Exit");

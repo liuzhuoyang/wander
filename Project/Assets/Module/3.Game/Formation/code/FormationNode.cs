@@ -265,7 +265,7 @@ public class FormationNode : MonoBehaviour
     /// <param name="triggerer">触发者</param>
     public void TriggerItem(GameObject triggerer)
     {
-        if (worldItem != null)
+        if (worldItem != null && BattleSystem.Instance.GetCurrentBattleState() == BattleStates.FightRun)
         {
             worldItem.Trigger(triggerer);
         }

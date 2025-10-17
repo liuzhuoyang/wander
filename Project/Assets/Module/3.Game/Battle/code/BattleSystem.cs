@@ -166,7 +166,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         UnitManager.Instance.CleanUpUnit();
         BuffZoneManager.Instance.CleanUpBuffZone();
         BulletManager.Instance.CleanUpBullet();
-        
+
         await base.OnFightEndPhaseEnter();
 
     }

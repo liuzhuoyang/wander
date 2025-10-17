@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098de367d33c75945b7a15a5cbf03436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDataCollection: {fileID: 11400000, guid: 0fc5cc12639f8e247b15e6cdd63b4590, type: 2}
+  bulletDataCollection: {fileID: 11400000, guid: 6b8922616082e439b9ed7fde2ca54da6, type: 2}

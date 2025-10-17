@@ -73,6 +73,7 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
     {
         FormationItemConfig newItemConfig = new FormationItemConfig()
         {
+            formationGearData = data,
             itemName = data.gearData.gearName,
             displayName = data.gearData.displayName,
             info = data.gearData.info,
@@ -96,6 +97,7 @@ public class BattleShopSystem : Singleton<BattleShopSystem>
         {
             itemName = original.itemName,
             displayName = original.displayName,
+            formationGearData = original.formationGearData != null ? original.formationGearData : null,
             info = original.info,
             itemType = original.itemType,
             level = original.level,

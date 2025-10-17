@@ -15,7 +15,11 @@ public class FormationItemDragInteraction : Draggable
     {
         base.OnInteract(playerInput);
         //判断状态
-
+        if (BattleSystem.Instance.GetCurrentBattleState() != BattleStates.PrepareRun)
+        {
+            return;
+        }
+        
         if (formationNode.HasItem())
         {
             FormationWorldItem formationItem = formationNode.WorldItem;

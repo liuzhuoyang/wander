@@ -48,7 +48,7 @@ namespace BattleLaunch
             if (launchBatches != null)
                 launchBatches.Clear();
         }
-        protected void DoLaunch(BattleLaunchCommand_Batch launchBatch)
+        public void DoLaunch(BattleLaunchCommand_Batch launchBatch)
         {
             int burstIndex = launchBatch.m_countLeft;
             for (int i = 0; i < launchBatch.m_spreadCount; i++)

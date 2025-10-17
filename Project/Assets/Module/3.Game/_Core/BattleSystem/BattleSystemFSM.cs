@@ -21,7 +21,7 @@ public enum BattleStates
 public class BattleSystemFSM : MonoBehaviour
 {
     StateMachine<BattleStates> fsm;
-    
+
     // 状态回调委托
     public Func<UniTask> OnBattleStartEnterCallback;
     public Func<UniTask> OnBattleStartExitCallback;
@@ -37,19 +37,24 @@ public class BattleSystemFSM : MonoBehaviour
     public Func<UniTask> OnPauseExitCallback;
     public Func<UniTask> OnBattleEndEnterCallback;
     public Func<UniTask> OnBattleEndExitCallback;
-    
+
     public void Init()
     {
         Debug.Log($"=== BattleSystemFSM 战斗状态机模块: 初始化 ===");
         fsm = StateMachine<BattleStates>.Initialize(this);
     }
-    
+
+    public BattleStates GetCurrentState()
+    {
+        return fsm.State;
+    }
+
     public void ChangeState(BattleStates state)
     {
         Debug.Log($"=== BattleSystemFSM 战斗状态机模块: 切换到状态 {state} ===");
         fsm.ChangeState(state);
     }
-    
+
     // 状态机方法 - 这些方法会被 MonsterLove 找到
     public async void BattleStart_Enter()
     {
@@ -102,6 +107,7 @@ public class BattleSystemFSM : MonoBehaviour
         {
             await OnFightStartEnterCallback();
         }
+        ChangeState(BattleStates.FightRun);
     }
 
     public async void FightRun_Enter()

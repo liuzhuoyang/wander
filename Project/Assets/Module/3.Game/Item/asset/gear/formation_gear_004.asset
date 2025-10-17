@@ -20,4 +20,4 @@ MonoBehaviour:
   gearAbilites: []
   vfx_gearBeginFire: {fileID: 0}
   sfx_gearBeginFire: {fileID: 0}
-  launchConfig: {fileID: 11400000, guid: 49b13660e261342f7a971b41d839320f, type: 2}
+  launchConfig: {fileID: 11400000, guid: 989d6c1d742f24f9397f1ccd010e7d9f, type: 2}

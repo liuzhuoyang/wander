@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae8cb83b741e42d3bbf4944c590bed8, type: 3}
   m_Name: all_vfx
   m_EditorClassIdentifier: 
+  path: 
   DataList:
   - {fileID: 11400000, guid: ba4799cf032241944af1d945b4ee9466, type: 2}
   - {fileID: 11400000, guid: 0694a68084374504a8c3638977b18a21, type: 2}
   - {fileID: 11400000, guid: 6de00f7e784e80142bb3d83ffdad0b7d, type: 2}
   - {fileID: 11400000, guid: 197e746660d06ea4798254d8d52c91c2, type: 2}
+  - {fileID: 11400000, guid: ebb950211c71c4c2aa1ee54038eed279, type: 2}
   - {fileID: 11400000, guid: ca861bd8157b51545abad210aaa03206, type: 2}
   - {fileID: 11400000, guid: 949dd8d0c58ce1a4493511f2f8dde253, type: 2}
   - {fileID: 11400000, guid: b530951e30859ac4e8391b21a2b2d8ec, type: 2}
