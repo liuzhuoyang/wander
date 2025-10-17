@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
-  m_Name: unit_zreep_range_001
-  m_EditorClassIdentifier: 
+  m_Name: enemy_murloc_ranged_elite_001
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Unit.UnitData
   maxLevel: 1000
   healthRange: {x: 100, y: 1000}
   shieldRange: {x: 0, y: 0}
   penetrateArmor: 0
-  attackRange: 5
+  attackRange: 2
   damageType: 0
   attackDamage: {x: 10, y: 100}
   damageMultiToBuilding: 0
@@ -25,6 +25,7 @@ MonoBehaviour:
   criticDamageMultiplier: 0
   attackSpeed: 1
   unitRace: 1
+  unitClass: 1
   armorRange: {x: 0, y: 0}
   motionLayer: 0
   moveSpeed: 3
@@ -33,11 +34,10 @@ MonoBehaviour:
   maxAmmo: 0
   reloadSpeed: 0
   bodyRef:
-    m_AssetGUID: d8d32c5630793b74dbeb5400e8481728
+    m_AssetGUID: 
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
-    m_EditorAssetChanged: 1
-  bulletData: {fileID: 11400000, guid: 2cd70dce9f6c1dc4ebc461876e896041, type: 2}
-  unitAbilites:
-  - {fileID: 11400000, guid: e226c040e5b5ad84590ffae4cfabb844, type: 2}
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  bulletData: {fileID: 0}
+  unitAbilites: []

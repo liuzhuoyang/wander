@@ -10,8 +10,10 @@ namespace RTSDemo.Unit
     public class UnitData : BattleActorData
     {
         public override BattleActorType actorType => BattleActorType.Unit;
+
         #region 基础数值
         [BoxGroup("基础数值")] public UnitRace unitRace = UnitRace.None;
+        [BoxGroup("基础数值")] public UnitClass unitClass = UnitClass.Common;
         [BoxGroup("基础数值")] public Vector2 armorRange = new Vector2(0, 0);
         #endregion
 

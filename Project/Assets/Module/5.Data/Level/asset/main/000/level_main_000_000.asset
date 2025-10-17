@@ -22,7 +22,6 @@ MonoBehaviour:
   mapName: loc_level
   themeVarient: 1
   previewPic: {fileID: 21300000, guid: 062f4f774f5644399927d42393dfc552, type: 3}
-  cameraPos: 1
   formationName: formatian_asset_001
   basementData: {fileID: 11400000, guid: 4732f65e994665a49b6d814c80d548ed, type: 2}
   mapPrefab:
@@ -34,10 +33,46 @@ MonoBehaviour:
   totalWave: 15
   unitLevel: 1
   difficulty: 0
-  unitRace: race_human
+  unitRace: 1
   bossName: 
   previewBossIcon: {fileID: 0}
-  enemyUnitAssetList: []
+  enemyUnitAssetList:
+  - previewIcon: {fileID: 0}
+    unitName: unit_zreep_melee_001
+    startWave: 0
+    waveIntersect: {x: 0, y: 0}
+    forceLastWaveSpawn: 1
+    baseCount: 10
+    delay: 0
+    spawnRate: 1
+    spawnArea: 15
+  - previewIcon: {fileID: 0}
+    unitName: unit_zreep_melee_002
+    startWave: 4
+    waveIntersect: {x: 99, y: 99}
+    forceLastWaveSpawn: 1
+    baseCount: 2
+    delay: 6
+    spawnRate: 2
+    spawnArea: 3
+  - previewIcon: {fileID: 0}
+    unitName: unit_zreep_range_001
+    startWave: 0
+    waveIntersect: {x: 0, y: 1}
+    forceLastWaveSpawn: 1
+    baseCount: 3
+    delay: 3
+    spawnRate: 2
+    spawnArea: 15
+  - previewIcon: {fileID: 0}
+    unitName: unit_zreep_range_002
+    startWave: 6
+    waveIntersect: {x: 0, y: 0}
+    forceLastWaveSpawn: 1
+    baseCount: 1
+    delay: 10
+    spawnRate: 3
+    spawnArea: 1
   plotSeqData: {fileID: 0}
   plotSeqID: 
   plotData: {fileID: 0}

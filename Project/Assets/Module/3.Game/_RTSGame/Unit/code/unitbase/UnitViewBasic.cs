@@ -18,13 +18,11 @@ namespace RTSDemo.Unit
         [Header("Animation")]
         public bool PlayDeathAnimation = false;
         [SerializeField] protected Transform animationRoot;
-        [SerializeField] protected Animator animator;
 
         [Header("发射点位")]
         [SerializeField] protected Transform launchPoint; //发射枪口，子弹与发射特效从这里发出
 
         [Header("Hit Flash")]
-        [SerializeField] protected bool isBoss;
         [SerializeField] protected SpriteRenderer[] ignoreFlash; //不会因击中，替换材质的sprite，例如尾焰等等
 
         [Header("Audio")]
@@ -34,6 +32,7 @@ namespace RTSDemo.Unit
         [Header("HUD Info")]
         [SerializeField] protected Transform hud_Pivot;
 
+        protected Animator animator;
         protected UnitBase self;
         protected SpriteRenderer[] bodySprites;
         protected Material[] originMat;
@@ -56,6 +55,7 @@ namespace RTSDemo.Unit
         {
             self = unit;
 
+            animator = GetComponent<Animator>();
             animatorControl = new AnimatorControl().Init(animator);
             List<SpriteRenderer> tempSprites = new List<SpriteRenderer>(GetComponentsInChildren<SpriteRenderer>());
             foreach (var sprite in ignoreFlash)
@@ -70,7 +70,7 @@ namespace RTSDemo.Unit
                 originMat[i] = bodySprites[i].sharedMaterial;
             }
 
-            flashMat = UnitManager.Instance.GetHitFeedbackMat(isBoss);
+            flashMat = UnitManager.Instance.GetHitFeedbackMat();
 
             self.OnUnitGetHit += OnHitFeedback;
         }

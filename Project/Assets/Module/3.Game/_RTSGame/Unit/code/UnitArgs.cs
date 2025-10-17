@@ -10,8 +10,15 @@ namespace RTSDemo.Unit
     public enum UnitRace
     {
         None = 0, //无种族特性
-        Zreep = 1, //异虫
-        Iron = 2, //铁卫
+        Murloc = 1, //小鱼人
+    }
+    public enum UnitClass
+    {
+        Common = 0, //普通单位
+        Elite = 1, //精英单位
+        Boss = 2, //Boss单位
+        Overlord = 3, //霸主单位
+        Special = 100, //特殊单位
     }
 
     //实例化的单位原始数据，一般在单位创建前，应用全局加成时做修改
@@ -50,6 +57,7 @@ namespace RTSDemo.Unit
         public bool HasAmmoLimit => unitData.maxAmmo > 0 && unitData.isRange;
 
         public UnitRace Race => unitData.unitRace;
+        public UnitClass unitClass => unitData.unitClass;
         public ElementType DamageElementType => unitData.damageType;
         public BattleActorMotionLayer MotionLayer => unitData.motionLayer;
         public BulletData bulletData => unitData.m_bulletData;

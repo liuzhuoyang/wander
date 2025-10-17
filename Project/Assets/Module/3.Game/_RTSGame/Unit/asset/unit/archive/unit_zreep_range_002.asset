@@ -24,7 +24,8 @@ MonoBehaviour:
   criticRate: 0
   criticDamageMultiplier: 0
   attackSpeed: 1
-  unitRace: 1
+  unitRace: 0
+  unitClass: 0
   armorRange: {x: 0, y: 0}
   motionLayer: 0
   moveSpeed: 3
@@ -35,8 +36,8 @@ MonoBehaviour:
   bodyRef:
     m_AssetGUID: a16baab99d6d4421faeb540b3a6b9d8d
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 1
   bulletData: {fileID: 11400000, guid: 4844af3dc7f1c5f499589c19cf78bf6d, type: 2}
   unitAbilites: []

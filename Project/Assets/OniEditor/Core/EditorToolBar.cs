@@ -55,22 +55,22 @@ namespace onicore.editor
 
 
             SirenixEditorGUI.Title("Level Edit Tool 关卡编辑辅助工具 ", "", TextAlignment.Center, true);
-            SirenixEditorGUI.BeginHorizontalToolbar(36);
-            {
-                if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置战斗场景相机  ")))
-                {
-                    OnSetCameraFight();
-                }
-                if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置战斗Boss场景相机  ")))
-                {
-                    OnSetCameraFightBoss();
-                }
-                if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置合成场景相机  ")))
-                {
-                    OnSetCameraMerge();
-                }
-            }
-            SirenixEditorGUI.EndHorizontalToolbar();
+            // SirenixEditorGUI.BeginHorizontalToolbar(36);
+            // {
+            //     if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置战斗场景相机  ")))
+            //     {
+            //         OnSetCameraFight();
+            //     }
+            //     if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置战斗Boss场景相机  ")))
+            //     {
+            //         OnSetCameraFightBoss();
+            //     }
+            //     if (SirenixEditorGUI.ToolbarButton(new GUIContent("  设置合成场景相机  ")))
+            //     {
+            //         OnSetCameraMerge();
+            //     }
+            // }
+            // SirenixEditorGUI.EndHorizontalToolbar();
         }
 
         void OpenPreloadScene()
@@ -87,41 +87,41 @@ namespace onicore.editor
             EditorSceneManager.OpenScene("Assets/Scenes/map_editor.unity");
         }
 
-        void OnSetCameraFight()
-        {
-            Camera.main.orthographicSize = 15;
-            Camera.main.transform.position = new Vector3(0, GetCameraPosOffsetY(), -10);
-        }
+        // void OnSetCameraFight()
+        // {
+        //     Camera.main.orthographicSize = 15;
+        //     Camera.main.transform.position = new Vector3(0, GetCameraPosOffsetY(), -10);
+        // }
 
-        float GetCameraPosOffsetY()
-        {
-            float offsetY = 0;
-            switch (EditorData.currentLevelData.cameraPos)
-            {
-                case LevelCameraPos.Top:
-                    offsetY = 5;
-                    break;
-                case LevelCameraPos.Middle:
-                    offsetY = 0.5f; 
-                    break;
-                case LevelCameraPos.Bottom:
-                    offsetY = -5;
-                    break;
-            }
-            return offsetY;
-        }
+        // float GetCameraPosOffsetY()
+        // {
+        //     float offsetY = 0;
+        //     switch (EditorData.currentLevelData.cameraPos)
+        //     {
+        //         case LevelCameraPos.Top:
+        //             offsetY = 5;
+        //             break;
+        //         case LevelCameraPos.Middle:
+        //             offsetY = 0.5f; 
+        //             break;
+        //         case LevelCameraPos.Bottom:
+        //             offsetY = -5;
+        //             break;
+        //     }
+        //     return offsetY;
+        // }
 
-        void OnSetCameraFightBoss()
-        {
-            Camera.main.orthographicSize = 18;
-            Camera.main.transform.position = new Vector3(0, GetCameraPosOffsetY(), -10);
-        }
+        // void OnSetCameraFightBoss()
+        // {
+        //     Camera.main.orthographicSize = 18;
+        //     Camera.main.transform.position = new Vector3(0, GetCameraPosOffsetY(), -10);
+        // }
 
-        void OnSetCameraMerge()
-        {
-            Camera.main.orthographicSize = 8;
-            Camera.main.transform.position = new Vector3(0, -1.25f, -10);
-        }
+        // void OnSetCameraMerge()
+        // {
+        //     Camera.main.orthographicSize = 8;
+        //     Camera.main.transform.position = new Vector3(0, -1.25f, -10);
+        // }
 
         void OnUpdateCSV()
         {

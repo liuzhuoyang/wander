@@ -22,7 +22,6 @@ MonoBehaviour:
   mapName: loc_level
   themeVarient: 1
   previewPic: {fileID: 21300000, guid: 062f4f774f5644399927d42393dfc552, type: 3}
-  cameraPos: 1
   formationName: formatian_asset_001
   basementData: {fileID: 11400000, guid: 4732f65e994665a49b6d814c80d548ed, type: 2}
   mapPrefab:
@@ -34,7 +33,7 @@ MonoBehaviour:
   totalWave: 15
   unitLevel: 1
   difficulty: 0
-  unitRace: race_human
+  unitRace: 1
   bossName: 
   previewBossIcon: {fileID: 0}
   enemyUnitAssetList: []

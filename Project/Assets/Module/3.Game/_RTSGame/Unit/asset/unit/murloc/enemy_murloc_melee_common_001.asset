@@ -10,34 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd0bbffc2f7604c499fa56ad773888c9, type: 3}
-  m_Name: unit_zreep_melee_002
-  m_EditorClassIdentifier: 
-  actorKey: unit_zreep_melee_2
+  m_Name: enemy_murloc_melee_common_001
+  m_EditorClassIdentifier: Assembly-CSharp::RTSDemo.Unit.UnitData
   maxLevel: 1000
   healthRange: {x: 100, y: 1000}
   shieldRange: {x: 0, y: 0}
-  unitRace: 1
-  armorRange: {x: 0, y: 0}
-  motionLayer: 0
-  moveSpeed: 3
-  attackLayer: 1
-  isRange: 0
-  attackRange: 2
   penetrateArmor: 0
+  attackRange: 2
   damageType: 0
-  damageRange: {x: 10, y: 100}
+  attackDamage: {x: 10, y: 100}
   damageMultiToBuilding: 0
   damageMultiToShield: 0
   criticRate: 0
   criticDamageMultiplier: 0
   attackSpeed: 1
+  unitRace: 1
+  unitClass: 0
+  armorRange: {x: 0, y: 0}
+  motionLayer: 0
+  moveSpeed: 3
+  attackLayer: 1
+  isRange: 1
   maxAmmo: 0
   reloadSpeed: 0
   bodyRef:
-    m_AssetGUID: 6e76e4e1dad434d87a833723e39c0b26
+    m_AssetGUID: 7c69b220f4a4c4b4d883e2c6870c018b
     m_SubObjectName: 
-    m_SubObjectGUID: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 1
   bulletData: {fileID: 0}
-  _bodyRef: unit_zreep_melee_2
+  unitAbilites: []
