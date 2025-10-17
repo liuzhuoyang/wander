@@ -42,7 +42,7 @@ namespace RTSDemo.Unit
         protected float defaultAimAngle = 0;
         protected float attackTimer = 0;
         private float flashtimer;
-        private bool isFaceLeft = true;
+        private bool isFaceRight = true;
 
         public bool bodyActive => animationRoot.gameObject.activeSelf;
         public Transform m_animatorRoot => animationRoot;
@@ -133,24 +133,24 @@ namespace RTSDemo.Unit
         {
             if (unitFaceType != UnitFaceType.Horizontal)
                 return;
-            if (isFaceLeft)
+            if (isFaceRight)
             {
-                if (dir.x > 0)
+                if (dir.x <= -0.1f)
                 {
-                    isFaceLeft = false;
-                    Vector3 scale = animationRoot.localScale;
+                    isFaceRight = false;
+                    Vector3 scale = transform.localScale;
                     scale.x = -Mathf.Abs(scale.x);
-                    animationRoot.localScale = scale;
+                    transform.localScale = scale;
                 }
             }
             else
             {
-                if (dir.x < 0)
+                if (dir.x >= 0.1f)
                 {
-                    isFaceLeft = true;
-                    Vector3 scale = animationRoot.localScale;
+                    isFaceRight = true;
+                    Vector3 scale = transform.localScale;
                     scale.x = Mathf.Abs(scale.x);
-                    animationRoot.localScale = scale;
+                    transform.localScale = scale;
                 }
             }
         }
