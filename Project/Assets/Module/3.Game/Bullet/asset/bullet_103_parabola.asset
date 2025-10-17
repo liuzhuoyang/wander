@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4691913fc4eaee94b8426a05302f370f, type: 3}
-  m_Name: BulletData
-  m_EditorClassIdentifier: Assembly-CSharp::BattleLaunch.Bullet.BulletData
-  aimRadius: 0
-  effectRange: 0
-  vfx_impact: {fileID: 0}
-  sfx_impact: {fileID: 0}
-  launchableType: 0
+  m_Name: bullet_103_parabola
+  m_EditorClassIdentifier: 
+  aimRadius: 0.5
+  effectRange: 1
+  vfx_impact: {fileID: 11400000, guid: 949dd8d0c58ce1a4493511f2f8dde253, type: 2}
+  sfx_impact: {fileID: 11400000, guid: 5f3ff059a6f4a96468efc834944b0d96, type: 2}
+  launchableType: 2
   bulletRef:
-    m_AssetGUID: 
+    m_AssetGUID: b89ee034290283d4599760175b0b3e8a
     m_SubObjectName: 
-    m_SubObjectType: 
     m_SubObjectGUID: 
-    m_EditorAssetChanged: 0
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
