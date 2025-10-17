@@ -35,8 +35,7 @@ MonoBehaviour:
   difficulty: 0
   unitRace: 1
   enemyUnitAssetList:
-  - previewIcon: {fileID: 0}
-    unitName: enemy_murloc_melee_common_001
+  - unitName: enemy_murloc_melee_common_001
     startWave: 0
     waveIntersect: {x: 0, y: 0}
     forceLastWaveSpawn: 1
@@ -44,8 +43,7 @@ MonoBehaviour:
     delay: 0
     spawnRate: 1
     spawnArea: 15
-  - previewIcon: {fileID: 0}
-    unitName: enemy_murloc_melee_elite_001
+  - unitName: enemy_murloc_melee_elite_001
     startWave: 4
     waveIntersect: {x: 99, y: 99}
     forceLastWaveSpawn: 1
@@ -53,8 +51,7 @@ MonoBehaviour:
     delay: 6
     spawnRate: 2
     spawnArea: 3
-  - previewIcon: {fileID: 0}
-    unitName: enemy_murloc_ranged_common_001
+  - unitName: enemy_murloc_ranged_common_001
     startWave: 0
     waveIntersect: {x: 0, y: 1}
     forceLastWaveSpawn: 1
@@ -62,8 +59,7 @@ MonoBehaviour:
     delay: 3
     spawnRate: 2
     spawnArea: 15
-  - previewIcon: {fileID: 0}
-    unitName: enemy_murloc_ranged_boss_001
+  - unitName: enemy_murloc_ranged_boss_001
     startWave: 6
     waveIntersect: {x: 0, y: 0}
     forceLastWaveSpawn: 1

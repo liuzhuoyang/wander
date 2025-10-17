@@ -166,12 +166,15 @@ namespace RTSDemo.Spawn
                     spawnedCount = enemySpawnData.baseCount;
                 spawnCycle = enemySpawnData.delay;
 
+                Debug.Log($"wave{wave}, next wave:{nextSpawnWave}");
                 if (wave != nextSpawnWave)
+                {
                     spawnComplete = true;
+                }
                 else
                 {
                     spawnComplete = false;
-                    nextSpawnWave += Random.Range(enemySpawnData.waveIntersect.x, enemySpawnData.waveIntersect.y + 1)+1;
+                    nextSpawnWave = wave + Random.Range(enemySpawnData.waveIntersect.x, enemySpawnData.waveIntersect.y + 1) + 1;
                 }
                 spawnTimer = 0;
             }

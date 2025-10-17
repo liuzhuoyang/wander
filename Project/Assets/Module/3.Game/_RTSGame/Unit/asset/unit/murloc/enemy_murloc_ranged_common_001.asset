@@ -34,7 +34,7 @@ MonoBehaviour:
   maxAmmo: 0
   reloadSpeed: 0
   bodyRef:
-    m_AssetGUID: 7c69b220f4a4c4b4d883e2c6870c018b
+    m_AssetGUID: 82a7156bbcdbe1d43ab3ed59bb6c9137
     m_SubObjectName: 
     m_SubObjectType: 
     m_SubObjectGUID: 

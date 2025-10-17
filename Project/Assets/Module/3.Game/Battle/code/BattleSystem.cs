@@ -144,7 +144,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         CameraManager.Instance.OnFightStart();
-        enemySpawner.StartSpawning(0);
+        enemySpawner.StartSpawning(1);
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()

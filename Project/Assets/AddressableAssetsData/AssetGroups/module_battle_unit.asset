@@ -26,6 +26,12 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d0f238592677094d9200a2f83e10143
+    m_Address: enemy_murloc_ranged_boss_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0dbfc54de9535407fabf08be9d518967
     m_Address: unit_minion_drone_001_5_2
     m_ReadOnly: 0
@@ -104,7 +110,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82a7156bbcdbe1d43ab3ed59bb6c9137
-    m_Address: enemy_murloc_ranged_001
+    m_Address: enemy_murloc_ranged_common_001
     m_ReadOnly: 0
     m_SerializedLabels:
     - unit
@@ -148,6 +154,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - unit
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aff6fb75584a04549a1c99ada507917a
+    m_Address: enemy_murloc_ranged_elite_001
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: baf3c3a28d68e8b4ba261b6a5c0c4395
     m_Address: sfx_unit_iron_killed_002
     m_ReadOnly: 0
@@ -171,6 +183,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cb7ccaf5a459d4297800f13186d6b88b
     m_Address: unit_minion_drone_001_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - unit
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd3563f503ecf164dbd6ce0cee5581f8
+    m_Address: enemy_murloc_melee_elite_001
     m_ReadOnly: 0
     m_SerializedLabels:
     - unit
