@@ -1,9 +1,12 @@
+using UnityEngine.AddressableAssets;
+using UnityEngine;
 using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using UnityEngine;
+
 using RTSDemo.Basement;
-using UnityEngine.AddressableAssets;
+using RTSDemo.Spawn;
+
 
 #if UNITY_EDITOR
 using System.Linq;
@@ -13,23 +16,6 @@ using RTSDemo.Unit;
 [Serializable]
 public class EnemySpawnData
 {
-    [System.Flags]
-    public enum SpawnArea
-    {
-        None = 0,
-        Top = 1 << 0,
-        Bottom = 1 << 1,
-        Left = 1 << 2,
-        Right = 1 << 3,
-        All = Top | Bottom | Left | Right
-    }
-    public enum SpawnRate
-    {
-        Slow = 1,
-        Normal = 2,
-        Fast = 3
-    }
-
     private UnitRace unitRace;
     public void InitUnitRace(UnitRace unitRace)
     {
@@ -206,7 +192,7 @@ public class LevelData : ScriptableObject
     }
 
     [TabGroup("敌人")]
-    public List<EnemySpawnData> enemyUnitAssetList;
+    public List<EnemySpawnData> enemySpawnData;
 
     public List<string> GetBossNameList()
     {
@@ -415,7 +401,7 @@ public class LevelData : ScriptableObject
         InitializePlotData(ref listWaveMergeSeqIndex, ref listWaveMergeSeqID, listWaveMergePlotSeqData, data => data.plotSeqID);
 
         //给每个资源加入种族数据，方便在选择中过滤单位，只能选择当前种族单位
-        foreach (EnemySpawnData data in enemyUnitAssetList)
+        foreach (EnemySpawnData data in enemySpawnData)
         {
             data.InitUnitRace(unitRace);
         }

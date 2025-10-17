@@ -8,13 +8,15 @@ using RTSDemo.Unit;
 using BattleGear;
 using RTSDemo.Zone;
 using RTSDemo.Basement;
-using BattleMap.Grid.FlowField;
 using RTSDemo.Grid;
+using RTSDemo.Spawn;
 
 public class BattleSystem : BattleSystemBase<BattleSystem>
 {
     private GameObject battleControllerPrefab;
     private GameObject battleController;
+    private EnemySpawner enemySpawner;
+
     public override async UniTask Init()
     {
         await base.Init();
@@ -46,15 +48,15 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnLoadLevel()
     {
         //获取 章节1关卡1作为测试
-        LevelData levelData = LevelSystem.Instance.GetLevelData(LevelType.Main, 0, 1);
+        currentLevelData = AllLevel.GetLevelData(LevelType.Main, 0, 1);
 
         await TransitControl.OnTransit();
         await GameAssetManagerBattle.Instance.OnLoadBattleAsset();
 
         UIMain.Instance.OnModeUI("battle");
-        BattleFormationMangaer.Instance.CraftFormatian(levelData.formationName);
-        await BattleScenesMangaer.Instance.LoadScene(levelData);
-        await BasementControl.Instance.CreateBasement(levelData.basementData.m_basementKey, Vector2.zero);
+        BattleFormationMangaer.Instance.CraftFormatian(currentLevelData.formationName);
+        await BattleScenesMangaer.Instance.LoadScene(currentLevelData);
+        await BasementControl.Instance.CreateBasement(currentLevelData.basementData.m_basementKey, Vector2.zero);
 
         //加载完各项地图后，刷新flowfield
         RTSGridEvent.Call_OnGridNodeChange();
@@ -87,11 +89,13 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
 
         //创建必要的战斗内控制器
         battleController = Instantiate(battleControllerPrefab, this.transform);
+        enemySpawner = gameObject.AddComponent<EnemySpawner>();
 
         ActingSystem.Instance.OnActing(this.name);
         await OnLoadLevel();
 
         //开启各项游戏系统
+        enemySpawner.StartBattle(currentLevelData);
         UnitManager.Instance.StartBattle();
         BulletManager.Instance.StartBattle();
         GearManager.Instance.StartBattle();
@@ -139,6 +143,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         CameraManager.Instance.OnFightStart();
+        enemySpawner.StartFight(1);
         await base.OnFightStartPhaseEnter();
     }
     protected override async UniTask OnFightRunPhaseEnter()
@@ -156,6 +161,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     {
         //波段战斗结束 - 进入阶段
         ModeBattleControl.OnCloseActive();
+        enemySpawner.EndFight();
         await base.OnFightEndPhaseEnter();
 
     }
@@ -188,6 +194,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         BattleScenesMangaer.Instance.CleanUpScene();
         //战斗结束阶段
         Destroy(battleController);
+        Destroy(enemySpawner);
         //清理各项游戏系统
         UnitManager.Instance.CleanUpBattle();
         BulletManager.Instance.CleanUpBattle();
