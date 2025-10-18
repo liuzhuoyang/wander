@@ -219,6 +219,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         });
         CameraManager.Instance.OnBattleEnd();
         BattleScenesMangaer.Instance.CleanUpScene();
+        BattleFormationMangaer.Instance.DestroyCurrentFormatian();
         //战斗结束阶段
         Destroy(battleController);
         Destroy(enemySpawner);
