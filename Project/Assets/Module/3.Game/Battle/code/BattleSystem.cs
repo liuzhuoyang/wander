@@ -17,6 +17,8 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     private GameObject battleController;
     private EnemySpawner enemySpawner;
     private int currentWaveIndex = 0;
+    private int maxWave => currentLevelData.totalWave;
+    private bool hasWon = false;
 
     public override async UniTask Init()
     {
@@ -91,6 +93,7 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         //创建必要的战斗内控制器
         battleController = Instantiate(battleControllerPrefab, this.transform);
         enemySpawner = gameObject.AddComponent<EnemySpawner>();
+        hasWon = false;
 
         ActingSystem.Instance.OnActing(this.name);
         await OnLoadLevel();
@@ -146,10 +149,10 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
     protected override async UniTask OnFightStartPhaseEnter()
     {
         //波段战斗开始 - 进入阶段
+        currentWaveIndex++;
         ModeBattleControl.OnOpen("fight");
         AudioManager.Instance.PlayBGM("bgm_battle_fight_001");
         CameraManager.Instance.OnFightStart();
-        currentWaveIndex++;
         enemySpawner.StartSpawning(currentWaveIndex);
         await base.OnFightStartPhaseEnter();
     }
@@ -172,9 +175,22 @@ public class BattleSystem : BattleSystemBase<BattleSystem>
         UnitManager.Instance.CleanUpUnit();
         BuffZoneManager.Instance.CleanUpBuffZone();
         BulletManager.Instance.CleanUpBullet();
-        
-        await base.OnFightEndPhaseEnter();
 
+        TipManager.Instance.OnTip("DEBUG: Enter Fight End Phase");
+        await OnDebugTipCountDown(BattleStates.FightEnd, "Enter");
+
+        if (currentWaveIndex >= maxWave)
+        {
+            //标记胜利
+            hasWon = true;
+            //进入战斗结束阶段
+            OnChangeBattleState(BattleStates.BattleEnd);
+        }
+        //波次未完成，进入准备阶段
+        else
+        {
+            OnChangeBattleState(BattleStates.PrepareStart);
+        }
     }
     protected override async UniTask OnFightEndPhaseExit()
     {

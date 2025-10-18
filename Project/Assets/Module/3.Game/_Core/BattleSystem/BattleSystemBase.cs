@@ -147,7 +147,6 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
     async void FightEnd_Enter()
     {
         await OnFightEndPhaseEnter();
-        OnChangeBattleState(BattleStates.PrepareStart);
     }
 
     async void FightEnd_Exit()
@@ -256,6 +255,9 @@ public abstract class BattleSystemBase<T> : Singleton<T> where T : BattleSystemB
     {
         TipManager.Instance.OnTip("DEBUG: Enter Fight End Phase");
         await OnDebugTipCountDown(BattleStates.FightEnd, "Enter");
+
+        //进入准备阶段
+        OnChangeBattleState(BattleStates.PrepareStart);
     }
     protected virtual async UniTask OnFightEndPhaseExit() 
     {
